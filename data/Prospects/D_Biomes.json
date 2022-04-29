@@ -11,10 +11,9 @@
         "BiomeTemperatureCurve": "None",
         "WeatherFrequency": 0,
         "AtmosphereType": "CF",
-        "Audio": {
-            "RowName": "None",
-            "DataTableName": "D_BiomeAudioData"
-        }
+        "BiomeFMODParam": "None",
+        "AudioAmbienceBase": "None",
+        "AudioAmbienceTransitional": "None"
     },
     "GenerateEnum": true,
     "Columns": [
@@ -34,9 +33,9 @@
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
             "WeatherFrequency": 5,
-            "Audio": {
-                "RowName": "Conifer"
-            }
+            "BiomeFMODParam": "Conifer",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_CF_BASE.AMB_CF_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_CF_CAVE_ENTRANCE.ENV_CF_CAVE_ENTRANCE"
         },
         {
             "Name": "Arctic",
@@ -49,9 +48,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
             "WeatherFrequency": 5,
             "AtmosphereType": "AC",
-            "Audio": {
-                "RowName": "Arctic"
-            }
+            "BiomeFMODParam": "Arctic",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_AC_BASE.AMB_AC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_AC_CAVE_ENTRANCE.ENV_AC_CAVE_ENTRANCE"
         },
         {
             "Name": "Lava",
@@ -76,9 +75,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/DesertTemperatureCurve.DesertTemperatureCurve'",
             "WeatherFrequency": 2,
             "AtmosphereType": "DC",
-            "Audio": {
-                "RowName": "Desert"
-            }
+            "BiomeFMODParam": "Desert",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_DC_BASE.AMB_DC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_DC_CAVE_ENTRANCE.ENV_DC_CAVE_ENTRANCE"
         },
         {
             "Name": "Wetlands",
@@ -113,9 +112,7 @@
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/CaveTemperatureCurve.CaveTemperatureCurve'",
             "AtmosphereType": "Cave",
-            "Audio": {
-                "RowName": "Cave"
-            }
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_CA_BASE.AMB_CA_BASE"
         },
         {
             "Name": "NoBiome",
@@ -132,9 +129,9 @@
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
             "WeatherFrequency": 5,
-            "Audio": {
-                "RowName": "Conifer"
-            }
+            "BiomeFMODParam": "Conifer",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_CF_BASE.AMB_CF_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_CF_CAVE_ENTRANCE.ENV_CF_CAVE_ENTRANCE"
         },
         {
             "Name": "DesertCanyons",
@@ -148,9 +145,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/DesertTemperatureCurve.DesertTemperatureCurve'",
             "WeatherFrequency": 2,
             "AtmosphereType": "DC",
-            "Audio": {
-                "RowName": "Desert"
-            }
+            "BiomeFMODParam": "Desert",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_DC_BASE.AMB_DC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_DC_CAVE_ENTRANCE.ENV_DC_CAVE_ENTRANCE"
         },
         {
             "Name": "SouthernGlacier",
@@ -164,9 +161,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
             "WeatherFrequency": 5,
             "AtmosphereType": "AC",
-            "Audio": {
-                "RowName": "Arctic"
-            }
+            "BiomeFMODParam": "Arctic",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_AC_BASE.AMB_AC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_AC_CAVE_ENTRANCE.ENV_AC_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_TheWall",
@@ -180,9 +177,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
             "WeatherFrequency": 2,
             "AtmosphereType": "AC",
-            "Audio": {
-                "RowName": "Arctic"
-            }
+            "BiomeFMODParam": "Arctic",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_AC_BASE.AMB_AC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_AC_CAVE_ENTRANCE.ENV_AC_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_TheGreatRiver",
@@ -194,9 +191,9 @@
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
             "WeatherFrequency": 5,
-            "Audio": {
-                "RowName": "Conifer"
-            }
+            "BiomeFMODParam": "Conifer",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_CF_BASE.AMB_CF_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_CF_CAVE_ENTRANCE.ENV_CF_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_SnowyPlateau",
@@ -210,9 +207,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
             "WeatherFrequency": 2,
             "AtmosphereType": "AC",
-            "Audio": {
-                "RowName": "Arctic"
-            }
+            "BiomeFMODParam": "Arctic",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_AC_BASE.AMB_AC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_AC_CAVE_ENTRANCE.ENV_AC_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_EnclosedWood",
@@ -224,9 +221,9 @@
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
             "WeatherFrequency": 5,
-            "Audio": {
-                "RowName": "Conifer"
-            }
+            "BiomeFMODParam": "Conifer",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_CF_BASE.AMB_CF_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_CF_CAVE_ENTRANCE.ENV_CF_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_Oasis",
@@ -240,9 +237,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/DesertTemperatureCurve.DesertTemperatureCurve'",
             "WeatherFrequency": 3,
             "AtmosphereType": "DC",
-            "Audio": {
-                "RowName": "Desert"
-            }
+            "BiomeFMODParam": "Desert",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_DC_BASE.AMB_DC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_DC_CAVE_ENTRANCE.ENV_DC_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_DustyBarrens",
@@ -256,9 +253,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/DesertTemperatureCurve.DesertTemperatureCurve'",
             "WeatherFrequency": 3,
             "AtmosphereType": "DC",
-            "Audio": {
-                "RowName": "Desert"
-            }
+            "BiomeFMODParam": "Desert",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_DC_BASE.AMB_DC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_DC_CAVE_ENTRANCE.ENV_DC_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_RingLake",
@@ -271,9 +268,9 @@
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
             "WeatherFrequency": 5,
-            "Audio": {
-                "RowName": "Conifer"
-            }
+            "BiomeFMODParam": "Conifer",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_CF_BASE.AMB_CF_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_CF_CAVE_ENTRANCE.ENV_CF_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_FrozenTraverse",
@@ -286,9 +283,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
             "WeatherFrequency": 2,
             "AtmosphereType": "AC",
-            "Audio": {
-                "RowName": "Arctic"
-            }
+            "BiomeFMODParam": "Arctic",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_AC_BASE.AMB_AC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_AC_CAVE_ENTRANCE.ENV_AC_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_AlpineValley",
@@ -301,9 +298,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
             "WeatherFrequency": 2,
             "AtmosphereType": "AC",
-            "Audio": {
-                "RowName": "Arctic"
-            }
+            "BiomeFMODParam": "Arctic",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_AC_BASE.AMB_AC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_AC_CAVE_ENTRANCE.ENV_AC_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_Grove",
@@ -315,9 +312,9 @@
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
             "WeatherFrequency": 5,
-            "Audio": {
-                "RowName": "Conifer"
-            }
+            "BiomeFMODParam": "Conifer",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_CF_BASE.AMB_CF_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_CF_CAVE_ENTRANCE.ENV_CF_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_IceFlats",
@@ -331,9 +328,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
             "WeatherFrequency": 2,
             "AtmosphereType": "AC",
-            "Audio": {
-                "RowName": "Arctic"
-            }
+            "BiomeFMODParam": "Arctic",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_AC_BASE.AMB_AC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_AC_CAVE_ENTRANCE.ENV_AC_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_DryRidge",
@@ -347,9 +344,9 @@
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/DesertTemperatureCurve.DesertTemperatureCurve'",
             "WeatherFrequency": 3,
             "AtmosphereType": "DC",
-            "Audio": {
-                "RowName": "Desert"
-            }
+            "BiomeFMODParam": "Desert",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_DC_BASE.AMB_DC_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_DC_CAVE_ENTRANCE.ENV_DC_CAVE_ENTRANCE"
         },
         {
             "Name": "Styx_VerdantTerraces",
@@ -361,9 +358,9 @@
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
             "WeatherFrequency": 5,
-            "Audio": {
-                "RowName": "Conifer"
-            }
+            "BiomeFMODParam": "Conifer",
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_CF_BASE.AMB_CF_BASE",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_CF_CAVE_ENTRANCE.ENV_CF_CAVE_ENTRANCE"
         }
     ]
 }
