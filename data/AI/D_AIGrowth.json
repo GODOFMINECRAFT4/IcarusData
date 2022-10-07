@@ -169,10 +169,8 @@
         {
             "Name": "Elephant",
             "Base": {
-                "(Value=\"BaseMeleeDamage_+\")": 50,
                 "(Value=\"BaseMovementSpeed_+\")": 175,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
-                "(Value=\"BaseMaximumHealth_+\")": 1250,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 130,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
@@ -192,6 +190,8 @@
                 "(Value=\"BaseSlowResistance_%\")": 33,
                 "(Value=\"BaseImmobiliseResistance_%\")": 33
             },
+            "Health": "CurveFloat'/Game/Data/AI/C_ElephantHealth.C_ElephantHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_ElephantDamage.C_ElephantDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -365,10 +365,8 @@
         {
             "Name": "Mammoth",
             "Base": {
-                "(Value=\"BaseMeleeDamage_+\")": 50,
                 "(Value=\"BaseMovementSpeed_+\")": 175,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
-                "(Value=\"BaseMaximumHealth_+\")": 1250,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 130,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
@@ -390,6 +388,8 @@
                 "(Value=\"BaseSlowResistance_%\")": 40,
                 "(Value=\"BaseImmobiliseResistance_%\")": 40
             },
+            "Health": "CurveFloat'/Game/Data/AI/C_MammothHealth.C_MammothHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_MammothDamage.C_MammothDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
         {
