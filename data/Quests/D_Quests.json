@@ -3316,7 +3316,7 @@
         {
             "Name": "OLY_Omni_Recovery_Launch",
             "Class": "/Game/BP/Quests/Olympus/Omni/Recovery/BPQ_OLY_Omni_Recovery_Launch.BPQ_OLY_Omni_Recovery_Launch_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Recovery_Launch-Description\", \"Trigger the Ship to Lanch (F)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Omni_Recovery_Launch-Description\", \"Trigger the Ship to Launch (F)\")"
         },
         {
             "Name": "Common_Travel",
@@ -6319,7 +6319,7 @@
             "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Support.BPQ_OLY_Forest_WS_Stockpile_Support_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Support-Description\", \"OPTIONAL: Collect the tools provided by the Workshop Team\")",
             "LocationQuery": {
-                "RowName": "BW6_Survey_Location2"
+                "RowName": "BW6_Extermination_Location3"
             }
         },
         {
@@ -6365,7 +6365,7 @@
         {
             "Name": "OLY_Forest_WS_Stockpile_Cave",
             "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Cave.BPQ_OLY_Forest_WS_Cave_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Cave-Description\", \"Find the enrance of the nearby cave.\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Cave-Description\", \"Find the entrance of the nearby cave.\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_WS_Stockpile_Cave"
             }
@@ -6391,6 +6391,206 @@
             "Name": "OLY_Forest_Survey_Transmitter_Health",
             "Class": "/Game/BP/Quests/Common/BPQ_Common_Object_Health.BPQ_Common_Object_Health_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Survey_Transmitter_Health-Description\", \"Tansmitter Health: {0}/{1}\")"
+        },
+        {
+            "Name": "PRO_Story_1",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1.BPQ_PRO_Story1_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_1-Description\", \"EXPEDITION: Unexplored Region\")"
+        },
+        {
+            "Name": "PRO_Story1_Base",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Base.BPQ_PRO_Story1_Base_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Base-Description\", \"Build yourself a small base of operations\")"
+        },
+        {
+            "Name": "PRO_Story1_Bed",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Bed.BPQ_PRO_Story1_Bed_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Bed-Description\", \"{0} / {1} Bed\")"
+        },
+        {
+            "Name": "PRO_Story1_Oxite_Dissolver",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Dissolver.BPQ_PRO_Story1_Dissolver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Oxite_Dissolver-Description\", \"{0} / {1} Oxidizer\")"
+        },
+        {
+            "Name": "PRO_Story1_Crafting_Bench",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Crafting.BPQ_PRO_Story1_Crafting_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Crafting_Bench-Description\", \"{0} / {1} Crafting Bench\")"
+        },
+        {
+            "Name": "PRO_Story1_Campfire",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Campfire.BPQ_PRO_Story1_Campfire_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Campfire-Description\", \"{0} / {1} Campfire\")"
+        },
+        {
+            "Name": "PRO_Story1_Recipe",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe.BPQ_PRO_Story1_Recipe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Collect the New Communicator Blueprint\")"
+        },
+        {
+            "Name": "PRO_Story1_Recipe_Location",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Location-Description\", \"Reach the Supply Pod Location (M)\")"
+        },
+        {
+            "Name": "PRO_Story1_Recipe_Creature",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe_Creature.BPQ_PRO_Story1_Recipe_Creature_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Creature-Description\", \"Kill the Guarding Creature\")"
+        },
+        {
+            "Name": "PRO_Story1_Recipe_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe_Collect.BPQ_PRO_Story1_Recipe_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe_Collect-Description\", \"Collect the Blueprint from the Sinotai Supply Pod\")"
+        },
+        {
+            "Name": "PRO_Story1_Communicator",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Communicator.BPQ_PRO_Story1_Communicator_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Communicator-Description\", \"Build & Place the New Communicator (Crafting Bench)\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest.BPQ_PRO_Story1_Mini_Quest_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest-Description\", \"Complete the Mission from SMPL\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Tomatoes",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Tomatoes.BPQ_PRO_Story1_Mini_Quest_Tomatoes_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Tomatoes-Description\", \"Cultivate and Harvest One Tomato (Farming Plot)\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Deliver",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Deliver.BPQ_PRO_Story1_Mini_Quest_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Deliver-Description\", \"Deliver the Harvest to the Sinotai Retrieval Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Collect_Reward",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Reward.BPQ_PRO_Story1_Mini_Quest_Reward_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Reward-Description\", \"Collect the Reward from the Sinotai Reward Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story_2",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2.BPQ_PRO_Story2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_2-Description\", \"RECOVERY: Stolen Items\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_Mo_Hideout1"
+            }
+        },
+        {
+            "Name": "PRO_Story2_Investigate",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate.BPQ_PRO_Story2_Investigate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate-Description\", \"Investigate the Rumored Base Location\")"
+        },
+        {
+            "Name": "PRO_Story2_Investigate_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")"
+        },
+        {
+            "Name": "PRO_Story2_Investigate_Search",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate_Search.BPQ_PRO_Story2_Investigate_Search_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Search-Description\", \"Search the Base for Stolen Tech and Documents\")"
+        },
+        {
+            "Name": "PRO_Story2_Investigate_Deliver",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Investigate_Deliver.BPQ_PRO_Story2_Investigate_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Deliver-Description\", \"Deliver the Stolen Materials to the Sinotai Retrieval Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story2_Recipe",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Recipe.BPQ_PRO_Story2_Recipe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Recipe-Description\", \"Collect the New Communicator Blueprint\")"
+        },
+        {
+            "Name": "PRO_Story2_Recipe_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Recipe_Travel-Description\", \"Reach the Supply Pod Location (M)\")"
+        },
+        {
+            "Name": "PRO_Story2_Recipe_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Recipe_Collect.BPQ_PRO_Story2_Recipe_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Recipe_Collect-Description\", \"Collect the Blueprint from the Sinotai Supply Pod\")"
+        },
+        {
+            "Name": "PRO_Story2_Communicator",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story2/BPQ_PRO_Story2_Communicator.BPQ_PRO_Story2_Communicator_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Communicator-Description\", \"Craft and Place the new Communicator (Machining Bench)\")"
+        },
+        {
+            "Name": "PRO_Story_3",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_3-Description\", \"SURVEY: Follow the Trail\")"
+        },
+        {
+            "Name": "PRO_Story3_Equipment",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Equipment-Description\", \"Collect the Provided Equipment from the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story3_Triangulate",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate-Description\", \"Triangulate the Hidden Base\")"
+        },
+        {
+            "Name": "PRO_Story3_Triangulate_1",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_1-Description\", \"Scan Location Alpha (M)\")"
+        },
+        {
+            "Name": "PRO_Story3_Triangulate_2",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_2-Description\", \"Scan Location Beta (M)\")"
+        },
+        {
+            "Name": "PRO_Story3_Triangulate_3",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Triangulate_3-Description\", \"Scan Location Delta (M)\")"
+        },
+        {
+            "Name": "PRO_Story3_Hidden_Base",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Base-Description\", \"Investigate the Hidden Base\")"
+        },
+        {
+            "Name": "PRO_Story3_Hidden_Search",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Search-Description\", \"Search the Base for Stolen Tech and Documents\")"
+        },
+        {
+            "Name": "PRO_Story3_Hidden_Beacon",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Hidden_Beacon-Description\", \"Place the Beacon within the Base\")"
+        },
+        {
+            "Name": "PRO_Story3_Recipe",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe-Description\", \"Collect the New Communicator Blueprint\")"
+        },
+        {
+            "Name": "PRO_Story3_Recipe_Travel",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe_Travel-Description\", \"Reach the Supply Pod Location (M)\")"
+        },
+        {
+            "Name": "PRO_Story3_Recipe_Collect",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Recipe_Collect-Description\", \"Collect the Blueprint from the Sinotai Supply Pod\")"
+        },
+        {
+            "Name": "PRO_Story3_Communicator",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story3_Communicator-Description\", \"Craft and Place the new Communicator (Machining Bench)\")"
+        },
+        {
+            "Name": "PRO_Story_4",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_4-Description\", \"DELIVERY: Prospectors MIA\")"
+        },
+        {
+            "Name": "PRO_Story_5",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5-Description\", \"DEFENCE: Hidden Base\")"
+        },
+        {
+            "Name": "PRO_Story_6",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_6-Description\", \"EXTERMINATION: Mo\")"
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Cave2",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Cave.BPQ_OLY_Forest_WS_Cave_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Cave2-Description\", \"Find the entrance of the cave deeper in the valley.\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_WS_Stockpile_Cave2"
+            }
+        },
+        {
+            "Name": "OLY_Forest_WS_Stockpile_Bauxite",
+            "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Deposit_Bauxite.BPQ_OLY_Forest_WS_Stockpile_Deposit_Bauxite_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Bauxite-Description\", \"{0} / {1} Aluminium Ore\")"
         }
     ]
 }
