@@ -27808,6 +27808,30 @@
             ]
         },
         {
+            "Name": "Prospect_Styx_E_Extraction",
+            "ExtraData": {
+                "RowName": "STYX_E_Extraction",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 2250,
+                "Y": 350
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_E_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Workshop_Dropship_Beacon",
             "ExtraData": {
                 "RowName": "Meta_Dropship_Beacon",
@@ -27882,6 +27906,30 @@
             ],
             "RequiredLevel": 20,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Shield_Wooden",
+            "ExtraData": {
+                "RowName": "Item_Shield_Wooden",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 3600,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Crafting_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
         }
     ]
 }
