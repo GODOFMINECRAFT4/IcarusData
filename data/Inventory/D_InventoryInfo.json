@@ -1215,7 +1215,7 @@
                 "Value": "General"
             },
             "SlotTemplate": {
-                "RowName": "Any_Food"
+                "RowName": "Any_Food_ExceptSpoiled"
             },
             "StartingSlots": 1
         },
@@ -1228,6 +1228,16 @@
                 "RowName": "Any_Food_Or_Ice"
             },
             "StartingSlots": 12
+        },
+        {
+            "Name": "Fishing_Trap",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "General_Inventory_Slot"
+            },
+            "StartingSlots": 6
         }
     ]
 }
