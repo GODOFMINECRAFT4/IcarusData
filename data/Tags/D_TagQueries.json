@@ -4250,6 +4250,24 @@
                 "UserDescription": "Any Consumable Food Items",
                 "AutoDescription": " ALL(  ANY( Item.Consumable.Food ),  NONE( Item.Consumable.Food.Spoiled ) )"
             }
+        },
+        {
+            "Name": "Any_Fish",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "NPC.Fish"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( NPC.Fish )"
+            }
         }
     ]
 }
