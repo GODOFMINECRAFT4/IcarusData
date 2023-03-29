@@ -6996,13 +6996,7 @@
         {
             "Name": "PRO_Story_5_Outpost",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_Outpost.BPQ_PRO_Story5_Outpost_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost-Description\", \"Transmit Data to Group 15\")",
-            "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "PromDispatchEvent6",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost-Description\", \"Transmit Data to Group 15\")"
         },
         {
             "Name": "PRO_Story_5_Outpost_Power",
@@ -7560,6 +7554,21 @@
             "Name": "STYX_B_Research_Craft",
             "Class": "/Game/BP/Quests/Styx/B/Research/BPQ_STYX_B_Research_Craft.BPQ_STYX_B_Research_Craft_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_B_Research_Craft-Description\", \"Layered Plating can be crafted at the Fabricator\")"
+        },
+        {
+            "Name": "PRO_Story_5_Outpost_FindScanner",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story5/BPQ_PRO_Story5_FindScanner.BPQ_PRO_Story5_FindScanner_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story_5_Outpost_FindScanner-Description\", \"Reach the Data Storage Communicator\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromDispatchEvent6",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestStart": {
+                    "RowName": "PromDispatchEvent5",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         }
     ]
 }

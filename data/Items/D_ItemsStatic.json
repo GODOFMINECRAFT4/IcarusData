@@ -33069,7 +33069,7 @@
                 "RowName": "Inventory_Firepit"
             },
             "Processing": {
-                "RowName": "Firepit"
+                "RowName": "FirePit"
             },
             "Thermal": {
                 "RowName": "FirePit"
@@ -75163,44 +75163,6 @@
             }
         },
         {
-            "Name": "Mission_Communication_Blueprint_T2",
-            "Meshable": {
-                "RowName": "Mesh_Mission_Communication_Blueprint_T2"
-            },
-            "Itemable": {
-                "RowName": "Item_Mission_Communication_Blueprint_T2"
-            },
-            "Interactable": {
-                "RowName": "Item"
-            },
-            "Highlightable": {
-                "RowName": "Generic"
-            },
-            "Decayable": {
-                "RowName": "Decay_General"
-            },
-            "AdditionalStats": {
-                "(Value=\"IsInvolvedInQuest_?\")": 1
-            },
-            "Generated_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Traits.Meshable"
-                    },
-                    {
-                        "TagName": "Traits.Itemable"
-                    },
-                    {
-                        "TagName": "Traits.Interactable"
-                    },
-                    {
-                        "TagName": "Traits.Highlightable"
-                    }
-                ],
-                "ParentTags": []
-            }
-        },
-        {
             "Name": "AnimalCarcass_Needler",
             "Meshable": {
                 "RowName": "Mesh_Carcass_Needler"
@@ -78510,6 +78472,85 @@
             }
         },
         {
+            "Name": "AnimalCarcass_Snow_Striker",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Snow_Striker"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Snow_Striker"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_NoCarry"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
             "Name": "Dynamic_Mission_Beacon",
             "Meshable": {
                 "RowName": "Mesh_Portable_Beacon"
@@ -79568,6 +79609,63 @@
             }
         },
         {
+            "Name": "Fish_01",
+            "Meshable": {
+                "RowName": "Mesh_Fish01"
+            },
+            "Itemable": {
+                "RowName": "Item_Fish_01"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_Raw_Meat"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Fish"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Fish"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
             "Name": "Layered_Plating",
             "Meshable": {
                 "RowName": "Mesh_Layered_Plating"
@@ -79627,6 +79725,84 @@
                     },
                     {
                         "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Wood_Lure",
+            "Meshable": {
+                "RowName": "Mesh_Fiber_Fishing_Lure"
+            },
+            "Itemable": {
+                "RowName": "Item_Wood_Lure"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Wood_Fishing_Rod"
+            },
+            "Usable": {
+                "RowName": "Repair"
+            },
+            "Durable": {
+                "RowName": "Basic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Experience": {
+                "RowName": "CatchFish"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Attachments": {
+                "RowName": "Fish_Quality_1"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Attachment.FishingRod"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Attachment.FishingRod"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
                     },
                     {
                         "TagName": "Traits.Durable"
@@ -79723,6 +79899,354 @@
                     },
                     {
                         "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Rhubarb",
+            "Meshable": {
+                "RowName": "Mesh_Rhubarb"
+            },
+            "Itemable": {
+                "RowName": "Item_Rhubarb"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Raw_Food"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Fruit_Vegetable"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Raw"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Mushroom"
+                    },
+                    {
+                        "TagName": "Item.Seed"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Raw"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Mushroom"
+                    },
+                    {
+                        "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Kumara",
+            "Meshable": {
+                "RowName": "Mesh_Kumara"
+            },
+            "Itemable": {
+                "RowName": "Item_Kumara"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Raw_Food"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Fruit_Vegetable"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Raw"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Mushroom"
+                    },
+                    {
+                        "TagName": "Item.Seed"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Raw"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Mushroom"
+                    },
+                    {
+                        "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Avocado",
+            "Meshable": {
+                "RowName": "Mesh_Avocado"
+            },
+            "Itemable": {
+                "RowName": "Item_Avocado"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Raw_Food"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Fruit_Vegetable"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Raw"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Mushroom"
+                    },
+                    {
+                        "TagName": "Item.Seed"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Raw"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Mushroom"
+                    },
+                    {
+                        "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Strawberry",
+            "Meshable": {
+                "RowName": "Mesh_Strawberry"
+            },
+            "Itemable": {
+                "RowName": "Item_Strawberry"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Raw_Food"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Fruit_Vegetable"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Raw"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Mushroom"
+                    },
+                    {
+                        "TagName": "Item.Seed"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Raw"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Mushroom"
+                    },
+                    {
+                        "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
                     }
                 ],
                 "ParentTags": []
