@@ -10,11 +10,13 @@
         "Quote": "",
         "Rarity": "Common",
         "Type": "Freshwater",
+        "Maps": [],
         "Biomes": [],
         "MinWeight": 100,
         "MaxWeight": 10000,
         "MinLength": 10,
         "MaxLength": 1000,
+        "Lures": [],
         "CaptureStat": {
             "Value": "None"
         }
@@ -28,12 +30,32 @@
             },
             "Lore": "INVTEXT(\"[DNT] Due to exotic exposure this fish has mutated to breed at an alarming rate, faster than most prospectors can fish.\")",
             "Quote": "INVTEXT(\"[DNT] That is one Ugly Fish\")",
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
             "Biomes": [
                 {
                     "Value": "Conifer"
                 },
                 {
                     "Value": "Pro_GrassyPlains"
+                }
+            ],
+            "Lures": [
+                {
+                    "RowName": "Bone_Lure",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Gold_Ore_Lure",
+                    "DataTableName": "D_ItemsStatic"
                 }
             ],
             "CaptureStat": {
