@@ -6415,6 +6415,10 @@
                 "QuestStart": {
                     "RowName": "PromNomadEvent1",
                     "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PromNomadEvent2",
+                    "DataTableName": "D_Dialogue"
                 }
             }
         },
@@ -6546,13 +6550,7 @@
         {
             "Name": "PRO_Story2_Investigate_Travel",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")",
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "PromOffenderEvent3",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story2_Investigate_Travel-Description\", \"Reach the Specified Location (M)\")"
         },
         {
             "Name": "PRO_Story2_Investigate_Clear",
