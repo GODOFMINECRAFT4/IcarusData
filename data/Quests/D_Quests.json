@@ -1752,7 +1752,7 @@
         {
             "Name": "OLY_Riverlands_Expedition_Retrieve_Beacon",
             "Class": "/Game/BP/Quests/Olympus/Riverlands/Expedition/BPQ_OLY_Riverlands_Retrieve_Beacon.BPQ_OLY_Riverlands_Retrieve_Beacon_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Expedition_Retrieve_Beacon-Description\", \"Collect beacon from dropship\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Expedition_Retrieve_Beacon-Description\", \"Collect beacon from the supply crate\")",
             "LocationQuery": {
                 "RowName": "T3_Riverlands_Expedition_Beacon"
             }
@@ -7633,11 +7633,11 @@
         {
             "Name": "DYN_Lost_Repair_Pieces",
             "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost_Repair_Pieces.BPQ_DYN_Lost_Repair_Pieces_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Repair_Pieces-Description\", \"Base has {0} Pieces Remaning (0 Results in a mission failure)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Repair_Pieces-Description\", \"Base has {0} Pieces Remaining (0 Results in a mission failure)\")"
         },
         {
             "Name": "DYN_Lost_Loot",
-            "Class": "/Script/Icarus.Quest",
+            "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost_Loot.BPQ_DYN_Lost_Loot_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Loot-Description\", \"(Optional) Salvage any resources within the base\")"
         },
         {
@@ -7654,6 +7654,116 @@
             "Name": "DYN_Lost_Clear_Boss",
             "Class": "/Game/BP/Quests/Dynamic/Lost/BPQ_DYN_Lost.BPQ_DYN_Lost_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"DYN_Lost_Clear_Boss-Description\", \"Defeat the {0}\")"
+        },
+        {
+            "Name": "STYX_A_Extermination2",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2.BPQ_STYX_A_Extermination2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2-Description\", \"EXTERMINATION: Great River Hunter\")"
+        },
+        {
+            "Name": "STYX_A_Extermination2_Hunt",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Hunt.BPQ_STYX_A_Extermination2_Hunt_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Hunt-Description\", \"Hunt Creatures - The Great River: {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Extermination2_Hunt_0",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Hunt.BPQ_STYX_A_Extermination2_Hunt_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Hunt_0-Description\", \"Hunt Creatures - Frozen Traverse: {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Extermination2_Hunt_1",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Hunt.BPQ_STYX_A_Extermination2_Hunt_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Hunt_1-Description\", \"Hunt Creatures - Enclosed Wood: {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Extermination2_Hunt_2",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Hunt.BPQ_STYX_A_Extermination2_Hunt_C",
+            "Variation": 3,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Hunt_2-Description\", \"Hunt Creatures - Oasis: {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Extermination2_Hunt_3",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Hunt.BPQ_STYX_A_Extermination2_Hunt_C",
+            "Variation": 4,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Hunt_3-Description\", \"Hunt Creatures - Alpine Valley: {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Extermination2_Hunt_4",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Hunt.BPQ_STYX_A_Extermination2_Hunt_C",
+            "Variation": 5,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Hunt_4-Description\", \"Hunt Creatures - Grove: {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Extermination2_Hunt_5",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Hunt.BPQ_STYX_A_Extermination2_Hunt_C",
+            "Variation": 6,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Hunt_5-Description\", \"Hunt Creatures - Dry Ridge: {0} / {1}\")"
+        },
+        {
+            "Name": "STYX_A_Extermination2_Build_List",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Build_List.BPQ_STYX_A_Extermination2_Build_List_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Build_List-Description\", \"Build lodges in designated areas for further hunt targets\")"
+        },
+        {
+            "Name": "STYX_A_Extermination2_Build",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Build.BPQ_STYX_A_Extermination2_Build_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Build-Description\", \"Large hunting lodge, The Great River central: {0}% complete\")",
+            "LocationQuery": {
+                "RowName": "STYX_River_CentralRampHill"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "MissionComplete15",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_A_Extermination2_Build_0",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Build.BPQ_STYX_A_Extermination2_Build_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Build_0-Description\", \"Small hidden hideout, The Great River north: {0}% complete\")",
+            "LocationQuery": {
+                "RowName": "STYX_River_HiddenWaterfallCave"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "DirectionNextStop3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_A_Extermination2_Build_1",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Build.BPQ_STYX_A_Extermination2_Build_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Build_1-Description\", \"Grand secluded refuge, Alpine Valley crater: {0}% complete\")",
+            "LocationQuery": {
+                "RowName": "STYX_AlpineValley_WestValley"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "DirectionWest1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_A_Extermination2_Build_2",
+            "Class": "/Game/BP/Quests/Styx/A/Extermination2/BPQ_STYX_A_Extermination2_Build.BPQ_STYX_A_Extermination2_Build_C",
+            "Variation": 3,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Extermination2_Build_2-Description\", \"Medium fortified chalet, Frozen Traverse terraces: {0}% complete\")",
+            "LocationQuery": {
+                "RowName": "STYX_FrozenTraverse_Terraces_Top"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "DirectionSouth2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         }
     ]
 }
