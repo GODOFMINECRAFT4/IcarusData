@@ -2141,7 +2141,7 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_PneumoniaDebuff.Icon_PneumoniaDebuff'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pneumonia-ModifierName\", \"Pneumonia\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pneumonia-ModifierDescription\", \"Severe infection of the lungs. Slows health and stamina regeneration. Heals over time.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pneumonia-ModifierDescription\", \"Severe infection of the lungs. Slows health and stamina regeneration. Counter with antibiotics, or wait it out.\")",
             "AudioData": {
                 "RowName": "Generic_Negative"
             },
@@ -6155,6 +6155,32 @@
                 }
             ],
             "MergeType": "Stack"
+        },
+        {
+            "Name": "SpikedBrambles",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Sprain.Icon_Sprain'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SpikedBrambles-ModifierName\", \"Spiked Brambles\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SpikedBrambles-ModifierDescription\", \"Being slowed and damaged from Spiked Brambles\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -40
+            },
+            "Escalation": {
+                "RowName": "Cold_Escalation"
+            },
+            "EscalationTime": 3,
+            "bRemovedOnEscalation": false,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Brambles.BP_Modifier_Brambles_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 4,
+                    "Deviation": 1
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 3
         }
     ]
 }
