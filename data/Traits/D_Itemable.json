@@ -8747,6 +8747,15 @@
             "Weight": 1250
         },
         {
+            "Name": "Item_Shepherds_Pie",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shepherds_Pie-DisplayName\", \"Shepherd\\'s Pie\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_ShepherdsPie.ITEM_ShepherdsPie",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Shepherds_Pie-Description\", \"An all rounder, this will keep you going.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Shepherds_Pie-FlavorText\", \"A hearty meal.\")",
+            "Weight": 500,
+            "MaxStack": 10
+        },
+        {
             "Name": "Item_Cooked_Soy_Bean",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Cooked_Soy_Bean-DisplayName\", \"Crunchy Soy Bean\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_CrunchySoybeans.ITEM_CrunchySoybeans",
@@ -10081,23 +10090,26 @@
         },
         {
             "Name": "Item_Spawn_Blocker_T2",
-            "DisplayName": "INVTEXT(\"[DNT] Spawn Blocker T2\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Spawn_Blocker_T2-DisplayName\", \"Simple Creature Deterrent\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Spawn_Blocker_T2.ITEM_Spawn_Blocker_T2",
-            "Description": "INVTEXT(\"[DNT] Prevents Animal Spawns in a small area\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Spawn_Blocker_T2-Description\", \"A handy item that creates a zone of protection, preventing the spawning of creatures within its small radius.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Spawn_Blocker_T2-FlavorText\", \"Note to self: Only prevents creatures SPAWNING in the area... does not stop existing bears...\")",
             "Weight": 5000
         },
         {
             "Name": "Item_Spawn_Blocker_T3",
-            "DisplayName": "INVTEXT(\"[DNT] Spawn Blocker T3\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Spawn_Blocker_T3-DisplayName\", \"Advanced Creature Deterrent\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Spawn_Blocker_T3.ITEM_Spawn_Blocker_T3",
-            "Description": "INVTEXT(\"[DNT] Prevents Animal Spawns in a large area, requires biofuel\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Spawn_Blocker_T3-Description\", \"A handy item that creates a zone of protection, preventing the spawning of creatures within its large radius. Requires Biofuel.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Spawn_Blocker_T3-FlavorText\", \"Note to self: Only prevents creatures SPAWNING in the area... does not stop existing bears...\")",
             "Weight": 8000
         },
         {
             "Name": "Item_Spawn_Blocker_T4",
-            "DisplayName": "INVTEXT(\"[DNT] Spawn Blocker T4\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Spawn_Blocker_T4-DisplayName\", \"Powered Creature Deterrent\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Spawn_Blocker_T4.T_ITEM_Spawn_Blocker_T4",
-            "Description": "INVTEXT(\"[DNT] Prevents Animal Spawns in a large area, requires electricity\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Spawn_Blocker_T4-Description\", \"A handy item that creates a zone of protection, preventing the spawning of creatures within its large radius. Requires electricity.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Spawn_Blocker_T4-FlavorText\", \"Note to self: Only prevents creatures SPAWNING in the area... does not stop existing bears...\")",
             "Weight": 10000
         },
         {
@@ -10597,6 +10609,257 @@
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Titanium_Plate-FlavorText\", \"Remarkable strong when shaped.\")",
             "Weight": 250,
             "MaxStack": 25
+        },
+        {
+            "Name": "Item_Bone_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Bone Head Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Hard_Leather_Head.ITEM_Hard_Leather_Head",
+            "Description": "INVTEXT(\"[DNT] Bone Head Armor\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Bone_Chest",
+            "DisplayName": "INVTEXT(\"[DNT] Bone Chest Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Hard_Leather_Chest.ITEM_Hard_Leather_Chest",
+            "Description": "INVTEXT(\"[DNT] Bone Chest Armor\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Bone_Arms",
+            "DisplayName": "INVTEXT(\"[DNT] Bone Arm Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Hard_Leather_Arms.ITEM_Hard_Leather_Arms",
+            "Description": "INVTEXT(\"[DNT] Bone Arm Armor\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Bone_Legs",
+            "DisplayName": "INVTEXT(\"[DNT] Bone Leg Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Hard_Leather_Legs.ITEM_Hard_Leather_Legs",
+            "Description": "INVTEXT(\"[DNT] Bone Leg Armor\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Bone_Feet",
+            "DisplayName": "INVTEXT(\"[DNT] Bone Feet Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Hard_Leather_Feet.ITEM_Hard_Leather_Feet",
+            "Description": "INVTEXT(\"[DNT] Bone Feet Armor\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Obsidian_Axe",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Axe\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Obsidian_Pickaxe",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Pickaxe\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Obsidian_Knife",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Knife\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Obsidian_Throwing_Knife",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Throwing Knife\")",
+            "Weight": 250,
+            "MaxStack": 50
+        },
+        {
+            "Name": "Item_Obsidian_Spear",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Spear\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Obsidian_Throwing_Spear",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Throwing Spear\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Obsidian_Sickle",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Sickle\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Obsidian_Sledgehammer",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Axe\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Obsidian_Arrow",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Arrow\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Obsidian_Bolt",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Bolt\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Obsidian_Rifle_Round",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Rifle Round\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Obsidian_Pistol_Round",
+            "DisplayName": "INVTEXT(\"[DNT] Obsidian Pistol Round\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Cold_Steel_Ingot",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Cold_Steel_Ingot-DisplayName\", \"Cold Steel Ingot\")",
+            "Description": "INVTEXT(\"[DNT] Steel Ingot + Super Cooled Ice, Very very cold\")",
+            "FlavorText": "INVTEXT(\"[DNT]\")",
+            "Weight": 400,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Cold_Steel_Axe",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Axe\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cold_Steel_Pickaxe",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Pickaxe\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cold_Steel_Knife",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Knife\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cold_Steel_Throwing_Knife",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Throwing Knife\")",
+            "Weight": 250,
+            "MaxStack": 50
+        },
+        {
+            "Name": "Item_Cold_Steel_Spear",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Spear\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cold_Steel_Throwing_Spear",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Throwing Spear\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Cold_Steel_Sickle",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Sickle\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cold_Steel_Sledgehammer",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Axe\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cold_Steel_Arrow",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Arrow\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cold_Steel_Bolt",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Bolt\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cold_Steel_Rifle_Round",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Rifle Round\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Cold_Steel_Pistol_Round",
+            "DisplayName": "INVTEXT(\"[DNT] Cold Steel Pistol Round\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Raw_Iron_Wood",
+            "DisplayName": "INVTEXT(\"[DNT] Crystallised Miasma\")",
+            "Description": "INVTEXT(\"[DNT] Toxic Resource Dropped by creatures in the Swamp biome\")",
+            "FlavorText": "INVTEXT(\"[DNT]\")",
+            "Weight": 100,
+            "MaxStack": 200
+        },
+        {
+            "Name": "Item_Refined_Iron_Wood",
+            "DisplayName": "INVTEXT(\"[DNT] Distilled Miasmic Coating\")",
+            "Description": "INVTEXT(\"[DNT] Steel + Miasma\")",
+            "FlavorText": "INVTEXT(\"[DNT]\")",
+            "Weight": 300,
+            "MaxStack": 50
+        },
+        {
+            "Name": "Item_Iron_Wood_Axe",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Axe\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Iron_Wood_Pickaxe",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Pickaxe\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Iron_Wood_Knife",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Knife\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Iron_Wood_Throwing_Knife",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Throwing Knife\")",
+            "Weight": 250,
+            "MaxStack": 50
+        },
+        {
+            "Name": "Item_Iron_Wood_Spear",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Spear\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Iron_Wood_Throwing_Spear",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Throwing Spear\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Iron_Wood_Sickle",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Sickle\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Iron_Wood_Sledgehammer",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Axe\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Iron_Wood_Arrow",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Arrow\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Iron_Wood_Bolt",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Bolt\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Iron_Wood_Rifle_Round",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Rifle Round\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Iron_Wood_Pistol_Round",
+            "DisplayName": "INVTEXT(\"[DNT] Iron Wood Pistol Round\")",
+            "Weight": 10,
+            "MaxStack": 100
         }
     ]
 }
