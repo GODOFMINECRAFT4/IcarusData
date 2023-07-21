@@ -74,8 +74,7 @@
                 }
             },
             "ShouldTick": true,
-            "MergeType": "Stack",
-            "MaxStackNum": 4
+            "MergeType": "Count"
         },
         {
             "Name": "DamageOverTime_Burning",
@@ -1256,7 +1255,7 @@
             "GrantedStats": {
                 "(Value=\"BaseMovementSpeed_+%\")": -90
             },
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Electric.BP_ModifierStateBehaviour_TickDamage_Electric_C",
             "ModifierVariables": {
                 "Damage": {
                     "BaseValue": 4,
@@ -6419,16 +6418,20 @@
                 "TagDictionary": [
                     {
                         "TagName": "ModifierState.ExtingishFire"
+                    },
+                    {
+                        "TagName": "Harvest.Node"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     3,
-                    1,
-                    0
+                    2,
+                    0,
+                    1
                 ],
-                "AutoDescription": " NONE( ModifierState.ExtingishFire )"
+                "AutoDescription": " NONE( ModifierState.ExtingishFire, Harvest.Node )"
             },
             "bEffectsObjects": true
         },
@@ -6453,6 +6456,21 @@
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Harvest.Node"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Harvest.Node )"
+            },
             "bEffectsObjects": true
         },
         {
@@ -6475,7 +6493,22 @@
                 }
             },
             "ShouldTick": true,
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Harvest.Node"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Harvest.Node )"
+            }
         },
         {
             "Name": "Drink_Heated",
@@ -6566,6 +6599,186 @@
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
             "bEffectsPlayers": false
+        },
+        {
+            "Name": "Carrying_Miasmic_Items",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_PoisonAttack.Icon_BestTrait_PoisonAttack'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Carrying_Miasmic_Items-ModifierName\", \"Carrying Miasmic Items\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Carrying_Miasmic_Items-ModifierDescription\", \"While carrying slowly drains health until cleaned.\")",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 1,
+                    "Deviation": 1
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 10,
+            "MergeType": "Count"
+        },
+        {
+            "Name": "Shallow_Water",
+            "ModifierName": "INVTEXT(\"[DNT] Shallow Water\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Should have brought your waders\")",
+            "VisibleToPlayer": false,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "GrantedAura_SulfurPool",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_SulfurPool-ModifierName\", \"Aura: Sulfur Pool\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_SulfurPool-ModifierDescription\", \"Damage From Nearby Sulfur Pools\")",
+            "VisibleToPlayer": false,
+            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_SulfurGas.ModifierCosmetic_SulfurGas_C",
+            "bAura": true,
+            "AuraRange": 10000,
+            "AuraFlags": {
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "SulfurPool"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "SulfurPool",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SulfurPool-ModifierName\", \"Sulfur Pool\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SulfurPool-ModifierDescription\", \"Sulfur Damage\")",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 5,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "Exposure_Ash",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Ash Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to an ash storm, reduces movement speed and increases oxygen consumption.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20,
+                "(Value=\"BaseOxygenConsumption_+%\")": 25,
+                "(Value=\"BaseProcessorResourceClog_%\")": 80
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_AcidRain",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Acid Rain Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to an acid rain storm, reduces movement speed and damages.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Embers",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Embers Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to an ember storm, reduces movement speed and increases water consumption.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20,
+                "(Value=\"BaseWaterConsumption_+%\")": 25
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Hail",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Hail Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a hail storm, reduces movement speed and damages.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_SwampWind",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Winds Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a wind storm, reduces movement speed and sprint speed.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -40,
+                "(Value=\"BaseSprintSpeed_+%\")": -20
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_AcidFog",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Acid Fog Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to an acid fog storm, reduces movement speed and damages.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Gasses",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Putrid Gasses Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a putrid gas storm, reduces movement speed and increases spoil rate.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20,
+                "(Value=\"BaseInventorySpoilRate_+%\")": 50
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
         }
     ]
 }

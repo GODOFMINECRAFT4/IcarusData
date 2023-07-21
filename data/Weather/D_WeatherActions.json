@@ -119,7 +119,20 @@
         },
         "DamageTag_DamageType": "Undefined",
         "bEnableProcessorClog": false,
-        "Curve_ProcessorClog": "None"
+        "Curve_ProcessorClog": "None",
+        "bEnablePlayerItemDamageTag": false,
+        "bDamageFocusedItem": false,
+        "Curve_PlayerItemDamageTag": "None",
+        "PlayerItemDamageTag_Intensity": 0,
+        "PlayerItemDamageTag_DutyCycle": 10,
+        "PlayerItemDamageTag_Query": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
+        "InventoryID": {
+            "Value": "None"
+        },
+        "PlayerItemDamageTag_DamageType": "Undefined"
     },
     "Rows": [
         {
@@ -173,21 +186,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 4,
@@ -211,8 +227,8 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-snow3.icon-weather-snow3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.007499000057578087,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
                     "B": 0,
                     "A": 0.20000000298023224
                 }
@@ -224,21 +240,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Clouds": true,
@@ -367,21 +386,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableFillable_Rain": true,
@@ -420,21 +442,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Rain": true,
@@ -510,9 +535,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.7991030216217041,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -523,21 +548,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -573,21 +601,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 3,
@@ -605,9 +636,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand3.icon-weather-sand3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -618,21 +649,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bGeneratesThunder": true,
@@ -668,9 +702,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.7991030216217041,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -680,21 +714,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -719,9 +756,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -761,21 +798,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 4,
@@ -797,9 +837,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind3.icon-weather-wind3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -810,21 +850,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Rain": true,
@@ -860,9 +903,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -969,21 +1012,24 @@
                         "RowName": "LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableFillable_Rain": true,
@@ -1022,21 +1068,24 @@
                         "RowName": "LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Rain": true,
@@ -1160,21 +1209,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableFillable_Rain": true,
@@ -1222,21 +1274,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Rain": true,
@@ -1317,9 +1372,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.9911019802093506,
-                    "G": 0.6307569742202759,
-                    "B": 0.13843199610710144,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -1330,21 +1385,24 @@
                         "RowName": "Desert_LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -1380,21 +1438,24 @@
                         "RowName": "Desert_LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 1,
@@ -1412,9 +1473,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand3.icon-weather-sand3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -1425,21 +1486,24 @@
                         "RowName": "Desert_LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "ThunderIntensity": 1,
@@ -1478,9 +1542,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.7991030216217041,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -1490,21 +1554,24 @@
                         "RowName": "Desert_LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -1529,9 +1596,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.7991030216217041,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -1542,21 +1609,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -1592,21 +1662,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 6,
@@ -1624,9 +1697,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand3.icon-weather-sand3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -1637,21 +1710,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bGeneratesLightning": true,
@@ -1690,9 +1766,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.7991030216217041,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -1702,21 +1778,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -1786,21 +1865,24 @@
                         "RowName": "LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 1,
@@ -1824,8 +1906,8 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-snow3.icon-weather-snow3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.007499000057578087,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
                     "B": 0,
                     "A": 0.20000000298023224
                 }
@@ -1837,21 +1919,24 @@
                         "RowName": "LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Clouds": true,
@@ -1976,21 +2061,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 6,
@@ -2014,8 +2102,8 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-snow3.icon-weather-snow3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.007499000057578087,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
                     "B": 0,
                     "A": 0.20000000298023224
                 }
@@ -2027,21 +2115,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Clouds": true,
@@ -2188,14 +2279,16 @@
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableFillable_Rain": true,
@@ -2301,14 +2394,16 @@
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormWindDamagePeriod": 12,
@@ -2364,9 +2459,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.9911019802093506,
-                    "G": 0.6307569742202759,
-                    "B": 0.13843199610710144,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -2377,14 +2472,16 @@
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -2420,14 +2517,16 @@
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormWindDamagePeriod": 6,
@@ -2443,9 +2542,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.7991030216217041,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -2455,14 +2554,16 @@
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -2534,21 +2635,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableFillable_Rain": true,
@@ -2680,21 +2784,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bGeneratesLightning": true,
@@ -2726,21 +2833,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
@@ -2806,9 +2916,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -2848,21 +2958,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 2,
@@ -2881,9 +2994,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -2894,21 +3007,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Rain": true,
@@ -2944,9 +3060,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-cloud2.icon-weather-cloud2",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -3023,21 +3139,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableFillable_Rain": true,
@@ -3081,21 +3200,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Rain": true,
@@ -3176,9 +3298,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -3218,21 +3340,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 4,
@@ -3254,9 +3379,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind3.icon-weather-wind3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -3267,21 +3392,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Rain": true,
@@ -3318,9 +3446,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -3350,9 +3478,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -3392,21 +3520,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 0.5,
@@ -3425,9 +3556,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -3438,21 +3569,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Rain": true,
@@ -3488,9 +3622,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-cloud2.icon-weather-cloud2",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -3565,21 +3699,24 @@
                         "RowName": "LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 2,
@@ -3603,8 +3740,8 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-snow3.icon-weather-snow3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.007499000057578087,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
                     "B": 0,
                     "A": 0.20000000298023224
                 }
@@ -3616,21 +3753,24 @@
                         "RowName": "LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Clouds": true,
@@ -3757,21 +3897,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bGeneratesLightning": true,
@@ -3800,8 +3943,8 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-snow3.icon-weather-snow3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.007499000057578087,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
                     "B": 0,
                     "A": 0.20000000298023224
                 }
@@ -3813,21 +3956,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Clouds": true,
@@ -3956,21 +4102,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 5.5,
@@ -3994,8 +4143,8 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-snow3.icon-weather-snow3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.007499000057578087,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
                     "B": 0,
                     "A": 0.20000000298023224
                 }
@@ -4007,21 +4156,24 @@
                         "RowName": "HeavyStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "HeavyStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Clouds": true,
@@ -4115,21 +4267,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Rain": true,
@@ -4181,9 +4336,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.7991030216217041,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -4194,21 +4349,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -4231,9 +4389,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand2.icon-weather-sand2",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.9911019802093506,
-                    "G": 0.6307569742202759,
-                    "B": 0.13843199610710144,
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
                     "A": 0.20000000298023224
                 }
             },
@@ -4244,21 +4402,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 4,
@@ -4276,9 +4437,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand3.icon-weather-sand3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -4289,21 +4450,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bGeneratesLightning": true,
@@ -4342,9 +4506,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.7991030216217041,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -4354,21 +4518,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -4393,9 +4560,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.7991030216217041,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -4406,21 +4573,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -4439,9 +4609,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand2.icon-weather-sand2",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.9911019802093506,
-                    "G": 0.6307569742202759,
-                    "B": 0.13843199610710144,
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
                     "A": 0.20000000298023224
                 }
             },
@@ -4452,21 +4622,24 @@
                         "RowName": "MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormWindDamagePeriod": 6,
@@ -4480,9 +4653,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand3.icon-weather-sand3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -4493,21 +4666,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bGeneratesThunder": true,
@@ -4535,9 +4711,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sand1.icon-weather-sand1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.7991030216217041,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -4547,21 +4723,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Debris": true,
@@ -4583,9 +4762,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -4624,21 +4803,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 3,
@@ -4660,9 +4842,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind3.icon-weather-wind3",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -4673,21 +4855,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableVisuals_Rain": true,
@@ -4727,9 +4912,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -4773,21 +4958,24 @@
                         "RowName": "Desert_MediumStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.990000": {
                     "Modifier": {
                         "RowName": "Desert_MediumStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
@@ -4827,9 +5015,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -4839,21 +5027,24 @@
                         "RowName": "Desert_LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
@@ -4893,21 +5084,24 @@
                         "RowName": "Desert_LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 0.5,
@@ -4926,9 +5120,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind1.icon-weather-wind1",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.577580988407135,
-                    "G": 0.009720999747514725,
-                    "B": 0.0036770000588148832,
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
                     "A": 0.20000000298023224
                 }
             },
@@ -4939,21 +5133,24 @@
                         "RowName": "Desert_LightStorm_HeavyExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.500000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_MediumExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 },
                 "0.750000": {
                     "Modifier": {
                         "RowName": "Desert_LightStorm_LightExposure",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Generic_010.C_Weather_Generic_010",
@@ -4992,9 +5189,9 @@
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-cloud2.icon-weather-cloud2",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
-                    "R": 0.6514059901237488,
-                    "G": 0.8307700157165527,
-                    "B": 0.42326799035072327,
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
                     "A": 0.20000000298023224
                 }
             },
@@ -5020,7 +5217,7 @@
             "Severity_SandEnd": 0.10000000149011612
         },
         {
-            "Name": "HeavyAsh_Start",
+            "Name": "Ash_Start",
             "bIsRampingUp": true,
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
             "TimelineTailBrush": {
@@ -5056,7 +5253,7 @@
             "Curve_ProcessorClog": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain"
         },
         {
-            "Name": "HeavyAsh_Body",
+            "Name": "Ash_Body",
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
@@ -5066,28 +5263,15 @@
                     "A": 0.20000000298023224
                 }
             },
-            "ExposureMultiplier": 3,
+            "ExposureMultiplier": 1,
             "ExposureModifiers": {
-                "0.010000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_HeavyExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                },
-                "0.500000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_MediumExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                },
                 "0.990000": {
                     "Modifier": {
-                        "RowName": "MediumStorm_LightExposure",
+                        "RowName": "Exposure_Ash",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "StormTier": 2,
@@ -5102,7 +5286,41 @@
             "Curve_ProcessorClog": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Flat_Top.C_Weather_Flat_Top"
         },
         {
-            "Name": "HeavyAsh_Stop",
+            "Name": "Ash_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Ash",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                }
+            },
+            "StormTier": 2,
+            "StormWindDamagePeriod": 6,
+            "Damage_Deployables_MinInterval": 4,
+            "Damage_Deployables_MaxInterval": 6,
+            "Damage_Deployables_Intensity": 0.5,
+            "FireExtinguish_RollChanceMulti": 1,
+            "FireExtinguish_MinInterval": 2,
+            "FireExtinguish_MaxInterval": 4,
+            "bEnableProcessorClog": true,
+            "Curve_ProcessorClog": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Flat_Top.C_Weather_Flat_Top"
+        },
+        {
+            "Name": "Ash_Stop",
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
             "TimelineTailBrush": {
                 "SpecifiedColor": {
@@ -5188,28 +5406,51 @@
                     "A": 0.20000000298023224
                 }
             },
-            "ExposureMultiplier": 2,
+            "ExposureMultiplier": 1,
             "ExposureModifiers": {
-                "0.010000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_HeavyExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                },
-                "0.500000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_MediumExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                },
                 "0.990000": {
                     "Modifier": {
-                        "RowName": "MediumStorm_LightExposure",
+                        "RowName": "Exposure_AcidRain",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                }
+            },
+            "bEnableDamage_Players": true,
+            "Damage_Players_MinInterval": 1,
+            "Damage_Players_MaxInterval": 4,
+            "Damage_Players_Intensity": 1,
+            "bEnableDamageTag": true,
+            "Curve_DamageTag": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Flat_Top.C_Weather_Flat_Top",
+            "DamageTag_Intensity": 7,
+            "DamageTag_DutyCycle": 5,
+            "DamageTag_Query": {
+                "RowName": "Building_Iron"
+            },
+            "DamageTag_DamageType": "Poison"
+        },
+        {
+            "Name": "AcidRain_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "Exposure_AcidRain",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableDamage_Players": true,
@@ -5320,28 +5561,51 @@
                     "A": 0.20000000298023224
                 }
             },
-            "ExposureMultiplier": 3,
+            "ExposureMultiplier": 1,
             "ExposureModifiers": {
-                "0.010000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_HeavyExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                },
-                "0.500000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_MediumExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                },
                 "0.990000": {
                     "Modifier": {
-                        "RowName": "MediumStorm_LightExposure",
+                        "RowName": "Exposure_Embers",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                }
+            },
+            "bEnableDamage_Players": true,
+            "Damage_Players_MinInterval": 1,
+            "Damage_Players_MaxInterval": 4,
+            "Damage_Players_Intensity": 0.5,
+            "bEnableDamageTag": true,
+            "Curve_DamageTag": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Flat_Top.C_Weather_Flat_Top",
+            "DamageTag_Intensity": 7,
+            "DamageTag_DutyCycle": 5,
+            "DamageTag_Query": {
+                "RowName": "Building_Emberable"
+            },
+            "DamageTag_DamageType": "Fire"
+        },
+        {
+            "Name": "Embers_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Embers",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableDamage_Players": true,
@@ -5401,123 +5665,6 @@
             "DamageTag_DamageType": "Fire"
         },
         {
-            "Name": "HeavyHail_Start",
-            "bIsRampingUp": true,
-            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
-            "TimelineTailBrush": {
-                "SpecifiedColor": {
-                    "R": 0.6509799957275391,
-                    "G": 0.792156994342804,
-                    "B": 0.4235289990901947,
-                    "A": 0.20000000298023224
-                }
-            },
-            "bEnableVisuals_Rain": true,
-            "Severity_RainEnd": 0.5,
-            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
-            "bEnableFillable_Rain": true,
-            "Rainfall_Millilitre_End": 8,
-            "bEnableVisuals_Clouds": true,
-            "Severity_CloudsEnd": 1,
-            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
-            "bEnableVisuals_Debris": true,
-            "Severity_DebrisEnd": 1,
-            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
-            "bEnableAction_Temperature": true,
-            "Temperature_End": -1000,
-            "Perception_Percentage": -5,
-            "bEnableVisuals_Wind": true,
-            "bEnableAction_Wind": true,
-            "Severity_WindEnd": 1,
-            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
-            "bEnableFireExtinguish": true,
-            "FireExtinguish_RollChanceMulti": 0.5,
-            "FireExtinguish_MinInterval": 2,
-            "FireExtinguish_MaxInterval": 4,
-            "bEnableVisuals_Hail": true,
-            "Severity_HailEnd": 1
-        },
-        {
-            "Name": "HeavyHail_Body",
-            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
-            "TimelineTailBrush": {
-                "SpecifiedColor": {
-                    "R": 0.992156982421875,
-                    "G": 0.6313729882240295,
-                    "B": 0.137254998087883,
-                    "A": 0.20000000298023224
-                }
-            },
-            "ExposureMultiplier": 2,
-            "ExposureModifiers": {
-                "0.010000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_HeavyExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                },
-                "0.500000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_MediumExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                },
-                "0.990000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_LightExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                }
-            },
-            "bEnableDamage_Deployables": true,
-            "Damage_Deployables_MinInterval": 1,
-            "Damage_Deployables_MaxInterval": 4,
-            "Damage_Deployables_Intensity": 0.30000001192092896,
-            "bEnableDamage_Players": true,
-            "Damage_Players_MinInterval": 1.5,
-            "Damage_Players_MaxInterval": 3,
-            "Damage_Players_Intensity": 0.10000000149011612
-        },
-        {
-            "Name": "HeavyHail_Stop",
-            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
-            "TimelineTailBrush": {
-                "SpecifiedColor": {
-                    "R": 0.6509799957275391,
-                    "G": 0.792156994342804,
-                    "B": 0.4235289990901947,
-                    "A": 0.20000000298023224
-                }
-            },
-            "bEnableVisuals_Rain": true,
-            "Severity_RainEnd": 0.5,
-            "Curve_Rain": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Rain.C_Weather_Rain",
-            "bEnableFillable_Rain": true,
-            "Rainfall_Millilitre_End": 8,
-            "bEnableVisuals_Clouds": true,
-            "Severity_CloudsEnd": 1,
-            "Curve_Clouds": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Cloud.C_Weather_Cloud",
-            "bEnableVisuals_Debris": true,
-            "Severity_DebrisEnd": 1,
-            "Curve_Debris": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Debris.C_Weather_Debris",
-            "bEnableAction_Temperature": true,
-            "Temperature_End": -1000,
-            "Perception_Percentage": -5,
-            "bEnableVisuals_Wind": true,
-            "bEnableAction_Wind": true,
-            "Severity_WindEnd": 1,
-            "Curve_Wind": "/Game/BP/Systems/Weather/Actions/Curves/C_Weather_Wind.C_Weather_Wind",
-            "bEnableFireExtinguish": true,
-            "FireExtinguish_RollChanceMulti": 0.5,
-            "FireExtinguish_MinInterval": 2,
-            "FireExtinguish_MaxInterval": 4,
-            "bEnableVisuals_Hail": true,
-            "Severity_HailEnd": 1
-        },
-        {
             "Name": "Hail_Start",
             "bIsRampingUp": true,
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
@@ -5565,28 +5712,47 @@
                     "A": 0.20000000298023224
                 }
             },
-            "ExposureMultiplier": 2,
+            "ExposureMultiplier": 1,
             "ExposureModifiers": {
-                "0.010000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_HeavyExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                },
-                "0.500000": {
-                    "Modifier": {
-                        "RowName": "MediumStorm_MediumExposure",
-                        "DataTableName": "D_ModifierStates"
-                    },
-                    "ModifierLifetime": 0
-                },
                 "0.990000": {
                     "Modifier": {
-                        "RowName": "MediumStorm_LightExposure",
+                        "RowName": "Exposure_Hail",
                         "DataTableName": "D_ModifierStates"
                     },
-                    "ModifierLifetime": 0
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                }
+            },
+            "bEnableDamage_Deployables": true,
+            "Damage_Deployables_MinInterval": 1,
+            "Damage_Deployables_MaxInterval": 4,
+            "Damage_Deployables_Intensity": 0.30000001192092896,
+            "bEnableDamage_Players": true,
+            "Damage_Players_MinInterval": 1.5,
+            "Damage_Players_MaxInterval": 3,
+            "Damage_Players_Intensity": 0.10000000149011612
+        },
+        {
+            "Name": "Hail_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Hail",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
                 }
             },
             "bEnableDamage_Deployables": true,
@@ -5638,6 +5804,14 @@
             "Name": "SwampWinds_Start",
             "bIsRampingUp": true,
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
             "bEnableVisuals_Debris": true,
             "Severity_DebrisEnd": 1,
             "bEnableAction_Temperature": true,
@@ -5655,14 +5829,335 @@
         },
         {
             "Name": "SwampWinds_Body",
-            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2"
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "Exposure_SwampWind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                }
+            }
+        },
+        {
+            "Name": "SwampWinds_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "Exposure_SwampWind",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                }
+            }
         },
         {
             "Name": "SwampWinds_Stop",
             "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
             "bEnableVisuals_Debris": true,
             "Severity_DebrisEnd": 1,
             "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": 15,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "bEnableVisuals_AcidRain": true,
+            "Severity_AcidRainEnd": 0.10000000149011612,
+            "Severity_FogDensityEnd": -1,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 0.10000000149011612
+        },
+        {
+            "Name": "AcidFog_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 1,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": 15,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "bEnableVisuals_AcidRain": true,
+            "Severity_AcidRainEnd": 0.10000000149011612,
+            "Severity_FogDensityEnd": -1,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 0.10000000149011612
+        },
+        {
+            "Name": "AcidFog_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 10,
+            "ExposureModifiers": {
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_AcidFog",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 50
+                },
+                "0.050000": {
+                    "Modifier": {
+                        "RowName": "Exposure_AcidFog",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 1
+                }
+            },
+            "bEnablePlayerItemDamageTag": true,
+            "bDamageFocusedItem": true,
+            "PlayerItemDamageTag_Intensity": 2,
+            "PlayerItemDamageTag_Query": {
+                "RowName": "Any_Armor"
+            },
+            "InventoryID": {
+                "Value": "Equipment"
+            },
+            "PlayerItemDamageTag_DamageType": "Poison"
+        },
+        {
+            "Name": "AcidFog_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 20,
+            "ExposureModifiers": {
+                "0.900000": {
+                    "Modifier": {
+                        "RowName": "Exposure_AcidFog",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 80
+                }
+            }
+        },
+        {
+            "Name": "AcidFog_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 1,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": 15,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "bEnableVisuals_AcidRain": true,
+            "Severity_AcidRainEnd": 0.10000000149011612,
+            "Severity_FogDensityEnd": -1,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 0.10000000149011612
+        },
+        {
+            "Name": "Gasses_Start",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 1,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": 15,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "bEnableVisuals_AcidRain": true,
+            "Severity_AcidRainEnd": 0.10000000149011612,
+            "Severity_FogDensityEnd": -1,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 0.10000000149011612
+        },
+        {
+            "Name": "Gasses_Body",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.992156982421875,
+                    "G": 0.6313729882240295,
+                    "B": 0.137254998087883,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 1,
+            "ExposureModifiers": {
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Gasses",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                }
+            }
+        },
+        {
+            "Name": "Gasses_Chaos",
+            "bIsRampingUp": true,
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.5764709711074829,
+                    "G": 0.007842999882996082,
+                    "B": 0,
+                    "A": 0.20000000298023224
+                }
+            },
+            "ExposureMultiplier": 2,
+            "ExposureModifiers": {
+                "0.990000": {
+                    "Modifier": {
+                        "RowName": "Exposure_Gasses",
+                        "DataTableName": "D_ModifierStates"
+                    },
+                    "ModifierLifetime": 0,
+                    "ModifierEffectiveness": 100
+                }
+            }
+        },
+        {
+            "Name": "Gasses_Stop",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 1,
+            "bEnableAction_Temperature": true,
+            "Temperature_End": -500,
+            "Perception_Percentage": 15,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "bEnableVisuals_AcidRain": true,
+            "Severity_AcidRainEnd": 0.10000000149011612,
+            "Severity_FogDensityEnd": -1,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 0.10000000149011612
+        },
+        {
+            "Name": "SulfurPoolReaction_Start",
+            "WeatherActionComponent": "/Game/BP/Systems/Weather/Actions/BP_WeatherAction_SulfurPoolsReaction.BP_WeatherAction_SulfurPoolsReaction_C",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 1,
+            "Temperature_End": -500,
+            "Perception_Percentage": 15,
+            "bEnableVisuals_Wind": true,
+            "bEnableAction_Wind": true,
+            "Severity_WindEnd": 0.800000011920929,
+            "bEnableVisuals_AcidRain": true,
+            "Severity_AcidRainEnd": 0.10000000149011612,
+            "Severity_FogDensityEnd": -1,
+            "bEnableVisuals_FogExtinction": true,
+            "Severity_FogExtinctionStart": 0.5,
+            "Severity_FogExtinctionEnd": 0.10000000149011612
+        },
+        {
+            "Name": "SulfurPoolReaction_End",
+            "WeatherActionComponent": "/Game/BP/Systems/Weather/Actions/BP_WeatherAction_SulfurPoolsReaction.BP_WeatherAction_SulfurPoolsReaction_C",
+            "TimelineIcon": "/Game/Assets/2DArt/UI/Icons/Icon_ComingSoon2.Icon_ComingSoon2",
+            "TimelineTailBrush": {
+                "SpecifiedColor": {
+                    "R": 0.6509799957275391,
+                    "G": 0.792156994342804,
+                    "B": 0.4235289990901947,
+                    "A": 0.20000000298023224
+                }
+            },
+            "bEnableVisuals_Debris": true,
+            "Severity_DebrisEnd": 1,
             "Temperature_End": -500,
             "Perception_Percentage": 15,
             "bEnableVisuals_Wind": true,

@@ -2830,6 +2830,25 @@
             "SupportsCustomRotation": false
         },
         {
+            "Name": "Clay_Brick_Door",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Doors/BP_Door_ClayBrick.BP_Door_ClayBrick_C",
+            "PreviewStaticMesh": "/Game/ASS/BLD/SM_BLD_Door_Brick.SM_BLD_Door_Brick",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "door_frame"
+            ],
+            "SnapSocketsOrTags": [
+                "door",
+                "door_b"
+            ],
+            "UseSnapSocketRotation": true,
+            "UseSnapSocketScale": true
+        },
+        {
             "Name": "Mission_Communicator_T2",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/MissionCommunication/BP_Mission_Communication_T2.BP_Mission_Communication_T2_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_MissionCommDevice_T2.SM_DEP_MissionCommDevice_T2",
@@ -3376,84 +3395,73 @@
             "Name": "Carved_Table_Round",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_TableRound.BP_Carved_TableRound_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningTable_Round_Wood_Carved/SM_DCO_DiningTable_Round_Wood_Carved.SM_DCO_DiningTable_Round_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Table_6Seater_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_TableDining_A.BP_Carved_TableDining_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Table_6Seater_A.ITEM_Carved_Table_6Seater_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningTable_6Seat_Wood_Carved/SM_DCO_DiningTable_6Seat_Wood_Carved_A.SM_DCO_DiningTable_6Seat_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Table_6Seater_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_TableDining_B.BP_Carved_TableDining_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Table_6Seater_B.ITEM_Carved_Table_6Seater_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningTable_6Seat_Wood_Carved/SM_DCO_DiningTable_6Seat_Wood_Carved_B.SM_DCO_DiningTable_6Seat_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Table_10Seater_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_TableDining10_A.BP_Carved_TableDining10_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Table_10Seater_A.ITEM_Carved_Table_10Seater_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningTable_10Seat_Wood_Carved/SM_DCO_DiningTable_10Seat_Wood_Carved_A.SM_DCO_DiningTable_10Seat_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Table_10Seater_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_TableDining10_B.BP_Carved_TableDining10_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Table_10Seater_B.ITEM_Carved_Table_10Seater_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningTable_10Seat_Wood_Carved/SM_DCO_DiningTable_10Seat_Wood_Carved_B.SM_DCO_DiningTable_10Seat_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Chair_Dining_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_ChairDining_A.BP_Carved_ChairDining_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Chair_Dining_A.ITEM_Carved_Chair_Dining_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningChair_Wood_Carved/SM_DCO_DiningChair_Wood_Carved_A.SM_DCO_DiningChair_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Chair_Dining_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_ChairDining_B.BP_Carved_ChairDining_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Chair_Dining_B.ITEM_Carved_Chair_Dining_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/DiningChair_Wood_Carved/SM_DCO_DiningChair_Wood_Carved_B.SM_DCO_DiningChair_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Chair_Living",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_ChairLiving.BP_Carved_ChairLiving_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/LivingChair_Wood_Carved/SM_DCO_LivingChair_Wood_Carved.SM_DCO_LivingChair_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Chair_Living_2Seater",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_ChairLiving_2Seater.BP_Carved_ChairLiving_2Seater_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/LivingCouch_2Seat_Wood_Carved/SM_DCO_LivingCouch_2Seat_Wood_Carved.SM_DCO_LivingCouch_2Seat_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Chair_Living_3Seater",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_ChairLiving_3Seater.BP_Carved_ChairLiving_3Seater_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/LivingCouch_3Seat_Wood_Carved/SM_DCO_LivingCouch_3Seat_Wood_Carved.SM_DCO_LivingCouch_3Seat_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Sitting_Bench",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_SittingBench.BP_Carved_SittingBench_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/SittingBench_Wood_Carved/SM_DCO_SittingBench_Wood_Carved.SM_DCO_SittingBench_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Wall_Shelf_A",
@@ -3479,40 +3487,35 @@
             "Name": "Carved_DisplayCabinet",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_DisplayCabinet.BP_Carved_DisplayCabinet_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/DisplayCabinet_Wood_Carved/SM_DCO_DisplayCabinet_Wood_Carved.SM_DCO_DisplayCabinet_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Wardrobe_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Wardrobe_A.BP_Carved_Wardrobe_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Wardrobe_A.ITEM_Carved_Wardrobe_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Wardrobe_Wood_Carved/SM_DCO_Wardrobe_Wood_Carved_A.SM_DCO_Wardrobe_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Wardrobe_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Wardrobe_B.BP_Carved_Wardrobe_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Wardrobe_B.ITEM_Carved_Wardrobe_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/Wardrobe_Wood_Carved/SM_DCO_Wardrobe_Wood_Carved_B.SM_DCO_Wardrobe_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Narrow_Wardrobe_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_WardrobeNarrow_A.BP_Carved_WardrobeNarrow_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Narrow_Wardrobe_A.ITEM_Carved_Narrow_Wardrobe_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Wardrobe_Wood_Carved/SM_DCO_Wardrobe_Narrow_Wood_Carved_A.SM_DCO_Wardrobe_Narrow_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Narrow_Wardrobe_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_WardrobeNarrow_B.BP_Carved_WardrobeNarrow_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Narrow_Wardrobe_B.ITEM_Carved_Narrow_Wardrobe_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/Wardrobe_Wood_Carved/SM_DCO_Wardrobe_Narrow_Wood_Carved_B.SM_DCO_Wardrobe_Narrow_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Candle_A",
@@ -3542,86 +3545,75 @@
             "Name": "Carved_Dresser",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Dresser.BP_Carved_Dresser_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Dresser_Wood_Carved/SM_DCO_Dresser_Wood_Carved.SM_DCO_Dresser_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Stool",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Stool.BP_Carved_Stool_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Stool_Counter_Wood_Carved/SM_DCO_Stool_Counter_Wood_Carved.SM_DCO_Stool_Counter_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Nightstand_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Nightstand_A.BP_Carved_Nightstand_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Nightstand_A.ITEM_Carved_Nightstand_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Nightstand_Wood_Carved/SM_DCO_NightstandWood_Carved_A.SM_DCO_NightstandWood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Nightstand_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Nightstand_B.BP_Carved_Nightstand_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Nightstand_B.ITEM_Carved_Nightstand_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/Nightstand_Wood_Carved/SM_DCO_Nightstand_Wood_Carved_B.SM_DCO_Nightstand_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Nightstand_C",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Nightstand_C.BP_Carved_Nightstand_C_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Nightstand_C.ITEM_Carved_Nightstand_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Nightstand_Wood_Carved/SM_DCO_Nightstand_Wood_Carved_C.SM_DCO_Nightstand_Wood_Carved_C",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Nightstand_D",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Nightstand_D.BP_Carved_Nightstand_D_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Nightstand_D.ITEM_Carved_Nightstand_D",
             "PreviewStaticMesh": "/Game/ASS/DCO/Nightstand_Wood_Carved/SM_DCO_Nightstand_Wood_Carved_D.SM_DCO_Nightstand_Wood_Carved_D",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Nightstand_E",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Nightstand_E.BP_Carved_Nightstand_E_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Nightstand_E.ITEM_Carved_Nightstand_E",
             "PreviewStaticMesh": "/Game/ASS/DCO/Nightstand_Wood_Carved/SM_DCO_Nightstand_Wood_Carved_E.SM_DCO_Nightstand_Wood_Carved_E",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Bed_A",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Bed_Carved_A.BP_Bed_Carved_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Bed_A.ITEM_Carved_Bed_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/BedSingle_Wood_Carved/SM_DCO_BedSingle_Wood_Carved_A.SM_DCO_BedSingle_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
             "Name": "Carved_Bed_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Bed_Carved_B.BP_Bed_Carved_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Bed_B.ITEM_Carved_Bed_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/BedSingle_Wood_Carved/SM_DCO_BedSingle_Wood_Carved_B.SM_DCO_BedSingle_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
             "Name": "Carved_Bed_C",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Bed_Carved_C.BP_Bed_Carved_C_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Bed_C.ITEM_Carved_Bed_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/BedSingle_Wood_Carved/SM_DCO_BedSingle_Wood_Carved_C.SM_DCO_BedSingle_Wood_Carved_C",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
             "Name": "Carved_Bookshelf",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_Bookshelf.BP_Carved_Bookshelf_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Bookshelf_Wood_Carved/SM_DCO_Bookshelf_Wood_Carved.SM_DCO_Bookshelf_Wood_Carved",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Desk_Lamp",
@@ -3635,16 +3627,14 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_CoffeeTable_A.BP_Carved_CoffeeTable_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Coffee_Table_A.ITEM_Carved_Coffee_Table_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/CoffeeTable_Wood_Carved/SM_DCO_CoffeeTable_Wood_Carved_A.SM_DCO_CoffeeTable_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Carved_Coffee_Table_B",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_CoffeeTable_B.BP_Carved_CoffeeTable_B_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Coffee_Table_B.ITEM_Carved_Coffee_Table_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/CoffeeTable_Wood_Carved/SM_DCO_CoffeeTable_Wood_Carved_B.SM_DCO_CoffeeTable_Wood_Carved_B",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
-            "MaxRestackingAmount": 1
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
         },
         {
             "Name": "Spawn_Blocker",
@@ -4165,7 +4155,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Conch.BP_AlienFossil_Conch_C",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"AlienFossil_Conch-DeployableName\", \"Large Alien Conch\")",
             "PreviewStaticMesh": "/Game/ASS/DCO/Conch/SM_DCO_ALN_Conch_A.SM_DCO_ALN_Conch_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_CONCH.SFX_DEP_CONCH",
             "WorldPlacementType": "GroundOrWallPlacement",
             "DeployCollisionExtentOffset": {
                 "Z": -5
@@ -4179,7 +4169,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Conch_Small.BP_AlienFossil_Conch_Small_C",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"AlienFossil_Conch_Small-DeployableName\", \"Small Alien Conch\")",
             "PreviewStaticMesh": "/Game/ASS/DCO/Conch/SM_DCO_ALN_Conch_A_Small.SM_DCO_ALN_Conch_A_Small",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_CONCH.SFX_DEP_CONCH",
             "WorldPlacementType": "GroundOrWallPlacement",
             "DeployCollisionExtentOffset": {
                 "Z": -3
