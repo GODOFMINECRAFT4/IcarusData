@@ -1544,10 +1544,10 @@
             "Base": {
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
                 "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
-                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
-                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
-                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
-                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 5000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 6000,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 45,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 500,
                 "(Value=\"BaseMaximumHealth_+\")": 25,
                 "(Value=\"BaseCharacterMass_+\")": 10,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
@@ -1816,7 +1816,7 @@
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
         {
-            "Name": "Slug",
+            "Name": "Swamp_Slug",
             "Base": {
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
@@ -1838,6 +1838,44 @@
                 "(Value=\"BaseSlowResistance_%\")": 10,
                 "(Value=\"BaseImmobiliseResistance_%\")": 10,
                 "(Value=\"BasePoisonDamageResistance_%\")": 90,
+                "(Value=\"BaseFrostDamageResistance_%\")": -50,
+                "(Value=\"BaseMovementSpeed_+\")": 150
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_SwampSlugHealth.C_SwampSlugHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_SwampSlugMeleeDamage.C_SwampSlugMeleeDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseWound_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_WolfWoundChance.C_WolfWoundChance'"
+                }
+            ],
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Lava_Slug",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10,
+                "(Value=\"BaseFireDamageResistance_%\")": 90,
                 "(Value=\"BaseFrostDamageResistance_%\")": -50,
                 "(Value=\"BaseMovementSpeed_+\")": 150
             },
@@ -1890,7 +1928,8 @@
                 "(Value=\"BaseCharacterMass_+\")": 10,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseExplosiveDamageRadius_+\")": 175,
-                "(Value=\"BaseExplosiveDamage_+\")": 35
+                "(Value=\"BaseExplosiveDamage_+\")": 35,
+                "(Value=\"\")": 0
             },
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_AlphaWolfMeleeDamage.C_AlphaWolfMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"

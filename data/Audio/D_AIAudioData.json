@@ -2884,6 +2884,15 @@
             "DeathCollisionSocket": "RigChestM",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
             "VocalisationSocket": "RigJawM",
+            "AttackVocalisation": {
+                "RowName": "SlugAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "SlugFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "SlugDeath"
+            },
             "StateVocalisations": {
                 "Idle": {
                     "StateEnteredVocalisation": {
@@ -2899,7 +2908,15 @@
                         "DataTableName": "D_Vocalisations"
                     }
                 }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
             }
+        },
+        {
+            "Name": "GasFlyer"
         }
     ]
 }

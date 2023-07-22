@@ -8568,6 +8568,7 @@
         {
             "Name": "PromOffenderEvent5",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/OFFENDER/PROM_OFFENDER_EVENT5.PROM_OFFENDER_EVENT5",
+            "Delay": 4,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromOffenderEvent5-Text-0\", \"Alright, uh, that looks like all of it. Time to blast it back up to Group 15.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromOffenderEvent5-Text-1\", \"Start heading back to the site marked on your map.\")"
@@ -9352,7 +9353,62 @@
                 "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent9-Text-0\", \"Excellent work Prospector.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent9-Text-1\", \"We\\'ve decided that destruction of this site and surrounding area is in the best interests of the Group.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent9-Text-2\", \"While we have no further use for this site. You may find useful items hidden around the criminal\\'s encampment.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent9-Text-3\", \"You have two minutes to move out of range of the orbital laser.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent9-Text-3\", \"Warning. Orbital laser charging sequence has begun.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent9-Text-4\", \"You have 30 seconds to evacuate the area.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent9-Text-5\", \"If you value your life then I\\'d recommend leaving the site.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent9-Text-6\", \"Now.\")"
+            ],
+            "bUseSubtitleOverrides": true,
+            "SubtitleOverrides": [
+                {
+                    "OverrideLength": 0,
+                    "SpeakerOverride": {
+                        "RowName": "None",
+                        "DataTableName": "D_DialogueSpeaker"
+                    }
+                },
+                {
+                    "OverrideLength": 0,
+                    "SpeakerOverride": {
+                        "RowName": "None",
+                        "DataTableName": "D_DialogueSpeaker"
+                    }
+                },
+                {
+                    "OverrideLength": 0,
+                    "SpeakerOverride": {
+                        "RowName": "None",
+                        "DataTableName": "D_DialogueSpeaker"
+                    }
+                },
+                {
+                    "OverrideLength": 0,
+                    "SpeakerOverride": {
+                        "RowName": "SMPL3",
+                        "DataTableName": "D_DialogueSpeaker"
+                    }
+                },
+                {
+                    "OverrideLength": 0,
+                    "SpeakerOverride": {
+                        "RowName": "SMPL3",
+                        "DataTableName": "D_DialogueSpeaker"
+                    }
+                },
+                {
+                    "OverrideLength": 0,
+                    "SpeakerOverride": {
+                        "RowName": "None",
+                        "DataTableName": "D_DialogueSpeaker"
+                    }
+                },
+                {
+                    "OverrideLength": 0,
+                    "SpeakerOverride": {
+                        "RowName": "None",
+                        "DataTableName": "D_DialogueSpeaker"
+                    }
+                }
             ]
         },
         {
@@ -11063,6 +11119,7 @@
         {
             "Name": "V2PromNomadEvent8.7",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/NOMAD_V2/V2_PROM_NOMAD_EVENT8_7.V2_PROM_NOMAD_EVENT8_7",
+            "Priority": -1,
             "Speaker": {
                 "RowName": "SMPL3"
             },

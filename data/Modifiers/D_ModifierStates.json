@@ -6632,26 +6632,32 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_SulfurPool-ModifierName\", \"Aura: Sulfur Pool\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_SulfurPool-ModifierDescription\", \"Damage From Nearby Sulfur Pools\")",
             "VisibleToPlayer": false,
-            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_SulfurGas.ModifierCosmetic_SulfurGas_C",
             "bAura": true,
             "AuraRange": 10000,
             "AuraFlags": {
+                "EffectsSelf": false,
                 "EffectsNPCs": true
             },
             "ModifierGrantedByAura": {
                 "RowName": "SulfurPool"
             },
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_SulfurPools.BP_Modifier_Aura_SulfurPools_C",
             "ShouldTick": true,
             "MergeType": "Replace",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
         },
         {
             "Name": "SulfurPool",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SulfurPool-ModifierName\", \"Sulfur Pool\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SulfurPool-ModifierDescription\", \"Sulfur Damage\")",
+            "ModifierName": "INVTEXT(\"[DNT] Sulfur Pool Reaction\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Being damaged and heated by a nearby Sulfur Pool Reaction\")",
+            "GrantedStats": {
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": -10,
+                "(Value=\"BaseInternalTemperatureModification_+\")": 500
+            },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage.BP_ModifierStateBehaviour_TickDamage_C",
             "ModifierVariables": {
                 "Damage": {
@@ -6664,7 +6670,7 @@
             "bEffectsObjects": true
         },
         {
-            "Name": "Exposure_Ash",
+            "Name": "Exposure_Volcanic_Ash",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
             "Type": "Debuff",
             "ModifierName": "INVTEXT(\"[DNT] Ash Exposure\")",
@@ -6673,16 +6679,28 @@
                 "RowName": "Exposure_Light"
             },
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -20,
-                "(Value=\"BaseOxygenConsumption_+%\")": 25,
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -20,
+                "(Value=\"BaseOxygenConsumption_+%\")": 40,
                 "(Value=\"BaseProcessorResourceClog_%\")": 80
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
-            "Name": "Exposure_AcidRain",
+            "Name": "Exposure_Volcanic_AcidRain",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
             "Type": "Debuff",
             "ModifierName": "INVTEXT(\"[DNT] Acid Rain Exposure\")",
@@ -6691,14 +6709,58 @@
                 "RowName": "Exposure_Light"
             },
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -20
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 8,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -400
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 26,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
-            "Name": "Exposure_Embers",
+            "Name": "Exposure_Volcanic_SulfurReaction",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Sulfur Reaction Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a sulfur storm, reduces movement speed and damages.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 8,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -400
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 26,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Volcanic_Embers",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
             "Type": "Debuff",
             "ModifierName": "INVTEXT(\"[DNT] Embers Exposure\")",
@@ -6707,48 +6769,86 @@
                 "RowName": "Exposure_Light"
             },
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -20,
-                "(Value=\"BaseWaterConsumption_+%\")": 25
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": -16,
+                "(Value=\"BaseInternalTemperatureModification_+\")": 800
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 26,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
-            "Name": "Exposure_Hail",
+            "Name": "Exposure_Volcanic_Heatwave",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Hail Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a hail storm, reduces movement speed and damages.\")",
+            "ModifierName": "INVTEXT(\"[DNT] Heatwave Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a heatwave, reduces movement speed and increases water consumption.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -20
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": -24,
+                "(Value=\"BaseInternalTemperatureModification_+\")": 1200
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
-            "Name": "Exposure_SwampWind",
+            "Name": "Exposure_Swamp_AcidRain",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Winds Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a wind storm, reduces movement speed and sprint speed.\")",
+            "ModifierName": "INVTEXT(\"[DNT] Acid Rain Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to an acid rain storm, reduces movement speed and damages.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -40,
-                "(Value=\"BaseSprintSpeed_+%\")": -20
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 8,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -400
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 26,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
-            "Name": "Exposure_AcidFog",
+            "Name": "Exposure_Swamp_AcidFog",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
             "Type": "Debuff",
             "ModifierName": "INVTEXT(\"[DNT] Acid Fog Exposure\")",
@@ -6757,28 +6857,321 @@
                 "RowName": "Exposure_Light"
             },
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -20
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -20
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 29,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
-            "Name": "Exposure_Gasses",
+            "Name": "Exposure_Swamp_Rain",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Putrid Gasses Exposure\")",
+            "ModifierName": "INVTEXT(\"[DNT] Rain Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a rain storm, reduces movement speed and cools.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 16,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -800
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false,
+            "Metadata": {
+                "bIsDeprecated": true
+            }
+        },
+        {
+            "Name": "Exposure_Swamp_Wind",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Winds Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a wind storm, reduces movement speed and sprint speed.  Blows away the fog, more easily seen by wildlife.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -30
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 23,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Swamp_ToxicGas",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Putrid Gas Exposure\")",
             "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a putrid gas storm, reduces movement speed and increases spoil rate.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -20,
-                "(Value=\"BaseInventorySpoilRate_+%\")": 50
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -20,
+                "(Value=\"BaseInventorySpoilRate_+%\")": 80
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 26,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Arctic_Hail",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Hail Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a hail storm, reduces movement speed and damages.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 29,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Arctic_Wind",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Winds Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a wind storm, reduces movement speed and sprint speed.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -30
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 23,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Arctic_Snow",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Snow Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a snow storm, reduces movement speed and damages.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 24,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -1200
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Conifer_Hail",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Hail Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a hail storm, reduces movement speed and damages.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 29,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Conifer_Wind",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Winds Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a wind storm, reduces movement speed and sprint speed.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -30
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 23,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Conifer_Rain",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Rain Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a rain storm, reduces movement speed and damages.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 16,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -800
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Conifer_Fog",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Fog Exposure\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a fog storm, reduces movement speed and damages.\")",
+            "AudioData": {
+                "RowName": "Exposure_Light"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -20
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "SwampSlug_Slime",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SwampSlug_Slime-ModifierName\", \"Toxic Slime\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SwampSlug_Slime-ModifierDescription\", \"Drastically slows movement and deals damage over time. Alerts the owner of this sticky trail to your presence\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -75
+            },
+            "MergeType": "LongestDuration"
         }
     ]
 }

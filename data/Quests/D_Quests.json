@@ -6407,6 +6407,10 @@
                 "QuestEnd": {
                     "RowName": "V2PromNomadEvent12",
                     "DataTableName": "D_Dialogue"
+                },
+                "QuestStart": {
+                    "RowName": "V2PromNomadIntro",
+                    "DataTableName": "D_Dialogue"
                 }
             }
         },
@@ -6448,13 +6452,7 @@
         {
             "Name": "PRO_Story1_Recipe",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Recipe.BPQ_PRO_Story1_Recipe_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Find and collect SMPL3 chip from OES\")",
-            "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "V2PromNomadEvent1",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Recipe-Description\", \"Find and collect SMPL3 chip from OES\")"
         },
         {
             "Name": "PRO_Story1_Recipe_Location",
@@ -7153,11 +7151,17 @@
         {
             "Name": "PRO_Story6_Equipment",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Equipment.BPQ_PRO_Story6_Equipment_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment-Description\", \"Collect the Specialist Equipment Provided by Group 15\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment-Description\", \"Retrieve the Group 15 Supplies\")"
         },
         {
-            "Name": "PRO_Story6_Equipment_Delivery",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment_Delivery-Description\", \"Collect the Equipment from the Sinotai Supply Pod (M)\")"
+            "Name": "PRO_Story6_Equipment_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment_Travel-Description\", \"Travel towards the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "PRO_Story6_Equipment_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Equipment_Collect.BPQ_PRO_Story6_Equipment_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Equipment_Collect-Description\", \"Collect the Specialist Equipment\")"
         },
         {
             "Name": "PRO_Story6_Traitor",
@@ -7176,10 +7180,7 @@
         {
             "Name": "PRO_Story6_Traitor_Trail",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_Trail.BPQ_PRO_Story6_Traitor_Trail_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail-Description\", \"Head to the Last Known Position (M)\")",
-            "LocationQuery": {
-                "RowName": "PRO_Story_6_TraitorLocation"
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail-Description\", \"Head to the Last Known Position (M)\")"
         },
         {
             "Name": "PRO_Story6_Traitor_Investigation",
@@ -7198,11 +7199,19 @@
             }
         },
         {
-            "Name": "PRO_Story6_Traitor_Trait2",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_FollowTrail.BPQ_PRO_Story6_FollowTrail_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trait2-Description\", \"Follow the Trail Recorded by the Dead Agent (M)\")",
+            "Name": "PRO_Story6_Traitor_Trail2",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_FollowTrail.BPQ_PRO_Story6_Traitor_FollowTrail_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail2-Description\", \"Follow the Trail through the Cave (M)\")",
             "LocationQuery": {
-                "RowName": "PRO_Story_6_TraitorTrail1"
+                "RowName": "PRO_Story_6_TraitorTrail4"
+            }
+        },
+        {
+            "Name": "PRO_Story6_Traitor_TravelCamp",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_Travel_Camp.BPQ_PRO_Story6_Traitor_Travel_Camp_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_TravelCamp-Description\", \"Head to the Nearby Camp (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_Group15_Camp"
             }
         },
         {
@@ -7216,7 +7225,7 @@
         {
             "Name": "PRO_Story6_Traitor_ClearCamp",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_ClearCamp.BPQ_PRO_Story6_Traitor_ClearCamp_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_ClearCamp-Description\", \"Clear the Creatures from the Camp\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_ClearCamp-Description\", \"Clear the Creatures from the Camp {0}%\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_Group15_Camp"
             },
@@ -7230,7 +7239,7 @@
         {
             "Name": "PRO_Story6_Traitor_SearchCamp",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_SearchCamp.BPQ_PRO_Story6_Traitor_SearchCamp_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_SearchCamp-Description\", \"Search the Camp for Information: {0}%\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_SearchCamp-Description\", \"Search the Camp for Information {0}%\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_Group15_Camp"
             }
@@ -8041,6 +8050,114 @@
             "Name": "PRO_A_Stockpile_Food10",
             "Class": "/Game/BP/Quests/Prometheus/C/Stockpile/BPQ_PRO_A_Stockpile_DepositFood10.BPQ_PRO_A_Stockpile_DepositFood10_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_A_Stockpile_Food10-Description\", \"{0} / {1} Saltwater Fillet Sashimi\")"
+        },
+        {
+            "Name": "STYX_C_Fishing",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing.BPQ_STYX_C_Fishing_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing-Description\", \"ANGLER: Saltwater\")",
+            "LocationQuery": {
+                "RowName": "STYX_FishingSpot"
+            }
+        },
+        {
+            "Name": "STYX_C_Fishing_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Travel-Description\", \"Head to the designated Fishing Location (M)\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Hut",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Hut.BPQ_STYX_C_Fishing_Hut_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Hut-Description\", \"Setup a Fishing Hut\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Hut_Bench",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Hut_FishingBench.BPQ_STYX_C_Fishing_Hut_FishingBench_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Hut_Bench-Description\", \"{0}/{1} Fishing Bench\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Hut_PotbellyStove",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Hut_Stove.BPQ_STYX_C_Fishing_Hut_Stove_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Hut_PotbellyStove-Description\", \"{0}/{1} Potbelly Stove\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Hut_CookingStation",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Hut_CookingStation.BPQ_STYX_C_Fishing_Hut_CookingStation_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Hut_CookingStation-Description\", \"{0}/{1} Cooking Station\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Hut_DryingRack",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Hut_DryingRack.BPQ_STYX_C_Fishing_Hut_DryingRack_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Hut_DryingRack-Description\", \"{0}/{1} Drying Rack\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Equipment",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Equipment.BPQ_STYX_C_Fishing_Equipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Equipment-Description\", \"Collect the Fishing Supplies\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Equipment_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Equipment_Travel-Description\", \"Collect the Fishing Supplies from the Sinotai Supply Pod (M)\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Equipment_Boss",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Equipment_Creature.BPQ_STYX_C_Fishing_Equipment_Creature_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Equipment_Boss-Description\", \"(Optional) Kill the \\'Insatiable Bloodclaw\\'\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Equipment_Collect",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Equipment_Collect.BPQ_STYX_C_Fishing_Equipment_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Equipment_Collect-Description\", \"Collect the Supplies from the Supply Pod\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Fish",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Fish.BPQ_STYX_C_Fishing_Fish_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Fish-Description\", \"Catch Some Fish\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Fish_A",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Fish_1.BPQ_STYX_C_Fishing_Fish_1_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Fish_A-Description\", \"{0} / {1} Oceanic Piranha\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Fish_B",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Fish_2.BPQ_STYX_C_Fishing_Fish_2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Fish_B-Description\", \"{0} / {1} Titan Triggerfish\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Fish_C",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Fish_3.BPQ_STYX_C_Fishing_Fish_3_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Fish_C-Description\", \"{0} / {1} Sea Darter\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Fish_D",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Fish_4.BPQ_STYX_C_Fishing_Fish_4_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Fish_D-Description\", \"{0} / {1} Emerald Dorado\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Delivery",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery.BPQ_STYX_C_Fishing_Delivery_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery-Description\", \"Deliver Prepared Fish to the Sinotai Retrieval Pod (M)\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Delivery_Stew",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery_Stew.BPQ_STYX_C_Fishing_Delivery_Stew_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery_Stew-Description\", \"{0} / {1} Fish Chunk Stew\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Delivery_Dried",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery_Dried.BPQ_STYX_C_Fishing_Delivery_Dried_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery_Dried-Description\", \"{0} / {1} Dried Saltwater Fish Fillet\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Delivery_Grilled",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery_Grilled.BPQ_STYX_C_Fishing_Delivery_Grilled_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery_Grilled-Description\", \"{0} / {1} Grilled Saltwater Fish Fillet\")"
+        },
+        {
+            "Name": "STYX_C_Fishing_Delivery_Sashimi",
+            "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery_Sashimi.BPQ_STYX_C_Fishing_Delivery_Sashimi_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery_Sashimi-Description\", \"{0} / {1} Saltwater Fillet Sashimi\")"
         }
     ]
 }

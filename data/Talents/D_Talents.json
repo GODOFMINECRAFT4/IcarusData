@@ -30361,6 +30361,35 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Prospect_Styx_C_Fishing",
+            "ExtraData": {
+                "RowName": "STYX_C_Fishing",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 850,
+                "Y": 1750
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_C_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Styx"
+                }
+            }
         }
     ]
 }
