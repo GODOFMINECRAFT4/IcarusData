@@ -963,6 +963,12 @@
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Doors/BP_TrapDoor_Concrete.BP_TrapDoor_Concrete_C"
         },
         {
+            "Name": "Mesh_Claybrick_Trapdoor",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Brick_V2.SM_KIT_Brick_V2",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Doors/BP_TrapDoor_ClayBrick.BP_TrapDoor_ClayBrick_C"
+        },
+        {
             "Name": "Mesh_Sponge",
             "ItemMesh": "/Game/ASS/ENV/HRB/Sponge/SM_CF_Sponge_01.SM_CF_Sponge_01"
         },
@@ -3674,7 +3680,9 @@
             "Name": "Mesh_Item_Shield_Wooden",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Shield_Wooden.SK_ITM_Shield_Wooden",
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Shield_Wooden.SK_ITM_Shield_Wooden",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield_Wood.BP_SkeletalItem_Shield_Wood_C"
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield_Wood.BP_SkeletalItem_Shield_Wood_C",
+            "EquipBackMesh": "/Game/ASS/ITM/SK_ITM_Shield_Wooden.SK_ITM_Shield_Wooden",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield_Back.BP_SkeletalItem_Shield_Back_C"
         },
         {
             "Name": "Mesh_Hard_Leather_ArmorPack",
@@ -3980,9 +3988,9 @@
         {
             "Name": "Mesh_Carcass_Snow_Striker",
             "ItemMesh": "/Game/ASS/CRE/Striker/SK_CRE_Striker.SK_CRE_Striker",
-            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Desert_Striker_Corpse.BP_Desert_Striker_Corpse_C",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Snow_Striker_Corpse.BP_Snow_Striker_Corpse_C",
             "EquipHandMesh": "/Game/ASS/CRE/Striker/SK_CRE_Striker.SK_CRE_Striker",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Desert_Striker_Corpse.BP_Desert_Striker_Corpse_C"
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Snow_Striker_Corpse.BP_Snow_Striker_Corpse_C"
         },
         {
             "Name": "Mesh_Carcass_SwampQuad_Mount",
@@ -5292,37 +5300,49 @@
             "Name": "Mesh_Item_Shield_Bone",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Shield_Bone.SK_ITM_Shield_Bone",
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Shield_Bone.SK_ITM_Shield_Bone",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C"
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C",
+            "EquipBackMesh": "/Game/ASS/ITM/SK_ITM_Shield_Bone.SK_ITM_Shield_Bone",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield_Back.BP_SkeletalItem_Shield_Back_C"
         },
         {
             "Name": "Mesh_Item_Shield_Steel",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Shield_Heater_Steel.SK_ITM_Shield_Heater_Steel",
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Shield_Heater_Steel.SK_ITM_Shield_Heater_Steel",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C"
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C",
+            "EquipBackMesh": "/Game/ASS/ITM/SK_ITM_Shield_Heater_Steel.SK_ITM_Shield_Heater_Steel",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield_Back.BP_SkeletalItem_Shield_Back_C"
         },
         {
             "Name": "Mesh_Item_Shield_Platinum",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Shield_Kite_Platinum.SK_ITM_Shield_Kite_Platinum",
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Shield_Kite_Platinum.SK_ITM_Shield_Kite_Platinum",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C"
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C",
+            "EquipBackMesh": "/Game/ASS/ITM/SK_ITM_Shield_Kite_Platinum.SK_ITM_Shield_Kite_Platinum",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield_Back.BP_SkeletalItem_Shield_Back_C"
         },
         {
             "Name": "Mesh_Item_Shield_Titanium",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Shield_Titanium.SK_ITM_Shield_Titanium",
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Shield_Titanium.SK_ITM_Shield_Titanium",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C"
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C",
+            "EquipBackMesh": "/Game/ASS/ITM/SK_ITM_Shield_Titanium.SK_ITM_Shield_Titanium",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield_Back.BP_SkeletalItem_Shield_Back_C"
         },
         {
             "Name": "Mesh_Item_Shield_Carbon",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Shield_CarbonFiber.SK_ITM_Shield_CarbonFiber",
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Shield_CarbonFiber.SK_ITM_Shield_CarbonFiber",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C"
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C",
+            "EquipBackMesh": "/Game/ASS/ITM/SK_ITM_Shield_CarbonFiber.SK_ITM_Shield_CarbonFiber",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield_Back.BP_SkeletalItem_Shield_Back_C"
         },
         {
             "Name": "Mesh_Item_Shield_Composite",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Shield_Composite.SK_ITM_Shield_Composite",
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Shield_Composite.SK_ITM_Shield_Composite",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C"
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield.BP_SkeletalItem_Shield_C",
+            "EquipBackMesh": "/Game/ASS/ITM/SK_ITM_Shield_Composite.SK_ITM_Shield_Composite",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Shields/BP_SkeletalItem_Shield_Back.BP_SkeletalItem_Shield_Back_C"
         },
         {
             "Name": "Mesh_Wind_Turbine",
@@ -5490,41 +5510,41 @@
         },
         {
             "Name": "Mesh_Iron_Wood_Axe",
-            "ItemMesh": "/Game/ASS/WEP/Axes/SK_AXE_Obsidian.SK_AXE_Obsidian",
-            "EquipHandMesh": "/Game/ASS/WEP/Axes/SK_AXE_Obsidian.SK_AXE_Obsidian"
+            "ItemMesh": "/Game/ASS/WEP/AXE_IronWood/SK_AXE_IronWood.SK_AXE_IronWood",
+            "EquipHandMesh": "/Game/ASS/WEP/AXE_IronWood/SK_AXE_IronWood.SK_AXE_IronWood"
         },
         {
             "Name": "Mesh_Iron_Wood_Pickaxe",
-            "ItemMesh": "/Game/ASS/WEP/SK_PIC_Obsidian.SK_PIC_Obsidian",
-            "EquipHandMesh": "/Game/ASS/WEP/SK_PIC_Obsidian.SK_PIC_Obsidian"
+            "ItemMesh": "/Game/ASS/WEP/PIC_IronWood/SK_PIC_IronWood.SK_PIC_IronWood",
+            "EquipHandMesh": "/Game/ASS/WEP/PIC_IronWood/SK_PIC_IronWood.SK_PIC_IronWood"
         },
         {
             "Name": "Mesh_Iron_Wood_Knife",
-            "ItemMesh": "/Game/ASS/WEP/SK_KNI_Obsidian.SK_KNI_Obsidian",
-            "EquipHandMesh": "/Game/ASS/WEP/SK_KNI_Obsidian.SK_KNI_Obsidian"
+            "ItemMesh": "/Game/ASS/WEP/KNI_IronWood/SK_KNI_IronWood.SK_KNI_IronWood",
+            "EquipHandMesh": "/Game/ASS/WEP/KNI_IronWood/SK_KNI_IronWood.SK_KNI_IronWood"
         },
         {
             "Name": "Mesh_Iron_Wood_Spear",
-            "ItemMesh": "/Game/ASS/WEP/SK_SPR_Obsidian.SK_SPR_Obsidian",
-            "EquipHandMesh": "/Game/ASS/WEP/SK_SPR_Obsidian.SK_SPR_Obsidian"
+            "ItemMesh": "/Game/ASS/WEP/SPR_IronWood/SK_SPR_IronWood.SK_SPR_IronWood",
+            "EquipHandMesh": "/Game/ASS/WEP/SPR_IronWood/SK_SPR_IronWood.SK_SPR_IronWood"
         },
         {
             "Name": "Mesh_Iron_Wood_Sledgehammer",
-            "ItemMesh": "/Game/ASS/ITM/SK_ITM_Sledgehammer_Obsidian.SK_ITM_Sledgehammer_Obsidian",
-            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Sledgehammer_Obsidian.SK_ITM_Sledgehammer_Obsidian"
+            "ItemMesh": "/Game/ASS/ITM/SK_ITM_Sledgehammer_IronWood.SK_ITM_Sledgehammer_IronWood",
+            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Sledgehammer_IronWood.SK_ITM_Sledgehammer_IronWood"
         },
         {
             "Name": "Mesh_Iron_Wood_Sickle",
-            "ItemMesh": "/Game/ASS/ITM/SK_ITM_Sickle_Obsidian.SK_ITM_Sickle_Obsidian",
-            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Sickle_Obsidian.SK_ITM_Sickle_Obsidian"
+            "ItemMesh": "/Game/ASS/ITM/Sickles/SK_ITM_Sickle_IronWood.SK_ITM_Sickle_IronWood",
+            "EquipHandMesh": "/Game/ASS/ITM/Sickles/SK_ITM_Sickle_IronWood.SK_ITM_Sickle_IronWood"
         },
         {
             "Name": "Mesh_Iron_Wood_Bolt",
-            "ItemMesh": "/Game/ASS/WEP/SK_BLT_Obsidian.SK_BLT_Obsidian"
+            "ItemMesh": "/Game/ASS/WEP/SK_BLT_IronWood.SK_BLT_IronWood"
         },
         {
             "Name": "Mesh_Iron_Wood_Arrow",
-            "ItemMesh": "/Game/ASS/WEP/SK_ARR_Obsidian.SK_ARR_Obsidian"
+            "ItemMesh": "/Game/ASS/WEP/SK_ARR_IronWood.SK_ARR_IronWood"
         },
         {
             "Name": "Mesh_Obsidian_ArmorPack",
@@ -5601,6 +5621,32 @@
             "ItemMesh": "/Game/ASS/KIT/SM_KIT_Fabricator.SM_KIT_Fabricator",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Meta_Crate_Printed_Medium_Prototype.BP_Meta_Crate_Printed_Medium_Prototype_C"
+        },
+        {
+            "Name": "Mesh_Carcass_Lava_Komodo",
+            "ItemMesh": "/Game/ASS/CRE/Komodo/komodo_variation_01/SK_CRE_Komodo_Variant.SK_CRE_Komodo_Variant",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Komodo_Lava_Corpse.BP_Komodo_Lava_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Komodo/komodo_variation_01/SK_CRE_Komodo_Variant.SK_CRE_Komodo_Variant",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Komodo_Lava_Corpse.BP_Komodo_Lava_Corpse_C",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Komodo_Lava_Corpse.BP_Komodo_Lava_Corpse_C"
+        },
+        {
+            "Name": "Mesh_Industrial_Decoration",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Glass_Metal.SM_KIT_Glass_Metal"
+        },
+        {
+            "Name": "Mesh_Carcass_Rabbit_Variant",
+            "ItemMesh": "/Game/ASS/CRE/Rabbit/Variant/SK_CRE_Rabbit_Var.SK_CRE_Rabbit_Var",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Rabbit_Variant_Corpse.BP_Rabbit_Variant_Corpse_C",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/CRE/Rabbit/Variant/SK_CRE_Rabbit_Var.SK_CRE_Rabbit_Var",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Rabbit_Variant_Corpse.BP_Rabbit_Variant_Corpse_C"
+        },
+        {
+            "Name": "Mesh_Clay_Brick_Trapdoor",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Brick_V2.SM_KIT_Brick_V2",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Doors/BP_TrapDoor_ClayBrick.BP_TrapDoor_ClayBrick_C"
         }
     ]
 }

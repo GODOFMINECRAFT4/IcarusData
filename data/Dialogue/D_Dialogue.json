@@ -17,6 +17,7 @@
         {
             "Name": "BW5_001_BRIEFING",
             "Audio": "/Game/FMOD/Events/Dialogue/BW5/BW5_001_BRIEFING.BW5_001_BRIEFING",
+            "Delay": 2,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"BW5_001_BRIEFING-Text-0\", \"So ...\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"BW5_001_BRIEFING-Text-1\", \"The Lagos Unit\\'s looking for data on the deserts.\")",
@@ -8525,6 +8526,7 @@
         {
             "Name": "PromOffenderEvent4",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/OFFENDER/PROM_OFFENDER_EVENT4.PROM_OFFENDER_EVENT4",
+            "Delay": 3,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromOffenderEvent4-Text-0\", \"Man, this must\\'ve been up here for a while. Just look at this place. \")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromOffenderEvent4-Text-1\", \"This was supposed to be an urgent op? We\\'re hot on the heels of nothin\\'\")",
@@ -8883,6 +8885,7 @@
         {
             "Name": "PromShadowedEvent11",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/SHADOWED/PROM_SHADOWED_EVENT11.PROM_SHADOWED_EVENT11",
+            "Delay": 3,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromShadowedEvent11-Text-0\", \"Sounds like your paycheck\\'s just arrived.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromShadowedEvent11-Text-1\", \"Le- let\\'s check it out.\")"
@@ -9071,7 +9074,25 @@
                 "RowName": "Clarke"
             },
             "Text": [
-                "NSLOCTEXT(\"D_Dialogue\", \"PromTempestEvent3-Text-0\", \"What was that? Prospector.. There may be a threat nearby.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"PromTempestEvent3-Text-0\", \"Distant Creature \")",
+                "NSLOCTEXT(\"D_Dialogue\", \"PromTempestEvent3-Text-1\", \"What was that? Prospector.. There may be a threat nearby.\")"
+            ],
+            "bUseSubtitleOverrides": true,
+            "SubtitleOverrides": [
+                {
+                    "OverrideLength": 5.5,
+                    "SpeakerOverride": {
+                        "RowName": "Unknown",
+                        "DataTableName": "D_DialogueSpeaker"
+                    }
+                },
+                {
+                    "OverrideLength": 6.300000190734863,
+                    "SpeakerOverride": {
+                        "RowName": "Clarke",
+                        "DataTableName": "D_DialogueSpeaker"
+                    }
+                }
             ]
         },
         {
@@ -9864,6 +9885,7 @@
         {
             "Name": "PromFractureEvent16",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/FRACTURE/PROM_FRACTURE_EVENT16.PROM_FRACTURE_EVENT16",
+            "Delay": 4,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromFractureEvent16-Text-0\", \"You made it, I knew you would. \")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromFractureEvent16-Text-1\", \"Now. Let\\'s find whatever Mo needs us to find.\")",
@@ -10866,11 +10888,8 @@
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/NOMAD_V2/V2_PROM_NOMAD_EVENT2.V2_PROM_NOMAD_EVENT2",
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent2-Text-0\", \"There\\'s the pod and there\\'s a... what the hell is that... This damn place.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent2-Text-1\", \"UDA hasn\\'t been very forthcoming with information, but I\\'ve heard rumors.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent2-Text-2\", \"Some of them are locals. Some seem to be... altered versions of earth wildlife.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent2-Text-3\", \"All of \\'em weird... and probably dangerous.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent2-Text-4\", \"You can either take it out, or sneak past it.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent2-Text-5\", \"Either way, we need that chip.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent2-Text-1\", \"You can either take it out, or sneak past it.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent2-Text-2\", \"Either way, we need that chip.\")"
             ]
         },
         {
@@ -10957,7 +10976,7 @@
             "Audio": "/Game/FMOD/Events/Dialogue/OPEN_WORLD/OPENWORLD_INTRO_EVENT1.OPENWORLD_INTRO_EVENT1",
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-0\", \"Great work. Now that you have access to short range radio, you\\'ll be able to take on simple missions.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-1\", \"Check the board to see whats available. There\\'s always something to do.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-1\", \"Check the board to see what\\'s available. There\\'s always something to do.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-2\", \"If you want to take on more complex assignments, and get more time with yours truly...\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-3\", \"You\\'ll have to craft an Infrasonic Relay Device.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-4\", \"Heh. UDA\\'s way of keepin\\' out fresh foot prospectors lookin\\' for an early grave.\")"
@@ -11054,6 +11073,7 @@
         {
             "Name": "V2PromNomadEvent8.2",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/NOMAD_V2/V2_PROM_NOMAD_EVENT8_2.V2_PROM_NOMAD_EVENT8_2",
+            "Delay": 2,
             "Speaker": {
                 "RowName": "SMPL3"
             },
@@ -11106,6 +11126,7 @@
         {
             "Name": "V2PromNomadEvent8.6",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/NOMAD_V2/V2_PROM_NOMAD_EVENT8_6.V2_PROM_NOMAD_EVENT8_6",
+            "Delay": 1,
             "Speaker": {
                 "RowName": "SMPL3"
             },

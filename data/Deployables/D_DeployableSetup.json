@@ -188,6 +188,7 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Barrel.SM_DEP_Barrel",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -789,7 +790,8 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_Brazier.BP_Brazier_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Brazier_02.SM_DEP_Brazier_02",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Rain_Reservoir",
@@ -1519,7 +1521,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Dehumidifer_TMP.SM_DEP_Dehumidifer_TMP",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -1677,8 +1678,7 @@
                 "Drill_SocketB"
             ],
             "IgnoreCollisionWhenSnapped": true,
-            "UseSnapSocketRotation": true,
-            "bCanAffectNavigation": false
+            "UseSnapSocketRotation": true
         },
         {
             "Name": "Faction_Mission_WallDrill",
@@ -1695,8 +1695,7 @@
                 "WallDrill_Socket"
             ],
             "IgnoreCollisionWhenSnapped": true,
-            "UseSnapSocketRotation": true,
-            "bCanAffectNavigation": false
+            "UseSnapSocketRotation": true
         },
         {
             "Name": "Leather_Curtain_Window",
@@ -1958,7 +1957,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_ElectricDehumidifier.SM_DEP_ElectricDehumidifier",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -1967,7 +1965,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Electric_Dehumidifier_V2.SM_DEP_Electric_Dehumidifier_V2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -1993,7 +1990,8 @@
             "Name": "Meta_Cot_Printed",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Meta_Cot_Printed.BP_Meta_Cot_Printed_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bed_Cot_LEET.SM_DEP_Bed_Cot_LEET",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Basic_Wall_Light",
@@ -2002,7 +2000,8 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "MaxSurfaceSnapAngle": 180,
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Basic_Ceiling_Light",
@@ -2012,7 +2011,8 @@
             "SnapToSurfaceNormal": false,
             "MaxSurfaceSnapAngle": 180,
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "CeilingPlacement"
+            "WorldPlacementType": "CeilingPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Chemistry_Bench",
@@ -2132,7 +2132,6 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2245,7 +2244,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_DryingRack.SM_DEP_DryingRack",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2491,7 +2489,6 @@
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_Decorative_Statue_V2.SM_ITM_Decorative_Statue_V2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2522,7 +2519,8 @@
                 "Explosive_Socket_B"
             ],
             "IgnoreCollisionWhenSnapped": true,
-            "UseSnapSocketRotation": true
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Radar_Biofuel",
@@ -2660,6 +2658,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Deer_Statue_Wood.BP_Deer_Statue_Wood_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Deer/SM_DCO_StatueDeer_Wood.SM_DCO_StatueDeer_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2667,6 +2666,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Scorpion_Statue_Bronze.BP_Scorpion_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Scorpion/SM_DCO_StatueScorpion_Bronze.SM_DCO_StatueScorpion_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2674,6 +2674,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_PolarBear_Statue_Bronze.BP_PolarBear_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_PolarBear/SM_DCO_StatuePolarBear_Bronze.SM_DCO_StatuePolarBear_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2681,6 +2682,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Bear_Statue_Bronze.BP_Bear_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Bear/SM_DCO_StatueGrizzly_Bronze.SM_DCO_StatueGrizzly_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2688,6 +2690,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Hyena_Statue_Bronze.BP_Hyena_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Hyena/SM_DCO_StatueHyena_Bronze.SM_DCO_StatueHyena_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2695,6 +2698,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Cougar_Statue_Bronze.BP_Cougar_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Cougar/SM_DCO_StatueCougar_Bronze.SM_DCO_StatueCougar_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2702,6 +2706,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Jaguar_Statue_Bronze.BP_Jaguar_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Jaguar/SM_DCO_StatueJaguar_Bronze.SM_DCO_StatueJaguar_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -2709,6 +2714,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_SnowLeopard_Statue_Bronze.BP_SnowLeopard_Statue_Bronze_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_SnowLeopard/SM_DCO_StatueSnowLeopard_Bronze.SM_DCO_StatueSnowLeopard_Bronze",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3326,6 +3332,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Piranha_Statue_Wood.BP_Piranha_Statue_Wood_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Piranha/SM_DCO_StatuePiranha_Wood.SM_DCO_StatuePiranha_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3333,6 +3340,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Rabbit_Statue_Wood.BP_Rabbit_Statue_Wood_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Rabbit/SM_DCO_Statue_Rabbit_Wood.SM_DCO_Statue_Rabbit_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3340,6 +3348,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Buffalo_Statue_Wood.BP_Buffalo_Statue_Wood_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Statue_Buffalo/SM_DCO_StatueBuffalo_Wood.SM_DCO_StatueBuffalo_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3471,7 +3480,8 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
             "MaxSurfaceSnapAngle": 180,
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Carved_Wall_Shelf_B",
@@ -3523,6 +3533,7 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Candle_A.ITEM_Carved_Candle_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Candle_Holders_Wood_Carved/SM_DCO_Candle_Holder_Wood_Carved_A.SM_DCO_Candle_Holder_Wood_Carved_A",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3627,7 +3638,8 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Carved_CoffeeTable_A.BP_Carved_CoffeeTable_A_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Carved_Coffee_Table_A.ITEM_Carved_Coffee_Table_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/CoffeeTable_Wood_Carved/SM_DCO_CoffeeTable_Wood_Carved_A.SM_DCO_CoffeeTable_Wood_Carved_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Carved_Coffee_Table_B",
@@ -3672,7 +3684,8 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
             "MaxSurfaceSnapAngle": 180,
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Rustic_Wall_Shelf_B",
@@ -3690,7 +3703,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_A.ITEM_Clay_Vase_A",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_A.SM_DCO_Vase_A",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_B",
@@ -3698,7 +3712,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_B.ITEM_Clay_Vase_B",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_B.SM_DCO_Vase_B",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_C",
@@ -3706,7 +3721,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_C.ITEM_Clay_Vase_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_C.SM_DCO_Vase_C",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_D",
@@ -3714,7 +3730,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_D.ITEM_Clay_Vase_D",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_D.SM_DCO_Vase_D",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_E",
@@ -3722,7 +3739,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_E.ITEM_Clay_Vase_E",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_E.SM_DCO_Vase_E",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_F",
@@ -3730,7 +3748,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_F.ITEM_Clay_Vase_F",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_F.SM_DCO_Vase_F",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_G",
@@ -3738,7 +3757,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_G.ITEM_Clay_Vase_G",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_G.SM_DCO_Vase_G",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_H",
@@ -3746,7 +3766,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_H.ITEM_Clay_Vase_H",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_H.SM_DCO_Vase_H",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Clay_Vase_I",
@@ -3754,7 +3775,8 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Clay_Vase_I.ITEM_Clay_Vase_I",
             "PreviewStaticMesh": "/Game/ASS/DCO/Vases/SM_DCO_Vase_I.SM_DCO_Vase_I",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SnapToSurfaceNormal": false
+            "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Geode_Cut_Copper_A",
@@ -3763,6 +3785,7 @@
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_GeodeLamp_01_Var01_Copper.SM_ITM_GeodeLamp_01_Var01_Copper",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3790,6 +3813,7 @@
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_GeodeLamp_01_Var01_Gold.SM_ITM_GeodeLamp_01_Var01_Gold",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3817,6 +3841,7 @@
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_GeodeLamp_01_Var01_Oxite.SM_ITM_GeodeLamp_01_Var01_Oxite",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3844,6 +3869,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3853,6 +3879,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3862,6 +3889,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3873,6 +3901,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3884,6 +3913,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3895,6 +3925,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3906,6 +3937,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3917,6 +3949,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3928,6 +3961,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3938,6 +3972,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3958,6 +3993,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -3978,6 +4014,7 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
         {
@@ -4069,7 +4106,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Wood_Carved/SM_DCO_Frame_SML_Wood_Carved.SM_DCO_Frame_SML_Wood_Carved",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Painting_Dark_Small",
@@ -4078,7 +4116,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Dark_Basic/SM_DCO_Frame_SML_Dark_Basic.SM_DCO_Frame_SML_Dark_Basic",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Painting_Metal_Small",
@@ -4087,7 +4126,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Metal_Basic/SM_DCO_Frame_SML_Metal_Basic.SM_DCO_Frame_SML_Metal_Basic",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Painting_Gold_Small",
@@ -4096,7 +4136,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Gold/SM_DCO_Frame_SML_Gold.SM_DCO_Frame_SML_Gold",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Painting_Gold_Wood_Small",
@@ -4105,7 +4146,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Gold_Wood/SM_DCO_Frame_SML_Gold_Wood.SM_DCO_Frame_SML_Gold_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Painting_Scroll_Small",
@@ -4114,7 +4156,8 @@
             "PreviewStaticMesh": "/Game/ASS/DCO/Frame_Scroll_T3/SM_DCO_Frame_SML_Scroll_T3.SM_DCO_Frame_SML_Scroll_T3",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_PAINTING.SFX_DEPLOY_PAINTING",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement"
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "AI_Target_Dummy",
@@ -4123,36 +4166,40 @@
             "DeployableName": "INVTEXT(\"[DNT] AI Target Dummy\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_SpawnBlocker_T2.SM_DEP_SpawnBlocker_T2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false
+            "SupportsCustomRotation": false
         },
         {
             "Name": "AlienFossil_Pottery01",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Pottery01.BP_AlienFossil_Pottery01_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Pottery_1.T_ITEM_AlienFossil_Pottery_1",
             "PreviewStaticMesh": "/Game/ASS/PRP/PRP_AlienFossil_01/SM_AlienFossil_Pottery_01.SM_AlienFossil_Pottery_01",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
         },
         {
             "Name": "AlienFossil_Pottery02",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Pottery02.BP_AlienFossil_Pottery02_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Pottery_2.T_ITEM_AlienFossil_Pottery_2",
             "PreviewStaticMesh": "/Game/ASS/PRP/PRP_AlienFossil_01/SM_AlienFossil_Pottery_02.SM_AlienFossil_Pottery_02",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
         },
         {
             "Name": "AlienFossil_Pottery03",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Pottery03.BP_AlienFossil_Pottery03_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Pottery_3.T_ITEM_AlienFossil_Pottery_3",
             "PreviewStaticMesh": "/Game/ASS/PRP/PRP_AlienFossil_01/SM_AlienFossil_Pottery_03.SM_AlienFossil_Pottery_03",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
         },
         {
             "Name": "AlienFossil_Pottery04",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Pottery04.BP_AlienFossil_Pottery04_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Pottery_4.T_ITEM_AlienFossil_Pottery_4",
             "PreviewStaticMesh": "/Game/ASS/PRP/PRP_AlienFossil_01/SM_AlienFossil_Pottery_04.SM_AlienFossil_Pottery_04",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
         },
         {
             "Name": "AlienFossil_Conch",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Conch.BP_AlienFossil_Conch_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Conch.T_ITEM_AlienFossil_Conch",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"AlienFossil_Conch-DeployableName\", \"Large Alien Conch\")",
             "PreviewStaticMesh": "/Game/ASS/DCO/Conch/SM_DCO_ALN_Conch_A.SM_DCO_ALN_Conch_A",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_CONCH.SFX_DEP_CONCH",
@@ -4167,6 +4214,7 @@
         {
             "Name": "AlienFossil_Conch_Small",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Alien/BP_AlienFossil_Conch_Small.BP_AlienFossil_Conch_Small_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_AlienFossil_Conch_Small.T_ITEM_AlienFossil_Conch_Small",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"AlienFossil_Conch_Small-DeployableName\", \"Small Alien Conch\")",
             "PreviewStaticMesh": "/Game/ASS/DCO/Conch/SM_DCO_ALN_Conch_A_Small.SM_DCO_ALN_Conch_A_Small",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_CONCH.SFX_DEP_CONCH",
@@ -4183,6 +4231,25 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Meta_Crate_Printed_Medium_Prototype.BP_Meta_Crate_Printed_Medium_Prototype_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_LEET.SM_DEP_Crate_LEET",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
+        },
+        {
+            "Name": "Clay_Brick_Trapdoor",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Doors/BP_TrapDoor_ClayBrick.BP_TrapDoor_ClayBrick_C",
+            "PreviewStaticMesh": "/Game/ASS/BLD/SM_BLD_TrapDoorHatch_Brick.SM_BLD_TrapDoorHatch_Brick",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_IRON_DEPLOY.SFX_BLD_IRON_DEPLOY",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Building_Floor"
+            ],
+            "SnapSocketsOrTags": [
+                "TrapDoorSocket1",
+                "TrapDoorSocket2"
+            ],
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false
         }
     ]
 }

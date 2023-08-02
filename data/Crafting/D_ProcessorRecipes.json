@@ -8672,7 +8672,7 @@
                         "RowName": "Raw_Meat",
                         "DataTableName": "D_ItemTemplate"
                     },
-                    "Count": 2,
+                    "Count": 3,
                     "DynamicProperties": []
                 },
                 {
@@ -8680,7 +8680,7 @@
                         "RowName": "Leather",
                         "DataTableName": "D_ItemTemplate"
                     },
-                    "Count": 20,
+                    "Count": 30,
                     "DynamicProperties": []
                 },
                 {
@@ -8688,7 +8688,7 @@
                         "RowName": "Fur",
                         "DataTableName": "D_ItemTemplate"
                     },
-                    "Count": 5,
+                    "Count": 10,
                     "DynamicProperties": []
                 },
                 {
@@ -33091,7 +33091,7 @@
             },
             "RecipeSets": [
                 {
-                    "RowName": "Crafting_Bench",
+                    "RowName": "Anvil_Bench",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -33101,7 +33101,7 @@
                         "RowName": "Wood",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 14,
+                    "Count": 15,
                     "DynamicProperties": []
                 },
                 {
@@ -33109,7 +33109,7 @@
                         "RowName": "Fiber",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 12,
+                    "Count": 20,
                     "DynamicProperties": []
                 },
                 {
@@ -33117,7 +33117,7 @@
                         "RowName": "Leather",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 4,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
@@ -33125,7 +33125,7 @@
                         "RowName": "Refined_Metal",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 2,
+                    "Count": 3,
                     "DynamicProperties": []
                 }
             ],
@@ -41224,6 +41224,92 @@
             ],
             "Audio": {
                 "RowName": "HerbalismBench"
+            }
+        },
+        {
+            "Name": "Shield_Bone",
+            "Requirement": {
+                "RowName": "Shield_Bone"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Character",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Bone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Shield_Bone",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CraftingBench"
+            }
+        },
+        {
+            "Name": "Shield_Steel",
+            "Requirement": {
+                "RowName": "Shield_Steel"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Anvil_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Shield_Steel",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Audio": {
+                "RowName": "AnvilBench"
             }
         },
         {

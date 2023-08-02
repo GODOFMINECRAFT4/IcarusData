@@ -63078,7 +63078,7 @@
         {
             "Name": "AnimalCarcass_Lava_Komodo",
             "Meshable": {
-                "RowName": "Mesh_Carcass_Komodo"
+                "RowName": "Mesh_Carcass_Lava_Komodo"
             },
             "Itemable": {
                 "RowName": "Item_Carcass_Lava_Komodo"
@@ -76059,6 +76059,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.CosmeticShield"
                     }
                 ]
             },
@@ -76069,6 +76072,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.CosmeticShield"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -92981,8 +92987,8 @@
                 "RowName": "WoodDeployable"
             },
             "AdditionalStats": {
-                "(Value=\"BaseSleepQuality_%\")": 150,
-                "(Value=\"BaseSleepModifierDurationSeconds_+\")": 850
+                "(Value=\"BaseSleepQuality_%\")": 165,
+                "(Value=\"BaseSleepModifierDurationSeconds_+\")": 1000
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -95524,6 +95530,188 @@
                     },
                     {
                         "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Shield_Bone",
+            "Meshable": {
+                "RowName": "Mesh_Item_Shield_Bone"
+            },
+            "Itemable": {
+                "RowName": "Item_Shield_Bone"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Shield"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Shield"
+            },
+            "Usable": {
+                "RowName": "Repair"
+            },
+            "Durable": {
+                "RowName": "Shield_Bone"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "Bone_Shield"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseShieldBlockRadiusDegrees_+\")": 90,
+                "(Value=\"BaseShieldBlock_%\")": 65
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Shield"
+                    },
+                    {
+                        "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.CosmeticShield"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Shield"
+                    },
+                    {
+                        "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.CosmeticShield"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Shield_Steel",
+            "Meshable": {
+                "RowName": "Mesh_Item_Shield_Steel"
+            },
+            "Itemable": {
+                "RowName": "Item_Shield_Steel"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Shield"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Shield"
+            },
+            "Usable": {
+                "RowName": "Repair"
+            },
+            "Durable": {
+                "RowName": "Shield_Steel"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "Metal_Shield"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseShieldBlockRadiusDegrees_+\")": 125,
+                "(Value=\"BaseShieldBlock_%\")": 75
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Shield"
+                    },
+                    {
+                        "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.CosmeticShield"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Shield"
+                    },
+                    {
+                        "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.CosmeticShield"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
                     },
                     {
                         "TagName": "Traits.Floatable"

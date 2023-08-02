@@ -1264,7 +1264,7 @@
             "Name": "Item_Carcass_Roat",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat-DisplayName\", \"Roat Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Roat.ITEM_AnimalCarcass_Roat",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat-Description\", \"A specimen of local wildlife, rare in the terraformed zone.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat-Description\", \"A dead specimen of local wildlife.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat-FlavorText\", \"One of the rare endemic lifeforms able to survive in the failed terraforming zone, the roat endured the savage shift in Icarus\\'s climate, due to its uniquely flexible respiratory system.\")",
             "Weight": 500
         },
@@ -1272,7 +1272,7 @@
             "Name": "Item_Carcass_Swamp_Roat",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Swamp_Roat-DisplayName\", \"Swamp Roat Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Roat.ITEM_AnimalCarcass_Roat",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Swamp_Roat-Description\", \"A specimen of local wildlife, rare in the terraformed zone.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Swamp_Roat-Description\", \"A dead specimen of local wildlife\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Swamp_Roat-FlavorText\", \"One of the rare endemic lifeforms able to survive in the failed terraforming zone, the roat endured the savage shift in Icarus\\'s climate, due to its uniquely flexible respiratory system.\")",
             "Weight": 500
         },
@@ -8287,14 +8287,6 @@
             "Weight": 1500
         },
         {
-            "Name": "Item_Clay_Brick_Door",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Clay_Brick_Door-DisplayName\", \"Clay Brick Door\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Clay_Brick_Door.T_ITEM_Clay_Brick_Door",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Clay_Brick_Door-FlavorText\", \"There are four main elements of clay on Earth, who knows what\\'s on Icarus?\")",
-            "Weight": 1000,
-            "MaxStack": 20
-        },
-        {
             "Name": "Item_Mission_Communicator_T2",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Communicator_T2-DisplayName\", \"Short Range Radio\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Mission_Communication_Device_T2.ITEM_Mission_Communication_Device_T2",
@@ -8431,8 +8423,8 @@
             "Name": "Item_Carcass_BatDog",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BatDog-DisplayName\", \"Drac Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_BatDog.T_ITEM_AnimalCarcass_BatDog",
-            "Description": "INVTEXT(\"[DNT] Bat Dog Corpse\")",
-            "FlavorText": "INVTEXT(\"[DNT] Bat Dog Corpse\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BatDog-Description\", \"A hideous mutant now at peace.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BatDog-FlavorText\", \"Though sympathy can\\'t alter facts, it can help to make them more bearable. This creature deserves sympathy.\")",
             "Weight": 8000
         },
         {
@@ -8447,7 +8439,8 @@
             "Name": "Item_Carcass_Needler",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Needler-DisplayName\", \"Needler Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Needler.T_ITEM_AnimalCarcass_Needler",
-            "Description": "INVTEXT(\"[DNT] Needler Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Needler-Description\", \"Genetically divergent reptile.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Needler-FlavorText\", \"Bone-like spines push through the scales of this mutated reptile. This animal led a pain filled existence.\")",
             "Weight": 5000
         },
         {
@@ -8468,7 +8461,8 @@
             "Name": "Item_Carcass_Deer_Var",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Deer_Var-DisplayName\", \"Plains Equix Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Deer_Variant.T_ITEM_AnimalCarcass_Deer_Variant",
-            "Description": "INVTEXT(\"[DNT] Deer Variant carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Deer_Var-Description\", \"Muscular corpse of a deer-like creature. \")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Deer_Var-FlavorText\", \"Icarus is a microcosm of evolutionary extremes. Such pressures cause somewhat rapid and acute adaptation. The Equix for example, has twice the musculature at roughly twice the density compared to Earth cervidae. \")",
             "Weight": 10000
         },
         {
@@ -8644,16 +8638,17 @@
         },
         {
             "Name": "Item_Carcass_Swamp_Quad",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Swamp_Quad-DisplayName\", \"Swamp Quadruped Carcass\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Swamp_Quad-DisplayName\", \"Swamp Stryder Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Swamp_Quad.T_ITEM_AnimalCarcass_Swamp_Quad",
-            "Description": "INVTEXT(\"[DNT] Swamp Quadruped carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Swamp_Quad-Description\", \"The Stryder evolved to run. This one did not run fast enough.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Swamp_Quad-FlavorText\", \"A snail, turtle and crab walked into a bar. Something obscene occurred, and we got the Stryder. Do you think it... tastes like crab?\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Carcass_SwampBird",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_SwampBird-DisplayName\", \"Ubis Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_SwampBird.T_ITEM_AnimalCarcass_SwampBird",
-            "Description": "INVTEXT(\"[DNT] Swamp Bird carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_SwampBird-Description\", \"The body of a large flightless bird. Its bone-like face makes a natural death mask.\")",
             "Weight": 10000
         },
         {
@@ -8676,36 +8671,37 @@
             "Name": "Item_Carcass_Chamois_Var",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Chamois_Var-DisplayName\", \"Chala Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Chamois_Var.T_ITEM_AnimalCarcass_Chamois_Var",
-            "Description": "INVTEXT(\"[DNT] Chamois variant carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Chamois_Var-Description\", \"Similar to a Chamois. This animal shows signs of subtle mutation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Chamois_Var-FlavorText\", \"Engineered from the Capra family of goats on Earth. Known to be less graceful than their Earth counterparts.\")",
             "Weight": 8000
         },
         {
             "Name": "Item_Carcass_BlueBack",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BlueBack-DisplayName\", \"Blueback Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_BlueBack.T_ITEM_AnimalCarcass_BlueBack",
-            "Description": "INVTEXT(\"[DNT] BlueBack carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BlueBack-Description\", \"What the Blueback lacks in speed, it makes up for in bulk.\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Carcass_Roat_Swamp",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat_Swamp-DisplayName\", \"Swamp Roat Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Roat.ITEM_AnimalCarcass_Roat",
-            "Description": "INVTEXT(\"[DNT] Swamp roat carcass\")",
-            "FlavorText": "INVTEXT(\"[DNT] Swamp roat carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat_Swamp-Description\", \"A dead specimen of local wildlife.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat_Swamp-FlavorText\", \"One of the rare endemic lifeforms able to survive in the failed terraforming zone, the roat endured the savage shift in Icarus\\'s climate, due to its uniquely flexible respiratory system.\")",
             "Weight": 1000
         },
         {
             "Name": "Item_Carcass_BlueBack_Lava",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BlueBack_Lava-DisplayName\", \"Redback Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_BlueBack_Lava.T_ITEM_AnimalCarcass_BlueBack_Lava",
-            "Description": "INVTEXT(\"[DNT] BlueBack carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BlueBack_Lava-Description\", \"The corpse of a sometimes gentle giant.\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Carcass_Daisy",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Daisy-DisplayName\", \"\\\"Daisy\\\" Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_BlueBack.T_ITEM_AnimalCarcass_BlueBack",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Daisy-Description\", \"The dead remains of the Blueback known as Daisy\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Daisy-Description\", \"The decaying remains of the Blueback known as Daisy\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Daisy-FlavorText\", \"Poor Creature\")",
             "Weight": 10000
         },
@@ -8721,7 +8717,8 @@
             "Name": "Item_Carcass_PredatorBird",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_PredatorBird-DisplayName\", \"Dreadwing Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_PredatorBird.T_ITEM_AnimalCarcass_PredatorBird",
-            "Description": "INVTEXT(\"[DNT] Predator Bird Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_PredatorBird-Description\", \"An endemic ambush predator torn from the skies.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_PredatorBird-FlavorText\", \"These intelligent flying reptiles are particular about their hunting opportunities. Often choosing targets that are weak or unaware. Mostly found scavenging an easy meal from a recent corpse.\")",
             "Weight": 1250
         },
         {
@@ -8746,7 +8743,8 @@
             "Name": "Item_Carcass_Spider",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Spider-DisplayName\", \"Spider Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Spider.T_ITEM_AnimalCarcass_Spider",
-            "Description": "INVTEXT(\"[DNT] Spider carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Spider-Description\", \"An example of scientific overreach. \")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Spider-FlavorText\", \"Most prospectors agree, seeding this creature on Icarus was a greater mistake than the failed terraforming. \")",
             "Weight": 8000
         },
         {
@@ -10957,6 +10955,7 @@
         {
             "Name": "Item_Cold_Steel_Bolt",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Cold_Steel_Bolt-DisplayName\", \"Cold Steel Bolt\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Cold_Steel_Bolt.T_ITEM_Cold_Steel_Bolt",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Cold_Steel_Bolt-Description\", \"A sturdy Bolt crafted using Cold Steel, unique to Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Cold_Steel_Bolt-FlavorText\", \"One of the few tools that are only available on Icarus, due to the nature of the materials required.\")",
             "Weight": 15,
@@ -11001,6 +11000,7 @@
         {
             "Name": "Item_Iron_Wood_Axe",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Axe-DisplayName\", \"Miasmic Axe\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Iron_Wood_Axe.T_ITEM_Iron_Wood_Axe",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Axe-Description\", \"A toxin-coated Axe that allows you to delicately extract Infected Wood when chopping trees.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Axe-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 500
@@ -11008,6 +11008,7 @@
         {
             "Name": "Item_Iron_Wood_Pickaxe",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Pickaxe-DisplayName\", \"Miasmic Pickaxe\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Iron_Wood_Pickaxe.T_ITEM_Iron_Wood_Pickaxe",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Pickaxe-Description\", \"A toxin-coated Pickaxe that allows you to delicately extract Noxious Crust when mining.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Pickaxe-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 500
@@ -11015,6 +11016,7 @@
         {
             "Name": "Item_Iron_Wood_Knife",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Knife-DisplayName\", \"Miasmic Knife\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Iron_Wood_Knife.T_ITEM_Iron_Wood_Knife",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Knife-Description\", \"A toxin-coated Knife that allows you to delicately extract Acidic Glands from animals when skinning.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Knife-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 500
@@ -11022,6 +11024,7 @@
         {
             "Name": "Item_Iron_Wood_Throwing_Knife",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Throwing_Knife-DisplayName\", \"Miasmic Throwing Knife\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/ThrowingWeapons/T_ITEM_Iron_Wood_Throwing_Knife.T_ITEM_Iron_Wood_Throwing_Knife",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Throwing_Knife-Description\", \"A toxin-coated Throwing Knife, carefully crafted using Miasma harvested from Icarus wildlife.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Throwing_Knife-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 250,
@@ -11030,6 +11033,7 @@
         {
             "Name": "Item_Iron_Wood_Spear",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Spear-DisplayName\", \"Miasmic Spear\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Spears/T_ITEM_Iron_Wood_Spear.T_ITEM_Iron_Wood_Spear",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Spear-Description\", \"A toxin-coated Spear, carefully crafted using Miasma harvested from Icarus wildlife.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Spear-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 500
@@ -11037,6 +11041,7 @@
         {
             "Name": "Item_Iron_Wood_Throwing_Spear",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Throwing_Spear-DisplayName\", \"Miasmic Throwing Spear\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/ThrowingWeapons/T_ITEM_Iron_Wood_Throwing_Spear.T_ITEM_Iron_Wood_Throwing_Spear",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Throwing_Spear-Description\", \"A toxin-coated Throwing Spear, carefully crafted using Miasma harvested from Icarus wildlife.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Throwing_Spear-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 500,
@@ -11045,6 +11050,7 @@
         {
             "Name": "Item_Iron_Wood_Sickle",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Sickle-DisplayName\", \"Miasmic Sickle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Iron_Wood_Sickle.T_ITEM_Iron_Wood_Sickle",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Sickle-Description\", \"A toxin-coated Sickle, carefully crafted using Miasma harvested from Icarus wildlife. Gives a chance to receive larger harvests.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Sickle-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 500
@@ -11052,6 +11058,7 @@
         {
             "Name": "Item_Iron_Wood_Sledgehammer",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Sledgehammer-DisplayName\", \"Miasmic Sledgehammer\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Iron_Wood_Sledgehammer.T_ITEM_Iron_Wood_Sledgehammer",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Sledgehammer-Description\", \"A toxin-coated Hammer that allows you to delicately extract Noxious Crust when mining.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Sledgehammer-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 500
@@ -11059,6 +11066,7 @@
         {
             "Name": "Item_Iron_Wood_Arrow",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Arrow-DisplayName\", \"Miasmic Arrow\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Iron_Wood_Arrow.T_ITEM_Iron_Wood_Arrow",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Arrow-Description\", \"A toxin-coated Arrow, carefully crafted using Miasma harvested from Icarus wildlife.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Arrow-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 30,
@@ -11067,6 +11075,7 @@
         {
             "Name": "Item_Iron_Wood_Bolt",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Bolt-DisplayName\", \"Miasmic Bolt\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Iron_Wood_Bolt.T_ITEM_Iron_Wood_Bolt",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Bolt-Description\", \"A toxin-coated Bolt, carefully crafted using Miasma harvested from Icarus wildlife.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Bolt-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 14,
@@ -11075,6 +11084,7 @@
         {
             "Name": "Item_Iron_Wood_Rifle_Round",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Rifle_Round-DisplayName\", \"Miasmic Rifle Round\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Rifle_Round_Ironwood.T_ITEM_Ammo_Rifle_Round_Ironwood",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Rifle_Round-Description\", \"A toxin-coated round, carefully crafted using Miasma harvested from Icarus wildlife.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Rifle_Round-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 10,
@@ -11083,6 +11093,7 @@
         {
             "Name": "Item_Iron_Wood_Pistol_Round",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Pistol_Round-DisplayName\", \"Miasmic Pistol Round\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Pistol_Round_Ironwood.T_ITEM_Ammo_Pistol_Round_Ironwood",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Pistol_Round-Description\", \"A toxin-coated round, carefully crafted using Miasma harvested from Icarus wildlife.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Iron_Wood_Pistol_Round-FlavorText\", \"The miasma coating this tool emits an almost unbearable stench.\")",
             "Weight": 10,
@@ -11952,6 +11963,14 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Prototype_Printed_Crate-Description\", \"A 3D Printed Crate with an internal battery for keeping contents preserved.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Prototype_Printed_Crate-FlavorText\", \"Quicker than making your own\")",
             "Weight": 2000
+        },
+        {
+            "Name": "Item_Carcass_Rabbit_Variant",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rabbit_Variant-DisplayName\", \"Pygmy Lop Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Rabbit.ITEM_AnimalCarcass_Rabbit",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rabbit_Variant-Description\", \"As on Earth, a survivor, but not today.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rabbit_Variant-FlavorText\", \"The rabbit variant has found a new niche on this malformed environment.\")",
+            "Weight": 1000
         }
     ]
 }

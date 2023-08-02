@@ -6602,7 +6602,7 @@
         },
         {
             "Name": "Carrying_Miasmic_Items",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_PoisonAttack.Icon_BestTrait_PoisonAttack'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Icon_MiasmaticItem.T_Icon_MiasmaticItem'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Carrying_Miasmic_Items-ModifierName\", \"Carrying Miasmic Items\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Carrying_Miasmic_Items-ModifierDescription\", \"While carrying slowly drains health until cleaned.\")",
@@ -6650,10 +6650,10 @@
         },
         {
             "Name": "SulfurPool",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Volcanic-SulphurReaction-chaos.T_icon-weather-Volcanic-SulphurReaction-chaos'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Sulfur Pool Reaction\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Being damaged and heated by a nearby Sulfur Pool Reaction\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SulfurPool-ModifierName\", \"Sulfuric Burn\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SulfurPool-ModifierDescription\", \"Being damaged and heated by a nearby Sulfur pool reacting to a violent storm.\")",
             "GrantedStats": {
                 "(Value=\"BaseCooldownDegreePerMinute_+\")": -10,
                 "(Value=\"BaseInternalTemperatureModification_+\")": 500
@@ -6671,10 +6671,10 @@
         },
         {
             "Name": "Exposure_Volcanic_Ash",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Volcanic-HeavyAsh-chaos.T_icon-weather-Volcanic-HeavyAsh-chaos'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Ash Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to an ash storm, reduces movement speed and increases oxygen consumption.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Ash-ModifierName\", \"Ash Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Ash-ModifierDescription\", \"The ash storm is increasing your water and oxygen consumption, and reducing your processing speed. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -6701,10 +6701,10 @@
         },
         {
             "Name": "Exposure_Volcanic_AcidRain",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Swamp-AcidRains-chaos.T_icon-weather-Swamp-AcidRains-chaos'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Acid Rain Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to an acid rain storm, reduces movement speed and damages.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_AcidRain-ModifierName\", \"Acid Rain Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_AcidRain-ModifierDescription\", \"The acid rain storm is increasing your oxygen consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you and any nearby metal buildings.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -6731,10 +6731,10 @@
         },
         {
             "Name": "Exposure_Volcanic_SulfurReaction",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Swamp-AcidRains-chaos.T_icon-weather-Swamp-AcidRains-chaos'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Sulfur Reaction Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a sulfur storm, reduces movement speed and damages.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_SulfurReaction-ModifierName\", \"Sulfur Reaction Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_SulfurReaction-ModifierDescription\", \"The storm is causing violent reactions in the nearby sulfur, increasing your water consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -6761,10 +6761,10 @@
         },
         {
             "Name": "Exposure_Volcanic_Embers",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Volcanic-EmberFlakes-chaos.T_icon-weather-Volcanic-EmberFlakes-chaos'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Embers Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to an ember storm, reduces movement speed and increases water consumption.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Embers-ModifierName\", \"Embers Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Embers-ModifierDescription\", \"The ember storm is increasing your water consumption and warming you. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -6790,10 +6790,10 @@
         },
         {
             "Name": "Exposure_Volcanic_Heatwave",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-volcanic-Heatwave-start_stop.T_icon-weather-volcanic-Heatwave-start_stop'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Heatwave Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a heatwave, reduces movement speed and increases water consumption.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Heatwave-ModifierName\", \"Heatwave Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Heatwave-ModifierDescription\", \"The heatwave is increasing your water consumption and significantly warming you. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -6819,10 +6819,10 @@
         },
         {
             "Name": "Exposure_Swamp_AcidRain",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Swamp-AcidRains-chaos.T_icon-weather-Swamp-AcidRains-chaos'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Acid Rain Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to an acid rain storm, reduces movement speed and damages.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidRain-ModifierName\", \"Acid Rain Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidRain-ModifierDescription\", \"The acid rain storm is increasing your oxygen consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you and any nearby metal buildings.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -6849,10 +6849,10 @@
         },
         {
             "Name": "Exposure_Swamp_AcidFog",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Swamp-AcidFogs-chaos.T_icon-weather-Swamp-AcidFogs-chaos'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Acid Fog Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to an acid fog storm, reduces movement speed and damages.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidFog-ModifierName\", \"Acid Fog Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidFog-ModifierDescription\", \"The acid fog storm is increasing your oxygen consumption. Reduces your mobility, increases your stamina usage and damages you and your equipment.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -6877,7 +6877,7 @@
         },
         {
             "Name": "Exposure_Swamp_Rain",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-rain2.icon-weather-rain2'",
             "Type": "Debuff",
             "ModifierName": "INVTEXT(\"[DNT] Rain Exposure\")",
             "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a rain storm, reduces movement speed and cools.\")",
@@ -6909,10 +6909,10 @@
         },
         {
             "Name": "Exposure_Swamp_Wind",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind2.icon-weather-wind2'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Winds Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a wind storm, reduces movement speed and sprint speed.  Blows away the fog, more easily seen by wildlife.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_Wind-ModifierName\", \"Wind Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_Wind-ModifierDescription\", \"The wind storm is increasing your oxygen consumption. Significantly reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -6937,10 +6937,10 @@
         },
         {
             "Name": "Exposure_Swamp_ToxicGas",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Swamp-PutridGasses-chaos.T_icon-weather-Swamp-PutridGasses-chaos'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Putrid Gas Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a putrid gas storm, reduces movement speed and increases spoil rate.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_ToxicGas-ModifierName\", \"Putrid Gas Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_ToxicGas-ModifierDescription\", \"The putrid gas storm is increasing your oxygen consumption and increasing spoilage rate. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -6966,10 +6966,10 @@
         },
         {
             "Name": "Exposure_Arctic_Hail",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Tundra-Hail-chaos.T_icon-weather-Tundra-Hail-chaos'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Hail Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a hail storm, reduces movement speed and damages.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Hail-ModifierName\", \"Hail Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Hail-ModifierDescription\", \"The hail storm is increasing your food consumption. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -6994,10 +6994,10 @@
         },
         {
             "Name": "Exposure_Arctic_Wind",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind2.icon-weather-wind2'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Winds Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a wind storm, reduces movement speed and sprint speed.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Wind-ModifierName\", \"Winds Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Wind-ModifierDescription\", \"The wind storm is increasing your food consumption. Significantly reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -7022,10 +7022,10 @@
         },
         {
             "Name": "Exposure_Arctic_Snow",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-snow3.icon-weather-snow3'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Snow Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a snow storm, reduces movement speed and damages.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Snow-ModifierName\", \"Snow Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Snow-ModifierDescription\", \"The snow storm is increasing your food consumption and significantly cooling you. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -7051,10 +7051,10 @@
         },
         {
             "Name": "Exposure_Conifer_Hail",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/T_icon-weather-Grassland-Hail-chaos.T_icon-weather-Grassland-Hail-chaos'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Hail Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a hail storm, reduces movement speed and damages.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Hail-ModifierName\", \"Hail Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Hail-ModifierDescription\", \"The hail storm is increasing your oxygen consumption. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -7079,10 +7079,10 @@
         },
         {
             "Name": "Exposure_Conifer_Wind",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-wind2.icon-weather-wind2'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Winds Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a wind storm, reduces movement speed and sprint speed.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Wind-ModifierName\", \"Wind Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Wind-ModifierDescription\", \"The wind storm is increasing your oxygen consumption. Significantly reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -7107,10 +7107,10 @@
         },
         {
             "Name": "Exposure_Conifer_Rain",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Talent_WIP.T_Talent_WIP'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-rain2.icon-weather-rain2'",
             "Type": "Debuff",
-            "ModifierName": "INVTEXT(\"[DNT] Rain Exposure\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a rain storm, reduces movement speed and damages.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Rain-ModifierName\", \"Rain Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Rain-ModifierDescription\", \"The rain storm is increasing your oxygen consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
                 "RowName": "Exposure_Light"
             },
@@ -7160,7 +7160,10 @@
             "ModifierTickRate": 3,
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false,
-            "SaveToDatabase": false
+            "SaveToDatabase": false,
+            "Metadata": {
+                "bIsDeprecated": true
+            }
         },
         {
             "Name": "SwampSlug_Slime",

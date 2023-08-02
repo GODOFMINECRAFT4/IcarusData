@@ -12452,7 +12452,7 @@
                 },
                 {
                     "Item": {
-                        "RowName": "Polarbear_Pelt",
+                        "RowName": "Fur",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "DropChance": 100,
@@ -12464,15 +12464,15 @@
                         "RowName": "None",
                         "DataTableName": "D_Stats"
                     },
-                    "MinRandomStackCount": 2,
-                    "MaxRandomStackCount": 8,
+                    "MinRandomStackCount": 4,
+                    "MaxRandomStackCount": 12,
                     "bRewardsScale": true,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "ArcticPeltHarvestedFromAnimals_+%",
+                        "RowName": "FurHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
                 },
@@ -13070,6 +13070,32 @@
             "Rewards": [
                 {
                     "Item": {
+                        "RowName": "Polarbear_Pelt",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 75,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 2,
+                    "MaxRandomStackCount": 6,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "ArcticPeltHarvestedFromAnimals_+%",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
                         "RowName": "Fur",
                         "DataTableName": "D_ItemTemplate"
                     },
@@ -13083,7 +13109,7 @@
                         "DataTableName": "D_Stats"
                     },
                     "MinRandomStackCount": 6,
-                    "MaxRandomStackCount": 15,
+                    "MaxRandomStackCount": 16,
                     "bRewardsScale": true,
                     "StackAdditiveStat": {
                         "RowName": "None",

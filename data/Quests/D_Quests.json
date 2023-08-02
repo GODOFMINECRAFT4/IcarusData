@@ -6505,12 +6505,34 @@
         {
             "Name": "PRO_Story1_Mini_Quest_Collect_Seed",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Collect_Seed.BPQ_PRO_Story1_Mini_Quest_Collect_Seed_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Seed-Description\", \"Collected a Seed and Farming Plot Sinotai Delivery Pod (M)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Seed-Description\", \"Collected a Tomato and Farming Plot Sinotai Delivery Pod (M)\")"
         },
         {
-            "Name": "PRO_Story1_Mini_Quest_Tomatoes",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Tomatoes.BPQ_PRO_Story1_Mini_Quest_Tomatoes_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Tomatoes-Description\", \"Cultivate and Harvest One Tomato (Farming Plot)\")"
+            "Name": "PRO_Story1_Mini_Quest_Plant",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Plant_Seed.BPQ_PRO_Story1_Mini_Quest_Plant_Seed_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Plant-Description\", \"Place the Farming Plot and Plant a Tomato\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "V2PromNomadEvent5",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Grow",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Grow.BPQ_PRO_Story1_Mini_Quest_Grow_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Grow-Description\", \"Wait for the Tomato to Grow\")"
+        },
+        {
+            "Name": "PRO_Story1_Mini_Quest_Collect_Tomato",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story1/BPQ_PRO_Story1_Mini_Quest_Collect_Tomato.BPQ_PRO_Story1_Mini_Quest_Collect_Tomato_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story1_Mini_Quest_Collect_Tomato-Description\", \"Collect the Grown Tomato From the Farming Plot\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "V2PromNomadEvent8.7",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story1_Mini_Quest_Deliver",
@@ -7145,6 +7167,10 @@
                 "QuestStart": {
                     "RowName": "PromFractureIntro",
                     "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PromFractureEvent21End",
+                    "DataTableName": "D_Dialogue"
                 }
             }
         },
@@ -7239,7 +7265,7 @@
         {
             "Name": "PRO_Story6_Traitor_SearchCamp",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_SearchCamp.BPQ_PRO_Story6_Traitor_SearchCamp_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_SearchCamp-Description\", \"Search the Camp for Information {0}%\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_SearchCamp-Description\", \"Search the Camp for Information\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_Group15_Camp"
             }
@@ -7277,7 +7303,7 @@
         {
             "Name": "PRO_Story6_Base_Investigate",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Base_Investigate.BPQ_PRO_Story6_Base_Investigate_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Investigate-Description\", \"Investigate the Base for Further Recordings\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Investigate-Description\", \"Search the Base for Further Recordings\")"
         },
         {
             "Name": "PRO_Story6_Base_Defend",
@@ -7287,8 +7313,17 @@
                 "QuestStart": {
                     "RowName": "PromFractureEvent9",
                     "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PromFractureEvent12",
+                    "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "PRO_Story6_Base_Defend_Defend",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Base_Defend_Defend.BPQ_PRO_Story6_Base_Defend_Defend_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Defend_Defend-Description\", \"Hacking Active\")"
         },
         {
             "Name": "PRO_Story6_Base_Defend_Progress",
@@ -7296,36 +7331,40 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Defend_Progress-Description\", \"{0}% Complete\")"
         },
         {
-            "Name": "PRO_Story6_Base_Defend_Defend",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Base_Defend_Defend.BPQ_PRO_Story6_Base_Defend_Defend_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Defend_Defend-Description\", \"Defend the Device: {0}/{0}\")"
-        },
-        {
-            "Name": "PRO_Story6_Evidence",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence.BPQ_PRO_Story6_Evidence_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence-Description\", \"Find the Evidence\")",
-            "LocationQuery": {
-                "RowName": "PRO_Story_6_LavaCave_OutsideLava"
-            },
+            "Name": "PRO_Story6_Base_Run",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Base_Run.BPQ_PRO_Story6_Base_Run_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Base_Run-Description\", \"Leave the Area\")",
             "DialogueEvents": {
                 "QuestStart": {
-                    "RowName": "PromFractureEvent12",
+                    "RowName": "PromFractureEvent13",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "PromFractureEvent14",
                     "DataTableName": "D_Dialogue"
                 }
             }
         },
         {
-            "Name": "PRO_Story6_Evidence_Travel",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Travel.BPQ_PRO_Story6_Evidence_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Travel-Description\", \"Travel to the Location of the Evidence (M)\")",
+            "Name": "PRO_Story6_Evidence",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence.BPQ_PRO_Story6_Evidence_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence-Description\", \"Find the Evidence Mo Mentioned\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_LavaCave_OutsideLava"
             }
         },
         {
+            "Name": "PRO_Story6_Evidence_Travel",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Travel.BPQ_PRO_Story6_Evidence_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Travel-Description\", \"Travel to the Location of the Evidence (M)\")"
+        },
+        {
             "Name": "PRO_Story6_Evidence_Creature",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Creature.BPQ_PRO_Story6_Evidence_Creature_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Creature-Description\", \"Defeat the Giant Lava Creature\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_CreatureSpawn"
+            },
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "PromFractureEvent16",
@@ -7353,20 +7392,18 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue-Description\", \"Venture Further into the Cave\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_LavaCave_Inner"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PromFractureEvent18",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "PRO_Story6_Evidence_Discuss",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Discuss.BPQ_PRO_Story6_Evidence_Discuss_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Discuss-Description\", \"Discuss the Evidence with Sol\")"
-        },
-        {
-            "Name": "PRO_Story6_MoCamp_Collect",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_MoCamp_Collect-Description\", \"Search the Container\")"
-        },
-        {
-            "Name": "PRO_Story6_MoCamp_Creature",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_MoCamp_Creature-Description\", \"Defeat The Creature Defending the Camp\")"
         },
         {
             "Name": "DYN_Reward",
