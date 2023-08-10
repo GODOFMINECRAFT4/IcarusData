@@ -9233,7 +9233,7 @@
             },
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent1-Text-0\", \"For this assignment you\\'ll need a beacon. We don\\'t want to give away your location, so you will need to make one from scratch.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent1-Text-1\", \"You seem resourceful enough. I\\'ve marked the area you\\'ll need to search on your map. I\\'ll be in touch again once you locate the safehouse.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"PromDispatchEvent1-Text-1\", \"You seem resourceful enough? I\\'ve marked the area you\\'ll need to search on your map. I\\'ll be in touch again once you locate the safehouse.\")"
             ]
         },
         {
@@ -9367,6 +9367,7 @@
         {
             "Name": "PromDispatchEvent9",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/DISPATCH/PROM_DISPATCH_EVENT9.PROM_DISPATCH_EVENT9",
+            "Delay": 2,
             "Speaker": {
                 "RowName": "Clarke"
             },
@@ -9445,6 +9446,7 @@
         {
             "Name": "PromDispatchEvent10End",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/DISPATCH/PROM_DISPATCH_EVENT10.PROM_DISPATCH_EVENT10",
+            "Delay": 12,
             "Speaker": {
                 "RowName": "Clarke"
             },
@@ -9945,6 +9947,7 @@
         {
             "Name": "PromFractureEvent18",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/FRACTURE/PROM_FRACTURE_EVENT18.PROM_FRACTURE_EVENT18",
+            "Delay": 2,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromFractureEvent18-Text-0\", \"Dear god, is that-\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromFractureEvent18-Text-1\", \"Mr Berlinski, I really must insist-\")",
@@ -10058,6 +10061,7 @@
         {
             "Name": "PromFractureEvent19",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/FRACTURE/PROM_FRACTURE_EVENT19.PROM_FRACTURE_EVENT19",
+            "Delay": 5,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromFractureEvent19-Text-0\", \"Oh, friend? I found another file in the data we decrypted. Playing it for you now.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromFractureEvent19-Text-1\", \"What you\\'re seeing here is no lie. The Group knew that these creatures lived peacefully on Icarus.\")",
@@ -10323,6 +10327,7 @@
         {
             "Name": "PROM_FRACTURE_EVENT17a",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/FRACTURE/PROM_FRACTURE_EVENT17a.PROM_FRACTURE_EVENT17a",
+            "Delay": 2.5,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PROM_FRACTURE_EVENT17a-Text-0\", \"I don\\'t like this, I don\\'t like this one bit. \")"
             ]
@@ -10330,6 +10335,7 @@
         {
             "Name": "PROM_FRACTURE_EVENT17b",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/FRACTURE/PROM_FRACTURE_EVENT17b.PROM_FRACTURE_EVENT17b",
+            "Delay": 2.5,
             "Speaker": {
                 "RowName": "Clarke"
             },
@@ -10340,6 +10346,7 @@
         {
             "Name": "PROM_FRACTURE_EVENT17c",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/FRACTURE/PROM_FRACTURE_EVENT17c.PROM_FRACTURE_EVENT17c",
+            "Delay": 1,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PROM_FRACTURE_EVENT17c-Text-0\", \"What the hell are these markings? What the hell have you been messing with down here?!\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PROM_FRACTURE_EVENT17c-Text-1\", \"That\\'s classified.\")",
@@ -10909,7 +10916,7 @@
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent11-Text-0\", \"Not sure if this has been brought up before, but we have a new way of doing things now.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent11-Text-1\", \"Now, Sinotai have come up with a fancy new way of shipping your exotic hauls off-world.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent11-Text-2\", \"They\\'re calling it the Oribital Exchange System. O. E. S.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent11-Text-2\", \"They\\'re calling it the Orbital Exchange System. O. E. S.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent11-Text-3\", \"Abandoning all your planetside tech is a thing of the past if you prefer.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent11-Text-4\", \"Chuck \\'em in the pod, and it drops it all off at the station. Pretty cool huh?\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent11-Text-5\", \"It\\'s free for now, while they\\'re still testing the pods. Who knows how much cash they\\'ll rake in from this later.\")",
@@ -10979,7 +10986,15 @@
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-1\", \"Check the board to see what\\'s available. There\\'s always something to do.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-2\", \"If you want to take on more complex assignments, and get more time with yours truly...\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-3\", \"You\\'ll have to craft an Infrasonic Relay Device.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-4\", \"Heh. UDA\\'s way of keepin\\' out fresh foot prospectors lookin\\' for an early grave.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-4\", \"Heh. UDA\\'s way of keepin\\' out fresh foot prospectors lookin\\' for an early grave.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-5\", \"Oh, almost forgot, one last thing.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-6\", \"Sinotai have come up with a fancy new way of shipping your exotic hauls off-world.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-7\", \"They\\'re calling it the Orbital Exchange System. O. E. S.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-8\", \"Abandoning all your planetside tech is a thing of the past if you prefer.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-9\", \"Chuck \\'em in the pod, and it drops it all off at the station. Pretty cool huh?\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-10\", \"It\\'s free for now, while they\\'re still testing the pods. Who knows how much cash they\\'ll rake in from this later.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-11\", \"O.E.S. Schematic should be available, if ya want to build one.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent1-Text-12\", \"Good luck prospector. Try not to die.\")"
             ]
         },
         {
@@ -10988,11 +11003,10 @@
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent2-Text-0\", \"Oh, almost forgot, one last thing.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent2-Text-1\", \"Sinotai have come up with a fancy new way of shipping your exotic hauls off-world.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent2-Text-2\", \"They\\'re calling it the Oribital Exchange System. O. E. S.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent2-Text-2\", \"They\\'re calling it the Orbital Exchange System. O. E. S.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent2-Text-3\", \"Abandoning all your planetside tech is a thing of the past if you prefer.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent2-Text-4\", \"Chuck \\'em in the pod, and it drops it all off at the station. Pretty cool huh?\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent2-Text-5\", \"It\\'s free for now, while they\\'re still testing the pods. Who knows how much cash they\\'ll rake in from this later.\")",
-                ""
+                "NSLOCTEXT(\"D_Dialogue\", \"OpenWorldEvent2-Text-5\", \"It\\'s free for now, while they\\'re still testing the pods. Who knows how much cash they\\'ll rake in from this later.\")"
             ]
         },
         {
@@ -11037,7 +11051,7 @@
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent6-Text-0\", \"Attention, Prospector. A new work order has been received. \")",
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent6-Text-1\", \"One of your fellow contractors has been severely injured, and returned to orbit for treatment.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent6-Text-2\", \"They have requested help in locating and escorting their organic transportation that was abandoned during extraction.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent6-Text-2\", \"They have requested help in locating and escorting their pet Blueback that was abandoned during extraction.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent6-Text-3\", \"You are advised that once the aforementioned creature has been escorted back to the contractor\\'s encampment, you may make use of any of the supplies left behind.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent6-Text-4\", \"Additionally the contractor wanted the following message passed to you:\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"V2PromNomadEvent6-Text-5\", \"Please, please save Daisy. She\\'s saved me more times than I can count. It\\'s the least I can do for her\")",

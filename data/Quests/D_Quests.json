@@ -7225,6 +7225,14 @@
             }
         },
         {
+            "Name": "PRO_Story6_Traitor_Trail1",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_FollowTrail.BPQ_PRO_Story6_Traitor_FollowTrail_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail1-Description\", \"Follow the Trail to the Cave (M)\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_TraitorTrail1"
+            }
+        },
+        {
             "Name": "PRO_Story6_Traitor_Trail2",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_FollowTrail.BPQ_PRO_Story6_Traitor_FollowTrail_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_Trail2-Description\", \"Follow the Trail through the Cave (M)\")",
@@ -7375,35 +7383,38 @@
         {
             "Name": "PRO_Story6_Evidence_Collect",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect.BPQ_PRO_Story6_Evidence_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect-Description\", \"Enter the Cave and Find the Evidence\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect-Description\", \"Find the Entrance to the Cave\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_LavaCave_Entry"
             },
             "DialogueEvents": {
                 "QuestEnd": {
-                    "RowName": "PromFractureEvent17",
+                    "RowName": "PROM_FRACTURE_EVENT17a",
                     "DataTableName": "D_Dialogue"
                 }
+            },
+            "MusicCondition": {
+                "RowName": "PRO_Story6_Evidence"
             }
         },
         {
             "Name": "PRO_Story6_Evidence_Collect_Continue",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue.BPQ_PRO_Story6_Evidence_Collect_Continue_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue-Description\", \"Venture Further into the Cave\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue-Description\", \"Enter the Cave and Find the Evidence\")",
             "LocationQuery": {
-                "RowName": "PRO_Story_6_LavaCave_Inner"
+                "RowName": "PRO_Story_6_LavaCave_End"
             },
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "PromFractureEvent18",
-                    "DataTableName": "D_Dialogue"
-                }
+            "MusicCondition": {
+                "RowName": "PRO_Story6_Evidence"
             }
         },
         {
             "Name": "PRO_Story6_Evidence_Discuss",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Discuss.BPQ_PRO_Story6_Evidence_Discuss_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Discuss-Description\", \"Discuss the Evidence with Sol\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Discuss-Description\", \"Discuss the Evidence with Sol\")",
+            "MusicCondition": {
+                "RowName": "PRO_Story6_Evidence"
+            }
         },
         {
             "Name": "DYN_Reward",
@@ -7822,12 +7833,28 @@
         {
             "Name": "PRO_Story0",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0.BPQ_PRO_Story0_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0-Description\", \"Welcome to Prometheus\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0-Description\", \"Welcome to Prometheus\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "PromNomadIntro",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story0_Craft",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0_Craft.BPQ_PRO_Story0_Craft_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a Short Range Radio (Crafting Bench) to engage with Dynamic missions and the Prometheus Story\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a Short Range Radio (Crafting Bench) to engage with Dynamic missions and the Prometheus Story\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "OpenWorldIntroSRR",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "OpenWorldEvent1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_Story_5_TransmitterHealth",
@@ -8195,6 +8222,53 @@
             "Name": "STYX_C_Fishing_Delivery_Sashimi",
             "Class": "/Game/BP/Quests/Styx/C/Fishing/BPQ_STYX_C_Fishing_Delivery_Sashimi.BPQ_STYX_C_Fishing_Delivery_Sashimi_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_C_Fishing_Delivery_Sashimi-Description\", \"{0} / {1} Saltwater Fillet Sashimi\")"
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Collect_Continue_A",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_A_Inner.BPQ_PRO_Story6_Evidence_Collect_Continue_A_Inner_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue_A-Description\", \"Venture Into the Cave\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_Inner"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PROM_FRACTURE_EVENT17b",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Collect_Continue_B",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_B_Tunnel.BPQ_PRO_Story6_Evidence_Collect_Continue_B_Tunnel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue_B-Description\", \"Venture Further Into the Cave\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_Tunnel"
+            }
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Collect_Continue_C",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_C_Cavern.BPQ_PRO_Story6_Evidence_Collect_Continue_C_Cavern_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue_C-Description\", \"Keep Going\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_Cavern"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "PROM_FRACTURE_EVENT17c",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Collect_End",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_End.BPQ_PRO_Story6_Evidence_Collect_End_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_End-Description\", \"Explore the Settlement\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_End"
+            },
+            "MusicCondition": {
+                "RowName": "PRO_Story6_Evidence"
+            }
         }
     ]
 }

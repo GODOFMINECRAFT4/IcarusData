@@ -1495,7 +1495,7 @@
                 "(Value=\"BaseExplosiveDamageResistance_%\")": -25,
                 "(Value=\"BasePoisonDamageResistance_%\")": -50
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_MediumDeerHealth.C_MediumDeerHealth'",
+            "Health": "CurveFloat'/Game/Data/AI/C_BuffaloHealth.C_BuffaloHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -1916,6 +1916,31 @@
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
         {
+            "Name": "LavaBroodling_WorldSpawn",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 6000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 6750,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseCharacterMass_+\")": 400,
+                "(Value=\"BaseNPCAttackRadius_+\")": 250,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 255,
+                "(Value=\"BaseAttacksCauseBurn_%\")": 25
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_LavaBroodlingWorldSpawn_Health.C_LavaBroodlingWorldSpawn_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_LavaBroodlingWorldSpawnMeleeDamage.C_LavaBroodlingWorldSpawnMeleeDamage'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
             "Name": "LavaFlyer",
             "Base": {
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
@@ -2115,7 +2140,7 @@
                 "(Value=\"BaseFireDamageResistance_%\")": 90,
                 "(Value=\"BaseFrostDamageResistance_%\")": -50
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_MediumDeerHealth.C_MediumDeerHealth'",
+            "Health": "CurveFloat'/Game/Data/AI/C_BuffaloHealth.C_BuffaloHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },

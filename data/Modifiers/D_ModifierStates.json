@@ -2245,7 +2245,8 @@
                         "TagName": "ModifierState.Dehumidified"
                     }
                 ]
-            }
+            },
+            "bEffectsObjects": true
         },
         {
             "Name": "Dehumidifier_Aura",
@@ -6589,13 +6590,28 @@
             "Name": "Clogged_Ash",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_StormHigh.Icon_StormHigh'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Clogged_Ash-ModifierName\", \"Clogged\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Clogged_Ash-ModifierDescription\", \"Clogged With Ash\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Clogged_Ash-ModifierName\", \"Ash-Clogged\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Clogged_Ash-ModifierDescription\", \"Crafting Speed is dramatically reduced. Can be reduced through shelter and countered with a dehumidier to clean the air.\")",
             "GrantedStats": {
-                "(Value=\"BaseProcessorResourceClog_%\")": 100
+                "(Value=\"BaseProcessorResourceClog_%\")": 90
             },
             "ShouldTick": true,
             "MergeType": "Replace",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Dehumidified"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( ModifierState.Dehumidified )"
+            },
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
             "bEffectsPlayers": false
@@ -6619,8 +6635,8 @@
         },
         {
             "Name": "Shallow_Water",
-            "ModifierName": "INVTEXT(\"[DNT] Shallow Water\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Should have brought your waders\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Shallow_Water-ModifierName\", \"Shallow Water\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Shallow_Water-ModifierDescription\", \"Should have brought your waders\")",
             "VisibleToPlayer": false,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
             "MergeType": "Stack"
@@ -6706,7 +6722,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_AcidRain-ModifierName\", \"Acid Rain Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_AcidRain-ModifierDescription\", \"The acid rain storm is increasing your oxygen consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you and any nearby metal buildings.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -6766,7 +6782,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Embers-ModifierName\", \"Embers Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_Embers-ModifierDescription\", \"The ember storm is increasing your water consumption and warming you. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -6824,7 +6840,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidRain-ModifierName\", \"Acid Rain Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_AcidRain-ModifierDescription\", \"The acid rain storm is increasing your oxygen consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you and any nearby metal buildings.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -6882,7 +6898,7 @@
             "ModifierName": "INVTEXT(\"[DNT] Rain Exposure\")",
             "ModifierDescription": "INVTEXT(\"[DNT] Expsosure to a rain storm, reduces movement speed and cools.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -6914,7 +6930,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_Wind-ModifierName\", \"Wind Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_Wind-ModifierDescription\", \"The wind storm is increasing your oxygen consumption. Significantly reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -6942,7 +6958,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_ToxicGas-ModifierName\", \"Putrid Gas Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Swamp_ToxicGas-ModifierDescription\", \"The putrid gas storm is increasing your oxygen consumption and increasing spoilage rate. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -6971,7 +6987,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Hail-ModifierName\", \"Hail Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Hail-ModifierDescription\", \"The hail storm is increasing your food consumption. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -6999,7 +7015,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Wind-ModifierName\", \"Winds Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Wind-ModifierDescription\", \"The wind storm is increasing your food consumption. Significantly reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -7027,7 +7043,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Snow-ModifierName\", \"Snow Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_Snow-ModifierDescription\", \"The snow storm is increasing your food consumption and significantly cooling you. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -7056,7 +7072,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Hail-ModifierName\", \"Hail Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Hail-ModifierDescription\", \"The hail storm is increasing your oxygen consumption. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -7084,7 +7100,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Wind-ModifierName\", \"Wind Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Wind-ModifierDescription\", \"The wind storm is increasing your oxygen consumption. Significantly reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,
@@ -7112,7 +7128,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Rain-ModifierName\", \"Rain Exposure\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Conifer_Rain-ModifierDescription\", \"The rain storm is increasing your oxygen consumption and cooling you. Reduces your mobility, increases your stamina usage and damages you.\")",
             "AudioData": {
-                "RowName": "Exposure_Light"
+                "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
                 "(Value=\"BaseStaminaConsumed_+%\")": 100,

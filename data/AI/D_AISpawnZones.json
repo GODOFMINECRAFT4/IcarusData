@@ -334,9 +334,9 @@
                     }
                 ]
             },
-            "MinLevel": 60,
-            "MedianLevel": 70,
-            "MaxLevel": 80
+            "MinLevel": 30,
+            "MedianLevel": 50,
+            "MaxLevel": 70
         },
         {
             "Name": "PRO_Grasslands_Mounts",
@@ -659,9 +659,10 @@
             "Name": "PRO_Volcanic_Easy",
             "Creatures": {
                 "SpawnList": {
-                    "(Value=\"Rock_Dog\")": 5,
+                    "(Value=\"Rock_Dog\")": 2,
                     "(Value=\"BlueBack_Lava\")": 6,
-                    "(Value=\"Deer_Desert_Medium\")": 6
+                    "(Value=\"Deer_Desert_Medium\")": 6,
+                    "(Value=\"LavaBroodlingWorldSpawn\")": 4
                 },
                 "RelevantAutonomousSpawners": [
                     {
@@ -684,7 +685,8 @@
                 "SpawnList": {
                     "(Value=\"Desert_Wolf\")": 5,
                     "(Value=\"Chamois_Var\")": 5,
-                    "(Value=\"Lava_Komodo\")": 5
+                    "(Value=\"Lava_Komodo\")": 5,
+                    "(Value=\"LavaBroodlingWorldSpawn\")": 5
                 },
                 "RelevantAutonomousSpawners": [
                     {
@@ -705,7 +707,8 @@
             "Name": "PRO_Volcanic_LavaRiver",
             "Creatures": {
                 "SpawnList": {
-                    "(Value=\"Desert_Striker\")": 5
+                    "(Value=\"Desert_Striker\")": 5,
+                    "(Value=\"LavaBroodlingWorldSpawn\")": 2
                 },
                 "BiomeSpawnDensity": 4,
                 "RelevantAutonomousSpawners": [
@@ -783,8 +786,9 @@
             "Name": "PRO_Lava_Main",
             "Creatures": {
                 "SpawnList": {
-                    "(Value=\"Rock_Dog\")": 10,
-                    "(Value=\"Deer_Desert_Large\")": 10
+                    "(Value=\"Rock_Dog\")": 5,
+                    "(Value=\"Deer_Desert_Large\")": 10,
+                    "(Value=\"LavaBroodlingWorldSpawn\")": 10
                 },
                 "RelevantAutonomousSpawners": [
                     {

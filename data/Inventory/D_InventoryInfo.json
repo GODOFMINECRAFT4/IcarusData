@@ -11,6 +11,7 @@
         "StartingSlots": 0,
         "SlotOverrides": [],
         "RemoveOnly": false,
+        "bIsClientSideOnly": false,
         "Stats": {}
     },
     "Rows": [
@@ -172,6 +173,9 @@
             "Name": "Space_Player_Loadout",
             "InventoryID": {
                 "Value": "Loadout"
+            },
+            "SlotTemplate": {
+                "RowName": "No_Envirosuits"
             },
             "StartingSlots": 15
         },
@@ -1204,7 +1208,7 @@
                 "Value": "General"
             },
             "SlotTemplate": {
-                "RowName": "Any_Exotic"
+                "RowName": "Any_Meta"
             },
             "StartingSlots": 30
         },
@@ -1416,6 +1420,25 @@
                 "Value": "General"
             },
             "StartingSlots": 30
+        },
+        {
+            "Name": "On_Prospect_Meta_Inventory",
+            "InventoryID": {
+                "Value": "On_Prospect_Habitat"
+            },
+            "StartingSlots": 200,
+            "bIsClientSideOnly": true
+        },
+        {
+            "Name": "On_Prospect_Loadout_Request",
+            "InventoryID": {
+                "Value": "On_Prospect_Loadout"
+            },
+            "SlotTemplate": {
+                "RowName": "No_Envirosuits"
+            },
+            "StartingSlots": 15,
+            "bIsClientSideOnly": true
         }
     ]
 }
