@@ -2918,7 +2918,23 @@
         {
             "Name": "GasFlyer",
             "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Movement/GasFlyer/SFX_CRE_GASFLYER_FLY_MOVEMENT_FAST.SFX_CRE_GASFLYER_FLY_MOVEMENT_FAST",
-            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_MED.SFX_CRE_DEATHFALL_MED"
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_MED.SFX_CRE_DEATHFALL_MED",
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "GasflyIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            }
         }
     ]
 }

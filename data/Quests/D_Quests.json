@@ -14,6 +14,7 @@
             "RowName": "None",
             "DataTableName": "D_MusicQuestConditions"
         },
+        "bPlayAudioCueOnCompletion": true,
         "Modifiers": []
     },
     "GenerateEnum": true,
@@ -7406,7 +7407,8 @@
             },
             "MusicCondition": {
                 "RowName": "PRO_Story6_Evidence"
-            }
+            },
+            "bPlayAudioCueOnCompletion": false
         },
         {
             "Name": "PRO_Story6_Evidence_Discuss",
@@ -8225,30 +8227,23 @@
         },
         {
             "Name": "PRO_Story6_Evidence_Collect_Continue_A",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_A_Inner.BPQ_PRO_Story6_Evidence_Collect_Continue_A_Inner_C",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_A.BPQ_PRO_Story6_Evidence_Collect_Continue_A_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue_A-Description\", \"Venture Into the Cave\")",
             "LocationQuery": {
-                "RowName": "PRO_Story_6_LavaCave_Inner"
+                "RowName": "PRO_Story_6_LavaCave_Tunnel"
             },
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "PROM_FRACTURE_EVENT17b",
                     "DataTableName": "D_Dialogue"
                 }
-            }
+            },
+            "bPlayAudioCueOnCompletion": false
         },
         {
             "Name": "PRO_Story6_Evidence_Collect_Continue_B",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_B_Tunnel.BPQ_PRO_Story6_Evidence_Collect_Continue_B_Tunnel_C",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_B.BPQ_PRO_Story6_Evidence_Collect_Continue_B_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue_B-Description\", \"Venture Further Into the Cave\")",
-            "LocationQuery": {
-                "RowName": "PRO_Story_6_LavaCave_Tunnel"
-            }
-        },
-        {
-            "Name": "PRO_Story6_Evidence_Collect_Continue_C",
-            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_C_Cavern.BPQ_PRO_Story6_Evidence_Collect_Continue_C_Cavern_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue_C-Description\", \"Keep Going\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_LavaCave_Cavern"
             },
@@ -8257,7 +8252,17 @@
                     "RowName": "PROM_FRACTURE_EVENT17c",
                     "DataTableName": "D_Dialogue"
                 }
-            }
+            },
+            "bPlayAudioCueOnCompletion": false
+        },
+        {
+            "Name": "PRO_Story6_Evidence_Collect_Continue_C",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Evidence_Collect_Continue_C.BPQ_PRO_Story6_Evidence_Collect_Continue_C_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Evidence_Collect_Continue_C-Description\", \"Keep Going\")",
+            "LocationQuery": {
+                "RowName": "PRO_Story_6_LavaCave_LastTunnel"
+            },
+            "bPlayAudioCueOnCompletion": false
         },
         {
             "Name": "PRO_Story6_Evidence_Collect_End",

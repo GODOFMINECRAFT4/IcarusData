@@ -216,10 +216,10 @@
                         "TagName": "Item.Resource.Fiber"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Fuel.Combustible"
                     },
                     {
-                        "TagName": "Item.Fuel.Combustible"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -229,10 +229,10 @@
                         "TagName": "Item.Resource.Fiber"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Fuel.Combustible"
                     },
                     {
-                        "TagName": "Item.Fuel.Combustible"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -2110,20 +2110,20 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Consumable.Food.Berry"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Berry"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Consumable.Food.Berry"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Berry"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -9341,10 +9341,10 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Raw"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -9354,10 +9354,10 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Raw"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -9425,10 +9425,10 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Raw"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -9438,10 +9438,10 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Raw"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -9550,7 +9550,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -9560,7 +9560,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -11809,6 +11809,9 @@
             "Interactable": {
                 "RowName": "Interactable_CropPlot"
             },
+            "Hitable": {
+                "RowName": "CropPlot"
+            },
             "Focusable": {
                 "RowName": "Focusable_1H"
             },
@@ -11865,6 +11868,9 @@
                     },
                     {
                         "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
                     },
                     {
                         "TagName": "Traits.Highlightable"
@@ -13009,6 +13015,9 @@
             },
             "Audio": {
                 "RowName": "Shovel"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -25
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -16103,7 +16112,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -16113,7 +16122,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -16164,7 +16173,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -16174,7 +16183,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -18051,7 +18060,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -18061,7 +18070,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -30477,20 +30486,20 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Consumable.Food.Corn"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Corn"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Consumable.Food.Corn"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Corn"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -43659,7 +43668,7 @@
                         "TagName": "Item.Consumable.Food.Pumpkin"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -43675,7 +43684,7 @@
                         "TagName": "Item.Consumable.Food.Pumpkin"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -43743,10 +43752,7 @@
                         "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Mushroom"
-                    },
-                    {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -43759,10 +43765,7 @@
                         "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Mushroom"
-                    },
-                    {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -43833,7 +43836,7 @@
                         "TagName": "Item.Consumable.Food.Squash"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -43849,7 +43852,7 @@
                         "TagName": "Item.Consumable.Food.Squash"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -43920,7 +43923,7 @@
                         "TagName": "Item.Consumable.Food.Watermelon"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -43936,7 +43939,7 @@
                         "TagName": "Item.Consumable.Food.Watermelon"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -45736,7 +45739,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -45746,7 +45749,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -45796,7 +45799,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -45806,7 +45809,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -45856,7 +45859,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -45866,7 +45869,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -45916,7 +45919,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -45926,7 +45929,7 @@
                         "TagName": "Item.Resource"
                     },
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -57377,6 +57380,12 @@
             "Interactable": {
                 "RowName": "Item"
             },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Fertilizer"
+            },
             "Durable": {
                 "RowName": "Fertilizer"
             },
@@ -57412,6 +57421,9 @@
                         "TagName": "Traits.Interactable"
                     },
                     {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
                         "TagName": "Traits.Durable"
                     }
                 ],
@@ -57428,6 +57440,12 @@
             },
             "Interactable": {
                 "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Fertilizer"
             },
             "Durable": {
                 "RowName": "Fertilizer"
@@ -57464,6 +57482,9 @@
                         "TagName": "Traits.Interactable"
                     },
                     {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
                         "TagName": "Traits.Durable"
                     }
                 ],
@@ -57480,6 +57501,12 @@
             },
             "Interactable": {
                 "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Actionable": {
+                "RowName": "Fertilizer"
             },
             "Durable": {
                 "RowName": "Fertilizer"
@@ -57514,6 +57541,9 @@
                     },
                     {
                         "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
                     },
                     {
                         "TagName": "Traits.Durable"
@@ -89346,10 +89376,7 @@
                         "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Mushroom"
-                    },
-                    {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -89362,10 +89389,7 @@
                         "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Mushroom"
-                    },
-                    {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -89433,10 +89457,7 @@
                         "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Mushroom"
-                    },
-                    {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -89449,10 +89470,7 @@
                         "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Mushroom"
-                    },
-                    {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -89520,10 +89538,7 @@
                         "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Mushroom"
-                    },
-                    {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -89536,10 +89551,7 @@
                         "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Mushroom"
-                    },
-                    {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -89607,10 +89619,7 @@
                         "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Mushroom"
-                    },
-                    {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     }
                 ]
             },
@@ -89623,10 +89632,7 @@
                         "TagName": "Item.Consumable.Food.Raw"
                     },
                     {
-                        "TagName": "Item.Consumable.Food.Mushroom"
-                    },
-                    {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Plant"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -97294,6 +97300,1054 @@
                     },
                     {
                         "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Seed",
+            "Meshable": {
+                "RowName": "Mesh_Seed"
+            },
+            "Itemable": {
+                "RowName": "Item_Seed"
+            },
+            "Interactable": {
+                "RowName": "Interactable_CropMound"
+            },
+            "Hitable": {
+                "RowName": "CropPlot"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Seed"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Farming_CropPlot_Mound"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Farmable": {
+                "RowName": "Dirt_Mound"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Seed"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Farming_CropPlot_T2_v2",
+            "Meshable": {
+                "RowName": "Mesh_Farming_CropPlot_T2"
+            },
+            "Itemable": {
+                "RowName": "Item_Farming_CropPlot_T2"
+            },
+            "Interactable": {
+                "RowName": "Interactable_CropPlot_v2"
+            },
+            "Hitable": {
+                "RowName": "CropPlot"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Farming_CropPlot_T2_v2"
+            },
+            "Durable": {
+                "RowName": "Deployable_750"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Farmable": {
+                "RowName": "Small_Planter"
+            },
+            "Audio": {
+                "RowName": "GenericDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Plot"
+                    },
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Plot"
+                    },
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Farming_CropPlot_T3_v2",
+            "Meshable": {
+                "RowName": "Mesh_Farming_CropPlot_T3"
+            },
+            "Itemable": {
+                "RowName": "Item_Farming_CropPlot_T3"
+            },
+            "Interactable": {
+                "RowName": "Interactable_CropPlot_v2"
+            },
+            "Hitable": {
+                "RowName": "CropPlot"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Farming_CropPlot_T3_v2"
+            },
+            "Durable": {
+                "RowName": "Deployable_1500"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Farmable": {
+                "RowName": "Small_Planter"
+            },
+            "Water": {
+                "RowName": "CropPlot"
+            },
+            "Audio": {
+                "RowName": "GenericDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Plot"
+                    },
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Plot"
+                    },
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Water"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Farming_CropPlot_T4_v2",
+            "Meshable": {
+                "RowName": "Mesh_Farming_CropPlot_T4"
+            },
+            "Itemable": {
+                "RowName": "Item_Farming_CropPlot_T4"
+            },
+            "Interactable": {
+                "RowName": "Interactable_CropPlot_v2"
+            },
+            "Hitable": {
+                "RowName": "CropPlot"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Farming_CropPlot_T4_v2"
+            },
+            "Durable": {
+                "RowName": "Deployable_2000"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Farmable": {
+                "RowName": "Small_Planter"
+            },
+            "Energy": {
+                "RowName": "Meta_Crop_Plot"
+            },
+            "Water": {
+                "RowName": "CropPlot"
+            },
+            "Audio": {
+                "RowName": "GenericDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Plot"
+                    },
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Plot"
+                    },
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Energy"
+                    },
+                    {
+                        "TagName": "Traits.Water"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Farming_CropPlot_Workshop",
+            "Meshable": {
+                "RowName": "Mesh_Farming_CropPlot_Workshop"
+            },
+            "Itemable": {
+                "RowName": "Item_Farming_CropPlot_Workshop"
+            },
+            "Interactable": {
+                "RowName": "Interactable_CropPlot_v2"
+            },
+            "Hitable": {
+                "RowName": "CropPlot"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Farming_CropPlot_Workshop"
+            },
+            "Durable": {
+                "RowName": "Deployable_2000"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Farmable": {
+                "RowName": "Small_Planter"
+            },
+            "Energy": {
+                "RowName": "Meta_Crop_Plot"
+            },
+            "Water": {
+                "RowName": "CropPlot"
+            },
+            "Audio": {
+                "RowName": "GenericDeployable"
+            },
+            "AdditionalStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 25,
+                "(Value=\"BasePlantedCropYield_+%\")": 25,
+                "(Value=\"BasePlantedCropHarvestedItemSpoilTime_+%\")": 25
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Plot"
+                    },
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "Item.Meta"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Plot"
+                    },
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "Item.Meta"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Energy"
+                    },
+                    {
+                        "TagName": "Traits.Water"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Stone_Shovel",
+            "Meshable": {
+                "RowName": "Mesh_Shovel_Stone"
+            },
+            "Itemable": {
+                "RowName": "Item_Stone_Shovel"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Shovel"
+            },
+            "Actionable": {
+                "RowName": "Shovel"
+            },
+            "Usable": {
+                "RowName": "Repair"
+            },
+            "Durable": {
+                "RowName": "Stone_Shovel"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "ShovelWood"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Tool.Shovel"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Tool.Shovel"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Dirt_Mound",
+            "Meshable": {
+                "RowName": "Mesh_Seed"
+            },
+            "Itemable": {
+                "RowName": "Item_Dirt_Mound"
+            },
+            "Interactable": {
+                "RowName": "Interactable_CropMound"
+            },
+            "Hitable": {
+                "RowName": "CropPlot"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Farming_CropPlot_Mound"
+            },
+            "Durable": {
+                "RowName": "Deployable_1000"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Farmable": {
+                "RowName": "Dirt_Mound"
+            },
+            "Audio": {
+                "RowName": "DirtMound"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Seed"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Food_Seed_Bread",
+            "Meshable": {
+                "RowName": "Mesh_Food_Generic"
+            },
+            "Itemable": {
+                "RowName": "Item_Seed_Bread"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Food_Seed_Bread"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_Bread_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Food_Seed_Cracker",
+            "Meshable": {
+                "RowName": "Mesh_Food_Generic"
+            },
+            "Itemable": {
+                "RowName": "Item_Seed_Cracker"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Food_Seed_Crackers"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_Bread_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Food_Berry_Bar",
+            "Meshable": {
+                "RowName": "Mesh_Food_Generic"
+            },
+            "Itemable": {
+                "RowName": "Item_Berry_Bar"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Food_Berry_Bar"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_Bread_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Food_Animal_Feed",
+            "Meshable": {
+                "RowName": "Mesh_Food_Generic"
+            },
+            "Itemable": {
+                "RowName": "Item_Animal_Feed"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Animal_Feed"
+            },
+            "Consumable": {
+                "RowName": "Food_Animal_Feed"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_Bread_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item.AnimalFood"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item.AnimalFood"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Seed_Oil",
+            "Meshable": {
+                "RowName": "Mesh_Food_Generic"
+            },
+            "Itemable": {
+                "RowName": "Item_Seed_Oil"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "CraftingExperience": 10,
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Watering_Can",
+            "Meshable": {
+                "RowName": "Mesh_WateringCan"
+            },
+            "Itemable": {
+                "RowName": "Item_Watering_Can"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Watering_Can"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Watering_Can"
+            },
+            "Fillable": {
+                "RowName": "Canteen"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "Canteen"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Fillable.Water"
+                    },
+                    {
+                        "TagName": "Item.Equip.Quickbar"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Fillable.Water"
+                    },
+                    {
+                        "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Fillable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
                     }
                 ],
                 "ParentTags": []

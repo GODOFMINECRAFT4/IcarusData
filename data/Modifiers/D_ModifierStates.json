@@ -4170,9 +4170,9 @@
         },
         {
             "Name": "Plant_Watered",
-            "ModifierName": "",
-            "ModifierDescription": "",
-            "VisibleToPlayer": false,
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_WaterBuff.Icon_WaterBuff'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Watered-ModifierName\", \"Plant Watered\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Watered-ModifierDescription\", \"Growth Speed is increased by being watered.\")",
             "GrantedStats": {
                 "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 50
             },
@@ -7190,6 +7190,351 @@
             "GrantedStats": {
                 "(Value=\"BaseMovementSpeed_+%\")": -75
             },
+            "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "Plant_Outside",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sun.icon-weather-sun'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Outside-ModifierName\", \"Sunlight\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Outside-ModifierDescription\", \"Plant is growing at its normal speed thanks to having access to sunlight.\")",
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Plant_No_Sun",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Outdoor.Icon_Outdoor'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_No_Sun-ModifierName\", \"Lacking Sunlight\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_No_Sun-ModifierDescription\", \"Growth Speed decreased due to the lack of sunlight.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": -50
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Plant_InGreenhouse",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_GreenHouse.Icon_GreenHouse'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_InGreenhouse-ModifierName\", \"Greenhouse\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_InGreenhouse-ModifierDescription\", \"Growth Speed is increased by being in or near glass buildings..\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 50
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Plant_Powered",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_GreenHouse_Electric.Icon_GreenHouse_Electric'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Powered-ModifierName\", \"Perfect Lighting\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Powered-ModifierDescription\", \"Growth Speed is increased by hydroponic lights\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 50
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Plant_WillNotDecay",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_evergreen.Icon_Alteration_evergreen'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_WillNotDecay-ModifierName\", \"Ever Green\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_WillNotDecay-ModifierDescription\", \"Plant will not decay when mature.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropCannotSpoil_?\")": 1
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Fertilizer_Basic",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_Fernalized.Icon_Alteration_Fernalized'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Basic-ModifierName\", \"Basic Fertilizer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Basic-ModifierDescription\", \"Provides a small bonus to growth speed and crop yield\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 15,
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FertilizerConsumption_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Fertilizer_Yeild",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_Fernalized.Icon_Alteration_Fernalized'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Yeild-ModifierName\", \"High-Quality Fertilizer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Yeild-ModifierDescription\", \"Increases the yield of your crops\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 50,
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FertilizerConsumption_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Fertilizer_Speed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_Fernalized.Icon_Alteration_Fernalized'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Speed-ModifierName\", \"Growth Fertilizer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Speed-ModifierDescription\", \"Helps your crops to grow faster\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": -25,
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FertilizerConsumption_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Plant_NoCropPlot",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ContextPlant.Icon_ContextPlant'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_NoCropPlot-ModifierName\", \"Infertile Ground\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_NoCropPlot-ModifierDescription\", \"Crop Growth is Reduced as it is not planted in fertile soil.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": -25,
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": -50
+            },
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_GrowthSpeed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_Fertile.Icon_Alteration_Fertile'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_GrowthSpeed-ModifierName\", \"Green Thumb\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_GrowthSpeed-ModifierDescription\", \"Increases Crop Growth Speed\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 10
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_GrowthSpeed2",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_Fertile.Icon_Alteration_Fertile'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_GrowthSpeed2-ModifierName\", \"Speed-Gro\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_GrowthSpeed2-ModifierDescription\", \"Increases Crop Growth Speed\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 10
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_SpoilPrevention",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_evergreen.Icon_Alteration_evergreen'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SpoilPrevention-ModifierName\", \"Evergreen\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SpoilPrevention-ModifierDescription\", \"Crop will not wilt\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropCannotSpoil_?\")": 1
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_NightGrowthSpeed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_Nightowl.Icon_Alteration_Nightowl'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_NightGrowthSpeed-ModifierName\", \"Night Bloom\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_NightGrowthSpeed-ModifierDescription\", \"Crop will grow faster at night.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropNightGrowthSpeed_+%\")": 15
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_Yield",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_Bountiful.Icon_Alteration_Bountiful'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Yield-ModifierName\", \"Bountiful\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Yield-ModifierDescription\", \"Crop Yield is increased\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 15
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_SlowSpoil",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_hardy.Icon_Alteration_hardy'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SlowSpoil-ModifierName\", \"Hardy\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SlowSpoil-ModifierDescription\", \"Crop resources will take longer to spoil\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropHarvestedItemSpoilTime_+%\")": 20
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed_Fertalized",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_Fertile.Icon_Alteration_Fertile'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Fertalized-ModifierName\", \"Fertilized\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Fertalized-ModifierDescription\", \"Fertilizers will last longer\")",
+            "GrantedStats": {
+                "(Value=\"BaseFertilizerConsumption_+%\")": 50
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Seed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed.T_ITEM_Seed'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed-ModifierName\", \"Seeds\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed-ModifierDescription\", \"Boosts stamina and reduces stamina cost\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -10,
+                "(Value=\"BaseMaximumStamina_+\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Seed_Bread",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed_Bread.T_ITEM_Seed_Bread'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Bread-ModifierName\", \"Seed Bread\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Bread-ModifierDescription\", \"Boosts stamina considerably, reduces stamina cost of tool actions.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -20,
+                "(Value=\"BaseExperience_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Berry_Bar",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed_Bar.T_ITEM_Seed_Bar'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Berry_Bar-ModifierName\", \"Berry & Seed Bar\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Berry_Bar-ModifierDescription\", \"Boosts stamina, reduces stamina cost of tool actions and water consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -10,
+                "(Value=\"BaseWaterConsumption_+%\")": -10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Seed_Crackers",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed_Crackers.T_ITEM_Seed_Crackers'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Crackers-ModifierName\", \"Seed Cracker\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_Crackers-ModifierDescription\", \"Boosts stamina, reduces stamina cost of tool actions.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Animal_Feed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed.T_ITEM_Animal_Feed'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed-ModifierName\", \"Animal Feed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed-ModifierDescription\", \"Buffs Animals Stamina and Recovery\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 125,
+                "(Value=\"BaseStaminaRegen_+%\")": 50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
             "MergeType": "LongestDuration"
         }
     ]

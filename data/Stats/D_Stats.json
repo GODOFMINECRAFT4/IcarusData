@@ -7626,6 +7626,9 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Farming"
+            },
+            "Metadata": {
+                "bIsDeprecated": true
             }
         },
         {
@@ -7638,6 +7641,9 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Farming"
+            },
+            "Metadata": {
+                "bIsDeprecated": true
             }
         },
         {
@@ -7707,7 +7713,7 @@
         },
         {
             "Name": "FertilizerConsumption_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"FertilizerConsumption_+%-Title\", \"Fertilizer Consumption\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FertilizerConsumption_+%-Title\", \"Fertilizer Duration\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -7717,8 +7723,8 @@
         },
         {
             "Name": "BaseFertilizerConsumption_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFertilizerConsumption_+%-PositiveDescription\", \"+{0}% Consumption of Fertilizer\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFertilizerConsumption_+%-NegativeDescription\", \"-{0}% Consumption of Fertilizer\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFertilizerConsumption_+%-PositiveDescription\", \"+{0}% Duration of Fertilizer\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFertilizerConsumption_+%-NegativeDescription\", \"-{0}% Duration of Fertilizer\")",
             "StatCategory": {
                 "RowName": "Farming"
             }
@@ -7733,6 +7739,9 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Farming"
+            },
+            "Metadata": {
+                "bIsDeprecated": true
             }
         },
         {
@@ -7753,6 +7762,9 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Farming"
+            },
+            "Metadata": {
+                "bIsDeprecated": true
             }
         },
         {
@@ -7765,6 +7777,9 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Farming"
+            },
+            "Metadata": {
+                "bIsDeprecated": true
             }
         },
         {
@@ -7777,6 +7792,9 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Farming"
+            },
+            "Metadata": {
+                "bIsDeprecated": true
             }
         },
         {
@@ -12337,8 +12355,8 @@
         },
         {
             "Name": "BaseFrozenOreDropChance_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFrozenOreDropChance_%-PositiveDescription\", \"+{0}% chance to drop Ore with Frozen Modifie\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFrozenOreDropChance_%-NegativeDescription\", \"-{0}% chance to drop Ore with Frozen Modifie\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFrozenOreDropChance_%-PositiveDescription\", \"+{0}% chance to drop Ore with Frozen Modifier\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFrozenOreDropChance_%-NegativeDescription\", \"-{0}% chance to drop Ore with Frozen Modifier\")",
             "StatCategory": {
                 "RowName": "Modifiers"
             }
@@ -12741,8 +12759,8 @@
         },
         {
             "Name": "BaseLavaHunterExtraDamage_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Lave Hunter\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Lave Hunter\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Lava Hunters\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Lava Hunters\")",
             "StatCategory": {
                 "RowName": "AI"
             }
@@ -13101,8 +13119,8 @@
         },
         {
             "Name": "BaseLavaHunterExtraDamageResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Lave Hunter\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Lave Hunter\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Lava Hunters\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Lava Hunters\")",
             "StatCategory": {
                 "RowName": "AI"
             }
@@ -13170,6 +13188,42 @@
             "StatCategory": {
                 "RowName": "Biome"
             }
+        },
+        {
+            "Name": "SeedType_Enum",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Farming"
+            }
+        },
+        {
+            "Name": "PlantedSeedPlantCannotSpoil_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PlantedSeedPlantCannotSpoil_?-Title\", \"Created Crop Plot Crops will not Wither\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"PlantedSeedPlantCannotSpoil_?-PositiveDescription\", \"Created Crop Plot Crops will not Wither\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Farming"
+            }
+        },
+        {
+            "Name": "PlantedSeedGrowthSpeedTalentAlt_+"
+        },
+        {
+            "Name": "PlantedSeedGrowthSpeedTalent2Alt_+"
+        },
+        {
+            "Name": "PlantedSeedNightGrowthSpeedAlt_+"
+        },
+        {
+            "Name": "PlantedSeedFertilizerConsumptionAlt_+"
+        },
+        {
+            "Name": "PlantedSeedCropYieldAlt_+"
+        },
+        {
+            "Name": "PlantedSeedHarvestedItemSpoilTimeAlt_+"
         }
     ]
 }

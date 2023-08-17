@@ -3564,21 +3564,33 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Item.Seed"
+                        "TagName": "Item.Consumable.Food"
                     },
                     {
-                        "TagName": "Item.Consumable.Food"
+                        "TagName": "Item.Plant"
+                    },
+                    {
+                        "TagName": "FactionMission.Item.AnimalFood"
+                    },
+                    {
+                        "TagName": "GOAP.Food.Herbivore"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
+                    4,
+                    2,
                     2,
                     2,
                     0,
-                    1
+                    1,
+                    1,
+                    2,
+                    2,
+                    3
                 ],
-                "AutoDescription": " ALL( Item.Seed, Item.Consumable.Food )"
+                "AutoDescription": " ANY(  ALL( Item.Consumable.Food, Item.Plant ),  ANY( FactionMission.Item.AnimalFood, GOAP.Food.Herbivore ) )"
             }
         },
         {
@@ -4447,6 +4459,42 @@
                     0
                 ],
                 "AutoDescription": " NONE( Item.Envirosuit )"
+            }
+        },
+        {
+            "Name": "Any_Item_That_Can_Grow",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Plant"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Plant )"
+            }
+        },
+        {
+            "Name": "Animal_Feed",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.AnimalFood"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.Item.AnimalFood )"
             }
         }
     ]

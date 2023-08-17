@@ -5127,6 +5127,37 @@
             "RequiredMission": {
                 "RowName": "Prospect_OLY_Riverlands_Extraction"
             }
+        },
+        {
+            "Name": "Meta_CropPlot",
+            "Item": {
+                "RowName": "Farming_CropPlot_Workshop"
+            },
+            "ResearchCost": [
+                {
+                    "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 500
+                },
+                {
+                    "Meta": {
+                        "RowName": "Exotic1",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 250
+                }
+            ],
+            "ReplicationCost": [
+                {
+                    "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 250
+                }
+            ]
         }
     ]
 }
