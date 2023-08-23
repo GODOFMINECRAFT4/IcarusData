@@ -4496,6 +4496,59 @@
                 ],
                 "AutoDescription": " ALL( FactionMission.Item.AnimalFood )"
             }
+        },
+        {
+            "Name": "Charcoal_Or_Coal",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Ore.Coal"
+                    },
+                    {
+                        "TagName": "Item.Fuel.Charcoal"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Item.Resource.Ore.Coal, Item.Fuel.Charcoal )"
+            }
+        },
+        {
+            "Name": "Projectile_Arrow_or_Bolt",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Ballistic"
+                    },
+                    {
+                        "TagName": "Item.Ammo.Arrow"
+                    },
+                    {
+                        "TagName": "Item.Ammo.Bolt"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    4,
+                    2,
+                    2,
+                    2,
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    2
+                ],
+                "AutoDescription": " ANY(  ALL( Traits.Ballistic, Item.Ammo.Arrow ),  ALL( Traits.Ballistic, Item.Ammo.Bolt ) )"
+            }
         }
     ]
 }

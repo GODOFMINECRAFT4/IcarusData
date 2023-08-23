@@ -1534,7 +1534,8 @@
                 "(Value=\"BaseMaximumHealth_+\")": 25,
                 "(Value=\"BaseCharacterMass_+\")": 10,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
-                "(Value=\"BaseMovementSpeed_+\")": 50
+                "(Value=\"BaseMovementSpeed_+\")": 50,
+                "(Value=\"BaseNPCAttackRadius_+\")": 150
             },
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_AlphaWolfMeleeDamage.C_AlphaWolfMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
@@ -1790,7 +1791,7 @@
             "Name": "LavaHunter",
             "Base": {
                 "(Value=\"BaseSwimSpeed_+\")": 638,
-                "(Value=\"BaseHealthRegenPerMinute_+\")": 1000,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 750,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
                 "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
@@ -1806,9 +1807,9 @@
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseMovementSpeed_+\")": 638,
                 "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 400,
-                "(Value=\"BaseHealthPerConnectedPlayer_+\")": 10000,
+                "(Value=\"BaseHealthPerConnectedPlayer_+\")": 12500,
                 "(Value=\"IsKnockbackResisted_?\")": 1,
-                "(Value=\"BaseSlowResistance_%\")": 100,
+                "(Value=\"BaseSlowResistance_%\")": 80,
                 "(Value=\"BaseImmobiliseResistance_%\")": 100
             },
             "Health": "CurveFloat'/Game/Data/AI/C_LavaHunterHealth.C_LavaHunterHealth'",
@@ -1909,7 +1910,9 @@
                 "(Value=\"BaseNPCAttackRadius_+\")": 250,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
-                "(Value=\"BaseMovementSpeed_+\")": 255
+                "(Value=\"BaseMovementSpeed_+\")": 255,
+                "(Value=\"BaseMeleeDamageResistance_+%\")": -50,
+                "(Value=\"BaseAttacksCauseBurn_%\")": 25
             },
             "Health": "CurveFloat'/Game/Data/AI/C_LavaBroodlingHealth.C_LavaBroodlingHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_LavaBroodlingMeleeDamage.C_LavaBroodlingMeleeDamage'",
@@ -1934,7 +1937,8 @@
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseMovementSpeed_+\")": 255,
-                "(Value=\"BaseAttacksCauseBurn_%\")": 25
+                "(Value=\"BaseAttacksCauseBurn_%\")": 25,
+                "(Value=\"BaseMeleeDamageResistance_+%\")": -50
             },
             "Health": "CurveFloat'/Game/Data/AI/C_LavaBroodlingWorldSpawn_Health.C_LavaBroodlingWorldSpawn_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_LavaBroodlingWorldSpawnMeleeDamage.C_LavaBroodlingWorldSpawnMeleeDamage'",
@@ -1952,9 +1956,8 @@
                 "(Value=\"BaseMaximumHealth_+\")": 25,
                 "(Value=\"BaseCharacterMass_+\")": 10,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
-                "(Value=\"BaseExplosiveDamageRadius_+\")": 175,
-                "(Value=\"BaseExplosiveDamage_+\")": 35,
-                "(Value=\"\")": 0
+                "(Value=\"BaseExplosiveDamageRadius_+\")": 300,
+                "(Value=\"BaseExplosiveDamage_+\")": 35
             },
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_AlphaWolfMeleeDamage.C_AlphaWolfMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
