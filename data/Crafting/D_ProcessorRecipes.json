@@ -25176,6 +25176,14 @@
                 {
                     "RowName": "Drying_Rack",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -25208,6 +25216,14 @@
             "RecipeSets": [
                 {
                     "RowName": "Drying_Rack",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -25242,6 +25258,14 @@
                 {
                     "RowName": "Drying_Rack",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -25274,6 +25298,14 @@
             "RecipeSets": [
                 {
                     "RowName": "Drying_Rack",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -25308,6 +25340,14 @@
                 {
                     "RowName": "Drying_Rack",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -25340,6 +25380,14 @@
             "RecipeSets": [
                 {
                     "RowName": "Drying_Rack",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -32965,6 +33013,14 @@
                 {
                     "RowName": "Drying_Rack",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -39971,6 +40027,14 @@
                 {
                     "RowName": "Drying_Rack",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -40009,6 +40073,14 @@
                 {
                     "RowName": "Drying_Rack",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -40041,6 +40113,14 @@
             "RecipeSets": [
                 {
                     "RowName": "Drying_Rack",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
                     "DataTableName": "D_RecipeSets"
                 }
             ],
@@ -41591,6 +41671,226 @@
             }
         },
         {
+            "Name": "Carved_Chair_Living",
+            "Requirement": {
+                "RowName": "Carved_Wood_Set"
+            },
+            "RequiredMillijoules": 5000,
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Carved_Chair_Living",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Refundable": "Block",
+            "Audio": {
+                "RowName": "CarpentryBench"
+            }
+        },
+        {
+            "Name": "Carved_Chair_Living_2Seater",
+            "Requirement": {
+                "RowName": "Carved_Wood_Set"
+            },
+            "RequiredMillijoules": 5000,
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 75,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 75,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Carved_Chair_2Seater",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Refundable": "Block",
+            "Audio": {
+                "RowName": "CarpentryBench"
+            }
+        },
+        {
+            "Name": "Carved_Chair_Living_3Seater",
+            "Requirement": {
+                "RowName": "Carved_Wood_Set"
+            },
+            "RequiredMillijoules": 5000,
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 100,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 100,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Carved_Chair_3Seater",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Refundable": "Block",
+            "Audio": {
+                "RowName": "CarpentryBench"
+            }
+        },
+        {
+            "Name": "Carved_Sitting_Bench",
+            "Requirement": {
+                "RowName": "Carved_Wood_Set"
+            },
+            "RequiredMillijoules": 5000,
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 60,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Carved_Sitting_Bench",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Refundable": "Block",
+            "Audio": {
+                "RowName": "CarpentryBench"
+            }
+        },
+        {
             "Name": "Carved_Wall_Shelf",
             "Requirement": {
                 "RowName": "Carved_Wood_Set"
@@ -41893,6 +42193,55 @@
             }
         },
         {
+            "Name": "Carved_Stool",
+            "Requirement": {
+                "RowName": "Carved_Wood_Set"
+            },
+            "RequiredMillijoules": 5000,
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Carved_Stool",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Refundable": "Block",
+            "Audio": {
+                "RowName": "CarpentryBench"
+            }
+        },
+        {
             "Name": "Carved_Nightstand",
             "Requirement": {
                 "RowName": "Carved_Wood_Set"
@@ -41930,6 +42279,55 @@
                 {
                     "Element": {
                         "RowName": "Carved_Nightstand",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Refundable": "Block",
+            "Audio": {
+                "RowName": "CarpentryBench"
+            }
+        },
+        {
+            "Name": "Carved_Bookshelf",
+            "Requirement": {
+                "RowName": "Carved_Wood_Set"
+            },
+            "RequiredMillijoules": 5000,
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 110,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Carved_Bookshelf",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -41995,6 +42393,55 @@
                 {
                     "Element": {
                         "RowName": "Carved_Bed",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Refundable": "Block",
+            "Audio": {
+                "RowName": "CarpentryBench"
+            }
+        },
+        {
+            "Name": "Carved_Coffee_Table",
+            "Requirement": {
+                "RowName": "Carved_Wood_Set"
+            },
+            "RequiredMillijoules": 5000,
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 50,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Carved_Coffee_Table",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -42930,6 +43377,14 @@
                 {
                     "RowName": "Drying_Rack",
                     "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
+                    "DataTableName": "D_RecipeSets"
                 }
             ],
             "Inputs": [
@@ -42967,6 +43422,14 @@
             "RecipeSets": [
                 {
                     "RowName": "Drying_Rack",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
                     "DataTableName": "D_RecipeSets"
                 }
             ],

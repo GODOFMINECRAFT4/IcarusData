@@ -4805,6 +4805,47 @@
                     "RowName": "NewFrontiers"
                 }
             }
+        },
+        {
+            "Name": "DevTest_BuildingPieces",
+            "Stability": {
+                "RowName": "Concrete_General"
+            },
+            "Type": {
+                "RowName": "Concrete"
+            },
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Dev_Floor_Diagonal",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Dev_Wall_Diagonal",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Dev_Half_Corner_L",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ]
         }
     ]
 }

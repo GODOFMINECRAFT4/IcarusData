@@ -1621,8 +1621,9 @@
         },
         {
             "Name": "Inaris_Envirosuit_Alpha",
-            "ArmourMesh": "/Game/ASS/CHA/SK_CHA_MAL_Envirosuit_Inaris.SK_CHA_MAL_Envirosuit_Inaris",
-            "FemaleMeshVariant": "/Game/ASS/CHA/SK_CHA_FEM_Envirosuit_Inaris.SK_CHA_FEM_Envirosuit_Inaris",
+            "ArmourMesh": "/Game/ASS/CHA/Suits/SK_CHA_MAL_Envirosuit_Inaris.SK_CHA_MAL_Envirosuit_Inaris",
+            "FemaleMeshVariant": "/Game/ASS/CHA/Suits/SK_CHA_FEM_Envirosuit_Inaris.SK_CHA_FEM_Envirosuit_Inaris",
+            "FirstPersonMeshVariant": "/Game/ASS/CHA/Suits/SK_1ST_CHA_MAL_Envirosuit_Inaris.SK_1ST_CHA_MAL_Envirosuit_Inaris",
             "AnimBlueprintClass": "/Game/ASS/CHA/Human/3RD/SK_CHA_3RD_MAL_01_CopyPose_AnimBP.SK_CHA_3RD_MAL_01_CopyPose_AnimBP_C",
             "FemaleAnimBlueprintClass": "/Game/ASS/CHA/Human/3RD/SK_CHA_3RD_MAL_01_CopyPose_AnimBP.SK_CHA_3RD_MAL_01_CopyPose_AnimBP_C",
             "ArmourStats": {
@@ -2379,6 +2380,12 @@
             "ArmourType": "Backpack"
         },
         {
+            "Name": "Hunters_Backpack",
+            "ArmourMesh": "/Game/ASS/ITM/SK_ITM_Backpack_Hunter.SK_ITM_Backpack_Hunter",
+            "AnimBlueprintClass": "/Game/ASS/ITM/SK_ITM_Backpack_CopyPose_AnimBP.SK_ITM_Backpack_CopyPose_AnimBP_C",
+            "ArmourType": "Backpack"
+        },
+        {
             "Name": "Medic_Backpack",
             "ArmourMesh": "/Game/ASS/ITM/SK_ITM_Backpack_Medic.SK_ITM_Backpack_Medic",
             "AnimBlueprintClass": "/Game/ASS/ITM/SK_ITM_Backpack_CopyPose_AnimBP.SK_ITM_Backpack_CopyPose_AnimBP_C",
@@ -2401,6 +2408,190 @@
             "ArmourMesh": "/Game/ASS/ITM/SK_ITM_Backpack_Icebox.SK_ITM_Backpack_Icebox",
             "AnimBlueprintClass": "/Game/ASS/ITM/SK_ITM_Backpack_CopyPose_AnimBP.SK_ITM_Backpack_CopyPose_AnimBP_C",
             "ArmourType": "Backpack"
+        },
+        {
+            "Name": "Larkwell_Armor_Black_Head",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_Black_Head.SK_CHA_MAL_ARM_Larkwell_Black_Head",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_Black_Head.SK_CHA_MAL_ARM_Larkwell_Black_Head",
+            "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP_C",
+            "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP_C",
+            "ArmourStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 3,
+                "(Value=\"BaseHeatResistance_%\")": 6,
+                "(Value=\"BaseColdResistance_%\")": 6,
+                "(Value=\"BaseExposureResistance_+%\")": 4,
+                "(Value=\"BaseFallDamageResistance_%\")": 2
+            },
+            "ArmourType": "Head",
+            "ArmourSet": {
+                "RowName": "Larkwell_Black"
+            }
+        },
+        {
+            "Name": "Larkwell_Armor_Black_Chest",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_Black_Chest.SK_CHA_MAL_ARM_Larkwell_Black_Chest",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_FEM_ARM_Larkwell_Black_Chest.SK_CHA_FEM_ARM_Larkwell_Black_Chest",
+            "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP_C",
+            "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP_C",
+            "ArmourStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 6,
+                "(Value=\"BaseHeatResistance_%\")": 30,
+                "(Value=\"BaseColdResistance_%\")": 30,
+                "(Value=\"BaseExposureResistance_+%\")": 10,
+                "(Value=\"BaseFallDamageResistance_%\")": 10
+            },
+            "ArmourType": "Chest",
+            "ArmourSet": {
+                "RowName": "Larkwell_Black"
+            }
+        },
+        {
+            "Name": "Larkwell_Armor_Black_Arms",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_Black_Arms.SK_CHA_MAL_ARM_Larkwell_Black_Arms",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_Black_Arms.SK_CHA_MAL_ARM_Larkwell_Black_Arms",
+            "FirstPersonMeshVariant": "/Game/ASS/CHA/ARM/SK_1ST_CHA_MAL_ARM_Larkwell_Black_Arms.SK_1ST_CHA_MAL_ARM_Larkwell_Black_Arms",
+            "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP_C",
+            "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP_C",
+            "FirstPersonAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_1ST_CHA_MAL_ARM_Arm_AnimBP.SK_1ST_CHA_MAL_ARM_Arm_AnimBP_C",
+            "ArmourStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 2,
+                "(Value=\"BaseHeatResistance_%\")": 4,
+                "(Value=\"BaseColdResistance_%\")": 4,
+                "(Value=\"BaseExposureResistance_+%\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 3
+            },
+            "ArmourType": "Hands",
+            "ArmourSet": {
+                "RowName": "Larkwell_Black"
+            }
+        },
+        {
+            "Name": "Larkwell_Armor_Black_Legs",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_Black_Legs.SK_CHA_MAL_ARM_Larkwell_Black_Legs",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_Black_Legs.SK_CHA_MAL_ARM_Larkwell_Black_Legs",
+            "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP_C",
+            "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP_C",
+            "ArmourStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 6,
+                "(Value=\"BaseHeatResistance_%\")": 16,
+                "(Value=\"BaseColdResistance_%\")": 16,
+                "(Value=\"BaseExposureResistance_+%\")": 8,
+                "(Value=\"BaseFallDamageResistance_%\")": 5
+            },
+            "ArmourType": "Legs",
+            "ArmourSet": {
+                "RowName": "Larkwell_Black"
+            }
+        },
+        {
+            "Name": "Larkwell_Armor_Black_Feet",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_Black_Feet.SK_CHA_MAL_ARM_Larkwell_Black_Feet",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_Black_Feet.SK_CHA_MAL_ARM_Larkwell_Black_Feet",
+            "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP_C",
+            "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP_C",
+            "ArmourStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 1,
+                "(Value=\"BaseHeatResistance_%\")": 4,
+                "(Value=\"BaseColdResistance_%\")": 4,
+                "(Value=\"BaseAttacksCauseElectroshock_%\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 5
+            },
+            "ArmourType": "Feet",
+            "ArmourSet": {
+                "RowName": "Larkwell_Black"
+            }
+        },
+        {
+            "Name": "Larkwell_Armor_White_Head",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_White_Head.SK_CHA_MAL_ARM_Larkwell_White_Head",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_White_Head.SK_CHA_MAL_ARM_Larkwell_White_Head",
+            "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP_C",
+            "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP_C",
+            "ArmourStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 3,
+                "(Value=\"BaseHeatResistance_%\")": 6,
+                "(Value=\"BaseColdResistance_%\")": 6,
+                "(Value=\"BaseExposureResistance_+%\")": 4,
+                "(Value=\"BaseFallDamageResistance_%\")": 2
+            },
+            "ArmourType": "Head",
+            "ArmourSet": {
+                "RowName": "Larkwell_White"
+            }
+        },
+        {
+            "Name": "Larkwell_Armor_White_Chest",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_White_Chest.SK_CHA_MAL_ARM_Larkwell_White_Chest",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_FEM_ARM_Larkwell_White_Chest.SK_CHA_FEM_ARM_Larkwell_White_Chest",
+            "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP_C",
+            "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP_C",
+            "ArmourStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 6,
+                "(Value=\"BaseHeatResistance_%\")": 30,
+                "(Value=\"BaseColdResistance_%\")": 30,
+                "(Value=\"BaseExposureResistance_+%\")": 10,
+                "(Value=\"BaseFallDamageResistance_%\")": 10
+            },
+            "ArmourType": "Chest",
+            "ArmourSet": {
+                "RowName": "Larkwell_White"
+            }
+        },
+        {
+            "Name": "Larkwell_Armor_White_Arms",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_White_Arms.SK_CHA_MAL_ARM_Larkwell_White_Arms",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_White_Arms.SK_CHA_MAL_ARM_Larkwell_White_Arms",
+            "FirstPersonMeshVariant": "/Game/ASS/CHA/ARM/SK_1ST_CHA_MAL_ARM_Larkwell_White_Arms.SK_1ST_CHA_MAL_ARM_Larkwell_White_Arms",
+            "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP_C",
+            "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP_C",
+            "FirstPersonAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_1ST_CHA_MAL_ARM_Arm_AnimBP.SK_1ST_CHA_MAL_ARM_Arm_AnimBP_C",
+            "ArmourStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 2,
+                "(Value=\"BaseHeatResistance_%\")": 4,
+                "(Value=\"BaseColdResistance_%\")": 4,
+                "(Value=\"BaseExposureResistance_+%\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 3
+            },
+            "ArmourType": "Hands",
+            "ArmourSet": {
+                "RowName": "Larkwell_White"
+            }
+        },
+        {
+            "Name": "Larkwell_Armor_White_Legs",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_White_Legs.SK_CHA_MAL_ARM_Larkwell_White_Legs",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_White_Legs.SK_CHA_MAL_ARM_Larkwell_White_Legs",
+            "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP_C",
+            "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP_C",
+            "ArmourStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 6,
+                "(Value=\"BaseHeatResistance_%\")": 16,
+                "(Value=\"BaseColdResistance_%\")": 16,
+                "(Value=\"BaseExposureResistance_+%\")": 8,
+                "(Value=\"BaseFallDamageResistance_%\")": 5
+            },
+            "ArmourType": "Legs",
+            "ArmourSet": {
+                "RowName": "Larkwell_White"
+            }
+        },
+        {
+            "Name": "Larkwell_Armor_White_Feet",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_White_Feet.SK_CHA_MAL_ARM_Larkwell_White_Feet",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Larkwell_White_Feet.SK_CHA_MAL_ARM_Larkwell_White_Feet",
+            "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP_C",
+            "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP_C",
+            "ArmourStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 1,
+                "(Value=\"BaseHeatResistance_%\")": 4,
+                "(Value=\"BaseColdResistance_%\")": 4,
+                "(Value=\"BaseAttacksCauseElectroshock_%\")": 2,
+                "(Value=\"BaseFallDamageResistance_%\")": 5
+            },
+            "ArmourType": "Feet",
+            "ArmourSet": {
+                "RowName": "Larkwell_White"
+            }
         }
     ]
 }

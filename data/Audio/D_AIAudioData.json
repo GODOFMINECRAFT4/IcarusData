@@ -2695,6 +2695,22 @@
             "DeathVocalisation": {
                 "RowName": "LavaBroodlingDeath"
             },
+            "StateVocalisations": {
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "LavaBroodlingAttack",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
             "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
@@ -2901,6 +2917,20 @@
                     },
                     "StatePersistentVocalisation": {
                         "RowName": "SlugIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "SlugAggro",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
