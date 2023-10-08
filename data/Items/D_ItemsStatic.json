@@ -19213,6 +19213,9 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
+            "InventoryContainer": {
+                "RowName": "Head_Attachment"
+            },
             "Audio": {
                 "RowName": "Armour"
             },
@@ -19278,6 +19281,9 @@
             },
             "Decayable": {
                 "RowName": "Decay_General"
+            },
+            "InventoryContainer": {
+                "RowName": "Body_Attachment"
             },
             "Audio": {
                 "RowName": "Armour"
@@ -19345,6 +19351,9 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
+            "InventoryContainer": {
+                "RowName": "Legs_Attachment"
+            },
             "Audio": {
                 "RowName": "Armour"
             },
@@ -19411,6 +19420,9 @@
             "Decayable": {
                 "RowName": "Decay_General"
             },
+            "InventoryContainer": {
+                "RowName": "Arms_Attachment"
+            },
             "Audio": {
                 "RowName": "Armour"
             },
@@ -19476,6 +19488,9 @@
             },
             "Decayable": {
                 "RowName": "Decay_General"
+            },
+            "InventoryContainer": {
+                "RowName": "Feet_Attachment"
             },
             "Audio": {
                 "RowName": "Armour"
@@ -102099,11 +102114,6 @@
                     }
                 ],
                 "ParentTags": []
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "NewFrontiers"
-                }
             }
         },
         {
@@ -102173,11 +102183,6 @@
                     }
                 ],
                 "ParentTags": []
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "NewFrontiers"
-                }
             }
         },
         {
@@ -102247,11 +102252,6 @@
                     }
                 ],
                 "ParentTags": []
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "NewFrontiers"
-                }
             }
         },
         {
@@ -102321,11 +102321,6 @@
                     }
                 ],
                 "ParentTags": []
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "NewFrontiers"
-                }
             }
         },
         {
@@ -102395,11 +102390,6 @@
                     }
                 ],
                 "ParentTags": []
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "NewFrontiers"
-                }
             }
         },
         {
@@ -123307,8 +123297,18 @@
             "Audio": {
                 "RowName": "GenericDeployable"
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Bag.Seed"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "Item.Bag.Seed"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
