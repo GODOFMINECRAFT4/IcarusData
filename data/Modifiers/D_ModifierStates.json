@@ -7794,6 +7794,75 @@
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "Lava_BurnObjectImmediately",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BurningBuff.Icon_BurningBuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Lava_BurnObjectImmediately-ModifierName\", \"Object In Lava\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Lava_BurnObjectImmediately-ModifierDescription\", \"Building Piece Destroyed By Fire\")",
+            "VisibleToPlayer": false,
+            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_Flaming.ModifierCosmetic_Flaming_C",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Fire.BP_ModifierStateBehaviour_TickDamage_Fire_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 1500,
+                    "Deviation": 10
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Lava"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Lava_BurnObjectSlowly",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BurningBuff.Icon_BurningBuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Lava_BurnObjectSlowly-ModifierName\", \"Object In Lava\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Lava_BurnObjectSlowly-ModifierDescription\", \"Building Piece Destroyed By Fire\")",
+            "VisibleToPlayer": false,
+            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_Flaming.ModifierCosmetic_Flaming_C",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Fire.BP_ModifierStateBehaviour_TickDamage_Fire_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 160,
+                    "Deviation": 10
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Lava"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Treated_Water",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_WaterBuff.Icon_WaterBuff'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Treated_Water-ModifierName\", \"Name\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Treated_Water-ModifierDescription\", \"Description\")",
+            "MergeType": "Stack"
         }
     ]
 }

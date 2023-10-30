@@ -263,137 +263,14 @@
             "Audio": {
                 "RowName": "Roat"
             },
+            "Trophy": {
+                "RowName": "Roat_Head"
+            },
             "Loot": {
                 "RowName": "Roat_Carcass_Loot"
             },
             "Hitable": {
                 "RowName": "AnimalBones_Small"
-            }
-        },
-        {
-            "Name": "RedGoat",
-            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_RedGoat_Character.BP_NPC_RedGoat_Character_C",
-            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
-            "CreatureType": {
-                "RowName": "Goat"
-            },
-            "Descriptors": [
-                {
-                    "RowName": "Neutral",
-                    "DataTableName": "D_AIDescriptors"
-                },
-                {
-                    "RowName": "Herbivore",
-                    "DataTableName": "D_AIDescriptors"
-                }
-            ],
-            "DeadItem": {
-                "RowName": "AnimalCarcass_RedGoat"
-            },
-            "GOAPSetup": {
-                "RowName": "RedGoat"
-            },
-            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
-            "Relationships": {
-                "RowName": "NeutralMediumHerbivore"
-            },
-            "NotifiedNPCTypes": [
-                {
-                    "RowName": "NPC_Passive",
-                    "DataTableName": "D_TagQueries"
-                }
-            ],
-            "AIGrowth": {
-                "RowName": "Red_Goat"
-            },
-            "MovementMapping": {
-                "Stationary": {
-                    "MaxWalkSpeed": 1,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Sneak": {
-                    "MaxWalkSpeed": 0.6669999957084656,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Walk": {
-                    "MaxWalkSpeed": 1,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 400,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Jog": {
-                    "MaxWalkSpeed": 5,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 400,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Run": {
-                    "MaxWalkSpeed": 5,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 500,
-                    "BrakingDeceleration": 450,
-                    "RotationRate": 200,
-                    "MaxSwimSpeed": 1
-                },
-                "Sprint": {
-                    "MaxWalkSpeed": 9,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 600,
-                    "BrakingDeceleration": 400,
-                    "RotationRate": 300,
-                    "MaxSwimSpeed": 1
-                },
-                "Attacking": {
-                    "MaxWalkSpeed": 1,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Undefined": {
-                    "MaxWalkSpeed": 1,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                }
-            },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "Head_M",
-                    "AffectsChildren": true
-                }
-            ],
-            "Audio": {
-                "RowName": "ChamoisVariant"
-            },
-            "Loot": {
-                "RowName": "RedGoat_Carcass_Loot"
-            },
-            "Hitable": {
-                "RowName": "AnimalBones_Medium"
             }
         },
         {
@@ -675,132 +552,6 @@
             }
         },
         {
-            "Name": "Raccoon",
-            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Raccoon_Character.BP_NPC_Raccoon_Character_C",
-            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
-            "CreatureType": {
-                "RowName": "Raccoon"
-            },
-            "Descriptors": [
-                {
-                    "RowName": "Passive",
-                    "DataTableName": "D_AIDescriptors"
-                },
-                {
-                    "RowName": "Herbivore",
-                    "DataTableName": "D_AIDescriptors"
-                }
-            ],
-            "DeadItem": {
-                "RowName": "AnimalCarcass_Raccoon"
-            },
-            "GOAPSetup": {
-                "RowName": "Raccoon"
-            },
-            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
-            "Relationships": {
-                "RowName": "DefaultSmallHerbivore"
-            },
-            "NotifiedNPCTypes": [
-                {
-                    "RowName": "NPC_Passive",
-                    "DataTableName": "D_TagQueries"
-                }
-            ],
-            "AIGrowth": {
-                "RowName": "Raccoon"
-            },
-            "MovementMapping": {
-                "Stationary": {
-                    "MaxWalkSpeed": 0,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 250,
-                    "MaxSwimSpeed": 1
-                },
-                "Sneak": {
-                    "MaxWalkSpeed": 2,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 250,
-                    "MaxSwimSpeed": 1
-                },
-                "Walk": {
-                    "MaxWalkSpeed": 2,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 250,
-                    "MaxSwimSpeed": 1
-                },
-                "Jog": {
-                    "MaxWalkSpeed": 2,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 250,
-                    "MaxSwimSpeed": 1
-                },
-                "Run": {
-                    "MaxWalkSpeed": 2,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 250,
-                    "MaxSwimSpeed": 1
-                },
-                "Sprint": {
-                    "MaxWalkSpeed": 2,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Attacking": {
-                    "MaxWalkSpeed": 2,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                },
-                "Undefined": {
-                    "MaxWalkSpeed": 2,
-                    "GroundFriction": 8,
-                    "BrakingFriction": 2,
-                    "MaxAcceleration": 300,
-                    "BrakingDeceleration": 250,
-                    "RotationRate": 100,
-                    "MaxSwimSpeed": 1
-                }
-            },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
-            "Audio": {
-                "RowName": "Raccoon"
-            },
-            "Loot": {
-                "RowName": "Raccoon_Carcass_Loot"
-            },
-            "Hitable": {
-                "RowName": "AnimalBones_Small"
-            }
-        },
-        {
             "Name": "Chamois_M",
             "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Chamois_M_Character.BP_NPC_Chamois_M_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
@@ -1064,6 +815,9 @@
                 "RigLBLeg1",
                 "RigRBLeg1"
             ],
+            "Trophy": {
+                "RowName": "Elephant_Head"
+            },
             "Loot": {
                 "RowName": "Elephant_Carcass_Loot"
             },
@@ -1628,7 +1382,7 @@
             "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_MammothArctic_Character.BP_NPC_MammothArctic_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
             "CreatureType": {
-                "RowName": "Mammoth"
+                "RowName": "Woolly_Mammoth"
             },
             "Descriptors": [
                 {
@@ -1777,7 +1531,7 @@
             "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_MammothDesert_Character.BP_NPC_MammothDesert_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
             "CreatureType": {
-                "RowName": "Mammoth"
+                "RowName": "Columbian_Mammoth"
             },
             "Descriptors": [
                 {
@@ -1909,7 +1663,7 @@
                 "RigRBLeg1"
             ],
             "Trophy": {
-                "RowName": "Mammoth_Head"
+                "RowName": "Mammoth_Desert_Head"
             },
             "Loot": {
                 "RowName": "Mammoth_Carcass_Loot"
@@ -2335,7 +2089,7 @@
                 "RigHead"
             ],
             "Trophy": {
-                "RowName": "Deer_Head"
+                "RowName": "Deer_Desert_Head"
             },
             "Loot": {
                 "RowName": "Deer_Carcass_Loot"
@@ -2477,7 +2231,7 @@
                 "RigHead"
             ],
             "Trophy": {
-                "RowName": "Deer_Head"
+                "RowName": "Deer_Desert_Head"
             },
             "Loot": {
                 "RowName": "DeerLarge_Carcass_Loot"
@@ -3446,6 +3200,9 @@
                 "RigSpine1",
                 "RigPelvis"
             ],
+            "Trophy": {
+                "RowName": "Pronghorn_Head"
+            },
             "Loot": {
                 "RowName": "Chamois_Carcass_Loot"
             },
@@ -3601,7 +3358,7 @@
             "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_MammothBoss_Character.BP_NPC_MammothBoss_Character_C",
             "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
             "CreatureType": {
-                "RowName": "Mammoth"
+                "RowName": "Woolly_Mammoth"
             },
             "Descriptors": [
                 {
@@ -4412,6 +4169,9 @@
             "Audio": {
                 "RowName": "Rabbit"
             },
+            "Trophy": {
+                "RowName": "Snow_Rabbit_Head"
+            },
             "Loot": {
                 "RowName": "SnowRabbit_Carcass_Loot"
             },
@@ -4540,6 +4300,9 @@
             ],
             "Audio": {
                 "RowName": "RabbitConifer"
+            },
+            "Trophy": {
+                "RowName": "Rabbit_Head"
             },
             "Loot": {
                 "RowName": "Rabbit_Carcass_Loot"
@@ -4947,6 +4710,9 @@
                 "RigPelvis",
                 "RigHead"
             ],
+            "Trophy": {
+                "RowName": "Wild_Boar_Head"
+            },
             "Loot": {
                 "RowName": "WildBoar_Loot"
             },
@@ -5087,6 +4853,9 @@
                 "RigRBLeg1",
                 "RigLBLeg1"
             ],
+            "Trophy": {
+                "RowName": "Zebra_Head"
+            },
             "Loot": {
                 "RowName": "Zebra_Carcass_Loot"
             },
@@ -5180,6 +4949,9 @@
                     "AffectsChildren": true
                 }
             ],
+            "Trophy": {
+                "RowName": "Caveworm_Head"
+            },
             "Loot": {
                 "RowName": "Caveworm_Loot"
             },
@@ -5312,6 +5084,9 @@
                 "RigRShoulder",
                 "RigLShoulder"
             ],
+            "Trophy": {
+                "RowName": "Kea_Head"
+            },
             "Loot": {
                 "RowName": "Kea_Carcass_Loot"
             },
@@ -5449,6 +5224,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "Scorpion_Head"
+            },
             "Loot": {
                 "RowName": "Scorpion_Carcass_Loot"
             },
@@ -5981,6 +5759,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "Crocodile_Head"
+            },
             "Loot": {
                 "RowName": "Crocodile_Carcass_Loot"
             },
@@ -6117,6 +5898,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "Crocodile_Head"
+            },
             "Loot": {
                 "RowName": "Crocodile_Carcass_Loot"
             },
@@ -6253,6 +6037,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "Komodo_Head"
+            },
             "Loot": {
                 "RowName": "Komodo_Carcass_Loot"
             },
@@ -6390,6 +6177,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "Arctic_Scorpion_Head"
+            },
             "Loot": {
                 "RowName": "Scorpion_Arctic_Carcass_Loot"
             },
@@ -6425,8 +6215,11 @@
                     "AffectsChildren": true
                 }
             ],
+            "Trophy": {
+                "RowName": "Teenage_Caveworm_Head"
+            },
             "Loot": {
-                "RowName": "Caveworm_Loot"
+                "RowName": "Teenage_Caveworm_Loot"
             },
             "BestiaryGroup": {
                 "RowName": "Teenage_Caveworm"
@@ -7115,6 +6908,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "Arctic_Scorpion_Head"
+            },
             "Loot": {
                 "RowName": "Scorpion_Carcass_Loot"
             },
@@ -7243,6 +7039,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "Moa_Head"
+            },
             "Loot": {
                 "RowName": "Moa_Carcass_Loot"
             },
@@ -7354,6 +7153,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "Moa_Head"
+            },
             "Loot": {
                 "RowName": "Moa_Carcass_Loot"
             },
@@ -7751,6 +7553,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "ConiferWolf_Head"
+            },
             "Loot": {
                 "RowName": "Wolf_Carcass_Loot"
             },
@@ -8301,6 +8106,9 @@
                 "RigLBLeg1",
                 "RigRBLeg1"
             ],
+            "Trophy": {
+                "RowName": "Rock_Dog_Head"
+            },
             "Loot": {
                 "RowName": "Rockdog_Carcass_Loot"
             },
@@ -8445,6 +8253,9 @@
                 "RigLBLeg1",
                 "RigRBLeg1"
             ],
+            "Trophy": {
+                "RowName": "Bat_Dog_Head"
+            },
             "Loot": {
                 "RowName": "BatDog_Carcass_Loot"
             },
@@ -8591,6 +8402,9 @@
                 "RigSpine5",
                 "RigDewlap"
             ],
+            "Trophy": {
+                "RowName": "Needler_Head"
+            },
             "Loot": {
                 "RowName": "Needler_Carcass_Loot"
             },
@@ -8731,6 +8545,9 @@
                 "RigRShoulder",
                 "RigLShoulder"
             ],
+            "Trophy": {
+                "RowName": "Predator_Bird_Head"
+            },
             "Loot": {
                 "RowName": "Predator_Bird_Carcass_Loot"
             },
@@ -8968,6 +8785,9 @@
                 "RigLBLeg1",
                 "RigRBLeg1"
             ],
+            "Trophy": {
+                "RowName": "Deer_Variant_Head"
+            },
             "Loot": {
                 "RowName": "Deer_Var_Carcass_Loot"
             },
@@ -9111,6 +8931,9 @@
                 "RigPelvis",
                 "RigHead"
             ],
+            "Trophy": {
+                "RowName": "Swamp_Quad_Head"
+            },
             "Loot": {
                 "RowName": "Swamp_Quad_Carcass_Loot"
             },
@@ -9250,6 +9073,9 @@
                 "RigJaw",
                 "RigNeck"
             ],
+            "Trophy": {
+                "RowName": "Swamp_Bird_Head"
+            },
             "Loot": {
                 "RowName": "Swamp_Bird_Carcass_Loot"
             },
@@ -9392,6 +9218,9 @@
                 "RigHead",
                 "RigNeck4"
             ],
+            "Trophy": {
+                "RowName": "Chamios_Varient_Head"
+            },
             "Loot": {
                 "RowName": "Chamois_Var_Carcass_Loot"
             },
@@ -9529,6 +9358,9 @@
                 "RigPelvis",
                 "RigHead"
             ],
+            "Trophy": {
+                "RowName": "Blueback_Head"
+            },
             "Loot": {
                 "RowName": "Blueback_Carcass_Loot"
             },
@@ -9662,6 +9494,9 @@
             ],
             "Audio": {
                 "RowName": "Roat"
+            },
+            "Trophy": {
+                "RowName": "Roat_Head"
             },
             "Loot": {
                 "RowName": "Roat_Carcass_Loot"
@@ -9800,6 +9635,9 @@
                 "RigPelvis",
                 "RigHead"
             ],
+            "Trophy": {
+                "RowName": "Redback_Head"
+            },
             "Loot": {
                 "RowName": "Lava_Blueback_Carcass_Loot"
             },
@@ -9944,6 +9782,9 @@
                 "RigHead",
                 "RigScapula"
             ],
+            "Trophy": {
+                "RowName": "Snow_Striker_Head"
+            },
             "Loot": {
                 "RowName": "Snow_Striker_Carcass_Loot"
             },
@@ -10089,6 +9930,9 @@
                 "RigRBLeg1",
                 "RigLBLeg1"
             ],
+            "Trophy": {
+                "RowName": "Wooly_Zebra_Head"
+            },
             "Loot": {
                 "RowName": "Wooly_Zebra_Carcass_Loot"
             },
@@ -10349,6 +10193,9 @@
             "Audio": {
                 "RowName": "RabbitConifer"
             },
+            "Trophy": {
+                "RowName": "Rabbit_Varient_Head"
+            },
             "Loot": {
                 "RowName": "Rabbit_Variant_Carcass_Loot"
             },
@@ -10490,6 +10337,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "Lava_Komodo_Head"
+            },
             "Loot": {
                 "RowName": "Lava_Komodo_Carcass_Loot"
             },
@@ -10634,6 +10484,9 @@
                 "RigHead",
                 "RigScapula"
             ],
+            "Trophy": {
+                "RowName": "Desert_Striker_Head"
+            },
             "Loot": {
                 "RowName": "Desert_Striker_Carcass_Loot"
             },
@@ -10914,6 +10767,9 @@
                 "RigTail0M",
                 "RigTail1M"
             ],
+            "Trophy": {
+                "RowName": "Swamp_Slug_Head"
+            },
             "Loot": {
                 "RowName": "Swamp_Slug_Carcass_Loot"
             },
@@ -11059,6 +10915,9 @@
                 "RigTail0M",
                 "RigMiddleSpineM"
             ],
+            "Trophy": {
+                "RowName": "Swamp_Slug_Head"
+            },
             "Loot": {
                 "RowName": "Swamp_Slug_Carcass_Loot"
             },
@@ -11204,6 +11063,9 @@
                 "RigTail0M",
                 "RigTail1M"
             ],
+            "Trophy": {
+                "RowName": "Lava_Slug_Head"
+            },
             "Loot": {
                 "RowName": "Lava_Slug_Carcass_Loot"
             },
@@ -11577,6 +11439,9 @@
                 "RigHead",
                 "RigSpine1"
             ],
+            "Trophy": {
+                "RowName": "Lava_Broodling_Head"
+            },
             "Loot": {
                 "RowName": "Broodling_Carcass_Loot"
             },
@@ -12179,6 +12044,9 @@
                 "RigPelvis",
                 "RigNeck2"
             ],
+            "Trophy": {
+                "RowName": "Horse_Head"
+            },
             "Loot": {
                 "RowName": "Horse_Carcass_Loot"
             },
@@ -12322,6 +12190,9 @@
                 "RigRBLeg1",
                 "RigLBLeg1"
             ],
+            "Trophy": {
+                "RowName": "Horse_Head"
+            },
             "Loot": {
                 "RowName": "Horse_Carcass_Loot"
             },

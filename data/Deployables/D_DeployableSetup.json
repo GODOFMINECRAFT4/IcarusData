@@ -2118,7 +2118,7 @@
         {
             "Name": "Buffalo_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Buffalo_Trophy.BP_Buffalo_Trophy_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Buffalo_Trophy.SM_DEP_Buffalo_Trophy",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Buffalo/SM_DEP_Trophy_Buffalo.SM_DEP_Trophy_Buffalo",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
@@ -5663,7 +5663,8 @@
             "Name": "Metal_Bookshelf",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Metal_Bookshelf.BP_Metal_Bookshelf_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Bookshelf_MetalGlass/SM_DCO_Bookshelf_MetalGlass.SM_DCO_Bookshelf_MetalGlass",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "WorldPlacementType": "WallPlacement"
         },
         {
             "Name": "Metal_Lamp",
@@ -5677,6 +5678,36 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Metal_CoffeeTable.BP_Metal_CoffeeTable_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/CoffeeTable_MetalGlass/SM_DCO_CoffeeTable_MetalGlass.SM_DCO_CoffeeTable_MetalGlass",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM"
+        },
+        {
+            "Name": "Water_Purifier_T1_Water",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/WaterPurifier/BP_Water_Purifier_T1_Water.BP_Water_Purifier_T1_Water_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Purifier_T1_1.T_ITEM_Water_Purifier_T1_1",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Water_Purifier_T1_Water-DeployableName\", \"Water Purifier\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_WaterPurifier_T1/SM_DEP_WaterPurifier_T1B.SM_DEP_WaterPurifier_T1B",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "WorldPlacementType": "WaterPlacement"
+        },
+        {
+            "Name": "Water_Purifier_T1_Ground",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/WaterPurifier/BP_Water_Purifier_T1_Ground.BP_Water_Purifier_T1_Ground_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Purifier_T1_2.T_ITEM_Water_Purifier_T1_2",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Water_Purifier_T1_Ground-DeployableName\", \"Rain Collector\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_WaterPurifier_T1/SM_DEP_WaterPurifier_T1.SM_DEP_WaterPurifier_T1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
+        },
+        {
+            "Name": "Water_Purifier_T2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/WaterPurifier/BP_Water_Purifier_T2.BP_Water_Purifier_T2_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Oxite_Dissolver.SM_DEP_Oxite_Dissolver",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "WorldPlacementType": "WaterPlacement"
+        },
+        {
+            "Name": "Water_Purifier_T4",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_GEN_WaterWheel.SM_DEP_GEN_WaterWheel",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "WorldPlacementType": "WaterPlacement"
         },
         {
             "Name": "Lava_Hunter_Trophy",
@@ -5718,6 +5749,175 @@
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Brutalist_Dining_Table_Round",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_TableRound.BP_Brutalist_TableRound_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/DiningTable_Round_Brutalist/SM_DCO_DiningTable_Round_Brutalist.SM_DCO_DiningTable_Round_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Dining_Table_6",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Table6.BP_Brutalist_Table6_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/DiningTable_6Seat_Brutalist/SM_DCO_DiningTable_6Seat_Brutalist.SM_DCO_DiningTable_6Seat_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Dining_Table_10",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Table10.BP_Brutalist_Table10_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/DiningTable_10Seat_Brutalist/SM_DCO_DiningTable_10Seat_Brutalist.SM_DCO_DiningTable_10Seat_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Dining_Chair",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Dining_Chair.BP_Brutalist_Dining_Chair_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/DiningChair_Brutalist/SM_DCO_DiningChair_Brutalist.SM_DCO_DiningChair_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Living_Chair",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Living_Chair.BP_Brutalist_Living_Chair_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/LivingChair_Brutalist/SM_DCO_LivingChair_Brutalist.SM_DCO_LivingChair_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Living_Couch_2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Couch2.BP_Brutalist_Couch2_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/LivingChair_2Seat_Brutalist/SM_DCO_LivingChair_2Seat_Brutalist.SM_DCO_LivingChair_2Seat_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Living_Couch_3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Couch3.BP_Brutalist_Couch3_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/LivingChair_3Seat_Brutalist/SM_DCO_LivingChair_3Seat_Brutalist.SM_DCO_LivingChair_3Seat_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Bench_Sitting",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_SittingBench.BP_Brutalist_SittingBench_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/SittingBench_Brutalist/SM_DCO_SittingBench_Brutalist.SM_DCO_SittingBench_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Shelf_Wall",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Wall_Shelf.BP_Brutalist_Wall_Shelf_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/WallShelf_Brutalist/SM_DCO_WallShelf_Brutalist_Var1.SM_DCO_WallShelf_Brutalist_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement"
+        },
+        {
+            "Name": "Brutalist_Cabinet",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Cabinet.BP_Brutalist_Cabinet_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/DisplayCabinet_Brutalist/SM_DCO_DisplayCabinet_Brutalist.SM_DCO_DisplayCabinet_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Wardrobe",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Wardrobe.BP_Brutalist_Wardrobe_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Brutalist_Wardrobe_1.T_ITEM_Brutalist_Wardrobe_1",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/Wardrobe_Brutalist_Var1/SM_DCO_Wardrobe_Brutalist_Var1.SM_DCO_Wardrobe_Brutalist_Var1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Wardrobe2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Wardrobe2.BP_Brutalist_Wardrobe2_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Brutalist_Wardrobe_2.T_ITEM_Brutalist_Wardrobe_2",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/Wardrobe_Brutalist_Var2/SM_DCO_Wardrobe_Brutalist_Var2.SM_DCO_Wardrobe_Brutalist_Var2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Candle",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Candle1.BP_Brutalist_Candle1_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Brutalist_Candle_1.T_ITEM_Brutalist_Candle_1",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/Candle_Holders/SM_DCO_Candle_Holder_Brutalist_A.SM_DCO_Candle_Holder_Brutalist_A",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Candle2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Candle2.BP_Brutalist_Candle2_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Brutalist_Candle_2.T_ITEM_Brutalist_Candle_2",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/Candle_Holders/SM_DCO_Candle_Holder_Brutalist_B.SM_DCO_Candle_Holder_Brutalist_B",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Candle3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Candle3.BP_Brutalist_Candle3_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Brutalist_Candle_3.T_ITEM_Brutalist_Candle_3",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/Candle_Holders/SM_DCO_Candle_Holder_Brutalist_C.SM_DCO_Candle_Holder_Brutalist_C",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Dresser",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Dresser.BP_Brutalist_Dresser_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/Dresser_Brutalist/SM_DCO_Dresser_Brutalist.SM_DCO_Dresser_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Stool",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Stool.BP_Brutalist_Stool_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/Stool_Brutalist/SM_DCO_Stool_Brutalist.SM_DCO_Stool_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Nightstand",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Nightstand.BP_Brutalist_Nightstand_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/NightStand_Brutalist/SM_DCO_NightStand_Brutalist.SM_DCO_NightStand_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Bed",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Bed_Brutalist.BP_Bed_Brutalist_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/BedSingle_Brutalist/SM_DCO_BedSingle_Brutalist.SM_DCO_BedSingle_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Bookshelf",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Bookshelf.BP_Brutalist_Bookshelf_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/Bookshelf_LRG_Brutalist/SM_DCO_Bookshelf_LRG_Brutalist.SM_DCO_Bookshelf_LRG_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_Lamp",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Lamp.BP_Brutalist_Lamp_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/DeskLamp_Brutalist/SM_DCO_DeskLamp_Brutalist.SM_DCO_DeskLamp_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Brutalist_CoffeeTable",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_CoffeeTable.BP_Brutalist_CoffeeTable_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/CoffeeTable_Brutalist/SM_DCO_CoffeeTable_Brutalist.SM_DCO_CoffeeTable_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Komodo_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Komodo.BP_Trophy_Komodo_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Komodo/SM_DEP_Trophy_Komodo.SM_DEP_Trophy_Komodo",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Tusker_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Tusker.BP_Trophy_Tusker_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Tusker/SM_DEP_Trophy_Tusker.SM_DEP_Trophy_Tusker",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "T3_Cleaning_Device",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/ExoticProcessor/BP_T3_Cleaning_Device.BP_T3_Cleaning_Device_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Cleaning_Device_T3.SM_DEP_Cleaning_Device_T3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         }
     ]
 }
