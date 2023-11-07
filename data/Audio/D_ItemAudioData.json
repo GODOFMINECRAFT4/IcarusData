@@ -1116,6 +1116,28 @@
             }
         },
         {
+            "Name": "ScorpionRod",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Wood_Spear/SFX_IMPACT_WOODSPEAR.SFX_IMPACT_WOODSPEAR",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "Cast": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/D_Items/Fishing/SFX_FISHING_ROD_CAST_SCORPION.SFX_FISHING_ROD_CAST_SCORPION"
+                    ]
+                },
+                "Reel": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/D_Items/Fishing/SFX_FISHING_ROD_REEL_SCORPION.SFX_FISHING_ROD_REEL_SCORPION"
+                    ]
+                }
+            }
+        },
+        {
             "Name": "Metal_Shield",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
@@ -1220,6 +1242,16 @@
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
             "DamagedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_DMG_STONE.SFX_DEP_DMG_STONE",
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_DST_STONE.SFX_BLD_DST_STONE",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
+        },
+        {
+            "Name": "Shield_Mammoth",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "DamagedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_SHIELD_HIT_MAMMOTH.SFX_SHIELD_HIT_MAMMOTH",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_SHIELD_BREAK.SFX_SHIELD_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
             "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
         }
     ]

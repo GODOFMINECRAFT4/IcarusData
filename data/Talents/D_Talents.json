@@ -19365,7 +19365,7 @@
             },
             "Position": {
                 "X": 2600,
-                "Y": 600
+                "Y": 550
             },
             "Size": {
                 "X": 250,
@@ -32224,6 +32224,35 @@
             "bDefaultUnlocked": true
         },
         {
+            "Name": "Workshop_Backpack_Hunter",
+            "ExtraData": {
+                "RowName": "Meta_Hunters_Backpack",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Backpacks"
+            },
+            "Position": {
+                "X": 3300,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Archery_Backpack",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Workshop_Mining_Backpack",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
             "Name": "Prospect_OLY_Arctic_Survey",
             "ExtraData": {
                 "RowName": "Tier4_Arctic_Survey_0",
@@ -32246,6 +32275,34 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Workshop_Backpack_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Workshop_Backpacks"
+            },
+            "Position": {
+                "X": 5050,
+                "Y": 800
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Backpack_Tech",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Workshop_Backpack_Medic",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY"
         }
     ]
 }
