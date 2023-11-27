@@ -30663,6 +30663,31 @@
             ]
         },
         {
+            "Name": "Advanced_Rug_Set",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Advanced_Rug_Set-DisplayName\", \"Advanced Rug Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Rug_Bear.T_ITEM_Rug_Bear",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 9650,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Advanced_Armor_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Workshop_Crop_Plot",
             "ExtraData": {
                 "RowName": "Meta_CropPlot",
@@ -32283,7 +32308,7 @@
                     "RowName": "Industrial_Furniture_Pack"
                 }
             ],
-            "RequiredLevel": 10
+            "RequiredLevel": 20
         },
         {
             "Name": "Prospect_OLY_Arctic_Survey",
