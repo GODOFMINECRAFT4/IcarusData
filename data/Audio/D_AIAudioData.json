@@ -3426,7 +3426,7 @@
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
             "VocalisationSocket": "RigJaw",
             "DeathVocalisation": {
-                "RowName": "RaccoonDeath"
+                "RowName": "ChickenDeath"
             },
             "StateVocalisations": {
                 "Idle": {
@@ -3458,6 +3458,12 @@
                     }
                 }
             },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatSimpleBossComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Boss"
+            },
+            "MusicConditionOverrideMinThreatLevel": 20,
             "FootstepMaxDistance": 1500,
             "FoliageCheckMaxDistance": 3500,
             "bUsesShelter": false
