@@ -45245,6 +45245,74 @@
             }
         },
         {
+            "Name": "Shield_Titanium",
+            "Requirement": {
+                "RowName": "Shield_Titanium"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Anvil_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Titanium_Plate",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Advanced_Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Epoxy",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Titanium_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Shield_Titanium",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
             "Name": "Shield_Carbon",
             "Requirement": {
                 "RowName": "Shield_Carbon"
