@@ -4718,7 +4718,7 @@
         {
             "Name": "Stone_Diagonal_Ramp_Roof_Invert",
             "Type": {
-                "RowName": "Diagonal_Ramp"
+                "RowName": "Diagonal_Ramp_Invert"
             },
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Roof_Corner_3.ITEM_Stone_Roof_Corner_3",
             "Blueprint": "/Game/BP/Building/Stone/BP_Building_Ramp_Diagonal_Invert_Stone.BP_Building_Ramp_Diagonal_Invert_Stone_C",
@@ -4782,12 +4782,45 @@
             }
         },
         {
-            "Name": "Stone_Diagonal_Beam_Curved_Diagonal",
+            "Name": "Stone_Diagonal_Beam_Curved_Diagonal_Up_L",
             "Type": {
-                "RowName": "Diagonal_Beam_Curved_Diagonal"
+                "RowName": "Diagonal_Beam_Curved_Diagonal_Up_L"
             },
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Beam_2.ITEM_Stone_Beam_2",
-            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Beam_Cross_Diagnal_Curved_Stone.BP_Building_Beam_Cross_Diagnal_Curved_Stone_C",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Beam_Cross_Diagnal_Curved_Up_L_Stone.BP_Building_Beam_Cross_Diagnal_Curved_Up_L_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
+            }
+        },
+        {
+            "Name": "Stone_Diagonal_Beam_Curved_Diagonal_Up_R",
+            "Type": {
+                "RowName": "Diagonal_Beam_Curved_Diagonal_Up_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Beam_2.ITEM_Stone_Beam_2",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Beam_Cross_Diagnal_Curved_Up_R_Stone.BP_Building_Beam_Cross_Diagnal_Curved_Up_R_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
+            }
+        },
+        {
+            "Name": "Stone_Diagonal_Beam_Curved_Diagonal_Down_L",
+            "Type": {
+                "RowName": "Diagonal_Beam_Curved_Diagonal_Down_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Beam_2.ITEM_Stone_Beam_2",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Beam_Cross_Diagnal_Curved_Down_L_Stone.BP_Building_Beam_Cross_Diagnal_Curved_Down_L_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
+            }
+        },
+        {
+            "Name": "Stone_Diagonal_Beam_Curved_Diagonal_Down_R",
+            "Type": {
+                "RowName": "Diagonal_Beam_Curved_Diagonal_Down_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Beam_2.ITEM_Stone_Beam_2",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Beam_Cross_Diagnal_Curved_Down_R_Stone.BP_Building_Beam_Cross_Diagnal_Curved_Down_R_Stone_C",
             "Audio": {
                 "RowName": "Stone"
             }
@@ -4908,7 +4941,7 @@
                 "RowName": "Wall_Curved_Angle_Left"
             },
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Wall_Angle_0.ITEM_Stone_Wall_Angle_0",
-            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Beam_Cross_Diagnal_Curved_Stone.BP_Building_Beam_Cross_Diagnal_Curved_Stone_C",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Wall_Curved_Half_L_Stone.BP_Building_Wall_Curved_Half_L_Stone_C",
             "Audio": {
                 "RowName": "Stone"
             }
@@ -4919,7 +4952,7 @@
                 "RowName": "Wall_Curved_Angle_Left_Invert"
             },
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Wall_Angle_3.ITEM_Stone_Wall_Angle_3",
-            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Beam_Cross_Diagnal_Curved_Stone.BP_Building_Beam_Cross_Diagnal_Curved_Stone_C",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Wall_Curved_Half_L_Invert_Stone.BP_Building_Wall_Curved_Half_L_Invert_Stone_C",
             "Audio": {
                 "RowName": "Stone"
             }
@@ -4929,8 +4962,8 @@
             "Type": {
                 "RowName": "Wall_Curved_Angle_Right"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Wall_Angle_1.ITEM_Stone_Wall_Angle_1",
-            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Beam_Cross_Diagnal_Curved_Stone.BP_Building_Beam_Cross_Diagnal_Curved_Stone_C",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Wall_Angle_2.ITEM_Stone_Wall_Angle_2",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Wall_Curved_Half_R_Stone.BP_Building_Wall_Curved_Half_R_Stone_C",
             "Audio": {
                 "RowName": "Stone"
             }
@@ -4940,8 +4973,8 @@
             "Type": {
                 "RowName": "Wall_Curved_Angle_Right_Invert"
             },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Wall_Angle_2.ITEM_Stone_Wall_Angle_2",
-            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Beam_Cross_Diagnal_Curved_Stone.BP_Building_Beam_Cross_Diagnal_Curved_Stone_C",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Wall_Angle_1.ITEM_Stone_Wall_Angle_1",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_Wall_Curved_Half_R_Invert_Stone.BP_Building_Wall_Curved_Half_R_Invert_Stone_C",
             "Audio": {
                 "RowName": "Stone"
             }
@@ -6020,6 +6053,94 @@
             },
             "Skin": {
                 "RowName": "Limestone_Roof_Peak"
+            }
+        },
+        {
+            "Name": "Stone_Roof_CurvedAngle_Up_L",
+            "Type": {
+                "RowName": "Roof_Curved_Angle_Up_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Roof_Corner_0.ITEM_Stone_Roof_Corner_0",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_RoofCurvedAngle_L_Up_Stone.BP_Building_RoofCurvedAngle_L_Up_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
+            }
+        },
+        {
+            "Name": "Stone_Roof_CurvedAngle_Down_L",
+            "Type": {
+                "RowName": "Roof_Curved_Angle_Down_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Roof_Corner_0.ITEM_Stone_Roof_Corner_0",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_RoofCurvedAngle_L_Down_Stone.BP_Building_RoofCurvedAngle_L_Down_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
+            }
+        },
+        {
+            "Name": "Stone_Roof_CurvedAngle_Up_L_Invert",
+            "Type": {
+                "RowName": "Roof_Curved_Angle_Up_L_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Roof_Corner_0.ITEM_Stone_Roof_Corner_0",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_RoofCurvedAngle_L_Up_Invert_Stone.BP_Building_RoofCurvedAngle_L_Up_Invert_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
+            }
+        },
+        {
+            "Name": "Stone_Roof_CurvedAngle_Down_L_Invert",
+            "Type": {
+                "RowName": "Roof_Curved_Angle_Down_L_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Roof_Corner_0.ITEM_Stone_Roof_Corner_0",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_RoofCurvedAngle_L_Down_Invert_Stone.BP_Building_RoofCurvedAngle_L_Down_Invert_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
+            }
+        },
+        {
+            "Name": "Stone_Roof_CurvedAngle_Up_R",
+            "Type": {
+                "RowName": "Roof_Curved_Angle_Up_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Roof_Corner_0.ITEM_Stone_Roof_Corner_0",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_RoofCurvedAngle_R_Up_Stone.BP_Building_RoofCurvedAngle_R_Up_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
+            }
+        },
+        {
+            "Name": "Stone_Roof_CurvedAngle_Down_R",
+            "Type": {
+                "RowName": "Roof_Curved_Angle_Down_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Roof_Corner_0.ITEM_Stone_Roof_Corner_0",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_RoofCurvedAngle_R_Down_Stone.BP_Building_RoofCurvedAngle_R_Down_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
+            }
+        },
+        {
+            "Name": "Stone_Roof_CurvedAngle_Up_R_Invert",
+            "Type": {
+                "RowName": "Roof_Curved_Angle_Up_R_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Roof_Corner_0.ITEM_Stone_Roof_Corner_0",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_RoofCurvedAngle_R_Up_Invert_Stone.BP_Building_RoofCurvedAngle_R_Up_Invert_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
+            }
+        },
+        {
+            "Name": "Stone_Roof_CurvedAngle_Down_R_Invert",
+            "Type": {
+                "RowName": "Roof_Curved_Angle_Down_R_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Stone_Roof_Corner_0.ITEM_Stone_Roof_Corner_0",
+            "Blueprint": "/Game/BP/Building/Stone/BP_Building_RoofCurvedAngle_R_Down_Invert_Stone.BP_Building_RoofCurvedAngle_R_Down_Invert_Stone_C",
+            "Audio": {
+                "RowName": "Stone"
             }
         }
     ]

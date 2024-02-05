@@ -55696,6 +55696,71 @@
             }
         },
         {
+            "Name": "Rug_Buffalo",
+            "Requirement": {
+                "RowName": "Advanced_Rug_Set"
+            },
+            "RequiredMillijoules": 3000,
+            "RecipeSets": [
+                {
+                    "RowName": "Advanced_Armor_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Armor_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Buffalo_Head",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fur",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Advanced_Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Rug_Buffalo",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "ArmorBench"
+            }
+        },
+        {
             "Name": "Rug_Conifer_Wolf",
             "Requirement": {
                 "RowName": "Basic_Rug_Set"
@@ -56232,6 +56297,63 @@
                 {
                     "Element": {
                         "RowName": "Rug_SnowLeopard",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "ArmorBench"
+            }
+        },
+        {
+            "Name": "Rug_Weave_Thin",
+            "Requirement": {
+                "RowName": "Advanced_Rug_Set"
+            },
+            "RequiredMillijoules": 3000,
+            "RecipeSets": [
+                {
+                    "RowName": "Advanced_Armor_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Armor_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Advanced_Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 60,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Rug_Weave_Thin",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -63558,15 +63680,6 @@
                     "Count": 1,
                     "DynamicProperties": [],
                     "Alterations": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Beeswax",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
                 }
             ],
             "Audio": {
@@ -63902,6 +64015,10 @@
             },
             "RecipeSets": [
                 {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
                     "RowName": "Carpentry_Bench_T4",
                     "DataTableName": "D_RecipeSets"
                 }
@@ -63963,6 +64080,10 @@
                 "RowName": "Reinforced_Wood_Basic"
             },
             "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
                 {
                     "RowName": "Carpentry_Bench_T4",
                     "DataTableName": "D_RecipeSets"
@@ -64026,6 +64147,10 @@
             },
             "RecipeSets": [
                 {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
                     "RowName": "Carpentry_Bench_T4",
                     "DataTableName": "D_RecipeSets"
                 }
@@ -64087,6 +64212,10 @@
                 "RowName": "Reinforced_Wood_Basic"
             },
             "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
                 {
                     "RowName": "Carpentry_Bench_T4",
                     "DataTableName": "D_RecipeSets"
@@ -64150,6 +64279,10 @@
             },
             "RecipeSets": [
                 {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
                     "RowName": "Carpentry_Bench_T4",
                     "DataTableName": "D_RecipeSets"
                 }
@@ -64212,6 +64345,10 @@
             },
             "RecipeSets": [
                 {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
                     "RowName": "Carpentry_Bench_T4",
                     "DataTableName": "D_RecipeSets"
                 }
@@ -64273,6 +64410,10 @@
                 "RowName": "Reinforced_Wood_Advanced"
             },
             "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
                 {
                     "RowName": "Carpentry_Bench_T4",
                     "DataTableName": "D_RecipeSets"
