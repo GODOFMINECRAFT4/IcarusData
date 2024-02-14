@@ -439,6 +439,9 @@
                 "window"
             ],
             "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Y": -10
+            },
             "DeployCollisionLocationOffset": {
                 "X": 5
             }
@@ -503,6 +506,9 @@
                 "window"
             ],
             "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Y": -10
+            },
             "DeployCollisionLocationOffset": {
                 "X": 5
             }
@@ -1069,6 +1075,9 @@
                 "window"
             ],
             "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Y": -10
+            },
             "DeployCollisionLocationOffset": {
                 "X": 5
             }
@@ -1411,7 +1420,7 @@
             ],
             "UseSnapSocketRotation": true,
             "DeployCollisionExtentOffset": {
-                "Y": 5
+                "Y": -10
             },
             "DeployCollisionLocationOffset": {
                 "X": 5
@@ -1499,6 +1508,9 @@
                 "window"
             ],
             "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Y": -10
+            },
             "DeployCollisionLocationOffset": {
                 "X": 5
             }
@@ -1519,6 +1531,9 @@
                 "window"
             ],
             "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Y": -10
+            },
             "DeployCollisionLocationOffset": {
                 "X": 5
             }
@@ -2900,6 +2915,9 @@
                 "window"
             ],
             "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Y": -10
+            },
             "DeployCollisionLocationOffset": {
                 "X": 5
             },
@@ -5723,7 +5741,8 @@
         },
         {
             "Name": "Water_Purifier_T4",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_GEN_WaterWheel.SM_DEP_GEN_WaterWheel",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/WaterPurifier/BP_Water_Purifier_T4_Temp.BP_Water_Purifier_T4_Temp_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_WaterPurifier_T4/SM_DEP_WaterPurifier_T4.SM_DEP_WaterPurifier_T4",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_WATER_ITEM.SFX_DEPLOY_WATER_ITEM",
             "WorldPlacementType": "WaterPlacement"
         },
@@ -6413,13 +6432,13 @@
             "Name": "Battery_Shelf_T3",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Batteries/BP_Battery_Shelf_T3.BP_Battery_Shelf_T3_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Battery_Small/SM_DEP_Battery_Rack_Small.SM_DEP_Battery_Rack_Small",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
         },
         {
             "Name": "Battery_Shelf_T4",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Batteries/BP_Battery_Shelf_T4.BP_Battery_Shelf_T4_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Battery_Large/SM_DEP_Battery_Rack_Large.SM_DEP_Battery_Rack_Large",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
         },
         {
             "Name": "Farming_Mound_Sugar_Cane",
