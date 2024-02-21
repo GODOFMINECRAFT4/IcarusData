@@ -10855,7 +10855,7 @@
                         "RowName": "Copper_Nail",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 5,
+                    "Count": 2,
                     "DynamicProperties": []
                 },
                 {
@@ -10863,7 +10863,7 @@
                         "RowName": "Gunpowder",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 6,
+                    "Count": 1,
                     "DynamicProperties": []
                 },
                 {
@@ -21726,7 +21726,7 @@
                         "RowName": "Copper_Nail",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 25,
+                    "Count": 10,
                     "DynamicProperties": []
                 },
                 {
@@ -21734,7 +21734,7 @@
                         "RowName": "Gunpowder",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 30,
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
@@ -59037,6 +59037,171 @@
             ],
             "Audio": {
                 "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Shotgun_Shell_Cold_Steel",
+            "Requirement": {
+                "RowName": "Cold_Steel_Ammo"
+            },
+            "RequiredMillijoules": 500,
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseShotgunAmmoCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Shell_Buckshot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Cold_Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Shell_ColdSteel",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Shotgun_Shell_Obsidian",
+            "Requirement": {
+                "RowName": "Obsidian_Ammo"
+            },
+            "RequiredMillijoules": 500,
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseShotgunAmmoCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Shell_Buckshot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Shaped_Obsidian",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Shell_Obsidian",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Shotgun_Shell_Ironwood",
+            "Requirement": {
+                "RowName": "Iron_Wood_Ammo"
+            },
+            "RequiredMillijoules": 500,
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseShotgunAmmoCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Shell_Buckshot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Refined_Iron_Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Ammo_Shell_Ironwood",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
             }
         },
         {

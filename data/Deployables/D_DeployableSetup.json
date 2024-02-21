@@ -184,8 +184,8 @@
         },
         {
             "Name": "Water_Barrel",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/LiquidContainers/BP_WaterBarrel.BP_WaterBarrel_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Barrel.SM_DEP_Barrel",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Batteries/BP_Water_Barrel.BP_Water_Barrel_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Barrel_Wood.SM_DEP_Barrel_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
             "bCanAffectNavigation": false,
@@ -6560,6 +6560,38 @@
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Rain_Reservoir_T3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Weather/BP_RainReservior_T3.BP_RainReservior_T3_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Rain_Reservoir_Metal.SM_DEP_Rain_Reservoir_Metal",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
+            "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Water_Pump_T3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Pump/BP_WaterPump.BP_WaterPump_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Water_Pump.SM_DEP_Water_Pump",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_WATER_ITEM.SFX_DEPLOY_WATER_ITEM",
+            "SnapToSurfaceNormal": false,
+            "WorldPlacementType": "WaterPlacement"
+        },
+        {
+            "Name": "Water_Borer",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Drill/BP_Deep_Mining_Ice_Borer.BP_Deep_Mining_Ice_Borer_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_IceBorer_T3.SM_DEP_IceBorer_T3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Geyser_Analyzer/SFX_DEPLOY_GEYSER_ANALYZER.SFX_DEPLOY_GEYSER_ANALYZER",
+            "MaxSurfaceSnapAngle": 360,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Enzyme_Geyser"
+            ],
+            "SnapSocketsOrTags": [
+                "Enzyme_Geyser_Attachment"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
         }
     ]
 }

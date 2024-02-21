@@ -13917,6 +13917,21 @@
             "StatCategory": {
                 "RowName": "Crafting"
             }
+        },
+        {
+            "Name": "BaseTrailBeaconMaxPlacementDistance_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTrailBeaconMaxPlacementDistance_+-PositiveDescription\", \"{0}m Max Trail Beacon Placement Distance \")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTrailBeaconMaxPlacementDistance_+-NegativeDescription\", \"-{0}m Max Trail Beacon Placement Distance\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Deployable"
+            },
+            "bHideStatInUserInterface": true
         }
     ]
 }

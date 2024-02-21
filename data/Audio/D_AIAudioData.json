@@ -2775,7 +2775,10 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
-            "VocalisationSocket": "RigJaw1",
+            "VocalisationSocket": "RigTongue3",
+            "AttackVocalisation": {
+                "RowName": "WoolyZebraAttack"
+            },
             "FlinchVocalisation": {
                 "RowName": "WoolyZebraFlinch"
             },
@@ -3017,6 +3020,7 @@
             "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Horse/SFX_FOOTSTEP_HORSE_MOUNT.SFX_FOOTSTEP_HORSE_MOUNT",
             "FrontFootSocket": "SocketFoot_FL",
             "RearFootSocket": "SocketFoot_BL",
+            "JumpSocket": "SocketFoot_FL",
             "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
             "DeathCollisionSocket": "RigChest",
@@ -3683,7 +3687,7 @@
         },
         {
             "Name": "HammerheadSlugSMALL",
-            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Slug/SFX_FOOTSTEP__SLUG.SFX_FOOTSTEP__SLUG",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/HammerheadSlug/SFX_FOOTSTEP__SLUG_SMALL.SFX_FOOTSTEP__SLUG_SMALL",
             "FrontFootSocket": "RigChestM",
             "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_SMALL.SFX_CRE_BODY_FALL_SMALL",
@@ -3734,6 +3738,136 @@
             "ThreatConfig": {
                 "RowName": "Default"
             }
+        },
+        {
+            "Name": "WoolyZebraMount",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Horse/SFX_FOOTSTEP_HORSE_MOUNT.SFX_FOOTSTEP_HORSE_MOUNT",
+            "FrontFootSocket": "RigNeck1",
+            "RearFootSocket": "RigPelvis",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigTongue3",
+            "AttackVocalisation": {
+                "RowName": "WoolyZebraAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "WoolyZebraFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "WoolyZebraDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "WoolyZebraIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Fleeing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "WoolyZebraFlee",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Relaxing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "WoolyZebraIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "FootstepMaxDistance": 6000,
+            "FoliageCheckMaxDistance": 6000
+        },
+        {
+            "Name": "WoolyZebraJuvi",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Horse/SFX_FOOTSTEP_HORSE_JUVI.SFX_FOOTSTEP_HORSE_JUVI",
+            "FrontFootSocket": "SocketFoot_FL",
+            "RearFootSocket": "SocketFoot_BR",
+            "JumpSocket": "SocketFoot_FL",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigTongue3",
+            "FlinchVocalisation": {
+                "RowName": "WoolyZebraJuviFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "WoolyZebraJuviDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "WoolyZebraJuviIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Fleeing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "WoolyZebraJuviFlee",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Relaxing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "WoolyZebraJuviIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "FootstepMaxDistance": 6000,
+            "FoliageCheckMaxDistance": 6000
         }
     ]
 }

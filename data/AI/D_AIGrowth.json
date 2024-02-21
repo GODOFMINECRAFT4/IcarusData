@@ -1535,6 +1535,42 @@
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
+            "Name": "Mount_BlueBack",
+            "Base": {
+                "(Value=\"BaseMovementSpeed_+\")": 130,
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 10,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 5000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseCharacterMass_+\")": 500,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseNPCMinTargetDistanceForCharge_+\")": 300,
+                "(Value=\"BaseNPCMaxTargetDistanceForCharge_+\")": 1500,
+                "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
+                "(Value=\"CanNPCDamageVoxels_?\")": 1,
+                "(Value=\"BaseMiningRadius_+\")": 100,
+                "(Value=\"BaseExplosiveDamageResistance_%\")": -25,
+                "(Value=\"BasePoisonDamageResistance_%\")": -100,
+                "(Value=\"BaseFrostDamageResistance_%\")": 50,
+                "(Value=\"BaseMaximumStamina_+\")": 300,
+                "(Value=\"BaseStaminaRegenPerMinute_+\")": 2100,
+                "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 5000,
+                "(Value=\"BaseStaminaRegenDelay_+\")": 2000
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_Blueback_Health.C_Blueback_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
             "Name": "Roat_Swamp",
             "Base": {
                 "(Value=\"BaseMovementSpeed_+\")": 65,
@@ -2724,6 +2760,42 @@
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Hammerhead_Slug_M_Health.C_Hammerhead_Slug_M_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Hammerhead_Slug_M_Damage.C_Hammerhead_Slug_M_Damage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseWound_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/C_WolfWoundChance.C_WolfWoundChance'"
+                }
+            ],
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "MiniHippo",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 1000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 2000,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1250,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 10,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseGOAPMotivationProtectiveIncreaseRate_+%\")": -50,
+                "(Value=\"BaseMovementSpeed_+\")": 190,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseFrostDamageResistance_%\")": -50
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_MiniHippoHealth.C_MiniHippoHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_MiniHippoMeleeDamage.C_MiniHippoMeleeDamage'",
             "CustomStats": [
                 {
                     "Stat": {
