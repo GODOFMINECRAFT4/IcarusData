@@ -1483,18 +1483,18 @@
         },
         {
             "Name": "Mini_Hippo",
-            "CreatureName": "INVTEXT(\"[DNT] Mini Hippo\")",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Mini_Hippo-CreatureName\", \"Dribbo\")",
             "Tag": {
                 "TagName": "NPC.MiniHippo"
             },
             "SpawnStat": {
-                "Value": "BoarSpawnRate_+%"
+                "Value": "MiniHippoSpawnRate_+%"
             },
             "AdditionalDamageStat": {
-                "Value": "WildBoarExtraDamage_+%"
+                "Value": "MiniHippoExtraDamage_+%"
             },
             "AdditionalResistanceStat": {
-                "Value": "WildBoarExtraDamageResistance_+%"
+                "Value": "MiniHippoExtraDamageResistance_+%"
             },
             "SkinningXPEvent": {
                 "RowName": "Skin_MiniHippo"
@@ -1539,6 +1539,35 @@
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.Blueback"
+            }
+        },
+        {
+            "Name": "Mange_Wolf",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Mange_Wolf-CreatureName\", \"Skulmutt\")",
+            "Tag": {
+                "TagName": "NPC.MangeWolf"
+            },
+            "SpawnStat": {
+                "Value": "WolfSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "ForestWolfExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "ForestWolfExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Mange_Wolf"
+            }
+        },
+        {
+            "Name": "Kiwi",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Kiwi-CreatureName\", \"Buffalo\")",
+            "Tag": {
+                "TagName": "NPC.Kiwi"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Buffalo"
             }
         }
     ]
