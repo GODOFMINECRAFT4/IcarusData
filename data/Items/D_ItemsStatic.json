@@ -5127,6 +5127,9 @@
             "FirearmData": {
                 "RowName": "Shotgun"
             },
+            "AdditionalStats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 15
+            },
             "Manual_Tags": {
                 "GameplayTags": [
                     {
@@ -131822,6 +131825,84 @@
                     },
                     {
                         "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Shotgun_T4",
+            "Meshable": {
+                "RowName": "Mesh_Shotgun_T4"
+            },
+            "Itemable": {
+                "RowName": "Item_Shotgun_T4"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Gun_Shotgun"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Shotgun_SingleShot"
+            },
+            "Usable": {
+                "RowName": "Repair"
+            },
+            "Durable": {
+                "RowName": "Shotgun"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "InventoryContainer": {
+                "RowName": "Shotgun_Ammo_Attachment"
+            },
+            "Audio": {
+                "RowName": "Shotgun_T4"
+            },
+            "FirearmData": {
+                "RowName": "Shotgun_T4"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 30
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Weapon.Firearm.Shotgun"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Weapon.Firearm.Shotgun"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
                     },
                     {
                         "TagName": "Traits.Durable"

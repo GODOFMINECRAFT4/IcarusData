@@ -3868,6 +3868,61 @@
             },
             "FootstepMaxDistance": 6000,
             "FoliageCheckMaxDistance": 6000
+        },
+        {
+            "Name": "GhostCroc",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Crocodile/SFX_CRE_FOOTSTEPS_CROCODILE.SFX_CRE_FOOTSTEPS_CROCODILE",
+            "FrontFootSocket": "FootFront",
+            "RearFootSocket": "FootBack",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/Crocodile/SFX_CRE_FOLIAGE_CROCODILE.SFX_CRE_FOLIAGE_CROCODILE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigMouth",
+            "AttackVocalisation": {
+                "RowName": "NeedlerAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "GhostCrocFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "GhostCrocDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "GhostCrocIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "NeedlerAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
         }
     ]
 }
