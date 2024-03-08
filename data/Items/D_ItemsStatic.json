@@ -66935,7 +66935,7 @@
                 "RowName": "Item_Mission_Prototype_Laser"
             },
             "Interactable": {
-                "RowName": "Deployable_Power_Toggle_Only"
+                "RowName": "Mission_Prototype_Laser"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -66960,9 +66960,6 @@
             },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
-            },
-            "Resource": {
-                "RowName": "Mission_Prototype_Laser"
             },
             "Audio": {
                 "RowName": "MetalDeployable"
@@ -112766,6 +112763,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Item.Mound"
                     }
                 ]
             },
@@ -112773,6 +112773,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Seed"
+                    },
+                    {
+                        "TagName": "Item.Mound"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -113475,7 +113478,7 @@
                 "RowName": "MediumDeployable"
             },
             "Resource": {
-                "RowName": "Masonry_Bench"
+                "RowName": "Masonry_Bench_T3"
             },
             "Audio": {
                 "RowName": "GenericDeployable"
@@ -132304,6 +132307,54 @@
                     },
                     {
                         "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "DEV_ResourceNetworkInspector",
+            "Meshable": {
+                "RowName": "Mesh_0_Placeholder_Invisible"
+            },
+            "Itemable": {
+                "RowName": "Item_Dev_ResourceNetworkInspector"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Dev_ResourceNetworkInspector"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Tool"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Tool"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
                     }
                 ],
                 "ParentTags": []
