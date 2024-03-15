@@ -4138,6 +4138,52 @@
             },
             "MusicConditionOverrideMinThreatLevel": 20,
             "FoliageCheckMaxDistance": 6000
+        },
+        {
+            "Name": "Kiwi",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Kea/SFX_FOOTSTEP_KEA.SFX_FOOTSTEP_KEA",
+            "FrontFootSocket": "RigPelvis",
+            "RearFootSocket": "RigPelvis",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_VERY_SMALL.SFX_CRE_BODY_FALL_VERY_SMALL",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigNeck",
+            "DeathVocalisation": {
+                "RowName": "KiwiDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "KiwiIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Relaxing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "KiwiIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "FootstepMaxDistance": 2000,
+            "FoliageCheckMaxDistance": 2000
         }
     ]
 }
