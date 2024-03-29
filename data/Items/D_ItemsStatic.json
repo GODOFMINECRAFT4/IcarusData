@@ -2101,7 +2101,7 @@
                 "RowName": "BasicWater"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Empty"
             },
             "Fillable": {
                 "RowName": "Waterskin"
@@ -4386,7 +4386,7 @@
                 "RowName": "Canteen"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Empty"
             },
             "Fillable": {
                 "RowName": "Canteen"
@@ -15782,9 +15782,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Consumable.Food.Spoiled"
-                    },
-                    {
-                        "TagName": "FactionMission.Item.Fuel"
                     }
                 ]
             },
@@ -15792,9 +15789,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Consumable.Food.Spoiled"
-                    },
-                    {
-                        "TagName": "FactionMission.Item.Fuel"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -15845,7 +15839,7 @@
                 "RowName": "Drink_Sponge"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Empty"
             },
             "Fillable": {
                 "RowName": "Sponge"
@@ -16316,7 +16310,7 @@
                 "RowName": "Canteen"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Empty"
             },
             "Fillable": {
                 "RowName": "Canteen"
@@ -19066,7 +19060,7 @@
                 "RowName": "Thermos"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Empty"
             },
             "Fillable": {
                 "RowName": "Thermos"
@@ -19257,9 +19251,6 @@
                         "TagName": "Item.Fuel.Biofuel"
                     },
                     {
-                        "TagName": "FactionMission.Item.Fuel"
-                    },
-                    {
                         "TagName": "FieldGuide.ResourceNetwork"
                     }
                 ]
@@ -19268,9 +19259,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Fuel.Biofuel"
-                    },
-                    {
-                        "TagName": "FactionMission.Item.Fuel"
                     },
                     {
                         "TagName": "FieldGuide.ResourceNetwork"
@@ -38342,8 +38330,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1,
                 "(Value=\"IsInvulnerable_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -40218,8 +40216,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -40256,8 +40264,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -40294,8 +40312,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -40336,6 +40364,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     }
                 ]
             },
@@ -40343,6 +40374,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -40459,8 +40493,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1,
                 "(Value=\"IsInvulnerable_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -40522,8 +40566,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1,
                 "(Value=\"IsInvulnerable_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -45141,7 +45195,7 @@
                 "RowName": "Corn_Soup"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -45222,7 +45276,7 @@
                 "RowName": "Fruit_Salad"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -45303,7 +45357,7 @@
                 "RowName": "Mushroom_Soup"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -45384,7 +45438,7 @@
                 "RowName": "Wild_Salad"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Decayable": {
                 "RowName": "Decay_Food_Generic"
@@ -45459,7 +45513,7 @@
                 "RowName": "Meat_Stew"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -45540,7 +45594,7 @@
                 "RowName": "Fried_Soy_Beans"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -45621,7 +45675,7 @@
                 "RowName": "Fish_Dish"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -45708,7 +45762,7 @@
                 "RowName": "Creamed_Corn"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -45789,7 +45843,7 @@
                 "RowName": "Roast_Vegetables"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Decayable": {
                 "RowName": "Decay_Food_Generic"
@@ -45975,7 +46029,7 @@
                 "RowName": "Fruit_Pie"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -46056,7 +46110,7 @@
                 "RowName": "Meat_Pie"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -46137,7 +46191,7 @@
                 "RowName": "Vegetable_Pie"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Decayable": {
                 "RowName": "Decay_Food_Generic"
@@ -46212,7 +46266,7 @@
                 "RowName": "Pumpkin_Bread"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Decayable": {
                 "RowName": "Decay_Bread_Generic"
@@ -46287,7 +46341,7 @@
                 "RowName": "Crumbed_Fish_Fillet"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -46374,7 +46428,7 @@
                 "RowName": "Picked_Carrot"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Decayable": {
                 "RowName": "Decay_General"
@@ -47991,7 +48045,7 @@
                 "RowName": "Canteen_Shengong"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Empty"
             },
             "Fillable": {
                 "RowName": "Canteen_Shengong"
@@ -50157,6 +50211,9 @@
                     },
                     {
                         "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     }
                 ]
             },
@@ -50170,6 +50227,9 @@
                     },
                     {
                         "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -50415,8 +50475,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1,
                 "(Value=\"IsInvulnerable_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -50727,8 +50797,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -50768,8 +50848,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -50809,8 +50899,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -50850,8 +50950,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -51504,8 +51614,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1,
                 "(Value=\"IsInvulnerable_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -53350,8 +53470,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -53391,8 +53521,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -58494,9 +58634,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Consumable.Food.Spoiled"
-                    },
-                    {
-                        "TagName": "FactionMission.Item.Fuel"
                     }
                 ]
             },
@@ -58504,9 +58641,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Consumable.Food.Spoiled"
-                    },
-                    {
-                        "TagName": "FactionMission.Item.Fuel"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -60512,6 +60646,9 @@
                     },
                     {
                         "TagName": "Item.Bench"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     }
                 ]
             },
@@ -60522,6 +60659,9 @@
                     },
                     {
                         "TagName": "Item.Bench"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -60577,8 +60717,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -60615,8 +60765,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -60653,8 +60813,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -60691,8 +60861,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -60729,8 +60909,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -60767,8 +60957,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -61612,7 +61812,7 @@
                 "RowName": "Canteen_Shengong"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Empty"
             },
             "Fillable": {
                 "RowName": "Canteen_Shengong"
@@ -66124,8 +66324,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -66868,9 +67078,6 @@
                         "TagName": "Item.Fuel.Biofuel"
                     },
                     {
-                        "TagName": "FactionMission.Item.Fuel"
-                    },
-                    {
                         "TagName": "Item.Meta.Consumable"
                     },
                     {
@@ -66885,9 +67092,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Fuel.Biofuel"
-                    },
-                    {
-                        "TagName": "FactionMission.Item.Fuel"
                     },
                     {
                         "TagName": "Item.Meta.Consumable"
@@ -66968,8 +67172,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1,
                 "(Value=\"IsInvulnerable_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -67036,8 +67250,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -67199,6 +67423,9 @@
                     },
                     {
                         "TagName": "Item.Tool.Knife.T1"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     }
                 ]
             },
@@ -67212,6 +67439,9 @@
                     },
                     {
                         "TagName": "Item.Tool.Knife.T1"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -69726,8 +69956,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
             "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -79752,8 +79992,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -79790,8 +80040,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -79828,8 +80088,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -80543,8 +80813,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "FactionMission.Item"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -83518,7 +83798,7 @@
                 "RowName": "Hearty_Salad"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -83604,7 +83884,7 @@
                 "RowName": "Tomato_Soup"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -83690,7 +83970,7 @@
                 "RowName": "Pickled_Tomato"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Decayable": {
                 "RowName": "Decay_General"
@@ -83770,7 +84050,7 @@
                 "RowName": "Potato_Carrot_Fries"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Decayable": {
                 "RowName": "Decay_Food_Generic"
@@ -83850,7 +84130,7 @@
                 "RowName": "Potato_Bread"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Decayable": {
                 "RowName": "Decay_Bread_Generic"
@@ -83930,7 +84210,7 @@
                 "RowName": "Shepherds_Pie"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Stack_Food"
             },
             "Floatable": {
                 "RowName": "Items"
@@ -110582,9 +110862,6 @@
             "Audio": {
                 "RowName": "Default"
             },
-            "AdditionalStats": {
-                "(Value=\"ConvertCoolWaterToWarmWater_?\")": 1
-            },
             "Manual_Tags": {
                 "GameplayTags": [
                     {
@@ -110976,7 +111253,7 @@
                 "RowName": "Warming_Drink"
             },
             "Usable": {
-                "RowName": "Consume"
+                "RowName": "Consume_Empty"
             },
             "Fillable": {
                 "RowName": "Canteen_Shengong"
@@ -111716,6 +111993,9 @@
                     },
                     {
                         "TagName": "Item.Deployable.Storage"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     }
                 ]
             },
@@ -111726,6 +112006,9 @@
                     },
                     {
                         "TagName": "Item.Deployable.Storage"
+                    },
+                    {
+                        "TagName": "FactionMission.Item"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -113080,14 +113363,14 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "FactionMission.Item.AnimalFood"
+                        "TagName": "Item.AnimalFeed"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "FactionMission.Item.AnimalFood"
+                        "TagName": "Item.AnimalFeed"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -132320,7 +132603,7 @@
                 "RowName": "Repair"
             },
             "Durable": {
-                "RowName": "Shotgun"
+                "RowName": "Shotgun_T4"
             },
             "Decayable": {
                 "RowName": "Decay_General"
@@ -133080,6 +133363,307 @@
                 "GameplayTags": [
                     {
                         "TagName": "Traits.Itemable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Stone",
+            "Meshable": {
+                "RowName": "Mesh_Pyritic_Crust"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Stone"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource.Miasmic"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource.Miasmic"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Salt",
+            "Meshable": {
+                "RowName": "Mesh_Pyritic_Crust"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Salt"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource.Miasmic"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource.Miasmic"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Limestone",
+            "Meshable": {
+                "RowName": "Mesh_Pyritic_Crust"
+            },
+            "Itemable": {
+                "RowName": "Pyritic_Crust_Limestone"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fiber"
+            },
+            "Audio": {
+                "RowName": "WoodRagTorch"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource.Miasmic"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource.Miasmic"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Purification_Tablet",
+            "Meshable": {
+                "RowName": "Mesh_Meta_Gel"
+            },
+            "Itemable": {
+                "RowName": "Workshop_Purification_Tablet"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "LightItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "AdditionalStats": {
+                "(Value=\"RemoveWaterQuality_?\")": 1
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Purification_Pill",
+            "Meshable": {
+                "RowName": "Mesh_Blood_Thinning_Pill"
+            },
+            "Itemable": {
+                "RowName": "Item_Purification_Pill"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Floatable": {
+                "RowName": "Items"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "AdditionalStats": {
+                "(Value=\"RemoveWaterQuality_?\")": 1
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Medicine.Pill"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Medicine.Pill"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Floatable"
                     }
                 ],
                 "ParentTags": []

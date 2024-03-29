@@ -4209,8 +4209,8 @@
         {
             "Name": "WaterConnectionSpeedUp",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_WaterBuff.Icon_WaterBuff'",
-            "ModifierName": "INVTEXT(\"[DNT] Water Speed\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Water is speeding crafting up\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"WaterConnectionSpeedUp-ModifierName\", \"Water Speed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"WaterConnectionSpeedUp-ModifierDescription\", \"Water is speeding crafting up\")",
             "GrantedStats": {
                 "(Value=\"BaseCraftingSpeed_+%\")": 50
             },
@@ -4223,8 +4223,8 @@
         {
             "Name": "WaterConnectionSpeedUp_2x",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_WaterBuff.Icon_WaterBuff'",
-            "ModifierName": "INVTEXT(\"[DNT] Water Speed\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Water is greatly speeding crafting up\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"WaterConnectionSpeedUp_2x-ModifierName\", \"Water Speed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"WaterConnectionSpeedUp_2x-ModifierDescription\", \"Water is greatly speeding crafting up\")",
             "GrantedStats": {
                 "(Value=\"BaseCraftingSpeed_+%\")": 200
             },
@@ -7263,7 +7263,7 @@
             "Name": "Plant_InGreenhouse",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_GreenHouse.Icon_GreenHouse'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_InGreenhouse-ModifierName\", \"Greenhouse\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_InGreenhouse-ModifierDescription\", \"Growth Speed is increased by being in or near glass buildings..\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_InGreenhouse-ModifierDescription\", \"Growth Speed is increased by being in or near glass buildings.\")",
             "GrantedStats": {
                 "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 50
             },
@@ -7276,7 +7276,7 @@
             "Name": "Plant_Powered",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_GreenHouse_Electric.Icon_GreenHouse_Electric'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Powered-ModifierName\", \"Perfect Lighting\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Powered-ModifierDescription\", \"Growth Speed is increased by hydroponic lights\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Powered-ModifierDescription\", \"Growth Speed is increased by hydroponic lights.\")",
             "GrantedStats": {
                 "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 50
             },
@@ -7890,7 +7890,7 @@
         {
             "Name": "Meta_Biolab_Inhaler_Scorpion",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Scorpion-ModifierName\", \"Health Inhaler\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Scorpion-ModifierDescription\", \"Increased Health regeneration and resistance to wounds and deep wounds..\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Scorpion-ModifierDescription\", \"Increased Health regeneration and resistance to wounds and deep wounds.\")",
             "GrantedStats": {
                 "(Value=\"BaseHealthRegen_+%\")": 200,
                 "(Value=\"BaseWoundResistance_%\")": 30,
@@ -8837,6 +8837,23 @@
                 ],
                 "AutoDescription": " NONE( Water.Dirty, Water.Filtered, Water.Treated, Water.Rain )"
             }
+        },
+        {
+            "Name": "Animal_Feed_High_Quality",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_Animal_Feed_High_Quality.T_Animal_Feed_High_Quality'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_High_Quality-ModifierName\", \"High Quality Animal Feed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_High_Quality-ModifierDescription\", \"Buffs Animals Stamina and Recovery\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 200,
+                "(Value=\"BaseStaminaRegen_+%\")": 75
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration"
         }
     ]
 }
