@@ -2209,16 +2209,28 @@
                 "TagDictionary": [
                     {
                         "TagName": "ModifierState.Campfire"
+                    },
+                    {
+                        "TagName": "ModifierState.Dehumidified"
+                    },
+                    {
+                        "TagName": "ModifierState.Cooler"
+                    },
+                    {
+                        "TagName": "ModifierState.Heater"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    2,
                     1,
-                    0
+                    4,
+                    0,
+                    1,
+                    2,
+                    3
                 ],
-                "AutoDescription": " ALL( ModifierState.Campfire )"
+                "AutoDescription": " ANY( ModifierState.Campfire, ModifierState.Dehumidified, ModifierState.Cooler, ModifierState.Heater )"
             }
         },
         {
