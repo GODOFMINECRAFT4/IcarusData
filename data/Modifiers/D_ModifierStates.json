@@ -3974,7 +3974,7 @@
             "Name": "Picked_Carrot",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_PickledCarrot.ITEM_PickledCarrot'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Carrot-ModifierName\", \"Pickled Carrot\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Carrot-ModifierDescription\", \"Boosts max stamina and projectile damage.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Carrot-ModifierDescription\", \"Boosts max stamina and projectile damage, and increases shared experience gained.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 150,
@@ -5281,7 +5281,7 @@
             "Name": "Picked_Tomato",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_PickedTomato.ITEM_PickedTomato'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Tomato-ModifierName\", \"Pickled Tomato\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Tomato-ModifierDescription\", \"Boosts max stamina and health regeneration.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Picked_Tomato-ModifierDescription\", \"Boosts max stamina and health regeneration, and increases shared experience gained.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 150,
@@ -7567,7 +7567,7 @@
             "Name": "Animal_Feed",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed.T_ITEM_Animal_Feed'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed-ModifierName\", \"Animal Feed\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed-ModifierDescription\", \"Buffs Animals Stamina and Recovery\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed-ModifierDescription\", \"Increases animal stamina and stamina regeneration.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 125,
@@ -8448,20 +8448,6 @@
             "SaveToDatabase": false
         },
         {
-            "Name": "Low_Wind_Conditions",
-            "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Low_Wind_Conditions-ModifierName\", \"Low Wind\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Low_Wind_Conditions-ModifierDescription\", \"Low wind is causing less energy to be generated.\")",
-            "GrantedStats": {
-                "(Value=\"BaseEnergyNetworkModifier_+%\")": -50
-            },
-            "MergeType": "Replace",
-            "bEffectsObjects": true,
-            "bEffectsNPCs": false,
-            "bEffectsPlayers": false,
-            "SaveToDatabase": false
-        },
-        {
             "Name": "Electronic_Light_Brownout",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_LowPower.Icon_LowPower'",
             "Type": "Debuff",
@@ -8842,7 +8828,7 @@
             "Name": "Animal_Feed_High_Quality",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_Animal_Feed_High_Quality.T_Animal_Feed_High_Quality'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_High_Quality-ModifierName\", \"High Quality Animal Feed\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_High_Quality-ModifierDescription\", \"Buffs Animals Stamina and Recovery\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_High_Quality-ModifierDescription\", \"Increases animal food buff effectiveness, health regeneration and stamina regeneration.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 200,
@@ -9393,6 +9379,21 @@
             "MaxStackNum": 20
         },
         {
+            "Name": "Energy_Brownout_Turret",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Electricity.Icon_Electricity'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Energy_Brownout_Turret-ModifierName\", \"Energy Shortage\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Energy_Brownout_Turret-ModifierDescription\", \"Insufficient Energy for this device to operate at full efficiency\")",
+            "GrantedStats": {
+                "(Value=\"BaseTurretCoolDownPeriod_+\")": -4,
+                "(Value=\"BaseTurretMoveSpeed_+\")": -3
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
             "Name": "Cool_Comfort",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Cooling.Icon_Cooling'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cool_Comfort-ModifierName\", \"Cool and Cozy\")",
@@ -9459,6 +9460,300 @@
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
             "bEffectsPlayers": false
+        },
+        {
+            "Name": "Cooked_Eggs",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fried_Egg.T_ITEM_Fried_Egg'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Eggs-ModifierName\", \"Cooked Egg\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Eggs-ModifierDescription\", \"Boosts your health and grants a chance of additional stone when mining.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Mushroom_Omlette",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Mushroom_Omlette.T_ITEM_Mushroom_Omlette'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Mushroom_Omlette-ModifierName\", \"Mushroom Omlette\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Mushroom_Omlette-ModifierDescription\", \"Boosts your health, grants a chance of additional stone when mining and stamina regeneration. \")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 150,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 15,
+                "(Value=\"BaseStaminaRegen_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Egg_Salad",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Tomato_Eggs.T_ITEM_Tomato_Eggs'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Egg_Salad-ModifierName\", \"Tomato & Egg Bowl\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Egg_Salad-ModifierDescription\", \"Boosts your health and stamina, grants a chance of additional stone when mining, and increased projectile damage.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 15,
+                "(Value=\"BaseProjectileDamage_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Pickled_Eggs",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Pickled_Eggs.T_ITEM_Pickled_Eggs'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pickled_Eggs-ModifierName\", \"Pickled Eggs\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pickled_Eggs-ModifierDescription\", \"Boosts your stamina, grants a chance of additional stone when mining and increases shared experience gain.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 20,
+                "(Value=\"BaseSharedExperience_+%\")": 20
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Big_Breakfast",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Big_Breakfast.T_ITEM_Big_Breakfast'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Big_Breakfast-ModifierName\", \"Big Breakfast\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Big_Breakfast-ModifierDescription\", \"Greatly boosts your health, boosts your stamina and health regeneration, grants a chance of additional stone when mining and reduces your food consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 225,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 25,
+                "(Value=\"BaseFoodConsumption_+%\")": -15,
+                "(Value=\"BaseHealthRegen_+%\")": 15,
+                "(Value=\"BaseExperience_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Scrambled_Eggs",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Scrambled_Eggs.T_ITEM_Scrambled_Eggs'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Scrambled_Eggs-ModifierName\", \"Scrambled Eggs\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Scrambled_Eggs-ModifierDescription\", \"Boosts your health and stamina, grants a chance of additional stone when mining, and increases experience gained.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 50,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 25,
+                "(Value=\"BaseExperience_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Smashed_Avocado",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Smashed_Avocado.T_ITEM_Smashed_Avocado'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Smashed_Avocado-ModifierName\", \"Smashed Avocado\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Smashed_Avocado-ModifierDescription\", \"Boosts your stamina, reduces food consumption and increases experience gained.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseFoodConsumption_+%\")": -25,
+                "(Value=\"BaseExperience_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Roast_Chicken",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Chicken.T_ITEM_Roast_Chicken'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Roast_Chicken-ModifierName\", \"Roast Chicken\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Roast_Chicken-ModifierDescription\", \"Boosts your health and exposure resistance, and grants a chance of additional stone when mining.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 150,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 25,
+                "(Value=\"BaseExposureResistance_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Fried_Chicken",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fried_Chicken.T_ITEM_Fried_Chicken'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fried_Chicken-ModifierName\", \"Fried Chicken\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fried_Chicken-ModifierDescription\", \"Boosts your health and exposure resistance, and grants a chance of additional stone when mining.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 125,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 15,
+                "(Value=\"BaseExposureResistance_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Animal_Feed_Squash",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Squash.T_ITEM_Animal_Feed_Squash'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Squash-ModifierName\", \"Desert Animal Feed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Squash-ModifierDescription\", \"Increases animal movement speed in the desert, and reduces water consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseDesertMovementSpeed_+%\")": 15,
+                "(Value=\"BaseWaterConsumption_+%\")": -30
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "Animal_Feed_Pumpkin",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Pumpkin.T_ITEM_Animal_Feed_Pumpkin'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Pumpkin-ModifierName\", \"Arctic Animal Feed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Pumpkin-ModifierDescription\", \"Increases animal movement speed in the arctic and reduces food consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseArcticMovementSpeed_+%\")": 15,
+                "(Value=\"BaseFoodConsumption_+%\")": -30
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "Animal_Feed_Potato",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Potato.T_ITEM_Animal_Feed_Potato'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Potato-ModifierName\", \"Volcanic Animal Feed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Potato-ModifierDescription\", \"Increases animal fire damage resistance and resistance to fire damage while in lava.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseFireDamageResistance_%\")": 50,
+                "(Value=\"BaseFireDamageResistanceWhileInLava_%\")": 50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "Animal_Feed_Corn",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Corn.T_ITEM_Animal_Feed_Corn'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Corn-ModifierName\", \"Endurance Animal Feed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Corn-ModifierDescription\", \"Greatly reduces animal stamina consumption while slightly reducing animal sprint speed.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseStaminaConsumed_+%\")": -75,
+                "(Value=\"BaseSprintSpeed_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "Animal_Feed_Carrot",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Carrot.T_ITEM_Animal_Feed_Carrot'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Carrot-ModifierName\", \"Sprinters Animal Feed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Carrot-ModifierDescription\", \"Increases animal sprint speed at the cost of greatly increased stamina consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseStaminaConsumed_+%\")": 75,
+                "(Value=\"BaseSprintSpeed_+%\")": 20
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "Animal_Feed_Mushroom",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Mushroom.T_ITEM_Animal_Feed_Mushroom'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Mushroom-ModifierName\", \"Mountaineering Animal Feed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Mushroom-ModifierDescription\", \"Reduces animal fall damage and jumping stamina costs.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseFallDamageResistance_%\")": 50,
+                "(Value=\"BaseJumpingStaminaActionCost_+%\")": -50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "Animal_Feed_Bean",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Bean.T_ITEM_Animal_Feed_Bean'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Bean-ModifierName\", \"Survival Animal Feed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Bean-ModifierDescription\", \"Increases animal health and health regeneration.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 175,
+                "(Value=\"BaseHealthRegen_+%\")": 100
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration"
         }
     ]
 }
