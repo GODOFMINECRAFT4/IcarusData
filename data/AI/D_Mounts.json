@@ -514,6 +514,47 @@
             "RelativeHandsOffset": {
                 "X": -15
             }
+        },
+        {
+            "Name": "Mini_Hippo",
+            "AISetup": {
+                "RowName": "Mini_Hippo_Quest"
+            },
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Sit_Idle_Montage.Boar_Sit_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Rest_Montage.Boar_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Eating_Montage.Boar_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Baby_Wildboar/Animation/Boar_Jump_Montage.Boar_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Wild_Boar/Animation/Boar_Attack_Montage.Boar_Attack_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Mini_Hippo-DefaultNames-0\", \"Snuffles\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            }
         }
     ]
 }

@@ -13960,13 +13960,14 @@
         },
         {
             "Name": "PurpleExoticRewardChance_%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"PurpleExoticRewardChance_%-Title\", \"Chance to Drop Purple Exotics on Death\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PurpleExoticRewardChance_%-Title\", \"Chance to Drop Exotics on Death\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Generic_Harvesting"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseRedExoticRewardChance_%",
@@ -13977,13 +13978,14 @@
         },
         {
             "Name": "RedExoticRewardChance_%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"RedExoticRewardChance_%-Title\", \"Chance to Drop Purple Exotics on Death\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RedExoticRewardChance_%-Title\", \"Chance to Drop Stabilized Exotic on Death\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Generic_Harvesting"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "ExoticRewardType_Enum",
@@ -14007,7 +14009,8 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Modifiers"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseAttacksCauseRedExoticDebuff_%",
@@ -14018,13 +14021,14 @@
         },
         {
             "Name": "AttacksCauseRedExoticDebuff_%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCauseRedExoticDebuff_%-Title\", \"Chance to Apply a Red Exotic Debuff on Hit\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCauseRedExoticDebuff_%-Title\", \"Chance to Apply an Exotic Debuff on Hit\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Modifiers"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseMiniHippoExtraDamage_+%",
