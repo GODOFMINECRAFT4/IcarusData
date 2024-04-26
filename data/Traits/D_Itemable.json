@@ -1306,7 +1306,8 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Farming_CropPlot.ITEM_Farming_CropPlot",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Farming_CropPlot_T2-Description\", \"A general-purpose planter bed for your crops. Fully-grown crops left too long will eventually wither and only provide spoiled plants.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Farming_CropPlot_T2-FlavorText\", \"A raised planting bed brings the food to you, slowly.\")",
-            "Weight": 2000
+            "Weight": 2000,
+            "MaxStack": 10
         },
         {
             "Name": "Item_Farming_CropPlot_T3",
@@ -1314,7 +1315,8 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Farming_Metal.ITEM_Farming_Metal",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Farming_CropPlot_T3-Description\", \"A sturdy option for farming with water intake for faster crop growth. Fully-grown crops left too long will eventually wither and only provide spoiled plants.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Farming_CropPlot_T3-FlavorText\", \"Can be connected to a water network\")",
-            "Weight": 2000
+            "Weight": 2000,
+            "MaxStack": 10
         },
         {
             "Name": "Item_Farming_CropPlot_T4",
@@ -1322,7 +1324,8 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Farming_Hydroponic.ITEM_Farming_Hydroponic",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Farming_CropPlot_T4-Description\", \"An advanced option for the busy farmer. Supports inputs from both Power and Water networks for increased crop growth speed. Fully-grown crops left too long will eventually wither and only provide spoiled plants.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Farming_CropPlot_T4-FlavorText\", \"Can be connected to both a water and a power network\")",
-            "Weight": 2000
+            "Weight": 2000,
+            "MaxStack": 10
         },
         {
             "Name": "Item_Farming_CropPlot_Workshop",
@@ -12989,7 +12992,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Terrenus.T_ITEM_AnimalCarcass_Terrenus",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Horse-Description\", \"A once powerful steed now lies cold at your feet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Horse-FlavorText\", \"The result of mixing DNA from Wild Boar and Horses on earth, with a dash of exotics thrown into the mix.\")",
-            "Weight": 5000
+            "Weight": 10000
         },
         {
             "Name": "Item_Carcass_JuvieHorse",
@@ -15100,6 +15103,27 @@
             "MaxStack": 20
         },
         {
+            "Name": "Item_Animal_Trap_Small",
+            "DisplayName": "INVTEXT(\"[DNT] Small Animal Trap\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Trap_Small.T_ITEM_Animal_Trap_Small",
+            "Description": "INVTEXT(\"[DNT] Can trap small creatures like rabbits and roats\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_Animal_Trap_Small_T4",
+            "DisplayName": "INVTEXT(\"[DNT] Small Animal Trap T4\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Trap_Medium.T_ITEM_Animal_Trap_Medium",
+            "Description": "INVTEXT(\"[DNT] Can trap small creatures like rabbits and roats\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_Animal_Trap_Medium",
+            "DisplayName": "INVTEXT(\"[DNT] Medium Animal Trap\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Trap_Small_T4.T_ITEM_Animal_Trap_Small_T4",
+            "Description": "INVTEXT(\"[DNT] Can trap medium creatures like wolves\")",
+            "Weight": 10000
+        },
+        {
             "Name": "Item_Battery_T3",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Battery_T3-DisplayName\", \"Basic Battery\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Battery_T3.T_ITEM_Battery_T3",
@@ -15587,6 +15611,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-DisplayName\", \"Seeding Cart\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Harvest.T_ITEM_Saddle_Cart_Harvest",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-Description\", \"A cart which when stocked with seeds and pulled by an animal will create dirt mounds with planted seeds.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-FlavorText\", \"Can be pulled by a tamed Buffalo or Tusker. This cart cannot be used as a seat by players.\")",
             "Weight": 80000
         },
         {
@@ -15594,6 +15619,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-DisplayName\", \"Watering Cart\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Water.T_ITEM_Saddle_Cart_Water",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-Description\", \"A cart which when stocked with water and pulled by an animal will water nearby crops.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Watering-FlavorText\", \"Can be pulled by a tamed Buffalo or Tusker. This cart cannot be used as a seat by players.\")",
             "Weight": 80000
         },
         {
@@ -15601,6 +15627,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-DisplayName\", \"Harvesting Cart\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Harvest.T_ITEM_Saddle_Cart_Harvest",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-Description\", \"A cart when pulled by an animal will attempt to harvest fully grown nearby plants.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Harvesting-FlavorText\", \"Can be pulled by a tamed Buffalo or Tusker. This cart cannot be used as a seat by players.\")",
             "Weight": 80000
         },
         {
@@ -15803,7 +15830,7 @@
             "Name": "Item_Water_Trough_Large",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Large-DisplayName\", \"Large Water Trough\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Trough_Large.T_ITEM_Water_Trough_Large",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Large-Description\", \"Allows multiple creatures can drink from at once and can be connected to a water network.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Large-Description\", \"Allows multiple creatures to drink from at once and can be connected to a water network.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Large-FlavorText\", \"Like the smaller one, only larger\")",
             "Weight": 3000
         },
@@ -15819,7 +15846,7 @@
             "Name": "Item_Water_Trough_Stone",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Stone-DisplayName\", \"Stone Water Trough\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Trough_Stone.T_ITEM_Water_Trough_Stone",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Stone-Description\", \"Allows multiple creatures can drink from at once and can be connected to a water network.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Stone-Description\", \"Allows multiple creatures to drink from at once and can be connected to a water network.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Stone-FlavorText\", \"Every good animal farm has one of these.\")",
             "Weight": 3000
         },
@@ -15827,7 +15854,7 @@
             "Name": "Item_Water_Trough_Metal",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Metal-DisplayName\", \"Metal Water Trough\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Trough_Metal.T_ITEM_Water_Trough_Metal",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Metal-Description\", \"Allows multiple creatures can drink from at once and can be connected to a water network.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Metal-Description\", \"Allows multiple creatures to drink from at once and can be connected to a water network.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Metal-FlavorText\", \"A classic rain catcher.\")",
             "Weight": 3000
         },
@@ -15835,7 +15862,7 @@
             "Name": "Item_Water_Trough_Fountain",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Fountain-DisplayName\", \"Ornate Water Trough\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Trough_Fountain.T_ITEM_Water_Trough_Fountain",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Fountain-Description\", \"Allows multiple creatures can drink from at once and can be connected to a water network.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Fountain-Description\", \"Allows multiple creatures to drink from at once and can be connected to a water network.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Fountain-FlavorText\", \"Who says creatures can\\'t drink with style?\")",
             "Weight": 3000
         },
@@ -15843,7 +15870,7 @@
             "Name": "Item_Food_Trough_Large",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Large-DisplayName\", \"Large Food Trough\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Trough_Large.T_ITEM_Water_Trough_Large",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Large-Description\", \"A basic wooden feeder that allows multiple creatures can eat from at once\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Large-Description\", \"A basic wooden feeder that allows multiple creatures to eat from at once\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Large-FlavorText\", \"Like the smaller one, only larger\")",
             "Weight": 3000
         },
@@ -15859,7 +15886,7 @@
             "Name": "Item_Food_Trough_Rustic",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Rustic-DisplayName\", \"Rustic Food Trough\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Food_Trough_Rustic.T_ITEM_Food_Trough_Rustic",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Rustic-Description\", \"A Rustic looking feeder that allows multiple creatures can eat from at once\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Rustic-Description\", \"A Rustic looking feeder that allows multiple creatures to eat from at once\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Rustic-FlavorText\", \"For animals that like that rustic look.\")",
             "Weight": 3000
         },
@@ -15867,7 +15894,7 @@
             "Name": "Item_Food_Trough_Metal",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Metal-DisplayName\", \"Metal Food Trough\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Food_Trough_Metal.T_ITEM_Food_Trough_Metal",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Metal-Description\", \"A Metal feeder that allows multiple creatures can eat from at once\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Metal-Description\", \"A Metal feeder that allows multiple creatures to eat from at once\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Metal-FlavorText\", \"Perfect for when you need to feed a lot of animals, fast.\")",
             "Weight": 3000
         },
@@ -15875,7 +15902,7 @@
             "Name": "Item_Food_Trough_Glass",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Glass-DisplayName\", \"Glass Food Trough\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Food_Trough_Glass.T_ITEM_Food_Trough_Glass",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Glass-Description\", \"A Glass feeder that allows multiple creatures can eat from at once\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Glass-Description\", \"A Glass feeder that allows multiple creatures to eat from at once\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Food_Trough_Glass-FlavorText\", \"A feeder with a little bit of class.\")",
             "Weight": 3000
         },
@@ -15958,10 +15985,26 @@
         },
         {
             "Name": "Item_Chicken_Trophy",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Trophy-DisplayName\", \"Chicken Trophy\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Trophy.T_ITEM_Chicken_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Trophy-DisplayName\", \"Red Chicken Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Trophy_C.T_ITEM_Chicken_Trophy_C",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Trophy-Description\", \"A expertly mounted Chicken.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Trophy-FlavorText\", \"Once a feathered friend.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Chicken_Trophy_A2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Trophy_A2-DisplayName\", \"Black Chicken Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Trophy_B.T_ITEM_Chicken_Trophy_B",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Trophy_A2-Description\", \"A expertly mounted Chicken.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Trophy_A2-FlavorText\", \"Once a feathered friend.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Chicken_Trophy_A3",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Trophy_A3-DisplayName\", \"White Chicken Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Trophy_A.T_ITEM_Chicken_Trophy_A",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Trophy_A3-Description\", \"A expertly mounted Chicken.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Trophy_A3-FlavorText\", \"Once a feathered friend.\")",
             "Weight": 1000
         },
         {
@@ -15974,16 +16017,35 @@
         },
         {
             "Name": "Item_Chicken_Head",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Head-DisplayName\", \"Chicken Vestige\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Trophy.T_ITEM_Chicken_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Head-DisplayName\", \"Red Chicken Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Chicken_Head.T_ITEM_Chicken_Head",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Head-Description\", \"A preserved memory of a feathered friend.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
             "Weight": 500,
             "MaxStack": 5
         },
         {
+            "Name": "Item_Chicken_Head_A2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Head_A2-DisplayName\", \"Black Chicken Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Chicken_Head_A2.T_ITEM_Chicken_Head_A2",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Head_A2-Description\", \"A preserved memory of a feathered friend.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Head_A2-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Chicken_Head_A3",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Head_A3-DisplayName\", \"White Chicken Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Chicken_Head_A3.T_ITEM_Chicken_Head_A3",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Head_A3-Description\", \"A preserved memory of a feathered friend.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Head_A3-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
             "Name": "Item_Sheep_Head",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sheep_Head-DisplayName\", \"Sheep Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Sheep_Head.T_ITEM_Sheep_Head",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Sheep_Head-Description\", \"A preserved memory of a wooly friend.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Sheep_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
             "Weight": 1000,
@@ -16090,7 +16152,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Coop.T_ITEM_Chicken_Coop",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Coop-Description\", \"A place that chickens can go to feel safe, and lay eggs.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Coop-FlavorText\", \"Built by your own hand, and it feels good.\")",
-            "Weight": 1500
+            "Weight": 15000
         },
         {
             "Name": "Item_Chicken_Coop_Red",
@@ -16098,7 +16160,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Chicken_Coop_Red.T_ITEM_Chicken_Coop_Red",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Coop_Red-Description\", \"A state of the art coop that chickens can go to feel safe, and lay eggs.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chicken_Coop_Red-FlavorText\", \"Why do chickens have a better house than you?\")",
-            "Weight": 1500
+            "Weight": 15000
         },
         {
             "Name": "Item_Animal_Bed_Emperor",
@@ -16197,7 +16259,7 @@
             "Name": "Item_Snare_Trap",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Snare_Trap-DisplayName\", \"Snare Trap\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Snare_Trap.T_ITEM_Snare_Trap",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Snare_Trap-Description\", \"A unique device that allows you to bait and capture select wild animals that can slowly be tamed.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Snare_Trap-Description\", \"A unique device that allows you to bait and capture select wild animals that can slowly be tamed. Craft Baits at the Ranching Station.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Snare_Trap-FlavorText\", \"Challenge accepted.\")",
             "Weight": 2500
         },
@@ -16227,7 +16289,7 @@
             "Name": "Item_Carcass_Mount_Horse_Standard",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mount_Horse_Standard-DisplayName\", \"Horse Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Mount_Horse_Standard.T_ITEM_AnimalCarcass_Mount_Horse_Standard",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mount_Horse_Standard-Description\", \"A good dog lies at your feet now dead.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mount_Horse_Standard-Description\", \"A good horse lies at your feet now dead.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mount_Horse_Standard-FlavorText\", \"Frozen on Earth, Defrosted on Icarus, What a Life...\")",
             "Weight": 5000
         },
@@ -16249,7 +16311,8 @@
         },
         {
             "Name": "Item_Carcass_Dog_C",
-            "DisplayName": "INVTEXT(\"[DNT] Dog Carcass\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Dog_C-DisplayName\", \"Pug Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Tame_Dog_C.T_ITEM_AnimalCarcass_Tame_Dog_C",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Dog_C-Description\", \"A good dog lies at your feet now dead.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Dog_C-FlavorText\", \"Frozen on Earth, Defrosted on Icarus, What a Life...\")",
             "Weight": 5000
@@ -16371,7 +16434,7 @@
         },
         {
             "Name": "Item_Animal_Bench",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Animal_Bench-DisplayName\", \"Barnyard Workshop\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Animal_Bench-DisplayName\", \"Ranching Station\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Bench.T_ITEM_Animal_Bench",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Animal_Bench-Description\", \"Specialised bench for crafting saddles, troughs, carts and various feeds.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Animal_Bench-FlavorText\", \"Your one stop show for all your animal needs.\")",
@@ -16816,6 +16879,48 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Kiwi_Head-DisplayName\", \"Kiwi Vestige\")",
             "Weight": 1000,
             "MaxStack": 5
+        },
+        {
+            "Name": "Item_Workshop_Dog_C1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_C1-DisplayName\", \"Cryogenically Frozen Pug\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Tame_Dog_C1.T_ITEM_Workshop_Tame_Dog_C1",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_C1-Description\", \"A Dog preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_C1-FlavorText\", \"Woof\")",
+            "Weight": 10
+        },
+        {
+            "Name": "Item_Dog_Head_C1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Head_C1-DisplayName\", \"Pug Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Dog_Head_C1.T_ITEM_Dog_Head_C1",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Head_C1-Description\", \"A preserved memory of a once loyal companion.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Head_C1-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Dog_Trophy_C1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_C1-DisplayName\", \"Pug Trophy\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_C1-Description\", \"A preserved memory of your Good Dog.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_C1-FlavorText\", \"Once a loyal companion.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Raw_Chicken",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Raw_Chicken-DisplayName\", \"Raw Chicken\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Raw_Chicken.T_ITEM_Raw_Chicken",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Raw_Chicken-Description\", \"Raw Chicken meat harvested from a once cryogenically frozen chicken.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Raw_Chicken-FlavorText\", \"Once a feathered friend.\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Grilled_Chicken",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Grilled_Chicken-DisplayName\", \"Chargrilled Chicken\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Grilled_Chicken.T_ITEM_Grilled_Chicken",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Grilled_Chicken-Description\", \"Grilled to perfection.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Grilled_Chicken-FlavorText\", \"Smells Delicious.\")",
+            "Weight": 500,
+            "MaxStack": 20
         }
     ]
 }

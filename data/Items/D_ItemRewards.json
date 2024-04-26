@@ -19274,7 +19274,7 @@
                     },
                     "MinRandomStackCount": 1,
                     "MaxRandomStackCount": 1,
-                    "bRewardsScale": true,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -19305,7 +19305,69 @@
                     },
                     "MinRandomStackCount": 1,
                     "MaxRandomStackCount": 1,
-                    "bRewardsScale": true,
+                    "bRewardsScale": false,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Chicken_Head_A2",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Chicken_Head_A2",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 1,
+                    "bRewardsScale": false,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Chicken_Head_A3",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Chicken_Head_A3",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 1,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -19360,9 +19422,35 @@
                         "RowName": "None",
                         "DataTableName": "D_Stats"
                     },
-                    "MinRandomStackCount": 2,
-                    "MaxRandomStackCount": 4,
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 2,
                     "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "MeatHarvestedFromAnimals_+%",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Raw_Chicken",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 1,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -19456,7 +19544,7 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "BoneHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
                 },
@@ -19482,10 +19570,15 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Dog_Carcass_Loot_A1_Head",
+            "Rewards": [
                 {
                     "Item": {
                         "RowName": "Dog_Head_A1",
@@ -19502,7 +19595,7 @@
                     },
                     "MinRandomStackCount": 1,
                     "MaxRandomStackCount": 1,
-                    "bRewardsScale": true,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -19539,7 +19632,7 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "BoneHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
                 },
@@ -19565,10 +19658,15 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Dog_Carcass_Loot_A2_Head",
+            "Rewards": [
                 {
                     "Item": {
                         "RowName": "Dog_Head_A2",
@@ -19585,6 +19683,37 @@
                     },
                     "MinRandomStackCount": 1,
                     "MaxRandomStackCount": 1,
+                    "bRewardsScale": false,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Sheep_Shear",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Wool",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 8,
+                    "MaxRandomStackCount": 12,
                     "bRewardsScale": true,
                     "StackAdditiveStat": {
                         "RowName": "None",
@@ -19622,7 +19751,7 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "BoneHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
                 },
@@ -19648,10 +19777,15 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Dog_Carcass_Loot_B1_Head",
+            "Rewards": [
                 {
                     "Item": {
                         "RowName": "Dog_Head_B1",
@@ -19668,7 +19802,7 @@
                     },
                     "MinRandomStackCount": 1,
                     "MaxRandomStackCount": 1,
-                    "bRewardsScale": true,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -19705,7 +19839,7 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "BoneHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
                 },
@@ -19731,10 +19865,15 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Dog_Carcass_Loot_B2_Head",
+            "Rewards": [
                 {
                     "Item": {
                         "RowName": "Dog_Head_B2",
@@ -19751,7 +19890,7 @@
                     },
                     "MinRandomStackCount": 1,
                     "MaxRandomStackCount": 1,
-                    "bRewardsScale": true,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -19788,7 +19927,7 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "BoneHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
                 },
@@ -19814,10 +19953,15 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Cat_Carcass_Loot_A1_Head",
+            "Rewards": [
                 {
                     "Item": {
                         "RowName": "Cat_Head_A1",
@@ -19834,7 +19978,7 @@
                     },
                     "MinRandomStackCount": 1,
                     "MaxRandomStackCount": 1,
-                    "bRewardsScale": true,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -19871,7 +20015,7 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "BoneHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
                 },
@@ -19897,10 +20041,15 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Cat_Carcass_Loot_A2_Head",
+            "Rewards": [
                 {
                     "Item": {
                         "RowName": "Cat_Head_A2",
@@ -19917,7 +20066,7 @@
                     },
                     "MinRandomStackCount": 1,
                     "MaxRandomStackCount": 1,
-                    "bRewardsScale": true,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -19954,7 +20103,7 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "BoneHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
                 },
@@ -19980,10 +20129,15 @@
                         "DataTableName": "D_Stats"
                     },
                     "StackMultiplicativeStat": {
-                        "RowName": "None",
+                        "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Cat_Carcass_Loot_A3_Head",
+            "Rewards": [
                 {
                     "Item": {
                         "RowName": "Cat_Head_A3",
@@ -20000,7 +20154,7 @@
                     },
                     "MinRandomStackCount": 1,
                     "MaxRandomStackCount": 1,
-                    "bRewardsScale": true,
+                    "bRewardsScale": false,
                     "StackAdditiveStat": {
                         "RowName": "None",
                         "DataTableName": "D_Stats"
@@ -20017,8 +20171,8 @@
             "Rewards": [
                 {
                     "Item": {
-                        "RowName": "Buffalo_Head",
-                        "DataTableName": "D_ItemTemplate"
+                        "RowName": "Kiwi_Head",
+                        "DataTableName": "D_ItemsStatic"
                     },
                     "DropChance": 100,
                     "DropChanceAdditiveStat": {
@@ -20175,7 +20329,12 @@
                         "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Horse_Standard_Carcass_Loot_A1_Head",
+            "Rewards": [
                 {
                     "Item": {
                         "RowName": "Horse_Head_A1",
@@ -20336,7 +20495,12 @@
                         "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Horse_Standard_Carcass_Loot_A2_Head",
+            "Rewards": [
                 {
                     "Item": {
                         "RowName": "Horse_Head_A2",
@@ -20497,7 +20661,12 @@
                         "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Horse_Standard_Carcass_Loot_A3_Head",
+            "Rewards": [
                 {
                     "Item": {
                         "RowName": "Horse_Head_A3",
@@ -20521,6 +20690,151 @@
                     },
                     "StackMultiplicativeStat": {
                         "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Kiwi_Carcass_Loot",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Bone",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 2,
+                    "MaxRandomStackCount": 4,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "BoneHarvestedFromAnimals_+%",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "White_Meat",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 10,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 3,
+                    "MaxRandomStackCount": 5,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "MeatHarvestedFromAnimals_+%",
+                        "DataTableName": "D_Stats"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Dog_Carcass_Loot_C1_Head",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Dog_Head_C1",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 1,
+                    "bRewardsScale": false,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    }
+                }
+            ]
+        },
+        {
+            "Name": "Dog_Carcass_Loot_C1",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Bone",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 2,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "BoneHarvestedFromAnimals_+%",
+                        "DataTableName": "D_Stats"
+                    }
+                },
+                {
+                    "Item": {
+                        "RowName": "Raw_Meat",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "DropChance": 100,
+                    "DropChanceAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "RequiredStatToDrop": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "MinRandomStackCount": 1,
+                    "MaxRandomStackCount": 2,
+                    "bRewardsScale": true,
+                    "StackAdditiveStat": {
+                        "RowName": "None",
+                        "DataTableName": "D_Stats"
+                    },
+                    "StackMultiplicativeStat": {
+                        "RowName": "MeatHarvestedFromAnimals_+%",
                         "DataTableName": "D_Stats"
                     }
                 }

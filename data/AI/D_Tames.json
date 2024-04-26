@@ -25,7 +25,9 @@
         },
         "bAutomaticallySpawnJuvenileWithParent": false,
         "PercentChanceToSpawnJuvenile": 33,
-        "MaxNearbyAutoSpawnedJuveniles": 2
+        "MaxNearbyAutoSpawnedJuveniles": 2,
+        "TimeToSpawnDynamicCharacter": 300,
+        "TimeToSpawnDynamicCharacterRandomDeviation": 120
     },
     "Rows": [
         {
@@ -85,33 +87,6 @@
             "MaxNearbyAutoSpawnedJuveniles": 5
         },
         {
-            "Name": "DYN_Bear_Cub",
-            "TameDurationInSeconds": 900,
-            "DesiredShelterPercentage": 0,
-            "DesiredNutritionPercentage": 25,
-            "ProhibitedTamingModifiers": [
-                {
-                    "RowName": "Wet",
-                    "DataTableName": "D_ModifierStates"
-                },
-                {
-                    "RowName": "Sleepy",
-                    "DataTableName": "D_ModifierStates"
-                }
-            ],
-            "TamedAI": {
-                "RowName": "Bear"
-            },
-            "MatureCreatureType": {
-                "RowName": "Bear"
-            },
-            "JuvenileCreatureType": {
-                "RowName": "Juvenile_Bear_Cub"
-            },
-            "PercentChanceToSpawnJuvenile": 75,
-            "MaxNearbyAutoSpawnedJuveniles": 5
-        },
-        {
             "Name": "Horse",
             "TameDurationInSeconds": 900,
             "DesiredShelterPercentage": 0,
@@ -167,6 +142,48 @@
             "MaxNearbyAutoSpawnedJuveniles": 5
         },
         {
+            "Name": "Forest_Wolf",
+            "TameDurationInSeconds": 600,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Forest_Wolf"
+            },
+            "MatureCreatureType": {
+                "RowName": "Conifer_Wolf"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0
+        },
+        {
+            "Name": "Snow_Wolf",
+            "TameDurationInSeconds": 600,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Snow_Wolf"
+            },
+            "MatureCreatureType": {
+                "RowName": "Snow_Wolf"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0
+        },
+        {
+            "Name": "Desert_Wolf",
+            "TameDurationInSeconds": 600,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Desert_Wolf"
+            },
+            "MatureCreatureType": {
+                "RowName": "Desert_Wolf"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0
+        },
+        {
             "Name": "Blueback",
             "TameDurationInSeconds": 900,
             "DesiredShelterPercentage": 0,
@@ -205,6 +222,42 @@
                 "RowName": "Juvenile_Blueback_Lava"
             },
             "bAutomaticallySpawnJuvenileWithParent": true
+        },
+        {
+            "Name": "Wild_Boar",
+            "TameDurationInSeconds": 600,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Wild_Boar"
+            },
+            "MatureCreatureType": {
+                "RowName": "Wild_Boar"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0
+        },
+        {
+            "Name": "Dog",
+            "TameDurationInSeconds": 600,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tame_Dog_A1"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0
+        },
+        {
+            "Name": "Cat",
+            "TameDurationInSeconds": 600,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tame_Cat_A1"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0
         }
     ]
 }

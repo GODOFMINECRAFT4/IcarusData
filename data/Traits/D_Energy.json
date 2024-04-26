@@ -361,6 +361,7 @@
         },
         {
             "Name": "Water_Trough_T4",
+            "AutoActivate": true,
             "AutoShutoffFlowPercent": 99
         },
         {
@@ -369,6 +370,7 @@
         },
         {
             "Name": "Food_Trough_T4",
+            "AutoActivate": true,
             "ResourceFlowRate": 500,
             "AutoShutoffFlowPercent": 99,
             "bAllowAutoRestart": true
@@ -377,6 +379,13 @@
             "Name": "Mission_Incubator",
             "AlwaysActive": true,
             "AutoActivate": true,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Water_Trough",
+            "FlowType": "Store",
+            "ResourceFlowRate": 250,
+            "bStorageIsInFlowOnly": true,
             "AutoShutoffFlowPercent": 99
         }
     ]

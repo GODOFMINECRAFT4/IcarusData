@@ -143,6 +143,20 @@
             "StartingSlots": 30
         },
         {
+            "Name": "Processor_T3",
+            "InventoryID": {
+                "Value": "Processor"
+            },
+            "StartingSlots": 36
+        },
+        {
+            "Name": "Processor_T4",
+            "InventoryID": {
+                "Value": "Processor"
+            },
+            "StartingSlots": 42
+        },
+        {
             "Name": "Container",
             "InventoryID": {
                 "Value": "General"
@@ -350,7 +364,7 @@
             "InventoryID": {
                 "Value": "Corpse"
             },
-            "StartingSlots": 12,
+            "StartingSlots": 90,
             "RemoveOnly": true
         },
         {
@@ -518,7 +532,7 @@
             "SlotTemplate": {
                 "RowName": "General_Inventory_Slot"
             },
-            "StartingSlots": 20
+            "StartingSlots": 24
         },
         {
             "Name": "Storage_Kitchen_Block",
@@ -920,7 +934,7 @@
                 "Value": "General"
             },
             "SlotTemplate": {
-                "RowName": "Any_Tamed_Herbivore_Food"
+                "RowName": "Any_Tamed_Creature_Food_Trough"
             },
             "StartingSlots": 4
         },
@@ -1579,6 +1593,16 @@
             "RemoveOnly": true
         },
         {
+            "Name": "Chicken_Coop",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 12,
+            "Stats": {
+                "(Value=\"BaseInventorySpoilRate_+%\")": -66
+            }
+        },
+        {
             "Name": "BeehiveUpgrades",
             "InventoryID": {
                 "Value": "BeehiveUpgrades"
@@ -1656,6 +1680,19 @@
             "StartingSlots": 1
         },
         {
+            "Name": "Trap_BaitSlot",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Trap_Bait"
+            },
+            "StartingSlots": 1,
+            "Stats": {
+                "(Value=\"BaseInventoryCannotSpoil_?\")": 1
+            }
+        },
+        {
             "Name": "Food_Trough_T4_Input",
             "InventoryID": {
                 "Value": "Processor"
@@ -1663,7 +1700,7 @@
             "SlotTemplate": {
                 "RowName": "Any_Food"
             },
-            "StartingSlots": 12
+            "StartingSlots": 5
         },
         {
             "Name": "Food_Trough_T4_Storage",
@@ -1671,7 +1708,7 @@
                 "Value": "General"
             },
             "SlotTemplate": {
-                "RowName": "Any_Tamed_Herbivore_Food"
+                "RowName": "Any_Tamed_Creature_Food_Trough"
             },
             "StartingSlots": 5
         },

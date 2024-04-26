@@ -1906,6 +1906,36 @@
             }
         },
         {
+            "Name": "Shears",
+            "ActionMapping": {
+                "(RowName=\"Shear_Wool\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Secondary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                },
+                "(RowName=\"Melee_1H_Axe\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "Generic_Melee_1H",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
+        },
+        {
             "Name": "Beacon_Tool",
             "ActionMapping": {
                 "(RowName=\"Beacon_Tool\",DataTableName=\"D_Actions\")": {

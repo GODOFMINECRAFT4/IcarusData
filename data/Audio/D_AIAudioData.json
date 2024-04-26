@@ -3429,6 +3429,9 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_VERY_SMALL.SFX_CRE_BODY_FALL_VERY_SMALL",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
             "VocalisationSocket": "RigJaw",
+            "FlinchVocalisation": {
+                "RowName": "ChickenFlee"
+            },
             "DeathVocalisation": {
                 "RowName": "ChickenDeath"
             },
@@ -3504,7 +3507,36 @@
             "FoliageCheckMaxDistance": 2000
         },
         {
-            "Name": "Sheep"
+            "Name": "Sheep",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Chamois/SFX_FOOTSTEP_SHEEP.SFX_FOOTSTEP_SHEEP",
+            "FrontFootSocket": "RigNeck3",
+            "RearFootSocket": "RigTail2",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigJaw",
+            "FlinchVocalisation": {
+                "RowName": "SheepFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "SheepDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "SheepIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            }
         },
         {
             "Name": "HammerheadSlug",
@@ -3987,7 +4019,7 @@
         },
         {
             "Name": "BluebackMount",
-            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Blueback/SFX_CRE_FOOTSTEPS_BLUEBACK.SFX_CRE_FOOTSTEPS_BLUEBACK",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Blueback/SFX_CRE_FOOTSTEPS_BLUEBACK_MOUNT.SFX_CRE_FOOTSTEPS_BLUEBACK_MOUNT",
             "FrontFootSocket": "RigNeck1",
             "RearFootSocket": "RigPelvis",
             "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
@@ -4264,14 +4296,15 @@
         },
         {
             "Name": "Cat",
-            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Rabbit/SFX_FOOTSTEP_RABBIT.SFX_FOOTSTEP_RABBIT",
-            "FrontFootSocket": "RigLFLeg2",
-            "RearFootSocket": "RigTail2",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Cat/SFX_FOOTSTEP_CAT.SFX_FOOTSTEP_CAT",
             "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_VERY_SMALL.SFX_CRE_BODY_FALL_VERY_SMALL",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
-            "VocalisationSocket": "RigJaw",
+            "VocalisationSocket": "RigJaw1",
+            "FlinchVocalisation": {
+                "RowName": "CatFlinch"
+            },
             "DeathVocalisation": {
                 "RowName": "CatDeath"
             },
@@ -4335,10 +4368,10 @@
         },
         {
             "Name": "DogA",
-            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Wolf/SFX_CRE_WOLF_FOOTSTEPS.SFX_CRE_WOLF_FOOTSTEPS",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Wolf/SFX_CRE_DOG_FOOTSTEPS.SFX_CRE_DOG_FOOTSTEPS",
             "FrontFootSocket": "RigLFLeg1",
             "RearFootSocket": "RigLBLeg1",
-            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_SMALL.SFX_CRE_BODY_FALL_SMALL",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
@@ -4347,7 +4380,7 @@
                 "RowName": "DogABark"
             },
             "FlinchVocalisation": {
-                "RowName": "WolfFlinch"
+                "RowName": "DogFlinch"
             },
             "DeathVocalisation": {
                 "RowName": "DogDeath"
@@ -4387,7 +4420,7 @@
                         "DataTableName": "D_Vocalisations"
                     },
                     "StatePersistentVocalisation": {
-                        "RowName": "None",
+                        "RowName": "DogAggro",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
@@ -4419,10 +4452,10 @@
         },
         {
             "Name": "DogB",
-            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Wolf/SFX_CRE_WOLF_FOOTSTEPS.SFX_CRE_WOLF_FOOTSTEPS",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Wolf/SFX_CRE_DOG_FOOTSTEPS.SFX_CRE_DOG_FOOTSTEPS",
             "FrontFootSocket": "RigLFLeg1",
             "RearFootSocket": "RigLBLeg1",
-            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_SMALL.SFX_CRE_BODY_FALL_SMALL",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
@@ -4431,7 +4464,7 @@
                 "RowName": "DogBBark"
             },
             "FlinchVocalisation": {
-                "RowName": "WolfFlinch"
+                "RowName": "DogFlinch"
             },
             "DeathVocalisation": {
                 "RowName": "DogDeath"
@@ -4471,7 +4504,7 @@
                         "DataTableName": "D_Vocalisations"
                     },
                     "StatePersistentVocalisation": {
-                        "RowName": "None",
+                        "RowName": "DogAggro",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
@@ -4503,10 +4536,10 @@
         },
         {
             "Name": "DogC",
-            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Wolf/SFX_CRE_WOLF_FOOTSTEPS.SFX_CRE_WOLF_FOOTSTEPS",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Wolf/SFX_CRE_DOG_FOOTSTEPS.SFX_CRE_DOG_FOOTSTEPS",
             "FrontFootSocket": "RigLFLeg1",
             "RearFootSocket": "RigLBLeg1",
-            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_SMALL.SFX_CRE_BODY_FALL_SMALL",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
@@ -4515,7 +4548,7 @@
                 "RowName": "DogCBark"
             },
             "FlinchVocalisation": {
-                "RowName": "WolfFlinch"
+                "RowName": "DogFlinch"
             },
             "DeathVocalisation": {
                 "RowName": "DogDeath"
@@ -4555,7 +4588,7 @@
                         "DataTableName": "D_Vocalisations"
                     },
                     "StatePersistentVocalisation": {
-                        "RowName": "None",
+                        "RowName": "DogAggro",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
@@ -4587,10 +4620,10 @@
         },
         {
             "Name": "DogD",
-            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Wolf/SFX_CRE_WOLF_FOOTSTEPS.SFX_CRE_WOLF_FOOTSTEPS",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Wolf/SFX_CRE_DOG_FOOTSTEPS.SFX_CRE_DOG_FOOTSTEPS",
             "FrontFootSocket": "RigLFLeg1",
             "RearFootSocket": "RigLBLeg1",
-            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_SMALL.SFX_CRE_BODY_FALL_SMALL",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
@@ -4599,7 +4632,7 @@
                 "RowName": "DogDBark"
             },
             "FlinchVocalisation": {
-                "RowName": "WolfFlinch"
+                "RowName": "DogFlinch"
             },
             "DeathVocalisation": {
                 "RowName": "DogDeath"
@@ -4639,7 +4672,7 @@
                         "DataTableName": "D_Vocalisations"
                     },
                     "StatePersistentVocalisation": {
-                        "RowName": "None",
+                        "RowName": "DogAggro",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
@@ -4654,6 +4687,90 @@
                     },
                     "StatePersistentVocalisation": {
                         "RowName": "DogIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            },
+            "FoliageCheckMaxDistance": 6000
+        },
+        {
+            "Name": "DogPug",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Wolf/SFX_CRE_DOG_FOOTSTEPS.SFX_CRE_DOG_FOOTSTEPS",
+            "FrontFootSocket": "RigLFLeg1",
+            "RearFootSocket": "RigLBLeg1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_SMALL.SFX_CRE_BODY_FALL_SMALL",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigJaw",
+            "AttackVocalisation": {
+                "RowName": "PugBark"
+            },
+            "FlinchVocalisation": {
+                "RowName": "PugFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "PugDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "DogPugIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Fleeing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Relaxing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "None",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {

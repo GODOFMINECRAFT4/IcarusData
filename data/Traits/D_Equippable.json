@@ -290,7 +290,8 @@
                 "(Value=\"IsSaddleCargoUseOnly_?\")": 1,
                 "(Value=\"BaseWeightCapacity_+\")": 1000,
                 "(Value=\"BaseMovementSpeed_+\")": -40,
-                "(Value=\"BaseMountHeavyCargoSlots_+\")": 5
+                "(Value=\"BaseMountHeavyCargoSlots_+\")": 5,
+                "(Value=\"IsPullingCart_?\")": 1
             }
         },
         {
@@ -436,6 +437,26 @@
                 "(Value=\"BaseBackpackSlots_+\")": 6
             },
             "bBindToAllInventoryUpdates": false
+        },
+        {
+            "Name": "Saddle_Cart_Farming",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier_Saddle.BP_EquippableModifier_Saddle_C",
+            "GrantedStats": {
+                "(Value=\"BaseMountCargoSlots_+\")": 20,
+                "(Value=\"IsSaddleCargoUseOnly_?\")": 1,
+                "(Value=\"BaseMovementSpeed_+\")": -40,
+                "(Value=\"IsPullingCart_?\")": 1
+            }
+        },
+        {
+            "Name": "Saddle_Cart_Watering",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier_Saddle.BP_EquippableModifier_Saddle_C",
+            "GrantedStats": {
+                "(Value=\"BaseMountCargoSlots_+\")": 2,
+                "(Value=\"IsSaddleCargoUseOnly_?\")": 1,
+                "(Value=\"BaseMovementSpeed_+\")": -40,
+                "(Value=\"IsPullingCart_?\")": 1
+            }
         }
     ]
 }

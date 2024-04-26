@@ -68,7 +68,15 @@
             "Name": "Stick",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_STICK_PICKUP.SFX_STICK_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
-            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
+            "HitSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ARROW_HIT.SFX_BALLISTIC_ARROW_HIT",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "equip": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/D_Items/SFX_STICK_PICKUP.SFX_STICK_PICKUP"
+                    ]
+                }
+            }
         },
         {
             "Name": "GenericDeployable",

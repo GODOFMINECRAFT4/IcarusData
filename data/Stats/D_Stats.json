@@ -6191,7 +6191,7 @@
         },
         {
             "Name": "SharedExperience_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SharedExperience_+%-Title\", \"Shared Experiance\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SharedExperience_+%-Title\", \"Shared Experience\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13830,6 +13830,414 @@
             }
         },
         {
+            "Name": "BaseSheepFoodConsumedPerWoolTick_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepFoodConsumedPerWoolTick_+-PositiveDescription\", \"{0} Food Consumed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepFoodConsumedPerWoolTick_+-NegativeDescription\", \"-{0} Food Consumed\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "SheepFoodConsumedPerWoolTick_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SheepFoodConsumedPerWoolTick_+-Title\", \"Food Consumed Per Stage of Wool Growth\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseSheepWaterConsumedPerWoolTick_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepWaterConsumedPerWoolTick_+-PositiveDescription\", \"{0} Water Consumed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepWaterConsumedPerWoolTick_+-NegativeDescription\", \"-{0} Water Consumed\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "SheepWaterConsumedPerWoolTick_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SheepWaterConsumedPerWoolTick_+-Title\", \"Water Consumed Per Stage of Wool Growth\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseSheepResourcesConsumedPerWoolTick_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepResourcesConsumedPerWoolTick_+%-PositiveDescription\", \"{0}% More Resources Consumed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepResourcesConsumedPerWoolTick_+%-NegativeDescription\", \"{0}% Less Resources Consumed\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseSheepWoolGrowthPerTick_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepWoolGrowthPerTick_+-PositiveDescription\", \"{0} Wool Growth Per Tick\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepWoolGrowthPerTick_+-NegativeDescription\", \"-{0} Wool Growth Per Tick\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "SheepWoolGrowthPerTick_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SheepWoolGrowthPerTick_+-Title\", \"Wool Growth Per Tick\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseSheepSecondsBetweenWoolTick_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepSecondsBetweenWoolTick_+-PositiveDescription\", \"{0}s Between Wool Growth Ticks\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepSecondsBetweenWoolTick_+-NegativeDescription\", \"-{0}s Between Wool Growth Ticks\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "SheepSecondsBetweenWoolTick_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SheepSecondsBetweenWoolTick_+-Title\", \"Time Between Wool Growth Ticks\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SheepSecondsBetweenWoolTick_+-PositiveTitleFormat\", \"+{0}s\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SheepSecondsBetweenWoolTick_+-NegativeTitleFormat\", \"-{0}s\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseSheepSecondsBetweenWoolTick_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BaseSheepSecondsBetweenWoolTick_+%-Title\", \"Wool Growth Speed\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepSecondsBetweenWoolTick_+%-PositiveDescription\", \"{0}% Slower Wool Growth\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepSecondsBetweenWoolTick_+%-NegativeDescription\", \"{0}% Faster Wool Growth\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseSheepWoolHarvestAmount_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepWoolHarvestAmount_+%-PositiveDescription\", \"{0}% Greater Wool Yield when Shorn\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSheepWoolHarvestAmount_+%-NegativeDescription\", \"{0}% Lesser Wool Yield when Shorn\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "SheepWoolHarvestAmount_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SheepWoolHarvestAmount_+%-Title\", \"Wool Yield\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseChickenFoodConsumedPerEgg_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChickenFoodConsumedPerEgg_+-PositiveDescription\", \"{0} Food Consumed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChickenFoodConsumedPerEgg_+-NegativeDescription\", \"-{0} Food Consumed\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "ChickenFoodConsumedPerEgg_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ChickenFoodConsumedPerEgg_+-Title\", \"Food Consumed Per Egg Laid\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseChickenWaterConsumedPerEgg_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChickenWaterConsumedPerEgg_+-PositiveDescription\", \"{0} Water Consumed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChickenWaterConsumedPerEgg_+-NegativeDescription\", \"-{0} Water Consumed\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "ChickenWaterConsumedPerEgg_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ChickenWaterConsumedPerEgg_+-Title\", \"Water Consumed Per Egg Laid\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseChickenResourcesConsumedPerEgg_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChickenResourcesConsumedPerEgg_+%-PositiveDescription\", \"{0}% More Resources Consumed Per Egg Laid\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChickenResourcesConsumedPerEgg_+%-NegativeDescription\", \"{0}% Less Resources Consumed Per Egg Laid\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseChickenTimeBetweenEggs_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChickenTimeBetweenEggs_+-PositiveDescription\", \"{0}s Time Between Eggs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChickenTimeBetweenEggs_+-NegativeDescription\", \"-{0}s Time Between Eggs\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseChickenTimeBetweenEggs_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChickenTimeBetweenEggs_+%-PositiveDescription\", \"{0}% Time Between Eggs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChickenTimeBetweenEggs_+%-NegativeDescription\", \"-{0}% Time Between Eggs\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "ChickenTimeBetweenEggs_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ChickenTimeBetweenEggs_+-Title\", \"Time Between Eggs Laid\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ChickenTimeBetweenEggs_+-PositiveTitleFormat\", \"+{0}s\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ChickenTimeBetweenEggs_+-NegativeTitleFormat\", \"-{0}s\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseChickenColour_+",
+            "bIsReplicated": true
+        },
+        {
+            "Name": "IsInShallowWater_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsInShallowWater_?-PositiveDescription\", \"Standing in shallow water\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Movement"
+            }
+        },
+        {
+            "Name": "BaseMovementSpeedInShallowWater_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMovementSpeedInShallowWater_+%-PositiveDescription\", \"{0}% Movement Speed in Shallow Water\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMovementSpeedInShallowWater_+%-NegativeDescription\", \"-{0}% Movement Speed in Shallow Water\")",
+            "StatCategory": {
+                "RowName": "Movement"
+            }
+        },
+        {
+            "Name": "IsMountPrimaryAttackDisabledByDefault_?",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"IsMountPrimaryAttackDisabledByDefault_?-PositiveTitleFormat\", \"Disables Primary Attack by Default on Tamed Creature\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "IsMountPrimaryAttackEnabled_?",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"IsMountPrimaryAttackEnabled_?-PositiveTitleFormat\", \"Enables Primary Attack for Tamed Creature\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsMountPrimaryAttackEnabled_?-PositiveDescription\", \"Enables Primary Attack for Tamed Creature\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "MountReplaceWithJuvenileOnDeath_?",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"MountReplaceWithJuvenileOnDeath_?-PositiveTitleFormat\", \"Mount is Replaced by Juvenile When Killed\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"MountReplaceWithJuvenileOnDeath_?-PositiveDescription\", \"Mount is Replaced by Juvenile When Killed\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GrantedAuraMovementSpeed_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraMovementSpeed_?-PositiveDescription\", \"Nearby Tames and Players Move Faster\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Movement"
+            }
+        },
+        {
+            "Name": "BaseMountJumpStrength_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMountJumpStrength_+%-PositiveDescription\", \"+{0}% Jump Strength\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMountJumpStrength_+%-NegativeDescription\", \"-{0}% Jump Strength\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "MountJumpStrength_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"MountJumpStrength_+%-Title\", \"Jump Strength\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseAttacksCauseBluntTrauma_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksCauseBluntTrauma_%-PositiveDescription\", \"{0}% Chance to Inflict Blunt Trauma\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "AttacksCauseBluntTrauma_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCauseBluntTrauma_%-Title\", \"Chance Attacks will Inflict Blunt Trauma on Target\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseMovementSpeedWhilePullingCart_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMovementSpeedWhilePullingCart_+%-PositiveDescription\", \"{0}% Movement Speed while pulling cart\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMovementSpeedWhilePullingCart_+%-NegativeDescription\", \"-{0}% Movement Speed while pulling cart\")",
+            "StatCategory": {
+                "RowName": "Movement"
+            }
+        },
+        {
+            "Name": "IsPullingCart_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsPullingCart_?-PositiveDescription\", \"Currently Pulling a Cart\")",
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "GrantedAuraHyperthermiaResistance_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraHyperthermiaResistance_?-PositiveDescription\", \"Nearby Players More Resistant to Hyperthermia\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Temperature"
+            }
+        },
+        {
+            "Name": "GrantedAuraHypothermiaResistance_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraHypothermiaResistance_?-PositiveDescription\", \"Nearby Players More Resistant to Hypothermia\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Temperature"
+            }
+        },
+        {
+            "Name": "IsFriendlyToWildHorses_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsFriendlyToWildHorses_?-PositiveDescription\", \"Friendly to Wild Horses\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "ShouldHighlightNearbyCreatures_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"ShouldHighlightNearbyCreatures_?-PositiveDescription\", \"Highlight Nearby Creatures\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseTotalHealthRestoredOnKill_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTotalHealthRestoredOnKill_%-PositiveDescription\", \"{0}% Health Restored on Kill\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTotalHealthRestoredOnKill_%-NegativeDescription\", \"-{0}% Health Restored on Kill\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "TotalHealthRestoredOnKill_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TotalHealthRestoredOnKill_%-Title\", \"Total Health Restored After Killing Target\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseAttacksCauseMarkedTarget_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksCauseMarkedTarget_%-PositiveDescription\", \"{0}% Chance to Inflict \\'Marked Target\\'\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "AttacksCauseMarkedTarget_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCauseMarkedTarget_%-Title\", \"Chance Attacks will Inflict \\'Marked Target\\' and Deal Extra Damage on Hit\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseAttacksCauseHighlightedTarget_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksCauseHighlightedTarget_%-PositiveDescription\", \"{0}% Chance to highlight target on hit\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "AttacksCauseHighlightedTarget_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCauseHighlightedTarget_%-Title\", \"Chance targets will be highlighted upon being damaged\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "IsNPCHighlighted_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IsNPCHighlighted_?-Title\", \"Whether or not NPC is currently highlighted\")",
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseTamedCreatureExperience_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTamedCreatureExperience_+%-PositiveDescription\", \"+{0}% Experience Gained for Tamed Creatures\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTamedCreatureExperience_+%-NegativeDescription\", \"-{0}% Experience Gained for Tamed Creatures\")",
+            "StatCategory": {
+                "RowName": "Experience"
+            }
+        },
+        {
+            "Name": "TamedCreatureExperience_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TamedCreatureExperience_+%-Title\", \"Tamed Creature Experience\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Experience"
+            }
+        },
+        {
+            "Name": "BaseSharedExperienceProvided_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSharedExperienceProvided_+%-PositiveDescription\", \"+{0}% Shared Experience Provided to Others\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSharedExperienceProvided_+%-NegativeDescription\", \"-{0}% Shared Experience Provided to Others\")",
+            "StatCategory": {
+                "RowName": "Experience"
+            }
+        },
+        {
+            "Name": "SharedExperienceProvided_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SharedExperienceProvided_+%-Title\", \"Shared Experience Provided to Others\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Experience"
+            }
+        },
+        {
             "Name": "BeeExtraDamage_+%",
             "Title": "NSLOCTEXT(\"D_Stats\", \"BeeExtraDamage_+%-Title\", \"Bee\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
@@ -14097,6 +14505,12 @@
             }
         },
         {
+            "Name": "IsTrapped_?",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
             "Name": "BaseEnergyNetworkModifier_+%",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseEnergyNetworkModifier_+%-PositiveDescription\", \"+{0}% Energy Flow Rate\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseEnergyNetworkModifier_+%-NegativeDescription\", \"-{0}% Energy Flow Rate\")",
@@ -14183,6 +14597,14 @@
             "StatCategory": {
                 "RowName": "Deployable"
             }
+        },
+        {
+            "Name": "BaseGOAPMotivationCurrentPacificity_%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseIceMammothExtraDamageResistance_+%",
@@ -14326,6 +14748,38 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Deployable"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "CreatureBeingTamedIsHungry_?",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "CreatureInTamingIsAngry_?",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "CanTameFetch_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CanTameFetch_?-Title\", \"Teaches Fetch\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"CanTameFetch_?-PositiveDescription\", \"Teaches Fetch\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "IsTameTeleportWhenStuckDisabled_?",
+            "StatCategory": {
+                "RowName": "AI"
             },
             "bHideStatInUserInterface": true
         }

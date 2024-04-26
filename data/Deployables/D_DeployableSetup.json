@@ -864,13 +864,6 @@
             "MaxRestackingAmount": 3
         },
         {
-            "Name": "AnimalTrap_Small",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Traps/BP_AnimalTrap_Small.BP_AnimalTrap_Small_C",
-            "PreviewStaticMesh": "/Game/Assets/Developer/Debug_mesh/SM_CenterUpper_Pivot_Cube.SM_CenterUpper_Pivot_Cube",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "bCanAffectNavigation": false
-        },
-        {
             "Name": "Solar_Panel",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Solar/BP_SolarPanel.BP_SolarPanel_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_GEN_Solar_Deployed.SM_DEP_GEN_Solar_Deployed",
@@ -2022,8 +2015,7 @@
             "Name": "Meta_Cot_Printed",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Meta_Cot_Printed.BP_Meta_Cot_Printed_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bed_Cot_LEET.SM_DEP_Bed_Cot_LEET",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "bCanAffectNavigation": false
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
         },
         {
             "Name": "Basic_Wall_Light",
@@ -6476,6 +6468,44 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
         },
         {
+            "Name": "Animal_Trap_Small",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Traps/BP_Animal_Trap_Small.BP_Animal_Trap_Small_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Small_T2.SM_DEP_Trap_Small_T2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Animal_Trap_Small_T4",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Traps/BP_Animal_Trap_Small_T4.BP_Animal_Trap_Small_T4_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Small_T4.SM_DEP_Trap_Small_T4",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "SupportsCustomRotation": false,
+            "IgnoreCollisionWhenSnapped": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Animal_Trap_Medium",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Traps/BP_Animal_Trap_Medium.BP_Animal_Trap_Medium_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Large_Bear.SM_DEP_Trap_Large_Bear",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "SupportsCustomRotation": false,
+            "IgnoreCollisionWhenSnapped": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Chicken_Coop",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Chicken_Coop_Rustic.BP_Chicken_Coop_Rustic_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Chicken_Coop_Rustic.SM_DEP_Chicken_Coop_Rustic",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Default'",
+            "DeployCollisionExtentOffset": {
+                "X": -60,
+                "Y": -60
+            }
+        },
+        {
             "Name": "Sandworm_Trophy_1",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Sandworm_1.BP_Trophy_Sandworm_1_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Sandworm_Trophy_4.T_ITEM_Sandworm_Trophy_4",
@@ -6781,6 +6811,18 @@
             "MaxRestackingAmount": 1
         },
         {
+            "Name": "Snare_Trap",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/AI/BP_SnareTrap.BP_SnareTrap_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Snare.SM_DEP_Trap_Snare",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_THATCH.SFX_BLD_THATCH",
+            "bCanAffectNavigation": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
             "Name": "Animal_Bed_Burlap",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Animal_Bed_Burlap.BP_Animal_Bed_Burlap_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Animal_Bed_Burlap.SM_DEP_Animal_Bed_Burlap",
@@ -6807,6 +6849,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Animal_Bed_Royal.BP_Animal_Bed_Royal_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Animal_Bed_Royal.SM_DEP_Animal_Bed_Royal",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
             "DeployCollisionExtentOffset": {
                 "X": -60,
                 "Y": -60
@@ -6835,22 +6878,11 @@
             }
         },
         {
-            "Name": "Chicken_Coop",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Chicken_Coop_Rustic.BP_Chicken_Coop_Rustic_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Chicken_Coop_Rustic.SM_DEP_Chicken_Coop_Rustic",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "bCanAffectNavigation": false,
-            "DeployCollisionExtentOffset": {
-                "X": -60,
-                "Y": -60
-            }
-        },
-        {
             "Name": "Chicken_Coop_Red",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Chicken_Coop_Royal.BP_Chicken_Coop_Royal_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Chicken_Coop_Royal.SM_DEP_Chicken_Coop_Royal",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "bCanAffectNavigation": false,
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Default'",
             "DeployCollisionExtentOffset": {
                 "X": -60,
                 "Y": -60
@@ -6861,6 +6893,7 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Animal_Bed_Emperor.BP_Animal_Bed_Emperor_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Animal_Bed_Royal.SM_DEP_Animal_Bed_Royal",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
             "DeployCollisionExtentOffset": {
                 "X": -60,
                 "Y": -60
@@ -6911,18 +6944,44 @@
             }
         },
         {
-            "Name": "Hitching_Post",
-            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Hitching_Post-DeployableName\", \"None\")",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Hitching_Post/SM_DEP_Hitching_Post.SM_DEP_Hitching_Post",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SupportsCustomRotation": false
+            "Name": "Workshop_Animal_Small",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Creatures/BP_Workshop_Animal.BP_Workshop_Animal_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Small_T4.SM_DEP_Trap_Small_T4",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "AudioOcclusionAmount": 0.5,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
         },
         {
-            "Name": "Snare_Trap",
-            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Snare_Trap-DeployableName\", \"None\")",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Snare.SM_DEP_Trap_Snare",
+            "Name": "Workshop_Animal_Medium",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Creatures/BP_Workshop_Animal.BP_Workshop_Animal_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Small_T4.SM_DEP_Trap_Small_T4",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "AudioOcclusionAmount": 0.5,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Hitching_Post",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/AI/BP_HitchingPost.BP_HitchingPost_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Hitching_Post/SM_DEP_Hitching_Post.SM_DEP_Hitching_Post",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "SupportsCustomRotation": false
+            "SupportsCustomRotation": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
         },
         {
             "Name": "Animal_Bench",
@@ -7025,7 +7084,7 @@
         },
         {
             "Name": "Dog_Trophy_A1",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Sheep.BP_Trophy_Sheep_C",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Dog_A1.BP_Trophy_Dog_A1_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Labrador/SM_DEP_Trophy_Labrador.SM_DEP_Trophy_Labrador",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "bCanAffectNavigation": false,
@@ -7033,7 +7092,7 @@
         },
         {
             "Name": "Dog_Trophy_A2",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Sheep.BP_Trophy_Sheep_C",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Dog_A2.BP_Trophy_Dog_A2_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Labrador/SM_DEP_Trophy_Labrador.SM_DEP_Trophy_Labrador",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "bCanAffectNavigation": false,
@@ -7041,7 +7100,7 @@
         },
         {
             "Name": "Dog_Trophy_B1",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Sheep.BP_Trophy_Sheep_C",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Dog_B1.BP_Trophy_Dog_B1_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_GermanShepherd/SM_DEP_Trophy_GermanShepherd.SM_DEP_Trophy_GermanShepherd",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "bCanAffectNavigation": false,
@@ -7049,7 +7108,7 @@
         },
         {
             "Name": "Dog_Trophy_B2",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Sheep.BP_Trophy_Sheep_C",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Dog_B2.BP_Trophy_Dog_B2_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_GermanShepherd/SM_DEP_Trophy_GermanShepherd.SM_DEP_Trophy_GermanShepherd",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "bCanAffectNavigation": false,
@@ -7063,6 +7122,14 @@
             "DeployCollisionExtentOffset": {
                 "Z": -100
             }
+        },
+        {
+            "Name": "Dog_Trophy_C1",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Sheep.BP_Trophy_Sheep_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_GermanShepherd/SM_DEP_Trophy_GermanShepherd.SM_DEP_Trophy_GermanShepherd",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
         }
     ]
 }
