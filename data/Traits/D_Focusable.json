@@ -860,7 +860,9 @@
             "AnimationData": {
                 "RowName": "1HWEP"
             },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNI_Equip_Montage.1ST_CHA_1HKNI_Equip_Montage",
             "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HKNIIdle.1ST_CHA_1HKNIIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HSTICKEQUIP.3RD_CHA_1HSTICKEQUIP",
             "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HKnifeIdle.3RD_CHA_MAL_1HKnifeIdle",
             "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
         },
@@ -884,6 +886,44 @@
             "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
             "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWeaponIdle.3RD_CHA_MAL_1HWeaponIdle",
             "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Bandage",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Equip_Montage.1ST_CHA_Bandage_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Idle.1ST_CHA_Bandage_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BandageEquip_Montage.3RD_CHA_BandageEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HBandage_Idle.3RD_CHA_1HBandage_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
+        },
+        {
+            "Name": "Focusable_SutureKit",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": -0.7071068286895752,
+                    "W": 0.7071067094802856
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Equip_Montage.1ST_CHA_Bandage_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Bandage_Idle.1ST_CHA_Bandage_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_BandageEquip_Montage.3RD_CHA_BandageEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HBandage_Idle.3RD_CHA_1HBandage_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_CrouchIdle.3RD_CHA_MAL_CrouchIdle"
         }
     ]
 }

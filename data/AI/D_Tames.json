@@ -27,7 +27,8 @@
         "PercentChanceToSpawnJuvenile": 33,
         "MaxNearbyAutoSpawnedJuveniles": 2,
         "TimeToSpawnDynamicCharacter": 300,
-        "TimeToSpawnDynamicCharacterRandomDeviation": 120
+        "TimeToSpawnDynamicCharacterRandomDeviation": 120,
+        "TrappingSupportedAtmospheres": []
     },
     "Rows": [
         {
@@ -153,7 +154,15 @@
                 "RowName": "Conifer_Wolf"
             },
             "PercentChanceToSpawnJuvenile": 0,
-            "MaxNearbyAutoSpawnedJuveniles": 0
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Conifer"
+                },
+                {
+                    "Value": "Grasslands"
+                }
+            ]
         },
         {
             "Name": "Snow_Wolf",
@@ -167,7 +176,12 @@
                 "RowName": "Snow_Wolf"
             },
             "PercentChanceToSpawnJuvenile": 0,
-            "MaxNearbyAutoSpawnedJuveniles": 0
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Arctic"
+                }
+            ]
         },
         {
             "Name": "Desert_Wolf",
@@ -181,7 +195,15 @@
                 "RowName": "Desert_Wolf"
             },
             "PercentChanceToSpawnJuvenile": 0,
-            "MaxNearbyAutoSpawnedJuveniles": 0
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Desert"
+                },
+                {
+                    "Value": "Volcanic"
+                }
+            ]
         },
         {
             "Name": "Blueback",
@@ -235,7 +257,15 @@
                 "RowName": "Wild_Boar"
             },
             "PercentChanceToSpawnJuvenile": 0,
-            "MaxNearbyAutoSpawnedJuveniles": 0
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Conifer"
+                },
+                {
+                    "Value": "Grasslands"
+                }
+            ]
         },
         {
             "Name": "Dog",
@@ -258,6 +288,33 @@
             },
             "PercentChanceToSpawnJuvenile": 0,
             "MaxNearbyAutoSpawnedJuveniles": 0
+        },
+        {
+            "Name": "ArcticMoa",
+            "TameDurationInSeconds": 900,
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Arctic_Moa"
+            },
+            "MatureCreatureType": {
+                "RowName": "Arctic_Moa"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Arctic_Moa"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 50
         }
     ]
 }

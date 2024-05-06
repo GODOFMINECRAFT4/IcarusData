@@ -903,19 +903,19 @@
             }
         },
         {
-            "Name": "OxygenConsumptionPerMinute_+",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"OxygenConsumptionPerMinute_+-Title\", \"Oxygen Consumption\")",
-            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"OxygenConsumptionPerMinute_+-PositiveTitleFormat\", \"{0} per minute\")",
-            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"OxygenConsumptionPerMinute_+-NegativeTitleFormat\", \"-{0} per minute\")",
+            "Name": "OxygenConsumptionPerHour_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"OxygenConsumptionPerHour_+-Title\", \"Oxygen Consumption\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"OxygenConsumptionPerHour_+-PositiveTitleFormat\", \"{0} per hour\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"OxygenConsumptionPerHour_+-NegativeTitleFormat\", \"-{0} per minute\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Upkeep"
             }
         },
         {
-            "Name": "BaseOxygenConsumptionPerMinute_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseOxygenConsumptionPerMinute_+-PositiveDescription\", \"+{0} Oxygen Consumption per minute\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseOxygenConsumptionPerMinute_+-NegativeDescription\", \"-{0} Oxygen Consumption per minute\")",
+            "Name": "BaseOxygenConsumptionPerHour_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseOxygenConsumptionPerHour_+-PositiveDescription\", \"+{0} Oxygen Consumption per hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseOxygenConsumptionPerHour_+-NegativeDescription\", \"-{0} Oxygen Consumption per hour\")",
             "StatCategory": {
                 "RowName": "Upkeep"
             }
@@ -929,19 +929,19 @@
             }
         },
         {
-            "Name": "FoodConsumptionPerMinute_+",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"FoodConsumptionPerMinute_+-Title\", \"Food Consumption\")",
-            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"FoodConsumptionPerMinute_+-PositiveTitleFormat\", \"{0} per minute\")",
-            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"FoodConsumptionPerMinute_+-NegativeTitleFormat\", \"-{0} per minute\")",
+            "Name": "FoodConsumptionPerHour_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FoodConsumptionPerHour_+-Title\", \"Food Consumption\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"FoodConsumptionPerHour_+-PositiveTitleFormat\", \"{0} per hour\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"FoodConsumptionPerHour_+-NegativeTitleFormat\", \"-{0} per hour\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Upkeep"
             }
         },
         {
-            "Name": "BaseFoodConsumptionPerMinute_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFoodConsumptionPerMinute_+-PositiveDescription\", \"+{0} Food Consumption per minute\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFoodConsumptionPerMinute_+-NegativeDescription\", \"-{0} Food Consumption per minute\")",
+            "Name": "BaseFoodConsumptionPerHour_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFoodConsumptionPerHour_+-PositiveDescription\", \"+{0} Food Consumption per hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFoodConsumptionPerHour_+-NegativeDescription\", \"-{0} Food Consumption per hour\")",
             "StatCategory": {
                 "RowName": "Upkeep"
             }
@@ -955,19 +955,19 @@
             }
         },
         {
-            "Name": "WaterConsumptionPerMinute_+",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WaterConsumptionPerMinute_+-Title\", \"Water Consumption\")",
-            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"WaterConsumptionPerMinute_+-PositiveTitleFormat\", \"{0} per minute\")",
-            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"WaterConsumptionPerMinute_+-NegativeTitleFormat\", \"-{0} per minute\")",
+            "Name": "WaterConsumptionPerHour_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WaterConsumptionPerHour_+-Title\", \"Water Consumption\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"WaterConsumptionPerHour_+-PositiveTitleFormat\", \"{0} per hour\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"WaterConsumptionPerHour_+-NegativeTitleFormat\", \"-{0} per hour\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Upkeep"
             }
         },
         {
-            "Name": "BaseWaterConsumptionPerMinute_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseWaterConsumptionPerMinute_+-PositiveDescription\", \"+{0} Water Consumption per minute\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseWaterConsumptionPerMinute_+-NegativeDescription\", \"-{0} Water Consumption per minute\")",
+            "Name": "BaseWaterConsumptionPerHour_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseWaterConsumptionPerHour_+-PositiveDescription\", \"+{0} Water Consumption per hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseWaterConsumptionPerHour_+-NegativeDescription\", \"-{0} Water Consumption per hour\")",
             "StatCategory": {
                 "RowName": "Upkeep"
             }
@@ -14778,6 +14778,147 @@
         },
         {
             "Name": "IsTameTeleportWhenStuckDisabled_?",
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseCreatureBoneDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCreatureBoneDamage_+%-PositiveDescription\", \"+{0}% Damage vs Creature Bones\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCreatureBoneDamage_+%-NegativeDescription\", \"-{0}% Damage vs Creature Bones\")",
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "CreatureBoneDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CreatureBoneDamage_+%-Title\", \"Damage to Creature Bones\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "BaseChanceToInstantlyGatherBones_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToInstantlyGatherBones_%-PositiveDescription\", \"+{0}% Chance to Instantly Gather Bone\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToInstantlyGatherBones_%-NegativeDescription\", \"-{0}% Chance to Instantly Gather Bones\")",
+            "StatCategory": {
+                "RowName": "Skinning"
+            }
+        },
+        {
+            "Name": "ChanceToInstantlyGatherBones_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ChanceToInstantlyGatherBones_%-Title\", \"Chance to Instantly Gather Bones\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Skinning"
+            }
+        },
+        {
+            "Name": "BaseConiferHeatResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferHeatResistance_+%-PositiveDescription\", \"+{0}% Heat Resistance in the Forest\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferHeatResistance_+%-NegativeDescription\", \"-{0}% Heat Resistance in the Forest\")",
+            "StatCategory": {
+                "RowName": "Temperature"
+            }
+        },
+        {
+            "Name": "BaseArcticHeatResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticHeatResistance_+%-PositiveDescription\", \"+{0}% Heat Resistance in the Arctic\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticHeatResistance_+%-NegativeDescription\", \"-{0}% Heat Resistance in the Arctic\")",
+            "StatCategory": {
+                "RowName": "Temperature"
+            }
+        },
+        {
+            "Name": "BaseDesertHeatResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertHeatResistance_+%-PositiveDescription\", \"+{0}% Heat Resistance in the Desert\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertHeatResistance_+%-NegativeDescription\", \"-{0}% Heat Resistance in the Desert\")",
+            "StatCategory": {
+                "RowName": "Temperature"
+            }
+        },
+        {
+            "Name": "BaseSwampHeatResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampHeatResistance_+%-PositiveDescription\", \"+{0}% Heat Resistance in the Swamp\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampHeatResistance_+%-NegativeDescription\", \"-{0}% Heat Resistance in the Swamp\")",
+            "StatCategory": {
+                "RowName": "Temperature"
+            }
+        },
+        {
+            "Name": "BaseVolcanicHeatResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicHeatResistance_+%-PositiveDescription\", \"+{0}% Heat Resistance in the Volcanic\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicHeatResistance_+%-NegativeDescription\", \"-{0}% Heat Resistance in the Volcanic\")",
+            "StatCategory": {
+                "RowName": "Temperature"
+            }
+        },
+        {
+            "Name": "BaseGrasslandsHeatResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGrasslandsHeatResistance_+%-PositiveDescription\", \"+{0}% Heat Resistance in the Grasslands\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGrasslandsHeatResistance_+%-NegativeDescription\", \"-{0}% Heat Resistance in the Grasslands\")",
+            "StatCategory": {
+                "RowName": "Temperature"
+            }
+        },
+        {
+            "Name": "BaseConiferColdResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferColdResistance_+%-PositiveDescription\", \"+{0}% Cold Resistance in the Forest\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferColdResistance_+%-NegativeDescription\", \"-{0}% Cold Resistance in the Forest\")",
+            "StatCategory": {
+                "RowName": "Health"
+            }
+        },
+        {
+            "Name": "BaseDesertColdResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertColdResistance_+%-PositiveDescription\", \"+{0}% Cold Resistance in the Desert\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertColdResistance_+%-NegativeDescription\", \"-{0}% Cold Resistance in the Desert\")",
+            "StatCategory": {
+                "RowName": "Health"
+            }
+        },
+        {
+            "Name": "BaseSwampColdResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampColdResistance_+%-PositiveDescription\", \"+{0}% Cold Resistance in the Swamp\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampColdResistance_+%-NegativeDescription\", \"-{0}% Cold Resistance in the Swamp\")",
+            "StatCategory": {
+                "RowName": "Health"
+            }
+        },
+        {
+            "Name": "BaseVolcanicColdResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicColdResistance_+%-PositiveDescription\", \"+{0}% Cold Resistance in the Volcanic\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicColdResistance_+%-NegativeDescription\", \"-{0}% Cold Resistance in the Volcanic\")",
+            "StatCategory": {
+                "RowName": "Health"
+            }
+        },
+        {
+            "Name": "BaseGrasslandsColdResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGrasslandsColdResistance_+%-PositiveDescription\", \"+{0}% Cold Resistance in the Grasslands\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGrasslandsColdResistance_+%-NegativeDescription\", \"-{0}% Cold Resistance in the Grasslands\")",
+            "StatCategory": {
+                "RowName": "Health"
+            }
+        },
+        {
+            "Name": "BaseCartActiveMovementSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCartActiveMovementSpeed_+%-PositiveDescription\", \"+{0}% Cart Movement Speed When Active\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCartActiveMovementSpeed_+%-NegativeDescription\", \"-{0}% Cart Movement Speed When Active\")",
+            "StatCategory": {
+                "RowName": "Movement"
+            }
+        },
+        {
+            "Name": "IsHarvestCartActive_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsHarvestCartActive_?-PositiveDescription\", \"Harvest Cart Active\")",
+            "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "AI"
             },

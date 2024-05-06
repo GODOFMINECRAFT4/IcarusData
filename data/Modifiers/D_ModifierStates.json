@@ -1030,8 +1030,7 @@
                         "TagName": "ModifierState.Bandage"
                     }
                 ]
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Damage_Sprained_Ankle",
@@ -1086,7 +1085,7 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BrokenBone.Icon_BrokenBone'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Damage_Broken_Leg-ModifierName\", \"Broken Leg\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Damage_Broken_Leg-ModifierDescription\", \"You\\'ve sustained a broken leg due to fall damage. You will move slowly.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Damage_Broken_Leg-ModifierDescription\", \"You\\'ve sustained a broken leg due to fall damage. You will move slowly. Use a Splint to Heal.\")",
             "AudioData": {
                 "RowName": "Generic_Negative"
             },
@@ -1094,7 +1093,7 @@
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseStaminaRegen_+%\")": -25,
                 "(Value=\"BaseFoodConsumption_+%\")": 25,
-                "(Value=\"BaseWeightCapacity_+%\")": -50
+                "(Value=\"BaseWeightCapacity_+%\")": -25
             },
             "ModifierLifetimeAffectors": [
                 {
@@ -1114,16 +1113,20 @@
                 "TagDictionary": [
                     {
                         "TagName": "Character.Player.Invincible"
+                    },
+                    {
+                        "TagName": "ModifierState.Splint"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     3,
-                    1,
-                    0
+                    2,
+                    0,
+                    1
                 ],
-                "AutoDescription": " NONE( Character.Player.Invincible )"
+                "AutoDescription": " NONE( Character.Player.Invincible, ModifierState.Splint )"
             },
             "bEffectsNPCs": false
         },
@@ -1232,9 +1235,6 @@
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Bandaging-ModifierName\", \"Bandaging\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bandaging-ModifierDescription\", \"You are currently bandaging.\")",
-            "AudioData": {
-                "RowName": "Bandaging"
-            },
             "GrantedStats": {
                 "(Value=\"BaseMovementSpeed_+%\")": -80
             },
@@ -1636,8 +1636,7 @@
                         "TagName": "ModifierState.SutureKit"
                     }
                 ]
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "DeepWound",
@@ -1702,7 +1701,7 @@
                 "(Value=\"BaseMaximumHealth_+%\")": -50,
                 "(Value=\"BaseMaximumStamina_+%\")": -25,
                 "(Value=\"BaseHealthRegen_+%\")": -80,
-                "(Value=\"BaseExperience_+%\")": -10
+                "(Value=\"BaseExperience_+%\")": -5
             },
             "ModifierTickRate": 30,
             "ModifierLifetimeAffectors": [
@@ -2108,7 +2107,7 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_DampenedDebuff.Icon_DampenedDebuff'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Underground-ModifierName\", \"Underground\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Underground-ModifierDescription\", \"In a damp, enclosed enviroment. Chance of pneumonia. Counter with a dehumidifier.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Underground-ModifierDescription\", \"In a damp, enclosed enviroment. Chance of cave sickness. Counter with a dehumidifier.\")",
             "AudioData": {
                 "RowName": "Generic_Negative_LongCoolDown"
             },
@@ -2153,7 +2152,7 @@
             "Name": "Pneumonia",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_PneumoniaDebuff.Icon_PneumoniaDebuff'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pneumonia-ModifierName\", \"Pneumonia\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pneumonia-ModifierName\", \"Cave Sickness\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pneumonia-ModifierDescription\", \"Severe infection of the lungs. Slows health and stamina regeneration. Counter with antibiotics, or wait it out.\")",
             "AudioData": {
                 "RowName": "Generic_Negative"
@@ -2501,10 +2500,7 @@
             "Name": "Splint",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BrokenBone.Icon_BrokenBone'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Splint-ModifierName\", \"Splint\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Splint-ModifierDescription\", \"Broken legs will heal more swiftly.\")",
-            "GrantedStats": {
-                "(Value=\"BaseBrokenLegModifierDuration_+%\")": -50
-            },
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Splint-ModifierDescription\", \"Broken legs will be healed.\")",
             "MergeType": "Stack",
             "ModifierTags": {
                 "GameplayTags": [
@@ -2561,8 +2557,7 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Bacterial )"
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Antparasitic_Paste",
@@ -2595,8 +2590,7 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Parasitic )"
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Antipoison_Paste",
@@ -2629,8 +2623,7 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Poison )"
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Blood_Thinning_Paste",
@@ -2663,14 +2656,13 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.PhysicalTrauma )"
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Antibiotic_Tonic",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Antibiotic_Tonic.ITEM_Antibiotic_Tonic'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Antibiotic_Tonic-ModifierName\", \"Antibiotic Tonic\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antibiotic_Tonic-ModifierDescription\", \"Removes food poisoning, wound infections and pneumonia.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antibiotic_Tonic-ModifierDescription\", \"Removes food poisoning, wound infections and cave sickness.\")",
             "MergeType": "Replace",
             "ModifierTags": {
                 "GameplayTags": [
@@ -2693,8 +2685,7 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Bacterial )"
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Antiparasitic_Tonic",
@@ -2723,8 +2714,7 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Parasitic )"
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Antipoison_Tonic",
@@ -2753,8 +2743,7 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Poison )"
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Blood_Thinning_Tonic",
@@ -2783,14 +2772,13 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.PhysicalTrauma )"
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Antibiotic_Pill",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Antibiotic_Pill.ITEM_Antibiotic_Pill'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Antibiotic_Pill-ModifierName\", \"Antibiotic Pill\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antibiotic_Pill-ModifierDescription\", \"Protects against food poisoning, wound infections and pneumonia.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antibiotic_Pill-ModifierDescription\", \"Protects against food poisoning, wound infections and cave sickness.\")",
             "MergeType": "Replace",
             "ModifierTags": {
                 "GameplayTags": [
@@ -2798,8 +2786,7 @@
                         "TagName": "ModifierState.Medicine.Antibiotic.T3"
                     }
                 ]
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Antiparasitic_Pill",
@@ -2813,8 +2800,7 @@
                         "TagName": "ModifierState.Medicine.Antiparasitic.T3"
                     }
                 ]
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Antipoison_Pill",
@@ -2828,8 +2814,7 @@
                         "TagName": "ModifierState.Medicine.Antipoison.T3"
                     }
                 ]
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Blood_Thinning_Pill",
@@ -2843,8 +2828,7 @@
                         "TagName": "ModifierState.Medicine.Bloodthinner.T3"
                     }
                 ]
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Faction_SatelliteOverlap",
@@ -4018,7 +4002,7 @@
             "Name": "Antibiotic_Vaccine",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Meta_Vaccine_Antibiotic.ITEM_Meta_Vaccine_Antibiotic'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Antibiotic_Vaccine-ModifierName\", \"Antibiotic Vaccine\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antibiotic_Vaccine-ModifierDescription\", \"Protects against food poisoning, wound infections and pneumonia.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antibiotic_Vaccine-ModifierDescription\", \"Protects against food poisoning, wound infections and cave sickness.\")",
             "MergeType": "Replace",
             "ModifierTags": {
                 "GameplayTags": [
@@ -4650,8 +4634,7 @@
                     2
                 ],
                 "AutoDescription": " NONE( ModifierState.InWater, ModifierState.OnFire, ModifierState.Lava )"
-            },
-            "bEffectsNPCs": false
+            }
         },
         {
             "Name": "Weight_Reduction_Aura",
@@ -5398,8 +5381,7 @@
                 "(Value=\"BaseMaximumHealth_+%\")": 30,
                 "(Value=\"BaseHealthRegen_+%\")": 300
             },
-            "MergeType": "Replace",
-            "bEffectsNPCs": false
+            "MergeType": "Replace"
         },
         {
             "Name": "Stamina_Enhancement_Tonic",
@@ -5410,8 +5392,7 @@
                 "(Value=\"BaseMaximumStamina_+%\")": 30,
                 "(Value=\"BaseStaminaRegen_+%\")": 200
             },
-            "MergeType": "Replace",
-            "bEffectsNPCs": false
+            "MergeType": "Replace"
         },
         {
             "Name": "Sustenence_Enhancement_Tonic",
@@ -5423,8 +5404,7 @@
                 "(Value=\"BaseWaterConsumption_+%\")": -30,
                 "(Value=\"BaseOxygenConsumption_+%\")": -30
             },
-            "MergeType": "Replace",
-            "bEffectsNPCs": false
+            "MergeType": "Replace"
         },
         {
             "Name": "Strength_Enhancement_Tonic",
@@ -5437,8 +5417,7 @@
                 "(Value=\"BaseSpearProjectileSpeed_+%\")": 30,
                 "(Value=\"BasePhysicalDamageResistance_+%\")": 15
             },
-            "MergeType": "Replace",
-            "bEffectsNPCs": false
+            "MergeType": "Replace"
         },
         {
             "Name": "Consuming_Tonic",
@@ -5453,8 +5432,7 @@
                 "(Value=\"BaseMovementSpeed_+%\")": -50
             },
             "ShouldTick": true,
-            "MergeType": "LongestDuration",
-            "bEffectsNPCs": false
+            "MergeType": "LongestDuration"
         },
         {
             "Name": "Washed_Hands",
@@ -10229,6 +10207,38 @@
             },
             "MergeType": "LongestDuration",
             "bEffectsPlayers": false
+        },
+        {
+            "Name": "Consuming_Pills",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Antibiotic_Pill.ITEM_Antibiotic_Pill'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Consuming_Pills-ModifierName\", \"Consuming Pills\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Consuming_Pills-ModifierDescription\", \"You are currently consuming pills\")",
+            "AudioData": {
+                "RowName": "Bandaging"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -80
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Consuming_Paste",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Blood_Thinning_Paste.ITEM_Blood_Thinning_Paste'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Consuming_Paste-ModifierName\", \"Applying Paste\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Consuming_Paste-ModifierDescription\", \"You are currently applying paste\")",
+            "AudioData": {
+                "RowName": "Bandaging"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -80
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
         }
     ]
 }

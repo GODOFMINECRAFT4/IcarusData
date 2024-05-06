@@ -7986,7 +7986,7 @@
         {
             "Name": "PRO_Story0_Craft",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0_Craft.BPQ_PRO_Story0_Craft_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a C0NT4CT Device (Crafting Bench) to engage with Dynamic missions and the Prometheus Story\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a C0NT4CT Device (Crafting Bench) to engage with SMPL3 Missions and Operations\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "OpenWorldIntroSRR",
@@ -9043,6 +9043,28 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Recovery_Escort-Description\", \"Escort the Creature to the Sinotai Retrieval Pod (M)\")",
             "LocationQuery": {
                 "RowName": "STYX_MiniHippoQuestEnd"
+            }
+        },
+        {
+            "Name": "STYX_Open_World",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0.BPQ_PRO_Story0_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_Open_World-Description\", \"Welcome to Styx\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "OpenWorldIntroStyx",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "OLY_Open_World",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0.BPQ_PRO_Story0_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Open_World-Description\", \"Welcome to Olympus\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "OpenWorldIntroOly",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         }
     ]

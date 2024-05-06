@@ -1927,7 +1927,7 @@
         {
             "Name": "Mesh_Suture_Kit",
             "ItemMesh": "/Game/ASS/ITM/SM_ITM_Suture_Kit.SM_ITM_Suture_Kit",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
+            "EquipHandMesh": "/Game/ASS/ITM/SM_ITM_Suture_Kit.SM_ITM_Suture_Kit"
         },
         {
             "Name": "Mesh_Carcass_Pronghorn",
@@ -2012,7 +2012,9 @@
         },
         {
             "Name": "Mesh_Mammoth_Tusk",
-            "ItemMesh": "/Game/ASS/ITM/SM_ITM_Mammoth_Tusk.SM_ITM_Mammoth_Tusk"
+            "ItemMesh": "/Game/ASS/ITM/SM_ITM_Mammoth_Tusk_Small.SM_ITM_Mammoth_Tusk_Small",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/ITM/SM_ITM_Mammoth_Tusk_Small.SM_ITM_Mammoth_Tusk_Small"
         },
         {
             "Name": "Mesh_Bone_Sickle",
@@ -2561,7 +2563,7 @@
         {
             "Name": "Mesh_Meta_Bandage_Shengong",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Bandage_SHEN.SK_ITM_Bandage_SHEN",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
+            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Bandage_SHEN.SK_ITM_Bandage_SHEN"
         },
         {
             "Name": "Mesh_Meta_Axe_Printed",
@@ -6566,6 +6568,19 @@
             "Name": "Mesh_CarcassZebra_Mount",
             "ItemMesh": "/Game/ASS/CRE/Zebra/SK_CRE_Zebra.SK_CRE_Zebra",
             "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Mount_Zebra_Corpse.BP_Mount_Zebra_Corpse_C"
+        },
+        {
+            "Name": "Mesh_Carcass_Arctic_Moa",
+            "ItemMesh": "/Game/ASS/CRE/Moa/SK_CRE_Moa.SK_CRE_Moa",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Arctic_Moa_Corpse.BP_Arctic_Moa_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Moa/SK_CRE_Moa.SK_CRE_Moa",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Arctic_Moa_Corpse.BP_Arctic_Moa_Corpse_C",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Moa_Corpse.BP_Moa_Corpse_C"
+        },
+        {
+            "Name": "Mesh_Carcass_Arctic_Moa_Mount",
+            "ItemMesh": "/Game/ASS/CRE/Moa/SK_CRE_Moa.SK_CRE_Moa",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Arctic_Moa_Mount_Corpse.BP_Arctic_Moa_Mount_Corpse_C"
         }
     ]
 }

@@ -36,6 +36,11 @@
             "X": 0,
             "Y": 0,
             "Z": 0
+        },
+        "DeployPlacementOffset": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
         }
     },
     "Rows": [
@@ -812,7 +817,7 @@
         {
             "Name": "Metal_Oxite_Dissolver",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/OxiteDissolver/BP_Metal_Oxite_Dissolver.BP_Metal_Oxite_Dissolver_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Oxite_Dissolver_Metal_V2.SM_DEP_Oxite_Dissolver_Metal_V2",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Oxite_Dissolver_Metal.SM_DEP_Oxite_Dissolver_Metal",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
         },
         {
@@ -1610,7 +1615,9 @@
             ],
             "SnapSocketsOrTags": [
                 "Unit_R",
-                "Unit_L"
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
             ],
             "UseSnapSocketRotation": true,
             "MaxRestackingAmount": 10
@@ -1622,13 +1629,15 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
-            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapBehaviour": "WorldAndSnap",
             "SnapActorTags": [
                 "Kitchen"
             ],
             "SnapSocketsOrTags": [
                 "Unit_R",
-                "Unit_L"
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
             ],
             "UseSnapSocketRotation": true,
             "MaxRestackingAmount": 10
@@ -1640,13 +1649,15 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
-            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapBehaviour": "WorldAndSnap",
             "SnapActorTags": [
                 "Kitchen"
             ],
             "SnapSocketsOrTags": [
                 "Unit_R",
-                "Unit_L"
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
             ],
             "UseSnapSocketRotation": true,
             "MaxRestackingAmount": 10
@@ -3219,7 +3230,9 @@
             ],
             "SnapSocketsOrTags": [
                 "Unit_R",
-                "Unit_L"
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
             ],
             "UseSnapSocketRotation": true,
             "MaxRestackingAmount": 10
@@ -3231,13 +3244,15 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
-            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapBehaviour": "WorldAndSnap",
             "SnapActorTags": [
                 "Kitchen"
             ],
             "SnapSocketsOrTags": [
                 "Unit_R",
-                "Unit_L"
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
             ],
             "UseSnapSocketRotation": true,
             "MaxRestackingAmount": 10
@@ -3249,13 +3264,15 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
-            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapBehaviour": "WorldAndSnap",
             "SnapActorTags": [
                 "Kitchen"
             ],
             "SnapSocketsOrTags": [
                 "Unit_R",
-                "Unit_L"
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
             ],
             "UseSnapSocketRotation": true,
             "MaxRestackingAmount": 10
@@ -3267,13 +3284,15 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
-            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapBehaviour": "WorldAndSnap",
             "SnapActorTags": [
                 "Kitchen"
             ],
             "SnapSocketsOrTags": [
                 "Unit_R",
-                "Unit_L"
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
             ],
             "UseSnapSocketRotation": true,
             "MaxRestackingAmount": 10
@@ -4486,7 +4505,7 @@
             "bCanAffectNavigation": false
         },
         {
-            "Name": "Farming_CropPlot_Mound",
+            "Name": "Farming_CropPlot_Mound_Seed",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
             "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Avocado/SM_HRB_Avocado_Stage5_Var1.SM_HRB_Avocado_Stage5_Var1",
             "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
@@ -4505,6 +4524,20 @@
             ],
             "IgnoreCollisionWhenSnapped": true,
             "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Farming_CropPlot_Mound",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
+            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/SM_Mound.SM_Mound",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+            "ItemAddedSounds": {
+                "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Speed_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
+                "(RowName=\"Yield_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER"
+            },
+            "SupportsCustomRotation": false,
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
@@ -6499,10 +6532,18 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Chicken_Coop_Rustic.BP_Chicken_Coop_Rustic_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Chicken_Coop_Rustic.SM_DEP_Chicken_Coop_Rustic",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
             "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Default'",
             "DeployCollisionExtentOffset": {
                 "X": -60,
-                "Y": -60
+                "Y": -60,
+                "Z": -50
+            },
+            "DeployCollisionLocationOffset": {
+                "Z": 50
+            },
+            "DeployPlacementOffset": {
+                "Z": -50
             }
         },
         {
@@ -6882,10 +6923,18 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Chicken_Coop_Royal.BP_Chicken_Coop_Royal_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Chicken_Coop_Royal.SM_DEP_Chicken_Coop_Royal",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
             "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Default'",
             "DeployCollisionExtentOffset": {
                 "X": -60,
-                "Y": -60
+                "Y": -60,
+                "Z": -50
+            },
+            "DeployCollisionLocationOffset": {
+                "Z": 50
+            },
+            "DeployPlacementOffset": {
+                "Z": -50
             }
         },
         {
@@ -7130,6 +7179,149 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Single_Wall_Light",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_Single_Wall_Light.BP_Single_Wall_Light_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Single_Wall_Light.SM_DEP_Single_Wall_Light",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Single_Ceiling_Light",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_Single_Ceiling_Light.BP_Single_Ceiling_Light_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Single_Ceiling_Light.SM_DEP_Single_Ceiling_Light",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SnapToSurfaceNormal": false,
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "CeilingPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Exposed_Wall_Light",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_Exposed_Wall_Light.BP_Exposed_Wall_Light_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_Exposed_Lightbulb_wall.SM_Exposed_Lightbulb_wall",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Exposed_Ceiling_Light",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_Exposed_Ceiling_Light.BP_Exposed_Ceiling_Light_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_Exposed_Lightbulb.SM_Exposed_Lightbulb",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SnapToSurfaceNormal": false,
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "CeilingPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Medicine_Bench",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Medicine_Bench.BP_Medicine_Bench_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Bench_Herbalism_T3/SM_DEP_Bench_Herbalism_T3.SM_DEP_Bench_Herbalism_T3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Kitchen"
+            ],
+            "SnapSocketsOrTags": [
+                "Unit_R",
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
+            ],
+            "UseSnapSocketRotation": true,
+            "MaxRestackingAmount": 10
+        },
+        {
+            "Name": "Wood_Burner",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Campfire/BP_Wood_Burner.BP_Wood_Burner_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Coal_Burner.SM_DEP_Coal_Burner",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE_SMALL.SFX_BLD_STONE_SMALL",
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Kitchen_Corner",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Kitchen_Corner.BP_Kitchen_Corner_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bench_Kitchen_Block_Empty.SM_DEP_Bench_Kitchen_Block_Empty",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Kitchen"
+            ],
+            "SnapSocketsOrTags": [
+                "Unit_R",
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
+            ],
+            "UseSnapSocketRotation": true,
+            "MaxRestackingAmount": 10
+        },
+        {
+            "Name": "Marble_Kitchen_Corner",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Advanced_Kitchen_Corner.BP_Advanced_Kitchen_Corner_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bench_Kitchen_Block_Empty_T4.SM_DEP_Bench_Kitchen_Block_Empty_T4",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Kitchen"
+            ],
+            "SnapSocketsOrTags": [
+                "Unit_R",
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
+            ],
+            "UseSnapSocketRotation": true,
+            "MaxRestackingAmount": 10
+        },
+        {
+            "Name": "Electric_Oxite_Dissolver",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/OxiteDissolver/BP_Electric_Oxite_Dissolver.BP_Electric_Oxite_Dissolver_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Oxite_Dissolver_Metal_V2.SM_DEP_Oxite_Dissolver_Metal_V2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
+        },
+        {
+            "Name": "Stone_Cairn",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Stone_Cairn.BP_Stone_Cairn_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Cairn_Stone/SM_DEP_Cairn_Stone.SM_DEP_Cairn_Stone",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE"
+        },
+        {
+            "Name": "Exposed_Wall_Light_Foggy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_Exposed_Wall_Light_Foggy.BP_Exposed_Wall_Light_Foggy_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Single_Wall_Light_Exposed.SM_DEP_Single_Wall_Light_Exposed",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Exposed_Ceiling_Light_Foggy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_Exposed_Ceiling_Light_Foggy.BP_Exposed_Ceiling_Light_Foggy_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Single_Ceiling_Light_Exposed.SM_DEP_Single_Ceiling_Light_Exposed",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SnapToSurfaceNormal": false,
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "CeilingPlacement",
+            "bCanAffectNavigation": false
         }
     ]
 }

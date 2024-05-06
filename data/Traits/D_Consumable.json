@@ -1734,14 +1734,29 @@
             }
         },
         {
-            "Name": "Health_Enhancement_Tonic",
+            "Name": "Health_Remedy",
             "Stats": {
                 "(Value=\"BaseHealthRecovery_+\")": 100
             },
             "Modifier": {
-                "Modifier": {
-                    "RowName": "Health_Enhancement_Tonic"
-                },
+                "ModifierLifetime": 120
+            }
+        },
+        {
+            "Name": "Health_Enhancement_Tonic",
+            "Stats": {
+                "(Value=\"BaseHealthRecovery_+\")": 250
+            },
+            "Modifier": {
+                "ModifierLifetime": 120
+            }
+        },
+        {
+            "Name": "Health_Elixir",
+            "Stats": {
+                "(Value=\"BaseHealthRecovery_+\")": 500
+            },
+            "Modifier": {
                 "ModifierLifetime": 120
             }
         },

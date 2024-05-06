@@ -31,9 +31,18 @@
             "Y": 0,
             "Z": 0
         },
+        "RelativeLightOffset": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+        },
         "MountTalentArchetype": {
             "RowName": "None",
             "DataTableName": "D_TalentArchetypes"
+        },
+        "GrowthCurve": {
+            "RowName": "AI",
+            "DataTableName": "D_CharacterGrowth"
         }
     },
     "Rows": [
@@ -80,6 +89,11 @@
             "RelativeFeetOffset": {
                 "Y": 10,
                 "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": -14.42200756072998,
+                "Y": -33.10087585449219,
+                "Z": 50.66171646118164
             },
             "MountTalentArchetype": {
                 "RowName": "Creature_Buffalo"
@@ -134,6 +148,11 @@
             "RelativeHandsOffset": {
                 "X": -15
             },
+            "RelativeLightOffset": {
+                "X": -14.42200756072998,
+                "Y": -33.10087585449219,
+                "Z": 50.66171646118164
+            },
             "MountTalentArchetype": {
                 "RowName": "Creature_Moa"
             }
@@ -185,6 +204,11 @@
             },
             "RelativeHandsOffset": {
                 "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": -14.42200756072998,
+                "Y": -33.10087585449219,
+                "Z": 50.66171646118164
             }
         },
         {
@@ -234,6 +258,11 @@
             },
             "RelativeHandsOffset": {
                 "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": -14.42200756072998,
+                "Y": -33.10087585449219,
+                "Z": 50.66171646118164
             },
             "MountTalentArchetype": {
                 "RowName": "Creature_Swamp_Quadruped"
@@ -286,6 +315,11 @@
             },
             "RelativeHandsOffset": {
                 "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": -14.42200756072998,
+                "Y": -33.10087585449219,
+                "Z": 50.66171646118164
             }
         },
         {
@@ -331,6 +365,11 @@
             "RelativeFeetOffset": {
                 "Y": 10,
                 "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": -14.42200756072998,
+                "Y": -33.10087585449219,
+                "Z": 50.66171646118164
             },
             "MountTalentArchetype": {
                 "RowName": "Creature_WoolyZebra"
@@ -379,6 +418,11 @@
             "RelativeFeetOffset": {
                 "Y": 10,
                 "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": -14.42200756072998,
+                "Y": -33.10087585449219,
+                "Z": 50.66171646118164
             },
             "MountTalentArchetype": {
                 "RowName": "Creature_Blueback"
@@ -436,6 +480,11 @@
             "RelativeHandsOffset": {
                 "X": -15
             },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
             "MountTalentArchetype": {
                 "RowName": "Creature_Terrenus"
             }
@@ -485,6 +534,11 @@
                 "X": -10,
                 "Y": -17.5,
                 "Z": 10
+            },
+            "RelativeLightOffset": {
+                "X": -14.42200756072998,
+                "Y": -33.10087585449219,
+                "Z": 66
             },
             "MountTalentArchetype": {
                 "RowName": "Creature_Tusker"
@@ -677,6 +731,11 @@
             },
             "RelativeHandsOffset": {
                 "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
             },
             "MountTalentArchetype": {
                 "RowName": "Creature_Zebra"
@@ -899,6 +958,9 @@
             },
             "MountTalentArchetype": {
                 "RowName": "Creature_Dog"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
             }
         },
         {
@@ -945,6 +1007,9 @@
             },
             "MountTalentArchetype": {
                 "RowName": "Creature_Dog"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
             }
         },
         {
@@ -989,6 +1054,9 @@
             },
             "MountTalentArchetype": {
                 "RowName": "Creature_Cat"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
             }
         },
         {
@@ -1043,8 +1111,71 @@
             "RelativeHandsOffset": {
                 "X": -15
             },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
             "MountTalentArchetype": {
                 "RowName": "Creature_Horse"
+            }
+        },
+        {
+            "Name": "Arctic_moa",
+            "AISetup": {
+                "RowName": "Mount_Arctic_Moa"
+            },
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle_Standard"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Moa/Anims/Moa_Stand_Idle_Montage.Moa_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Moa/Anims/Moa_Rest_Montage.Moa_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Moa/Anims/Moa_Eat_Montage.Moa_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Moa/Anims/Moa_Jump_Montage.Moa_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Moa/Anims/Moa_Attack_Montage.Moa_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Moa"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-0\", \"Ranginui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-1\", \"Kupe\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-2\", \"Rongo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-3\", \"Tangaroa\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-4\", \"Haumia\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-5\", \"Maui\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-6\", \"Tane\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-7\", \"Tawhiri\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Arctic_moa-DefaultNames-8\", \"Tu\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": -14.42200756072998,
+                "Y": -33.10087585449219,
+                "Z": 50.66171646118164
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_ArcticMoa"
             }
         }
     ]

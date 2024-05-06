@@ -515,6 +515,24 @@
             "WaterFlow": {
                 "RowName": "Water_Trough"
             }
+        },
+        {
+            "Name": "Electric_Light_Single",
+            "bHasEnergyConnection": true,
+            "EnergyFlow": {
+                "RowName": "Bulb"
+            }
+        },
+        {
+            "Name": "Electric_Oxite_Dissolver",
+            "bHasEnergyConnection": true,
+            "EnergyFlow": {
+                "RowName": "Electric_Oxite_Dissolver"
+            },
+            "bHasWaterConnection": true,
+            "WaterFlow": {
+                "RowName": "Electric_Oxite_Dissolver"
+            }
         }
     ]
 }
