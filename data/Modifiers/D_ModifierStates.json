@@ -1550,7 +1550,7 @@
             "Name": "Bandage_Heat",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Bandage_Heating.ITEM_Bandage_Heating'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Bandage_Heat-ModifierName\", \"Heat Bandage\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bandage_Heat-ModifierDescription\", \"Healing frostbite.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bandage_Heat-ModifierDescription\", \"Healing frosty and frostbite.\")",
             "MergeType": "LongestDuration",
             "ModifierTags": {
                 "GameplayTags": [
@@ -4478,7 +4478,7 @@
             "Name": "Bandage_Cooling",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Bandage_Cooling.ITEM_Bandage_Cooling'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Bandage_Cooling-ModifierName\", \"Cooling Bandage\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bandage_Cooling-ModifierDescription\", \"Healing Heatstroke\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bandage_Cooling-ModifierDescription\", \"Healing heatstroke and heat exhaustion.\")",
             "MergeType": "LongestDuration",
             "ModifierTags": {
                 "GameplayTags": [
@@ -8418,7 +8418,7 @@
                 "EffectsNPCs": true
             },
             "ModifierGrantedByAura": {
-                "RowName": "GrantedAura_HypothermiaResistance"
+                "RowName": "AuraEffect_HypothermiaResistance"
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
             "ShouldTick": true,
@@ -10239,6 +10239,79 @@
             "ShouldTick": true,
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "Vitamins",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Vitamins.T_ITEM_Vitamins'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Vitamins-ModifierName\", \"Vitamins\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Vitamins-ModifierDescription\", \"Provides resistance to many of the afflictions on Icarus.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWoundResistance_%\")": 20,
+                "(Value=\"BasePoisonResistance_%\")": 10,
+                "(Value=\"BaseHyperthermiaResistance_%\")": 10,
+                "(Value=\"BaseHypothermiaResistance_%\")": 10,
+                "(Value=\"BaseFrostbiteResistance_%\")": 10,
+                "(Value=\"BaseHeatstrokeResistance_%\")": 10
+            },
+            "MergeType": "Replace"
+        },
+        {
+            "Name": "Dressing_Kit",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Dressing.T_ITEM_Dressing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dressing_Kit-ModifierName\", \"Survival Kit\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dressing_Kit-ModifierDescription\", \"Instantly heals basic wounds, deep wounds, frosty, frostbite, heatstroke and heat exhaustion.\")",
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Bandage"
+                    },
+                    {
+                        "TagName": "ModifierState.CoolingBandage"
+                    },
+                    {
+                        "TagName": "ModifierState.HeatBandage"
+                    },
+                    {
+                        "TagName": "ModifierState.SutureKit"
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Workshop_Dressing_Kit",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Workshop_Dressing.T_ITEM_Workshop_Dressing'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Workshop_Dressing_Kit-ModifierName\", \"Xigo Quick-Fix Kit\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Workshop_Dressing_Kit-ModifierDescription\", \"Heals almost anything\")",
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Bandage"
+                    },
+                    {
+                        "TagName": "ModifierState.CoolingBandage"
+                    },
+                    {
+                        "TagName": "ModifierState.HeatBandage"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Bloodthinner.T3"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antiparasitic.T3"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antibiotic.T3"
+                    },
+                    {
+                        "TagName": "ModifierState.SutureKit"
+                    }
+                ]
+            }
         }
     ]
 }

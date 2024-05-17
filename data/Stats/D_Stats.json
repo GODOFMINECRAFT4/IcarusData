@@ -14923,6 +14923,42 @@
                 "RowName": "AI"
             },
             "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseHeatstrokeResistance_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseHeatstrokeResistance_%-PositiveDescription\", \"+{0}% Heatstroke Resistance\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseHeatstrokeResistance_%-NegativeDescription\", \"-{0}% Heatstroke Resistance\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "HeatstrokeResistance_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"HeatstrokeResistance_%-Title\", \"Heatstroke Resistance\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseDiggingRewards_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDiggingRewards_+%-PositiveDescription\", \"+{0}% Yield from Digging\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDiggingRewards_+%-NegativeDescription\", \"-{0}% Yield from Digging\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "DiggingRewards_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"DiggingRewards_+%-Title\", \"Digging Yield\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
         }
     ]
 }

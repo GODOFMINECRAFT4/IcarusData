@@ -2026,7 +2026,8 @@
             "Name": "Meta_Cot_Printed",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Meta_Cot_Printed.BP_Meta_Cot_Printed_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bed_Cot_LEET.SM_DEP_Bed_Cot_LEET",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Basic_Wall_Light",
@@ -7245,10 +7246,15 @@
             "Name": "Wood_Burner",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Campfire/BP_Wood_Burner.BP_Wood_Burner_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Coal_Burner.SM_DEP_Coal_Burner",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE_SMALL.SFX_BLD_STONE_SMALL",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
-            "MaxRestackingAmount": 1
+            "MaxRestackingAmount": 1,
+            "DeployCollisionExtentOffset": {
+                "Z": -8
+            },
+            "DeployCollisionLocationOffset": {
+                "Z": -18
+            }
         },
         {
             "Name": "Kitchen_Corner",
@@ -7300,7 +7306,7 @@
             "Name": "Stone_Cairn",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Stone_Cairn.BP_Stone_Cairn_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Cairn_Stone/SM_DEP_Cairn_Stone.SM_DEP_Cairn_Stone",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE_SMALL.SFX_BLD_STONE_SMALL"
         },
         {
             "Name": "Exposed_Wall_Light_Foggy",
@@ -7322,6 +7328,42 @@
             "SupportsCustomRotation": false,
             "WorldPlacementType": "CeilingPlacement",
             "bCanAffectNavigation": false
+        },
+        {
+            "Name": "LightningRod_Platinum_Roof",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Weather/BP_LightningRod_Platinum.BP_LightningRod_Platinum_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_LightningRod_Platinum.T_ITEM_LightningRod_Platinum",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"LightningRod_Platinum_Roof-DeployableName\", \"Roof\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_LightningRod_Platinum.SM_DEP_LightningRod_Platinum",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SnapToSurfaceNormal": false,
+            "MaxSurfaceSnapAngle": 50,
+            "SupportsCustomRotation": false,
+            "DeployCollisionExtentOffset": {
+                "Z": -10
+            },
+            "DeployCollisionLocationOffset": {
+                "Z": 10
+            }
+        },
+        {
+            "Name": "LightningRod_Platinum_Wall",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Weather/BP_LightningRod_Platinum.BP_LightningRod_Platinum_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_LightningRod_Platinum.T_ITEM_LightningRod_Platinum",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"LightningRod_Platinum_Wall-DeployableName\", \"Wall\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_LightningRod_Platinum.SM_DEP_LightningRod_Platinum",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement"
+        },
+        {
+            "Name": "Charging_Device",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Charger/BP_Charging_Device.BP_Charging_Device_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Powered_Charger.SM_DEP_Powered_Charger",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "DeployCollisionExtentOffset": {
+                "Z": -100
+            }
         }
     ]
 }

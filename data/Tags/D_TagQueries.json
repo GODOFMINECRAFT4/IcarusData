@@ -5934,6 +5934,72 @@
                 ],
                 "AutoDescription": " ALL( Traits.Buildable, Building.Steel )"
             }
+        },
+        {
+            "Name": "Any_Dirt",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Dirt"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Resource.Dirt )"
+            }
+        },
+        {
+            "Name": "Any_Battery_Powered_Object",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Powered.Battery"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Powered.Battery )"
+            }
+        },
+        {
+            "Name": "Any_Foliage_To_Restore",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Foliage.BurntTree"
+                    },
+                    {
+                        "TagName": "Foliage.Tree"
+                    },
+                    {
+                        "TagName": "Foliage.PermitRestore"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    5,
+                    2,
+                    3,
+                    2,
+                    0,
+                    1,
+                    1,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ALL(  NONE( Foliage.BurntTree, Foliage.Tree ),  ANY( Foliage.PermitRestore ) )"
+            }
         }
     ]
 }

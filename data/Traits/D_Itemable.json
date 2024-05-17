@@ -1048,7 +1048,7 @@
             "Name": "Item_Flashlight",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Flashlight-DisplayName\", \"Flashlight\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Flashlight.ITEM_Flashlight",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Flashlight-Description\", \"An LED flashlight for illuminating dark corners.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Flashlight-Description\", \"An LED flashlight for illuminating dark corners. Can be recharged in a Charging Station.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Flashlight-FlavorText\", \"Activate light with secondary fire.\")",
             "Weight": 250
         },
@@ -1106,7 +1106,7 @@
             "Name": "Item_Wheat",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Wheat-DisplayName\", \"Wheat\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Wheat.ITEM_Wheat",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Wheat-Description\", \"Process into flour using the mortar and pestle, or add direct to composter.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Wheat-Description\", \"Process into flour using the mortar and pestle.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Wheat-FlavorText\", \"An essential ingredient to basic foods and drinks. Whether baking bread or brewing beer, wheat is where it all begins.\")",
             "Weight": 25,
             "MaxStack": 100
@@ -1298,7 +1298,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fireplace.ITEM_Fireplace",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fireplace-Description\", \"Cooks food swiftly and safely. Basically a large enclosed firepit, for a more homely feel.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fireplace-FlavorText\", \"On Icarus, fire is both friend and foe.\")",
-            "Weight": 2000
+            "Weight": 30000
         },
         {
             "Name": "Item_Farming_CropPlot_T2",
@@ -1637,7 +1637,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fireplace_Chimney_Ext.ITEM_Fireplace_Chimney_Ext",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fireplace_Chimney_Ext-Description\", \"Send the smoke skyward.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fireplace_Chimney_Ext-FlavorText\", \"\\'Sometimes it felt like I had joined a rustic interior decoration cult\\' - M. Le Baroni\")",
-            "Weight": 2000
+            "Weight": 6500
         },
         {
             "Name": "Item_Fireplace_Chimney_Cap",
@@ -2352,7 +2352,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_PotBellyStove.ITEM_PotBellyStove",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_PotBellyStove-Description\", \"A wrought iron stove for cooking basic meals.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_PotBellyStove-FlavorText\", \"Hearty and filling, the warm meals provided by this stove are the next steps towards culinary perfection.\")",
-            "Weight": 1750
+            "Weight": 4000
         },
         {
             "Name": "Item_Rain_Reservoir",
@@ -3653,7 +3653,7 @@
             "Name": "Item_Bandage_Heat",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Bandage_Heat-DisplayName\", \"Heat Bandage\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Bandage_Heating.ITEM_Bandage_Heating",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Bandage_Heat-Description\", \"Cloth bandages impregnated with a warming salve, for treating frostbite.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Bandage_Heat-Description\", \"Cloth bandages impregnated with a warming salve, for treating frosty and frostbite.\")",
             "Weight": 100,
             "MaxStack": 10
         },
@@ -6579,7 +6579,7 @@
             "Name": "Item_Bandage_Cooling",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Bandage_Cooling-DisplayName\", \"Cooling Bandage\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Bandage_Cooling.ITEM_Bandage_Cooling",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Bandage_Cooling-Description\", \"A bandage with a soothing balm to quickly lower temperatures\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Bandage_Cooling-Description\", \"A bandage with a soothing balm to quickly lower temperatures. Treats heatsroke and heat exhaustion.\")",
             "Weight": 100,
             "MaxStack": 10
         },
@@ -12903,7 +12903,7 @@
             "Name": "Item_Masonry_Bench_T3",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Masonry_Bench_T3-DisplayName\", \"Advanced Masonry Bench\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Masonry_Bench_T3.T_ITEM_Masonry_Bench_T3",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Masonry_Bench_T3-Description\", \"A manual workspace for crafting simple building supplies, weapons, and tools.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Masonry_Bench_T3-Description\", \"A manual workspace for detailed stonework and crafting.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Masonry_Bench_T3-FlavorText\", \"The skill and precision of a mason can never be replaced by machines...\")",
             "Weight": 35000
         },
@@ -16962,11 +16962,17 @@
         {
             "Name": "Item_Single_Wall_Light",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Single_Wall_Light-DisplayName\", \"Single Wall Light\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Single_Wall_Light.T_ITEM_Single_Wall_Light",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Single_Wall_Light-Description\", \"A simple wall light.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Single_Wall_Light-FlavorText\", \"A simple light for your lighting needs.\")",
             "Weight": 1000
         },
         {
             "Name": "Item_Single_Ceiling_Light",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Single_Ceiling_Light-DisplayName\", \"Single Ceiling Light\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Single_Ceiling_Light.T_ITEM_Single_Ceiling_Light",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Single_Ceiling_Light-Description\", \"A simple wall light.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Single_Ceiling_Light-FlavorText\", \"A simple light for your lighting needs.\")",
             "Weight": 1000
         },
         {
@@ -16999,7 +17005,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Wood_Burner.T_ITEM_Wood_Burner",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Burner-Description\", \"For keeping you warm in cold environments and basic cooking.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Burner-FlavorText\", \"Your a true survivor now.\")",
-            "Weight": 1000
+            "Weight": 10000
         },
         {
             "Name": "Item_Kitchen_Corner_Bench",
@@ -17081,6 +17087,73 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Exposed_Ceiling_Light_Foggy-Description\", \"A classic exposed light bulb.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Exposed_Ceiling_Light_Foggy-FlavorText\", \"A simple light for your lighting needs.\")",
             "Weight": 1000
+        },
+        {
+            "Name": "Item_Vitamins",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Vitamins-DisplayName\", \"Vitamins\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Vitamins.T_ITEM_Vitamins",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Vitamins-Description\", \"Provides resistance to many of the afflictions on Icarus.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Vitamins-FlavorText\", \"One a day keeps the doctor away.\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Dressing_Kit",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dressing_Kit-DisplayName\", \"Survival Kit\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Dressing.T_ITEM_Dressing",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dressing_Kit-Description\", \"Heals basic wounds, deep wounds, frostbite and heatstroke.\")",
+            "Weight": 1000,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Workshop_Dressing_Kit",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dressing_Kit-DisplayName\", \"Xigo Quick-Fix Kit\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Workshop_Dressing.T_ITEM_Workshop_Dressing",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dressing_Kit-Description\", \"Provides the best healing Xigo can offer, treating most wounds, poisons\\', bacterial and parasitic infections instantly.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dressing_Kit-FlavorText\", \"One of the latest Xigo products, for a better you.\")",
+            "Weight": 1600,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Workshop_Dressing_Kit_Bundle",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dressing_Kit_Bundle-DisplayName\", \"Xigo Quick-Fix Bundle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Workshop_Dressing_Bundle.T_ITEM_Workshop_Dressing_Bundle",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dressing_Kit_Bundle-Description\", \"Provides the best healing Xigo can offer, treating most wounds, poisons\\', bacterial and parasitic infections instantly. Consume for a pack for 5 Xigo Quick-Fix Kits\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dressing_Kit_Bundle-FlavorText\", \"One of the latest Xigo products, for a better you.\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Medicine_Bag",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Medicine_Bag-DisplayName\", \"Medical Satchel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Medicine_Bag.T_ITEM_Medicine_Bag",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Medicine_Bag-Description\", \"A sturdy satchel which can carry all sorts of medical supplies.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Medicine_Bag-FlavorText\", \"You are a real doctor now.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Dirt_Corner",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dirt_Corner-DisplayName\", \"Dirt Corner\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Dirt_Corner_0.T_ITEM_Dirt_Corner_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dirt_Corner-Description\", \"A simple corner to help with foundation building.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dirt_Corner-FlavorText\", \"The most basic of construction\")",
+            "Weight": 2500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_LightningRod_Platinum",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_LightningRod_Platinum-DisplayName\", \"Platinum Lightning Rod\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_LightningRod_Platinum.T_ITEM_LightningRod_Platinum",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_LightningRod_Platinum-Description\", \"Channels lightning strikes safely toward the ground, saving structures from fiery destruction. Can be connected to a power network to charge batteries when struck.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_LightningRod_Platinum-FlavorText\", \"The effect of Minos\\'s gravitational tides on the atmosphere creates extraordinarily powerful electrical storms, making these devices indispensible.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Charging_Device",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Charging_Device-DisplayName\", \"Charging Station\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Charging_Device.T_ITEM_Charging_Device",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Charging_Device-Description\", \"Charges basic battery powered devices when they are placed inside.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Charging_Device-FlavorText\", \"Gotta Love Technology\")",
+            "Weight": 10000
         }
     ]
 }
