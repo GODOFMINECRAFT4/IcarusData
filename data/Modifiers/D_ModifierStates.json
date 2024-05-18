@@ -204,7 +204,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Stamina_Consumption-ModifierName\", \"Stamina Consumption\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Stamina_Consumption-ModifierDescription\", \"Decreases stamina consumption\")",
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": -5
+                "(Value=\"BaseStaminaActionCost_+%\")": -5
             },
             "ShouldTick": true,
             "MergeType": "Replace",
@@ -421,7 +421,7 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Affliction_Overheating-ModifierDescription\", \"Your body temperature is rising. Thirst has increased. You need to cool down.\")",
             "GrantedStats": {
                 "(Value=\"BaseWaterConsumption_+%\")": 50,
-                "(Value=\"BaseStaminaConsumed_+%\")": 10
+                "(Value=\"BaseStaminaActionCost_+%\")": 10
             },
             "bEscalates": true,
             "Escalation": {
@@ -468,7 +468,7 @@
             },
             "GrantedStats": {
                 "(Value=\"BaseWaterConsumption_+%\")": 100,
-                "(Value=\"BaseStaminaConsumed_+%\")": 25
+                "(Value=\"BaseStaminaActionCost_+%\")": 25
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_HeatOverload.BP_Modifier_HeatOverload_C",
             "ModifierVariables": {
@@ -2427,7 +2427,7 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"DeathRun-ModifierDescription\", \"Short speed and stamina boost on respawn.\")",
             "GrantedStats": {
                 "(Value=\"BaseMovementSpeed_+%\")": 10,
-                "(Value=\"BaseStaminaConsumed_+%\")": -20,
+                "(Value=\"BaseStaminaActionCost_+%\")": -20,
                 "(Value=\"BaseStealthThreatModifier_+%\")": -15
             },
             "MergeType": "Stack"
@@ -5801,7 +5801,7 @@
                 "(Value=\"BaseMaximumStamina_+\")": 225,
                 "(Value=\"BaseOxygenConsumption_+%\")": -10,
                 "(Value=\"BaseWaterConsumption_+%\")": -10,
-                "(Value=\"BaseStaminaConsumed_+%\")": -10
+                "(Value=\"BaseStaminaActionCost_+%\")": -10
             },
             "ModifierEffectivenessAffectors": [
                 {
@@ -6032,7 +6032,7 @@
                 "(Value=\"BaseMaximumHealth_+\")": 150,
                 "(Value=\"BaseMaximumStamina_+\")": 75,
                 "(Value=\"BaseStaminaRegen_+%\")": 10,
-                "(Value=\"BaseStaminaConsumed_+%\")": -10,
+                "(Value=\"BaseStaminaActionCost_+%\")": -10,
                 "(Value=\"BaseMeleeDamage_+%\")": 5
             },
             "ModifierEffectivenessAffectors": [
@@ -6701,7 +6701,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseWaterConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -20,
@@ -6731,7 +6731,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseWaterConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -10,
@@ -6761,7 +6761,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseWaterConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -10,
@@ -6791,7 +6791,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseWaterConsumption_+%\")": 100,
                 "(Value=\"BaseCooldownDegreePerMinute_+\")": -16,
@@ -6820,7 +6820,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseWaterConsumption_+%\")": 100,
                 "(Value=\"BaseCooldownDegreePerMinute_+\")": -24,
@@ -6849,7 +6849,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseOxygenConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -10,
@@ -6879,7 +6879,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseOxygenConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -20
@@ -6907,7 +6907,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseOxygenConsumption_+%\")": 100,
                 "(Value=\"BaseCooldownDegreePerMinute_+\")": 16,
@@ -6939,7 +6939,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseOxygenConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -30
@@ -6967,7 +6967,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseOxygenConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -20,
@@ -6996,7 +6996,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseFoodConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -10
@@ -7024,7 +7024,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseFoodConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -30
@@ -7052,7 +7052,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseFoodConsumption_+%\")": 100,
                 "(Value=\"BaseCooldownDegreePerMinute_+\")": 24,
@@ -7081,7 +7081,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseOxygenConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -10
@@ -7109,7 +7109,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseOxygenConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -30
@@ -7137,7 +7137,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseOxygenConsumption_+%\")": 100,
                 "(Value=\"BaseCooldownDegreePerMinute_+\")": 16,
@@ -7167,7 +7167,7 @@
                 "RowName": "Exposure_Light"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseOxygenConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -20
@@ -7494,6 +7494,11 @@
                 "(Value=\"BaseToolStaminaActionCost_+%\")": -20,
                 "(Value=\"BaseExperience_+%\")": 15
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -7513,6 +7518,11 @@
                 "(Value=\"BaseToolStaminaActionCost_+%\")": -10,
                 "(Value=\"BaseWaterConsumption_+%\")": -10
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -7531,6 +7541,11 @@
                 "(Value=\"BaseMaximumStamina_+\")": 100,
                 "(Value=\"BaseToolStaminaActionCost_+%\")": -15
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -7559,7 +7574,8 @@
                     "Value": "FoodModifierDuration_+%"
                 }
             ],
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "RemovedOnClick": true
         },
         {
             "Name": "GasFlyer_Poison",
@@ -8490,9 +8506,9 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Honey_Mead-ModifierName\", \"Honey Mead\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Honey_Mead-ModifierDescription\", \"Boosts max stamina and food modifier duration.\")",
             "GrantedStats": {
-                "(Value=\"BaseStaminaRegen_+%\")": 100,
-                "(Value=\"BaseMaximumStamina_+\")": 125,
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 125,
+                "(Value=\"BaseStaminaRegen_+%\")": 100,
                 "(Value=\"BaseFoodModifierDuration_+%\")": 30
             },
             "ModifierLifetimeAffectors": [
@@ -8513,6 +8529,11 @@
                 "(Value=\"BaseToolStaminaActionCost_+%\")": -10,
                 "(Value=\"BaseFoodModifierDuration_+%\")": 15
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -8746,7 +8767,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseWaterConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -10
@@ -8775,7 +8796,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseWaterConsumption_+%\")": 100,
                 "(Value=\"BaseSprintSpeed_+%\")": -30
@@ -8804,7 +8825,7 @@
                 "RowName": "Exposure_Dynamic"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 100,
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
                 "(Value=\"BaseMovementSpeed_+%\")": -50,
                 "(Value=\"BaseWaterConsumption_+%\")": 100,
                 "(Value=\"BaseCooldownDegreePerMinute_+\")": -24,
@@ -8931,7 +8952,7 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Treated_Water-ModifierDescription\", \"Water that has be treated with charcoal.\")",
             "GrantedStats": {
                 "(Value=\"BaseWaterConsumption_+%\")": -10,
-                "(Value=\"BaseStaminaConsumed_+%\")": -10
+                "(Value=\"BaseStaminaActionCost_+%\")": -10
             },
             "MergeType": "Stack",
             "ModifierTags": {
@@ -8972,7 +8993,7 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Purified_Water-ModifierDescription\", \"Water that has undergone a purification process.\")",
             "GrantedStats": {
                 "(Value=\"BaseWaterConsumption_+%\")": -15,
-                "(Value=\"BaseStaminaConsumed_+%\")": -15
+                "(Value=\"BaseStaminaActionCost_+%\")": -15
             },
             "MergeType": "Stack",
             "ModifierTags": {
@@ -9177,7 +9198,7 @@
                 "RowName": "Generic_Negative_LongCoolDown"
             },
             "GrantedStats": {
-                "(Value=\"BaseStaminaConsumed_+%\")": 50,
+                "(Value=\"BaseStaminaActionCost_+%\")": 50,
                 "(Value=\"BaseMeleeDamageResistance_+%\")": -25
             },
             "bEscalates": true,
@@ -9923,7 +9944,7 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Corn-ModifierDescription\", \"Greatly reduces animal stamina consumption while slightly reducing animal sprint speed.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
-                "(Value=\"BaseStaminaConsumed_+%\")": -75,
+                "(Value=\"BaseStaminaActionCost_+%\")": -75,
                 "(Value=\"BaseSprintSpeed_+%\")": -25
             },
             "ModifierEffectivenessAffectors": [
@@ -9945,7 +9966,7 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Carrot-ModifierDescription\", \"Increases animal sprint speed at the cost of greatly increased stamina consumption.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
-                "(Value=\"BaseStaminaConsumed_+%\")": 75,
+                "(Value=\"BaseStaminaActionCost_+%\")": 75,
                 "(Value=\"BaseSprintSpeed_+%\")": 20
             },
             "ModifierEffectivenessAffectors": [

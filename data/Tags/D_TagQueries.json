@@ -6000,6 +6000,24 @@
                 ],
                 "AutoDescription": " ALL(  NONE( Foliage.BurntTree, Foliage.Tree ),  ANY( Foliage.PermitRestore ) )"
             }
+        },
+        {
+            "Name": "Resource_Sticks_Item",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Stick"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Resource.Stick )"
+            }
         }
     ]
 }

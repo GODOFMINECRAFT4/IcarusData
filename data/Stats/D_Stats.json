@@ -1288,7 +1288,8 @@
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseUnitsConsumed_+-NegativeDescription\", \"-{0} Units on use\")",
             "StatCategory": {
                 "RowName": "Consumption"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "AwarenessLevel_+",
@@ -2941,8 +2942,8 @@
         },
         {
             "Name": "BaseVoxelChanceToHarvestSecondaryResource_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVoxelChanceToHarvestSecondaryResource_%-PositiveDescription\", \"{0}% chance to find additional Resources while Mining\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVoxelChanceToHarvestSecondaryResource_%-NegativeDescription\", \"-{0}% chance to find additional Resources while Mining\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVoxelChanceToHarvestSecondaryResource_%-PositiveDescription\", \"{0}% chance to find additional Stone while Mining\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVoxelChanceToHarvestSecondaryResource_%-NegativeDescription\", \"-{0}% chance to find additional Stone while Mining\")",
             "StatCategory": {
                 "RowName": "Mining"
             }
@@ -8413,6 +8414,7 @@
         },
         {
             "Name": "IsInvolvedInQuest_?",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"IsInvolvedInQuest_?-PositiveTitleFormat\", \"Involved In Quest\")",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsInvolvedInQuest_?-PositiveDescription\", \"Quest Item\")"
         },
         {

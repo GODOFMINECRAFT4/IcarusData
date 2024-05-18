@@ -3823,6 +3823,73 @@
                     "RowName": "Laika"
                 }
             }
+        },
+        {
+            "Name": "Arctic_Moa",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Moa-CreatureName\", \"Arctic Moa\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/Bestiary_Arctic_Moa.Bestiary_Arctic_Moa",
+            "PopupImageScale": 1.350000023841858,
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MOA.UI_BESTIARY_CRE_MOA",
+            "Biomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_019",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "TotalPointsRequired": 1800,
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Moa-Lore1\", \"Found in icy terrazone environments. This previously extinct creature had many variants. Specifically found on Icarus is the Dinornis novaezealandiae, the second largest moa species in recorded history.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Moa-Lore2\", \"This large flightless bird is the result of genetic experimentation, preserved Moa DNA was found in amber near Tekapo, New Zealand. This was used to revive the extinct species.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Moa-Lore3\", \"\\\"Life will find a way... Directly into a prospectors stomach.\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Head_CritSpot",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "ProtectYoung_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Poison_Weakness",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Frost_Resist_Strength",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Fast_Strength",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseJuvenileCreatureMinimumTemperatureRequirement_+%\")": -5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseMountedExposureResistance_+%\")": 5
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "BaseMoaExtraDamage_+%"
+                },
+                {
+                    "Value": "BaseMoaExtraDamageResistance_+%"
+                }
+            ]
         }
     ]
 }
