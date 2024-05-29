@@ -3910,19 +3910,19 @@
             "ResearchCost": [
                 {
                     "Meta": {
-                        "RowName": "Exotic1",
+                        "RowName": "Credits",
                         "DataTableName": "D_MetaCurrency"
                     },
-                    "Amount": 1000
+                    "Amount": 300
                 }
             ],
             "ReplicationCost": [
                 {
                     "Meta": {
-                        "RowName": "Exotic1",
+                        "RowName": "Credits",
                         "DataTableName": "D_MetaCurrency"
                     },
-                    "Amount": 400
+                    "Amount": 100
                 }
             ]
         },
@@ -3934,19 +3934,33 @@
             "ResearchCost": [
                 {
                     "Meta": {
-                        "RowName": "Exotic1",
+                        "RowName": "Credits",
                         "DataTableName": "D_MetaCurrency"
                     },
-                    "Amount": 1000
-                }
-            ],
-            "ReplicationCost": [
+                    "Amount": 500
+                },
                 {
                     "Meta": {
                         "RowName": "Exotic1",
                         "DataTableName": "D_MetaCurrency"
                     },
-                    "Amount": 400
+                    "Amount": 250
+                }
+            ],
+            "ReplicationCost": [
+                {
+                    "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 250
+                },
+                {
+                    "Meta": {
+                        "RowName": "Exotic1",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 100
                 }
             ]
         },
@@ -4824,14 +4838,7 @@
                         "RowName": "Exotic_Red",
                         "DataTableName": "D_MetaCurrency"
                     },
-                    "Amount": 100
-                },
-                {
-                    "Meta": {
-                        "RowName": "Exotic1",
-                        "DataTableName": "D_MetaCurrency"
-                    },
-                    "Amount": 100
+                    "Amount": 250
                 }
             ],
             "ReplicationCost": [
@@ -4840,7 +4847,14 @@
                         "RowName": "Credits",
                         "DataTableName": "D_MetaCurrency"
                     },
-                    "Amount": 250
+                    "Amount": 200
+                },
+                {
+                    "Meta": {
+                        "RowName": "Exotic_Red",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 200
                 }
             ]
         },
@@ -4855,16 +4869,23 @@
                         "RowName": "Exotic_Red",
                         "DataTableName": "D_MetaCurrency"
                     },
-                    "Amount": 500
+                    "Amount": 250
                 }
             ],
             "ReplicationCost": [
                 {
                     "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 200
+                },
+                {
+                    "Meta": {
                         "RowName": "Exotic_Red",
                         "DataTableName": "D_MetaCurrency"
                     },
-                    "Amount": 250
+                    "Amount": 200
                 }
             ]
         },
@@ -7225,6 +7246,42 @@
                     "Amount": 50
                 }
             ]
+        },
+        {
+            "Name": "Meta_Dog_D1",
+            "Item": {
+                "RowName": "Workshop_Dog_D1"
+            },
+            "ResearchCost": [
+                {
+                    "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 500
+                },
+                {
+                    "Meta": {
+                        "RowName": "Exotic1",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 250
+                }
+            ],
+            "ReplicationCost": [
+                {
+                    "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 250
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
         }
     ]
 }

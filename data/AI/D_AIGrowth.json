@@ -3315,6 +3315,45 @@
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
         {
+            "Name": "Dog_C",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 200,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10,
+                "(Value=\"BasePoisonDamageResistance_%\")": -50,
+                "(Value=\"BaseMaximumFood_+\")": 200,
+                "(Value=\"BaseMaximumWater_+\")": 200,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 60,
+                "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 100,
+                "(Value=\"BaseFallDamageResistance_%\")": 40
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_Tame_Dog_Health.C_Tame_Dog_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Tame_Dog_MeleeDamage.C_Tame_Dog_MeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_Tame_Dog_C_MovementSpeed.C_Tame_Dog_C_MovementSpeed'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
             "Name": "MiniHippo_Quest",
             "Base": {
                 "(Value=\"BaseSwimSpeed_+\")": 300,
@@ -3384,11 +3423,11 @@
                 "(Value=\"BasePhysicalDamageResistance_%\")": 40,
                 "(Value=\"BaseMaximumStomachFullness_+\")": 2,
                 "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 100,
-                "(Value=\"BaseFallDamageResistance_%\")": 40
+                "(Value=\"BaseFallDamageResistance_%\")": 40,
+                "(Value=\"BaseMovementSpeed_+\")": 140
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Tame_Boar_Health.C_Tame_Boar_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Tame_Boar_MeleeDamage.C_Tame_Boar_MeleeDamage'",
-            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_WolfMovementSpeed.C_WolfMovementSpeed'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
         {
@@ -3419,6 +3458,62 @@
             "Health": "CurveFloat'/Game/Data/AI/C_MoaHealth.C_MoaHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_MoaMeleeDamage.C_MoaMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Dog_D",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 250,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseCharacterMass_+\")": 100,
+                "(Value=\"BaseNPCAttackRadius_+\")": 500,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 10,
+                "(Value=\"BaseImmobiliseResistance_%\")": 10,
+                "(Value=\"BasePoisonDamageResistance_%\")": -50,
+                "(Value=\"BaseMaximumFood_+\")": 200,
+                "(Value=\"BaseMaximumWater_+\")": 200,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 120,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 60,
+                "(Value=\"BaseWaterConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BaseOxygenConsumedPerStaminaUsed_+%\")": 0,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 100,
+                "(Value=\"BaseFallDamageResistance_%\")": 40,
+                "(Value=\"BaseWeightCapacity_+\")": 5
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_Tame_Dog_Health.C_Tame_Dog_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Tame_Dog_MeleeDamage.C_Tame_Dog_MeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_Tame_Dog_D_MovementSpeed.C_Tame_Dog_D_MovementSpeed'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Eagle",
+            "Base": {
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseMaximumHealth_+\")": 25,
+                "(Value=\"BaseCharacterMass_+\")": 10,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 50
+            },
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         }
     ]
 }

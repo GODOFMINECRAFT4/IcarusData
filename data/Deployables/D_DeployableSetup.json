@@ -7179,8 +7179,8 @@
         },
         {
             "Name": "Dog_Trophy_C1",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Sheep.BP_Trophy_Sheep_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_GermanShepherd/SM_DEP_Trophy_GermanShepherd.SM_DEP_Trophy_GermanShepherd",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Dog_C1.BP_Trophy_Dog_C1_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Pug/SM_DEP_Trophy_Pug.SM_DEP_Trophy_Pug",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
@@ -7368,6 +7368,60 @@
             "DeployCollisionExtentOffset": {
                 "Z": -100
             }
+        },
+        {
+            "Name": "Butchery_Bench",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Butchery_Bench.BP_Butchery_Bench_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Bench_Kitchen_Prime_Filleting/SM_DEP_Bench_Kitchen_Prime_Filleting.SM_DEP_Bench_Kitchen_Prime_Filleting",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Kitchen"
+            ],
+            "SnapSocketsOrTags": [
+                "Unit_R",
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
+            ],
+            "UseSnapSocketRotation": true,
+            "MaxRestackingAmount": 10
+        },
+        {
+            "Name": "Advanced_Butchery_Bench",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Advanced_Butchery_Bench.BP_Advanced_Butchery_Bench_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Bench_Kitchen_Prime_Filleting_T4/SM_DEP_Bench_Kitchen_Prime_Filleting_T4.SM_DEP_Bench_Kitchen_Prime_Filleting_T4",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Kitchen"
+            ],
+            "SnapSocketsOrTags": [
+                "Unit_R",
+                "Unit_L",
+                "Unit_F",
+                "Unit_B"
+            ],
+            "UseSnapSocketRotation": true,
+            "MaxRestackingAmount": 10
+        },
+        {
+            "Name": "Dog_Trophy_D1_1",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Dog_D1_1.BP_Trophy_Dog_D1_1_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Laika/SM_DEP_Trophy_Laika_B.SM_DEP_Trophy_Laika_B",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Dog_Trophy_D1_2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Dog_D1_2.BP_Trophy_Dog_D1_2_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Laika/SM_DEP_Trophy_Laika_A.SM_DEP_Trophy_Laika_A",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
         }
     ]
 }

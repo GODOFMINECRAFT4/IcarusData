@@ -15610,7 +15610,7 @@
         {
             "Name": "Item_Saddle_Cart_Plough",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-DisplayName\", \"Seeding Cart\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Harvest.T_ITEM_Saddle_Cart_Harvest",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Plough.T_ITEM_Saddle_Cart_Plough",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-Description\", \"A cart which when stocked with seeds and pulled by an animal will create dirt mounds with planted seeds.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Cart_Plough-FlavorText\", \"Can be pulled by a tamed Buffalo or Tusker.\")",
             "Weight": 80000
@@ -16283,6 +16283,7 @@
             "Name": "Item_Rifle_CHAC",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_CHAC-DisplayName\", \"CHAC \\\"Sovereign\\\" Rifle\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Rifle_CHAC.T_ITEM_Rifle_CHAC",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_CHAC-Description\", \"A modern hunting rifle with fairly quick reloads that deals a decent amount of damage.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_CHAC-FlavorText\", \"The latest addition from the China Hangzhou Armament Company\")",
             "Weight": 3000
         },
@@ -16901,6 +16902,7 @@
         {
             "Name": "Item_Dog_Trophy_C1",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_C1-DisplayName\", \"Pug Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Dog_Trophy_C1.T_ITEM_Dog_Trophy_C1",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_C1-Description\", \"A preserved memory of your Good Dog.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_C1-FlavorText\", \"Once a loyal companion.\")",
             "Weight": 2500
@@ -17160,6 +17162,76 @@
             "DisplayName": "INVTEXT(\"[DNT] Interior Wood Corner Stairs\")",
             "Weight": 500,
             "MaxStack": 20
+        },
+        {
+            "Name": "Item_Workshop_Dog_D1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_D1-DisplayName\", \"Cryogenically Frozen Laika\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Dog_D1.T_ITEM_Workshop_Dog_D1",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_D1-Description\", \"A Dog preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_D1-FlavorText\", \"It is Laika - Back from space - what a good dog.\")",
+            "Weight": 10
+        },
+        {
+            "Name": "Item_Dog_Head_D1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Head_D1-DisplayName\", \"Tan Laika Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Dog_Head_D1_1.T_ITEM_Dog_Head_D1_1",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Head_D1-Description\", \"A preserved memory of a once loyal companion.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Head_D1-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Dog_Trophy_D1_1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_D1_1-DisplayName\", \"Tan Laika Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Dog_Trophy_D1_1.T_ITEM_Dog_Trophy_D1_1",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_D1_1-Description\", \"A preserved memory of your Good Dog.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_D1_1-FlavorText\", \"Once a loyal companion.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Dog_Trophy_D1_2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_D1_2-DisplayName\", \"Tan Laika Jumpsuit Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Dog_Trophy_D1_2.T_ITEM_Dog_Trophy_D1_2",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_D1_2-Description\", \"A preserved memory of your Good Dog.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Trophy_D1_2-FlavorText\", \"Once a loyal companion.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Carcass_Dog_D",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Dog_D-DisplayName\", \"Laika Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Dog_Carcass_D1_1.T_ITEM_Dog_Carcass_D1_1",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Dog_D-Description\", \"A good dog lies at your feet now dead.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Dog_D-FlavorText\", \"Frozen on Earth, Defrosted on Icarus, What a Life...\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_Butchery_Bench",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Butchery_Bench-DisplayName\", \"Butchery Bench\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Butchery_Bench.T_ITEM_Butchery_Bench",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Butchery_Bench-Description\", \"A modular workspace for cooking and concocting complex recipes.\")",
+            "Weight": 20000
+        },
+        {
+            "Name": "Item_Advanced_Butchery_Bench",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Advanced_Butchery_Bench-DisplayName\", \"Marble Butchery Bench\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Advanced_Butchery_Bench.T_ITEM_Advanced_Butchery_Bench",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Advanced_Butchery_Bench-FlavorText\", \"Cleaner and more durable than other benches on Icarus. \")",
+            "Weight": 20000
+        },
+        {
+            "Name": "Item_Carcass_Eagle",
+            "DisplayName": "INVTEXT(\"[DNT] Eagle Carcass\")",
+            "Description": "INVTEXT(\"[DNT] Eagle Carcass\")",
+            "FlavorText": "INVTEXT(\"[DNT] Eagle Carcass\")",
+            "Weight": 1250
+        },
+        {
+            "Name": "Item_Dog_Accessory_D",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Accessory_D-DisplayName\", \"Laika\\'s Jumpsuit\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Dog_Accessory_D.T_ITEM_Dog_Accessory_D",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Accessory_D-Description\", \"An old harness fashioned into a jumpsuit for a very special dog. (A Laika dog accessory only)\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dog_Accessory_D-FlavorText\", \"Laika was a good dog.\")",
+            "Weight": 500
         }
     ]
 }
