@@ -24427,15 +24427,15 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseJuvenileCreatureMinimumTemperatureRequirement_+%\")": -5,
-                        "(Value=\"BaseJuvenileCreatureMaximumTemperatureRequirement_+%\")": 5
+                        "(Value=\"BaseTameMinimumDesiredTemperature_+\")": -200,
+                        "(Value=\"BaseTameMaximumDesiredTemperature_+\")": 200
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseJuvenileCreatureMinimumTemperatureRequirement_+%\")": -10,
-                        "(Value=\"BaseJuvenileCreatureMaximumTemperatureRequirement_+%\")": 10
+                        "(Value=\"BaseTameMinimumDesiredTemperature_+\")": -400,
+                        "(Value=\"BaseTameMaximumDesiredTemperature_+\")": 400
                     },
                     "GrantedFlags": []
                 }
@@ -24594,7 +24594,7 @@
         {
             "Name": "Husbandry_TameColdTolerance",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameColdTolerance-DisplayName\", \"Arctic Training\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameColdTolerance-Description\", \"Faster taming in colder environments\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameColdTolerance-Description\", \"Allows taming in colder environments\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_ArcticMaster.Talent_Exploration_ArcticMaster",
             "TalentTree": {
                 "RowName": "Construction_Husbandry"
@@ -24610,7 +24610,13 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseJuvenileCreatureMinimumTemperatureRequirement_+%\")": -10
+                        "(Value=\"BaseTameMinimumDesiredTemperature_+\")": -500
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTameMinimumDesiredTemperature_+\")": -1000
                     },
                     "GrantedFlags": []
                 }
@@ -24628,7 +24634,7 @@
         {
             "Name": "Husbandry_TameHeatTolerance",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameHeatTolerance-DisplayName\", \"Desert Training\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameHeatTolerance-Description\", \"Faster taming in hotter environments\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameHeatTolerance-Description\", \"Allows taming in hotter environments\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_DesertMaster.Talent_Exploration_DesertMaster",
             "TalentTree": {
                 "RowName": "Construction_Husbandry"
@@ -24644,7 +24650,13 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseJuvenileCreatureMaximumTemperatureRequirement_+%\")": 10
+                        "(Value=\"BaseTameMaximumDesiredTemperature_+\")": 500
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseTameMaximumDesiredTemperature_+\")": 1000
                     },
                     "GrantedFlags": []
                 }
@@ -42382,7 +42394,7 @@
                 "RowName": "Workshop_Creatures"
             },
             "Position": {
-                "X": 1200,
+                "X": 1500,
                 "Y": 250
             },
             "Size": {
@@ -42412,7 +42424,7 @@
                 "RowName": "Workshop_Creatures"
             },
             "Position": {
-                "X": 1600,
+                "X": 1900,
                 "Y": 850
             },
             "Size": {
@@ -42442,7 +42454,7 @@
                 "RowName": "Workshop_Creatures"
             },
             "Position": {
-                "X": 1200,
+                "X": 1500,
                 "Y": 1150
             },
             "Size": {
@@ -42491,7 +42503,7 @@
                 "RowName": "Workshop_Creatures"
             },
             "Position": {
-                "X": 1600,
+                "X": 1900,
                 "Y": 250
             },
             "Size": {
@@ -42521,7 +42533,7 @@
                 "RowName": "Workshop_Creatures"
             },
             "Position": {
-                "X": 2000,
+                "X": 2300,
                 "Y": 850
             },
             "Size": {
@@ -42551,7 +42563,7 @@
                 "RowName": "Workshop_Creatures"
             },
             "Position": {
-                "X": 1600,
+                "X": 1900,
                 "Y": 1150
             },
             "Size": {
@@ -42581,7 +42593,7 @@
                 "RowName": "Workshop_Creatures"
             },
             "Position": {
-                "X": 2000,
+                "X": 2300,
                 "Y": 250
             },
             "Size": {
@@ -42611,7 +42623,7 @@
                 "RowName": "Workshop_Creatures"
             },
             "Position": {
-                "X": 2000,
+                "X": 2300,
                 "Y": 1150
             },
             "Size": {
@@ -42641,7 +42653,7 @@
                 "RowName": "Workshop_Creatures"
             },
             "Position": {
-                "X": 1600,
+                "X": 1900,
                 "Y": 550
             },
             "Size": {
@@ -42671,7 +42683,7 @@
                 "RowName": "Workshop_Creatures"
             },
             "Position": {
-                "X": 2000,
+                "X": 2300,
                 "Y": 550
             },
             "Size": {
@@ -49680,6 +49692,31 @@
             "bDefaultUnlocked": true
         },
         {
+            "Name": "Workshop_Creature_Dog_C1",
+            "ExtraData": {
+                "RowName": "Meta_Dog_C1",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Creatures"
+            },
+            "Position": {
+                "X": 1500,
+                "Y": 700
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Pet_Companions"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
             "Name": "Farming_Carts",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Farming_Carts-DisplayName\", \"Farming Carts\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"Farming_Carts-Description\", \"A selection of carts used by large animals when farming.\")",
@@ -51722,6 +51759,44 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Workshop_Creature_Dog_D1",
+            "ExtraData": {
+                "RowName": "Meta_Dog_D1",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Creatures"
+            },
+            "Position": {
+                "X": 1150,
+                "Y": 550
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Workshop_Creature_Dog_D2",
+            "ExtraData": {
+                "RowName": "Meta_Dog_D2",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Creatures"
+            },
+            "Position": {
+                "X": 1150,
+                "Y": 850
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "DrawMethodOverride": "XThenY"
         }
     ]
 }

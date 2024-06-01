@@ -4186,7 +4186,9 @@
             "Name": "Basic_Turret",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_Basic_Turret.BP_Basic_Turret_C",
             "PreviewStaticMesh": "/Game/Assets/3DArt/TMP_MSH/SM_DEP_Turret_Base.SM_DEP_Turret_Base",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "bCanAffectNavigation": false,
+            "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Obstacle'"
         },
         {
             "Name": "Tackle_Box",
@@ -6490,20 +6492,31 @@
         {
             "Name": "Basic_Turret_Pistol",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_Pistol_Turret.BP_Pistol_Turret_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Turret_T4/SM_DEP_Turret_Pistol_Combined.SM_DEP_Turret_Pistol_Combined",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Turret_T4/SM_DEP_Turret_Pistol_Combined_v2.SM_DEP_Turret_Pistol_Combined_v2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "bCanAffectNavigation": false,
+            "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Obstacle'",
+            "NavigationFallbackExtents": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+            }
         },
         {
             "Name": "Basic_Turret_Rifle",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_Rifle_Turret.BP_Rifle_Turret_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Turret_T4/SM_DEP_Turret_Rifle_Combined.SM_DEP_Turret_Rifle_Combined",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Turret_T4/SM_DEP_Turret_Rifle_Combined_v2.SM_DEP_Turret_Rifle_Combined_v2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "bCanAffectNavigation": false,
+            "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Obstacle'"
         },
         {
             "Name": "Basic_Turret_Shotgun",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_Shotgun_Turret.BP_Shotgun_Turret_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Turret_T4/SM_DEP_Turret_Shotgun_Combined.SM_DEP_Turret_Shotgun_Combined",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Turret_T4/SM_DEP_Turret_Shotgun_Combined_v2.SM_DEP_Turret_Shotgun_Combined_v2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "bCanAffectNavigation": false,
+            "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Obstacle'"
         },
         {
             "Name": "Animal_Trap_Small",
@@ -7418,6 +7431,22 @@
         {
             "Name": "Dog_Trophy_D1_2",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Dog_D1_2.BP_Trophy_Dog_D1_2_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Laika/SM_DEP_Trophy_Laika_A.SM_DEP_Trophy_Laika_A",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Dog_Trophy_D2_1",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Dog_D2_1.BP_Trophy_Dog_D2_1_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Laika/SM_DEP_Trophy_Laika_B.SM_DEP_Trophy_Laika_B",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Dog_Trophy_D2_2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Dog_D2_2.BP_Trophy_Dog_D2_2_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Laika/SM_DEP_Trophy_Laika_A.SM_DEP_Trophy_Laika_A",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "bCanAffectNavigation": false,

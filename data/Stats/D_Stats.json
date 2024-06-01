@@ -8818,14 +8818,30 @@
         },
         {
             "Name": "BaseTameMinimumDesiredTemperature_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTameMinimumDesiredTemperature_+-PositiveDescription\", \"+{0} Minimum Taming Temperature\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTameMinimumDesiredTemperature_+-NegativeDescription\", \"-{0} Minimum Taming Temperature\")",
             "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
             "StatCategory": {
                 "RowName": "CreatureTaming"
             }
         },
         {
             "Name": "BaseTameMaximumDesiredTemperature_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTameMaximumDesiredTemperature_+-PositiveDescription\", \"+{0} Maximum Taming Temperature\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTameMaximumDesiredTemperature_+-NegativeDescription\", \"-{0} Maximum Taming Temperature\")",
             "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
             "StatCategory": {
                 "RowName": "CreatureTaming"
             }
@@ -9583,14 +9599,32 @@
         },
         {
             "Name": "TameMinimumDesiredTemperature_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TameMinimumDesiredTemperature_+-Title\", \"Minimum Taming Temperature\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
             "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
             "StatCategory": {
                 "RowName": "CreatureTaming"
             }
         },
         {
             "Name": "TameMaximumDesiredTemperature_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TameMaximumDesiredTemperature_+-Title\", \"Maximum Taming Temperature\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
             "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
             "StatCategory": {
                 "RowName": "CreatureTaming"
             }
@@ -13529,7 +13563,8 @@
             ],
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "TurretProjectileLaunchForce_+",
@@ -13539,7 +13574,8 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseTurretBeginFireAngle_+",
@@ -13553,7 +13589,8 @@
             ],
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "TurretBeginFireAngle_+",
@@ -13563,7 +13600,8 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseTurretMaxRange_+",
@@ -13649,7 +13687,8 @@
             ],
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "TurretBurstFireDelay_+",
@@ -13659,7 +13698,8 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseTurretBurstFireShots_+",
@@ -13691,7 +13731,8 @@
             ],
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "TurretSpreadYaw_+",
@@ -13701,7 +13742,8 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseTurretSpreadPitch_+",
@@ -13715,7 +13757,8 @@
             ],
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "TurretSpreadPitch_+",
@@ -13763,7 +13806,8 @@
             ],
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "TurretMinPitch_+",
@@ -13773,12 +13817,13 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Deployable"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseTurretMaxYaw_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretMaxYaw_+-PositiveDescription\", \"{0} Min Yaw Angle\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretMaxYaw_+-NegativeDescription\", \"-{0} Min Yaw Angle\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretMaxYaw_+-PositiveDescription\", \"{0} Targeting Angle\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretMaxYaw_+-NegativeDescription\", \"-{0} Targeting Angle\")",
             "DisplayOperations": [
                 {
                     "Operation": "Division",
@@ -13791,7 +13836,7 @@
         },
         {
             "Name": "TurretMaxYaw_+",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"TurretMaxYaw_+-Title\", \"Turret Max Yaw\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TurretMaxYaw_+-Title\", \"Turret Fire Angle\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
             "bIsReplicated": true,

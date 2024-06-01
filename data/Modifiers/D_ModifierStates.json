@@ -454,7 +454,6 @@
                 ],
                 "AutoDescription": " NONE( Character.Player.Invincible )"
             },
-            "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
@@ -554,7 +553,6 @@
                 ],
                 "AutoDescription": " NONE( Character.Player.Invincible )"
             },
-            "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
@@ -9598,8 +9596,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Energy_Brownout_Turret-ModifierName\", \"Energy Shortage\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Energy_Brownout_Turret-ModifierDescription\", \"Insufficient Energy for this device to operate at full efficiency\")",
             "GrantedStats": {
-                "(Value=\"BaseTurretCoolDownPeriod_+\")": -4,
-                "(Value=\"BaseTurretMoveSpeed_+\")": -3
+                "(Value=\"BaseTurretCoolDownPeriod_+\")": 300,
+                "(Value=\"BaseTurretMoveSpeed_+\")": -300
             },
             "MergeType": "Replace",
             "bEffectsObjects": true,
@@ -10343,6 +10341,20 @@
                 "(Value=\"IsHarvestCartActive_?\")": 1
             },
             "MergeType": "Stack"
+        },
+        {
+            "Name": "Turret_Idle",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_LowPower.Icon_LowPower'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Turret_Idle-ModifierName\", \"Idle\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Turret_Idle-ModifierDescription\", \"No target detected. Energy consumption reduced.\")",
+            "GrantedStats": {
+                "(Value=\"BaseEnergyNetworkModifier_+%\")": -50
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         }
     ]
 }
