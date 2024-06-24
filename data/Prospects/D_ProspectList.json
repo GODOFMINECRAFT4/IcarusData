@@ -9978,6 +9978,7 @@
             "PlayerSpawnGroupIndex": 5,
             "NumMetaSpawnsMin": 2,
             "NumMetaSpawnsMax": 3,
+            "OnProspectAvailability": "Base",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -10300,6 +10301,7 @@
             "PlayerSpawnGroupIndex": 15,
             "NumMetaSpawnsMin": 3,
             "NumMetaSpawnsMax": 4,
+            "OnProspectAvailability": "Base",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -12525,6 +12527,7 @@
             "PlayerSpawnGroupIndex": 21,
             "NumMetaSpawnsMin": 2,
             "NumMetaSpawnsMax": 2,
+            "OnProspectAvailability": "Base",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -13162,6 +13165,106 @@
                     "RowName": "NewFrontiers"
                 }
             }
+        },
+        {
+            "Name": "STYX_A_Research",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_A_Research-DropName\", \"REPOPULATION: Research\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_A_Research-Description\", \"HELP INTRODUCE A NEW SPECIES TO ICARUS\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_A_Research-FlavourText\", \"//OPERATOR: UDA // BIOME: The Great River // BACKGROUND: Help to reintroduce a newly genetically enhanced revived species into the Styx region. // MISSION: Deliver a new species for introduction to Icarus. //TERMS: This area is under surveyed, and was previously deemed too dangerous for human traversal. Proceed with caution, the UDA takes no responsibility for contractor safety. \")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Kiwi_Large.T_Prospect_Kiwi_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefingAny6"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLandingExploring2"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete12"
+            },
+            "RequiredTech": "Tier1",
+            "WorldBosses": {
+                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 2
+                },
+                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 0,
+                    "Y": 2
+                },
+                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
+                    "X": 1,
+                    "Y": 3
+                }
+            },
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_A_Research"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 1,
+                    "Max": 1
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 3,
+            "NumMetaSpawnsMax": 3,
+            "OnProspectAvailability": "Base"
         }
     ]
 }

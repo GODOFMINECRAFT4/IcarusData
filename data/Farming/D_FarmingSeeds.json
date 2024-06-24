@@ -1227,6 +1227,47 @@
                 "RowName": "Seed_Fatigue"
             },
             "FatigueIncreaseEachHarvest": 50
+        },
+        {
+            "Name": "Kiwi_Fruit",
+            "CropRewards": {
+                "RowName": "Kiwi_Fruit_Crop"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops"
+            },
+            "Audio": {
+                "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+                "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_CARROT_HARVEST.SFX_CARROT_HARVEST",
+                "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
+            },
+            "Stage1": {
+                "RowName": "Kiwi_Fruit_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Kiwi_Fruit_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Kiwi_Fruit_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Kiwi_Fruit_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Kiwi_Fruit_Growth_05"
+            },
+            "Decayed": {
+                "RowName": "Kiwi_Fruit_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Kiwi_Fruit_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Kiwi_Fruit"
+            },
+            "FatigueModifier": {
+                "RowName": "Seed_Fatigue"
+            }
         }
     ]
 }

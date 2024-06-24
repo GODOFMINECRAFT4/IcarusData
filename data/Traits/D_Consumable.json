@@ -3198,6 +3198,32 @@
                     "DataTableName": "D_ItemTemplate"
                 }
             ]
+        },
+        {
+            "Name": "Food_Kiwi_Fruit",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 4,
+                "(Value=\"BaseWaterRecovery_+\")": 2
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Kiwi_Fruit"
+                },
+                "ModifierLifetime": 600
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Meta_Kiwi_Fruit_Seed",
+            "Modifier": {
+                "ModifierLifetime": 0
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Kiwi_Fruit_Seed_Pack",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
         }
     ]
 }

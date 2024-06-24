@@ -5053,6 +5053,16 @@
                         "RowName": "Scoria_Brick_Frame_Pillar",
                         "DataTableName": "D_BuildingPieces"
                     }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Ice_Frame_Pillar",
+                        "DataTableName": "D_BuildingPieces"
+                    }
                 }
             ]
         },
@@ -5155,6 +5165,26 @@
                         "RowName": "Scoria_Brick_Ramp_RoofPeak_Connector",
                         "DataTableName": "D_BuildingPieces"
                     }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Ice_Ramp_RoofPeak_Connector",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Ramp_RoofPeak_Connector",
+                        "DataTableName": "D_BuildingPieces"
+                    }
                 }
             ]
         },
@@ -5255,6 +5285,26 @@
                     },
                     "Piece": {
                         "RowName": "Scoria_Brick_Ramp_RoofPeak_Cap",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Ice_Ramp_RoofPeak_Cap",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Ramp_RoofPeak_Cap",
                         "DataTableName": "D_BuildingPieces"
                     }
                 }
@@ -7765,6 +7815,38 @@
             ]
         },
         {
+            "Name": "Interior_Stone_CornerStair",
+            "Stability": {
+                "RowName": "Stone_General"
+            },
+            "Type": {
+                "RowName": "Stone"
+            },
+            "PieceType": "Ramp",
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_CornerStair_L",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_CornerStair_R",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ]
+        },
+        {
             "Name": "DevTest_HalfStairs_L",
             "Stability": {
                 "RowName": "Iron_Frame"
@@ -7871,6 +7953,16 @@
                     },
                     "Piece": {
                         "RowName": "Ice_HalfStair_L",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_HalfStair_L",
                         "DataTableName": "D_BuildingPieces"
                     }
                 }
@@ -7985,8 +8077,522 @@
                         "RowName": "Ice_HalfStair_R",
                         "DataTableName": "D_BuildingPieces"
                     }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_HalfStair_R",
+                        "DataTableName": "D_BuildingPieces"
+                    }
                 }
             ]
+        },
+        {
+            "Name": "Stone_Brick_Floor",
+            "Stability": {
+                "RowName": "Clay_Brick_General"
+            },
+            "Type": {
+                "RowName": "Stone_Brick"
+            },
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Floor",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Floor_TrapDoor",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Stone_Brick_Wall",
+            "Stability": {
+                "RowName": "Clay_Brick_General"
+            },
+            "Type": {
+                "RowName": "Stone_Brick"
+            },
+            "PieceType": "Wall",
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_Solid",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_WindowFrame",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_DoorFrame",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_DoubleDoorL",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_DoubleDoorR",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_DoubleWindowR",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_DoubleWindowL",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Stone_Brick_Wall_Angle",
+            "Stability": {
+                "RowName": "Clay_Brick_General"
+            },
+            "Type": {
+                "RowName": "Stone_Brick"
+            },
+            "PieceType": "Wall",
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_Angle_AngleLeft",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_Angle_AngleRightInverted",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_Angle_AngleRight",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_Angle_AngleLeftInverted",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Wall_Angle_AnglePeak",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Stone_Brick_Ramp",
+            "Stability": {
+                "RowName": "Clay_Brick_General"
+            },
+            "Type": {
+                "RowName": "Stone_Brick"
+            },
+            "PieceType": "Ramp",
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Ramp_Roof",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Ramp",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Ramp_Stairs",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Ramp_RoofPeak",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Stone_Brick_Beam",
+            "Stability": {
+                "RowName": "Clay_Brick_Beam"
+            },
+            "Type": {
+                "RowName": "Stone_Brick"
+            },
+            "PieceType": "Frame",
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Beam_VerticalBeam",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Beam_HorizontalBeam",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Beam_DiagonalBeam",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Stone_Brick_Roof_Corner",
+            "Stability": {
+                "RowName": "Clay_Brick_General"
+            },
+            "Type": {
+                "RowName": "Stone_Brick"
+            },
+            "PieceType": "Ramp",
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Roof_Corner_Left",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Roof_Corner_Right",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Roof_Corner_InvertedRight",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Roof_Corner_InvertedLeft",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Stone_Brick_Half_Pitch",
+            "Stability": {
+                "RowName": "Clay_Brick_General"
+            },
+            "Type": {
+                "RowName": "Stone_Brick"
+            },
+            "PieceType": "Ramp",
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Pitch_LowerRoof",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Pitch_UpperRoof",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Pitch_LowerLeftWall",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Pitch_UpperLeftWall",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Pitch_LowerRightWall",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Pitch_UpperRightWall",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Stone_Brick_Half_Normal",
+            "Stability": {
+                "RowName": "Clay_Brick_General"
+            },
+            "Type": {
+                "RowName": "Stone_Brick"
+            },
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Normal_HalfFloor",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Normal_QuarterFloor",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Normal_HalfRampRight",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Normal_HalfRampLeft",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Normal_HalfWallLower",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Stone_Brick_Half_Normal_HalfWallUpper",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         }
     ]
 }

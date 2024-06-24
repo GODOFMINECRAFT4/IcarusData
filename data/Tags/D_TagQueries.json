@@ -6036,6 +6036,28 @@
                 ],
                 "AutoDescription": " ANY( Foliage.PermitRockRestore )"
             }
+        },
+        {
+            "Name": "Building_Stone_Brick",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Building.StoneBrick"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Traits.Buildable, Building.StoneBrick )"
+            }
         }
     ]
 }
