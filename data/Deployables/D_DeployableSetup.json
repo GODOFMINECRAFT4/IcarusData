@@ -7580,7 +7580,7 @@
         {
             "Name": "Farming_Mound_Kiwi_Fruit",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Farming/BP_Crop_Plot_Mound.BP_Crop_Plot_Mound_C",
-            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Bramble_Thorns/SM_HRB_Bramble_Thorns_Stage5_Var1.SM_HRB_Bramble_Thorns_Stage5_Var1",
+            "PreviewStaticMesh": "/Game/ASS/ENV/HRB/Crop_Kiwifruit/SM_HRB_KiwiFruit_Stage5.SM_HRB_KiwiFruit_Stage5",
             "DeployedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
             "ItemAddedSounds": {
                 "(RowName=\"Basic_Fertilizer\",DataTableName=\"D_ItemsStatic\")": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_ADD_FERTILIZER.SFX_FARMING_ADD_FERTILIZER",
@@ -7609,6 +7609,49 @@
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Monitoring_Pylon",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Monitoring_Pylon.BP_Monitoring_Pylon_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Laser_Uplink.SM_DEP_Laser_Uplink",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Mission_DeployableSnapActor"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Aerosol_Emitter",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Aerosol_Emitter.BP_Aerosol_Emitter_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Analyzer_Transmitter.SM_DEP_Analyzer_Transmitter",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Mission_DeployableSnapActor"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Liquid_Deployment",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Liquid_Deployment.BP_Liquid_Deployment_C",
+            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/SM_Mound.SM_Mound",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Mission_DeployableSnapActor"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "bCanAffectNavigation": false
         }
     ]
 }

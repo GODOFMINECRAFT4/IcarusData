@@ -646,7 +646,7 @@
                 }
             ],
             "TotalPointsRequired": 1800,
-            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-Lore1\", \"On Icarus, deer make up the most abundant population of herbivores. Typically, they can be found in family groups of three or more. As they are sizable and fleet-footed creatures, they are prone to getting spooked easily and are adept at camouflaging themselves in the forest.\")",
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-Lore1\", \"On Icarus, Antelope make up the most abundant population of herbivores along with their deer cousins. Typically, they can be found in family groups of three or more. As they are sizable and fleet-footed creatures, they are prone to getting spooked easily and are adept at camouflaging themselves in the forest.\")",
             "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-Lore2\", \"A black market for Icarus venison has been long suspected. While prospectors aren\\'t supposed to remove any biological matter from the surface, rumors of Icarus meat and produce appearing on earth have been circulating. UDA INTSEC currently investigating.\")",
             "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Desert_Deer-Lore3\", \"\\\"It just tastes better. Earth feed is crap in comparison... Sure we have chem residue and exotics, but not decades of pollution and microplastics... I might grow a third leg, and I\\'m okay with that, so long as I don\\'t have to eat that printed earth-side ****.\\\"\")",
             "Traits": [
@@ -3583,6 +3583,10 @@
                 {
                     "RowName": "Aggressive_Behavior",
                     "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Nest_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
                 }
             ],
             "StatsUnlock1": {
@@ -3686,6 +3690,65 @@
                     "RowName": "Laika"
                 }
             }
+        },
+        {
+            "Name": "Kiwi",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Kiwi-CreatureName\", \"Kiwi\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Kiwi_SML.Bestiary_Kiwi_SML",
+            "PopupImageScale": 1.5,
+            "PopupImageOffset": {
+                "Y": -10
+            },
+            "BiomeImageType": "Small",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_KIWI.UI_BESTIARY_CRE_KIWI",
+            "Biomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_019",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "TotalPointsRequired": 1800,
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Kiwi-Lore1\", \"Kiwis are flightless birds native to New Zealand on Earth. They are characterized by their small size, round body, long beak, and distinctive nocturnal habits. With highly developed senses of smell and touch, they forage for various insects and fruits under the cover of darkness. On Earth, Kiwis play a crucial ecological role as seed dispersers, contributing to the health and diversity of their ecosystems. It was hoped that they would do the same on Icarus after the terraforming failed to spread various plants across the face of the planet.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Kiwi-Lore2\", \"Kiwis were introduced to Icarus to help diversify the plant life in their habitats. They were hunted almost to extinction back on Earth, as they are mostly unable to defend themselves from predators. It is thought that they will likely suffer a similar fate on Icarus, though scientists remain hopeful that the influence of Exotics may trigger the formation of a stronger survival instinct in these birds; only time will tell.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Kiwi-Lore3\", \"\\\"I was telling Dave the other day, I don\\'t care how much national pride you have for \\'em, those things are downright useless. No meat on \\'em and they can\\'t even fly! So what if I\\'m from Australia-\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Head_CritSpot",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Nest_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseWaterConsumption_+%\")": -5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseAnimalCarryingMovementSpeed_+%\")": 10
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "None"
+                },
+                {
+                    "Value": "None"
+                }
+            ]
         },
         {
             "Name": "Cat",

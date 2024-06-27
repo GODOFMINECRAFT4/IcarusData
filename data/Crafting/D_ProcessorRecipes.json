@@ -42840,10 +42840,10 @@
                 },
                 {
                     "Element": {
-                        "RowName": "Strawberry",
+                        "RowName": "Berry",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 1,
+                    "Count": 5,
                     "DynamicProperties": []
                 }
             ],
@@ -76707,6 +76707,340 @@
             ],
             "Audio": {
                 "RowName": "Default"
+            }
+        },
+        {
+            "Name": "Kiwi_Trophy",
+            "RecipeSets": [
+                {
+                    "RowName": "Trophy_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Kiwi_Head",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Kiwi_Trophy",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "SkinningBench"
+            }
+        },
+        {
+            "Name": "Dried_Kiwifruit",
+            "RequiredMillijoules": 17500,
+            "RecipeSets": [
+                {
+                    "RowName": "Drying_Rack",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T3_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "T4_Smoker",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Kiwi_Fruit",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Dried_Kiwifruit",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "DryingRack"
+            }
+        },
+        {
+            "Name": "Kiwifruit_Jam",
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Glass_Jar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Kiwi_Fruit",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Kiwifruit_Jam",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Kiwifruit_Sorbet",
+            "RequiredMillijoules": 17500,
+            "RecipeSets": [
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Kiwi_Fruit",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Ice",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Honey",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Kiwifruit_Sorbet",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Fruit_Snack_Pack",
+            "RecipeSets": [
+                {
+                    "RowName": "Cooking_Station",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Kiwi_Fruit",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Strawberry",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Watermelon",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Coconut_mid",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Seed",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fruit_Snack_Pack",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Fruit_Smoothie",
+            "RequiredMillijoules": 25000,
+            "RecipeSets": [
+                {
+                    "RowName": "Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Advanced_Kitchen_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Kiwi_Fruit",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Coconut_mid",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Watermelon",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Berry",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Strawberry",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Container": "Water",
+            "bContainsContainer": true,
+            "ItemIconOverride": {
+                "ItemStaticData": {
+                    "RowName": "Any_Water_Container"
+                }
+            },
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Thermos",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": [
+                        {
+                            "RowName": "Fruit_Smoothie",
+                            "DataTableName": "D_Alterations"
+                        }
+                    ]
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
             }
         }
     ]

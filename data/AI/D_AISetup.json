@@ -15970,6 +15970,160 @@
             }
         },
         {
+            "Name": "Kiwi",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Kiwi_Character.BP_NPC_Kiwi_Character_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Generic_Controller.BP_NPC_Generic_Controller_C",
+            "CreatureType": {
+                "RowName": "Kiwi"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Neutral",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Herbivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Kiwi"
+            },
+            "GOAPSetup": {
+                "RowName": "Kiwi"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_DefaultAI.NavFilter_DefaultAI_C'",
+            "Relationships": {
+                "RowName": "NeutralMediumHerbivore"
+            },
+            "AIGrowth": {
+                "RowName": "Kiwi"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.6499999761581421,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 3.2300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 500,
+                    "BrakingDeceleration": 450,
+                    "RotationRate": 125,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 10.770000457763672,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 1800,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 7.690000057220459,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 450,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 3.2300000190734863,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "CriticalHitBones": [
+                {
+                    "BoneName": "RigHead",
+                    "AffectsChildren": true
+                }
+            ],
+            "Audio": {
+                "RowName": "Kiwi"
+            },
+            "CollisionHitEventBones": [
+                "RigNeck1",
+                "RigNeck2",
+                "RigChest",
+                "RigSpine2",
+                "RigSpine1",
+                "RigPelvis",
+                "RigHead"
+            ],
+            "ValidBaitTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "GOAP.Food.Herbivore.Bait"
+                    },
+                    {
+                        "TagName": "GOAP.Food.Carnivore.Bait"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( GOAP.Food.Herbivore.Bait, GOAP.Food.Carnivore.Bait )"
+            },
+            "Trophy": {
+                "RowName": "Kiwi_Head"
+            },
+            "Loot": {
+                "RowName": "Kiwi_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones_Small"
+            },
+            "BestiaryGroup": {
+                "RowName": "Kiwi"
+            }
+        },
+        {
             "Name": "Mount_Horse_Standard_A1",
             "ActorClass": "/Game/BP/Mounts/BP_Mount_Horse_Standard.BP_Mount_Horse_Standard_C",
             "ControllerClass": "/Game/BP/AI/Basic/Mounts/BP_MountAIController.BP_MountAIController_C",

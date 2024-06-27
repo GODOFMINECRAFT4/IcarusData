@@ -11516,7 +11516,7 @@
             "Name": "PRO_C_Construction",
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_C_Construction-DropName\", \"TREEHUT: Construction\")",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_C_Construction-Description\", \"TREE TOP CONSTRUCTION\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_C_Construction-FlavourText\", \"//OPERATOR: The Assembly // BIOME: Swamp // BACKGROUND: The Operator is interested in potential habitation. // MISSION: Construct a living dwelling high in the treetops //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_C_Construction-FlavourText\", \"//OPERATOR: African Assembly // BIOME: Swamp // BACKGROUND: The Operator is interested in potential habitation. // MISSION: Construct a living dwelling high in the treetops //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Crossbow01_Large.T_Prospect_Forest_Crossbow01_Large'",
             "DifficultySetup": {
                 "Easy": {
@@ -13221,7 +13221,7 @@
                     }
                 }
             },
-            "Difficulty": "Normal",
+            "Difficulty": "Hard",
             "BriefingDialogue": {
                 "RowName": "GenericBriefingAny6"
             },
@@ -13263,6 +13263,264 @@
             },
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
             "PlayerSpawnGroupIndex": 3,
+            "NumMetaSpawnsMax": 3,
+            "OnProspectAvailability": "Base"
+        },
+        {
+            "Name": "PRO_D_Transport",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_D_Transport-DropName\", \"CARAVAN: Transport\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_D_Transport-Description\", \"TRANSPORT SUPPLIES FOR LONG TERM HABITATION\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_D_Transport-FlavourText\", \"//OPERATOR: UDA // BIOME: Basalt Expansion to Ashlands // BACKGROUND: Ashlands region has sparse vegetation, UDA requests a shipment of supplies for habitation. // MISSION: Collect and transport a large stockpile of resources. //TERMS: UDA provides list of required resources, contractor responsible for collection and transport through dangerous area. Contractor responsible for all safety measures.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Transport01_Large.T_Prospect_Forest_Transport01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefingAny4"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLandingExploring3"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete15"
+            },
+            "RequiredTech": "Tier1",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "STYX_A_Research"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 5,
+                    "Max": 5
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 15,
+            "NumMetaSpawnsMax": 3,
+            "OnProspectAvailability": "Base"
+        },
+        {
+            "Name": "PRO_D_Research",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_D_Research-DropName\", \"COMPOSITION: Research\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_D_Research-Description\", \"RESEARCH DELIVERY METHOD FOR NEW CHEMICAL COMPOUND\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_D_Research-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Ashlands // BACKGROUND: Additional testing has been approved in the isolated Ashlands region. // MISSION: Create chemical compound as guided, deploy and observe. //TERMS: Compound not confirmed safe for exposure. Contractor safety not guaranteed.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition01_Large.T_Prospect_Desert_Expedition01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Extreme",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefingAny2"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLandingSuspicious1"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete3"
+            },
+            "RequiredTech": "Tier4",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "STYX_A_Research"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 17,
+            "NumMetaSpawnsMax": 3,
+            "OnProspectAvailability": "Base"
+        },
+        {
+            "Name": "PRO_E_Research",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_E_Research-DropName\", \"DROVER: Research\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_E_Research-Description\", \"MONITOR AND RECORD LONE DRIFTER\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_E_Research-FlavourText\", \"//OPERATOR: African Assembly // BIOME: Icesheet // BACKGROUND: A single drifter has been spotted in the Icesheet region. // MISSION: Construct monitoring pylon, await further instructions. //TERMS: Relative safety is assumed. Environment and wildlife dangers not factored.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Large.T_Prospect_Arctic_HeavyFog01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefingAny1"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLandingHunting1"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "ExtractionComplete4b"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "STYX_A_Research"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 2,
+                    "Max": 2
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 17,
             "NumMetaSpawnsMax": 3,
             "OnProspectAvailability": "Base"
         }

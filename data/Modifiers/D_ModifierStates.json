@@ -8298,7 +8298,7 @@
             "Name": "Smoked_Bacon",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_SmokedBacon.ITEM_SmokedBacon'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Bacon-ModifierName\", \"Honey Smoked Bacon\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Bacon-ModifierDescription\", \"Boosts Stamina, Health Regen, Experiance. Also reduces food consumption.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Bacon-ModifierDescription\", \"Boosts Stamina, Health Regen, Experience. Also reduces food consumption.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 75,
@@ -10428,11 +10428,130 @@
             "Name": "Kiwi_Fruit",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Kiwi_Fruit.ITEM_Kiwi_Fruit'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Kiwi_Fruit-ModifierName\", \"Kiwi Fruit\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Kiwi_Fruit-ModifierDescription\", \"Boosts stamina for a short time.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Kiwi_Fruit-ModifierDescription\", \"Provides Stamina and Cave Sickness Resistance.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 50,
+                "(Value=\"BasePneumoniaResistance_%\")": 5
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Dried_Kiwifruit",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Kiwifruit_Chips.T_ITEM_Kiwifruit_Chips'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Kiwifruit-ModifierName\", \"Dried Kiwifruit Chips\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Kiwifruit-ModifierDescription\", \"Provides Stamina and Cave Sickness Resistance.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BasePneumoniaResistance_%\")": 10,
+                "(Value=\"BaseFoodConsumption_+%\")": -25
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Kiwifruit_Jam",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Kiwifruit_Jam.T_ITEM_Kiwifruit_Jam'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Kiwifruit_Jam-ModifierName\", \"Kiwifruit Jam\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Kiwifruit_Jam-ModifierDescription\", \"Provides a large Stamina boost, extra experience and Cave Sickness Resistance.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 125,
+                "(Value=\"BaseExperience_+%\")": 20,
+                "(Value=\"BasePneumoniaResistance_%\")": 20
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Kiwifruit_Sorbet",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Kiwifruit_Sorbet.T_ITEM_Kiwifruit_Sorbet'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Kiwifruit_Sorbet-ModifierName\", \"Kiwifruit Sorbet\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Kiwifruit_Sorbet-ModifierDescription\", \"Provides a large Stamina boost, extra experience and large Cave Sickness Resistance.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseExperience_+%\")": 30,
+                "(Value=\"BasePneumoniaResistance_%\")": 45
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Fruit_Snack_Pack",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Snack_Pack.T_ITEM_Snack_Pack'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fruit_Snack_Pack-ModifierName\", \"Fruit Snack Pack\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fruit_Snack_Pack-ModifierDescription\", \"A collect of fruit which provides a variety of buffs.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BasePneumoniaResistance_%\")": 15,
                 "(Value=\"BaseWaterConsumption_+%\")": -10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Fruit_Smoothie",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Thermos.ITEM_Thermos'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fruit_Smoothie-ModifierName\", \"Fruit Smoothie\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fruit_Smoothie-ModifierDescription\", \"Refreshing tangy drink.\")",
+            "GrantedStats": {
+                "(Value=\"BaseExperience_+%\")": 10,
+                "(Value=\"BasePneumoniaResistance_%\")": 30
             },
             "ModifierEffectivenessAffectors": [
                 {

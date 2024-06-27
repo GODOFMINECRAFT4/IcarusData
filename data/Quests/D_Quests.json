@@ -1629,7 +1629,7 @@
                 "RowName": "T2_Canyon_Stockpile_Loc3"
             },
             "DialogueEvents": {
-                "QuestEnd": {
+                "None": {
                     "RowName": "AllItemsFound2",
                     "DataTableName": "D_Dialogue"
                 }
@@ -2708,7 +2708,7 @@
         {
             "Name": "OLY_Arctic_Recovery_Recover_Tech",
             "Class": "/Game/BP/Quests/Olympus/Arctic/Recovery/BPQ_OLY_Arctic_Recovery_Ship.BPQ_OLY_Arctic_Recovery_Ship_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Recovery_Recover_Tech-Description\", \"Deliver the device to the dropship\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Arctic_Recovery_Recover_Tech-Description\", \"Deliver the device to the drop pod\")",
             "LocationQuery": {
                 "RowName": "T4_Arctic_Stockpile_Ship1"
             }
@@ -5916,7 +5916,10 @@
         {
             "Name": "STYX_D_Research2",
             "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2.BPQ_STYX_D_Research2_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2-Description\", \"RESEARCH: The Ring\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2-Description\", \"RESEARCH: The Ring\")",
+            "LocationQuery": {
+                "RowName": "STYX_RingLake_Center"
+            }
         },
         {
             "Name": "STYX_D_Research2_FindDeposit",
@@ -5960,12 +5963,6 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_Research-Description\", \"OPTIONAL: Discover methods for prospectors to handle Abyssal Oxite safely\")",
             "LocationQuery": {
                 "RowName": "STYX_D_Research2_Canyon"
-            },
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "RecoveryExoticsFound",
-                    "DataTableName": "D_Dialogue"
-                }
             }
         },
         {
@@ -6008,6 +6005,20 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_BonusReward-Description\", \"Collect the stashed exotics nearby\")",
             "LocationQuery": {
                 "RowName": "STYX_D_Research2_CaveStash"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "RecoveryExoticsFound",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "STYX_D_Research2_ReturnResearchEquipment",
+            "Class": "/Game/BP/Quests/Styx/D/Research2/BPQ_STYX_D_Research2_ReturnResearchEquipment.BPQ_STYX_D_Research2_ReturnResearchEquipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_D_Research2_ReturnResearchEquipment-Description\", \"Return the research equipment.\")",
+            "LocationQuery": {
+                "RowName": "STYX_RingLake_Center"
             }
         },
         {
@@ -8808,7 +8819,7 @@
         },
         {
             "Name": "PRO_Ashlands_Story",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story.BPQ_PRO_Ashlands_Story_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story.BPQ_PRO_Ashlands_Story_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Story-Description\", \"UNKNOWN VENTURE: Ashlands\")",
             "DialogueEvents": {
                 "QuestStart": {
@@ -8819,17 +8830,17 @@
         },
         {
             "Name": "PRO_Ashlands_CraftTrailBeaconTool",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_CraftTrailBeaconTool.BPQ_PRO_Ashlands_Story_CraftTrailBeaconTool_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_CraftTrailBeaconTool.BPQ_PRO_Ashlands_Story_CraftTrailBeaconTool_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_CraftTrailBeaconTool-Description\", \"Craft a Trail Beacon Tool\")"
         },
         {
             "Name": "PRO_Ashlands_CraftTrailBeacons",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_CraftTrailBeacons.BPQ_PRO_Ashlands_Story_CraftTrailBeacons_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_CraftTrailBeacons.BPQ_PRO_Ashlands_Story_CraftTrailBeacons_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_CraftTrailBeacons-Description\", \"Craft Trail Beacons: {0} / {1}\")"
         },
         {
             "Name": "PRO_Ashlands_Beacon",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Beacon.BPQ_PRO_Ashlands_Story_Beacon_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Beacon.BPQ_PRO_Ashlands_Story_Beacon_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon-Description\", \"Place Trail Beacon at Entrance to Ashlands\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Entrances"
@@ -8843,7 +8854,7 @@
         },
         {
             "Name": "PRO_Ashlands_Beacon_Chain",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Travel.BPQ_PRO_Ashlands_Story_Travel_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Travel.BPQ_PRO_Ashlands_Story_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon_Chain-Description\", \"Chain beacons until you find the scientists\\' outpost\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
@@ -8851,7 +8862,7 @@
         },
         {
             "Name": "PRO_Ashlands_Outpost_Percentage",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Outpost_Signal.BPQ_PRO_Ashlands_Story_Outpost_Signal_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Outpost_Signal.BPQ_PRO_Ashlands_Story_Outpost_Signal_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Percentage-Description\", \"Detecting Signal from Outpost: {0}% Signal Strength\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
@@ -8859,7 +8870,7 @@
         },
         {
             "Name": "PRO_Ashlands_Outpost_Clear",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Outpost_Clear.BPQ_PRO_Ashlands_Story_Outpost_Clear_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Outpost_Clear.BPQ_PRO_Ashlands_Story_Outpost_Clear_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Clear-Description\", \"Clear creatures from around the outpost\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
@@ -8873,7 +8884,7 @@
         },
         {
             "Name": "PRO_Ashlands_Outpost_Collect",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashands_Story_Outpost_Collect.BPQ_PRO_Ashands_Story_Outpost_Collect_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashands_Story_Outpost_Collect.BPQ_PRO_Ashands_Story_Outpost_Collect_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Collect-Description\", \"Find audio log in structure\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
@@ -8881,7 +8892,7 @@
         },
         {
             "Name": "PRO_Ashlands_Beacon_Icesheets",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Ashlands/BPQ_PRO_Ashlands_Story_Beacon_Icesheet.BPQ_PRO_Ashlands_Story_Beacon_Icesheet_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Beacon_Icesheet.BPQ_PRO_Ashlands_Story_Beacon_Icesheet_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon_Icesheets-Description\", \"Place the final beacon around the entrance to the Ice Sheet\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_IcesheetTransition"
@@ -8895,7 +8906,7 @@
         },
         {
             "Name": "PRO_Icesheet_Story",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story.BPQ_PRO_Icesheet_Story_C",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story.BPQ_PRO_Icesheet_Story_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Story-Description\", \"UNKNOWN VENTURE: Ice Sheets\")",
             "DialogueEvents": {
                 "QuestStart": {
@@ -8906,17 +8917,17 @@
         },
         {
             "Name": "PRO_Icesheet_CraftTrailBeaconTool",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_CraftTrailBeaconTool.BPQ_PRO_Icesheet_Story_CraftTrailBeaconTool_C",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_CraftTrailBeaconTool.BPQ_PRO_Icesheet_Story_CraftTrailBeaconTool_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_CraftTrailBeaconTool-Description\", \"Craft a Trail Beacon Tool\")"
         },
         {
             "Name": "PRO_Icesheet_CraftTrailBeacons",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_CraftTrailBeacons.BPQ_PRO_Icesheet_Story_CraftTrailBeacons_C",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_CraftTrailBeacons.BPQ_PRO_Icesheet_Story_CraftTrailBeacons_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_CraftTrailBeacons-Description\", \"Craft Trail Beacons: {0} / {1}\")"
         },
         {
             "Name": "PRO_Icesheet_Beacon",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_Beacon.BPQ_PRO_Icesheet_Story_Beacon_C",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Beacon.BPQ_PRO_Icesheet_Story_Beacon_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Beacon-Description\", \"Place Trail Beacon at Entrance to the Ice Sheet\")",
             "LocationQuery": {
                 "RowName": "PRO_Icesheet_Entrance"
@@ -8930,7 +8941,7 @@
         },
         {
             "Name": "PRO_Icesheet_Beacon_Chain",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_Travel.BPQ_PRO_Icesheet_Story_Travel_C",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Travel.BPQ_PRO_Icesheet_Story_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Beacon_Chain-Description\", \"Chain beacons until you find the scientists\\' outpost\")",
             "LocationQuery": {
                 "RowName": "PRO_Icesheet_Outpost"
@@ -8938,7 +8949,7 @@
         },
         {
             "Name": "PRO_Icesheet_Outpost_Percentage",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_Outpost_Signal.BPQ_PRO_Icesheet_Story_Outpost_Signal_C",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Outpost_Signal.BPQ_PRO_Icesheet_Story_Outpost_Signal_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Outpost_Percentage-Description\", \"Detecting Signal from Outpost: {0}% Signal Strength\")",
             "LocationQuery": {
                 "RowName": "PRO_Icesheet_Outpost"
@@ -8946,7 +8957,7 @@
         },
         {
             "Name": "PRO_Icesheet_Outpost_Collect",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_Outpost_Collect.BPQ_PRO_Icesheet_Story_Outpost_Collect_C",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Outpost_Collect.BPQ_PRO_Icesheet_Story_Outpost_Collect_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Outpost_Collect-Description\", \"Search Bodies for Audio Log\")",
             "LocationQuery": {
                 "RowName": "PRO_Icesheet_Outpost"
@@ -8960,7 +8971,7 @@
         },
         {
             "Name": "PRO_Icesheet_Beacon_Final",
-            "Class": "/Game/BP/Quests/Prometheus/Phase2/Icesheets/BPQ_PRO_Icesheet_Story_FindFinalCave.BPQ_PRO_Icesheet_Story_FindFinalCave_C",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_FindFinalCave.BPQ_PRO_Icesheet_Story_FindFinalCave_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Beacon_Final-Description\", \"Search nearby caves to find where the Crazed Scientist may have gone: {0}/3\")"
         },
         {
@@ -9140,7 +9151,7 @@
         {
             "Name": "STYX_A_Research_Nest_Setup",
             "Class": "/Game/BP/Quests/Styx/A/Research/BPQ_Styx_A_Research_Nest_Setup.BPQ_Styx_A_Research_Nest_Setup_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Nest_Setup-Description\", \"Collect Nearby Resources and Craft Kiwi Nests (Sticks / Fibre / Tree Sap) \")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Nest_Setup-Description\", \"Collect Nearby Resources and Craft Kiwi Nests (Sticks / Fiber / Tree Sap / Dirt) \")"
         },
         {
             "Name": "STYX_A_Research_Nest_Setup_Craft",
@@ -9178,9 +9189,14 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Nest_Incubate-Description\", \"Fend off any Animals while the Nests Incubate the Eggs\")"
         },
         {
+            "Name": "STYX_A_Research_Nest_Incubate_Eggs",
+            "Class": "/Game/BP/Quests/Styx/A/Research/BPQ_Styx_A_Research_Nest_Incubate_Eggs.BPQ_Styx_A_Research_Nest_Incubate_Eggs_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Nest_Incubate_Eggs-Description\", \"Remaning Eggs {0}/{1}\")"
+        },
+        {
             "Name": "STYX_A_Research_Nest_Incubate_Boss",
             "Class": "/Game/BP/Quests/Styx/A/Research/BPQ_Styx_A_Research_Nest_Incubate_Boss.BPQ_Styx_A_Research_Nest_Incubate_Boss_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Nest_Incubate_Boss-Description\", \"Kill The Fowler\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Nest_Incubate_Boss-Description\", \"(Optional) Kill The Fowler\")"
         },
         {
             "Name": "STYX_A_Research_Nest_Incubate_Progress",
@@ -9195,12 +9211,24 @@
         {
             "Name": "STYX_A_Research_Bonus_Kill",
             "Class": "/Game/BP/Quests/Styx/A/Research/BPQ_Styx_A_Research_Bonus_Wolf.BPQ_Styx_A_Research_Bonus_Wolf_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Bonus_Kill-Description\", \"Kill Wolves {0}/{1} \")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Bonus_Kill-Description\", \"Kill Wolves or Moa {0}/{1} \")"
         },
         {
             "Name": "STYX_A_Research_Bonus_Reward",
             "Class": "/Game/BP/Quests/Styx/A/Research/BPQ_Styx_A_Research_Bonus_Reward.BPQ_Styx_A_Research_Bonus_Reward_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Bonus_Reward-Description\", \"Collect your reward from the Sinotai Reward Pod (M)\")"
+        },
+        {
+            "Name": "STYX_A_Research_Nest_Reward",
+            "Class": "/Game/BP/Quests/Styx/A/Research/BPQ_Styx_A_Reward.BPQ_Styx_A_Reward_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Nest_Reward-Description\", \"Collect your reward from the Sinotai Reward Pod (M)\")"
+        },
+        {
+            "Name": "STYX_A_Research_Seed_Reward",
+            "Class": "/Game/BP/Quests/Styx/A/Research/BPQ_Styx_A_Reward.BPQ_Styx_A_Reward_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Seed_Reward-Description\", \"Collect your reward from the Sinotai Reward Pod (M)\")"
         },
         {
             "Name": "OLY_Arctic_Recovery_Tech",
@@ -9212,6 +9240,70 @@
                     "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport.BPQ_PRO_D_Transport_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport-Description\", \"CARAVAN: Ashlands\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Stockpile_Start",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Stockpile_Ship.BPQ_PRO_D_Transport_Stockpile_Ship_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Stockpile_Start-Description\", \"Stockpile a large stash of supplies ready for transport\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Stockpile_Wood",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Wood.BPQ_PRO_D_Transport_Wood_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Stockpile_Wood-Description\", \"{0} / {1} Wood\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Stockpile_Fiber",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Fiber.BPQ_PRO_D_Transport_Fiber_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Stockpile_Fiber-Description\", \"{0} / {1} Fiber\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Stockpile_Oxite",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Oxite.BPQ_PRO_D_Transport_Oxite_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Stockpile_Oxite-Description\", \"{0} / {1} Oxite\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Stockpile_Seeds",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_SeedVariety.BPQ_PRO_D_Transport_SeedVariety_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Stockpile_Seeds-Description\", \"{0} / {1} Seed Varieties\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Stockpile_Destination",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Destination.BPQ_PRO_D_Transport_Destination_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Stockpile_Destination-Description\", \"Deploy storage and store supplies at the marked location within the Ashlands\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Stockpile_Wood_End",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Wood.BPQ_PRO_D_Transport_Wood_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Stockpile_Wood_End-Description\", \"{0} / {1} Wood\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Stockpile_Fiber_End",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Fiber.BPQ_PRO_D_Transport_Fiber_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Stockpile_Fiber_End-Description\", \"{0} / {1} Fiber\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Stockpile_Oxite_End",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Oxite.BPQ_PRO_D_Transport_Oxite_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Stockpile_Oxite_End-Description\", \"{0} / {1} Oxite\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Stockpile_Seeds_End",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_SeedVariety.BPQ_PRO_D_Transport_SeedVariety_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Stockpile_Seeds_End-Description\", \"{0} / {1} Seed Varieties\")"
+        },
+        {
+            "Name": "PRO_Ashlands_A_Transport_Ambush",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Stockpile_Ship.BPQ_PRO_D_Transport_Stockpile_Ship_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_A_Transport_Ambush-Description\", \"Defeat the Ambush\")"
         }
     ]
 }

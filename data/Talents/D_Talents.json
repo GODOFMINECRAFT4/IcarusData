@@ -51857,6 +51857,73 @@
                 "Y": 250
             },
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Prospect_Styx_A_Research",
+            "ExtraData": {
+                "RowName": "STYX_A_Research",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 3200,
+                "Y": 1800
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_A_Reroute_0",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Matariki_Mission"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Seed_SugarCane_0",
+            "ExtraData": {
+                "RowName": "Meta_Kiwi_Fruit",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Farming"
+            },
+            "Position": {
+                "X": 4050,
+                "Y": 1150
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            }
+        },
+        {
+            "Name": "Prospect_Dev_Prometheus",
+            "ExtraData": {
+                "RowName": "Dev_Prometheus",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Dev"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 1000
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "bDefaultUnlocked": true
         }
     ]
 }
