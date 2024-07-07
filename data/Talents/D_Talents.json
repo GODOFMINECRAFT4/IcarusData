@@ -51859,6 +51859,56 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Stone_Brick_Basic",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Stone_Brick_Basic-DisplayName\", \"Stone Brick Building Base Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Stone_Brick_Wall_0.T_ITEM_Stone_Brick_Wall_0",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 17050,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Masonry_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Stone_Brick_Advanced",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Stone_Brick_Advanced-DisplayName\", \"Stone Brick Building Advanced Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Stone_Brick_Roof_Half_Pitch_2.T_ITEM_Stone_Brick_Roof_Half_Pitch_2",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 17350,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Stone_Brick_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Prospect_Styx_A_Research",
             "ExtraData": {
                 "RowName": "STYX_A_Research",
