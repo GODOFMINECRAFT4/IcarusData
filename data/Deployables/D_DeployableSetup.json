@@ -7606,7 +7606,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Kiwi/SM_DEP_Trophy_Kiwi.SM_DEP_Trophy_Kiwi",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
@@ -7641,13 +7640,14 @@
         {
             "Name": "Liquid_Deployment",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Liquid_Deployment.BP_Liquid_Deployment_C",
-            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/SM_Mound.SM_Mound",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/SM_Mound_CollisionForSnap.SM_Mound_CollisionForSnap",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Character/Movement/SFX_CHAR_ENTER_WATER.SFX_CHAR_ENTER_WATER",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
+            "HideInvalidPlacementPreview": true,
             "SnapBehaviour": "SnapPlacementOnly",
             "SnapActorTags": [
-                "Mission_DeployableSnapActor"
+                "Mission_DeployableSnapActor2"
             ],
             "IgnoreCollisionWhenSnapped": true,
             "UseSnapSocketRotation": true,

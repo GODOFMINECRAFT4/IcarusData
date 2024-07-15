@@ -5148,8 +5148,27 @@
         {
             "Name": "PRO_D_Transport",
             "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Transport01_Small.T_Prospect_Forest_Transport01_Small",
+            "MissionObjectives": [
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_D_Transport_Stockpile_Start",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_D_Transport_Stockpile_Destination",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                }
+            ],
             "Faction": {
                 "RowName": "UDA"
+            },
+            "InitialQuest": {
+                "RowName": "PRO_D_Transport"
             },
             "TalentsRewarded": [
                 {
@@ -5184,8 +5203,34 @@
         {
             "Name": "PRO_D_Research",
             "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition01_Small.T_Prospect_Desert_Expedition01_Small",
+            "MissionObjectives": [
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_D_Research_AerosolTesting",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_D_Research_LiquidTesting",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_D_Research_AerosolWildlife",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                }
+            ],
             "Faction": {
                 "RowName": "Sinotai"
+            },
+            "InitialQuest": {
+                "RowName": "PRO_D_Research"
             },
             "TalentsRewarded": [
                 {
@@ -5220,8 +5265,48 @@
         {
             "Name": "PRO_E_Research",
             "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Small.T_Prospect_Arctic_HeavyFog01_Small",
+            "MissionObjectives": [
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_E_Research_StationCraft",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_E_Research_StationDeploy",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_E_Research_Monitor",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_E_Research_Monitor",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 1
+                },
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_E_Research_Monitor",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 2
+                }
+            ],
             "Faction": {
                 "RowName": "The_Assembly"
+            },
+            "InitialQuest": {
+                "RowName": "PRO_E_Research"
             },
             "TalentsRewarded": [
                 {

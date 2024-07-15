@@ -7265,7 +7265,10 @@
             "Name": "Plant_Outside",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-sun.icon-weather-sun'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Outside-ModifierName\", \"Sunlight\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Outside-ModifierDescription\", \"Plant is growing at its normal speed thanks to having access to sunlight.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_Outside-ModifierDescription\", \"Plant is growing faster thanks to having access to sunlight.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": 20
+            },
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
@@ -7278,7 +7281,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_No_Sun-ModifierName\", \"Lacking Sunlight\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Plant_No_Sun-ModifierDescription\", \"Growth Speed decreased due to the lack of sunlight.\")",
             "GrantedStats": {
-                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": -50
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": -20
             },
             "MergeType": "Replace",
             "bEffectsObjects": true,
@@ -7326,7 +7329,7 @@
         },
         {
             "Name": "Fertilizer_Basic",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_FertilizeBasic.T_ICON_FertilizeBasic'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Fertiliser_1.T_ICON_Modifier_Fertiliser_1'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Basic-ModifierName\", \"Basic Fertilizer\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Basic-ModifierDescription\", \"Provides a small bonus to growth speed and crop yield\")",
             "GrantedStats": {
@@ -7352,7 +7355,7 @@
         },
         {
             "Name": "Fertilizer_Yeild",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_FertilizeYield.T_ICON_FertilizeYield'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Fertiliser_2.T_ICON_Modifier_Fertiliser_2'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Yeild-ModifierName\", \"High-Quality Fertilizer\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Yeild-ModifierDescription\", \"Increases the yield of your crops\")",
             "GrantedStats": {
@@ -7378,7 +7381,7 @@
         },
         {
             "Name": "Fertilizer_Speed",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_FertilizeSpeed.T_ICON_FertilizeSpeed'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Fertiliser_3.T_ICON_Modifier_Fertiliser_3'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Speed-ModifierName\", \"Growth Fertilizer\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Speed-ModifierDescription\", \"Helps your crops to grow faster\")",
             "GrantedStats": {
@@ -10565,6 +10568,244 @@
             ],
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "Crop_Unsuitability_Volcanic",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Biome.Icon_Biome'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Volcanic-ModifierName\", \"Volcanic Biome Unsuitability\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Volcanic-ModifierDescription\", \"Crop is not suitable for the Volcanic biome. The crop will wither quickly once it is fully grown. Build a greenhouse to remove this penalty.\")",
+            "GrantedStats": {
+                "(Value=\"BaseCropWitherSpeed_+%\")": 500
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Crop_Unsuitability_Grasslands",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Biome.Icon_Biome'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Grasslands-ModifierName\", \"Grasslands Biome Unsuitability\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Grasslands-ModifierDescription\", \"Crop is not suitable for the Grasslands biome. A large portion of the harvest will be spoiled. Build a greenhouse to remove this penalty.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropGrowthSpeed_+%\")": -60
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Crop_Unsuitability_Conifer",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Biome.Icon_Biome'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Conifer-ModifierName\", \"Forest Biome Unsuitability\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Conifer-ModifierDescription\", \"Crop is not suitable for the Forest biome. Crop will have significantly reduced yield. Build a greenhouse to remove this penalty.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": -60
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Crop_Unsuitability_Desert",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Biome.Icon_Biome'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Desert-ModifierName\", \"Desert Biome Unsuitability\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Desert-ModifierDescription\", \"Crop is not suitable for the Desert biome. Harvested crops will spoil faster than usual. Build a greenhouse to remove this penalty.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropHarvestedItemSpoilTime_+%\")": -80
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Crop_Unsuitability_Swamp",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Biome.Icon_Biome'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Swamp-ModifierName\", \"Swamp Biome Unsuitability\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Swamp-ModifierDescription\", \"Crop is not suitable for the Swamp biome. Harvested crops will have a bacterial infection which reduces food effectiveness. Build a greenhouse to remove this penalty.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropHarvestedItemAlreadySpoiled_%\")": 60
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Crop_Unsuitability_Arctic",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Biome.Icon_Biome'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Arctic-ModifierName\", \"Arctic Biome Unsuitability\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Crop_Unsuitability_Arctic-ModifierDescription\", \"Crops will not grow outside greenhouses in the Arctic.\")",
+            "GrantedStats": {
+                "(Value=\"BaseCropGrowthRate_+%\")": -100000
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Dirt_Mound_Assembled",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Dirt_Mound.T_ITEM_Dirt_Mound'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Assembled-ModifierName\", \"Dirt Mound\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Assembled-ModifierDescription\", \"Rough dirt pile made by hand and dirt.\")",
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Dirt_Mound_Wood_Shovel",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Stone_Shovel.T_ITEM_Stone_Shovel'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Wood_Shovel-ModifierName\", \"Dug with a Wooden Shovel\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Wood_Shovel-ModifierDescription\", \"Rough dirt pile made with a Wooden Shovel.\")",
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Dirt_Mound_Iron_Shovel",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Shovel.ITEM_Shovel'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Iron_Shovel-ModifierName\", \"Dug with an Iron Shovel\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Iron_Shovel-ModifierDescription\", \"Simple dirt pile made with an Iron Shovel.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 10
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Dirt_Mound_Platinum_Shovel",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Platinium_Shovel.T_ITEM_Platinium_Shovel'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Platinum_Shovel-ModifierName\", \"Dug with a Platinum Shovel\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Platinum_Shovel-ModifierDescription\", \"Advanced dirt pile made with a Platinum Shovel.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 20
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Dirt_Mound_Titanium_Shovel",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Titanium_Shovel.T_ITEM_Titanium_Shovel'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Titanium_Shovel-ModifierName\", \"Dug with a Titanium Shovel\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Titanium_Shovel-ModifierDescription\", \"Exceptional dirt pile made with a Titanium Shovel.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 20,
+                "(Value=\"BasePlantedCropSpoilRate_+%\")": -20
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Dirt_Mound_Meta_Shovel",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Workshop_Shovel.T_ITEM_Workshop_Shovel'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Meta_Shovel-ModifierName\", \"Dug with The Excavator\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Meta_Shovel-ModifierDescription\", \"Premium dirt pile made with The Excavator.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropCannotSpoil_?\")": 1
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Dirt_Mound_Ploughed",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Plough.T_ITEM_Saddle_Cart_Plough'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed-ModifierName\", \"Dug with a Seeding Cart\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed-ModifierDescription\", \"Rough dirt pile made with a Plough pulled by an Animal.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 10
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "OverlyAlert",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/HUD/StealthEyeVisible.StealthEyeVisible'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"OverlyAlert-ModifierName\", \"Overly Alert\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"OverlyAlert-ModifierDescription\", \"This creature is alerted.\")",
+            "GrantedStats": {
+                "(Value=\"BaseAIPerceptionPerceptionRadius_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": 50
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Fertilizer_Recovery",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Fertiliser_4.T_ICON_Modifier_Fertiliser_4'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Recovery-ModifierName\", \"Recovery Fertilizer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Recovery-ModifierDescription\", \"Helps your crops to recovery quaility faster.\")",
+            "GrantedStats": {
+                "(Value=\"BaseCropQualityRecovery_+%\")": 200
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FertilizerConsumption_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Fertilizer_Resistance",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Fertiliser_5.T_ICON_Modifier_Fertiliser_5'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Resistance-ModifierName\", \"Resistance Fertilizer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Resistance-ModifierDescription\", \"Helps your crops retain quailty during storms.\")",
+            "GrantedStats": {
+                "(Value=\"BaseCropStormResistance_+%\")": 50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FertilizerConsumption_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
         }
     ]
 }

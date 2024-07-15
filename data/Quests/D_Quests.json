@@ -9244,37 +9244,71 @@
         {
             "Name": "PRO_D_Transport",
             "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport.BPQ_PRO_D_Transport_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport-Description\", \"CARAVAN: Ashlands\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport-Description\", \"LONG HAUL: Ashlands\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_NorthPath"
+            }
         },
         {
             "Name": "PRO_D_Transport_Stockpile_Start",
-            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Stockpile_Ship.BPQ_PRO_D_Transport_Stockpile_Ship_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Start-Description\", \"Stockpile a large stash of supplies ready for transport\")"
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_List.BPQ_PRO_D_Transport_List_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Start-Description\", \"Stockpile a large stash of supplies within storage, ready for transport\")",
+            "LocationQuery": {
+                "RowName": "PRO_Marshlands_East"
+            }
         },
         {
             "Name": "PRO_D_Transport_Stockpile_Wood",
             "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Wood.BPQ_PRO_D_Transport_Wood_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Wood-Description\", \"{0} / {1} Wood\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Wood-Description\", \"{0} / {1} Wood\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ItemFoundGeneric4",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_D_Transport_Stockpile_Fiber",
             "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Fiber.BPQ_PRO_D_Transport_Fiber_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Fiber-Description\", \"{0} / {1} Fiber\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Fiber-Description\", \"{0} / {1} Fiber\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ItemFoundGeneric7",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_D_Transport_Stockpile_Oxite",
             "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Oxite.BPQ_PRO_D_Transport_Oxite_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Oxite-Description\", \"{0} / {1} Oxite\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Oxite-Description\", \"{0} / {1} Oxite\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ItemFoundGeneric10",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_D_Transport_Stockpile_Seeds",
             "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_SeedVariety.BPQ_PRO_D_Transport_SeedVariety_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Seeds-Description\", \"{0} / {1} Seed Varieties\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Seeds-Description\", \"{0} / {1} Seed Varieties\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ItemFoundGeneric11",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_D_Transport_Stockpile_Destination",
-            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Destination.BPQ_PRO_D_Transport_Destination_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Destination-Description\", \"Deploy storage and store supplies at the marked location within the Ashlands\")"
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_List.BPQ_PRO_D_Transport_List_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Stockpile_Destination-Description\", \"Deploy storage and store supplies at the marked location within the Ashlands\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_NorthPath"
+            }
         },
         {
             "Name": "PRO_D_Transport_Stockpile_Wood_End",
@@ -9302,8 +9336,161 @@
         },
         {
             "Name": "PRO_D_Transport_Ambush",
-            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Stockpile_Ship.BPQ_PRO_D_Transport_Stockpile_Ship_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Transport/BPQ_PRO_D_Transport_Ambush.BPQ_PRO_D_Transport_Ambush_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Transport_Ambush-Description\", \"Defeat the Ambush\")"
+        },
+        {
+            "Name": "PRO_D_Research",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research.BPQ_PRO_D_Research_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research-Description\", \"TESTING GROUND: Ashlands\")"
+        },
+        {
+            "Name": "PRO_D_Research_CraftSolution",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_CraftSolution.BPQ_PRO_D_Research_CraftSolution_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_CraftSolution-Description\", \"{0} / {1} Craft Liquid Solution at Chemisty Bench\")"
+        },
+        {
+            "Name": "PRO_D_Research_CraftAerosol",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_CraftAerosol.BPQ_PRO_D_Research_CraftAerosol_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_CraftAerosol-Description\", \"{0} / {1} Craft Aerosol Emitter at Fabricator\")"
+        },
+        {
+            "Name": "PRO_D_Research_AerosolTesting",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_AerosolTesting.BPQ_PRO_D_Research_AerosolTesting_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolTesting-Description\", \"Undertake Aerosol Testing\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_ValleyEntryway"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "GenericLandingExploring2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_D_Research_AerosolDeploy",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_Aerosol_Deploy.BPQ_PRO_D_Research_Aerosol_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolDeploy-Description\", \"Deploy Aerosol Emitter at location Alpha\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_ValleyEntryway"
+            }
+        },
+        {
+            "Name": "PRO_D_Research_AerosolDelay",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_AerosolDelay.BPQ_PRO_D_Research_AerosolDelay_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolDelay-Description\", \"Wait for Aerosol emission cycle: {0} / {1} seconds\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "SurveyDeviceDeployedWater2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_D_Research_AerosolReturn",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_AerosolReturn.BPQ_PRO_D_Research_AerosolReturn_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolReturn-Description\", \"Return to Aerosol Emitter\")"
+        },
+        {
+            "Name": "PRO_D_Research_AerosolWildlife",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_AerosolWildlife.BPQ_PRO_D_Research_AerosolWildlife_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolWildlife-Description\", \"Eradicate Mutated Wildlife\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "Research2aPoisoned",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "CreatureRemarkPostFight1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_D_Research_LiquidTesting",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_LiquidTesting.BPQ_PRO_D_Research_LiquidTesting_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_LiquidTesting-Description\", \"Undertake Liquid Testing\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_ValleyEntrance"
+            }
+        },
+        {
+            "Name": "PRO_D_Research_LiquidDeploy",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_Liquid_Deploy.BPQ_PRO_D_Research_Liquid_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_LiquidDeploy-Description\", \"Deploy Liquid Solution at location Beta\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_ValleyEntrance"
+            }
+        },
+        {
+            "Name": "PRO_D_Research_LiquidWildlife",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_LiquidWildlife.BPQ_PRO_D_Research_LiquidWildlife_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_LiquidWildlife-Description\", \"Defeat the creature\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "GenericReaction4",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "CreatureRemarkPostFight2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_E_Research",
+            "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research.BPQ_PRO_E_Research_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research-Description\", \"ISOLATION: Ice Sheet\")",
+            "LocationQuery": {
+                "RowName": "PRO_Icesheet_UpperPillar"
+            }
+        },
+        {
+            "Name": "PRO_E_Research_StationCraft",
+            "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research_StationCraft.BPQ_PRO_E_Research_StationCraft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_StationCraft-Description\", \"Craft a Monitoring Pylon\")"
+        },
+        {
+            "Name": "PRO_E_Research_StationDeploy",
+            "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research_StationDeploy.BPQ_PRO_E_Research_StationDeploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_StationDeploy-Description\", \"Deploy Monitoring Pylon on top of the stone formation below the lone drifter\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "DirectionNextStop1",
+                    "DataTableName": "D_Dialogue"
+                },
+                "QuestEnd": {
+                    "RowName": "Survey2aDeployedCorrect1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_E_Research_Monitor",
+            "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research_Monitoring.BPQ_PRO_E_Research_Monitoring_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_Monitor-Description\", \"Monitoring..\")"
+        },
+        {
+            "Name": "PRO_E_Research_Collect_0",
+            "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research_Collect_Stone.BPQ_PRO_E_Research_Collect_Stone_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_Collect_0-Description\", \"Provide station {0} {1} for analysis.\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "None",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_E_Research_Collect_1",
+            "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research_Collect_Gold.BPQ_PRO_E_Research_Collect_Gold_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_Collect_1-Description\", \"Provide station {0} {1} for analysis.\")"
+        },
+        {
+            "Name": "PRO_E_Research_Collect_2",
+            "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research_Collect_Sulfur.BPQ_PRO_E_Research_Collect_Sulfur_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_Collect_2-Description\", \"Provide station {0} {1} for analysis.\")"
         }
     ]
 }

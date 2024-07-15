@@ -1442,7 +1442,7 @@
         },
         {
             "Name": "Item_Shovel",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shovel-DisplayName\", \"Shovel\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shovel-DisplayName\", \"Iron Shovel\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Shovel.ITEM_Shovel",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Shovel-Description\", \"Can be used to collect dirt and sand when digging or shovel ash or snow off your roof.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Shovel-FlavorText\", \"Shift snow, or bury a friend.\")",
@@ -15751,9 +15751,9 @@
         },
         {
             "Name": "Item_Workshop_Shovel",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Shovel-DisplayName\", \"Advanced Shovel\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Shovel-DisplayName\", \"The Excavator\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Workshop_Shovel.T_ITEM_Workshop_Shovel",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Shovel-Description\", \"Can be used to dig dirt mounds on Dirt or Grass, or shovel ash or snow off your roof. Provides heavy storm resistance to your crops.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Shovel-Description\", \"Can be used to dig dirt mounds on Dirt or Grass, or shovel ash or snow off your roof. Provides heavy storm resistance to your crops and causes them not to wither after they are fully grown.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Shovel-FlavorText\", \"Shift snow, or bury a friend.\")",
             "Weight": 500
         },
@@ -17609,6 +17609,40 @@
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Stone_Brick-FlavorText\", \"The building blocks of civilization.\")",
             "Weight": 300,
             "MaxStack": 100
+        },
+        {
+            "Name": "Item_Meta_Shovel",
+            "DisplayName": "INVTEXT(\"[DNT] Meta Shovel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Shovel.ITEM_Shovel",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Shovel-Description\", \"Can be used to dig dirt mounds on Dirt or Grass, or shovel snow off your roof.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Shovel-FlavorText\", \"Shift snow, or bury a friend.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Seed_Pouch_T2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Pouch_T2-DisplayName\", \"Farmers Satchel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Seed_Pouch_T2.T_ITEM_Seed_Pouch_T2",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Pouch_T2-Description\", \"A convenient eighteen-slot pouch for your seeds.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Pouch_T2-FlavorText\", \"Right click to access the Pouch Inventory\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Quality_Fertilizer",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Quality_Fertilizer-DisplayName\", \"Recovery Fertilizer\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Fertalizer_Recovery.T_ITEM_Fertalizer_Recovery",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Quality_Fertilizer-Description\", \"Promotes recovery of Crop Quality while the Crop is Wet.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Quality_Fertilizer-FlavorText\", \"Reach for the sky\")",
+            "Weight": 2000,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Resistance_Fertilizer",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Resistance_Fertilizer-DisplayName\", \"Resistance Fertilizer\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Fertalizer_Resistance.T_ITEM_Fertalizer_Resistance",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Resistance_Fertilizer-Description\", \"Helps a Crop maintain its quality during storms.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Resistance_Fertilizer-FlavorText\", \"Reach for the sky\")",
+            "Weight": 2000,
+            "MaxStack": 20
         }
     ]
 }

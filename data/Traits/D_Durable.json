@@ -1703,6 +1703,45 @@
         {
             "Name": "Stone_Brick_Building",
             "Max_Durability": 3500
+        },
+        {
+            "Name": "Shovel_Platinum",
+            "Max_Durability": 30000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Platinum_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Shovel_Titanium",
+            "Max_Durability": 40000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Titanium_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Shovel_Workshop",
+            "Max_Durability": 50000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
         }
     ]
 }

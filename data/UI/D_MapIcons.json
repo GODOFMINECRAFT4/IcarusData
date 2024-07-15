@@ -677,6 +677,15 @@
             "Name": "Kiwi",
             "WidgetClass": "/Game/BP/Objects/World/Items/Deployables/Radar/UMG_RadarIcon.UMG_RadarIcon_C",
             "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MapIcons/T_ICON_Kiwi.T_ICON_Kiwi'"
+        },
+        {
+            "Name": "WorldBoss_IceBreaker",
+            "WidgetClass": "/Game/BP/Objects/World/Items/Deployables/Radar/UMG_RadarIcon.UMG_RadarIcon_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Skull.Icon_Skull'",
+            "RequiredPlayerStatToShow": {
+                "Value": "MapCanSeeWorldBosses_?"
+            },
+            "bDisplayOnCompass": false
         }
     ]
 }

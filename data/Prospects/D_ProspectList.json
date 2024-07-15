@@ -13006,9 +13006,9 @@
         },
         {
             "Name": "PRO_Ashlands_Story",
-            "DropName": "INVTEXT(\"[DNT] Ashlands Story\")",
-            "Description": "INVTEXT(\"[DNT] Ashlands Story\")",
-            "FlavourText": "INVTEXT(\"[DNT] Ashlands Story\")",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_Ashlands_Story-DropName\", \"ASHLANDS: Retrieval\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_Ashlands_Story-Description\", \"LOCATE THE FORWARD SCIENCE TEAM\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_Ashlands_Story-FlavourText\", \"//OPERATOR: UDA // BIOME: Null Sector // BACKGROUND: Investigate an uncharted area for signs of a lost research team. // MISSION: Locate the missing scientists and assist them in returning to safety. //TERMS: This area is unmapped, and was until recently deemed too dangerous for human traversal. Proceed with caution, the UDA takes no responsibility for contractor safety. \")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Large.T_Prospect_Desert_GroupBase01_Large'",
             "DifficultySetup": {
                 "Easy": {
@@ -13087,9 +13087,9 @@
         },
         {
             "Name": "PRO_Icesheet_Story",
-            "DropName": "INVTEXT(\"[DNT] Ice Sheet Story\")",
-            "Description": "INVTEXT(\"[DNT] Ice Sheet Story\")",
-            "FlavourText": "INVTEXT(\"[DNT] Ice Sheet Story\")",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_Icesheet_Story-DropName\", \"ICE SHEET: Retrieval\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_Icesheet_Story-Description\", \"PUSH FORWARD TO RECOVER THE SCIENTISTS\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_Icesheet_Story-FlavourText\", \"//OPERATOR: UDA // BIOME: Null Sector // BACKGROUND: Push forward into more uncharted territory to recover the forward science team. // MISSION: Locate the missing scientists and investigate what they encountered. //TERMS: This area is unmapped, and was until recently deemed too dangerous for human traversal. Proceed with caution, the UDA takes no responsibility for contractor safety. \")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Storm01_Large.T_Prospect_Arctic_Storm01_Large'",
             "DifficultySetup": {
                 "Easy": {
@@ -13270,7 +13270,7 @@
             "Name": "PRO_D_Transport",
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_D_Transport-DropName\", \"CARAVAN: Transport\")",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_D_Transport-Description\", \"TRANSPORT SUPPLIES FOR LONG TERM HABITATION\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_D_Transport-FlavourText\", \"//OPERATOR: UDA // BIOME: Basalt Expansion to Ashlands // BACKGROUND: Ashlands region has sparse vegetation, UDA requests a shipment of supplies for habitation. // MISSION: Collect and transport a large stockpile of resources. //TERMS: UDA provides list of required resources, contractor responsible for collection and transport through dangerous area. Contractor responsible for all safety measures.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_D_Transport-FlavourText\", \"//OPERATOR: UDA // BIOME: Shallow Mire to Ashlands // BACKGROUND: Ashlands region has sparse vegetation, UDA requests a shipment of supplies for habitation. // MISSION: Collect and transport a large stockpile of resources. //TERMS: UDA provides list of required resources, contractor responsible for collection and transport through dangerous area. Contractor responsible for all safety measures.\")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Transport01_Large.T_Prospect_Forest_Transport01_Large'",
             "DifficultySetup": {
                 "Easy": {
@@ -13339,7 +13339,7 @@
                 "RowName": "Terrain_019"
             },
             "FactionMission": {
-                "RowName": "STYX_A_Research"
+                "RowName": "PRO_D_Transport"
             },
             "TimeDuration": {
                 "Days": {
@@ -13348,7 +13348,7 @@
                 }
             },
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
-            "PlayerSpawnGroupIndex": 15,
+            "PlayerSpawnGroupIndex": 13,
             "NumMetaSpawnsMax": 3,
             "OnProspectAvailability": "Base"
         },
@@ -13425,7 +13425,7 @@
                 "RowName": "Terrain_019"
             },
             "FactionMission": {
-                "RowName": "STYX_A_Research"
+                "RowName": "PRO_D_Research"
             },
             "TimeDuration": {
                 "Days": {
@@ -13442,7 +13442,7 @@
             "Name": "PRO_E_Research",
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_E_Research-DropName\", \"DROVER: Research\")",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_E_Research-Description\", \"MONITOR AND RECORD LONE DRIFTER\")",
-            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_E_Research-FlavourText\", \"//OPERATOR: African Assembly // BIOME: Icesheet // BACKGROUND: A single drifter has been spotted in the Icesheet region. // MISSION: Construct monitoring pylon, await further instructions. //TERMS: Relative safety is assumed. Environment and wildlife dangers not factored.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_E_Research-FlavourText\", \"//OPERATOR: African Assembly // BIOME: Ice Sheet // BACKGROUND: A single drifter has been spotted in the Ice Sheet region. // MISSION: Construct monitoring pylon, await further instructions. //TERMS: Relative safety is assumed. Environment and wildlife dangers not factored.\")",
             "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Large.T_Prospect_Arctic_HeavyFog01_Large'",
             "DifficultySetup": {
                 "Easy": {
@@ -13501,7 +13501,7 @@
                 "RowName": "GenericLandingHunting1"
             },
             "MissionCompleteDialogue": {
-                "RowName": "ExtractionComplete4b"
+                "RowName": "ResearchFindItem7"
             },
             "RequiredTech": "Tier3",
             "Forecast": {
@@ -13511,7 +13511,7 @@
                 "RowName": "Terrain_019"
             },
             "FactionMission": {
-                "RowName": "STYX_A_Research"
+                "RowName": "PRO_E_Research"
             },
             "TimeDuration": {
                 "Days": {
