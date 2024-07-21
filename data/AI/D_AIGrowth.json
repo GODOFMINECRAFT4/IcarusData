@@ -3560,6 +3560,38 @@
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_MammothBossDamage.C_MammothBossDamage'",
             "MovementSpeed": "CurveFloat'/Game/Data/AI/C_MammothBossMovementSpeed.C_MammothBossMovementSpeed'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "RockGolem",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 0,
+                "(Value=\"BaseMaximumFallDamage_%\")": 0,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 10000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 12000,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 130,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 3000,
+                "(Value=\"BaseCharacterMass_+\")": 1000,
+                "(Value=\"BaseNPCAttackRadius_+\")": 350,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 180,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 400,
+                "(Value=\"BaseHealthPerConnectedPlayer_+\")": 10000,
+                "(Value=\"IsKnockbackResisted_?\")": 1,
+                "(Value=\"BaseSlowResistance_%\")": 100,
+                "(Value=\"BaseImmobiliseResistance_%\")": 100,
+                "(Value=\"BaseExplosiveDamageResistance_%\")": -50,
+                "(Value=\"BaseFrostDamageResistance_%\")": -100,
+                "(Value=\"IsInvulnerable_?\")": 1,
+                "(Value=\"BaseMeleeDamage_+\")": 75
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_ScorpionBossHealth.C_ScorpionBossHealth'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         }
     ]
 }

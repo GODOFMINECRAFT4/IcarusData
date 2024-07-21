@@ -52042,6 +52042,36 @@
             "bDefaultUnlocked": true
         },
         {
+            "Name": "Seed_Pouch_T2",
+            "ExtraData": {
+                "RowName": "Item_Seed_Pouch_T2",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 10650,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Armor_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_HuntingLocked"
+                }
+            ]
+        },
+        {
             "Name": "Fertilizer_Quality",
             "ExtraData": {
                 "RowName": "Item_Quality_Fertilizer",
@@ -52085,6 +52115,1156 @@
             "RequiredTalents": [
                 {
                     "RowName": "Herbalism_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Sandworm_Brazier",
+            "ExtraData": {
+                "RowName": "Item_Sandworm_Brazier",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 800,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sandworm_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Sandworm_Head_Trophy",
+            "ExtraData": {
+                "RowName": "Item_Sandworm_Trophy_Head",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 1100,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sandworm_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Sandworm_Hanging_Trophy",
+            "ExtraData": {
+                "RowName": "Item_Sandworm_Trophy",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 1400,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sandworm_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Boss_Crafting",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Boss_Crafting-DisplayName\", \"Boss Crafting\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Mammoth.Icon_Mammoth",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 150,
+                "Y": 700
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Sandworm_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 1250,
+                "Y": 350
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Boss_Crafting",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Sandworm_Knife",
+            "ExtraData": {
+                "RowName": "Item_Sandworm_Knife",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 1850,
+                "Y": 500
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sandworm_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Sandworm_Spear",
+            "ExtraData": {
+                "RowName": "Item_Sandworm_Spear",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 1550,
+                "Y": 500
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sandworm_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Sandworm_Bow",
+            "ExtraData": {
+                "RowName": "Item_Sandworm_Bow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 500
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sandworm_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Sandworm_Arrow",
+            "ExtraData": {
+                "RowName": "Item_Sandworm_Arrow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 600,
+                "Y": 500
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sandworm_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Sandworm_Buildings",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Sandworm_Buildings-DisplayName\", \"Sandworm Building Tier\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Sandworm_Buildings-Description\", \"Unlock the Sandworm building tier.\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Wall_0.ITEM_Wood_Wall_0",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 1700,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sandworm_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Sandworm_Armor_Attachment",
+            "ExtraData": {
+                "RowName": "Item_Attachment_Sandworm_Armor",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 2000,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sandworm_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Sandworm_Module",
+            "ExtraData": {
+                "RowName": "Item_Sandworm_Module",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sandworm_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Black_Wolf_Trophy",
+            "ExtraData": {
+                "RowName": "Item_Black_Wolf_Trophy",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 2150,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Black_Wolf_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Black_Wolf_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 2600,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Boss_Crafting",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Black_Wolf_Armor_Set",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Black_Wolf_Armor_Set-DisplayName\", \"Black Wolf Armor Set\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Black_Wolf_Armor_Set-Description\", \"A set of Black Wolf Armor.\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Black_Wolf_Chest.T_ITEM_Black_Wolf_Chest",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 2900,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Black_Wolf_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Black_Wolf_Trophy_Howl",
+            "ExtraData": {
+                "RowName": "Item_Black_Wolf_Trophy_Howl",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 2450,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Black_Wolf_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Black_Wolf_Trophy_Sit",
+            "ExtraData": {
+                "RowName": "Item_Black_Wolf_Trophy_Sit",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 2750,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Black_Wolf_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Black_Wolf_Knife",
+            "ExtraData": {
+                "RowName": "Item_Black_Wolf_Knife",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 2000,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Black_Wolf_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Black_Wolf_Arrow",
+            "ExtraData": {
+                "RowName": "Item_Black_Wolf_Arrow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 2300,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Black_Wolf_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Black_Wolf_Attachment",
+            "ExtraData": {
+                "RowName": "Item_Attachment_AlphaWolf_Melee",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 3350,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Black_Wolf_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Black_Wolf_Module",
+            "ExtraData": {
+                "RowName": "Item_Black_Wolf_Module",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 1850,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Black_Wolf_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Black_Wolf_Trap",
+            "ExtraData": {
+                "RowName": "Item_Black_Wolf_Trap",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 3050,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Black_Wolf_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Scorpion_Trophy_Tail",
+            "ExtraData": {
+                "RowName": "Item_Scorpion_Boss_Trophy_Tail",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 3500,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scorpion_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Scorpion_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 3950,
+                "Y": 350
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Boss_Crafting",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Scorpion_Armor_Set",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Scorpion_Armor_Set-DisplayName\", \"Scorpion Armor Set\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Scorpion_Armor_Set-Description\", \"A set of Scorpion Armor.\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Scorpion_Chest_Armor.ITEM_Scorpion_Chest_Armor",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 4250,
+                "Y": 500
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scorpion_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Scorpion_Trophy_Hanging",
+            "ExtraData": {
+                "RowName": "Item_Scorpion_Boss_Trophy_Hanging",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 3800,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scorpion_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Scorpion_Trophy_Chair",
+            "ExtraData": {
+                "RowName": "Item_Scorpion_Boss_Trophy_Chair",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 4400,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scorpion_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Scorpion_Attachment",
+            "ExtraData": {
+                "RowName": "Item_Attachment_Scorpion_Armor",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 4700,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scorpion_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Scorpion_Module",
+            "ExtraData": {
+                "RowName": "Item_Scorpion_Module",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 3200,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scorpion_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Scorpion_Trophy",
+            "ExtraData": {
+                "RowName": "Item_Scorpion_Boss_Trophy",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 4100,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scorpion_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Lava_Hunter_Mine",
+            "ExtraData": {
+                "RowName": "Item_Lava_Hunter_Mine",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 5700,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lava_Hunter_Reroute_0",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Lava_Hunter_Chair",
+            "ExtraData": {
+                "RowName": "Item_Lava_Hunter_Chair",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 4900,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lava_Hunter_Reroute_0",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Lava_Hunter_Reroute_0",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 5350,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Boss_Crafting",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Lava_Hunter_Trophy",
+            "ExtraData": {
+                "RowName": "Item_Lava_Hunter_Trophy",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 5200,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lava_Hunter_Reroute_0",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Lava_Hunter_Trophy_Feature",
+            "ExtraData": {
+                "RowName": "Item_Lava_Hunter_Feature",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 5500,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lava_Hunter_Reroute_0",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Lava_Hunter_Sickle",
+            "ExtraData": {
+                "RowName": "Item_Lava_Hunter_Sickle",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 4750,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lava_Hunter_Reroute_0",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Lava_Hunter_Backpack",
+            "ExtraData": {
+                "RowName": "Item_Lava_Hunter_Backpack",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 5050,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lava_Hunter_Reroute_0",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Lava_Hunter_Attachment",
+            "ExtraData": {
+                "RowName": "Item_Lava_Hunter_Attachment",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 6100,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lava_Hunter_Reroute_0",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Lava_Hunter_Module",
+            "ExtraData": {
+                "RowName": "Item_Lava_Hunter_Module",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 4600,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lava_Hunter_Reroute_0",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Slug_Axe",
+            "ExtraData": {
+                "RowName": "Item_Slug_Axe",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 6250,
+                "Y": 500
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Slug_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Slug_Grenade",
+            "ExtraData": {
+                "RowName": "Item_Slug_Grenade",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 6550,
+                "Y": 500
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Slug_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Slug_Trophy_Coil",
+            "ExtraData": {
+                "RowName": "Item_Slug_Trophy_Coil",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 6400,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Slug_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Slug_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 6850,
+                "Y": 350
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Boss_Crafting",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Slug_Trophy_Habitat",
+            "ExtraData": {
+                "RowName": "Item_Slug_Trophy_Habitat",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 6700,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Slug_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Slug_Attachment",
+            "ExtraData": {
+                "RowName": "Item_Slug_Attachment",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 7300,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Slug_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Slug_Module",
+            "ExtraData": {
+                "RowName": "Item_Slug_Module",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 6100,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Slug_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Slug_Trophy_Vial",
+            "ExtraData": {
+                "RowName": "Item_Slug_Trophy_Vial",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 7000,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Slug_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Slug_Epoxy",
+            "ExtraData": {
+                "RowName": "Item_Epoxy",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 7100,
+                "Y": 500
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Slug_Reroute",
                     "DataTableName": "D_Talents"
                 }
             ]

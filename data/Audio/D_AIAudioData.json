@@ -4875,6 +4875,30 @@
             "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/IceBreaker/SFX_FOOTSTEP_ICEBREAKER_V2.SFX_FOOTSTEP_ICEBREAKER_V2",
             "FrontFootSocket": "Foot_LF",
             "RearFootSocket": "Foot_LB",
+            "VocalisationSocket": "RigHead_M",
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "IceBreakerIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "FootstepMaxDistance": 100000
+        },
+        {
+            "Name": "RockGolem",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/IceBreaker/SFX_FOOTSTEP_ICEBREAKER_V2.SFX_FOOTSTEP_ICEBREAKER_V2",
+            "FrontFootSocket": "Foot_LF",
+            "RearFootSocket": "Foot_LB",
             "FootstepMaxDistance": 100000
         }
     ]
