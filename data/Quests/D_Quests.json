@@ -8871,7 +8871,7 @@
         {
             "Name": "PRO_Ashlands_Outpost_Clear",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Outpost_Clear.BPQ_PRO_Ashlands_Story_Outpost_Clear_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Clear-Description\", \"Clear creatures from around the outpost\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Clear-Description\", \"Clear Stonejaw from around the outpost\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
             },
@@ -9379,7 +9379,7 @@
         {
             "Name": "PRO_D_Research_AerosolDelay",
             "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_AerosolDelay.BPQ_PRO_D_Research_AerosolDelay_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolDelay-Description\", \"Wait for Aerosol emission cycle: {0} / {1} seconds\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolDelay-Description\", \"Leave the area while Aerosol emission cycle completes: {0} / {1} seconds\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "SurveyDeviceDeployedWater2",
@@ -9418,6 +9418,7 @@
         {
             "Name": "PRO_D_Research_LiquidDeploy",
             "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_Liquid_Deploy.BPQ_PRO_D_Research_Liquid_Deploy_C",
+            "Variation": 1,
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_LiquidDeploy-Description\", \"Deploy Liquid Solution at location Beta\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_ValleyEntrance"

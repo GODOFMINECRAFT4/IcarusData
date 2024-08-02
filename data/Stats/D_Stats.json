@@ -14385,6 +14385,22 @@
             ],
             "StatCategory": {
                 "RowName": "Deployable"
+            }
+        },
+        {
+            "Name": "TrailBeaconMaxPlacementDistance_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TrailBeaconMaxPlacementDistance_+-Title\", \"Max Trail Beacon Placement Distance \")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"TrailBeaconMaxPlacementDistance_+-PositiveDescription\", \"+{0}m\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"TrailBeaconMaxPlacementDistance_+-NegativeDescription\", \"-{0}m\")",
+            "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Deployable"
             },
             "bHideStatInUserInterface": true
         },
@@ -15150,20 +15166,31 @@
             }
         },
         {
-            "Name": "BaseCreatureArmour_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCreatureArmour_+-PositiveDescription\", \"+{0} Creature Armor\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCreatureArmour_+-NegativeDescription\", \"-{0} Creature Armor\")",
+            "Name": "MaximumArmor_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"MaximumArmor_+-Title\", \"Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Shield.T_ICON_FieldGuide_Shield",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
             "StatCategory": {
-                "RowName": "AI"
+                "RowName": "Health"
             }
         },
         {
-            "Name": "CreatureArmour_+",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"CreatureArmour_+-Title\", \"Creature Armor\")",
-            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
-            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "Name": "BaseMaximumArmor_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMaximumArmor_+-PositiveDescription\", \"+{0} Maximum Armor\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMaximumArmor_+-NegativeDescription\", \"-{0} Maximum Armor\")",
             "StatCategory": {
-                "RowName": "AI"
+                "RowName": "Health"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseMaximumArmor_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMaximumArmor_+%-PositiveDescription\", \"+{0}% Maximum Armor\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMaximumArmor_+%-NegativeDescription\", \"-{0}% Maximum Armor\")",
+            "StatCategory": {
+                "RowName": "Health"
             }
         }
     ]

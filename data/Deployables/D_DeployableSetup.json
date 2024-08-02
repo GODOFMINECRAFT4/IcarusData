@@ -7640,18 +7640,22 @@
         {
             "Name": "Liquid_Deployment",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Liquid_Deployment.BP_Liquid_Deployment_C",
-            "PreviewStaticMesh": "/Game/Assets/3DArt/Interactables/Items/SM_Mound_CollisionForSnap.SM_Mound_CollisionForSnap",
+            "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_MEDS_UndergroundTonic_TMP.SM_ITM_MEDS_UndergroundTonic_TMP",
             "DeployedSound": "/Game/FMOD/Events/SFX/Character/Movement/SFX_CHAR_ENTER_WATER.SFX_CHAR_ENTER_WATER",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
             "HideInvalidPlacementPreview": true,
             "SnapBehaviour": "SnapPlacementOnly",
             "SnapActorTags": [
-                "Mission_DeployableSnapActor2"
+                "Mission_DeployableSnapActor"
             ],
-            "IgnoreCollisionWhenSnapped": true,
             "UseSnapSocketRotation": true,
-            "bCanAffectNavigation": false
+            "bCanAffectNavigation": false,
+            "DeployCollisionExtentOffset": {
+                "X": 10,
+                "Y": 10,
+                "Z": 10
+            }
         },
         {
             "Name": "Black_Wolf_Trophy_Wall",
@@ -7720,21 +7724,27 @@
         },
         {
             "Name": "Slug_Trophy_Vial",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Scorpion_Boss_Tail.BP_Trophy_Scorpion_Boss_Tail_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scorpion_Boss/SM_DEP_Trophy_ScorpionBoss_Tail.SM_DEP_Trophy_ScorpionBoss_Tail",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Tank_SML.BP_Trophy_Slug_Boss_Tank_SML_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Tank_SML.SM_DEP_Trophy_Slug_Boss_Tank_SML",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY.SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY"
+        },
+        {
+            "Name": "Slug_Trophy_Vial_Med",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Tank_MED.BP_Trophy_Slug_Boss_Tank_MED_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Tank_MED.SM_DEP_Trophy_Slug_Boss_Tank_MED",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY.SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY"
         },
         {
             "Name": "Slug_Trophy_Habitat",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Scorpion_Boss_Tail.BP_Trophy_Scorpion_Boss_Tail_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scorpion_Boss/SM_DEP_Trophy_ScorpionBoss_Tail.SM_DEP_Trophy_ScorpionBoss_Tail",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Tank_LRG.BP_Trophy_Slug_Boss_Tank_LRG_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Tank_LRG.SM_DEP_Trophy_Slug_Boss_Tank_LRG",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_SOLID_TROPHY.SFX_DEPLOY_HAMMERHEAD_SOLID_TROPHY"
         },
         {
             "Name": "Slug_Trophy_Coil",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Scorpion_Boss_Tail.BP_Trophy_Scorpion_Boss_Tail_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scorpion_Boss/SM_DEP_Trophy_ScorpionBoss_Tail.SM_DEP_Trophy_ScorpionBoss_Tail",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Circle.BP_Trophy_Slug_Boss_Circle_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Circle.SM_DEP_Trophy_Slug_Boss_Circle",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_SLUG_TROPHY.SFX_DEPLOY_HAMMERHEAD_SLUG_TROPHY"
         },
         {
             "Name": "Rock_Golem_Trap",
@@ -7841,6 +7851,12 @@
             "DeployCollisionExtentOffset": {
                 "Z": -100
             }
+        },
+        {
+            "Name": "Mini_Hippo_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Mini_Hippo.BP_Trophy_Mini_Hippo_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_MiniHippo/SM_DEP_Trophy_Mini_Hippo.SM_DEP_Trophy_Mini_Hippo",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         }
     ]
 }

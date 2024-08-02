@@ -3605,6 +3605,55 @@
             ]
         },
         {
+            "Name": "MiniHippo",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"MiniHippo-CreatureName\", \"Dribbo\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_MiniHippo_MED.Bestiary_MiniHippo_MED",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_MINIHIPPO.UI_BESTIARY_CRE_MINIHIPPO",
+            "Biomes": [
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"MiniHippo-Lore1\", \"The result of another of Dr Lee\\'s unsanctioned experiments, the Dribbo as it\\'s been named by prospectors has become somewhat of an example of when science goes too far. Illegal genetic splicing of Earth hippo DNA and Icarus native DNA resulted in these curious-looking creatures. Once released planetside they were quick to reproduce, but the influence of Exotics quickly mutated some offspring.\")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"MiniHippo-Lore2\", \"All Dribbo share beak-like mouth features, however some Exotic-affected creatures slowly developed an odd spiked protrusion. Research has shown that this is the egg that the creature hatches from, which they then continue to carry with them to maturity. In an early memo to Group 15 Dr Lee describes this Exotic mutation as \\\"inevitable\\\".\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"MiniHippo-Lore3\", \"\\\"Nah mate, nah, hear me out... \\'Dribbo\\' - get it? Cause it\\'s a drunk hippo. I\\'m calling it now, it\\'ll catch on, the other Aussies will love it.\\\"\")",
+            "Traits": [
+                {
+                    "RowName": "Head_CritSpot",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "PackAnimal_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Slow_Weakness",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Slow_DamageType",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseExplosiveDamage_+%\")": 5
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseCriticalDamage_+%\")": 5
+            }
+        },
+        {
             "Name": "Sheep",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Sheep-CreatureName\", \"Sheep\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Workshop/Sheep_HB_MED.Sheep_HB_MED",
