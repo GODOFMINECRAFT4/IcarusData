@@ -1502,6 +1502,51 @@
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
             "ConsumedSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_VITAMIN_PILL.SFX_CONSUME_VITAMIN_PILL"
+        },
+        {
+            "Name": "Hammerhead_Axe",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_AXE_PICKUP.SFX_AXE_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Axes/SFX_IMPACT_HAMMERHEAD_AXE.SFX_IMPACT_HAMMERHEAD_AXE",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "Whoosh": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Axes/Whoosh/SFX_WEP_AXE_HAMMERHEAD_WHOOSH.SFX_WEP_AXE_HAMMERHEAD_WHOOSH"
+                    ]
+                },
+                "Throw": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_AXE_THROW_GENERIC.SFX_BALLISTIC_AXE_THROW_GENERIC"
+                    ]
+                },
+                "EQUIP": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/SFX_WEP_EQUIP_HAMMERHEAD_AXE.SFX_WEP_EQUIP_HAMMERHEAD_AXE"
+                    ]
+                }
+            }
+        },
+        {
+            "Name": "RockGollumCore",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ROCK_GOLLUM_CORE_PICKUP.SFX_ROCK_GOLLUM_CORE_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
+        },
+        {
+            "Name": "HammerheadSlugSkin",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_HAMMERHEAD_SKIN_PICKUP.SFX_HAMMERHEAD_SKIN_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
+        },
+        {
+            "Name": "Slime",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_SLIME_PICKUP.SFX_SLIME_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
         }
     ]
 }

@@ -648,6 +648,42 @@
             ]
         },
         {
+            "Name": "Pistol_T3",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_T3_FIRE.SFX_PISTOL_T3_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_DRY_FIRE.SFX_PISTOL_DRY_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
             "Name": "CrossbowSandworm",
             "FireSounds": [
                 {
@@ -814,6 +850,42 @@
                 {
                     "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
                     "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "PistolT4",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_T4_PISTOL_FIRE.SFX_T4_PISTOL_FIRE",
+                    "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "Trigger",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_DRY_FIRE.SFX_PISTOL_DRY_FIRE",
+                    "AttachPoint": "Trigger1",
                     "bUseChargeParameter": false,
                     "bUseChargingParameter": false,
                     "bUseAmmoCountParameter": true,

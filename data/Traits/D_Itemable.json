@@ -2057,9 +2057,9 @@
         },
         {
             "Name": "Item_Pistol_Handgun",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Handgun-DisplayName\", \"Pistol\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Handgun-DisplayName\", \"One-Shot Pistol\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/ITEM_Pistol_Handgun.ITEM_Pistol_Handgun",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Handgun-Description\", \"A serviceable 9mm handgun.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Handgun-Description\", \"A serviceable handgun.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_Handgun-FlavorText\", \"Icarus is open carry.\")",
             "Weight": 1000
         },
@@ -15097,9 +15097,10 @@
         },
         {
             "Name": "Item_Mission_AudioLog_Prometheus_3",
-            "DisplayName": "INVTEXT(\"[DNT] Ashlands Audio Log\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_AudioLog_Prometheus_3-DisplayName\", \"Abandoned Audio Log\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/ITEM_Module_Compass.ITEM_Module_Compass",
-            "Description": "INVTEXT(\"[DNT] An audio log, detailing the discovery of an entrance to an arctic area, north of the outpost, along the west wall, over some lava.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_AudioLog_Prometheus_3-Description\", \"An audio log left behind by someone.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_AudioLog_Prometheus_3-FlavorText\", \"Could this hold the information you\\'ve been searching for?\")",
             "Weight": 500
         },
         {
@@ -16238,9 +16239,10 @@
         },
         {
             "Name": "Item_Mission_AudioLog_Prometheus_4",
-            "DisplayName": "INVTEXT(\"[DNT] Icesheet Audio Log\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_AudioLog_Prometheus_4-DisplayName\", \"Partially Frozen Audio Log\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/ITEM_Module_Compass.ITEM_Module_Compass",
-            "Description": "INVTEXT(\"[DNT] Crazed Scientist Log\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_AudioLog_Prometheus_4-Description\", \"An audio log left behind by someone.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_AudioLog_Prometheus_4-FlavorText\", \"Could this hold the information you\\'ve been searching for?\")",
             "Weight": 500
         },
         {
@@ -17622,8 +17624,8 @@
             "Name": "Item_Seed_Pouch_T2",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Pouch_T2-DisplayName\", \"Farmers Satchel\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Seed_Pouch_T2.T_ITEM_Seed_Pouch_T2",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Pouch_T2-Description\", \"A convenient eighteen-slot pouch for your seeds.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Pouch_T2-FlavorText\", \"Right click to access the Pouch Inventory\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Pouch_T2-Description\", \"A convenient sixteen-slot satchel for seeds and fertilizer.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Pouch_T2-FlavorText\", \"Right click to access the Satchel Inventory\")",
             "Weight": 500
         },
         {
@@ -17814,30 +17816,38 @@
         {
             "Name": "Item_Slug_Axe",
             "DisplayName": "INVTEXT(\"[DNT] Slug Axe\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Slug_Axe.T_ITEM_Slug_Axe",
             "Description": "INVTEXT(\"[DNT]\")",
             "Weight": 500
         },
         {
             "Name": "Item_Slug_Slime",
             "DisplayName": "INVTEXT(\"[DNT] Slug Slime\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Slug_Slime.T_ITEM_Slug_Slime",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
             "Weight": 1000,
             "MaxStack": 5
         },
         {
             "Name": "Item_Slug_Skin",
             "DisplayName": "INVTEXT(\"[DNT] Skin\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Slug_Skin.T_ITEM_Slug_Skin",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
             "Weight": 1000,
             "MaxStack": 5
         },
         {
             "Name": "Item_Lava_Hunter_Magma",
             "DisplayName": "INVTEXT(\"[DNT] Hardened Magma\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
             "Weight": 1000,
             "MaxStack": 5
         },
         {
             "Name": "Item_Lava_Hunter_Horn",
             "DisplayName": "INVTEXT(\"[DNT] Hardened Horn\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Lava_Hunter_Horn.T_ITEM_Lava_Hunter_Horn",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
             "Weight": 1000,
             "MaxStack": 5
         },
@@ -17846,6 +17856,565 @@
             "DisplayName": "INVTEXT(\"[DNT] Slug Vestige\")",
             "Weight": 1000,
             "MaxStack": 5
+        },
+        {
+            "Name": "Item_Pistol_T3",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_T3-DisplayName\", \"Semi-Automatic Pistol\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Pistol_T3.T_ITEM_Pistol_T3",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_T3-Description\", \"A weapon with decent bang for your buck.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_T3-FlavorText\", \"Icarus is open carry.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Rock_Golem_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Vestige\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Rock_Golem_Fragment",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Fragment\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Rock_Golem_Core",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Core\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Rock_Golem_Core.T_ITEM_Rock_Golem_Core",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Rock_Golem_Trophy",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Trophy\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Rock_Golem_Sledgehammer",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Sledgehammer\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Rock_Golem_Gun",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Gun\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Rock_Golem_Trap",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Trap\")",
+            "Weight": 100
+        },
+        {
+            "Name": "Item_Rock_Golem_Attachment",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Attachment\")",
+            "Description": "INVTEXT(\"[DNT]\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Rock_Golem_Module",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Module\")",
+            "Description": "INVTEXT(\"[DNT]\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Living_Weapon_Rock_Golem_Gauntlets",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Gauntlets\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Slug_Biomass",
+            "DisplayName": "INVTEXT(\"[DNT] Slug Biomass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Biomass_Mammoth.T_ITEM_Biomass_Mammoth",
+            "Description": "INVTEXT(\"[DNT] Meta Resource\")",
+            "Weight": 750,
+            "MaxStack": 30
+        },
+        {
+            "Name": "Item_Rock_Golem_Biomass",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Biomass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Biomass_Mammoth.T_ITEM_Biomass_Mammoth",
+            "Description": "INVTEXT(\"[DNT] Meta Resource\")",
+            "Weight": 750,
+            "MaxStack": 30
+        },
+        {
+            "Name": "Item_Ape_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Vestige\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Ape_Hide",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Hide\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Ape_Bicep",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Bicep\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Ape_Biomass",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Biomass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Biomass_Mammoth.T_ITEM_Biomass_Mammoth",
+            "Description": "INVTEXT(\"[DNT] Meta Resource\")",
+            "Weight": 750,
+            "MaxStack": 30
+        },
+        {
+            "Name": "Item_Lava_Hunter_Biomass",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Biomass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Biomass_Mammoth.T_ITEM_Biomass_Mammoth",
+            "Description": "INVTEXT(\"[DNT] Meta Resource\")",
+            "Weight": 750,
+            "MaxStack": 30
+        },
+        {
+            "Name": "Item_Scyther_Biomass",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Biomass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Biomass_Mammoth.T_ITEM_Biomass_Mammoth",
+            "Description": "INVTEXT(\"[DNT] Meta Resource\")",
+            "Weight": 750,
+            "MaxStack": 30
+        },
+        {
+            "Name": "Item_Hornet_Biomass",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Biomass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Biomass_Mammoth.T_ITEM_Biomass_Mammoth",
+            "Description": "INVTEXT(\"[DNT] Meta Resource\")",
+            "Weight": 750,
+            "MaxStack": 30
+        },
+        {
+            "Name": "Item_Plant_Boss_Biomass",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Biomass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Biomass_Mammoth.T_ITEM_Biomass_Mammoth",
+            "Description": "INVTEXT(\"[DNT] Meta Resource\")",
+            "Weight": 750,
+            "MaxStack": 30
+        },
+        {
+            "Name": "Item_Cat_Boss_Biomass",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Biomass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Biomass_Mammoth.T_ITEM_Biomass_Mammoth",
+            "Description": "INVTEXT(\"[DNT] Meta Resource\")",
+            "Weight": 750,
+            "MaxStack": 30
+        },
+        {
+            "Name": "Item_Ape_Trophy",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Trophy\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Ape_Armor_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Head Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Ape_Armor_Chest",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Chest Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Ape_Armor_Legs",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Legs Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Ape_Armor_Arms",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Arms Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Ape_Armor_Feet",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Feet Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Ape_Attractor",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Attactor\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_Ape_Tonic",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Tonic\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Ape_Module",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Module\")",
+            "Description": "INVTEXT(\"[DNT]\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Ape_Attachment",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Attachment\")",
+            "Description": "INVTEXT(\"[DNT]\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Living_Weapon_Ape_Club",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Club\")",
+            "Description": "INVTEXT(\"[DNT] Living Weapon\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_IceMammoth_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Vestiage\")",
+            "Weight": 2000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_IceMammoth_Trophy_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Head\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_IceMammoth_Trophy_Head.T_ITEM_IceMammoth_Trophy_Head",
+            "Weight": 2000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_IceMammoth_Trophy_Feature",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Feature\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_IceMammoth_Trophy_Feature.T_ITEM_IceMammoth_Trophy_Feature",
+            "Weight": 2000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_IceMammoth_Trophy_Chandelier",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Chandelier\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_IceMammoth_Trophy_Chandelier.T_ITEM_IceMammoth_Trophy_Chandelier",
+            "Weight": 2000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_IceMammoth_Armor_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Head Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_IceMammoth_Armor_Chest",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Chest Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_IceMammoth_Armor_Legs",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Legs Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_IceMammoth_Armor_Arms",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Arms Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_IceMammoth_Armor_Feet",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Feet Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_IceMammoth_Module",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Module\")",
+            "Description": "INVTEXT(\"[DNT]\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_IceMammoth_Trap",
+            "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Trap\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_IceMammoth_Trap.T_ITEM_IceMammoth_Trap",
+            "Weight": 100
+        },
+        {
+            "Name": "Item_Scyther_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Vestige\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Scyther_Appendage",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Skeletal Fragment\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Scyther_Spine",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Spine\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Scyther_Spear",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Spear\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Scyther_Throwing_Spear",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Javelin\")",
+            "Weight": 400,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Scyther_Trap",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Trap\")",
+            "Weight": 100
+        },
+        {
+            "Name": "Item_Scyther_Module",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Module\")",
+            "Description": "INVTEXT(\"[DNT]\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Scyther_Attachment",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Attachment\")",
+            "Description": "INVTEXT(\"[DNT]\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Scyther_Trophy",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Trophy\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Scyther_Arrow",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Bolt / Arrow\")",
+            "Description": "INVTEXT(\"[DNT] For both Bows & Crossbows\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Hornet_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Vestige\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Hornet_Wing",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Wing\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Hornet_Stinger",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Stinger\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Hornet_Trophy",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Trophy\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Hornet_Module",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Module\")",
+            "Description": "INVTEXT(\"[DNT]\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Hornet_Attachment",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Attachment\")",
+            "Description": "INVTEXT(\"[DNT]\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Hornet_Backpack",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Backpack\")",
+            "Description": "INVTEXT(\"[DNT] Wingsuit\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Hornet_Pistol",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Pistol\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Hornet_Knife",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Knife\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Hornet_Throwing_Knife",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Throwing Knife\")",
+            "Weight": 250,
+            "MaxStack": 50
+        },
+        {
+            "Name": "Item_Plant_Boss_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Vestige\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Plant_Boss_Vine",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Vine\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Plant_Boss_Flower",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Flower\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Plant_Boss_Trophy",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Trophy\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Plant_Boss_Turret",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Turret\")",
+            "Weight": 25000
+        },
+        {
+            "Name": "Item_Plant_Boss_Bow",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Bow\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Plant_Boss_Fertilizer",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Fertalizer\")",
+            "Weight": 2000,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Plant_Boss_Module",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Module\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Plant_Boss_Attachment",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Attachment\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cat_Boss_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Vestige\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Cat_Boss_Whisker",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Whisker\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Cat_Boss_Tail",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Tail Chunk\")",
+            "Description": "INVTEXT(\"[DNT] Boss Part\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Cat_Boss_Trophy",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Trophy\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Cat_Boss_Gauntlets",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Gauntlets\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Cat_Boss_Lure",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Lure\")",
+            "Weight": 250
+        },
+        {
+            "Name": "Item_Cat_Boss_Module",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Module\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cat_Boss_Attachment",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Attachment\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cat_Boss_Armor_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Head Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cat_Boss_Armor_Chest",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Chest Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cat_Boss_Armor_Legs",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Legs Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cat_Boss_Armor_Arms",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Arms Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Cat_Boss_Armor_Feet",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Feet Armor\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Ammo_Crude",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ammo_Crude-DisplayName\", \"Crude Ammo\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Crude.T_ITEM_Ammo_Crude",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ammo_Crude-Description\", \"A basic type of ammo to use with your favourite projectile-firing weapon - pistol, shotgun or rifle.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ammo_Crude-FlavorText\", \"What\\'s next? Firing gravel?\")",
+            "Weight": 10,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Pistol_T4",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_T4-DisplayName\", \"Advanced Pistol\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Pistol_T4.T_ITEM_Pistol_T4",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_T4-Description\", \"A pistol that utilizes the best planetside tech available.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Pistol_T4-FlavorText\", \"Icarus is open carry.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Great_Hunt_Device",
+            "DisplayName": "INVTEXT(\"[DNT] Great Hunt Device\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Mission_Communication_Device_T2.T_ITEM_Mission_Communication_Device_T2",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Ape_Grenade",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Grenade\")",
+            "Weight": 50,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Cat_Boss_Tonic",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Tonic\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Scyther_Pickaxe",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Pickaxe\")",
+            "Weight": 500
         }
     ]
 }
