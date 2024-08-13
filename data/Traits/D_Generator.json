@@ -450,6 +450,82 @@
             "TransmutableResources": [
                 "Energy"
             ]
+        },
+        {
+            "Name": "Pump_Jack",
+            "Resource": "Crude_Oil",
+            "GenerationRate": 2000,
+            "GenerationRatio": 2,
+            "TransmutableResources": [
+                "Energy"
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
+        },
+        {
+            "Name": "Crude_Oil_Refiner",
+            "Resource": "Refined_Oil",
+            "TransmutableResources": [
+                "Crude_Oil"
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
+        },
+        {
+            "Name": "Natural_Oil_Refiner",
+            "Resource": "Refined_Oil",
+            "TransmutableResources": [
+                "Fuel"
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
+        },
+        {
+            "Name": "Organic_Extractor",
+            "Resource": "Fuel",
+            "TransmutableItems": [
+                {
+                    "RowName": "Seed_Oil",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Spoiled_Meat",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Spoiled_Plants",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
+        },
+        {
+            "Name": "Crude_Oil_Power_Generator",
+            "Resource": "Energy",
+            "GenerationRate": 5000,
+            "GenerationRatio": 7500,
+            "TransmutableResources": [
+                "Crude_Oil"
+            ]
+        },
+        {
+            "Name": "Portable_Biofuel_Generator",
+            "Resource": "Energy",
+            "GenerationRate": 2000,
+            "GenerationRatio": 2750,
+            "TransmutableResources": [
+                "Fuel"
+            ]
+        },
+        {
+            "Name": "Hydrazine_Generator",
+            "Resource": "Energy",
+            "GenerationRate": 2500,
+            "GenerationRatio": 2500,
+            "TransmutableResources": [
+                "Hydrazine"
+            ]
         }
     ]
 }

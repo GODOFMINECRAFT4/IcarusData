@@ -101,7 +101,7 @@
         {
             "Name": "Generator",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Generators/BP_Generator.BP_Generator_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_GEN_Fuel.SM_DEP_GEN_Fuel",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Generator_T4.SM_DEP_Generator_T4",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SupportsCustomRotation": false
         },
@@ -2007,7 +2007,7 @@
             "Name": "Heater_Large",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Temperature/BP_Heater_Large.BP_Heater_Large_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Heater_T4.SM_DEP_Heater_T4",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
         },
         {
             "Name": "Cooler_Large",
@@ -4546,7 +4546,13 @@
             },
             "SupportsCustomRotation": false,
             "bCanAffectNavigation": false,
-            "MaxRestackingAmount": 1
+            "DeployCollisionExtentOffset": {
+                "X": -32.5,
+                "Y": -30
+            },
+            "DeployCollisionLocationOffset": {
+                "Z": 5
+            }
         },
         {
             "Name": "Farming_Mound_Test",
@@ -5295,7 +5301,7 @@
             "Name": "Teenage_Caveworm_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Teenage_Caveworm.BP_Trophy_Teenage_Caveworm_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Teenage_Caveworm/SM_DEP_Trophy_Teenage_Caveworm.SM_DEP_Trophy_Teenage_Caveworm",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
@@ -5355,7 +5361,7 @@
             "Name": "Elephant_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Elephant.BP_Trophy_Elephant_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Elephant/SM_DEP_Trophy_Elephant.SM_DEP_Trophy_Elephant",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
@@ -5591,7 +5597,7 @@
             "Name": "Scorpion_Boss_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Scorpion_Boss.BP_Trophy_Scorpion_Boss_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scorpion_Boss/SM_DEP_Trophy_Scorpion_Boss.SM_DEP_Trophy_Scorpion_Boss",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
@@ -5601,7 +5607,7 @@
             "Name": "Landshark_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Landshark.BP_Trophy_Landshark_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_LandShark/SM_DEP_Trophy_Landshark.SM_DEP_Trophy_Landshark",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
@@ -5775,7 +5781,7 @@
             "Name": "Lava_Hunter_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_LavaHunter.BP_Trophy_LavaHunter_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_LavaHunter/SM_DEP_Trophy_LavaHunter.SM_DEP_Trophy_LavaHunter",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
@@ -5785,7 +5791,7 @@
             "Name": "Desert_Mammoth_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_MammothDesert.BP_Trophy_MammothDesert_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_MammothDesert/SM_DEP_Trophy_MammothDesert.SM_DEP_Trophy_MammothDesert",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
             "MaxRestackingAmount": 1
@@ -5980,7 +5986,7 @@
             "Name": "Tusker_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Tusker.BP_Trophy_Tusker_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Tusker/SM_DEP_Trophy_Tusker.SM_DEP_Trophy_Tusker",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
@@ -7376,7 +7382,7 @@
         {
             "Name": "Charging_Device",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Charger/BP_Charging_Device.BP_Charging_Device_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Powered_Charger.SM_DEP_Powered_Charger",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Powered_Charger_v2.SM_DEP_Powered_Charger_v2",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
             "DeployCollisionExtentOffset": {
                 "Z": -100
@@ -7705,28 +7711,28 @@
         {
             "Name": "Lava_Hunter_Mine",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Landmine.BP_Landmine_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Landmine.SM_DEP_Landmine",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Mine_Lava_Hunter/SM_DEP_Mine_Lava_Hunter.SM_DEP_Mine_Lava_Hunter",
             "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Landmine/SFX_DEPLOY_LANDMINE.SFX_DEPLOY_LANDMINE",
             "SupportsCustomRotation": false,
             "bCanAffectNavigation": false
         },
         {
             "Name": "Lava_Hunter_Trophy_Chair",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Scorpion_Boss_Trophy_Chair.BP_Scorpion_Boss_Trophy_Chair_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scorpion_Boss/SM_DEP_Trophy_ScorpionBoss_Throne.SM_DEP_Trophy_ScorpionBoss_Throne",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Lava_Hunter_Trophy_Chair.BP_Lava_Hunter_Trophy_Chair_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_LavaHunter/SM_DEP_Trophy_LavaHunter_Throne.SM_DEP_Trophy_LavaHunter_Throne",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
             "Name": "Lava_Hunter_Trophy_Feature",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_BlackWolf_Guarding.BP_Trophy_BlackWolf_Guarding_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Black_Wolf/SM_DEP_Trophy_BlackWolf_Guarding.SM_DEP_Trophy_BlackWolf_Guarding",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_LavaHunter_MagmaRock.BP_Trophy_LavaHunter_MagmaRock_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_LavaHunter/SM_DEP_Trophy_LavaHunter_Magma_Rock.SM_DEP_Trophy_LavaHunter_Magma_Rock",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
             "Name": "Slug_Trophy_Vial",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Tank_SML.BP_Trophy_Slug_Boss_Tank_SML_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Tank_SML.SM_DEP_Trophy_Slug_Boss_Tank_SML",
-            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY.SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY"
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY_SMALL.SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY_SMALL"
         },
         {
             "Name": "Slug_Trophy_Vial_Med",
@@ -7769,7 +7775,7 @@
         },
         {
             "Name": "Ape_Trophy",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Ape.BP_Trophy_Ape_C",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Ape_Display_Case.BP_Trophy_Ape_Display_Case_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scorpion_Boss/SM_DEP_Trophy_ScorpionBoss_Tail.SM_DEP_Trophy_ScorpionBoss_Tail",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
@@ -7857,6 +7863,132 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Mini_Hippo.BP_Trophy_Mini_Hippo_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_MiniHippo/SM_DEP_Trophy_Mini_Hippo.SM_DEP_Trophy_Mini_Hippo",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
+        },
+        {
+            "Name": "Manufacturer",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Manufacturer.BP_Manufacturer_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bench_Fabricator.SM_DEP_Bench_Fabricator",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Pump_Jack",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Pump/BP_Pump_Jack.BP_Pump_Jack_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Ice_Borer2.SM_DEP_Ice_Borer2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Geyser_Analyzer/SFX_DEPLOY_GEYSER_ANALYZER.SFX_DEPLOY_GEYSER_ANALYZER",
+            "MaxSurfaceSnapAngle": 360,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Enzyme_Geyser"
+            ],
+            "SnapSocketsOrTags": [
+                "Enzyme_Geyser_Attachment"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Crude_Oil_Refiner",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Refiner/BP_Crude_Oil_Refiner.BP_Crude_Oil_Refiner_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Furnace_Electric_V5.SM_DEP_Furnace_Electric_V5",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Geyser_Analyzer/SFX_DEPLOY_GEYSER_ANALYZER.SFX_DEPLOY_GEYSER_ANALYZER",
+            "MaxSurfaceSnapAngle": 360,
+            "SupportsCustomRotation": false,
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Natural_Oil_Refiner",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Refiner/BP_Natural_Oil_Refiner.BP_Natural_Oil_Refiner_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Furnace_Electric_V5.SM_DEP_Furnace_Electric_V5",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Geyser_Analyzer/SFX_DEPLOY_GEYSER_ANALYZER.SFX_DEPLOY_GEYSER_ANALYZER",
+            "MaxSurfaceSnapAngle": 360,
+            "SupportsCustomRotation": false,
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Polymerizer",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Polymerizer.BP_Polymerizer_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bench_Fabricator.SM_DEP_Bench_Fabricator",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Organic_Extractor",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Organic_Extractor.BP_Organic_Extractor_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Bench_Fabricator.SM_DEP_Bench_Fabricator",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SnapToSurfaceNormal": false
+        },
+        {
+            "Name": "Crude_Oil_Power_Generator",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Generators/BP_Crude_Oil_Power_Generator.BP_Crude_Oil_Power_Generator_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_GEN_Fuel.SM_DEP_GEN_Fuel",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Portable_Generator",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Generators/BP_Portable_Generator.BP_Portable_Generator_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Portable_Generator_v4.SM_DEP_Portable_Generator_v4",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Workshop_Cooker",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Campfire/BP_Workshop_Cooker.BP_Workshop_Cooker_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_MXC_CampCooker_Combined.SM_DEP_MXC_CampCooker_Combined",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Workshop_Heater",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Temperature/BP_Workshop_Heater.BP_Workshop_Heater_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_MXC_CampingHeater_Combined.SM_DEP_MXC_CampingHeater_Combined",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
+        },
+        {
+            "Name": "CaveLight_Floor",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_CaveLight_Stick.BP_CaveLight_Stick_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_CaveLight_Floor.T_ITEM_CaveLight_Floor",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Cavelight_Stick_Floor.SM_DEP_Cavelight_Stick_Floor",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "MaxSurfaceSnapAngle": 50,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "CaveLight_Wall",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_CaveLight_Wall.BP_CaveLight_Wall_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_CaveLight_Wall.T_ITEM_CaveLight_Wall",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Cavelight_Stick_Wall.SM_DEP_Cavelight_Stick_Wall",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "MaxSurfaceSnapAngle": 50,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "CaveSpotLight_Floor",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_CaveSpotLight.BP_CaveSpotLight_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_CaveSpotLight_Floor.T_ITEM_CaveSpotLight_Floor",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Cavelight_Floor.SM_DEP_Cavelight_Floor",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "MaxSurfaceSnapAngle": 50,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "CaveSpotLight_Wall",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_CaveSpotLightWall.BP_CaveSpotLightWall_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_CaveSpotLight_Wall.T_ITEM_CaveSpotLight_Wall",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Cavelight_Wall.SM_DEP_Cavelight_Wall",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "MaxSurfaceSnapAngle": 50,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
         }
     ]
 }

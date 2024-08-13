@@ -572,6 +572,35 @@
             "QueueSize": 5,
             "MaxMilliwattage": 500,
             "AutoTurnOffDeviceWhileNotProcessing": false
+        },
+        {
+            "Name": "Manufacturer",
+            "DefaultRecipeSet": {
+                "RowName": "Manufacturer"
+            },
+            "RequiresEnergy": false,
+            "bRequiresShelter": true,
+            "QueueSize": 10,
+            "MaxMilliwattage": 2500
+        },
+        {
+            "Name": "Polymerizer",
+            "DefaultRecipeSet": {
+                "RowName": "Polymerizer"
+            },
+            "RequiresEnergy": false,
+            "bRequiresShelter": true,
+            "QueueSize": 10,
+            "MaxMilliwattage": 2500
+        },
+        {
+            "Name": "Workshop_Cooker",
+            "DefaultRecipeSet": {
+                "RowName": "PotBellyStove"
+            },
+            "ManualActivation": true,
+            "QueueSize": 5,
+            "MaxMilliwattage": 375
         }
     ]
 }

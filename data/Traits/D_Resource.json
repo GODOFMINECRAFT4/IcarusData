@@ -544,6 +544,53 @@
             "EnergyFlow": {
                 "RowName": "Charging_Device"
             }
+        },
+        {
+            "Name": "Manufacturer",
+            "bHasEnergyConnection": true,
+            "EnergyFlow": {
+                "RowName": "Processor_Generic"
+            }
+        },
+        {
+            "Name": "Pump_Jack",
+            "bHasEnergyConnection": true,
+            "EnergyFlow": {
+                "RowName": "Auto_Shutoff_At_0"
+            }
+        },
+        {
+            "Name": "Polymerizer",
+            "bHasEnergyConnection": true,
+            "EnergyFlow": {
+                "RowName": "Processor_Generic"
+            }
+        },
+        {
+            "Name": "Organic_Extractor",
+            "bHasEnergyConnection": true,
+            "EnergyFlow": {
+                "RowName": "Processor_Generic"
+            },
+            "bHasFuelConnection": true,
+            "FuelFlow": {
+                "RowName": "Organic_Extractor"
+            }
+        },
+        {
+            "Name": "Crude_Oil_Power_Generator",
+            "bHasEnergyConnection": true
+        },
+        {
+            "Name": "Portable_Biofuel_Generator",
+            "bHasEnergyConnection": true
+        },
+        {
+            "Name": "Fabricator",
+            "bHasWaterConnection": true,
+            "WaterFlow": {
+                "RowName": "Fabricator"
+            }
         }
     ]
 }

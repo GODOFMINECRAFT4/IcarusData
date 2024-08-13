@@ -4897,8 +4897,27 @@
         {
             "Name": "RockGolem",
             "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/RockGolem/SFX_FOOTSTEP_ROCK_GOLEM.SFX_FOOTSTEP_ROCK_GOLEM",
-            "FrontFootSocket": "Foot_LF",
-            "RearFootSocket": "Foot_LB",
+            "FrontFootSocket": "Rigfrontfoot",
+            "RearFootSocket": "Rigbackfoot",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_LARGE.SFX_CRE_DEATHFALL_WATER_LARGE",
+            "VocalisationSocket": "RigHead_M",
+            "AttackVocalisation": {
+                "RowName": "RockGolemAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "RockGOlemFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "RockGolemDeath"
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatSimpleBossComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "ScorpionBoss"
+            },
+            "CombatMusicConditionOverride": "InCombat_EpicBoss",
+            "MusicConditionOverrideMinThreatLevel": 20,
             "FootstepMaxDistance": 100000
         }
     ]

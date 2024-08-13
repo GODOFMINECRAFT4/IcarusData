@@ -6110,6 +6110,270 @@
                 ],
                 "AutoDescription": " ANY( Item.Seed, Item.Fertilizer )"
             }
+        },
+        {
+            "Name": "Any_Shovel_Attachment",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Attachment.Shovel"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Attachment.Shovel )"
+            }
+        },
+        {
+            "Name": "Any_Shield_Attachment",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Attachment.Shield"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Attachment.Shield )"
+            }
+        },
+        {
+            "Name": "Fuel_Hydrazine",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Fuel.Hydrazine"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Fuel.Hydrazine )"
+            }
+        },
+        {
+            "Name": "Not_Soup",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Soup"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Item.Consumable.Soup )"
+            }
+        },
+        {
+            "Name": "Any_Cooked_Fruit",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fruit"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Consumable.Food.Cooked.Fruit )"
+            }
+        },
+        {
+            "Name": "Any_Cooked_Vege",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Vege"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Consumable.Food.Cooked.Vege )"
+            }
+        },
+        {
+            "Name": "Any_Cooked_Egg",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Egg"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Consumable.Food.Cooked.Egg )"
+            }
+        },
+        {
+            "Name": "Any_Cooked_Meat",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Meat"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Consumable.Food.Cooked.Meat )"
+            }
+        },
+        {
+            "Name": "Any_Cooked_Fish",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Consumable.Food.Cooked.Fish )"
+            }
+        },
+        {
+            "Name": "Any_Cooked_Chicken",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Chicken"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Consumable.Food.Cooked.Chicken )"
+            }
+        },
+        {
+            "Name": "Any_Cooked_Fruit_Vege",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fruit"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Vege"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Item.Consumable.Food.Cooked.Fruit, Item.Consumable.Food.Cooked.Vege )"
+            }
+        },
+        {
+            "Name": "Any_Cooked_Meat_Fish_Chicken",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Meat"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fruit"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Chicken"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    0,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ALL( Item.Consumable.Food.Cooked.Meat, Item.Consumable.Food.Cooked.Fruit, Item.Consumable.Food.Cooked.Chicken )"
+            }
+        },
+        {
+            "Name": "Any_Cooked_Soup",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Soup"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Consumable.Soup )"
+            }
+        },
+        {
+            "Name": "Any_Cooked_Grain",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Grain"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Consumable.Food.Cooked.Grain )"
+            }
         }
     ]
 }

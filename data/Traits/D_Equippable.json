@@ -7,7 +7,8 @@
         "GlobalStat_ActorClass": "None",
         "GlobalStat_GrantedStats": {},
         "bAppliesInAllInventories": false,
-        "bBindToAllInventoryUpdates": true
+        "bBindToAllInventoryUpdates": true,
+        "bPreventReinitialisation": false
     },
     "Rows": [
         {
@@ -430,12 +431,12 @@
         },
         {
             "Name": "Icebox_Backpack",
-            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier_Icebox_Backpack.BP_EquippableModifier_Icebox_Backpack_C",
             "GrantedStats": {
-                "(Value=\"BaseInventorySpoilRate_+%\")": -100,
                 "(Value=\"BaseBackpackSlots_+\")": 6
             },
-            "bBindToAllInventoryUpdates": false
+            "bBindToAllInventoryUpdates": false,
+            "bPreventReinitialisation": true
         },
         {
             "Name": "Saddle_Cart_Farming",
@@ -776,6 +777,14 @@
                 "(Value=\"BaseStaminaRegen_+%\")": 5
             },
             "bStackedModifiersGiveDiminishingReturns": true
+        },
+        {
+            "Name": "Lava_Hunter_Backpack",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier_Lava_Hunter_Backpack.BP_EquippableModifier_Lava_Hunter_Backpack_C",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 10
+            },
+            "bBindToAllInventoryUpdates": false
         }
     ]
 }

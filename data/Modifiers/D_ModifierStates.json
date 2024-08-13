@@ -8549,7 +8549,7 @@
             },
             "ShouldTick": true,
             "RemovedOnDeath": false,
-            "MergeType": "Count",
+            "MergeType": "Replace",
             "ModifierTags": {
                 "GameplayTags": [
                     {
@@ -8639,7 +8639,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Beehive-ModifierName\", \"Aura: Beehive\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Beehive-ModifierDescription\", \"Increased nearby crop growth yield\")",
             "bAura": true,
-            "AuraRange": 600,
+            "AuraRange": 900,
             "AuraFlags": {
                 "EffectsSelf": false,
                 "EffectsPlayers": false,
@@ -8669,17 +8669,21 @@
             "ModifierAllowedQuery": {
                 "TagDictionary": [
                     {
+                        "TagName": "Item.Mound"
+                    },
+                    {
                         "TagName": "Item.Plot"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    2,
                     1,
-                    0
+                    2,
+                    0,
+                    1
                 ],
-                "AutoDescription": " ALL( Item.Plot )"
+                "AutoDescription": " ANY( Item.Mound, Item.Plot )"
             },
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
@@ -10832,6 +10836,52 @@
                 "(Value=\"BasePhysicalDamageResistance_+%\")": 100
             },
             "MergeType": "Replace"
+        },
+        {
+            "Name": "IceBox_Backpack_Spoil_Rate",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_BackPackCool.T_ICON_Modifier_BackPackCool'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"IceBox_Backpack_Spoil_Rate-ModifierName\", \"Portable Icebox\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"IceBox_Backpack_Spoil_Rate-ModifierDescription\", \"Keeps Inventory Contents Cool\")",
+            "GrantedStats": {
+                "(Value=\"BaseInventorySpoilRate_+%\")": -300,
+                "(Value=\"BaseExternalTemperatureModification_+\")": -500
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "GrantedAura_Warming",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_BackPackLavaHunterAura.T_ICON_Modifier_BackPackLavaHunterAura'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Warming-ModifierName\", \"Aura: Lava Hunter Backpack\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Warming-ModifierDescription\", \"Nearby allies receive additional Warmth\")",
+            "bAura": true,
+            "AuraRange": 2000,
+            "AuraFlags": {
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_Warming"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_Warming",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_BackPackLavaHunter.T_ICON_Modifier_BackPackLavaHunter'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Warming-ModifierName\", \"Aura Effect: Lava Hunter Backpack\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Warming-ModifierDescription\", \"Additional Warmthe\")",
+            "GrantedStats": {
+                "(Value=\"BaseExternalTemperatureModification_+\")": 1000
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration"
         }
     ]
 }
