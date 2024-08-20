@@ -7790,7 +7790,7 @@
             "Name": "IceMammoth_Trophy_Feature",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_IceMammoth_Feature.BP_Trophy_IceMammoth_Feature_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_IceMammoth/SM_DEP_Trophy_IceMammoth_LightStand.SM_DEP_Trophy_IceMammoth_LightStand",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
         },
         {
             "Name": "IceMammoth_Trophy_Chandelier",
@@ -7812,13 +7812,20 @@
         {
             "Name": "Scyther_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Scyther.BP_Trophy_Scyther_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scorpion_Boss/SM_DEP_Trophy_ScorpionBoss_Tail.SM_DEP_Trophy_ScorpionBoss_Tail",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scyther_Tank/SM_DEP_Trophy_Scyther_Wall.SM_DEP_Trophy_Scyther_Wall",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "WorldPlacementType": "WallPlacement"
+        },
+        {
+            "Name": "Scyther_Aquarium",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Trophy_Scyther_Aquarium.BP_Trophy_Scyther_Aquarium_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scyther_Tank/SM_DEP_Trophy_Scyther_Tank.SM_DEP_Trophy_Scyther_Tank",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
             "Name": "Scyther_Trap",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_Rock_Golem_Trap.BP_Rock_Golem_Trap_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Black_Wolf.SM_DEP_Trap_Black_Wolf",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trap_Scyther/SM_DEP_Trap_Scyther.SM_DEP_Trap_Scyther",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SupportsCustomRotation": false,
             "bCanAffectNavigation": false
@@ -7989,6 +7996,245 @@
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Portable_Tank_Water",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Batteries/BP_Portable_Tank_Water.BP_Portable_Tank_Water_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_WaterBarrel/SM_DEP_Portable_Tank_Water.SM_DEP_Portable_Tank_Water",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Bunker_Antenna",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Antenna.BP_Bunker_Antenna_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Antenna.SM_Bunker_Antenna",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_Aircon",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Aircon.BP_Bunker_Aircon_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Aircon.SM_Bunker_Aircon",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_Window",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Window_1.BP_Bunker_Window_1_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Window-DeployableName\", \"Window_1\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_BrokenWindow.SM_Bunker_BrokenWindow",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_GLASS_DEPLOY.SFX_BLD_GLASS_DEPLOY",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "window_frame"
+            ],
+            "SnapSocketsOrTags": [
+                "window"
+            ],
+            "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Y": -10
+            },
+            "DeployCollisionLocationOffset": {
+                "X": 5
+            }
+        },
+        {
+            "Name": "Bunker_Window2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Window_2.BP_Bunker_Window_2_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Window2-DeployableName\", \"Window_2\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_BrokenWindow2.SM_Bunker_BrokenWindow2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_GLASS_DEPLOY.SFX_BLD_GLASS_DEPLOY",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "window_frame"
+            ],
+            "SnapSocketsOrTags": [
+                "window"
+            ],
+            "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Y": -10
+            },
+            "DeployCollisionLocationOffset": {
+                "X": 5
+            }
+        },
+        {
+            "Name": "Bunker_Window3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Window_3.BP_Bunker_Window_3_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Window3-DeployableName\", \"Window_3\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_BrokenWindow3.SM_Bunker_BrokenWindow3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_GLASS_DEPLOY.SFX_BLD_GLASS_DEPLOY",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "window_frame"
+            ],
+            "SnapSocketsOrTags": [
+                "window"
+            ],
+            "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Y": -10
+            },
+            "DeployCollisionLocationOffset": {
+                "X": 5
+            }
+        },
+        {
+            "Name": "Bunker_Window4",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Window_4.BP_Bunker_Window_4_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Window4-DeployableName\", \"Window_4\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_BrokenWindow4.SM_Bunker_BrokenWindow4",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_GLASS_DEPLOY.SFX_BLD_GLASS_DEPLOY",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "window_frame"
+            ],
+            "SnapSocketsOrTags": [
+                "window"
+            ],
+            "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Y": -10
+            },
+            "DeployCollisionLocationOffset": {
+                "X": 5
+            }
+        },
+        {
+            "Name": "Bunker_Poster",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Poster.BP_Bunker_Poster_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Poster-DeployableName\", \"Poster 1\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Poster_1.SM_Bunker_Poster_1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_Poster2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Poster2.BP_Bunker_Poster2_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Poster2-DeployableName\", \"Poster 2\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Poster_2.SM_Bunker_Poster_2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_Poster_3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Poster_3.BP_Bunker_Poster_3_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Poster_3-DeployableName\", \"Poster 3\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Poster_3.SM_Bunker_Poster_3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_Poster3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Poster_3.BP_Bunker_Poster_3_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Poster3-DeployableName\", \"Poster 3\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Poster_3.SM_Bunker_Poster_3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "DeployCollisionExtentOffset": {
+                "X": -20
+            },
+            "DeployCollisionLocationOffset": {
+                "X": -20
+            }
+        },
+        {
+            "Name": "Bunker_Prop",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Prop.BP_Bunker_Prop_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Prop-DeployableName\", \"Poster 1\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Prop_1.SM_Bunker_Prop_1",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_Prop2",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Prop2.BP_Bunker_Prop2_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Prop2-DeployableName\", \"Poster 1\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Prop_2.SM_Bunker_Prop_2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_Prop3",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Prop3.BP_Bunker_Prop3_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Prop3-DeployableName\", \"Poster 1\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Prop_3.SM_Bunker_Prop_3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_Prop4",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_Prop4.BP_Bunker_Prop4_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_Prop4-DeployableName\", \"Poster 1\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Prop_4.SM_Bunker_Prop_4",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_SolarPanel",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_SolarPanel.BP_Bunker_SolarPanel_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_SolarPanel-DeployableName\", \"Solar Panel\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_SolarPanel.SM_Bunker_SolarPanel",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_WhiteBoard",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_WhiteBoard.BP_Bunker_WhiteBoard_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_WhiteBoard-DeployableName\", \"White Board\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Whiteboard.SM_Bunker_Whiteboard",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Bunker_Bunk_Bed",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Bunker_BunkBed.BP_Bunker_BunkBed_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_DEP_Prop_Bunk_Bed.SM_DEP_Prop_Bunk_Bed",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         }
     ]
 }

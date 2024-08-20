@@ -18,6 +18,11 @@
         "Audio": {
             "RowName": "None",
             "DataTableName": "D_BiomeAudioData"
+        },
+        "bOrbitalCommunicationBlocked": false,
+        "BiomeModifier": {
+            "RowName": "None",
+            "DataTableName": "D_ModifierStates"
         }
     },
     "GenerateEnum": true,
@@ -718,7 +723,8 @@
             "WeatherFrequency": 3,
             "Audio": {
                 "RowName": "Arctic"
-            }
+            },
+            "bOrbitalCommunicationBlocked": true
         },
         {
             "Name": "Pro_Ashlands",
@@ -729,13 +735,17 @@
                 "R": 255,
                 "A": 255
             },
-            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/VolcanicTemperatureCurve.VolcanicTemperatureCurve'",
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/AshlandsTemperatureCurve.AshlandsTemperatureCurve'",
             "WeatherFrequency": 3,
             "AtmosphereType": {
                 "RowName": "Volcanic"
             },
             "Audio": {
                 "RowName": "Lava"
+            },
+            "bOrbitalCommunicationBlocked": true,
+            "BiomeModifier": {
+                "RowName": "Dry_Atmosphere"
             }
         }
     ]

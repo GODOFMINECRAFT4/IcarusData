@@ -1796,7 +1796,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 13200,
+                "X": 13150,
                 "Y": 300
             },
             "Size": {
@@ -2808,7 +2808,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 13850,
+                "X": 13650,
                 "Y": 450
             },
             "Size": {
@@ -6546,7 +6546,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 12850,
+                "X": 12800,
                 "Y": 300
             },
             "Size": {
@@ -6570,7 +6570,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 12500,
+                "X": 12450,
                 "Y": 300
             },
             "Size": {
@@ -12744,7 +12744,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 14200,
+                "X": 14000,
                 "Y": 300
             },
             "Size": {
@@ -12864,7 +12864,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 13850,
+                "X": 13650,
                 "Y": 100
             },
             "Size": {
@@ -24581,7 +24581,7 @@
         {
             "Name": "Husbandry_TameColdTolerance",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameColdTolerance-DisplayName\", \"Arctic Training\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameColdTolerance-Description\", \"Allows taming in colder environments\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameColdTolerance-Description\", \"Juivenile and tamed creatures better tolerate colder environments\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_ArcticMaster.Talent_Exploration_ArcticMaster",
             "TalentTree": {
                 "RowName": "Construction_Husbandry"
@@ -24621,7 +24621,7 @@
         {
             "Name": "Husbandry_TameHeatTolerance",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameHeatTolerance-DisplayName\", \"Desert Training\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameHeatTolerance-Description\", \"Allows taming in hotter environments\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Husbandry_TameHeatTolerance-Description\", \"Juivenile and tamed creatures better tolerate warmer environments\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_DesertMaster.Talent_Exploration_DesertMaster",
             "TalentTree": {
                 "RowName": "Construction_Husbandry"
@@ -31407,8 +31407,8 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 14850,
-                "Y": 450
+                "X": 14350,
+                "Y": 300
             },
             "Size": {
                 "X": 184,
@@ -31432,8 +31432,8 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 15150,
-                "Y": 450
+                "X": 14700,
+                "Y": 100
             },
             "Size": {
                 "X": 184,
@@ -31444,7 +31444,8 @@
                     "RowName": "Glass_Basic",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Glass_Trim",
@@ -31457,7 +31458,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 14550,
+                "X": 14700,
                 "Y": 450
             },
             "Size": {
@@ -31469,7 +31470,8 @@
                     "RowName": "Glass_Basic",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Concrete_Basic",
@@ -32428,7 +32430,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 12100,
+                "X": 11950,
                 "Y": 300
             },
             "Size": {
@@ -32896,7 +32898,7 @@
         {
             "Name": "Creature_Tusker_ArcticMovementspeed",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Tusker_ArcticMovementspeed-DisplayName\", \"Frosted Feet\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Tusker_ArcticMovementspeed-Description\", \"Increased Arctic Movement Speed\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Tusker_ArcticMovementspeed-Description\", \"Increased Arctic Movement Speed and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Tusker_ArctivMovementSpeed.T_Talent_Tusker_ArctivMovementSpeed",
             "TalentTree": {
                 "RowName": "Creature_Tusker"
@@ -32912,19 +32914,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseArcticMovementSpeed_+%\")": 3
+                        "(Value=\"BaseArcticMovementSpeed_+%\")": 3,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseArcticMovementSpeed_+%\")": 7
+                        "(Value=\"BaseArcticMovementSpeed_+%\")": 7,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseArcticMovementSpeed_+%\")": 15
+                        "(Value=\"BaseArcticMovementSpeed_+%\")": 15,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -33044,19 +33049,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseMaximumStamina_+%\")": 2
+                        "(Value=\"BaseMaximumStamina_+%\")": 2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseMaximumStamina_+%\")": 5
+                        "(Value=\"BaseMaximumStamina_+%\")": 5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseMaximumStamina_+%\")": 10
+                        "(Value=\"BaseMaximumStamina_+%\")": 10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 }
@@ -33072,7 +33080,7 @@
         {
             "Name": "Creature_Horse_FoodBuffDuration",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Horse_FoodBuffDuration-DisplayName\", \"Enduring Digestion\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Horse_FoodBuffDuration-Description\", \"Increased Food Effects Duration\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Horse_FoodBuffDuration-Description\", \"Increased Food Effects Duration, and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Horse_FoodBuffDuration.T_Talent_Horse_FoodBuffDuration",
             "TalentTree": {
                 "RowName": "Creature_Terrenus"
@@ -33088,19 +33096,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 }
@@ -34799,7 +34810,7 @@
         {
             "Name": "Creature_Buffalo_FireResist",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Buffalo_FireResist-DisplayName\", \"Flaming Defiance\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Buffalo_FireResist-Description\", \"Increased Fire Resistance\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Buffalo_FireResist-Description\", \"Increased Fire and Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Buffalo_FireResist.T_Talent_Buffalo_FireResist",
             "TalentTree": {
                 "RowName": "Creature_Buffalo"
@@ -34815,19 +34826,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFireDamageResistance_+%\")": 10
+                        "(Value=\"BaseFireDamageResistance_+%\")": 10,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFireDamageResistance_+%\")": 20
+                        "(Value=\"BaseFireDamageResistance_+%\")": 20,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFireDamageResistance_+%\")": 40
+                        "(Value=\"BaseFireDamageResistance_+%\")": 40,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -35979,7 +35993,7 @@
         {
             "Name": "Creature_Moa_DesertMovement",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Moa_DesertMovement-DisplayName\", \"Plainswalker\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Moa_DesertMovement-Description\", \"Increased Movement Speed in Deserts\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Moa_DesertMovement-Description\", \"Increased Movement Speed in Deserts, and Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Moa_DesertMovementSpeed.T_Talent_Moa_DesertMovementSpeed",
             "TalentTree": {
                 "RowName": "Creature_Moa"
@@ -35995,19 +36009,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseDesertMovementSpeed_+%\")": 3
+                        "(Value=\"BaseDesertMovementSpeed_+%\")": 3,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseDesertMovementSpeed_+%\")": 8
+                        "(Value=\"BaseDesertMovementSpeed_+%\")": 8,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseDesertMovementSpeed_+%\")": 15
+                        "(Value=\"BaseDesertMovementSpeed_+%\")": 15,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -38050,7 +38067,7 @@
         {
             "Name": "CombatPet_ReducedWaterUsage",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage-DisplayName\", \"Hydration Elasticity \")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage-Description\", \"Reduced Water Consumption\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
             "TalentTree": {
                 "RowName": "Creature_Mount_Base"
@@ -38066,25 +38083,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -2
+                        "(Value=\"BaseWaterConsumption_+%\")": -2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -5
+                        "(Value=\"BaseWaterConsumption_+%\")": -5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                        "(Value=\"BaseWaterConsumption_+%\")": -10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -20
+                        "(Value=\"BaseWaterConsumption_+%\")": -20,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -38104,7 +38125,7 @@
         {
             "Name": "CombatPet_FoodBuffDuration",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration-DisplayName\", \"Perfect Pasturage\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration-Description\", \"Increased Food Effects Duration\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
             "TalentTree": {
                 "RowName": "Creature_Mount_Base"
@@ -38120,25 +38141,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 20
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -38491,7 +38516,7 @@
         {
             "Name": "CombatPet_ReducedWaterUsage_Wolf",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Wolf-DisplayName\", \"Hydration Elasticity \")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Wolf-Description\", \"Reduced Water Consumption\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Wolf-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
             "TalentTree": {
                 "RowName": "Creature_Wolf"
@@ -38507,25 +38532,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -2
+                        "(Value=\"BaseWaterConsumption_+%\")": -2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -5
+                        "(Value=\"BaseWaterConsumption_+%\")": -5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                        "(Value=\"BaseWaterConsumption_+%\")": -10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -20
+                        "(Value=\"BaseWaterConsumption_+%\")": -20,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -38545,7 +38574,7 @@
         {
             "Name": "CombatPet_FoodBuffDuration_Wolf",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Wolf-DisplayName\", \"Perfect Pasturage\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Wolf-Description\", \"Increased Food Effects Duration\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Wolf-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
             "TalentTree": {
                 "RowName": "Creature_Wolf"
@@ -38561,25 +38590,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 20
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -42910,7 +42943,7 @@
         {
             "Name": "Creature_Horse_StaminaStandard",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Horse_StaminaStandard-DisplayName\", \"Equine Endurance\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Horse_StaminaStandard-Description\", \"Increased Maximum Stamina\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Horse_StaminaStandard-Description\", \"Increased Maximum Stamina and Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Horse_Stamina.T_Talent_Horse_Stamina",
             "TalentTree": {
                 "RowName": "Creature_Horse"
@@ -42926,19 +42959,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseMaximumStamina_+%\")": 2
+                        "(Value=\"BaseMaximumStamina_+%\")": 2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseMaximumStamina_+%\")": 5
+                        "(Value=\"BaseMaximumStamina_+%\")": 5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseMaximumStamina_+%\")": 10
+                        "(Value=\"BaseMaximumStamina_+%\")": 10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 }
@@ -42970,19 +43006,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 }
@@ -45138,7 +45177,7 @@
         {
             "Name": "Creature_SnowWolf_Freeze",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SnowWolf_Freeze-DisplayName\", \"Arctic Mutation\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SnowWolf_Freeze-Description\", \"Chance to apply Freeze on hit\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SnowWolf_Freeze-Description\", \"Chance to apply Freeze on hit, and gains Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Tusker_ArctivMovementSpeed.T_Talent_Tusker_ArctivMovementSpeed",
             "TalentTree": {
                 "RowName": "Creature_Snow_Wolf"
@@ -45154,19 +45193,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseAttacksCauseFreeze_%\")": 5
+                        "(Value=\"BaseAttacksCauseFreeze_%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseAttacksCauseFreeze_%\")": 15
+                        "(Value=\"BaseAttacksCauseFreeze_%\")": 15,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseAttacksCauseFreeze_%\")": 25
+                        "(Value=\"BaseAttacksCauseFreeze_%\")": 25,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -45599,7 +45641,7 @@
         {
             "Name": "CombatPet_ReducedWaterUsage_SnowWolf",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_SnowWolf-DisplayName\", \"Hydration Elasticity \")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_SnowWolf-Description\", \"Reduced Water Consumption\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_SnowWolf-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
             "TalentTree": {
                 "RowName": "Creature_Snow_Wolf"
@@ -45615,25 +45657,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -2
+                        "(Value=\"BaseWaterConsumption_+%\")": -2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -5
+                        "(Value=\"BaseWaterConsumption_+%\")": -5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                        "(Value=\"BaseWaterConsumption_+%\")": -10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -20
+                        "(Value=\"BaseWaterConsumption_+%\")": -20,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -45653,7 +45699,7 @@
         {
             "Name": "CombatPet_FoodBuffDuration_SnowWolf",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_SnowWolf-DisplayName\", \"Perfect Pasturage\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_SnowWolf-Description\", \"Increased Food Effects Duration\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_SnowWolf-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
             "TalentTree": {
                 "RowName": "Creature_Snow_Wolf"
@@ -45669,25 +45715,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 20
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -46262,7 +46312,7 @@
         {
             "Name": "CombatPet_ReducedWaterUsage_Dog",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Dog-DisplayName\", \"Hydration Elasticity \")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Dog-Description\", \"Reduced Water Consumption\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Dog-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
             "TalentTree": {
                 "RowName": "Creature_Dog"
@@ -46278,25 +46328,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -2
+                        "(Value=\"BaseWaterConsumption_+%\")": -2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -5
+                        "(Value=\"BaseWaterConsumption_+%\")": -5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                        "(Value=\"BaseWaterConsumption_+%\")": -10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -20
+                        "(Value=\"BaseWaterConsumption_+%\")": -20,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -46316,7 +46370,7 @@
         {
             "Name": "CombatPet_FoodBuffDuration_Dog",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Dog-DisplayName\", \"Perfect Pasturage\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Dog-Description\", \"Increased Food Effects Duration\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Dog-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
             "TalentTree": {
                 "RowName": "Creature_Dog"
@@ -46332,25 +46386,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 20
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -46890,7 +46948,7 @@
         {
             "Name": "CombatPet_ReducedWaterUsage_Cat",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Cat-DisplayName\", \"Hydration Elasticity \")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Cat-Description\", \"Reduced Water Consumption\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Cat-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
             "TalentTree": {
                 "RowName": "Creature_Cat"
@@ -46906,25 +46964,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -2
+                        "(Value=\"BaseWaterConsumption_+%\")": -2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -5
+                        "(Value=\"BaseWaterConsumption_+%\")": -5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                        "(Value=\"BaseWaterConsumption_+%\")": -10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -20
+                        "(Value=\"BaseWaterConsumption_+%\")": -20,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -46944,7 +47006,7 @@
         {
             "Name": "CombatPet_FoodBuffDuration_Cat",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Cat-DisplayName\", \"Perfect Pasturage\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Cat-Description\", \"Increased Food Effects Duration\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Cat-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
             "TalentTree": {
                 "RowName": "Creature_Cat"
@@ -46960,25 +47022,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 20
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -47602,7 +47668,7 @@
         {
             "Name": "CombatPet_ReducedWaterUsage_Boar",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Boar-DisplayName\", \"Hydration Elasticity \")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Boar-Description\", \"Reduced Water Consumption\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Boar-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
             "TalentTree": {
                 "RowName": "Creature_Boar"
@@ -47618,25 +47684,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -2
+                        "(Value=\"BaseWaterConsumption_+%\")": -2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -5
+                        "(Value=\"BaseWaterConsumption_+%\")": -5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                        "(Value=\"BaseWaterConsumption_+%\")": -10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -20
+                        "(Value=\"BaseWaterConsumption_+%\")": -20,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -47656,7 +47726,7 @@
         {
             "Name": "CombatPet_FoodBuffDuration_Boar",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Boar-DisplayName\", \"Perfect Pasturage\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Boar-Description\", \"Increased Food Effects Duration\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Boar-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
             "TalentTree": {
                 "RowName": "Creature_Boar"
@@ -47672,25 +47742,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 20
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -48137,7 +48211,7 @@
         {
             "Name": "CombatPet_ReducedWaterUsage_DesertWolf",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_DesertWolf-DisplayName\", \"Hydration Elasticity \")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_DesertWolf-Description\", \"Reduced Water Consumption\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_DesertWolf-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
             "TalentTree": {
                 "RowName": "Creature_Desert_Wolf"
@@ -48153,25 +48227,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -2
+                        "(Value=\"BaseWaterConsumption_+%\")": -2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -5
+                        "(Value=\"BaseWaterConsumption_+%\")": -5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                        "(Value=\"BaseWaterConsumption_+%\")": -10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -20
+                        "(Value=\"BaseWaterConsumption_+%\")": -20,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -48191,7 +48269,7 @@
         {
             "Name": "CombatPet_FoodBuffDuration_DesertWolf",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_DesertWolf-DisplayName\", \"Perfect Pasturage\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_DesertWolf-Description\", \"Increased Food Effects Duration\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_DesertWolf-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
             "TalentTree": {
                 "RowName": "Creature_Desert_Wolf"
@@ -48207,25 +48285,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 20
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -48805,7 +48887,7 @@
         {
             "Name": "CombatPet_ReducedWaterUsage_Chicken",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Chicken-DisplayName\", \"Hydration Elasticity \")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Chicken-Description\", \"Reduced Water Consumption\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Chicken-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
             "TalentTree": {
                 "RowName": "Creature_Chicken"
@@ -48821,25 +48903,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -2
+                        "(Value=\"BaseWaterConsumption_+%\")": -2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -5
+                        "(Value=\"BaseWaterConsumption_+%\")": -5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                        "(Value=\"BaseWaterConsumption_+%\")": -10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -20
+                        "(Value=\"BaseWaterConsumption_+%\")": -20,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -48859,7 +48945,7 @@
         {
             "Name": "CombatPet_FoodBuffDuration_Chicken",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Chicken-DisplayName\", \"Perfect Pasturage\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Chicken-Description\", \"Increased Food Effects Duration\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Chicken-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
             "TalentTree": {
                 "RowName": "Creature_Chicken"
@@ -48875,25 +48961,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 20
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -49472,7 +49562,7 @@
         {
             "Name": "CombatPet_ReducedWaterUsage_Sheep",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Sheep-DisplayName\", \"Hydration Elasticity \")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Sheep-Description\", \"Reduced Water Consumption\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Sheep-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
             "TalentTree": {
                 "RowName": "Creature_Sheep"
@@ -49488,25 +49578,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -2
+                        "(Value=\"BaseWaterConsumption_+%\")": -2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -5
+                        "(Value=\"BaseWaterConsumption_+%\")": -5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                        "(Value=\"BaseWaterConsumption_+%\")": -10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseWaterConsumption_+%\")": -20
+                        "(Value=\"BaseWaterConsumption_+%\")": -20,
+                        "(Value=\"BaseHeatResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -49526,7 +49620,7 @@
         {
             "Name": "CombatPet_FoodBuffDuration_Sheep",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Sheep-DisplayName\", \"Perfect Pasturage\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Sheep-Description\", \"Increased Food Effects Duration\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Sheep-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
             "TalentTree": {
                 "RowName": "Creature_Sheep"
@@ -49542,25 +49636,29 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseFoodModifierDuration_+%\")": 20
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -51281,7 +51379,7 @@
         {
             "Name": "Creature_ArcticMoa_ArcticMovement",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_ArcticMoa_ArcticMovement-DisplayName\", \"Snow Walker\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_ArcticMoa_ArcticMovement-Description\", \"Increased Movement Speed in Arctic\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_ArcticMoa_ArcticMovement-Description\", \"Increased Movement Speed in Arctic, and Cold Resistance\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Moa_DesertMovementSpeed.T_Talent_Moa_DesertMovementSpeed",
             "TalentTree": {
                 "RowName": "Creature_ArcticMoa"
@@ -51297,19 +51395,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseArcticMovementSpeed_+%\")": 3
+                        "(Value=\"BaseArcticMovementSpeed_+%\")": 3,
+                        "(Value=\"BaseColdResistance_%\")": 2
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseArcticMovementSpeed_+%\")": 8
+                        "(Value=\"BaseArcticMovementSpeed_+%\")": 8,
+                        "(Value=\"BaseColdResistance_%\")": 5
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseArcticMovementSpeed_+%\")": 15
+                        "(Value=\"BaseArcticMovementSpeed_+%\")": 15,
+                        "(Value=\"BaseColdResistance_%\")": 10
                     },
                     "GrantedFlags": []
                 }
@@ -53891,7 +53992,7 @@
                 "RowName": "Blueprint_Bosses"
             },
             "Position": {
-                "X": 12250,
+                "X": 12500,
                 "Y": 150
             },
             "Size": {
@@ -53986,7 +54087,7 @@
                 "RowName": "Blueprint_Bosses"
             },
             "Position": {
-                "X": 12550,
+                "X": 12800,
                 "Y": 150
             },
             "Size": {
@@ -54878,6 +54979,130 @@
             "RequiredTalents": [
                 {
                     "RowName": "Charging_Station",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Water_Can_T3",
+            "ExtraData": {
+                "RowName": "Item_Jerry_Can_Water",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 7000,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "SplineTool_Water",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Water_Barrel_T4",
+            "ExtraData": {
+                "RowName": "Item_Portable_Tank_Water",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 1350,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Reinforced_Glass_Basic",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Reinforced_Glass_Basic-DisplayName\", \"Reinforced Glass Building Base Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Wall_Tempered_0.T_ITEM_Glass_Wall_Tempered_0",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 15050,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Glass_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Reinforced_Glass_Advanced",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Reinforced_Glass_Advanced-DisplayName\", \"Reinforced Glass Building Advanced Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Halfpiece_Tempered_2.T_ITEM_Glass_Halfpiece_Tempered_2",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 15300,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Reinforced_Glass_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Scyther_Aquarium",
+            "ExtraData": {
+                "RowName": "Item_Scyther_Aquarium",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 12200,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Sycther_Reroute",
                     "DataTableName": "D_Talents"
                 }
             ]

@@ -15,6 +15,27 @@
     "GenerateEnum": true,
     "Rows": [
         {
+            "Name": "Dirty_Water_Lava",
+            "Alteration": {
+                "Value": "Dirty_Water_Lava"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Dirty_Water_Lava"
+            }
+        },
+        {
+            "Name": "Dirty_Water_Swamp",
+            "Alteration": {
+                "Value": "Dirty_Water_Swamp"
+            },
+            "ModifierDuration": 300,
+            "Modifier": {
+                "RowName": "Dirty_Water_Swamp"
+            },
+            "Priority": 1
+        },
+        {
             "Name": "Dirty_Water",
             "Alteration": {
                 "Value": "Dirty_Water"
@@ -22,7 +43,8 @@
             "ModifierDuration": 300,
             "Modifier": {
                 "RowName": "Dirty_Water"
-            }
+            },
+            "Priority": 2
         },
         {
             "Name": "Rain_Water",
@@ -33,7 +55,7 @@
             "Modifier": {
                 "RowName": "Rain_Water"
             },
-            "Priority": 1
+            "Priority": 3
         },
         {
             "Name": "Filtered_Water",
@@ -44,7 +66,7 @@
             "Modifier": {
                 "RowName": "Filtered_Water"
             },
-            "Priority": 2
+            "Priority": 4
         },
         {
             "Name": "Treated_Water",
@@ -55,7 +77,7 @@
             "Modifier": {
                 "RowName": "Treated_Water"
             },
-            "Priority": 3
+            "Priority": 5
         },
         {
             "Name": "Purified_Water",
@@ -66,7 +88,7 @@
             "Modifier": {
                 "RowName": "Purified_Water"
             },
-            "Priority": 4
+            "Priority": 6
         },
         {
             "Name": "Tea_Green",

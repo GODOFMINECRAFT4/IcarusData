@@ -1947,7 +1947,8 @@
                 "RowName": "Generic_Negative"
             },
             "GrantedStats": {
-                "(Value=\"BaseFoodRecovery_+%\")": -50
+                "(Value=\"BaseFoodRecovery_+%\")": -50,
+                "(Value=\"BaseFoodModifierDuration_+%\")": -25
             },
             "ModifierLifetimeAffectors": [
                 {
@@ -2563,7 +2564,7 @@
             "Name": "Antparasitic_Paste",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Antiparasitic_Paste.ITEM_Antiparasitic_Paste'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Antparasitic_Paste-ModifierName\", \"Anti-parasitic Paste\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antparasitic_Paste-ModifierDescription\", \"Reduces the duration of infection, and gives small health buff.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antparasitic_Paste-ModifierDescription\", \"Reduces the duration of festering wounds, dysentry and other parasites,and gives small health buff.\")",
             "GrantedStats": {
                 "(Value=\"BaseParasiticModifierDuration_+%\")": -50,
                 "(Value=\"BaseHealthRegen_+%\")": 15
@@ -2691,7 +2692,7 @@
             "Name": "Antiparasitic_Tonic",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Antiparasitic_Tonic.ITEM_Antiparasitic_Tonic'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Antiparasitic_Tonic-ModifierName\", \"Anti-parasitic Tonic\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antiparasitic_Tonic-ModifierDescription\", \"Removes festering infections.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antiparasitic_Tonic-ModifierDescription\", \"Removes festering wounds, dysentry and other parasites.\")",
             "MergeType": "Replace",
             "ModifierTags": {
                 "GameplayTags": [
@@ -2792,7 +2793,7 @@
             "Name": "Antiparasitic_Pill",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Antiparasitic_Pill.ITEM_Antiparasitic_Pill'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Antiparasitic_Pill-ModifierName\", \"Anti-parasitic Pill\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antiparasitic_Pill-ModifierDescription\", \"Protects against festering infections.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antiparasitic_Pill-ModifierDescription\", \"Protects against festering wounds, dysentry and other parasites.\")",
             "MergeType": "Replace",
             "ModifierTags": {
                 "GameplayTags": [
@@ -4036,7 +4037,7 @@
             "Name": "Antiparasitic_Vaccine",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Meta_Vaccine_Antiparasitic.ITEM_Meta_Vaccine_Antiparasitic'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Antiparasitic_Vaccine-ModifierName\", \"Anti-parasitic Vaccine\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antiparasitic_Vaccine-ModifierDescription\", \"Protects against festering infections.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Antiparasitic_Vaccine-ModifierDescription\", \"Protects against festering wounds, dysentry and other parasites.\")",
             "MergeType": "Replace",
             "ModifierTags": {
                 "GameplayTags": [
@@ -7626,11 +7627,13 @@
             "Name": "Animal_Feed",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed.T_ITEM_Animal_Feed'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed-ModifierName\", \"Animal Feed\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed-ModifierDescription\", \"Increases animal stamina and stamina regeneration.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed-ModifierDescription\", \"Increases animal stamina and stamina regeneration. Improves heat and cold resistance.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumStamina_+\")": 125,
-                "(Value=\"BaseStaminaRegen_+%\")": 50
+                "(Value=\"BaseStaminaRegen_+%\")": 50,
+                "(Value=\"BaseHeatResistance_%\")": 5,
+                "(Value=\"BaseColdResistance_%\")": 5
             },
             "ModifierEffectivenessAffectors": [
                 {
@@ -8469,7 +8472,7 @@
             "Name": "GrantedAura_HyperthermiaResistance",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Hyperthermia_Aura.T_ICON_Modifier_Hyperthermia_Aura'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HyperthermiaResistance-ModifierName\", \"Aura: Increased Hyperthermia Resistance\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HyperthermiaResistance-ModifierDescription\", \"Nearby allies receive additional Cold and Hyperthermia Resistance\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HyperthermiaResistance-ModifierDescription\", \"Nearby allies receive additional Heat and Hyperthermia Resistance\")",
             "bAura": true,
             "AuraRange": 2000,
             "AuraFlags": {
@@ -8489,9 +8492,9 @@
             "Name": "AuraEffect_HyperthermiaResistance",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Hyperthermia_Duration.T_ICON_Modifier_Hyperthermia_Duration'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_HyperthermiaResistance-ModifierName\", \"Aura Effect: Increased Hyperthermia Resistance\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_HyperthermiaResistance-ModifierDescription\", \"Increased Cold and Hyperthermia Resistance\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_HyperthermiaResistance-ModifierDescription\", \"Increased Heat and Hyperthermia Resistance\")",
             "GrantedStats": {
-                "(Value=\"BaseColdResistance_%\")": 15,
+                "(Value=\"BaseHeatResistance_%\")": 15,
                 "(Value=\"BaseHyperthermiaResistance_%\")": 15
             },
             "AuraRange": 500,
@@ -8502,7 +8505,7 @@
             "Name": "GrantedAura_HypothermiaResistance",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Hypothermia_Aura.T_ICON_Modifier_Hypothermia_Aura'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HypothermiaResistance-ModifierName\", \"Aura: Increased Hypothermia Resistance\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HypothermiaResistance-ModifierDescription\", \"Nearby allies receive additional Heat and Hypothermia Resistance\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HypothermiaResistance-ModifierDescription\", \"Nearby allies receive additional Cold and Hypothermia Resistance\")",
             "bAura": true,
             "AuraRange": 2000,
             "AuraFlags": {
@@ -8522,9 +8525,9 @@
             "Name": "AuraEffect_HypothermiaResistance",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Hypothermia_Duration.T_ICON_Modifier_Hypothermia_Duration'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_HypothermiaResistance-ModifierName\", \"Aura Effect: Increased Hypothermia Resistance\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_HypothermiaResistance-ModifierDescription\", \"Increased Heat and Hypothermia Resistance\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_HypothermiaResistance-ModifierDescription\", \"Increased Cold and Hypothermia Resistance\")",
             "GrantedStats": {
-                "(Value=\"BaseHeatResistance_%\")": 15,
+                "(Value=\"BaseColdResistance_%\")": 15,
                 "(Value=\"BaseHypothermiaResistance_%\")": 15
             },
             "AuraRange": 500,
@@ -9884,6 +9887,11 @@
                 "(Value=\"BaseFoodConsumption_+%\")": -25,
                 "(Value=\"BaseExperience_+%\")": 15
             },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -9956,11 +9964,12 @@
             "Name": "Animal_Feed_Squash",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Squash.T_ITEM_Animal_Feed_Squash'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Squash-ModifierName\", \"Desert Animal Feed\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Squash-ModifierDescription\", \"Increases animal movement speed in the desert, and reduces water consumption.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Squash-ModifierDescription\", \"Increases animal movement speed in the desert, heat resistance, and reduces water consumption.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseDesertMovementSpeed_+%\")": 15,
-                "(Value=\"BaseWaterConsumption_+%\")": -30
+                "(Value=\"BaseWaterConsumption_+%\")": -30,
+                "(Value=\"BaseHeatResistance_%\")": 15
             },
             "ModifierEffectivenessAffectors": [
                 {
@@ -9979,11 +9988,12 @@
             "Name": "Animal_Feed_Pumpkin",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Pumpkin.T_ITEM_Animal_Feed_Pumpkin'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Pumpkin-ModifierName\", \"Arctic Animal Feed\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Pumpkin-ModifierDescription\", \"Increases animal movement speed in the arctic and reduces food consumption.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Pumpkin-ModifierDescription\", \"Increases animal movement speed in the arctic, cold resistance, and reduces food consumption.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseArcticMovementSpeed_+%\")": 15,
-                "(Value=\"BaseFoodConsumption_+%\")": -30
+                "(Value=\"BaseFoodConsumption_+%\")": -30,
+                "(Value=\"BaseColdResistance_%\")": 15
             },
             "ModifierEffectivenessAffectors": [
                 {
@@ -10002,11 +10012,12 @@
             "Name": "Animal_Feed_Potato",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Animal_Feed_Potato.T_ITEM_Animal_Feed_Potato'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Potato-ModifierName\", \"Volcanic Animal Feed\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Potato-ModifierDescription\", \"Increases animal fire damage resistance and resistance to fire damage while in lava.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Feed_Potato-ModifierDescription\", \"Increases animal heat resistance, fire damage resistance and resistance to fire damage while in lava.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseFireDamageResistance_%\")": 50,
-                "(Value=\"BaseFireDamageResistanceWhileInLava_%\")": 50
+                "(Value=\"BaseFireDamageResistanceWhileInLava_%\")": 50,
+                "(Value=\"BaseHeatResistance_%\")": 15
             },
             "ModifierEffectivenessAffectors": [
                 {
@@ -10875,13 +10886,225 @@
             "Name": "AuraEffect_Warming",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_BackPackLavaHunter.T_ICON_Modifier_BackPackLavaHunter'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Warming-ModifierName\", \"Aura Effect: Lava Hunter Backpack\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Warming-ModifierDescription\", \"Additional Warmthe\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Warming-ModifierDescription\", \"Additional Warmth\")",
             "GrantedStats": {
                 "(Value=\"BaseExternalTemperatureModification_+\")": 1000
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
             "MergeType": "LongestDuration"
+        },
+        {
+            "Name": "Dirty_Water_Swamp",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Water_Tainted.T_ICON_Water_Tainted'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirty_Water_Swamp-ModifierName\", \"Swamp Water\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirty_Water_Swamp-ModifierDescription\", \"Consuming swamp water has a 25% chance to cause Dysentery, and additionally causes increased food and water consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": 25,
+                "(Value=\"BaseFoodConsumption_+%\")": 25
+            },
+            "bEscalates": true,
+            "Escalation": {
+                "RowName": "Drink_Water_Swamp"
+            },
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Water.Dirty"
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Dirty_Water_Lava",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Water_DirtyLava.T_ICON_Water_DirtyLava'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirty_Water_Lava-ModifierName\", \"Sulfur Water\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirty_Water_Lava-ModifierDescription\", \"Consuming sulfur water has a 25% chance to cause Dysentry or Stomach Flu, and additionally causes increased food and water consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": 100,
+                "(Value=\"BaseFoodConsumption_+%\")": 50
+            },
+            "bEscalates": true,
+            "Escalation": {
+                "RowName": "Drink_Water_Lava"
+            },
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Water.Dirty"
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Dry_Atmosphere",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HeatRES.Icon_HeatRES'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dry_Atmosphere-ModifierName\", \"Extremely Arid\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dry_Atmosphere-ModifierDescription\", \"The extreme aridity of the atmosphere results in massively increased water consumption due to a lack of moisture. Deep Freeze will not produce Ice.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": 500
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Affliction_Cold_Tame",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ChilledDebuff.Icon_ChilledDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Affliction_Cold_Tame-ModifierName\", \"Cold\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Affliction_Cold_Tame-ModifierDescription\", \"Core temperature is dropping. Hunger has increased. Needs to warm up or find shelter.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMaximumStamina_+%\")": -25,
+                "(Value=\"BaseStaminaRegen_+%\")": -25,
+                "(Value=\"BaseFoodConsumption_+%\")": 30,
+                "(Value=\"BaseWaterConsumption_+%\")": -10,
+                "(Value=\"BaseMovementSpeed_+%\")": -5,
+                "(Value=\"BaseMeleeDamage_+%\")": -25
+            },
+            "bEscalates": true,
+            "Escalation": {
+                "RowName": "Cold_Escalation"
+            },
+            "EscalationTime": 600,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_AfflictionCold.BP_ModifierStateBehaviour_AfflictionCold_C",
+            "ShouldTick": true,
+            "TickOnApply": true,
+            "ModifierTickRate": 2,
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Cold"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Character.Player.Invincible"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Character.Player.Invincible )"
+            },
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Affliction_Overheating_Tame",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Warming.Icon_Warming'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Affliction_Overheating_Tame-ModifierName\", \"Overheating\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Affliction_Overheating_Tame-ModifierDescription\", \"Body temperature is rising. Thirst has increased. Needs to cool down.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": 50,
+                "(Value=\"BaseStaminaActionCost_+%\")": 20,
+                "(Value=\"BaseMovementSpeed_+%\")": -5,
+                "(Value=\"BaseMeleeDamage_+%\")": -25
+            },
+            "bEscalates": true,
+            "Escalation": {
+                "RowName": "Overheating_Escalation"
+            },
+            "EscalationTime": 600,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_AfflictionHeat.BP_ModifierStateBehaviour_AfflictionHeat_C",
+            "TickOnApply": true,
+            "ModifierTickRate": 2,
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Hot"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Character.Player.Invincible"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Character.Player.Invincible )"
+            },
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Dysentery_Lava",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_FoodPoisioning.Icon_FoodPoisioning'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dysentery_Lava-ModifierName\", \"Stomach Flu\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dysentery_Lava-ModifierDescription\", \"Contaminated water has caused a severe infection, causing pain, reduced movement speed, increased stamina consumption and increased food use. Counter with antibiotics, or wait it out.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseFoodConsumption_+%\")": 50,
+                "(Value=\"BaseStaminaConsumed_+%\")": 50,
+                "(Value=\"BaseMovementSpeed_+%\")": -15
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_DifficultyScaled.BP_ModifierStateBehaviour_TickDamage_DifficultyScaled_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 8,
+                    "Deviation": 1
+                },
+                "DifficultyScaling": {
+                    "BaseValue": 0.33000001311302185,
+                    "Deviation": 0
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "BacterialModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Bacterial"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antibiotic.T3"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antibiotic.T2"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antibiotic.T3, ModifierState.Medicine.Antibiotic.T2 )"
+            },
+            "bEffectsNPCs": false
         }
     ]
 }

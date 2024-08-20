@@ -1281,7 +1281,7 @@
         {
             "Name": "Jerrycan",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_JERRYCAN_PICKUP.SFX_JERRYCAN_PICKUP",
-            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM_JERRYCAN_WATER_FULL.UI_INV_DROPITEM_JERRYCAN_WATER_FULL",
             "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
             "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
         },
@@ -1593,6 +1593,25 @@
                     ]
                 }
             }
+        },
+        {
+            "Name": "Scyther_Spear",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Spear_Generic/SFX_IMPACT_SPEAR_SCYTHER.SFX_IMPACT_SPEAR_SCYTHER",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
+        },
+        {
+            "Name": "Jerrycan_Water",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_JERRYCAN_WATER_PICKUP.SFX_JERRYCAN_WATER_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM_JERRYCAN_WATER_FULL.UI_INV_DROPITEM_JERRYCAN_WATER_FULL",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "ConsumedSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_WATER.SFX_CONSUME_WATER",
+            "ConsumeFailedSound": "/Game/FMOD/Events/UI/Generic/UI_GENERIC_NEGATIVE_FEEDBACK.UI_GENERIC_NEGATIVE_FEEDBACK",
+            "BackpackFootstepSound": "/Game/FMOD/Events/SFX/Character/Movement/SFX_CHAR_MOVE_BACKPACK_ON_JERRYCAN_WATER.SFX_CHAR_MOVE_BACKPACK_ON_JERRYCAN_WATER"
         }
     ]
 }
