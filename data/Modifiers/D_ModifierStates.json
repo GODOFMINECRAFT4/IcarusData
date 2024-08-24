@@ -51,6 +51,10 @@
             "UserDescription": "",
             "AutoDescription": ""
         },
+        "EffectsCustomActor": {
+            "RowName": "None",
+            "DataTableName": "D_TagQueries"
+        },
         "bEffectsObjects": false,
         "bEffectsNPCs": true,
         "bEffectsPlayers": true,
@@ -1014,6 +1018,9 @@
                     2
                 ],
                 "AutoDescription": " NONE( ModifierState.Bandage, Character.Player.Invincible, ModifierState.Mount.Immune )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -1028,6 +1035,9 @@
                         "TagName": "ModifierState.Bandage"
                     }
                 ]
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -1125,6 +1135,9 @@
                     1
                 ],
                 "AutoDescription": " NONE( Character.Player.Invincible, ModifierState.Splint )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             },
             "bEffectsNPCs": false
         },
@@ -1238,6 +1251,9 @@
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration",
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
             "bEffectsNPCs": false
         },
         {
@@ -1312,7 +1328,8 @@
         },
         {
             "Name": "GrantedAura_ReducedOxygenConsumption",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_OxygenConsumptionAura.Icon_OxygenConsumptionAura'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_OxygenConsumptionEffect.Icon_OxygenConsumptionEffect'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ReducedOxygenConsumption-ModifierName\", \"Aura: Reduced Oxygen Consumption\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ReducedOxygenConsumption-ModifierDescription\", \"Nearby allies\\' oxygen consumption is reduced.\")",
             "bAura": true,
@@ -1330,7 +1347,8 @@
         },
         {
             "Name": "GrantedAura_AdditionalPhysicalDamageMitigation",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_DamageResAura.Icon_DamageResAura'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_DamageResEffect.Icon_DamageResEffect'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_AdditionalPhysicalDamageMitigation-ModifierName\", \"Aura: Reduced Physical Damage Taken\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_AdditionalPhysicalDamageMitigation-ModifierDescription\", \"Nearby allies receive additional physical damage resistance.\")",
             "bAura": true,
@@ -1357,7 +1375,8 @@
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
         },
         {
             "Name": "AuraEffect_AdditionalPhysicalDamageMitigation",
@@ -1369,7 +1388,8 @@
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
         },
         {
             "Name": "Spore_Poison",
@@ -1417,6 +1437,9 @@
                     1
                 ],
                 "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             },
             "bEffectsNPCs": false
         },
@@ -1556,6 +1579,9 @@
                         "TagName": "ModifierState.HeatBandage"
                     }
                 ]
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             },
             "bEffectsNPCs": false
         },
@@ -1738,6 +1764,9 @@
                 ],
                 "AutoDescription": " NONE( ModifierState.Medicine.Antibiotic.T2, ModifierState.Medicine.Antibiotic.T3 )"
             },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
             "bEffectsNPCs": false
         },
         {
@@ -1793,6 +1822,9 @@
                 ],
                 "AutoDescription": " NONE( ModifierState.Medicine.Antiparasitic.T2, ModifierState.Medicine.Antiparasitic.T3 )"
             },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
             "bEffectsNPCs": false
         },
         {
@@ -1840,6 +1872,9 @@
                 ],
                 "AutoDescription": " NONE( ModifierState.Medicine.Bloodthinner.T2, ModifierState.Medicine.Bloodthinner.T3 )"
             },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
             "bEffectsNPCs": false
         },
         {
@@ -1886,6 +1921,9 @@
                     1
                 ],
                 "AutoDescription": " NONE( ModifierState.Medicine.Bloodthinner.T2, ModifierState.Medicine.Bloodthinner.T3 )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             },
             "bEffectsNPCs": false
         },
@@ -1981,6 +2019,9 @@
                     1
                 ],
                 "AutoDescription": " NONE( ModifierState.Medicine.Antiparasitic.T2, ModifierState.Medicine.Antiparasitic.T3 )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             },
             "bEffectsNPCs": false
         },
@@ -2194,6 +2235,9 @@
                 ],
                 "AutoDescription": " NONE( ModifierState.Medicine.Antibiotic.T2, ModifierState.Medicine.Antibiotic.T3 )"
             },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
             "bEffectsNPCs": false
         },
         {
@@ -2217,7 +2261,8 @@
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Warm_Comfort",
@@ -2286,7 +2331,8 @@
             },
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Frostnip",
@@ -2525,6 +2571,9 @@
                 ],
                 "AutoDescription": " ANY( ModifierState.Damage.Broken )"
             },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
             "bEffectsNPCs": false
         },
         {
@@ -2558,6 +2607,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Bacterial )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2591,6 +2643,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Parasitic )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2624,6 +2679,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Poison )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2657,6 +2715,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.PhysicalTrauma )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2686,6 +2747,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Bacterial )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2715,6 +2779,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Parasitic )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2744,6 +2811,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.Poison )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2773,6 +2843,9 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Affliction.PhysicalTrauma )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2787,6 +2860,9 @@
                         "TagName": "ModifierState.Medicine.Antibiotic.T3"
                     }
                 ]
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2801,6 +2877,9 @@
                         "TagName": "ModifierState.Medicine.Antiparasitic.T3"
                     }
                 ]
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2815,6 +2894,9 @@
                         "TagName": "ModifierState.Medicine.Antipoison.T3"
                     }
                 ]
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -2829,6 +2911,9 @@
                         "TagName": "ModifierState.Medicine.Bloodthinner.T3"
                     }
                 ]
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -4451,6 +4536,9 @@
                 ],
                 "AutoDescription": " NONE( ModifierState.CoolingBandage, ModifierState.Heat_Exhaustion )"
             },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
             "bEffectsNPCs": false
         },
         {
@@ -4503,6 +4591,9 @@
                         "TagName": "ModifierState.CoolingBandage"
                     }
                 ]
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             },
             "bEffectsNPCs": false
         },
@@ -4655,7 +4746,8 @@
         },
         {
             "Name": "Weight_Reduction_Aura",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Weight_Reduction_Aura.Icon_Weight_Reduction_Aura'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Weight_Reduction.Icon_Weight_Reduction'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction_Aura-ModifierName\", \"Aura: Strength Boost\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Weight_Reduction_Aura-ModifierDescription\", \"Helps nearby prospectors to carry more.\")",
             "bAura": true,
@@ -4665,7 +4757,8 @@
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
             "ShouldTick": true,
-            "MergeType": "Stack"
+            "MergeType": "Stack",
+            "SaveToDatabase": false
         },
         {
             "Name": "Weight_Reduction",
@@ -4694,11 +4787,13 @@
             "ModifierGrantedByAura": {
                 "RowName": "Weight_Reduction_Aura"
             },
-            "MergeType": "Stack"
+            "MergeType": "Stack",
+            "SaveToDatabase": false
         },
         {
             "Name": "Healing_Modifier_Aura",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Duration.Icon_Healing_Modifier_Duration'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierName\", \"Aura: Healing Boost\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Healing_Modifier_Aura-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
             "bAura": true,
@@ -4708,7 +4803,8 @@
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
             "ShouldTick": true,
-            "MergeType": "Stack"
+            "MergeType": "Stack",
+            "SaveToDatabase": false
         },
         {
             "Name": "Feeding_Frenzy",
@@ -4808,35 +4904,34 @@
         },
         {
             "Name": "Boss_Reveal_Aura",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Aura-ModifierName\", \"Aura: Boss Reveal\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Aura-ModifierDescription\", \"Shows Nearby Prospectors Large Dangerous creatures on the map. \")",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Duration.Icon_Healing_Modifier_Duration'",
+            "Type": "Aura_Positive",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Aura-ModifierName\", \"Aura: Healing Boost\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Aura-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
             "bAura": true,
-            "AuraRange": 1500,
-            "AuraFlags": {
-                "EffectsSelf": false
-            },
+            "AuraRange": 2000,
             "ModifierGrantedByAura": {
-                "RowName": "Boss_Reveal_Modifier"
+                "RowName": "Healing_Modifier_Duration"
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
             "ShouldTick": true,
             "MergeType": "Stack",
-            "bEffectsObjects": true,
-            "bEffectsNPCs": false,
-            "bEffectsPlayers": false,
             "SaveToDatabase": false
         },
         {
             "Name": "Boss_Reveal_Modifier",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Aura.Icon_Healing_Modifier_Aura'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Modifier-ModifierName\", \"Boss Reveal\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Modifier-ModifierDescription\", \"Shows Large Dangerous creatures on the map. \")",
-            "GrantedStats": {
-                "(Value=\"MapCanSeeWorldBosses_?\")": 1
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Duration.Icon_Healing_Modifier_Duration'",
+            "Type": "Aura_Positive",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Modifier-ModifierName\", \"Aura: Healing Boost\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Modifier-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
+            "bAura": true,
+            "AuraRange": 2000,
+            "ModifierGrantedByAura": {
+                "RowName": "Healing_Modifier_Duration"
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
             "MergeType": "Stack",
-            "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
@@ -5130,6 +5225,7 @@
         {
             "Name": "GrantedAura_TamingSpeed",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_People.Icon_People'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_TamingSpeed-ModifierName\", \"Aura: Taming Speed Increase\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_TamingSpeed-ModifierDescription\", \"Nearby Juveniles Creatures are Tamed Faster \")",
             "VisibleToPlayer": false,
@@ -5406,7 +5502,10 @@
                 "(Value=\"BaseMaximumHealth_+%\")": 30,
                 "(Value=\"BaseHealthRegen_+%\")": 300
             },
-            "MergeType": "Replace"
+            "MergeType": "Replace",
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            }
         },
         {
             "Name": "Stamina_Enhancement_Tonic",
@@ -5417,7 +5516,10 @@
                 "(Value=\"BaseMaximumStamina_+%\")": 30,
                 "(Value=\"BaseStaminaRegen_+%\")": 200
             },
-            "MergeType": "Replace"
+            "MergeType": "Replace",
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            }
         },
         {
             "Name": "Sustenence_Enhancement_Tonic",
@@ -5429,7 +5531,10 @@
                 "(Value=\"BaseWaterConsumption_+%\")": -30,
                 "(Value=\"BaseOxygenConsumption_+%\")": -30
             },
-            "MergeType": "Replace"
+            "MergeType": "Replace",
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            }
         },
         {
             "Name": "Strength_Enhancement_Tonic",
@@ -5442,7 +5547,10 @@
                 "(Value=\"BaseSpearProjectileSpeed_+%\")": 30,
                 "(Value=\"BasePhysicalDamageResistance_+%\")": 15
             },
-            "MergeType": "Replace"
+            "MergeType": "Replace",
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            }
         },
         {
             "Name": "Consuming_Tonic",
@@ -5457,7 +5565,10 @@
                 "(Value=\"BaseMovementSpeed_+%\")": -50
             },
             "ShouldTick": true,
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            }
         },
         {
             "Name": "Washed_Hands",
@@ -5620,6 +5731,7 @@
         {
             "Name": "GrantedAura_MountWellRested",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_People.Icon_People'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MountWellRested-ModifierName\", \"Aura: Well Rested\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MountWellRested-ModifierDescription\", \"Nearby Tamed Creatures will receive the Well Rested Modifier\")",
             "VisibleToPlayer": false,
@@ -6701,7 +6813,7 @@
         {
             "Name": "GrantedAura_SulfurPool",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
-            "Type": "Debuff",
+            "Type": "Aura_Negative",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_SulfurPool-ModifierName\", \"Aura: Sulfur Pool\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_SulfurPool-ModifierDescription\", \"Damage From Nearby Sulfur Pools\")",
             "VisibleToPlayer": false,
@@ -6719,7 +6831,8 @@
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "SulfurPool",
@@ -7722,7 +7835,8 @@
             "MergeType": "Stack",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "AuraEffect_LavaSpot",
@@ -7749,7 +7863,8 @@
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "GeothermalPool_Wet",
@@ -7840,7 +7955,8 @@
         },
         {
             "Name": "GrantedAura_HealthRegen",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HealthRegen_Aura.Icon_HealthRegen_Aura'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HealthRegen.Icon_HealthRegen'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HealthRegen-ModifierName\", \"Aura: Increased Health Regeneration\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HealthRegen-ModifierDescription\", \"Nearby allies receive additional health regeneration.\")",
             "bAura": true,
@@ -7865,7 +7981,8 @@
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
         },
         {
             "Name": "Lava_BurnObjectImmediately",
@@ -8415,7 +8532,8 @@
         },
         {
             "Name": "GrantedAura_MovementSpeed",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MovementSpeed_Aura.Icon_MovementSpeed_Aura'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Speed.Icon_Speed'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MovementSpeed-ModifierName\", \"Aura: Increased Movement Speed\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MovementSpeed-ModifierDescription\", \"Nearby allies receive additional movement speed\")",
             "bAura": true,
@@ -8443,7 +8561,8 @@
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
         },
         {
             "Name": "Blunt_Trauma",
@@ -8470,7 +8589,8 @@
         },
         {
             "Name": "GrantedAura_HyperthermiaResistance",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Hyperthermia_Aura.T_ICON_Modifier_Hyperthermia_Aura'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Hyperthermia_Duration.T_ICON_Modifier_Hyperthermia_Duration'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HyperthermiaResistance-ModifierName\", \"Aura: Increased Hyperthermia Resistance\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HyperthermiaResistance-ModifierDescription\", \"Nearby allies receive additional Heat and Hyperthermia Resistance\")",
             "bAura": true,
@@ -8499,11 +8619,13 @@
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
         },
         {
             "Name": "GrantedAura_HypothermiaResistance",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Hypothermia_Aura.T_ICON_Modifier_Hypothermia_Aura'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_Hypothermia_Duration.T_ICON_Modifier_Hypothermia_Duration'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HypothermiaResistance-ModifierName\", \"Aura: Increased Hypothermia Resistance\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_HypothermiaResistance-ModifierDescription\", \"Nearby allies receive additional Cold and Hypothermia Resistance\")",
             "bAura": true,
@@ -8532,7 +8654,8 @@
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
         },
         {
             "Name": "Marked_Target",
@@ -8639,6 +8762,7 @@
         {
             "Name": "GrantedAura_Beehive",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Queen_Bee.T_ITEM_Queen_Bee'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Beehive-ModifierName\", \"Aura: Beehive\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Beehive-ModifierDescription\", \"Increased nearby crop growth yield\")",
             "bAura": true,
@@ -8656,7 +8780,8 @@
             "MergeType": "Stack",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "AuraEffect_Beehive",
@@ -8690,7 +8815,8 @@
             },
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Energy_Brownout_Crafting",
@@ -8754,7 +8880,7 @@
         },
         {
             "Name": "Electronic_Aura_Brownout",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_AuraRangeDebuff.Icon_AuraRangeDebuff'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_AuraRangeDebuff.T_ICON_AuraRangeDebuff'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Electronic_Aura_Brownout-ModifierName\", \"Underpowered\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Electronic_Aura_Brownout-ModifierDescription\", \"Low power is causing the Aura to be reduced.\")",
@@ -9733,7 +9859,8 @@
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Aura_Cooler_Cooling",
@@ -9756,7 +9883,8 @@
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Cooked_Eggs",
@@ -10342,6 +10470,9 @@
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration",
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
             "bEffectsNPCs": false
         },
         {
@@ -10358,6 +10489,9 @@
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration",
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
             "bEffectsNPCs": false
         },
         {
@@ -10396,6 +10530,9 @@
                         "TagName": "ModifierState.SutureKit"
                     }
                 ]
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -10431,6 +10568,9 @@
                         "TagName": "ModifierState.SutureKit"
                     }
                 ]
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
             }
         },
         {
@@ -10846,7 +10986,10 @@
                 "(Value=\"BaseMeleeDamage_+%\")": 100,
                 "(Value=\"BasePhysicalDamageResistance_+%\")": 100
             },
-            "MergeType": "Replace"
+            "MergeType": "Replace",
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            }
         },
         {
             "Name": "IceBox_Backpack_Spoil_Rate",
@@ -10865,6 +11008,7 @@
         {
             "Name": "GrantedAura_Warming",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Modifier_BackPackLavaHunterAura.T_ICON_Modifier_BackPackLavaHunterAura'",
+            "Type": "Aura_Positive",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Warming-ModifierName\", \"Aura: Lava Hunter Backpack\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Warming-ModifierDescription\", \"Nearby allies receive additional Warmth\")",
             "bAura": true,
@@ -10892,7 +11036,8 @@
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
-            "MergeType": "LongestDuration"
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
         },
         {
             "Name": "Dirty_Water_Swamp",
@@ -11105,6 +11250,137 @@
                 "AutoDescription": " NONE( ModifierState.Medicine.Antibiotic.T3, ModifierState.Medicine.Antibiotic.T2 )"
             },
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "GrantedAura_MedicBackpack",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Medic_Backpack.T_ICON_Medic_Backpack'",
+            "Type": "Aura_Positive",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MedicBackpack-ModifierName\", \"Aura: Medic Backpack\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_MedicBackpack-ModifierDescription\", \"Nearby allies receive Quicker Healing from Various Effects\")",
+            "bAura": true,
+            "AuraRange": 2000,
+            "AuraFlags": {
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_MedicBackpack"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_MedicBackpack",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Medic_Backpack.T_ICON_Medic_Backpack'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_MedicBackpack-ModifierName\", \"Aura Effect: Medic Backpack\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_MedicBackpack-ModifierDescription\", \"Quicker Healing from Various Effects\")",
+            "GrantedStats": {
+                "(Value=\"BaseBacterialModifierDuration_+%\")": -30,
+                "(Value=\"BaseParasiticModifierDuration_+%\")": -30,
+                "(Value=\"BasePoisonModifierDuration_+%\")": -30,
+                "(Value=\"BasePhysicalTraumaModifierDuration_+%\")": -30,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 5,
+                "(Value=\"BaseHealthRegen_+%\")": 100
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Volcanic_VolcWinter",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Volcanic-HeavyAsh-chaos-3.T_extremedebuff-weather-Volcanic-HeavyAsh-chaos-3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_VolcWinter-ModifierName\", \"Volcanic Winter Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_VolcWinter-ModifierDescription\", \"The volcanic winter is cooling you, increasing your food and oxygen consumption, and reducing your processing speed. Reduces your mobility, increases your stamina usage and damages you. \")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -20,
+                "(Value=\"BaseOxygenConsumption_+%\")": 40,
+                "(Value=\"BaseProcessorResourceClog_%\")": 80,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 16,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -800
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Volcanic_ColdFront",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/T_extremedebuff-weather-Volcanic-HeavyAsh-chaos-3.T_extremedebuff-weather-Volcanic-HeavyAsh-chaos-3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_ColdFront-ModifierName\", \"Cold Front Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Volcanic_ColdFront-ModifierDescription\", \"The cold front is cooling you, increasing your oxygen consumption. Reduces your mobility, increases your stamina usage and damages you. \")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": 100,
+                "(Value=\"BaseSprintSpeed_+%\")": -30,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 24,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -1200
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Exposure_Arctic_WhiteOut",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/Debuffs/extremedebuff-snow3.extremedebuff-snow3'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_WhiteOut-ModifierName\", \"Whiteout Exposure\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Exposure_Arctic_WhiteOut-ModifierDescription\", \"The whiteout storm is increasing your food consumption and significantly cooling you. Reduces your mobility, increases your stamina usage and damages you.\")",
+            "AudioData": {
+                "RowName": "Exposure_Dynamic"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseStaminaActionCost_+%\")": 100,
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": 100,
+                "(Value=\"BaseCooldownDegreePerMinute_+\")": 16,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -800,
+                "(Value=\"BaseSprintSpeed_+%\")": -20
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Exposure.BP_ModifierStateBehaviour_Exposure_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 3,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
         }
     ]
 }

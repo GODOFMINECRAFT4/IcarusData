@@ -1185,7 +1185,7 @@
         },
         {
             "Name": "Item_Shell_Buckshot",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Buckshot-DisplayName\", \"00 Buckshot Shell\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Buckshot-DisplayName\", \"Buckshot Shell\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Shell_Buckshot.ITEM_Ammo_Shell_Buckshot",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Buckshot-Description\", \"Standard 12 gauge \\\"00\\\" buckshot.\")",
             "Weight": 10,
@@ -1196,6 +1196,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Explosive-DisplayName\", \"Explosive Shotgun Shell\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Shell_Explosive.ITEM_Ammo_Shell_Explosive",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Explosive-Description\", \"Explosive 12 gauge shotgun round.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Explosive-FlavorText\", \"BOOM\")",
             "Weight": 10,
             "MaxStack": 100
         },
@@ -1204,6 +1205,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Slug-DisplayName\", \"Shotgun Slug\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Ammo_Shell_Slug.ITEM_Ammo_Shell_Slug",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Slug-Description\", \"Standard 12 gauge slug round.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Shell_Slug-FlavorText\", \"Now this thing can do some damage.\")",
             "Weight": 10,
             "MaxStack": 100
         },
@@ -3623,7 +3625,7 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_WaterBomb-Description\", \"A thrown device for fire fighting.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_WaterBomb-FlavorText\", \"Woven from fiber, the water bomb allows fire suppression from a safe distance.\")",
             "Weight": 50,
-            "MaxStack": 5
+            "MaxStack": 25
         },
         {
             "Name": "Item_Coconut",
@@ -7183,7 +7185,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Biofuel_Can_Meta-DisplayName\", \"MXC Fuel Canister\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Biofuel_Can_Meta.ITEM_Biofuel_Can_Meta",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Biofuel_Can_Meta-Description\", \"A makeshift fuel canister, that can hold biofuel, comes prefilled.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Biofuel_Can_Meta-FlavorText\", \"The caps a bit loose, still sealed, but thats fine right?\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Biofuel_Can_Meta-FlavorText\", \"The caps a bit loose, still sealed, but that\\'s fine right?\")",
             "Weight": 1000
         },
         {
@@ -17970,6 +17972,7 @@
         {
             "Name": "Item_Ape_Hide",
             "DisplayName": "INVTEXT(\"[DNT] Ape Hide\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Ape_Hide.T_ITEM_Ape_Hide",
             "Description": "INVTEXT(\"[DNT] Boss Part\")",
             "Weight": 1000,
             "MaxStack": 5
@@ -18033,6 +18036,21 @@
         {
             "Name": "Item_Ape_Trophy",
             "DisplayName": "INVTEXT(\"[DNT] Ape Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Ape_Trophy.T_ITEM_Ape_Trophy",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Ape_Fishing_Trap",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Ape_Fishing_Trap.T_ITEM_Ape_Fishing_Trap",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Ape_Rug",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Ape_Rug.T_ITEM_Ape_Rug",
             "Weight": 1000,
             "MaxStack": 5
         },
@@ -18064,6 +18082,7 @@
         {
             "Name": "Item_Ape_Attractor",
             "DisplayName": "INVTEXT(\"[DNT] Ape Attactor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Ape_Attachment.T_ITEM_Ape_Attachment",
             "Weight": 5000
         },
         {
@@ -18120,26 +18139,31 @@
         {
             "Name": "Item_IceMammoth_Armor_Head",
             "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Head Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_IceMammoth_Armor_Head.T_ITEM_IceMammoth_Armor_Head",
             "Weight": 500
         },
         {
             "Name": "Item_IceMammoth_Armor_Chest",
             "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Chest Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_IceMammoth_Armor_Chest.T_ITEM_IceMammoth_Armor_Chest",
             "Weight": 500
         },
         {
             "Name": "Item_IceMammoth_Armor_Legs",
             "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Legs Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_IceMammoth_Armor_Legs.T_ITEM_IceMammoth_Armor_Legs",
             "Weight": 500
         },
         {
             "Name": "Item_IceMammoth_Armor_Arms",
             "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Arms Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_IceMammoth_Armor_Arms.T_ITEM_IceMammoth_Armor_Arms",
             "Weight": 500
         },
         {
             "Name": "Item_IceMammoth_Armor_Feet",
             "DisplayName": "INVTEXT(\"[DNT] Ice Mammoth Feet Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_IceMammoth_Armor_Feet.T_ITEM_IceMammoth_Armor_Feet",
             "Weight": 500
         },
         {
@@ -18246,6 +18270,7 @@
         {
             "Name": "Item_Hornet_Wing",
             "DisplayName": "INVTEXT(\"[DNT] Hornet Wing\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Hornet_Wing.T_ITEM_Hornet_Wing",
             "Description": "INVTEXT(\"[DNT] Boss Part\")",
             "Weight": 1000,
             "MaxStack": 5
@@ -18253,6 +18278,7 @@
         {
             "Name": "Item_Hornet_Stinger",
             "DisplayName": "INVTEXT(\"[DNT] Hornet Stinger\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Hornet_Stinger.T_ITEM_Hornet_Stinger",
             "Description": "INVTEXT(\"[DNT] Boss Part\")",
             "Weight": 1000,
             "MaxStack": 5
@@ -18287,13 +18313,9 @@
             "Weight": 2500
         },
         {
-            "Name": "Item_Hornet_Knife",
-            "DisplayName": "INVTEXT(\"[DNT] Hornet Knife\")",
-            "Weight": 500
-        },
-        {
             "Name": "Item_Hornet_Throwing_Knife",
             "DisplayName": "INVTEXT(\"[DNT] Hornet Throwing Knife\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/ThrowingWeapons/T_ITEM_Hornet_Throwing_Knife.T_ITEM_Hornet_Throwing_Knife",
             "Weight": 250,
             "MaxStack": 50
         },
@@ -18446,6 +18468,7 @@
         {
             "Name": "Item_Ape_Grenade",
             "DisplayName": "INVTEXT(\"[DNT] Ape Grenade\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Ape_Grenade.T_ITEM_Ape_Grenade",
             "Weight": 50,
             "MaxStack": 5
         },
@@ -18984,6 +19007,153 @@
             "Description": "INVTEXT(\"[DNT] Bunker Bunk Bed\")",
             "FlavorText": "INVTEXT(\"[DNT] Bunker Bunk Bed\")",
             "Weight": 10000
+        },
+        {
+            "Name": "Item_ElectricMotor",
+            "DisplayName": "INVTEXT(\"[DNT] Electric Motor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "Description": "INVTEXT(\"[DNT] Electric Motor\")",
+            "FlavorText": "INVTEXT(\"[DNT] Electric Motor\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Medical_Scanner",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Medical_Scanner-DisplayName\", \"H.E.A.L.\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Mission_Medical_Device.T_ITEM_Mission_Medical_Device",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Medical_Scanner-Description\", \"Health Examination & Analysis Lens. Hold to scan prospectors and see their ailments.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Medical_Scanner-FlavorText\", \"XIGO\\'s latest innovation for the furtherment of medical technolgies.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Mission_Alternator",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Alternator-DisplayName\", \"Alternator\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Mission_Alternator.T_ITEM_Mission_Alternator",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Alternator-Description\", \"A makeshift alternator made on planet for repairing a mining truck.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Alternator-FlavorText\", \"That\\'s one big alternator\")",
+            "Weight": 50000
+        },
+        {
+            "Name": "Item_Mission_Radiator",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Radiator-DisplayName\", \"Radiator\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Mission_Radiator.T_ITEM_Mission_Radiator",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Radiator-Description\", \"A makeshift radiator made on planet for repairing a mining truck.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Radiator-FlavorText\", \"Not a traditional looking radiator but it will do the job.\")",
+            "Weight": 50000
+        },
+        {
+            "Name": "Item_Flagpole",
+            "DisplayName": "INVTEXT(\"[DNT] Flag Pole\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "Description": "INVTEXT(\"[DNT] Flag Pole\")",
+            "FlavorText": "INVTEXT(\"[DNT] Flag Pole\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_Portable_Tank_Biofuel",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Portable_Tank_Biofuel-DisplayName\", \"Portable Biofuel Tank\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Portable_Tank_Biofuel.T_ITEM_Portable_Tank_Biofuel",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Portable_Tank_Biofuel-Description\", \"Useful for hauling biofuel long distances.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Portable_Tank_Biofuel-FlavorText\", \"Carrying a large container full of explosive liquid, what could go wrong?\")",
+            "Weight": 150000
+        },
+        {
+            "Name": "Item_Bunker_Sign",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Bunker_Sign-DisplayName\", \"Bunker Sign\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "Description": "INVTEXT(\"[DNT] Null Sec Bunker Item\")",
+            "FlavorText": "INVTEXT(\"[DNT] Null Sec Bunker Item\")",
+            "Weight": 5000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Bunker_Base_Sign",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Bunker_Base_Sign-DisplayName\", \"Base Sign\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "Description": "INVTEXT(\"[DNT] Null Sec Bunker Item\")",
+            "FlavorText": "INVTEXT(\"[DNT] Null Sec Bunker Item\")",
+            "Weight": 5000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Bunker_MedCabinet",
+            "DisplayName": "INVTEXT(\"[DNT] Medic Cabinet\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "Description": "INVTEXT(\"[DNT] Medic Cabinet\")",
+            "FlavorText": "INVTEXT(\"[DNT] Medic Cabinet\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Bunker_Locker",
+            "DisplayName": "INVTEXT(\"[DNT] Locker\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "Description": "INVTEXT(\"[DNT] Lockers\")",
+            "FlavorText": "INVTEXT(\"[DNT] Lockers\")",
+            "Weight": 3000
+        },
+        {
+            "Name": "Item_ReinforcedWood_Floor",
+            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Floor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Floor_0.ITEM_Wood_Floor_0",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_ReinforcedWood_Wall",
+            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Wall\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Wall_0.ITEM_Wood_Wall_0",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_ReinforcedWood_Wall_Angle",
+            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Wall Angled\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Wall_Angle_0.ITEM_Wood_Wall_Angle_0",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_ReinforcedWood_Ramp",
+            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Roof/Ramp\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Ramp_0.ITEM_Wood_Ramp_0",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_ReinforcedWood_Beam",
+            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Beam\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Floor_3.ITEM_Wood_Floor_3",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_ReinforcedWood_Roof_Corner",
+            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Roof Corner\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Roof_Corner_0.ITEM_Wood_Roof_Corner_0",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_ReinforcedWood_Roof_Half_Pitch",
+            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Halfpitches\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Half_Pitch_2.ITEM_Wood_Half_Pitch_2",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_ReinforcedWood_Halfpiece",
+            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Halfpieces\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Halfpiece_0.ITEM_Wood_Halfpiece_0",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Shotgun_Casing",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Shotgun_Casing-DisplayName\", \"Shotgun Cartridge\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Shotgun_Casing.T_ITEM_Shotgun_Casing",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Shotgun_Casing-Description\", \"An empty shotgun shell that can be used to create all types of shotgun ammo.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Shotgun_Casing-FlavorText\", \"An essential resource for a trusty firearm.\")",
+            "Weight": 100,
+            "MaxStack": 200
         }
     ]
 }

@@ -9357,7 +9357,7 @@
         {
             "Name": "PRO_D_Research_AerosolTesting",
             "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_AerosolTesting.BPQ_PRO_D_Research_AerosolTesting_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolTesting-Description\", \"Undertake Aerosol Testing\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolTesting-Description\", \"Undertake Testing at location Alpha\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_ValleyEntryway"
             },
@@ -9371,7 +9371,7 @@
         {
             "Name": "PRO_D_Research_AerosolDeploy",
             "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_Aerosol_Deploy.BPQ_PRO_D_Research_Aerosol_Deploy_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolDeploy-Description\", \"Deploy Aerosol Emitter at location Alpha\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolDeploy-Description\", \"Deploy and power Aerosol Emitter\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_ValleyEntryway"
             }
@@ -9379,7 +9379,7 @@
         {
             "Name": "PRO_D_Research_AerosolDelay",
             "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_AerosolDelay.BPQ_PRO_D_Research_AerosolDelay_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolDelay-Description\", \"Leave the area while Aerosol emission cycle completes: {0} / {1} seconds\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolDelay-Description\", \"Keep device powered while Aerosol emission cycle completes: {0} / {1} seconds\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "SurveyDeviceDeployedWater2",
@@ -9410,16 +9410,16 @@
         {
             "Name": "PRO_D_Research_LiquidTesting",
             "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_LiquidTesting.BPQ_PRO_D_Research_LiquidTesting_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_LiquidTesting-Description\", \"Undertake Liquid Testing\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_LiquidTesting-Description\", \"Undertake Aerosol Testing at location Beta\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_ValleyEntrance"
             }
         },
         {
             "Name": "PRO_D_Research_LiquidDeploy",
-            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_Liquid_Deploy.BPQ_PRO_D_Research_Liquid_Deploy_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_Aerosol_Deploy_Obj2.BPQ_PRO_D_Research_Aerosol_Deploy_Obj2_C",
             "Variation": 1,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_LiquidDeploy-Description\", \"Deploy Liquid Solution at location Beta\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_LiquidDeploy-Description\", \"Deploy and power Aerosol Emitter\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_ValleyEntrance"
             }
@@ -9438,6 +9438,53 @@
                     "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "PRO_D_Research_JelliesTesting",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_JelliesTesting.BPQ_PRO_D_Research_JelliesTesting_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_JelliesTesting-Description\", \"Undertake Aerosol Testing at location Chi\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_ValleyDeep"
+            }
+        },
+        {
+            "Name": "PRO_D_Research_JelliesDeploy",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_Aerosol_Deploy.BPQ_PRO_D_Research_Aerosol_Deploy_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_JelliesDeploy-Description\", \"Deploy and power Aerosol Emitter\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_ValleyDeep"
+            }
+        },
+        {
+            "Name": "PRO_D_Research_JelliesDelay",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_JelliesDelay.BPQ_PRO_D_Research_JelliesDelay_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_JelliesDelay-Description\", \"Keep device powered while Aerosol emission cycle completes: {0} / {1} seconds\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "RecoverySEDeviceReady1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_D_Research_JelliesReturn",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_AerosolReturn.BPQ_PRO_D_Research_AerosolReturn_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_JelliesReturn-Description\", \"Return to Aerosol Emitter\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "FM4SurveyScanPaused",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_D_Research_JelliesWildlife",
+            "Class": "/Game/BP/Quests/Prometheus/D/Research/BPQ_PRO_D_Research_JelliesWildlife.BPQ_PRO_D_Research_JelliesWildlife_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_JelliesWildlife-Description\", \"Stay in the vicinity of the Aerosol Emitter to collect data\")"
         },
         {
             "Name": "PRO_E_Research",
@@ -9495,11 +9542,120 @@
         },
         {
             "Name": "PRO_D_Recovery",
-            "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research.BPQ_PRO_E_Research_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery.BPQ_PRO_D_Recovery_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery-Description\", \"STRANDED: ASHLANDS\")",
             "LocationQuery": {
-                "RowName": "PRO_Icesheet_UpperPillar"
+                "RowName": "PRO_ASH_NPC1"
             }
+        },
+        {
+            "Name": "PRO_D_Recovery_Time",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Time.BPQ_PRO_D_Recovery_Time_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Time-Description\", \"{0} Time Remaning\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Prepare",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Prepare.BPQ_PRO_D_Recovery_Prepare_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare-Description\", \"Prepare to Rescue and Render Aid to the Recovery Crew\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Prepare_Craft",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Prepare_Craft.BPQ_PRO_D_Recovery_Prepare_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Craft-Description\", \"Craft a H.E.A.L. Medical Scanner (Fabricator)\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Prepare_Optional",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Prepare_Optional.BPQ_PRO_D_Recovery_Prepare_Optional_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Optional-Description\", \"(Optional) Craft Various Medicial Supplies to Render Aid \")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Search",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Travel.BPQ_PRO_D_Recovery_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Search-Description\", \"Track down the Terraforming Construction Site within the Ashlands\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Assist",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Assist.BPQ_PRO_D_Recovery_Assist_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist-Description\", \"Scan with H.E.A.L. Device & Stablise the Recovery Crew\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Assist_Info",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Prepare_Optional.BPQ_PRO_D_Recovery_Prepare_Optional_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist_Info-Description\", \"To Stabilize Provide Food / Oxygen / Water and Medicine to Heal Afflictions\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Assist_NPC1",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Assist_NPC.BPQ_PRO_D_Recovery_Assist_NPC_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist_NPC1-Description\", \"Captain Church Helped\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Assist_NPC2",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Assist_NPC.BPQ_PRO_D_Recovery_Assist_NPC_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist_NPC2-Description\", \"Private Tucker Helped\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Assist_NPC3",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Assist_NPC.BPQ_PRO_D_Recovery_Assist_NPC_C",
+            "Variation": 3,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist_NPC3-Description\", \"Medic Griff Helped\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Speak",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Speak.BPQ_PRO_D_Recovery_Speak_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Speak-Description\", \"Speak with Captain Church\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Aid",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid.BPQ_PRO_D_Recovery_Aid_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid-Description\", \"Provide Assistance to the Recovery Crew\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Aid_Repair",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid_Repair.BPQ_PRO_D_Recovery_Aid_Repair_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Repair-Description\", \"Craft & Deliver Parts to the Trucks Engine\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Aid_Repair_Radiator",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid_Repair_Radiator.BPQ_PRO_D_Recovery_Aid_Repair_Radiator_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Repair_Radiator-Description\", \"{0}/{1} Radiator (Fabricator)\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Aid_Repair_Alternator",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid_Repair_Alternator.BPQ_PRO_D_Recovery_Aid_Repair_Alternator_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Repair_Alternator-Description\", \"{0}/{1} Alternator (Fabricator)\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Aid_Refill",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid_Refill.BPQ_PRO_D_Recovery_Aid_Refill_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Refill-Description\", \"Refill the Trucks Resource Tanks\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Aid_Refill_Biofuel",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid_Refill_Fuel.BPQ_PRO_D_Recovery_Aid_Refill_Fuel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Refill_Biofuel-Description\", \"Biofuel Tank {0}%\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Aid_Refill_Water",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid_Refill_Water.BPQ_PRO_D_Recovery_Aid_Refill_Water_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Refill_Water-Description\", \"Water Tank {0}%\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Aid_Resupply",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid_Resupply.BPQ_PRO_D_Recovery_Aid_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Resupply-Description\", \"Create & Deliver Equipment to the Trucks Storage\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Aid_Resupply_Rope",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid_Resupply_Rope.BPQ_PRO_D_Recovery_Aid_Resupply_Rope_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Resupply_Rope-Description\", \" {0}/{1} Rope (Crafting Bench)\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Complete",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Speak2.BPQ_PRO_D_Recovery_Speak2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Complete-Description\", \"Speak with Captain Church\")"
         },
         {
             "Name": "PRO_D_Rescue",

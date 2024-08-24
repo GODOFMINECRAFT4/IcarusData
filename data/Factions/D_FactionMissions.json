@@ -5356,49 +5356,28 @@
             "MissionObjectives": [
                 {
                     "QuestRow": {
-                        "RowName": "PRO_E_Research_StationCraft",
+                        "RowName": "PRO_D_Recovery_Search",
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
                 },
                 {
                     "QuestRow": {
-                        "RowName": "PRO_E_Research_StationDeploy",
+                        "RowName": "PRO_D_Recovery_Assist",
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
-                },
-                {
-                    "QuestRow": {
-                        "RowName": "PRO_E_Research_Monitor",
-                        "DataTableName": "D_Quests"
-                    },
-                    "Depth": 0
-                },
-                {
-                    "QuestRow": {
-                        "RowName": "PRO_E_Research_Monitor",
-                        "DataTableName": "D_Quests"
-                    },
-                    "Depth": 1
-                },
-                {
-                    "QuestRow": {
-                        "RowName": "PRO_E_Research_Monitor",
-                        "DataTableName": "D_Quests"
-                    },
-                    "Depth": 2
                 }
             ],
             "Faction": {
                 "RowName": "The_Assembly"
             },
             "InitialQuest": {
-                "RowName": "PRO_E_Research"
+                "RowName": "PRO_D_Recovery"
             },
             "TalentsRewarded": [
                 {
-                    "RowName": "Prospect_Pro_E_Research",
+                    "RowName": "Prospect_Pro_D_Recovery",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -5408,23 +5387,18 @@
                         "RowName": "Credits",
                         "DataTableName": "D_MetaCurrency"
                     },
-                    "Amount": 300
+                    "Amount": 500
                 },
                 {
                     "Meta": {
                         "RowName": "Exotic_Red",
                         "DataTableName": "D_MetaCurrency"
                     },
-                    "Amount": 150
+                    "Amount": 200
                 }
             ],
             "AccountExperience": 50,
-            "FactionExperience": 10,
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "NewFrontiers"
-                }
-            }
+            "FactionExperience": 10
         },
         {
             "Name": "PRO_D_Rescue",
@@ -5495,12 +5469,7 @@
                 }
             ],
             "AccountExperience": 50,
-            "FactionExperience": 10,
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "NewFrontiers"
-                }
-            }
+            "FactionExperience": 10
         }
     ]
 }

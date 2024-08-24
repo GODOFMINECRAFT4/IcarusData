@@ -6396,6 +6396,46 @@
                 ],
                 "AutoDescription": " ALL( Item.Consumable.Food.Cooked.Grain )"
             }
+        },
+        {
+            "Name": "Faction_Mission_NPC",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.NPC"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.NPC )"
+            }
+        },
+        {
+            "Name": "Building_Beeswax_Wood",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Building.BeeswaxWood"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Traits.Buildable, Building.BeeswaxWood )"
+            }
         }
     ]
 }

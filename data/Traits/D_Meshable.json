@@ -6074,7 +6074,7 @@
             "Name": "Mesh_Generic_Trophy",
             "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_BlackWolf_Guarding.BP_Trophy_BlackWolf_Guarding_C"
+            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Fishing/BP_Ape_Fishing_Trap.BP_Ape_Fishing_Trap_C"
         },
         {
             "Name": "Mesh_Smoker_T3",
@@ -6747,14 +6747,9 @@
             "ItemMesh": "/Game/ASS/WEP/SK_BLT_Water_Scyther.SK_BLT_Water_Scyther"
         },
         {
-            "Name": "Mesh_Hornet_Knife",
-            "ItemMesh": "/Game/ASS/WEP/SK_KNI_Stone.SK_KNI_Stone",
-            "EquipHandMesh": "/Game/ASS/WEP/SK_KNI_Stone.SK_KNI_Stone"
-        },
-        {
             "Name": "Mesh_Hornet_Throwing_Knife",
-            "ItemMesh": "/Game/ASS/WEP/SK_KNI_Stone.SK_KNI_Stone",
-            "EquipHandMesh": "/Game/ASS/WEP/SK_KNI_Stone.SK_KNI_Stone"
+            "ItemMesh": "/Game/ASS/WEP/KNI_Hornet_Throwing/SK_KNI_Hornet_Throwing.SK_KNI_Hornet_Throwing",
+            "EquipHandMesh": "/Game/ASS/WEP/KNI_Hornet_Throwing/SK_KNI_Hornet_Throwing.SK_KNI_Hornet_Throwing"
         },
         {
             "Name": "Mesh_Hornet_Pistol",
@@ -6769,11 +6764,11 @@
         },
         {
             "Name": "Mesh_Hornet_Stinger",
-            "ItemMesh": "/Game/ASS/ITM/SM_ITM_Sandworm_Scale.SM_ITM_Sandworm_Scale"
+            "ItemMesh": "/Game/ASS/ITM/Hornet_Stinger/SM_ITM_Hornet_Stinger.SM_ITM_Hornet_Stinger"
         },
         {
             "Name": "Mesh_Hornet_Wing",
-            "ItemMesh": "/Game/ASS/ITM/SM_ITM_Sandworm_Scale.SM_ITM_Sandworm_Scale"
+            "ItemMesh": "/Game/ASS/ITM/Hornet_Torn_Wing/SM_ITM_Hornet_Torn_Wing.SM_ITM_Hornet_Torn_Wing"
         },
         {
             "Name": "Mesh_Plant_Boss_Bow",
@@ -6912,6 +6907,63 @@
             "ItemMesh": "/Game/ASS/KIT/SM_KIT_Fabricator.SM_KIT_Fabricator",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Windows/BP_Window_Concrete.BP_Window_Concrete_C"
+        },
+        {
+            "Name": "Mesh_Electric_Motor",
+            "ItemMesh": "/Game/ASS/ITM/SM_ITM_ElectricMotor.SM_ITM_ElectricMotor",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/ITM/SM_ITM_ElectricMotor_BACK.SM_ITM_ElectricMotor_BACK",
+            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Extractors/BP_Extractor.BP_Extractor_C"
+        },
+        {
+            "Name": "Mesh_Scanner_Medical_Device",
+            "ItemMesh": "/Game/ASS/ITM/SK_ITM_MetaAlpha_OreScanner_01.SK_ITM_MetaAlpha_OreScanner_01",
+            "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_MetaAlpha_OreScanner_01.SK_ITM_MetaAlpha_OreScanner_01"
+        },
+        {
+            "Name": "Mesh_Mission_Alternator",
+            "ItemMesh": "/Game/ASS/ITM/SM_ITM_ElectricMotor.SM_ITM_ElectricMotor",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/ITM/SM_ITM_ElectricMotor_BACK.SM_ITM_ElectricMotor_BACK"
+        },
+        {
+            "Name": "Mesh_Mission_Radiator",
+            "ItemMesh": "/Game/ASS/ITM/Radiator/SM_ITM_Radiator.SM_ITM_Radiator",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/ITM/Radiator/SM_ITM_Radiator_Back.SM_ITM_Radiator_Back"
+        },
+        {
+            "Name": "Mesh_Flagpole",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting"
+        },
+        {
+            "Name": "Mesh_Portable_Tank_Biofuel",
+            "ItemMesh": "/Game/ASS/DEP/DEP_WaterBarrel/SM_DEP_Portable_Tank_Fuel.SM_DEP_Portable_Tank_Fuel",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/DEP/DEP_WaterBarrel/SM_DEP_Portable_Tank_Fuel.SM_DEP_Portable_Tank_Fuel",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Back/BP_Back_Portable_Tank_Biofuel.BP_Back_Portable_Tank_Biofuel_C"
+        },
+        {
+            "Name": "Mesh_Medic_Cabinet",
+            "ItemMesh": "/Game/ASS/DEP/Bunker_Props/SK_DEP_Bunker_MedCabinet.SK_DEP_Bunker_MedCabinet",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate.BP_Wood_Crate_C"
+        },
+        {
+            "Name": "Mesh_ReinforcedWood_Kit",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Wood.SM_KIT_Wood",
+            "EquipHandMesh": "/Game/ASS/KIT/SM_KIT_Wood.SM_KIT_Wood"
+        },
+        {
+            "Name": "Mesh_Ape_Rug",
+            "ItemMesh": "/Game/ASS/DEP/DEP_Trophy_Ape_Boss/SM_DEP_Trophy_Ape_Boss_Rug.SM_DEP_Trophy_Ape_Boss_Rug",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Furniture/BP_Rug_Ape_Boss.BP_Rug_Ape_Boss_C"
+        },
+        {
+            "Name": "Mesh_Ape_Grenade",
+            "ItemMesh": "/Game/ASS/WEP/SK_GRE_Swamp_Ape_Grenade/SK_GRE_Swamp_Ape_Grenade.SK_GRE_Swamp_Ape_Grenade",
+            "EquipHandMesh": "/Game/ASS/WEP/SK_GRE_Swamp_Ape_Grenade/SK_GRE_Swamp_Ape_Grenade.SK_GRE_Swamp_Ape_Grenade"
         }
     ]
 }

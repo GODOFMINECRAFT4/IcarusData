@@ -15200,6 +15200,52 @@
             "StatCategory": {
                 "RowName": "Modifiers"
             }
+        },
+        {
+            "Name": "BaseLightningRodRadius_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLightningRodRadius_+-PositiveDescription\", \"{0}m Effective Radius\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLightningRodRadius_+-NegativeDescription\", \"-{0}m Effective Radius\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Weather"
+            }
+        },
+        {
+            "Name": "LightningRodRadius_+",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"LightningRodRadius_+-PositiveTitleFormat\", \"{0}m\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"LightningRodRadius_+-NegativeTitleFormat\", \"-{0}m\")",
+            "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Weather"
+            }
+        },
+        {
+            "Name": "IsMountGrazingEnabled_?",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"IsMountGrazingEnabled_?-PositiveTitleFormat\", \"Enables Grazing Behavior\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsMountGrazingEnabled_?-PositiveDescription\", \"Enables Grazing Behavior\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GrantedAuraMedicBackpack_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraMedicBackpack_?-PositiveDescription\", \"Nearby Allies have increased Recovery.\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
         }
     ]
 }
