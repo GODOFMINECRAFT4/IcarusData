@@ -9543,7 +9543,7 @@
         {
             "Name": "PRO_D_Recovery",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery.BPQ_PRO_D_Recovery_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery-Description\", \"STRANDED: ASHLANDS\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery-Description\", \"CRISIS: ASHLANDS\")",
             "LocationQuery": {
                 "RowName": "PRO_ASH_NPC1"
             }
@@ -9565,8 +9565,8 @@
         },
         {
             "Name": "PRO_D_Recovery_Prepare_Optional",
-            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Prepare_Optional.BPQ_PRO_D_Recovery_Prepare_Optional_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Optional-Description\", \"(Optional) Craft Various Medicial Supplies to Render Aid \")"
+            "Class": "/Script/Icarus.Quest",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Optional-Description\", \"<Info>The Recovery Crew will need food, water, oxygen and various medical supplies</>\")"
         },
         {
             "Name": "PRO_D_Recovery_Search",
@@ -9576,7 +9576,7 @@
         {
             "Name": "PRO_D_Recovery_Assist",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Assist.BPQ_PRO_D_Recovery_Assist_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist-Description\", \"Scan with H.E.A.L. Device & Stablise the Recovery Crew\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist-Description\", \"Scan with H.E.A.L. Device & Stabilise the Recovery Crew\")"
         },
         {
             "Name": "PRO_D_Recovery_Assist_Info",
@@ -9606,6 +9606,20 @@
             "Name": "PRO_D_Recovery_Speak",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Speak.BPQ_PRO_D_Recovery_Speak_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Speak-Description\", \"Speak with Captain Church\")"
+        },
+        {
+            "Name": "PRO_D_Resupply",
+            "Class": "/Game/BP/Quests/Prometheus/D/Resupply/BPQ_PRO_D_Resupply.BPQ_PRO_D_Resupply_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Resupply-Description\", \"STRANDED: ASHLANDS\")",
+            "LocationQuery": {
+                "RowName": "PRO_ASH_NPC1"
+            }
+        },
+        {
+            "Name": "PRO_D_Resupply_Speak",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Speak.BPQ_PRO_D_Recovery_Speak_C",
+            "Variation": 3,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Resupply_Speak-Description\", \"Speak with Captain Church at the Terraforming Construction Site\")"
         },
         {
             "Name": "PRO_D_Recovery_Aid",
@@ -9659,11 +9673,102 @@
         },
         {
             "Name": "PRO_D_Rescue",
-            "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research.BPQ_PRO_E_Research_C",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue.BPQ_PRO_D_Rescue_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue-Description\", \"RESCUE: ASHLANDS\")",
             "LocationQuery": {
-                "RowName": "PRO_Icesheet_UpperPillar"
+                "RowName": "PRO_ASH_NPC1"
             }
+        },
+        {
+            "Name": "PRO_D_Rescue_Speak",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_Speak.BPQ_PRO_D_Rescue_Speak_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Speak-Description\", \"Speak with Captain Church at the Terraforming Construction Site\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Prepare",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_Prepare.BPQ_PRO_D_Rescue_Prepare_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Prepare-Description\", \"Prepare for Recovery\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Prepare_Craft",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_Prepare_Craft.BPQ_PRO_D_Rescue_Prepare_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Prepare_Craft-Description\", \"Craft Two Stasis Bags (Electric Textiles Bench)\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Prepare_Optional",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_Prepare_Optional.BPQ_PRO_D_Rescue_Prepare_Optional_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Prepare_Optional-Description\", \"(Optional) Prepare for the Journey (Medicine, Food, Water)\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Rescue",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_Rescue.BPQ_PRO_D_Rescue_Rescue_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Rescue-Description\", \"Search the Ashlands and Save The Missing Recovery Crew\")",
+            "LocationQuery": {
+                "RowName": "PRO_ASH_Evac"
+            }
+        },
+        {
+            "Name": "PRO_D_Rescue_Rescue_Info",
+            "Class": "/Script/Icarus.Quest",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Rescue_Info-Description\", \"<Info>Carrying a Full Stasis Bag will use a Utility Slot</>\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Rescue_Info2",
+            "Class": "/Script/Icarus.Quest",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Rescue_Info2-Description\", \"<Info>The Medevac Ship is marked on your map</>\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Locate",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_Locate.BPQ_PRO_D_Rescue_Locate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate-Description\", \"Search the Ashlands for the Downed members of the Recovery Crew (M)\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Locate_NPC1",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_NPC.BPQ_PRO_D_Rescue_NPC_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC1-Description\", \"Save Simmons\")",
+            "LocationQuery": {
+                "RowName": "PRO_ASH_NPC4"
+            }
+        },
+        {
+            "Name": "PRO_D_Rescue_Locate_NPC1_Find",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC1_Find-Description\", \"Locate Private Simmons\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Locate_NPC1_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_NPC_Collect.BPQ_PRO_D_Rescue_NPC_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC1_Collect-Description\", \"Use a Stasis Bag to Carry Simmons\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Locate_NPC1_Deliver",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_NPC_Deliver.BPQ_PRO_D_Rescue_NPC_Deliver_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC1_Deliver-Description\", \"Deliver Simmons to the Medevac Ship\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Locate_NPC2",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_NPC2.BPQ_PRO_D_Rescue_NPC2_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC2-Description\", \"Save Washington\")",
+            "LocationQuery": {
+                "RowName": "PRO_ASH_NPC5"
+            }
+        },
+        {
+            "Name": "PRO_D_Rescue_Locate_NPC2_Find",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC2_Find-Description\", \"Locate Lieutenant Washington\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Locate_NPC2_Collect",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_NPC2_Collect.BPQ_PRO_D_Rescue_NPC2_Collect_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC2_Collect-Description\", \"Use a Stasis Bag to Carry Washington\")"
+        },
+        {
+            "Name": "PRO_D_Rescue_Locate_NPC2_Deliver",
+            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_NPC_Deliver2.BPQ_PRO_D_Rescue_NPC_Deliver2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC2_Deliver-Description\", \"Deliver Washington to the Medevac Ship\")"
         }
     ]
 }

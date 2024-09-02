@@ -6436,6 +6436,44 @@
                 ],
                 "AutoDescription": " ALL( Traits.Buildable, Building.BeeswaxWood )"
             }
+        },
+        {
+            "Name": "FieldGuide_Husbandry",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Deployable.TameBed"
+                    },
+                    {
+                        "TagName": "Item.AnimalFeed"
+                    },
+                    {
+                        "TagName": "FieldGuide.Husbandry"
+                    },
+                    {
+                        "TagName": "Item.Meta.Animal"
+                    },
+                    {
+                        "TagName": "Item.Creature.Bait"
+                    },
+                    {
+                        "TagName": "Item.Deployable.Tame"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    6,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "AutoDescription": " ANY( Item.Deployable.TameBed, Item.AnimalFeed, FieldGuide.Husbandry, Item.Meta.Animal, Item.Creature.Bait, Item.Deployable.Tame )"
+            }
         }
     ]
 }

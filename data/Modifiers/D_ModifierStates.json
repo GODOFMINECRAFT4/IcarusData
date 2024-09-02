@@ -11089,7 +11089,7 @@
             "Name": "Dry_Atmosphere",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HeatRES.Icon_HeatRES'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dry_Atmosphere-ModifierName\", \"Extremely Arid\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dry_Atmosphere-ModifierDescription\", \"The extreme aridity of the atmosphere results in massively increased water consumption due to a lack of moisture. Deep Freeze will not produce Ice.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dry_Atmosphere-ModifierDescription\", \"The extreme aridity of the atmosphere results in massively increased water consumption due to a lack of moisture. Deep Freeze will not produce Ice. Temperature will fluctuate throughout the day.\")",
             "GrantedStats": {
                 "(Value=\"BaseWaterConsumption_+%\")": 500
             },
@@ -11381,6 +11381,158 @@
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
+        },
+        {
+            "Name": "Near_Death",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Skull.Icon_Skull'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Near_Death-ModifierName\", \"Near Death\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Near_Death-ModifierDescription\", \"Near Death Urgent Medical Treatment Required\")",
+            "MergeType": "Replace",
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Choc_Chip_Cookie",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Choc_Chip_Cookie.T_ITEM_Choc_Chip_Cookie'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Choc_Chip_Cookie-ModifierName\", \"Chocolate Chip Cookie\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Choc_Chip_Cookie-ModifierDescription\", \"Provides buffs good for bow combat.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 175,
+                "(Value=\"BaseFoodConsumption_+%\")": -25,
+                "(Value=\"BaseChargeSpeed_+%\")": 30,
+                "(Value=\"BaseReloadSpeed_+%\")": 15,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 10,
+                "(Value=\"BaseExperience_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Coconut_Cookie",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Coconut_Cookie.T_ITEM_Coconut_Cookie'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Coconut_Cookie-ModifierName\", \"Chewy Coconut Cookie\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Coconut_Cookie-ModifierDescription\", \"Provides buffs good for firearm combat.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 175,
+                "(Value=\"BaseFoodConsumption_+%\")": -25,
+                "(Value=\"BaseChargeSpeed_+%\")": 15,
+                "(Value=\"BaseReloadSpeed_+%\")": 30,
+                "(Value=\"BaseCraftingSpeed_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Strawberry_Candy",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Strawberry_Candy.T_ITEM_Strawberry_Candy'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Strawberry_Candy-ModifierName\", \"Strawberry Hard Candy\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Strawberry_Candy-ModifierDescription\", \"Provides a quick movement speed boost.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Watermelon_Lollypop",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Watermelon_Lollypop.T_ITEM_Watermelon_Lollypop'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Watermelon_Lollypop-ModifierName\", \"Watermelon Lollypop\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Watermelon_Lollypop-ModifierDescription\", \"Provides a quick burst of energy that reduces movement speed penalties.\")",
+            "GrantedStats": {
+                "(Value=\"BaseOverencumberedPenalty_+%\")": -50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Energy_Bar",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Energy_Bar.T_ITEM_Energy_Bar'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Energy_Bar-ModifierName\", \"Energy Bar\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Energy_Bar-ModifierDescription\", \"Provides buffs good for being on the go.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -10,
+                "(Value=\"BaseChargeSpeed_+%\")": 10,
+                "(Value=\"BaseReloadSpeed_+%\")": 10,
+                "(Value=\"BaseFoodConsumption_+%\")": -25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Caramel_Fruit_Tart",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Caramel_Fruit_Tart.T_ITEM_Caramel_Fruit_Tart'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Caramel_Fruit_Tart-ModifierName\", \"Caramel Berry Tart\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Caramel_Fruit_Tart-ModifierDescription\", \"Good all round adventuring and combat.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseChargeSpeed_+%\")": 15,
+                "(Value=\"BaseReloadSpeed_+%\")": 15,
+                "(Value=\"BasePneumoniaResistance_%\")": 15,
+                "(Value=\"BaseWaterConsumption_+%\")": -35,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Salted_Caramel_Pastry",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Salted_Caramel_Pastry.T_ITEM_Salted_Caramel_Pastry'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Salted_Caramel_Pastry-ModifierName\", \"Salted Caramel Pastry\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Salted_Caramel_Pastry-ModifierDescription\", \"Provides buffs focused on ranged combat\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseChargeSpeed_+%\")": 25,
+                "(Value=\"BaseReloadSpeed_+%\")": 25,
+                "(Value=\"BaseExperience_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
         }
     ]
 }

@@ -1612,6 +1612,44 @@
             "ConsumedSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_WATER.SFX_CONSUME_WATER",
             "ConsumeFailedSound": "/Game/FMOD/Events/UI/Generic/UI_GENERIC_NEGATIVE_FEEDBACK.UI_GENERIC_NEGATIVE_FEEDBACK",
             "BackpackFootstepSound": "/Game/FMOD/Events/SFX/Character/Movement/SFX_CHAR_MOVE_BACKPACK_ON_JERRYCAN_WATER.SFX_CHAR_MOVE_BACKPACK_ON_JERRYCAN_WATER"
+        },
+        {
+            "Name": "Hornet_Knife",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_KNIFE_PICKUP.SFX_KNIFE_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Metal_Knife/SFX_IMPACT_METAL_KNIFE.SFX_IMPACT_METAL_KNIFE",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "Swing": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Knife/SFX_WEP_KNIFE_ATTACK_METAL.SFX_WEP_KNIFE_ATTACK_METAL"
+                    ]
+                },
+                "Throw": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_KNIFE_THROWING_HORNET_THROW.SFX_BALLISTIC_KNIFE_THROWING_HORNET_THROW"
+                    ]
+                },
+                "Equip": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Knife/SFX_WEP_KNIFE_EQUIP_METAL.SFX_WEP_KNIFE_EQUIP_METAL"
+                    ]
+                },
+                "Skin": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/Knife/SFX_WEP_KNIFE_SKINCREATURE_N1.SFX_WEP_KNIFE_SKINCREATURE_N1"
+                    ]
+                }
+            }
+        },
+        {
+            "Name": "HornetWing",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_HORNET_WING_PICKUP.SFX_HORNET_WING_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
         }
     ]
 }

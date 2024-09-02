@@ -1948,6 +1948,35 @@
             "Weighting": 130
         },
         {
+            "Name": "Resource_Veges_SugarCane",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resource_Veges_SugarCane-DisplayName\", \"Vegetables: New Species, Sugar Cane\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resource_Veges_SugarCane-Description\", \"UDA special delivery straight from Earth for introduction to the Icarus enviroment.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_SugarCane",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_SugarCane_Seed",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Seeds_Veg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 130
+        },
+        {
             "Name": "Tools_Shovel",
             "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Shovel-DisplayName\", \"Settlement Assistance: Shovel\")",
             "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Tools_Shovel-Description\", \"UDA provided assistance to new prospectors.\")",

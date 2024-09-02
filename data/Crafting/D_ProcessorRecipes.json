@@ -8240,7 +8240,7 @@
                         "RowName": "Glass",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 18,
+                    "Count": 8,
                     "DynamicProperties": []
                 },
                 {
@@ -16422,7 +16422,7 @@
                         "RowName": "Glass",
                         "DataTableName": "D_ItemsStatic"
                     },
-                    "Count": 18,
+                    "Count": 8,
                     "DynamicProperties": []
                 },
                 {
@@ -65895,6 +65895,47 @@
             }
         },
         {
+            "Name": "Sugar",
+            "Requirement": {
+                "RowName": "Sugar"
+            },
+            "RequiredMillijoules": 20000,
+            "RecipeSets": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Material_Processor",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Sugar_Cane",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Sugar",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MortarPestle"
+            }
+        },
+        {
             "Name": "Smoked_Bacon",
             "RequiredMillijoules": 25000,
             "RecipeSets": [
@@ -80170,6 +80211,505 @@
             ],
             "Audio": {
                 "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Stasis_Bag",
+            "SessionRequirement": {
+                "DataTableName": "D_SessionFlags",
+                "RowName": "Mission_Recipe_Stasis_Bag"
+            },
+            "RequiredMillijoules": 5000,
+            "RecipeSets": [
+                {
+                    "RowName": "Electric_Armor_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Gold_Wire",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Stasis_Bag",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Default"
+            }
+        },
+        {
+            "Name": "Choc_Chip_Cookie",
+            "RequiredMillijoules": 25000,
+            "RecipeSets": [
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Flour",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sugar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Egg",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Seed_Oil",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Cocoa",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 2000
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Choc_Chip_Cookie",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Coconut_Cookie",
+            "RequiredMillijoules": 25000,
+            "RecipeSets": [
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Flour",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sugar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Coconut_mid",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Seed_Oil",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 2000
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Coconut_Cookie",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Strawberry_Candy",
+            "RequiredMillijoules": 25000,
+            "RecipeSets": [
+                {
+                    "RowName": "PotBellyStove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Sugar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Strawberry",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 2000
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Strawberry_Candy",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Watermelon_Lollypop",
+            "RequiredMillijoules": 25000,
+            "RecipeSets": [
+                {
+                    "RowName": "PotBellyStove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Sugar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Watermelon",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": "Water",
+                    "RequiredUnits": 2000
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Watermelon_Lollypop",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Energy_Bar",
+            "RecipeSets": [
+                {
+                    "RowName": "Character",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Seed",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sugar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Cocoa",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Honey",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wheat",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Energy_Bar",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Caramel_Fruit_Tart",
+            "RequiredMillijoules": 25000,
+            "RecipeSets": [
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Pastry",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sugar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Kiwi_Fruit",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Berry",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Egg",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Caramel_Fruit_Tart",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Salted_Caramel_Pastry",
+            "RequiredMillijoules": 25000,
+            "RecipeSets": [
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Pastry",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Sugar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Salt",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Salted_Caramel_Pastry",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
             }
         }
     ]
