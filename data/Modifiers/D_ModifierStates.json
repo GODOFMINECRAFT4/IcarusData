@@ -10905,7 +10905,7 @@
         },
         {
             "Name": "Dirt_Mound_Ploughed_Steel",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Basic_Plow.T_ITEM_Basic_Plow'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Steel_Plow.T_ITEM_Steel_Plow'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Steel-ModifierName\", \"Dug with a Steel Plow\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Steel-ModifierDescription\", \"Simple dirt pile made with a Steel Plow pulled by an Animal.\")",
             "MergeType": "Stack",
@@ -10915,7 +10915,7 @@
         },
         {
             "Name": "Dirt_Mound_Ploughed_Platinum",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Basic_Plow.T_ITEM_Basic_Plow'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Platinum_Plow.T_ITEM_Platinum_Plow'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Platinum-ModifierName\", \"Dug with an Platinum Plow\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Platinum-ModifierDescription\", \"Neat dirt pile made with a Platinum Plow pulled by an Animal.\")",
             "GrantedStats": {
@@ -10928,7 +10928,7 @@
         },
         {
             "Name": "Dirt_Mound_Ploughed_Titanium",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Basic_Plow.T_ITEM_Basic_Plow'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Titanium_Plow.T_ITEM_Titanium_Plow'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Titanium-ModifierName\", \"Dug with a Titanium Plow\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Titanium-ModifierDescription\", \"Exceptional dirt pile made with a Titanium Plow pulled by an Animal.\")",
             "GrantedStats": {
@@ -11557,6 +11557,19 @@
             ],
             "MergeType": "LongestDuration",
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "Indestructible",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Grace.Icon_Grace'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Indestructible-ModifierName\", \"Indestructable\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Indestructible-ModifierDescription\", \"Cannot be Damaged\")",
+            "GrantedStats": {
+                "(Value=\"IsInGracePeriod_?\")": 1
+            },
+            "RemovedOnDeath": false,
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         }
     ]
 }

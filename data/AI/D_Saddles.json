@@ -9,6 +9,7 @@
             "DataTableName": "D_Mounts"
         },
         "SkeletalMesh": "None",
+        "SkeletalMeshMaterialOverride": "None",
         "SaddleAnimBlueprint": "None",
         "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
         "AttachSocket": "None",
@@ -1157,6 +1158,246 @@
             "SaddleAnimBlueprint": "/Game/ThirdPartyAssets/AnimalsVol01/Wolf/Meshes/SK-Wolf_CopyPose_AnimBP.SK-Wolf_CopyPose_AnimBP_C",
             "SaddleBlueprint": "None",
             "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Moa_Arctic",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": {
+                "RowName": "Moa"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_Moa.SK_ITM_Saddle_Moa",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Arctic.M_ITM_Saddle_Arctic",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint.SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Buffalo_Arctic",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": {
+                "RowName": "Buffalo"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_Buffalo.SK_ITM_Saddle_Buffalo",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Arctic.M_ITM_Saddle_Arctic",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_Buffalo_Skeleton_AnimBlueprint.SK_ITM_Saddle_Buffalo_Skeleton_AnimBlueprint_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Horse_Arctic",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": {
+                "RowName": "Horse"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie.SK_ITM_Saddle_NormieHorsie",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Arctic.M_ITM_Saddle_Arctic",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie_AnimBP.SK_ITM_Saddle_NormieHorsie_AnimBP_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Tusker_Arctic",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": {
+                "RowName": "Tusker"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_Tusker.SK_ITM_Saddle_Tusker",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Arctic.M_ITM_Saddle_Arctic",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_Buffalo_Skeleton_AnimBlueprint.SK_ITM_Saddle_Buffalo_Skeleton_AnimBlueprint_C",
+            "AttachSocket": "RigRoot",
+            "FurCullMask": "/Game/ASS/CRE/Tusker/T_CRE_Tusk_Fur_Cull_Mask.T_CRE_Tusk_Fur_Cull_Mask"
+        },
+        {
+            "Name": "Saddle_SwampBird_Arctic",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": {
+                "RowName": "Swamp_Bird"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_Moa.SK_ITM_Saddle_Moa",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Arctic.M_ITM_Saddle_Arctic",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint.SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Zebra_Arctic",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": {
+                "RowName": "Zebra"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie.SK_ITM_Saddle_NormieHorsie",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Arctic.M_ITM_Saddle_Arctic",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie_AnimBP.SK_ITM_Saddle_NormieHorsie_AnimBP_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Wooly_Zebra_Arctic",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": {
+                "RowName": "WoolyZebra"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie.SK_ITM_Saddle_NormieHorsie",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Arctic.M_ITM_Saddle_Arctic",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie_AnimBP.SK_ITM_Saddle_NormieHorsie_AnimBP_C",
+            "AttachSocket": "RigRoot",
+            "FurCullMask": "/Game/ASS/CRE/Wooly_Zebra/T_CRE_Wooly_Zebra_FurCull.T_CRE_Wooly_Zebra_FurCull"
+        },
+        {
+            "Name": "Saddle_Standard_Horse_Arctic",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": {
+                "RowName": "Horse_Standard"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie.SK_ITM_Saddle_NormieHorsie",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Arctic.M_ITM_Saddle_Arctic",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie_AnimBP.SK_ITM_Saddle_NormieHorsie_AnimBP_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_MoaArctic_Arctic",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": {
+                "RowName": "Arctic_moa"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_Moa.SK_ITM_Saddle_Moa",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Arctic.M_ITM_Saddle_Arctic",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint.SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint_C",
+            "AttachSocket": "RigRoot",
+            "FurCullMask": "/Game/ASS/CRE/Moa/T_CRE_PAS_moa_Arctic_Saddle_Fur.T_CRE_PAS_moa_Arctic_Saddle_Fur"
+        },
+        {
+            "Name": "Saddle_Moa_Basic_Desert",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": {
+                "RowName": "Moa"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_Moa.SK_ITM_Saddle_Moa",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Desert.M_ITM_Saddle_Desert",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint.SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Buffalo_Basic_Desert",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.BasicDesert"
+            },
+            "SupportedMount": {
+                "RowName": "Buffalo"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_Buffalo.SK_ITM_Saddle_Buffalo",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Desert.M_ITM_Saddle_Desert",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_Buffalo_Skeleton_AnimBlueprint.SK_ITM_Saddle_Buffalo_Skeleton_AnimBlueprint_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Horse_Basic_Desert",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.BasicDesert"
+            },
+            "SupportedMount": {
+                "RowName": "Horse"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie.SK_ITM_Saddle_NormieHorsie",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Desert.M_ITM_Saddle_Desert",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie_AnimBP.SK_ITM_Saddle_NormieHorsie_AnimBP_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Tusker_Basic_Desert",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.BasicDesert"
+            },
+            "SupportedMount": {
+                "RowName": "Tusker"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_Tusker.SK_ITM_Saddle_Tusker",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Desert.M_ITM_Saddle_Desert",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_Buffalo_Skeleton_AnimBlueprint.SK_ITM_Saddle_Buffalo_Skeleton_AnimBlueprint_C",
+            "AttachSocket": "RigRoot",
+            "FurCullMask": "/Game/ASS/CRE/Tusker/T_CRE_Tusk_Fur_Cull_Mask.T_CRE_Tusk_Fur_Cull_Mask"
+        },
+        {
+            "Name": "Saddle_SwampBird_Basic_Desert",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.BasicDesert"
+            },
+            "SupportedMount": {
+                "RowName": "Swamp_Bird"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_Moa.SK_ITM_Saddle_Moa",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Desert.M_ITM_Saddle_Desert",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint.SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Zebra_Basic_Desert",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.BasicDesert"
+            },
+            "SupportedMount": {
+                "RowName": "Zebra"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie.SK_ITM_Saddle_NormieHorsie",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Desert.M_ITM_Saddle_Desert",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie_AnimBP.SK_ITM_Saddle_NormieHorsie_AnimBP_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Wooly_Zebra_Basic_Desert",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.BasicDesert"
+            },
+            "SupportedMount": {
+                "RowName": "WoolyZebra"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie.SK_ITM_Saddle_NormieHorsie",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Desert.M_ITM_Saddle_Desert",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie_AnimBP.SK_ITM_Saddle_NormieHorsie_AnimBP_C",
+            "AttachSocket": "RigRoot",
+            "FurCullMask": "/Game/ASS/CRE/Wooly_Zebra/T_CRE_Wooly_Zebra_FurCull.T_CRE_Wooly_Zebra_FurCull"
+        },
+        {
+            "Name": "Saddle_Standard_Horse_Basic_Desert",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.BasicDesert"
+            },
+            "SupportedMount": {
+                "RowName": "Horse_Standard"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie.SK_ITM_Saddle_NormieHorsie",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Desert.M_ITM_Saddle_Desert",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_NormieHorsie_AnimBP.SK_ITM_Saddle_NormieHorsie_AnimBP_C",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_MoaArctic_Basic_Desert",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.BasicDesert"
+            },
+            "SupportedMount": {
+                "RowName": "Arctic_moa"
+            },
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Saddle_Moa.SK_ITM_Saddle_Moa",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Desert.M_ITM_Saddle_Desert",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint.SK_ITM_Saddle_Moa_Skeleton_AnimBlueprint_C",
+            "AttachSocket": "RigRoot",
+            "FurCullMask": "/Game/ASS/CRE/Moa/T_CRE_PAS_moa_Arctic_Saddle_Fur.T_CRE_PAS_moa_Arctic_Saddle_Fur"
         }
     ]
 }

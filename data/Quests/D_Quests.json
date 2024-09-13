@@ -4,6 +4,7 @@
         "Class": "None",
         "Variation": 0,
         "Description": "",
+        "InfoText": "",
         "LocationQuery": {
             "RowName": "None",
             "DataTableName": "D_QuestQueries"
@@ -8829,6 +8830,12 @@
             }
         },
         {
+            "Name": "PRO_Ashlands_Craft",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Craft.BPQ_PRO_Ashlands_Story_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Craft-Description\", \"Unlock and Craft the Beacon Equipment\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Craft-InfoText\", \"The Tool and Beacons can be found on the Tier 3 Tech Tree.\")"
+        },
+        {
             "Name": "PRO_Ashlands_CraftTrailBeaconTool",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_CraftTrailBeaconTool.BPQ_PRO_Ashlands_Story_CraftTrailBeaconTool_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_CraftTrailBeaconTool-Description\", \"Craft a Trail Beacon Tool\")"
@@ -8839,9 +8846,37 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_CraftTrailBeacons-Description\", \"Craft Trail Beacons: {0} / {1}\")"
         },
         {
+            "Name": "PRO_Ashlands_Enter",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Enter.BPQ_PRO_Ashlands_Story_Enter_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Enter-Description\", \"Enter The Null Sector\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Enter-InfoText\", \"The Null Sector is Dangerous and has very little Resources. Come Prepared.\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Entrances"
+            }
+        },
+        {
+            "Name": "PRO_Ashlands_Enter_Locate",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Enter_Locate.BPQ_PRO_Ashlands_Story_Enter_Locate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Enter_Locate-Description\", \"Find an Entrance to the Null Sector\")"
+        },
+        {
+            "Name": "PRO_Ashlands_Enter_Blocker",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Enter_Blocker.BPQ_PRO_Ashlands_Story_Enter_Blocker_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Enter_Blocker-Description\", \"Destroy the Barricade Blocking the Entrance\")"
+        },
+        {
+            "Name": "PRO_Ashlands_Search",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Search.BPQ_PRO_Ashlands_Story_Search_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Search-Description\", \"Locate the Lost Outpost\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Search-InfoText\", \"Place Trail Beacons using the Tool. Chaining them together maps out a path which can be seen on the Map.\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Entrances"
+            }
+        },
+        {
             "Name": "PRO_Ashlands_Beacon",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Beacon.BPQ_PRO_Ashlands_Story_Beacon_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon-Description\", \"Place Trail Beacon at Entrance to Ashlands\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon-Description\", \"Place a Trail Beacon at Entrance of the Null Sector\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Entrances"
             },
@@ -8855,7 +8890,7 @@
         {
             "Name": "PRO_Ashlands_Beacon_Chain",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Travel.BPQ_PRO_Ashlands_Story_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon_Chain-Description\", \"Chain beacons until you find the scientists\\' outpost\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon_Chain-Description\", \"Chain Beacons to Map out the Area\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
             }
@@ -8871,7 +8906,7 @@
         {
             "Name": "PRO_Ashlands_Outpost_Clear",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Outpost_Clear.BPQ_PRO_Ashlands_Story_Outpost_Clear_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Clear-Description\", \"Clear Stonejaw from around the outpost\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Clear-Description\", \"Clear Stonejaw from around the outpost ({0}%)\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
             },
@@ -8885,7 +8920,7 @@
         {
             "Name": "PRO_Ashlands_Outpost_Collect",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashands_Story_Outpost_Collect.BPQ_PRO_Ashands_Story_Outpost_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Collect-Description\", \"Find audio log in structure\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Collect-Description\", \"Search the Outpost for Evidence of the Science Team\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
             }
@@ -9544,6 +9579,7 @@
             "Name": "PRO_D_Recovery",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery.BPQ_PRO_D_Recovery_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery-Description\", \"CRISIS: ASHLANDS\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery-InfoText\", \"The Recovery Crew will need food, water, oxygen and various medical supplies\")",
             "LocationQuery": {
                 "RowName": "PRO_ASH_NPC1"
             }
@@ -9561,7 +9597,8 @@
         {
             "Name": "PRO_D_Recovery_Prepare_Craft",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Prepare_Craft.BPQ_PRO_D_Recovery_Prepare_Craft_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Craft-Description\", \"Craft a H.E.A.L. Medical Scanner (Fabricator)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Craft-Description\", \"Craft a H.E.A.L. Device\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Craft-InfoText\", \"The H.E.A.L Device is Crafted at the Fabricator\")"
         },
         {
             "Name": "PRO_D_Recovery_Prepare_Optional",
@@ -9572,6 +9609,17 @@
             "Name": "PRO_D_Recovery_Search",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Travel.BPQ_PRO_D_Recovery_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Search-Description\", \"Track down the Terraforming Construction Site within the Ashlands\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Talk",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Speak_NPC1.BPQ_PRO_D_Recovery_Speak_NPC1_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Talk-Description\", \"Speak with Captain Church\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ASHLANDS_CRISIS_CHURCH_INTRO",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_D_Recovery_Assist",
@@ -9603,9 +9651,28 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist_NPC3-Description\", \"Medic Griff Helped\")"
         },
         {
+            "Name": "PRO_D_Recovery_Assist_NPC4",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Assist_NPC.BPQ_PRO_D_Recovery_Assist_NPC_C",
+            "Variation": 4,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist_NPC4-Description\", \"Private Simmons Helped\")"
+        },
+        {
+            "Name": "PRO_D_Recovery_Assist_NPC5",
+            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Assist_NPC.BPQ_PRO_D_Recovery_Assist_NPC_C",
+            "Variation": 5,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist_NPC5-Description\", \"Lieutenant Washington Helped\")"
+        },
+        {
             "Name": "PRO_D_Recovery_Speak",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Speak.BPQ_PRO_D_Recovery_Speak_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Speak-Description\", \"Speak with Captain Church\")"
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Speak-Description\", \"Speak with Captain Church\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ASHLANDS_CRISIS_CHURCH_OUTRO",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_D_Resupply",
@@ -9619,7 +9686,13 @@
             "Name": "PRO_D_Resupply_Speak",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Speak.BPQ_PRO_D_Recovery_Speak_C",
             "Variation": 3,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Resupply_Speak-Description\", \"Speak with Captain Church at the Terraforming Construction Site\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Resupply_Speak-Description\", \"Speak with Captain Church at the Terraforming Construction Site\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ASHLANDS_STRANDED_CHURCH_INTRO",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_D_Recovery_Aid",
@@ -9669,7 +9742,13 @@
         {
             "Name": "PRO_D_Recovery_Complete",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Speak2.BPQ_PRO_D_Recovery_Speak2_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Complete-Description\", \"Speak with Captain Church\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Complete-Description\", \"Speak with Captain Church\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ASHLANDS_STRANDED_CHURCH_OUTRO",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_D_Rescue",
@@ -9682,7 +9761,13 @@
         {
             "Name": "PRO_D_Rescue_Speak",
             "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_Speak.BPQ_PRO_D_Rescue_Speak_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Speak-Description\", \"Speak with Captain Church at the Terraforming Construction Site\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Speak-Description\", \"Speak with Captain Church at the Terraforming Construction Site\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ASHLANDS_RESCUE_CHURCH_INTRO",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         },
         {
             "Name": "PRO_D_Rescue_Prepare",
@@ -9692,7 +9777,8 @@
         {
             "Name": "PRO_D_Rescue_Prepare_Craft",
             "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_Prepare_Craft.BPQ_PRO_D_Rescue_Prepare_Craft_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Prepare_Craft-Description\", \"Craft Two Stasis Bags (Electric Textiles Bench)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Prepare_Craft-Description\", \"Craft Two Stasis Bags\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Prepare_Craft-InfoText\", \"Stasis Bags can be crafted on the Electric Textiles Bench\")"
         },
         {
             "Name": "PRO_D_Rescue_Prepare_Optional",
@@ -9703,8 +9789,15 @@
             "Name": "PRO_D_Rescue_Rescue",
             "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_Rescue.BPQ_PRO_D_Rescue_Rescue_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Rescue-Description\", \"Search the Ashlands and Save The Missing Recovery Crew\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Rescue-InfoText\", \"Carrying a Full Stasis Bag will use a Utility Slot. The Medevac Ship Is Marked on the Map.\")",
             "LocationQuery": {
                 "RowName": "PRO_ASH_Evac"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "ASHLANDS_RESCUE_CHURCH_OUTRO",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
@@ -9727,7 +9820,7 @@
             "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_NPC.BPQ_PRO_D_Rescue_NPC_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC1-Description\", \"Save Simmons\")",
             "LocationQuery": {
-                "RowName": "PRO_ASH_NPC4"
+                "RowName": "PRO_ASH_NPC4_Rescue"
             }
         },
         {
@@ -9751,7 +9844,7 @@
             "Variation": 1,
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC2-Description\", \"Save Washington\")",
             "LocationQuery": {
-                "RowName": "PRO_ASH_NPC5"
+                "RowName": "PRO_ASH_NPC5_Rescue"
             }
         },
         {

@@ -3627,7 +3627,7 @@
         },
         {
             "Name": "Mesh_Saddle_Standard",
-            "ItemMesh": "/Game/ASS/ITM/SM_ITM_Saddle_Buffalo.SM_ITM_Saddle_Buffalo"
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting"
         },
         {
             "Name": "Mesh_Food_Trough",
@@ -3913,7 +3913,7 @@
         },
         {
             "Name": "Mesh_Saddle_Standard_Bag",
-            "ItemMesh": "/Game/ASS/ITM/SM_ITM_Harness_Pack_Buffalo.SM_ITM_Harness_Pack_Buffalo",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -6935,7 +6935,8 @@
         },
         {
             "Name": "Mesh_Flagpole",
-            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting"
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
+            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_FlagPole.BP_FlagPole_C"
         },
         {
             "Name": "Mesh_Portable_Tank_Biofuel",
@@ -6968,15 +6969,16 @@
         },
         {
             "Name": "Mesh_Mission_Stasis_Bag_Folded",
-            "ItemMesh": "/Game/ASS/ITM/SM_ITM_ElectricMotor.SM_ITM_ElectricMotor",
+            "ItemMesh": "/Game/ASS/CHA/ARM/SM_CHA_ARM_ClothT3Pack.SM_CHA_ARM_ClothT3Pack",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "EquipBackMesh": "/Game/ASS/ITM/SM_ITM_ElectricMotor_BACK.SM_ITM_ElectricMotor_BACK"
         },
         {
             "Name": "Mesh_Mission_Stasis_Bag_Full",
-            "ItemMesh": "/Game/ASS/ITM/SM_ITM_ElectricMotor.SM_ITM_ElectricMotor",
+            "ItemMesh": "/Game/ASS/ITM/SK_ITM_BodyBag.SK_ITM_BodyBag",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
-            "EquipBackMesh": "/Game/ASS/ITM/SM_ITM_ElectricMotor_BACK.SM_ITM_ElectricMotor_BACK"
+            "EquipBackMesh": "/Game/ASS/DEP/SM_DEP_Animal_Bed_Heated.SM_DEP_Animal_Bed_Heated",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Back/BP_Back_Portable_StasisBag.BP_Back_Portable_StasisBag_C"
         },
         {
             "Name": "Mesh_Glass_Door_Reinforced",
@@ -6994,6 +6996,11 @@
             "Name": "Mesh_Molotov",
             "ItemMesh": "/Game/ASS/ITM/SK_ITM_Molotov.SK_ITM_Molotov",
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_Molotov.SK_ITM_Molotov"
+        },
+        {
+            "Name": "Mesh_Generic_Saddle",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         }
     ]
 }
