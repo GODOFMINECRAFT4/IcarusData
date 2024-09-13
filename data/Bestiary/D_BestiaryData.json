@@ -3530,6 +3530,65 @@
             ]
         },
         {
+            "Name": "Arctic_Bat",
+            "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Bat-CreatureName\", \"Arctic Vesper\")",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Arctic/Bestiary_Bat_Arctic.Bestiary_Bat_Arctic",
+            "PopupImageScale": 1.5,
+            "PopupImageOffset": {
+                "Y": -10
+            },
+            "BiomeImageType": "Small",
+            "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_CAVEBAT.UI_BESTIARY_CRE_CAVEBAT",
+            "Biomes": [
+                {
+                    "RowName": "Arctic",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Maps": [
+                {
+                    "RowName": "Terrain_016",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_017",
+                    "DataTableName": "D_Terrains"
+                },
+                {
+                    "RowName": "Terrain_019",
+                    "DataTableName": "D_Terrains"
+                }
+            ],
+            "TotalPointsRequired": 2000,
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Bat-Lore1\", \"The Arctic Bat is a flying mammal adapted to life in freezing environments. These agile creatures navigate through vast cave systems with impressive echolocation abilities, preying on anything they can find in the cavernous darkness. \")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Bat-Lore2\", \"While nesting these bats can exhibit rather aggressive behaviour, to the extent that the Lagos Group has advised that contractors should leave any nests they find undisturbed. If left untreated, wounds from these creatures can cause severe distress, even death.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Arctic_Bat-Lore3\", \"\\\"Oi, Rob, get over here! Reckon I\\'ve found once of them nests they\\'ve been harping on about. Hey, don\\'t go near it, haven\\'t you read the repor-\\\" Recording Terminated.\")",
+            "Traits": [
+                {
+                    "RowName": "PackAnimal_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Flying_Strength",
+                    "DataTableName": "D_BestiaryTraits"
+                }
+            ],
+            "StatsUnlock1": {
+                "(Value=\"BaseArcticHealthRegen_+%\")": 10
+            },
+            "StatsUnlock2": {
+                "(Value=\"BaseFrostbiteResistance_%\")": 5
+            },
+            "ProgressiveStat": [
+                {
+                    "Value": "BaseArcticBatExtraDamage_+%"
+                },
+                {
+                    "Value": "BaseArcticBatExtraDamageResistance_+%"
+                }
+            ]
+        },
+        {
             "Name": "Bee",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Bee-CreatureName\", \"Bee\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Conifer/Bestiary_Bees.Bestiary_Bees",

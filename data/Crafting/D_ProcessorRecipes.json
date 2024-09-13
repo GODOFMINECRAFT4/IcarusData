@@ -8754,6 +8754,43 @@
             }
         },
         {
+            "Name": "Biofuel_9",
+            "RecipeSets": [
+                {
+                    "RowName": "Composter",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Guano",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Tree_Sap",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [],
+            "ResourceOutputs": [
+                {
+                    "Type": "Fuel",
+                    "RequiredUnits": 500
+                }
+            ],
+            "Audio": {
+                "RowName": "Composter"
+            }
+        },
+        {
             "Name": "Concrete_Mix",
             "RequiredMillijoules": 10000,
             "RecipeSets": [
@@ -25767,6 +25804,47 @@
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Dirt",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Basic_Fertilizer",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "WoodComposter"
+            }
+        },
+        {
+            "Name": "Basic_Fertilizer_2",
+            "RecipeSets": [
+                {
+                    "RowName": "Composter_Wood",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Guano",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
                     "DynamicProperties": []
                 },
                 {
@@ -46467,6 +46545,62 @@
             }
         },
         {
+            "Name": "Volatile_Substance_2",
+            "Requirement": {
+                "RowName": "Volatile_Substance"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Chemistry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Herbalism_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Medicine_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Guano",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Oxite",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Volatile_Substance",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "HerbalismBench"
+            }
+        },
+        {
             "Name": "Shield_Bone",
             "Requirement": {
                 "RowName": "Shield_Bone"
@@ -58366,7 +58500,7 @@
             "ResourceOutputs": [
                 {
                     "Type": "Fuel",
-                    "RequiredUnits": 250
+                    "RequiredUnits": 300
                 }
             ],
             "Audio": {
@@ -75031,43 +75165,6 @@
             }
         },
         {
-            "Name": "Dirt_Mound",
-            "Requirement": {
-                "RowName": "Dirt_Mound"
-            },
-            "RequiredMillijoules": 5000,
-            "RecipeSets": [
-                {
-                    "RowName": "Character",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Dirt",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 5,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Dirt_Mound_With_Tier",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Default"
-            }
-        },
-        {
             "Name": "Health_Remedy",
             "Requirement": {
                 "RowName": "Health_Remedy"
@@ -78795,6 +78892,47 @@
                 {
                     "Element": {
                         "RowName": "Mini_Hippo_Trophy",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "SkinningBench"
+            }
+        },
+        {
+            "Name": "Arctic_Bat_Trophy",
+            "RecipeSets": [
+                {
+                    "RowName": "Trophy_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Arctic_Bat_Head",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Arctic_Bat_Trophy",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,

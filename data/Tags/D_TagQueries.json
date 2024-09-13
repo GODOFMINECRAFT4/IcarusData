@@ -6474,6 +6474,46 @@
                 ],
                 "AutoDescription": " ANY( Item.Deployable.TameBed, Item.AnimalFeed, FieldGuide.Husbandry, Item.Meta.Animal, Item.Creature.Bait, Item.Deployable.Tame )"
             }
+        },
+        {
+            "Name": "Any_Plough",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Plough"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Plough )"
+            }
+        },
+        {
+            "Name": "Building_Metal_Grate",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Building.MetalGrate"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ALL( Traits.Buildable, Building.MetalGrate )"
+            }
         }
     ]
 }

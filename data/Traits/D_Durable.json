@@ -1899,6 +1899,48 @@
         {
             "Name": "ReinforcedWood_Building",
             "Max_Durability": 5000
+        },
+        {
+            "Name": "Plough_Steel",
+            "Max_Durability": 30000,
+            "Destroyed_At_Zero": true,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Plough_Platinum",
+            "Max_Durability": 60000,
+            "Destroyed_At_Zero": true,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Platinum_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Plough_Titanium",
+            "Max_Durability": 90000,
+            "Destroyed_At_Zero": true,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Titanium_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
         }
     ]
 }

@@ -10579,7 +10579,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"FarmingCartActive-ModifierName\", \"Farming Cart\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"FarmingCartActive-ModifierDescription\", \"Your Cart is Active\")",
             "GrantedStats": {
-                "(Value=\"IsHarvestCartActive_?\")": 1
+                "(Value=\"IsHarvestCartActive_?\")": 1,
+                "(Value=\"IsSprintDisabled_?\")": 1
             },
             "MergeType": "Stack"
         },
@@ -10903,12 +10904,35 @@
             "bEffectsPlayers": false
         },
         {
-            "Name": "Dirt_Mound_Ploughed",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart_Plough.T_ITEM_Saddle_Cart_Plough'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed-ModifierName\", \"Dug with a Seeding Cart\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed-ModifierDescription\", \"Rough dirt pile made with a Plough pulled by an Animal.\")",
+            "Name": "Dirt_Mound_Ploughed_Steel",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Basic_Plow.T_ITEM_Basic_Plow'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Steel-ModifierName\", \"Dug with a Steel Plow\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Steel-ModifierDescription\", \"Simple dirt pile made with a Steel Plow pulled by an Animal.\")",
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Dirt_Mound_Ploughed_Platinum",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Basic_Plow.T_ITEM_Basic_Plow'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Platinum-ModifierName\", \"Dug with an Platinum Plow\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Platinum-ModifierDescription\", \"Neat dirt pile made with a Platinum Plow pulled by an Animal.\")",
             "GrantedStats": {
                 "(Value=\"BasePlantedCropYield_+%\")": 10
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Dirt_Mound_Ploughed_Titanium",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Basic_Plow.T_ITEM_Basic_Plow'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Titanium-ModifierName\", \"Dug with a Titanium Plow\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dirt_Mound_Ploughed_Titanium-ModifierDescription\", \"Exceptional dirt pile made with a Titanium Plow pulled by an Animal.\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropYield_+%\")": 20
             },
             "MergeType": "Stack",
             "bEffectsObjects": true,

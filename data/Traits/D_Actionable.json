@@ -366,7 +366,7 @@
         {
             "Name": "Grenade",
             "ActionMapping": {
-                "(RowName=\"Throw_Grenade\",DataTableName=\"D_Actions\")": {
+                "(RowName=\"Throw_Molotov\",DataTableName=\"D_Actions\")": {
                     "InputTypes": {
                         "Primary": {
                             "RowName": "Grenade_Throw",
@@ -2295,6 +2295,24 @@
                     }
                 }
             }
+        },
+        {
+            "Name": "Molotov",
+            "ActionMapping": {
+                "(RowName=\"Throw_1H_Generic\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "Grenade_Throw",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
         }
     ]
 }

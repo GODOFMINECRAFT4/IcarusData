@@ -13401,7 +13401,7 @@
         },
         {
             "Name": "CaveBatExtraDamage_+%",
-            "Title": "INVTEXT(\"[DNT] Damage vs Cave Bats\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CaveBatExtraDamage_+%-Title\", \"Damage vs Cave Vespers\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13411,15 +13411,15 @@
         },
         {
             "Name": "BaseCaveBatExtraDamage_+%",
-            "PositiveDescription": "INVTEXT(\"[DNT] +{0}% Damage vs Cave Bats\")",
-            "NegativeDescription": "INVTEXT(\"[DNT] -{0}% Damage vs Cave Bats\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaveBatExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Cave Vespers\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaveBatExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Cave Vespers\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "CaveBatExtraDamageResistance_+%",
-            "Title": "INVTEXT(\"[DNT] Resistance vs Cave Bats\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CaveBatExtraDamageResistance_+%-Title\", \"Resistance vs Cave Vespers\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13429,15 +13429,15 @@
         },
         {
             "Name": "BaseCaveBatExtraDamageResistance_+%",
-            "PositiveDescription": "INVTEXT(\"[DNT] +{0}% Resistance vs Cave Bats\")",
-            "NegativeDescription": "INVTEXT(\"[DNT] -{0}% Resistance vs Cave Bats\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaveBatExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Cave Vespers\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaveBatExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Cave Vespers\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "ArcticBatExtraDamage_+%",
-            "Title": "INVTEXT(\"[DNT] Damage vs Arctic Bats\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ArcticBatExtraDamage_+%-Title\", \"Damage vs Arctic Vespers\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13447,15 +13447,15 @@
         },
         {
             "Name": "BaseArcticBatExtraDamage_+%",
-            "PositiveDescription": "INVTEXT(\"[DNT] +{0}% Damage vs Arctic Bats\")",
-            "NegativeDescription": "INVTEXT(\"[DNT] -{0}% Damage vs Arctic Bats\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticBatExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Arctic Vespers\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticBatExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Arctic Vespers\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "ArcticBatExtraDamageResistance_+%",
-            "Title": "INVTEXT(\"[DNT] Resistance vs Arctic Bats\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ArcticBatExtraDamageResistance_+%-Title\", \"Resistance vs Arctic Vespers\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13465,8 +13465,8 @@
         },
         {
             "Name": "BaseArcticBatExtraDamageResistance_+%",
-            "PositiveDescription": "INVTEXT(\"[DNT] +{0}% Resistance vs Arctic Bats\")",
-            "NegativeDescription": "INVTEXT(\"[DNT] -{0}% Resistance vs Arctic Bats\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticBatExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Arctic Vespers\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticBatExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Arctic Vespers\")",
             "StatCategory": {
                 "RowName": "AI"
             }
@@ -15246,6 +15246,14 @@
             "StatCategory": {
                 "RowName": "Modifiers"
             }
+        },
+        {
+            "Name": "IsSprintDisabled_?",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
         }
     ]
 }
