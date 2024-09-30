@@ -1806,6 +1806,60 @@
                 "RowName": "Any_Plough"
             },
             "StartingSlots": 1
+        },
+        {
+            "Name": "ArmourStand",
+            "InventoryID": {
+                "Value": "Equipment"
+            },
+            "SlotTemplate": {
+                "RowName": "General_Inventory_Slot"
+            },
+            "StartingSlots": 6,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Helmet",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 0
+                },
+                {
+                    "Query": {
+                        "RowName": "Chest",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 1
+                },
+                {
+                    "Query": {
+                        "RowName": "Gloves",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 2
+                },
+                {
+                    "Query": {
+                        "RowName": "Pants",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 3
+                },
+                {
+                    "Query": {
+                        "RowName": "Boots",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 4
+                },
+                {
+                    "Query": {
+                        "RowName": "Any_Backpack",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 5
+                }
+            ]
         }
     ]
 }

@@ -297,7 +297,6 @@
                 "RowName": "1HWEP"
             },
             "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_GRE_Equip_Montage.1ST_CHA_GRE_Equip_Montage",
-            "FPLocoBlendSpaceOverride": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Hands_Loco_BS.1ST_CHA_Hands_Loco_BS",
             "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_GRE_Idle.1ST_CHA_GRE_Idle",
             "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_GREEquip_Montage.3RD_CHA_GREEquip_Montage",
             "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_GreIdle.3RD_CHA_MAL_GreIdle",
@@ -993,6 +992,28 @@
             "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEPIdle.1ST_CHA_1HWEPIdle",
             "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
             "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Watercan_Idle.3RD_CHA_Watercan_Idle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
+        },
+        {
+            "Name": "Focusable_Canister",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralRight"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "Y": 0.7071067690849304,
+                    "W": 0.7071067094802856
+                }
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEP_Equip_Montage.1ST_CHA_1HWEP_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HWEPIdle.1ST_CHA_1HWEPIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWeaponIdle.3RD_CHA_MAL_1HWeaponIdle",
             "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
         }
     ]

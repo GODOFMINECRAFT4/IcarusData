@@ -2482,8 +2482,8 @@
         {
             "Name": "IceBox_Spoil_Rate",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_SpoilTime.Icon_SpoilTime'",
-            "ModifierName": "",
-            "ModifierDescription": "",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"IceBox_Spoil_Rate-ModifierName\", \"Chilly Bin\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"IceBox_Spoil_Rate-ModifierDescription\", \"The contents of the icebox are being kept cool. Reduces spoil rate.\")",
             "GrantedStats": {
                 "(Value=\"BaseInventorySpoilRate_+%\")": -500
             },
@@ -2494,8 +2494,8 @@
         {
             "Name": "Refrigerator_Spoil_Rate",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_SpoilTime.Icon_SpoilTime'",
-            "ModifierName": "",
-            "ModifierDescription": "",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Refrigerator_Spoil_Rate-ModifierName\", \"Refrigerator\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Refrigerator_Spoil_Rate-ModifierDescription\", \"A powered Refrigerator reduces spoil rate.\")",
             "GrantedStats": {
                 "(Value=\"BaseInventorySpoilRate_+%\")": -1000
             },
@@ -2506,8 +2506,8 @@
         {
             "Name": "Minimal_Spoil_Rate",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_SpoilTime.Icon_SpoilTime'",
-            "ModifierName": "",
-            "ModifierDescription": "",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Minimal_Spoil_Rate-ModifierName\", \"Spoiling Prevention\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Minimal_Spoil_Rate-ModifierDescription\", \"Spoiling is halted.\")",
             "GrantedStats": {
                 "(Value=\"BaseInventoryCannotSpoil_?\")": 1
             },
@@ -4904,34 +4904,36 @@
         },
         {
             "Name": "Boss_Reveal_Aura",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Duration.Icon_Healing_Modifier_Duration'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Location1.Icon_Location1'",
             "Type": "Aura_Positive",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Aura-ModifierName\", \"Aura: Healing Boost\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Aura-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Aura-ModifierName\", \"Aura: Boss Reveal\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Aura-ModifierDescription\", \"Shows nearby prospectors large and dangerous creatures on the map.\")",
             "bAura": true,
-            "AuraRange": 2000,
+            "AuraRange": 1500,
+            "AuraFlags": {
+                "EffectsSelf": false
+            },
             "ModifierGrantedByAura": {
-                "RowName": "Healing_Modifier_Duration"
+                "RowName": "Boss_Reveal_Modifier"
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
             "ShouldTick": true,
             "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
             "SaveToDatabase": false
         },
         {
             "Name": "Boss_Reveal_Modifier",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Healing_Modifier_Duration.Icon_Healing_Modifier_Duration'",
-            "Type": "Aura_Positive",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Modifier-ModifierName\", \"Aura: Healing Boost\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Modifier-ModifierDescription\", \"Helps nearby prospectors to heal faster from afflictions.\")",
-            "bAura": true,
-            "AuraRange": 2000,
-            "ModifierGrantedByAura": {
-                "RowName": "Healing_Modifier_Duration"
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Location1.Icon_Location1'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Modifier-ModifierName\", \"Boss Reveal\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Boss_Reveal_Modifier-ModifierDescription\", \"Shows large and dangerous creatures on the map.\")",
+            "GrantedStats": {
+                "(Value=\"MapCanSeeWorldBosses_?\")": 1
             },
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
-            "ShouldTick": true,
             "MergeType": "Stack",
+            "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
@@ -5719,8 +5721,8 @@
         {
             "Name": "Deep_Freeze_Spoil_Rate",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_SpoilTime.Icon_SpoilTime'",
-            "ModifierName": "",
-            "ModifierDescription": "",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Deep_Freeze_Spoil_Rate-ModifierName\", \"Deep Freeze\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Deep_Freeze_Spoil_Rate-ModifierDescription\", \"A powered Deep Freeze halts spoiling of items.\")",
             "GrantedStats": {
                 "(Value=\"BaseInventoryCannotSpoil_?\")": 1
             },
@@ -9343,7 +9345,7 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"ExoticDebuff_T2_Poison-ModifierName\", \"Exotic Poison\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"ExoticDebuff_T2_Poison-ModifierDescription\", \"The Exotic Affliction courses through your body, slowly drains health and slows the prospector. Remove with anti-poison\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"ExoticDebuff_T2_Poison-ModifierDescription\", \"The Exotic Affliction courses through your body, slowly drains health and slows the prospector. Remove with anti-poison.\")",
             "AudioData": {
                 "RowName": "Generic_Negative_LongCoolDown"
             },
@@ -11417,7 +11419,6 @@
                 "RowName": "Faction_Mission_NPC"
             },
             "bEffectsObjects": true,
-            "bEffectsNPCs": false,
             "SaveToDatabase": false
         },
         {
@@ -11561,13 +11562,26 @@
         {
             "Name": "Indestructible",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Grace.Icon_Grace'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Indestructible-ModifierName\", \"Indestructable\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Indestructible-ModifierName\", \"Indestructible\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Indestructible-ModifierDescription\", \"Cannot be Damaged\")",
             "GrantedStats": {
                 "(Value=\"IsInGracePeriod_?\")": 1
             },
             "RemovedOnDeath": false,
             "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Cold_Atmosphere",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ColdRES.Icon_ColdRES'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cold_Atmosphere-ModifierName\", \"Intensely Frigid\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cold_Atmosphere-ModifierDescription\", \"The extreme chill of the atmosphere results in reduced food spoil time and slower movement.\")",
+            "GrantedStats": {
+                "(Value=\"BaseInventorySpoilRate_+%\")": -50,
+                "(Value=\"BaseMovementSpeed_+%\")": -20
+            },
+            "MergeType": "Stack",
             "bEffectsObjects": true,
             "SaveToDatabase": false
         }

@@ -4,7 +4,8 @@
         "Behaviour": "None",
         "DisplayName": "None",
         "Description": "None",
-        "bDisableMeshOutline": false
+        "bDisableMeshOutline": false,
+        "bDisableTooltip": false
     },
     "Rows": [
         {
@@ -752,7 +753,7 @@
         {
             "Name": "Batnest_Arctic",
             "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Batnest_Arctic-DisplayName\", \"Arctic Vesper Nest\")",
-            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Batnest_Arctic-Description\", \"A rough nest containing a bat-like creature.A rough nest containing a bat-like creature. Destroy to loot its contents. \")"
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Batnest_Arctic-Description\", \"A rough nest containing a bat-like creature. Destroy to loot its contents. \")"
         },
         {
             "Name": "WildBeehive",
@@ -830,9 +831,19 @@
             "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_1-Description\", \"Hurt, will not survive without medical attention.\")"
         },
         {
+            "Name": "NPC_1_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_1_Healed-DisplayName\", \"Captain Church\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_1_Healed-Description\", \"Leader of the Recovery Crew. A good fella.\")"
+        },
+        {
             "Name": "NPC_2",
             "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_2-DisplayName\", \"Private Tucker\")",
             "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_2-Description\", \"Hurt, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "NPC_2_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_2_Healed-DisplayName\", \"Private Tucker\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_2_Healed-Description\", \"The youngest member of the crew. Aspires to one day be like Captain Church.\")"
         },
         {
             "Name": "NPC_3",
@@ -840,14 +851,29 @@
             "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_3-Description\", \"Hurt, will not survive without medical attention.\")"
         },
         {
+            "Name": "NPC_3_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_3_Healed-DisplayName\", \"Medic Griff\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_3_Healed-Description\", \"They try their best to keep everyone alive.\")"
+        },
+        {
             "Name": "NPC_4",
             "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_4-DisplayName\", \"Private Simmons\")",
             "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_4-Description\", \"Hurt, will not survive without medical attention.\")"
         },
         {
+            "Name": "NPC_4_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_4_Healed-DisplayName\", \"Private Simmons\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_4_Healed-Description\", \"Likes to say I Told You So to Church a lot.\")"
+        },
+        {
             "Name": "NPC_5",
             "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_5-DisplayName\", \"Lieutenant Washington\")",
             "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_5-Description\", \"Hurt, will not survive without medical attention.\")"
+        },
+        {
+            "Name": "NPC_5_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_5_Healed-DisplayName\", \"Lieutenant Washington\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_5_Healed-Description\", \"Has saved the lives of the rest of the Crew more times than they can count.\")"
         },
         {
             "Name": "Mining_Truck_Engine",
@@ -856,8 +882,8 @@
         },
         {
             "Name": "Mining_Truck_Storage",
-            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Storage-DisplayName\", \"Mining Truck Storage\")",
-            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Storage-Description\", \"A Storage Hatch to Store Supplies.\")"
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Storage-DisplayName\", \"Mining Truck Engine & Storage\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mining_Truck_Storage-Description\", \"An Access Hatch for the Engine and Storage to Store Supplies.\")"
         },
         {
             "Name": "Mining_Truck_Fuel",
@@ -873,6 +899,63 @@
             "Name": "Ashlands_Blocker",
             "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Blocker-DisplayName\", \"Ashlands Barricade\")",
             "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Blocker-Description\", \"DANGER, KEEP OUT\")"
+        },
+        {
+            "Name": "Ashlands_Bunker_Note_1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_1-DisplayName\", \"Ruaumoko Bunker Note #1\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_1-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Ashlands_Bunker_Note_2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_2-DisplayName\", \"Ruaumoko Bunker Note #2\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_2-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Ashlands_Bunker_Note_3",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_3-DisplayName\", \"Ruaumoko Bunker Note #3\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Ashlands_Bunker_Note_3-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Icesheet_Blocker",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Blocker-DisplayName\", \"Icesheet Cave-In\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Blocker-Description\", \"Needs to be removed to continue through the cave.\")"
+        },
+        {
+            "Name": "Icesheet_Outpost_Note_1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_1-DisplayName\", \"Icesheet Outpost Note #1\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_1-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Icesheet_Outpost_Note_2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_2-DisplayName\", \"Icesheet Outpost Note #2\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_2-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Icesheet_Outpost_Note_3",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_3-DisplayName\", \"Icesheet Outpost Note #3\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Icesheet_Outpost_Note_3-Description\", \"A hastily scribbled note that\\'s barely legible.\")"
+        },
+        {
+            "Name": "Teleport_Enter",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Teleport_Enter-DisplayName\", \"Enter\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Teleport_Enter-Description\", \"Enter Cave\")"
+        },
+        {
+            "Name": "NoTooltip",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NoTooltip-DisplayName\", \"None\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NoTooltip-Description\", \"None\")",
+            "bDisableTooltip": true
+        },
+        {
+            "Name": "TerraformingSiteCrystal",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"TerraformingSiteCrystal-DisplayName\", \"Large Exotic Rock\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"TerraformingSiteCrystal-Description\", \"Too Heavy to carry by hand. If only there was some kind of vehicle.\")",
+            "bDisableTooltip": true
+        },
+        {
+            "Name": "Medevac_Pod",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Medevac_Pod-DisplayName\", \"UDA Medevac Pod\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Medevac_Pod-Description\", \"A specialised pod built for the UDA. Allows for the quick retrieval of personnel from the surface of Icarus..\")"
         }
     ]
 }

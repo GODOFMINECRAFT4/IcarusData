@@ -609,7 +609,8 @@
         },
         {
             "Name": "Interact_NPC",
-            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC.BP_Interactable_NPC_C",
+            "AuthorityType": "Both",
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC-InteractionText\", \"Speak\")"
         },
         {
@@ -621,6 +622,22 @@
             "Name": "Interact_Stasis_Bag",
             "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Stasis_Bag.BP_Interactable_Stasis_Bag_C",
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Stasis_Bag-InteractionText\", \"Place In Stasis Bag\")"
+        },
+        {
+            "Name": "Interact_WorldObject_Read",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_WorldObject_Read-InteractionText\", \"Read\")"
+        },
+        {
+            "Name": "Interact_Teleport",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Teleport.BP_Interactable_Teleport_C",
+            "InteractCooldown": 2,
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Teleport-InteractionText\", \"Enter\")"
+        },
+        {
+            "Name": "Interact_NPC_Mission",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC_Mission.BP_Interactable_NPC_Mission_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_Mission-InteractionText\", \"Ask about Missions\")"
         }
     ]
 }

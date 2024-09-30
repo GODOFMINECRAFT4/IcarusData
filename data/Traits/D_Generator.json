@@ -1,7 +1,9 @@
 {
     "RowStruct": "/Script/Icarus.GeneratorData",
     "Defaults": {
-        "Resource": "None",
+        "Resource": {
+            "Value": "None"
+        },
         "GenerationRate": 1000,
         "GenerationRatio": 1,
         "TransmutableItems": [],
@@ -12,7 +14,9 @@
     "Rows": [
         {
             "Name": "Basic_Oxygen_Generator",
-            "Resource": "Oxygen",
+            "Resource": {
+                "Value": "Oxygen"
+            },
             "GenerationRate": 75,
             "TransmutableItems": [
                 {
@@ -23,7 +27,9 @@
         },
         {
             "Name": "Basic_Energy_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2500,
             "TransmutableItems": [
                 {
@@ -54,7 +60,9 @@
         },
         {
             "Name": "Oxidizer_Generator",
-            "Resource": "Oxygen",
+            "Resource": {
+                "Value": "Oxygen"
+            },
             "GenerationRate": 10,
             "GenerationRatio": 0.10000000149011612,
             "TransmutableItems": [
@@ -66,7 +74,9 @@
         },
         {
             "Name": "Oxite_Dissolver_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 500,
             "TransmutableItems": [
                 {
@@ -77,40 +87,56 @@
         },
         {
             "Name": "Basic_Biofuel_Energy_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 5000
         },
         {
             "Name": "Kit_Generator_Energy_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 5000,
             "GenerationRatio": 7500,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "Extractor_Biofuel_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 1100,
             "GenerationRatio": 200,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "Free_Energy_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2500
         },
         {
             "Name": "Free_Energy_Generator_Auto",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "RequiresManualActivation": false
         },
         {
             "Name": "Wood_Torch_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 100,
             "TransmutableItems": [
                 {
@@ -141,7 +167,9 @@
         },
         {
             "Name": "Candle_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 100,
             "GenerationRatio": 10,
             "TransmutableItems": [
@@ -157,16 +185,22 @@
         },
         {
             "Name": "Water_Pump_Generator",
-            "Resource": "Water",
+            "Resource": {
+                "Value": "Water"
+            },
             "TransmutableResources": [
-                "Energy"
+                {
+                    "Value": "Energy"
+                }
             ],
             "RequiresManualActivation": false,
             "OutOfFuelThresholdPercent": -1
         },
         {
             "Name": "Dehumidifier",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2500,
             "TransmutableItems": [
                 {
@@ -177,16 +211,22 @@
         },
         {
             "Name": "Kitchen_Stove",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 500,
             "GenerationRatio": 50,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "Pot_Belly_Stove",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2500,
             "TransmutableItems": [
                 {
@@ -217,7 +257,9 @@
         },
         {
             "Name": "Rain_Reservoir",
-            "Resource": "Water",
+            "Resource": {
+                "Value": "Water"
+            },
             "GenerationRate": 50,
             "TransmutableItems": [
                 {
@@ -229,7 +271,9 @@
         },
         {
             "Name": "Ice_Box",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 1,
             "TransmutableItems": [
                 {
@@ -241,24 +285,34 @@
         },
         {
             "Name": "Biofuel_MetalOxiteDissolver",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 500,
             "GenerationRatio": 10,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "Faction_Mission_Drill",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 1,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "Electric_Dehumidifier",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2500,
             "TransmutableItems": [
                 {
@@ -269,47 +323,65 @@
         },
         {
             "Name": "SolarPanel_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 5000
         },
         {
             "Name": "WaterWheel_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2000
         },
         {
             "Name": "Fabricator_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2500
         },
         {
             "Name": "Deep_Mining_Biofuel_Drill",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 1,
             "GenerationRatio": 0.75,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "Biofuel_Radar",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 200,
             "GenerationRatio": 20,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "Meta_Extractor",
             "GenerationRate": 10,
             "TransmutableResources": [
-                "Energy"
+                {
+                    "Value": "Energy"
+                }
             ]
         },
         {
             "Name": "Mission_STYX_D_Research2_Bomb",
-            "Resource": "Oxygen",
+            "Resource": {
+                "Value": "Oxygen"
+            },
             "GenerationRate": 10,
             "GenerationRatio": 0.10000000149011612,
             "TransmutableItems": [
@@ -321,30 +393,42 @@
         },
         {
             "Name": "Aquarium_T3",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 200,
             "GenerationRatio": 250,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "SpawnBlocker_T3",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 5000,
             "GenerationRatio": 4000,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "WindTurbine",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 3500
         },
         {
             "Name": "SpawnBlocker_T2",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 100,
             "GenerationRatio": 100,
             "TransmutableItems": [
@@ -360,7 +444,9 @@
         },
         {
             "Name": "Anvil_T3",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2500,
             "TransmutableItems": [
                 {
@@ -390,15 +476,21 @@
         },
         {
             "Name": "T3_Cleaning_Device",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRatio": 100,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "Smoker_T3",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2500,
             "TransmutableItems": [
                 {
@@ -424,65 +516,91 @@
         },
         {
             "Name": "Water_Pump_Biofuel",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 500,
             "GenerationRatio": 450,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "Water_Borer",
-            "Resource": "Water",
+            "Resource": {
+                "Value": "Water"
+            },
             "GenerationRate": 2000,
             "GenerationRatio": 2,
             "TransmutableResources": [
-                "Energy"
+                {
+                    "Value": "Energy"
+                }
             ],
             "RequiresManualActivation": false,
             "OutOfFuelThresholdPercent": -1
         },
         {
             "Name": "Electric_Oxite_Dissolver",
-            "Resource": "Oxygen",
+            "Resource": {
+                "Value": "Oxygen"
+            },
             "GenerationRate": 500,
             "GenerationRatio": 10,
             "TransmutableResources": [
-                "Energy"
+                {
+                    "Value": "None"
+                }
             ]
         },
         {
             "Name": "Pump_Jack",
-            "Resource": "Crude_Oil",
+            "Resource": {
+                "Value": "Oil"
+            },
             "GenerationRate": 2000,
             "GenerationRatio": 2,
             "TransmutableResources": [
-                "Energy"
+                {
+                    "Value": "None"
+                }
             ],
             "RequiresManualActivation": false,
             "OutOfFuelThresholdPercent": -1
         },
         {
             "Name": "Crude_Oil_Refiner",
-            "Resource": "Refined_Oil",
+            "Resource": {
+                "Value": "Oil"
+            },
             "TransmutableResources": [
-                "Crude_Oil"
+                {
+                    "Value": "None"
+                }
             ],
             "RequiresManualActivation": false,
             "OutOfFuelThresholdPercent": -1
         },
         {
             "Name": "Natural_Oil_Refiner",
-            "Resource": "Refined_Oil",
+            "Resource": {
+                "Value": "Oil"
+            },
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ],
             "RequiresManualActivation": false,
             "OutOfFuelThresholdPercent": -1
         },
         {
             "Name": "Organic_Extractor",
-            "Resource": "Fuel",
+            "Resource": {
+                "Value": "Biofuel"
+            },
             "TransmutableItems": [
                 {
                     "RowName": "Seed_Oil",
@@ -502,29 +620,41 @@
         },
         {
             "Name": "Crude_Oil_Power_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 5000,
             "GenerationRatio": 7500,
             "TransmutableResources": [
-                "Crude_Oil"
+                {
+                    "Value": "None"
+                }
             ]
         },
         {
             "Name": "Portable_Biofuel_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2000,
             "GenerationRatio": 2750,
             "TransmutableResources": [
-                "Fuel"
+                {
+                    "Value": "Biofuel"
+                }
             ]
         },
         {
             "Name": "Hydrazine_Generator",
-            "Resource": "Energy",
+            "Resource": {
+                "Value": "Energy"
+            },
             "GenerationRate": 2500,
             "GenerationRatio": 2500,
             "TransmutableResources": [
-                "Hydrazine"
+                {
+                    "Value": "Hydrazine"
+                }
             ]
         }
     ]

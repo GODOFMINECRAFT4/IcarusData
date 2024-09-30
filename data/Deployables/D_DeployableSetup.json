@@ -7437,7 +7437,7 @@
             "Name": "Charging_Device",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Charger/BP_Charging_Device.BP_Charging_Device_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Powered_Charger_v2.SM_DEP_Powered_Charger_v2",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
             "DeployCollisionExtentOffset": {
                 "Z": -100
             }
@@ -7821,12 +7821,16 @@
         {
             "Name": "Slug_Trophy_Vial",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Tank_SML.BP_Trophy_Slug_Boss_Tank_SML_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Slug_Trophy_Vial.T_ITEM_Slug_Trophy_Vial",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Slug_Trophy_Vial-DeployableName\", \"Small\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Tank_SML.SM_DEP_Trophy_Slug_Boss_Tank_SML",
             "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY_SMALL.SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY_SMALL"
         },
         {
             "Name": "Slug_Trophy_Vial_Med",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Tank_MED.BP_Trophy_Slug_Boss_Tank_MED_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Slug_Trophy_Vial_Med-DeployableName\", \"Medium\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Tank_MED.SM_DEP_Trophy_Slug_Boss_Tank_MED",
             "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY.SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY"
         },
@@ -8545,7 +8549,7 @@
             "Name": "Teddy_Bear",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Teddy_Bear.BP_Teddy_Bear_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_DEP_Teddy_Bear.SM_DEP_Teddy_Bear",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "MaxSurfaceSnapAngle": 180,
             "bCanAffectNavigation": false
         },
@@ -8556,6 +8560,35 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "MaxSurfaceSnapAngle": 180,
             "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Armour_Stand",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_ArmourStand.BP_ArmourStand_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Armour_Stand-DeployableName\", \"None\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Icebox.SM_DEP_Icebox",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Stationeers_Bobblehead_Orange",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/Stationeers/BP_Stationeers_BobbleHead_Orange.BP_Stationeers_BobbleHead_Orange_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Stationeers_Trophy_2.T_ITEM_Stationeers_Trophy_2",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Stationeers_Bobblehead_Orange-DeployableName\", \"Orange Stationeers Bobblehead\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Stationeers/SM_DEP_Bobblehead_Orange.SM_DEP_Bobblehead_Orange",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Stationeers_Bobblehead_White",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/Stationeers/BP_Stationeers_BobbleHead_White.BP_Stationeers_BobbleHead_White_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Stationeers_Trophy_1.T_ITEM_Stationeers_Trophy_1",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Stationeers_Bobblehead_White-DeployableName\", \"White Stationeers Bobblehead\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Stationeers/SM_DEP_Bobblehead_White.SM_DEP_Bobblehead_White",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
         }
     ]
 }

@@ -13,6 +13,17 @@
     },
     "Rows": [
         {
+            "Name": "Medicine",
+            "IndexView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideResourceItemsGrid.UMG_FieldGuideResourceItemsGrid_C'",
+            "DetailView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideItemMedicinePage.UMG_FieldGuideItemMedicinePage_C'",
+            "DisplayOrder": 9,
+            "DisplayName": "NSLOCTEXT(\"D_FieldGuideCategories\", \"Medicine-DisplayName\", \"Medicine\")",
+            "DisplayIcon": "/Game/Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Medicine.T_ICON_FieldGuide_Medicine",
+            "TagQuery": {
+                "RowName": "Any_Medicine"
+            }
+        },
+        {
             "Name": "ResourceNetworks",
             "IndexView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideResourceItemsFewGrid.UMG_FieldGuideResourceItemsFewGrid_C'",
             "DetailView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideItemDeployablePage.UMG_FieldGuideItemDeployablePage_C'",
@@ -24,21 +35,10 @@
             }
         },
         {
-            "Name": "Medicine",
-            "IndexView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideResourceItemsFewGrid.UMG_FieldGuideResourceItemsFewGrid_C'",
-            "DetailView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideItemMedicinePage.UMG_FieldGuideItemMedicinePage_C'",
-            "DisplayOrder": 9,
-            "DisplayName": "NSLOCTEXT(\"D_FieldGuideCategories\", \"Medicine-DisplayName\", \"Medicine\")",
-            "DisplayIcon": "/Game/Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Medicine.T_ICON_FieldGuide_Medicine",
-            "TagQuery": {
-                "RowName": "Any_Medicine"
-            }
-        },
-        {
             "Name": "Shields",
             "IndexView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideResourceItemsFewGrid.UMG_FieldGuideResourceItemsFewGrid_C'",
             "DetailView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideItemCraftAndStatsPage.UMG_FieldGuideItemCraftAndStatsPage_C'",
-            "DisplayOrder": 5,
+            "DisplayOrder": 20,
             "DisplayName": "NSLOCTEXT(\"D_FieldGuideCategories\", \"Shields-DisplayName\", \"Shields\")",
             "DisplayIcon": "/Game/Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Shield.T_ICON_FieldGuide_Shield",
             "TagQuery": {
@@ -59,7 +59,7 @@
         {
             "Name": "Equipment",
             "IndexView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideResourceItemsGrid.UMG_FieldGuideResourceItemsGrid_C'",
-            "DetailView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideItemResourcePage.UMG_FieldGuideItemResourcePage_C'",
+            "DetailView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideItemEquipmentPage.UMG_FieldGuideItemEquipmentPage_C'",
             "DisplayOrder": 4,
             "DisplayName": "NSLOCTEXT(\"D_FieldGuideCategories\", \"Equipment-DisplayName\", \"Equipment\")",
             "DisplayIcon": "/Game/Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Equipments.T_ICON_FieldGuide_Equipments",
@@ -135,7 +135,7 @@
         },
         {
             "Name": "Animal_Part",
-            "IndexView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideResourceItemsFewGrid.UMG_FieldGuideResourceItemsFewGrid_C'",
+            "IndexView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideResourceItemsGrid.UMG_FieldGuideResourceItemsGrid_C'",
             "DetailView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideItemAnimalPartPage.UMG_FieldGuideItemAnimalPartPage_C'",
             "DisplayOrder": 16,
             "DisplayName": "NSLOCTEXT(\"D_FieldGuideCategories\", \"Animal_Part-DisplayName\", \"Animal Parts\")",
@@ -147,7 +147,7 @@
         {
             "Name": "Food",
             "IndexView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideResourceItemsGrid.UMG_FieldGuideResourceItemsGrid_C'",
-            "DetailView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideItemCraftAndStatsPage.UMG_FieldGuideItemCraftAndStatsPage_C'",
+            "DetailView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideItemResourcePage.UMG_FieldGuideItemResourcePage_C'",
             "DisplayOrder": 11,
             "DisplayName": "NSLOCTEXT(\"D_FieldGuideCategories\", \"Food-DisplayName\", \"Food\")",
             "DisplayIcon": "/Game/Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Food.T_ICON_FieldGuide_Food",
@@ -170,7 +170,7 @@
             "Name": "Benches",
             "IndexView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideResourceItemsGrid.UMG_FieldGuideResourceItemsGrid_C'",
             "DetailView": "WidgetBlueprintGeneratedClass'/Game/UI/Components/FieldGuide/UMG_FieldGuideItemBenchesPage.UMG_FieldGuideItemBenchesPage_C'",
-            "DisplayOrder": 20,
+            "DisplayOrder": 5,
             "DisplayName": "NSLOCTEXT(\"D_FieldGuideCategories\", \"Benches-DisplayName\", \"Benches\")",
             "DisplayIcon": "/Game/Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Benches.T_ICON_FieldGuide_Benches",
             "TagQuery": {
@@ -229,7 +229,7 @@
             "DisplayName": "NSLOCTEXT(\"D_FieldGuideCategories\", \"Resources-DisplayName\", \"Resources\")",
             "DisplayIcon": "/Game/Assets/2DArt/UI/FieldGuide/CategoryIcons/T_ICON_FieldGuide_Resources.T_ICON_FieldGuide_Resources",
             "TagQuery": {
-                "RowName": "Any_Resource"
+                "RowName": "FieldGuide_Resource"
             }
         },
         {

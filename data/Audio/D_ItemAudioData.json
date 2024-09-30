@@ -1033,7 +1033,7 @@
             "Name": "Enhancement_Tonic",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
-            "ConsumedSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_PASTE.SFX_CONSUME_PASTE"
+            "ConsumedSound": "/Game/FMOD/Events/SFX/Character/Consume/SFX_CONSUME_ANTIPOISON.SFX_CONSUME_ANTIPOISON"
         },
         {
             "Name": "Wood_Fortification",
@@ -1653,10 +1653,17 @@
         },
         {
             "Name": "Stasis_Bag",
-            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_CRE_DEAD_PICKUP.SFX_CRE_DEAD_PICKUP",
-            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_STASIS_BAG_PICKUP.SFX_STASIS_BAG_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROP_NPC_STASIS.UI_INV_DROP_NPC_STASIS",
             "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "SlottedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROP_NPC_POD.UI_INV_DROP_NPC_POD",
             "BackpackFootstepSound": "/Game/FMOD/Events/SFX/Character/Movement/SFX_CHAR_MOVE_STASIS_BAG_ON.SFX_CHAR_MOVE_STASIS_BAG_ON"
+        },
+        {
+            "Name": "LoreNotes",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/Lore_Notes/PICKUP_NOTE_LORE.PICKUP_NOTE_LORE",
+            "DropSound": "/Game/FMOD/Events/SFX/D_Items/Lore_Notes/CLOSE_NOTE_LORE.CLOSE_NOTE_LORE",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
         }
     ]
 }

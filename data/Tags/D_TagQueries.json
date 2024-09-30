@@ -5066,19 +5066,27 @@
                     },
                     {
                         "TagName": "Item.Tool.Thrown"
+                    },
+                    {
+                        "TagName": "Item.Resource.Stick"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
+                    5,
+                    2,
                     1,
                     4,
                     0,
                     1,
                     2,
-                    3
+                    3,
+                    3,
+                    1,
+                    4
                 ],
-                "AutoDescription": " ANY( Item.Ammo, Item.Weapon, Item.Tool.Knife.Thrown, Item.Tool.Thrown )"
+                "AutoDescription": " ALL(  ANY( Item.Ammo, Item.Weapon, Item.Tool.Knife.Thrown, Item.Tool.Thrown ),  NONE( Item.Resource.Stick ) )"
             }
         },
         {
@@ -5170,7 +5178,7 @@
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "item.ResourceGenerator"
+                        "TagName": "Item.ResourceGenerator"
                     },
                     {
                         "TagName": "FieldGuide.ResourceNetwork"
@@ -5390,19 +5398,27 @@
                     },
                     {
                         "TagName": "FieldGuide.Equipment"
+                    },
+                    {
+                        "TagName": "Item.Tool.Shovel"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
+                    5,
+                    2,
                     1,
                     4,
                     0,
                     1,
                     2,
-                    3
+                    3,
+                    3,
+                    1,
+                    4
                 ],
-                "AutoDescription": " ANY( Item.Equip.Quickbar, Item.Backpack, Item.Upgrade.Vision, FieldGuide.Equipment )"
+                "AutoDescription": " ALL(  ANY( Item.Equip.Quickbar, Item.Backpack, Item.Upgrade.Vision, FieldGuide.Equipment ),  NONE( Item.Tool.Shovel ) )"
             }
         },
         {
@@ -5417,18 +5433,26 @@
                     },
                     {
                         "TagName": "FieldGuide.Food"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Spoiled"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
+                    5,
+                    2,
                     1,
                     3,
                     0,
                     1,
-                    2
+                    2,
+                    3,
+                    1,
+                    3
                 ],
-                "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish, FieldGuide.Food )"
+                "AutoDescription": " ALL(  ANY( Item.Consumable.Food, NPC.Fish, FieldGuide.Food ),  NONE( Item.Consumable.Food.Spoiled ) )"
             }
         },
         {
@@ -6513,6 +6537,156 @@
                     1
                 ],
                 "AutoDescription": " ALL( Traits.Buildable, Building.MetalGrate )"
+            }
+        },
+        {
+            "Name": "FieldGuide_Resource",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "FieldGuide.Resource"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Item.Resource, FieldGuide.Resource )"
+            }
+        },
+        {
+            "Name": "Any_ChickenCoop",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Deployable.ChickenCoop"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Deployable.ChickenCoop )"
+            }
+        },
+        {
+            "Name": "FieldGuide_ElectricityDevices",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.ResourceGenerator.Energy"
+                    },
+                    {
+                        "TagName": "Item.Tool.Wire.Energy"
+                    },
+                    {
+                        "TagName": "Item.Deployable.FlowMeter"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    3,
+                    0,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ANY( Item.ResourceGenerator.Energy, Item.Tool.Wire.Energy, Item.Deployable.FlowMeter )"
+            }
+        },
+        {
+            "Name": "FieldGuide_WaterDevices",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Tool.Wire.Water"
+                    },
+                    {
+                        "TagName": "Item.Deployable.Purifier"
+                    },
+                    {
+                        "TagName": "Item.ResourceGenerator.Water"
+                    },
+                    {
+                        "TagName": "Item.Deployable.FlowMeter"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    4,
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "AutoDescription": " ANY( Item.Tool.Wire.Water, Item.Deployable.Purifier, item.ResourceGenerator.Water, Item.Deployable.FlowMeter )"
+            }
+        },
+        {
+            "Name": "FieldGuide_DeplopyableStorage",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Deployable.ResourceStorage"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Deployable.ResourceStorage )"
+            }
+        },
+        {
+            "Name": "FieldGuide_DeplopyableWaterStorage",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Deployable.ResourceStorage.Water"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Deployable.ResourceStorage.Water )"
+            }
+        },
+        {
+            "Name": "FieldGuide_DeplopyableEnergyStorage",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Deployable.ResourceStorage.Energy"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Deployable.ResourceStorage.Energy )"
             }
         }
     ]

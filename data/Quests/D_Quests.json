@@ -2261,7 +2261,14 @@
         {
             "Name": "OLY_Riverlands_Research_Interact",
             "Class": "/Game/BP/Quests/Olympus/Riverlands/Research/BPQ_OLY_Riverlands_Research_Interact.BPQ_OLY_Riverlands_Research_Interact_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Research_Interact-Description\", \"Gather data (F)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Research_Interact-Description\", \"Gather data from the Night Blossom (F)\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Research_Interact-InfoText\", \"Flora data can only be collected at night, when the Night Blossom blooms.\")"
+        },
+        {
+            "Name": "OLY_Riverlands_Research_Interact1",
+            "Class": "/Game/BP/Quests/Olympus/Riverlands/Research/BPQ_OLY_Riverlands_Research_Interact.BPQ_OLY_Riverlands_Research_Interact_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Riverlands_Research_Interact1-Description\", \"Gather data from inside the strange Silica node (F)\")"
         },
         {
             "Name": "OLY_Riverlands_Construction_0",
@@ -8870,7 +8877,7 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Search-Description\", \"Locate the Lost Outpost\")",
             "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Search-InfoText\", \"Place Trail Beacons using the Tool. Chaining them together maps out a path which can be seen on the Map.\")",
             "LocationQuery": {
-                "RowName": "PRO_Ashlands_Entrances"
+                "RowName": "PRO_Ashlands_Outpost"
             }
         },
         {
@@ -8890,26 +8897,17 @@
         {
             "Name": "PRO_Ashlands_Beacon_Chain",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Travel.BPQ_PRO_Ashlands_Story_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon_Chain-Description\", \"Chain Beacons to Map out the Area\")",
-            "LocationQuery": {
-                "RowName": "PRO_Ashlands_Outpost"
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon_Chain-Description\", \"Chain Beacons to Map out the Area\")"
         },
         {
             "Name": "PRO_Ashlands_Outpost_Percentage",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Outpost_Signal.BPQ_PRO_Ashlands_Story_Outpost_Signal_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Percentage-Description\", \"Detecting Signal from Outpost: {0}% Signal Strength\")",
-            "LocationQuery": {
-                "RowName": "PRO_Ashlands_Outpost"
-            }
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Percentage-Description\", \"Detecting Signal from Outpost: {0}% Signal Strength\")"
         },
         {
             "Name": "PRO_Ashlands_Outpost_Clear",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Outpost_Clear.BPQ_PRO_Ashlands_Story_Outpost_Clear_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Clear-Description\", \"Clear Stonejaw from around the outpost ({0}%)\")",
-            "LocationQuery": {
-                "RowName": "PRO_Ashlands_Outpost"
-            },
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "AshlandsEvent5",
@@ -8923,18 +8921,24 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Collect-Description\", \"Search the Outpost for Evidence of the Science Team\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "AshlandsEnding",
+                    "DataTableName": "D_Dialogue"
+                }
             }
         },
         {
             "Name": "PRO_Ashlands_Beacon_Icesheets",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Beacon_Icesheet.BPQ_PRO_Ashlands_Story_Beacon_Icesheet_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon_Icesheets-Description\", \"Place the final beacon around the entrance to the Ice Sheet\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon_Icesheets-Description\", \"Place the final beacon around the entrance to the Icesheet\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_IcesheetTransition"
             },
             "DialogueEvents": {
                 "QuestStart": {
-                    "RowName": "AshlandsEvent6",
+                    "RowName": "AshlandsEnding",
                     "DataTableName": "D_Dialogue"
                 }
             }
@@ -8942,13 +8946,19 @@
         {
             "Name": "PRO_Icesheet_Story",
             "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story.BPQ_PRO_Icesheet_Story_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Story-Description\", \"UNKNOWN VENTURE: Ice Sheets\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Story-Description\", \"UNKNOWN VENTURE: Icesheet\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "IceSheetIntro",
                     "DataTableName": "D_Dialogue"
                 }
             }
+        },
+        {
+            "Name": "PRO_Icesheet_Prepare",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Craft.BPQ_PRO_Ashlands_Story_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Prepare-Description\", \"Unlock and Craft the Beacon Equipment\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Prepare-InfoText\", \"The Tool and Beacons can be found on the Tier 3 Tech Tree.\")"
         },
         {
             "Name": "PRO_Icesheet_CraftTrailBeaconTool",
@@ -8961,9 +8971,37 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_CraftTrailBeacons-Description\", \"Craft Trail Beacons: {0} / {1}\")"
         },
         {
+            "Name": "PRO_Icesheet_Enter",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Enter.BPQ_PRO_Icesheet_Story_Enter_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Enter-Description\", \"Enter The Icesheets\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Enter-InfoText\", \"The Icesheet is referred to as a frozen wasteland, be prepared.\")",
+            "LocationQuery": {
+                "RowName": "PRO_Icesheet_Entrance"
+            }
+        },
+        {
+            "Name": "PRO_Icesheet_Enter_Locate",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Enter_Locate.BPQ_PRO_Icesheet_Story_Enter_Locate_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Enter_Locate-Description\", \"Find an Entrance to the Icesheet in the Ashlands\")"
+        },
+        {
+            "Name": "PRO_Icesheet_Enter_Blocker",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Enter_Blocker.BPQ_PRO_Icesheet_Story_Enter_Blocker_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Enter_Blocker-Description\", \"Pickaxe through the Cave-In Blocking the Entrance\")"
+        },
+        {
+            "Name": "PRO_Icesheet_Search",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Search.BPQ_PRO_Icesheet_Story_Search_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Search-Description\", \"Locate the Icesheet Outpost\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Search-InfoText\", \"Place Trail Beacons using the Tool. Chaining them together maps out a path which can be seen on the Map.\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Outpost"
+            }
+        },
+        {
             "Name": "PRO_Icesheet_Beacon",
             "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Beacon.BPQ_PRO_Icesheet_Story_Beacon_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Beacon-Description\", \"Place Trail Beacon at Entrance to the Ice Sheet\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Beacon-Description\", \"Place Trail Beacon at Entrance to the Icesheet\")",
             "LocationQuery": {
                 "RowName": "PRO_Icesheet_Entrance"
             },
@@ -8993,7 +9031,7 @@
         {
             "Name": "PRO_Icesheet_Outpost_Collect",
             "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Outpost_Collect.BPQ_PRO_Icesheet_Story_Outpost_Collect_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Outpost_Collect-Description\", \"Search Bodies for Audio Log\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Outpost_Collect-Description\", \"Search the Outpost for Evidence of the Science Team\")",
             "LocationQuery": {
                 "RowName": "PRO_Icesheet_Outpost"
             },
@@ -9524,7 +9562,7 @@
         {
             "Name": "PRO_E_Research",
             "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research.BPQ_PRO_E_Research_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research-Description\", \"ISOLATION: Ice Sheet\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research-Description\", \"ISOLATION: Icesheet\")",
             "LocationQuery": {
                 "RowName": "PRO_Icesheet_UpperPillar"
             }
@@ -9579,7 +9617,7 @@
             "Name": "PRO_D_Recovery",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery.BPQ_PRO_D_Recovery_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery-Description\", \"CRISIS: ASHLANDS\")",
-            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery-InfoText\", \"The Recovery Crew will need food, water, oxygen and various medical supplies\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery-InfoText\", \"The Recovery Crew will need food, water, oxygen and various medical supplies. Medicine stronger than pastes will be required.\")",
             "LocationQuery": {
                 "RowName": "PRO_ASH_NPC1"
             }
@@ -9624,7 +9662,8 @@
         {
             "Name": "PRO_D_Recovery_Assist",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Assist.BPQ_PRO_D_Recovery_Assist_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist-Description\", \"Scan with H.E.A.L. Device & Stabilise the Recovery Crew\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist-Description\", \"Scan with H.E.A.L. Device & Stabilise the Recovery Crew\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Assist-InfoText\", \"Provide Medicine and Supplies to each Crew Member to Stabilise.\")"
         },
         {
             "Name": "PRO_D_Recovery_Assist_Info",
@@ -9683,21 +9722,10 @@
             }
         },
         {
-            "Name": "PRO_D_Resupply_Speak",
-            "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Speak.BPQ_PRO_D_Recovery_Speak_C",
-            "Variation": 3,
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Resupply_Speak-Description\", \"Speak with Captain Church at the Terraforming Construction Site\")",
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "ASHLANDS_STRANDED_CHURCH_INTRO",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
-        },
-        {
             "Name": "PRO_D_Recovery_Aid",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid.BPQ_PRO_D_Recovery_Aid_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid-Description\", \"Provide Assistance to the Recovery Crew\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid-Description\", \"Provide Assistance to the Recovery Crew\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid-InfoText\", \"Examine the parts of the Truck to find out where to deposit the supplies.\")"
         },
         {
             "Name": "PRO_D_Recovery_Aid_Repair",
@@ -9717,7 +9745,8 @@
         {
             "Name": "PRO_D_Recovery_Aid_Refill",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Aid_Refill.BPQ_PRO_D_Recovery_Aid_Refill_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Refill-Description\", \"Refill the Trucks Resource Tanks\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Refill-Description\", \"Refill the Trucks Resource Tanks\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Aid_Refill-InfoText\", \"The Portable Water & Biofuel Tanks (Craftable at the Fabricator) may help. \")"
         },
         {
             "Name": "PRO_D_Recovery_Aid_Refill_Biofuel",
@@ -9756,17 +9785,6 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue-Description\", \"RESCUE: ASHLANDS\")",
             "LocationQuery": {
                 "RowName": "PRO_ASH_NPC1"
-            }
-        },
-        {
-            "Name": "PRO_D_Rescue_Speak",
-            "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_Speak.BPQ_PRO_D_Rescue_Speak_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Speak-Description\", \"Speak with Captain Church at the Terraforming Construction Site\")",
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "ASHLANDS_RESCUE_CHURCH_INTRO",
-                    "DataTableName": "D_Dialogue"
-                }
             }
         },
         {
@@ -9862,6 +9880,11 @@
             "Name": "PRO_D_Rescue_Locate_NPC2_Deliver",
             "Class": "/Game/BP/Quests/Prometheus/D/Rescue/BPQ_PRO_D_Rescue_NPC_Deliver2.BPQ_PRO_D_Rescue_NPC_Deliver2_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Rescue_Locate_NPC2_Deliver-Description\", \"Deliver Washington to the Medevac Ship\")"
+        },
+        {
+            "Name": "Common_Travel_Medium",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel_Medium.BPQ_Travel_Medium_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Travel_Medium-Description\", \"Travel to the map location (M)\")"
         }
     ]
 }

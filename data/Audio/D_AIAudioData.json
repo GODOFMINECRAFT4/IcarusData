@@ -4919,6 +4919,89 @@
             "CombatMusicConditionOverride": "InCombat_EpicBoss",
             "MusicConditionOverrideMinThreatLevel": 20,
             "FootstepMaxDistance": 100000
+        },
+        {
+            "Name": "TuskMount",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Tusker/SFX_FOOTSTEP_TUSKER.SFX_FOOTSTEP_TUSKER",
+            "FrontFootSocket": "RigNeck1",
+            "RearFootSocket": "RigPelvis",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_LARGE.SFX_CRE_DEATHFALL_WATER_LARGE",
+            "VocalisationSocket": "RigJaw1",
+            "AttackVocalisation": {
+                "RowName": "TuskAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "TuskFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "TuskDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "TuskIdleMount",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Fleeing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "BuffaloFlee",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Relaxing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "TuskRelax",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "TuskAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
         }
     ]
 }

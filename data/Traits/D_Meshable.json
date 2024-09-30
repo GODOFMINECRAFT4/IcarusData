@@ -6535,8 +6535,8 @@
             "Name": "Mesh_Carcass_Tame_Cat_A",
             "ItemMesh": "/Game/ASS/CRE/Cat/SK_CRE_Cat.SK_CRE_Cat",
             "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Tame_Cat_A_Corpse.BP_Tame_Cat_A_Corpse_C",
-            "EquipHandMesh": "/Game/ASS/CRE/Cat/SK_CRE_Cat.SK_CRE_Cat",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Tame_Cat_A_Corpse.BP_Tame_Cat_A_Corpse_C",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/CRE/Cat/SK_CRE_Cat.SK_CRE_Cat",
             "EquipBackActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Tame_Cat_A_Corpse.BP_Tame_Cat_A_Corpse_C"
         },
         {
@@ -6661,7 +6661,9 @@
         {
             "Name": "Mesh_Slug_Grenade",
             "ItemMesh": "/Game/ASS/WEP/SK_GRE_Hammerhead_Slug_Grenade/SK_GRE_Hammerhead_Slug_Grenade.SK_GRE_Hammerhead_Slug_Grenade",
-            "EquipHandMesh": "/Game/ASS/WEP/SK_GRE_Hammerhead_Slug_Grenade/SK_GRE_Hammerhead_Slug_Grenade.SK_GRE_Hammerhead_Slug_Grenade"
+            "ItemActor": "/Game/BP/Objects/World/Items/Weapons/BP_SKItem_SlugGrenade.BP_SKItem_SlugGrenade_C",
+            "EquipHandMesh": "/Game/ASS/WEP/SK_GRE_Hammerhead_Slug_Grenade/SK_GRE_Hammerhead_Slug_Grenade.SK_GRE_Hammerhead_Slug_Grenade",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SKItem_SlugGrenade.BP_SKItem_SlugGrenade_C"
         },
         {
             "Name": "Mesh_Lava_Hunter_Magma",
@@ -6705,9 +6707,9 @@
         },
         {
             "Name": "Mesh_Rock_Golem_Gun",
-            "ItemMesh": "/Game/ASS/WEP/SK_GUN_Pistol_CHAC/SK_GUN_Pistol_CHAC.SK_GUN_Pistol_CHAC",
-            "EquipHandMesh": "/Game/ASS/WEP/SK_GUN_Pistol_CHAC/SK_GUN_Pistol_CHAC.SK_GUN_Pistol_CHAC",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_SGL_Pistol.BP_SkeletalItem_SGL_Pistol_C"
+            "ItemMesh": "/Game/ASS/WEP/SK_GUN_Rock_Golem/SK_GUN_Rock_Golem.SK_GUN_Rock_Golem",
+            "EquipHandMesh": "/Game/ASS/WEP/SK_GUN_Rock_Golem/SK_GUN_Rock_Golem.SK_GUN_Rock_Golem",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_RockGolemGun.BP_SkeletalItem_RockGolemGun_C"
         },
         {
             "Name": "Mesh_Ape_Armor",
@@ -7001,6 +7003,18 @@
             "Name": "Mesh_Generic_Saddle",
             "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
+        },
+        {
+            "Name": "Mesh_Hammerhead_Spit",
+            "ItemMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "ItemActor": "/Game/BP/AI/Bosses/Misc/BP_Hammerhead_Spit.BP_Hammerhead_Spit_C"
+        },
+        {
+            "Name": "Mesh_Carcass_Roat_Lava",
+            "ItemMesh": "/Game/ASS/CRE/Roat/SK_CRE_Roat_Lava.SK_CRE_Roat_Lava",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Roat_Lava_Corpse.BP_Roat_Lava_Corpse_C",
+            "EquipBackMesh": "/Game/ASS/CRE/Roat/SK_CRE_Roat_Lava.SK_CRE_Roat_Lava",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Roat_Lava_Corpse.BP_Roat_Lava_Corpse_C"
         }
     ]
 }

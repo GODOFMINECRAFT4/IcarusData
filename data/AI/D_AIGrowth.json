@@ -3632,11 +3632,11 @@
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BasePoisonDamageResistance_%\")": -100,
                 "(Value=\"BaseFrostDamageResistance_%\")": 50,
-                "(Value=\"BaseIceArmorMaximumHealth_+\")": 100
+                "(Value=\"BaseMaximumArmor_+\")": 5000,
+                "(Value=\"BaseMovementSpeed_+\")": 275
             },
             "Health": "CurveFloat'/Game/Data/AI/C_MammothBossHealth.C_MammothBossHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_MammothBossDamage.C_MammothBossDamage'",
-            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_MammothBossMovementSpeed.C_MammothBossMovementSpeed'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
         {
@@ -3670,6 +3670,29 @@
             },
             "Health": "CurveFloat'/Game/Data/AI/C_ScorpionBossHealth.C_ScorpionBossHealth'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Roat_Lava",
+            "Base": {
+                "(Value=\"BaseMovementSpeed_+\")": 65,
+                "(Value=\"BaseSwimSpeed_+\")": 150,
+                "(Value=\"BaseMaximumHealth_+\")": 25,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 3,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 5000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseCharacterMass_+\")": 40,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BasePoisonDamageResistance_%\")": 90,
+                "(Value=\"BasePoisonDamage_+\")": 20
+            },
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         }
     ]
 }
