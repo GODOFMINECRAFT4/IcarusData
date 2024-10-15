@@ -608,9 +608,13 @@
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Fill_Object_Fuel-InteractionText\", \"Fill with Biofuel\")"
         },
         {
+            "Name": "Collect_Object_Fuel",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fill_Fuel.BP_Interactable_Fill_Fuel_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Collect_Object_Fuel-InteractionText\", \"Fill Container\")"
+        },
+        {
             "Name": "Interact_NPC",
             "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC.BP_Interactable_NPC_C",
-            "AuthorityType": "Both",
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC-InteractionText\", \"Speak\")"
         },
         {
@@ -638,6 +642,26 @@
             "Name": "Interact_NPC_Mission",
             "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC_Mission.BP_Interactable_NPC_Mission_C",
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_Mission-InteractionText\", \"Ask about Missions\")"
+        },
+        {
+            "Name": "Interact_Place_Extinguisher",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Add_Extinguisher.BP_Interactable_Add_Extinguisher_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Place_Extinguisher-InteractionText\", \"Place Fire Extinguisher\")"
+        },
+        {
+            "Name": "Interact_Take_Extinguisher",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Take_Extinguisher.BP_Interactable_Take_Extinguisher_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Take_Extinguisher-InteractionText\", \"Take Fire Extinguisher\")"
+        },
+        {
+            "Name": "Interact_DestroyActor",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_DestroyActor.BP_Interactable_DestroyActor_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_DestroyActor-InteractionText\", \"Destroy Object\")"
+        },
+        {
+            "Name": "Interact_Fill_Container_Biofuel",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fill_Container_Biofuel.BP_Interactable_Fill_Container_Biofuel_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Fill_Container_Biofuel-InteractionText\", \"Fill Container\")"
         }
     ]
 }

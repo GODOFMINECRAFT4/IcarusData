@@ -714,9 +714,49 @@
             "BiomeName": "Ice Sheet",
             "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Pro_IceSheet-DisplayName\", \"Ice Sheet\")",
             "Color": {
-                "B": 212,
+                "B": 246,
+                "G": 233,
+                "R": 7,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
+            "WeatherFrequency": 3,
+            "Audio": {
+                "RowName": "Arctic"
+            },
+            "bOrbitalCommunicationBlocked": true,
+            "BiomeModifier": {
+                "RowName": "Very_Cold_Atmosphere"
+            }
+        },
+        {
+            "Name": "Pro_IceSheet_2",
+            "BiomeName": "Middle Ice Sheet",
+            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Pro_IceSheet_2-DisplayName\", \"Middle Ice Sheet\")",
+            "Color": {
+                "B": 230,
                 "G": 148,
-                "R": 8,
+                "R": 93,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
+            "WeatherFrequency": 3,
+            "Audio": {
+                "RowName": "Arctic"
+            },
+            "bOrbitalCommunicationBlocked": true,
+            "BiomeModifier": {
+                "RowName": "Cold_Atmosphere"
+            }
+        },
+        {
+            "Name": "Pro_IceSheet_3",
+            "BiomeName": "Upper Ice Sheet",
+            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Pro_IceSheet_3-DisplayName\", \"Upper Ice Sheet\")",
+            "Color": {
+                "B": 90,
+                "G": 55,
+                "R": 24,
                 "A": 255
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",

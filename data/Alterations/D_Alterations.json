@@ -1246,7 +1246,7 @@
         {
             "Name": "Biolab_IceMammoth_Melee",
             "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Biolab_IceMammoth_Melee-DisplayName\", \"Frozen Mammoth Frost\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_currency_Mammoth.T_ICON_currency_Mammoth",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_IceMammoth.T_ICON_CURRENCY_IceMammoth",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
                 "(Value=\"BaseAttacksCauseFreeze_%\")": 20,
@@ -1256,7 +1256,7 @@
         {
             "Name": "Biolab_Sandworm_Armor",
             "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Biolab_Sandworm_Armor-DisplayName\", \"Sandworm Plating\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_currency_sandworm.T_ICON_currency_sandworm",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_Sandworm.T_ICON_CURRENCY_Sandworm",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
                 "(Value=\"BasePhysicalDamageResistance_+%\")": 15,
@@ -1266,7 +1266,7 @@
         {
             "Name": "Biolab_AlphaWolf_Melee",
             "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Biolab_AlphaWolf_Melee-DisplayName\", \"Alpha Wolf Wounding\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_currency_Wolf.T_ICON_currency_Wolf",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_Wolf.T_ICON_CURRENCY_Wolf",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
                 "(Value=\"BaseAttacksCauseWound_%\")": 40,
@@ -1345,7 +1345,7 @@
         },
         {
             "Name": "Honey_Tea",
-            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Honey_Tea-DisplayName\", \"Honey Tea\")",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Honey_Tea-DisplayName\", \"Contains Honey Tea\")",
             "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Water.Icon_Water",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1"
         },
@@ -1369,65 +1369,72 @@
         },
         {
             "Name": "Lava_Hunter_Attachment",
-            "DisplayName": "INVTEXT(\"[DNT] Lava Hunter Attachment\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_currency_Scorpion.T_ICON_currency_Scorpion",
+            "DisplayName": "INVTEXT(\"[DNT] Lava Hunter Burn\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_LavaHunter.T_ICON_CURRENCY_LavaHunter",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
-                "(Value=\"BaseFireDamage_+\")": 10
+                "(Value=\"AttacksCauseBurn_%\")": 20,
+                "(Value=\"BaseFireDamage_+\")": 15
             }
         },
         {
             "Name": "Slug_Attachment",
-            "DisplayName": "INVTEXT(\"[DNT] Slug Attachment\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_currency_Scorpion.T_ICON_currency_Scorpion",
+            "DisplayName": "INVTEXT(\"[DNT] Hammerhead Slug Slime\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_Scorpion.T_ICON_CURRENCY_Scorpion",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
-                "(Value=\"BasePoisonDamage_+\")": 10
+                "(Value=\"BaseAttacksCauseSlow_%\")": 30,
+                "(Value=\"BaseSlowResistance_%\")": 40
             }
         },
         {
             "Name": "Ape_Attachment",
-            "DisplayName": "INVTEXT(\"[DNT] Ape Attachment\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_currency_Scorpion.T_ICON_currency_Scorpion",
+            "DisplayName": "INVTEXT(\"[DNT] Ape Brute Force\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_ApeBoss.T_ICON_CURRENCY_ApeBoss",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
-                "(Value=\"BaseMeleeDamage_+\")": 50
+                "(Value=\"BaseAttacksCauseBluntTrauma_%\")": 40,
+                "(Value=\"BaseMeleeDamage_+\")": 5
             }
         },
         {
             "Name": "Scyther_Attachment",
-            "DisplayName": "INVTEXT(\"[DNT] Scyther Attachment\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_currency_Scorpion.T_ICON_currency_Scorpion",
+            "DisplayName": "INVTEXT(\"[DNT] Scyther Adaption\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_WaterCreature.T_ICON_CURRENCY_WaterCreature",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
-                "(Value=\"BaseMeleeDamage_+\")": 50
+                "(Value=\"BaseSwimSpeed_+%\")": 20,
+                "(Value=\"BaseMeleeDamageResistance_%\")": 5
             }
         },
         {
             "Name": "Hornet_Attachment",
-            "DisplayName": "INVTEXT(\"[DNT] Hornet Attachment\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_currency_Scorpion.T_ICON_currency_Scorpion",
+            "DisplayName": "INVTEXT(\"[DNT] Hornet Venom\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_Scorpion.T_ICON_CURRENCY_Scorpion",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
-                "(Value=\"BaseMeleeDamage_+\")": 50
+                "(Value=\"BaseAttacksCauseMiasma_%\")": 20,
+                "(Value=\"BasePoisonDamage_+\")": 15
             }
         },
         {
             "Name": "Plant_Boss_Attachment",
-            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Attachment\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_currency_Scorpion.T_ICON_currency_Scorpion",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Felling\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_PlantBoss.T_ICON_CURRENCY_PlantBoss",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
-                "(Value=\"BaseMeleeDamage_+\")": 50
+                "(Value=\"BaseInfectedBarkPerWoodChopped_%\")": 60,
+                "(Value=\"BaseFellingRewards_%\")": -40
             }
         },
         {
             "Name": "Cat_Boss_Attachment",
-            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Attachment\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_currency_Scorpion.T_ICON_currency_Scorpion",
+            "DisplayName": "INVTEXT(\"[DNT] Cat Boss Focus\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_CatBoss.T_ICON_CURRENCY_CatBoss",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
-                "(Value=\"BaseAttacksCauseBleed_%\")": 50
+                "(Value=\"BaseAttacksCauseMarkedTarget_%\")": 100,
+                "(Value=\"BaseAttacksCauseHighlightedTarget_%\")": 100
             }
         },
         {
@@ -1475,6 +1482,70 @@
             "Stats": {
                 "(Value=\"BasePlantedCropYield_+%\")": 20,
                 "(Value=\"BaseCreatesCropPlotTier_+\")": 4
+            }
+        },
+        {
+            "Name": "ClayYield_1",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"ClayYield_1-DisplayName\", \"Claysmith 1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Alterations/T_Icon_Alteration_Clay.T_Icon_Alteration_Clay",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseShatteringClayRewards_+%\")": 25
+            }
+        },
+        {
+            "Name": "ClayYield_2",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"ClayYield_2-DisplayName\", \"Claysmith 2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Alterations/T_Icon_Alteration_Clay.T_Icon_Alteration_Clay",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseShatteringClayRewards_+%\")": 40
+            }
+        },
+        {
+            "Name": "ScoriaYield_1",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"ScoriaYield_1-DisplayName\", \"Scoriasmith 1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Alterations/T_Icon_Alteration_Scoria.T_Icon_Alteration_Scoria",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseShatteringScoriaRewards_+%\")": 25
+            }
+        },
+        {
+            "Name": "ScoriaYield_2",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"ScoriaYield_2-DisplayName\", \"Scoriasmith 2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Alterations/T_Icon_Alteration_Scoria.T_Icon_Alteration_Scoria",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseShatteringScoriaRewards_+%\")": 40
+            }
+        },
+        {
+            "Name": "ObsidianYield_1",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"ObsidianYield_1-DisplayName\", \"Obsidiansmith 1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Alterations/T_Icon_Alteration_Obsidian.T_Icon_Alteration_Obsidian",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseShatteringObsidianRewards_+%\")": 25
+            }
+        },
+        {
+            "Name": "ObsidianYield_2",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"ObsidianYield_2-DisplayName\", \"Obsidiansmith 2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Alterations/T_Icon_Alteration_Obsidian.T_Icon_Alteration_Obsidian",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseShatteringObsidianRewards_+%\")": 40
+            }
+        },
+        {
+            "Name": "RockGolem_Attachment",
+            "DisplayName": "INVTEXT(\"[DNT] Rock Golem Protection\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Currency/T_ICON_CURRENCY_RockGolem.T_ICON_CURRENCY_RockGolem",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"GrantedAuraPhysicalDamageResistance_?\")": 1,
+                "(Value=\"BaseHealthRegen_+%\")": 20
             }
         }
     ]

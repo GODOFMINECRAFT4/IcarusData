@@ -3255,6 +3255,26 @@
                     ]
                 }
             ]
+        },
+        {
+            "Name": "Dev_TestWeather",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Dev_EmptyEvent",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                }
+            ],
+            "ContainedTiers": [
+                {
+                    "Tier": 0,
+                    "NumEvents": 1,
+                    "MinEventDurationMinutes": 6,
+                    "BiomesGroupsIncluded": []
+                }
+            ]
         }
     ]
 }

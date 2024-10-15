@@ -1570,6 +1570,15 @@
                     "Tag": ""
                 }
             ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
             "WorldAltPressInteracts": [
                 {
                     "InteractionRow": {
@@ -2673,6 +2682,22 @@
                     "Tag": ""
                 }
             ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Fill_Object_Fuel",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Fill_Container_Biofuel",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
             "WorldAltHoldInteracts": [
                 {
                     "InteractionRow": {
@@ -2741,6 +2766,74 @@
                 {
                     "InteractionRow": {
                         "RowName": "Interact_Teleport",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Bed_NoPickup",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Bed_Sleep",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Bed_SetSpawn",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Bunker_ExtinguisherWallMount",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Place_Extinguisher",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Take_Extinguisher",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "DestroyActor",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_DestroyActor",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""

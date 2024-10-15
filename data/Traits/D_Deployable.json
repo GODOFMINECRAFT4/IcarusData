@@ -33,6 +33,10 @@
             "Name": "Wood_Crate_Small",
             "Variants": [
                 {
+                    "RowName": "Wood_Crate_Small_Flat",
+                    "DataTableName": "D_DeployableSetup"
+                },
+                {
                     "RowName": "Wood_Crate_Small",
                     "DataTableName": "D_DeployableSetup"
                 }
@@ -466,6 +470,10 @@
         {
             "Name": "Wood_Crate_Medium",
             "Variants": [
+                {
+                    "RowName": "Wood_Crate_Medium_Flat",
+                    "DataTableName": "D_DeployableSetup"
+                },
                 {
                     "RowName": "Wood_Crate_Medium",
                     "DataTableName": "D_DeployableSetup"
@@ -6888,6 +6896,10 @@
                 {
                     "RowName": "Bunker_WhiteBoard_Wall",
                     "DataTableName": "D_DeployableSetup"
+                },
+                {
+                    "RowName": "Bunker_WhiteBoard_Wall_B",
+                    "DataTableName": "D_DeployableSetup"
                 }
             ],
             "EffectedByWeather": false
@@ -7054,6 +7066,16 @@
             ]
         },
         {
+            "Name": "Bunker_ExtinguisherMount",
+            "Variants": [
+                {
+                    "RowName": "Extinguisher_WallMount",
+                    "DataTableName": "D_DeployableSetup"
+                }
+            ],
+            "EffectedByWeather": false
+        },
+        {
             "Name": "Stationeers_Bobblehead",
             "Variants": [
                 {
@@ -7062,6 +7084,41 @@
                 },
                 {
                     "RowName": "Stationeers_Bobblehead_White",
+                    "DataTableName": "D_DeployableSetup"
+                }
+            ],
+            "EffectedByWeather": false
+        },
+        {
+            "Name": "Workshop_Animal_Large",
+            "Variants": [
+                {
+                    "RowName": "Workshop_Animal_Large",
+                    "DataTableName": "D_DeployableSetup"
+                }
+            ],
+            "EffectedByWeather": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Ashlands_Blocker",
+            "Variants": [
+                {
+                    "RowName": "Ashlands_Blocker",
+                    "DataTableName": "D_DeployableSetup"
+                }
+            ],
+            "EffectedByWeather": false
+        },
+        {
+            "Name": "Windmill",
+            "Variants": [
+                {
+                    "RowName": "Windmill",
                     "DataTableName": "D_DeployableSetup"
                 }
             ],

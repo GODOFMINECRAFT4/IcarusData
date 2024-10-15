@@ -13161,13 +13161,13 @@
             "bContainsContainer": true,
             "ItemIconOverride": {
                 "ItemStaticData": {
-                    "RowName": "Any_Water_Container"
+                    "DataTableName": "D_ItemTemplate"
                 }
             },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos",
+                        "RowName": "Any_Water_Container",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -24874,13 +24874,13 @@
             "bContainsContainer": true,
             "ItemIconOverride": {
                 "ItemStaticData": {
-                    "RowName": "Any_Water_Container"
+                    "DataTableName": "D_ItemTemplate"
                 }
             },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos",
+                        "RowName": "Any_Water_Container",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -24938,13 +24938,13 @@
             "bContainsContainer": true,
             "ItemIconOverride": {
                 "ItemStaticData": {
-                    "RowName": "Any_Water_Container"
+                    "DataTableName": "D_ItemTemplate"
                 }
             },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos",
+                        "RowName": "Any_Water_Container",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -25002,13 +25002,13 @@
             "bContainsContainer": true,
             "ItemIconOverride": {
                 "ItemStaticData": {
-                    "RowName": "Any_Water_Container"
+                    "DataTableName": "D_ItemTemplate"
                 }
             },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos",
+                        "RowName": "Any_Water_Container",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -25066,13 +25066,13 @@
             "bContainsContainer": true,
             "ItemIconOverride": {
                 "ItemStaticData": {
-                    "RowName": "Any_Water_Container"
+                    "DataTableName": "D_ItemTemplate"
                 }
             },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos",
+                        "RowName": "Any_Water_Container",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -25114,13 +25114,13 @@
             "bContainsContainer": true,
             "ItemIconOverride": {
                 "ItemStaticData": {
-                    "RowName": "Any_Water_Container"
+                    "DataTableName": "D_ItemTemplate"
                 }
             },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos",
+                        "RowName": "Any_Water_Container",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -67379,13 +67379,13 @@
             "bContainsContainer": true,
             "ItemIconOverride": {
                 "ItemStaticData": {
-                    "RowName": "Any_Water_Container"
+                    "DataTableName": "D_ItemTemplate"
                 }
             },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos",
+                        "RowName": "Any_Water_Container",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -69149,228 +69149,6 @@
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
                 }
-            }
-        },
-        {
-            "Name": "Ice_Wall",
-            "Requirement": {
-                "RowName": "Ice_Basic"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Character",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 20,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice_Wall",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Default"
-            }
-        },
-        {
-            "Name": "Ice_Floor",
-            "Requirement": {
-                "RowName": "Ice_Basic"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Character",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 20,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice_Floor",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Default"
-            }
-        },
-        {
-            "Name": "Ice_Ramp",
-            "Requirement": {
-                "RowName": "Ice_Basic"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Character",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 20,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice_Ramp",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Default"
-            }
-        },
-        {
-            "Name": "Ice_Wall_Angle",
-            "Requirement": {
-                "RowName": "Ice_Basic"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Character",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 20,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice_Wall_Angle",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Default"
-            }
-        },
-        {
-            "Name": "Ice_Beam",
-            "Requirement": {
-                "RowName": "Ice_Basic"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Character",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 14,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice_Beam",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Default"
-            }
-        },
-        {
-            "Name": "Ice_Roof_Corner",
-            "Requirement": {
-                "RowName": "Ice_Advanced"
-            },
-            "RequiredMillijoules": 10000,
-            "RecipeSets": [
-                {
-                    "RowName": "Character",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 10,
-                    "DynamicProperties": []
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Ice_Roof_Corner",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "Default"
             }
         },
         {
@@ -72010,13 +71788,13 @@
             "bContainsContainer": true,
             "ItemIconOverride": {
                 "ItemStaticData": {
-                    "RowName": "Any_Water_Container"
+                    "DataTableName": "D_ItemTemplate"
                 }
             },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos",
+                        "RowName": "Any_Water_Container",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -72062,13 +71840,13 @@
             "bContainsContainer": true,
             "ItemIconOverride": {
                 "ItemStaticData": {
-                    "RowName": "Any_Water_Container"
+                    "DataTableName": "D_ItemTemplate"
                 }
             },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos",
+                        "RowName": "Any_Water_Container",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -74750,11 +74528,6 @@
                     "DynamicProperties": []
                 }
             ],
-            "ItemIconOverride": {
-                "ItemStaticData": {
-                    "RowName": "Dirt_Frame"
-                }
-            },
             "Outputs": [
                 {
                     "Element": {
@@ -76678,11 +76451,6 @@
                     "DynamicProperties": []
                 }
             ],
-            "ItemIconOverride": {
-                "ItemStaticData": {
-                    "RowName": "Dirt_Frame"
-                }
-            },
             "Outputs": [
                 {
                     "Element": {
@@ -78461,13 +78229,13 @@
             "bContainsContainer": true,
             "ItemIconOverride": {
                 "ItemStaticData": {
-                    "RowName": "Any_Water_Container"
+                    "DataTableName": "D_ItemTemplate"
                 }
             },
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Thermos",
+                        "RowName": "Any_Water_Container",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -79036,6 +78804,150 @@
             ],
             "Audio": {
                 "RowName": "CraftingBench"
+            }
+        },
+        {
+            "Name": "Trail_Beacon",
+            "Requirement": {
+                "RowName": "Trail_Beacon"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Gold_Wire",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Wire",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Trail_Beacon",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Trail_Beacon_Tool",
+            "Requirement": {
+                "RowName": "Trail_Beacon"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Gold_Wire",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Wire",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 15,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Platinum_Shealth",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Beacon_Tool",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
             }
         },
         {
@@ -80274,9 +80186,11 @@
         },
         {
             "Name": "Medical_Device",
+            "Requirement": {
+                "RowName": "Medical_Scanner"
+            },
             "SessionRequirement": {
-                "DataTableName": "D_SessionFlags",
-                "RowName": "Mission_Recipe_Medical_Scanner"
+                "DataTableName": "D_SessionFlags"
             },
             "RequiredMillijoules": 5000,
             "RecipeSets": [

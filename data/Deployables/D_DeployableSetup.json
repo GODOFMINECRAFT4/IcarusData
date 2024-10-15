@@ -63,7 +63,16 @@
         {
             "Name": "Wood_Crate_Small",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate.BP_Wood_Crate_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Wood_Crate_Small.ITEM_Wood_Crate_Small",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_SML_Wood.SM_DEP_Crate_SML_Wood",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Wood_Crate_Small_Flat",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Flat.BP_Wood_Crate_Flat_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Wood_Crate_Small_Flat.T_ITEM_Wood_Crate_Small_Flat",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_FlatCrate_SML.SM_DEP_FlatCrate_SML",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
         },
@@ -527,7 +536,16 @@
         {
             "Name": "Wood_Crate_Medium",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Medium.BP_Wood_Crate_Medium_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Wood_Crate_Medium.ITEM_Wood_Crate_Medium",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_Medium_Wood.SM_DEP_Crate_Medium_Wood",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Wood_Crate_Medium_Flat",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Medium_Flat.BP_Wood_Crate_Medium_Flat_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Wood_Crate_Medium_Flat.T_ITEM_Wood_Crate_Medium_Flat",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_FlatCrate_MED.SM_DEP_FlatCrate_MED",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
         },
@@ -2584,7 +2602,7 @@
             "Name": "Faction_Mission_Explosive",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Faction_Mission_Explosive.BP_Faction_Mission_Explosive_C",
             "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_Explosive.SM_ITM_Explosive",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_ITEM.SFX_DEPLOY_ITEM",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Landmine/SFX_DEPLOY_LANDMINE.SFX_DEPLOY_LANDMINE",
             "MaxSurfaceSnapAngle": 360,
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
@@ -6705,6 +6723,13 @@
             "bCanAffectNavigation": false
         },
         {
+            "Name": "Trail_Beacon",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Communication/BP_Trail_Beacon.BP_Trail_Beacon_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Spot_Light_LEET.SM_DEP_Spot_Light_LEET",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "SupportsCustomRotation": false
+        },
+        {
             "Name": "Rain_Reservoir_T3",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Weather/BP_RainReservior_T3.BP_RainReservior_T3_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Rain_Reservoir_Metal_Large.SM_DEP_Rain_Reservoir_Metal_Large",
@@ -7086,12 +7111,11 @@
         },
         {
             "Name": "Workshop_Animal_Medium",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Creatures/BP_Workshop_Animal.BP_Workshop_Animal_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Small_T4.SM_DEP_Trap_Small_T4",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Creatures/BP_Workshop_Animal_MED.BP_Workshop_Animal_MED_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_AnimalCrate_Cryo/SM_DEP_AnimalCrate_Cryo_MED.SM_DEP_AnimalCrate_Cryo_MED",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
             "AudioOcclusionAmount": 0.5,
             "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false,
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Laika"
@@ -7790,7 +7814,10 @@
             "Name": "Scorpion_Boss_Trophy_Hanging",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Scorpion_Boss_Hanging.BP_Trophy_Scorpion_Boss_Hanging_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scorpion_Boss/SM_DEP_Trophy_ScorpionBoss_Chains.SM_DEP_Trophy_ScorpionBoss_Chains",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "DeployCollisionLocationOffset": {
+                "Z": 100
+            }
         },
         {
             "Name": "Scorpion_Boss_Trophy_Tail",
@@ -8370,6 +8397,22 @@
             }
         },
         {
+            "Name": "Bunker_WhiteBoard_Wall_B",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_WhiteBoard_wall_b.BP_Bunker_WhiteBoard_wall_b_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Bunker_WhiteBoard_Wall_B-DeployableName\", \"Wall Mounted White Board\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_Bunker_Whiteboard_wall.SM_Bunker_Whiteboard_wall",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "SnapToSurfaceNormal": false,
+            "MaxSurfaceSnapAngle": 90,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "DeployCollisionExtentOffset": {
+                "Y": -40,
+                "Z": -40
+            }
+        },
+        {
             "Name": "Portable_Tank_Biofuel",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Batteries/BP_Portable_Tank_Biofuel.BP_Portable_Tank_Biofuel_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_WaterBarrel/SM_DEP_Portable_Tank_Fuel.SM_DEP_Portable_Tank_Fuel",
@@ -8549,9 +8592,10 @@
             "Name": "Teddy_Bear",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Teddy_Bear.BP_Teddy_Bear_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_DEP_Teddy_Bear.SM_DEP_Teddy_Bear",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_TEDDY.SFX_DEPLOY_TEDDY",
             "MaxSurfaceSnapAngle": 180,
-            "bCanAffectNavigation": false
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
         },
         {
             "Name": "Toilet",
@@ -8569,6 +8613,15 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Extinguisher_WallMount",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Bunker_ExtinguisherMount.BP_Bunker_ExtinguisherMount_C",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Extinguisher_WallMount-DeployableName\", \"Extinguisher Wall Mount\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_ExtinguisherMount.SM_DEP_ExtinguisherMount",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement"
         },
         {
             "Name": "Stationeers_Bobblehead_Orange",
@@ -8589,6 +8642,45 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Workshop_Animal_Large",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Creatures/BP_Workshop_Animal_LRG.BP_Workshop_Animal_LRG_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_AnimalCrate_Cryo/SM_DEP_AnimalCrate_Cryo_LRG.SM_DEP_AnimalCrate_Cryo_LRG",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "AudioOcclusionAmount": 0.5,
+            "SupportsCustomRotation": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Laika"
+                }
+            }
+        },
+        {
+            "Name": "Ashlands_Blocker",
+            "DeployableBlueprint": "/Game/BP/Quests/Prometheus/D/Story/BP_Ashlands_Blocker_Deployable.BP_Ashlands_Blocker_Deployable_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fortification_Wood_Wall.ITEM_Fortification_Wood_Wall",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Ashlands_Blocker-DeployableName\", \"Wall\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Fortification_Wood_Wall.SM_DEP_Fortification_Wood_Wall",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "UseSnapSocketScale": true,
+            "MaxRestackingAmount": 10,
+            "DeployCollisionExtentOffset": {
+                "Y": -75,
+                "Z": -150
+            },
+            "DeployCollisionLocationOffset": {
+                "Z": 50
+            }
+        },
+        {
+            "Name": "Windmill",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Wind/BP_Windmill.BP_Windmill_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_WindTurbine.SM_DEP_WindTurbine",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
         }
     ]
 }

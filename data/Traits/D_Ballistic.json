@@ -3424,11 +3424,11 @@
             "PayloadDeploymentTimerDelay": 1,
             "TrailParticle": "/Game/ASS/VFX/ENV/IceCool/NS_DryIceMist.NS_DryIceMist",
             "BreakChance": 0,
-            "PostDeployLifetime": 0.10000000149011612,
+            "PostDeployLifetime": 10,
             "AttachOnHit": false,
             "ProjectileBounceSettings": {
                 "Bounciness": 0.20000000298023224,
-                "Friction": 0.20000000298023224,
+                "Friction": 0.5,
                 "BounceVelocityStopSimulatingThreshold": 10,
                 "MinTimeBetweenBounces": 0.30000001192092896
             },
@@ -3697,6 +3697,70 @@
                 "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_HAMMERHEAD_BALLISTIC_TRAVEL_SMALL.SFX_CRE_HAMMERHEAD_BALLISTIC_TRAVEL_SMALL",
                 "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_HAMMERHEAD_BALLISTIC_SMALL.SFX_CRE_HAMMERHEAD_BALLISTIC_SMALL"
             }
+        },
+        {
+            "Name": "Rock_Golem_Grenade",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "DamageVariationPercentage": 10,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "Weight": 0.7699999809265137,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Rock_Golem_Grenade.BP_Payload_Rock_Golem_Grenade_C",
+            "PayloadDeploymentTimerDelay": 0,
+            "BreakChance": 0,
+            "PostDeployLifetime": 0.10000000149011612,
+            "AttachOnHit": false,
+            "ProjectileBounceSettings": {
+                "bBounceAngleAffectsFriction": false,
+                "Bounciness": 0.20000000298023224,
+                "Friction": 0.20000000298023224,
+                "BounceVelocityStopSimulatingThreshold": 40,
+                "MinTimeBetweenBounces": 0.30000001192092896
+            },
+            "RotationFollowsVelocity": false,
+            "VelocityRotationOffset": {
+                "Roll": 5
+            },
+            "AngularRotation": {
+                "Pitch": 90,
+                "Roll": 45
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_GRN_FLY.SFX_BALLISTIC_GRN_FLY",
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Grenades/SFX_BALLISTIC_GRENADE_IMPACT.SFX_BALLISTIC_GRENADE_IMPACT"
+            }
+        },
+        {
+            "Name": "Rock_Golem_Grenade_Caltrops",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "DamageVariationPercentage": 10,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "Weight": 0.7699999809265137,
+            "PayloadDeploymentTimerDelay": 0,
+            "BreakChance": 0,
+            "PostDeployLifetime": 3600,
+            "AttachOnHit": false,
+            "ProjectileBounceSettings": {
+                "bBounceAngleAffectsFriction": false,
+                "Bounciness": 0,
+                "Friction": 1,
+                "BounceVelocityStopSimulatingThreshold": 100,
+                "MinTimeBetweenBounces": 0.30000001192092896
+            },
+            "RotationFollowsVelocity": false,
+            "VelocityRotationOffset": {
+                "Roll": 5
+            },
+            "AngularRotation": {
+                "Pitch": 90,
+                "Roll": 45
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_GRN_FLY.SFX_BALLISTIC_GRN_FLY",
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Grenades/SFX_BALLISTIC_GRENADE_IMPACT.SFX_BALLISTIC_GRENADE_IMPACT"
+            },
+            "bUseActorPooling": true
         }
     ]
 }

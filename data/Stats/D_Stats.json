@@ -14,7 +14,8 @@
             "RowName": "None",
             "DataTableName": "D_StatCategories"
         },
-        "bHideStatInUserInterface": false
+        "bHideStatInUserInterface": false,
+        "bShowStatOnModifiers": false
     },
     "GenerateEnum": true,
     "Rows": [
@@ -36,7 +37,8 @@
             "StatCategory": {
                 "RowName": "Health"
             },
-            "bHideStatInUserInterface": true
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
         },
         {
             "Name": "BaseMaximumHealth_+%",
@@ -15351,6 +15353,86 @@
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGrasslandsHealthRegen_+%-NegativeDescription\", \"-{0}% Health Regeneration in the Grasslands\")",
             "StatCategory": {
                 "RowName": "Health"
+            }
+        },
+        {
+            "Name": "BaseCaveExposureResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaveExposureResistance_+%-PositiveDescription\", \"+{0}% Cave Exposure Resistance\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaveExposureResistance_+%-NegativeDescription\", \"-{0}% Cave Exposure Resistance\")",
+            "StatCategory": {
+                "RowName": "Exposure"
+            }
+        },
+        {
+            "Name": "BaseConiferExposureResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferExposureResistance_+%-PositiveDescription\", \"+{0}% Conifer Exposure Resistance\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferExposureResistance_+%-NegativeDescription\", \"-{0}% Conifer Exposure Resistance\")",
+            "StatCategory": {
+                "RowName": "Exposure"
+            }
+        },
+        {
+            "Name": "BaseGrasslandsExposureResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGrasslandsExposureResistance_+%-PositiveDescription\", \"+{0}% Grasslands Exposure Resistance\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGrasslandsExposureResistance_+%-NegativeDescription\", \"-{0}% Grasslands Exposure Resistance\")",
+            "StatCategory": {
+                "RowName": "Exposure"
+            }
+        },
+        {
+            "Name": "BaseCaveStaminaRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaveStaminaRegen_+%-PositiveDescription\", \"+{0}% Cave Stamina Regeneration\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCaveStaminaRegen_+%-NegativeDescription\", \"-{0}% Cave Stamina Regeneration\")",
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "BaseArcticStaminaRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticStaminaRegen_+%-PositiveDescription\", \"+{0}% Arctic Stamina Regeneration\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticStaminaRegen_+%-NegativeDescription\", \"-{0}% Arctic Stamina Regeneration\")",
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "BaseConiferStaminaRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferStaminaRegen_+%-PositiveDescription\", \"+{0}% Conifer Stamina Regeneration\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferStaminaRegen_+%-NegativeDescription\", \"-{0}% Conifer Stamina Regeneration\")",
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "BaseDesertStaminaRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertStaminaRegen_+%-PositiveDescription\", \"+{0}% Desert Stamina Regeneration\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertStaminaRegen_+%-NegativeDescription\", \"-{0}% Desert Stamina Regeneration\")",
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "BaseSwampStaminaRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampStaminaRegen_+%-PositiveDescription\", \"+{0}% Swamp Stamina Regeneration\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampStaminaRegen_+%-NegativeDescription\", \"-{0}% Swamp Stamina Regeneration\")",
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "BaseVolcanicStaminaRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicStaminaRegen_+%-PositiveDescription\", \"+{0}% Volcanic Stamina Regeneration\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicStaminaRegen_+%-NegativeDescription\", \"-{0}% Volcanic Stamina Regeneration\")",
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "BaseGrasslandsStaminaRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGrasslandsStaminaRegen_+%-PositiveDescription\", \"+{0}% Grasslands Stamina Regeneration\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGrasslandsStaminaRegen_+%-NegativeDescription\", \"-{0}% Grasslands Stamina Regeneration\")",
+            "StatCategory": {
+                "RowName": "Stamina"
             }
         }
     ]

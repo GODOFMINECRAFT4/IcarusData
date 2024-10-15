@@ -5123,18 +5123,22 @@
                     },
                     {
                         "TagName": "FactionMission.Item"
+                    },
+                    {
+                        "TagName": "Item.Resource.Miasmic.Crust"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     1,
-                    3,
+                    4,
                     0,
                     1,
-                    2
+                    2,
+                    3
                 ],
-                "AutoDescription": " ANY( Item.Quest, FieldGuide.BlackList, FactionMission.Item )"
+                "AutoDescription": " ANY( Item.Quest, FieldGuide.BlackList, FactionMission.Item, Item.Resource.Miasmic.Crust )"
             }
         },
         {
@@ -6687,6 +6691,70 @@
                     0
                 ],
                 "AutoDescription": " ANY( Item.Deployable.ResourceStorage.Energy )"
+            }
+        },
+        {
+            "Name": "Any_FocusableArmour",
+            "Query": {
+                "QueryTokenStream": [
+                    0,
+                    0
+                ],
+                "AutoDescription": "undefined"
+            }
+        },
+        {
+            "Name": "Any_PyriticCrust",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Miasmic.Crust"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Resource.Miasmic.Crust )"
+            }
+        },
+        {
+            "Name": "Any_Exotic_Or_Meta_Item",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Meta"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Meta )"
+            }
+        },
+        {
+            "Name": "Any_Living_Weapon",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Meta"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Meta )"
             }
         }
     ]

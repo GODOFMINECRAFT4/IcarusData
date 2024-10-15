@@ -9164,6 +9164,61 @@
                     "TriggerTime": 400
                 }
             ]
+        },
+        {
+            "Name": "Dev_EmptyEvent",
+            "DurationSeconds": 340,
+            "DurationMinutes": 6,
+            "BiomeGroups": [],
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Dev_EmptyEvent-WeatherName\", \"Clear Skies\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "ClearSky",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 90
+                },
+                {
+                    "Action": {
+                        "RowName": "ClearSky",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 180
+                },
+                {
+                    "Action": {
+                        "RowName": "ClearSky",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 60
+                },
+                {
+                    "Action": {
+                        "RowName": "ClearSky",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 10
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 340
+                }
+            ]
         }
     ]
 }

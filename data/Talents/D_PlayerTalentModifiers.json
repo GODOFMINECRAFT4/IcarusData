@@ -1,0 +1,19 @@
+{
+    "RowStruct": "/Script/Icarus.PlayerTalentModifier",
+    "Defaults": {
+        "TalentPointModifier": 0,
+        "RequiredFlags": []
+    },
+    "Rows": [
+        {
+            "Name": "NullsectorStoryTalents",
+            "TalentPointModifier": 3,
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_Nullsector_Story"
+                }
+            ]
+        }
+    ]
+}

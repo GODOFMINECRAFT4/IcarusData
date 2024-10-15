@@ -68,7 +68,7 @@
             "SlotTemplate": {
                 "RowName": "General_Inventory_Slot"
             },
-            "StartingSlots": 9,
+            "StartingSlots": 10,
             "SlotOverrides": [
                 {
                     "Query": {
@@ -132,6 +132,13 @@
                         "DataTableName": "D_TagQueries"
                     },
                     "Location": 8
+                },
+                {
+                    "Query": {
+                        "RowName": "Any_FocusableArmour",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 9
                 }
             ]
         },
@@ -1860,6 +1867,13 @@
                     "Location": 5
                 }
             ]
+        },
+        {
+            "Name": "Bunker_ExtinguisherWallMount",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 1
         }
     ]
 }

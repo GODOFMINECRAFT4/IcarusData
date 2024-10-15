@@ -330,7 +330,7 @@
             "ThreatConfig": {
                 "RowName": "Default"
             },
-            "FootstepMaxDistance": 7000,
+            "FootstepMaxDistance": 8000,
             "FoliageCheckMaxDistance": 7000
         },
         {
@@ -693,7 +693,7 @@
             "ThreatConfig": {
                 "RowName": "Default"
             },
-            "FootstepMaxDistance": 8000,
+            "FootstepMaxDistance": 12000,
             "FoliageCheckMaxDistance": 8000
         },
         {
@@ -1254,7 +1254,7 @@
             },
             "CombatMusicConditionOverride": "InCombat_EpicBoss",
             "MusicConditionOverrideMinThreatLevel": 20,
-            "FootstepMaxDistance": 8000,
+            "FootstepMaxDistance": 10000,
             "FoliageCheckMaxDistance": 8000
         },
         {
@@ -5002,6 +5002,90 @@
             "ThreatConfig": {
                 "RowName": "Default"
             }
+        },
+        {
+            "Name": "IceMammoth",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Mammoth/SFX_CRE_FOOTSTEPS_ICE_MAMMOTH.SFX_CRE_FOOTSTEPS_ICE_MAMMOTH",
+            "FrontFootSocket": "RigLFLeg1",
+            "RearFootSocket": "RigLBLeg1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_LARGE.SFX_CRE_DEATHFALL_WATER_LARGE",
+            "VocalisationSocket": "RigJaw2",
+            "FlinchVocalisation": {
+                "RowName": "IceMammothFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "IceMammothDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "Mammoth_Idle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Fleeing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "Mammoth_Flee",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Relaxing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "Mammoth_Relax",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "MammothSpot",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "MammothAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Boss"
+            },
+            "CombatMusicConditionOverride": "InCombat_EpicBoss",
+            "MusicConditionOverrideMinThreatLevel": 20,
+            "FootstepMaxDistance": 30000,
+            "FoliageCheckMaxDistance": 8000
         }
     ]
 }

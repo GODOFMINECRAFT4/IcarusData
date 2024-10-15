@@ -9327,7 +9327,7 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_OxygenBuff.Icon_OxygenBuff'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"ExoticDebuff_T1_Oxygen-ModifierName\", \"Exotic Respiratory Disturbance\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"ExoticDebuff_T1_Oxygen-ModifierDescription\", \"The Exotic Affliction has caused you to consume more food. Can escalate to a concussion, bacteria or poison.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"ExoticDebuff_T1_Oxygen-ModifierDescription\", \"The Exotic Affliction has caused you to consume more oxygen. Can escalate to a concussion, bacteria or poison.\")",
             "GrantedStats": {
                 "(Value=\"BaseOxygenConsumption_+%\")": 50
             },
@@ -11114,6 +11114,7 @@
         {
             "Name": "Dry_Atmosphere",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HeatRES.Icon_HeatRES'",
+            "Type": "Biome",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dry_Atmosphere-ModifierName\", \"Extremely Arid\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dry_Atmosphere-ModifierDescription\", \"The extreme aridity of the atmosphere results in massively increased water consumption due to a lack of moisture. Deep Freeze will not produce Ice. Temperature will fluctuate throughout the day.\")",
             "GrantedStats": {
@@ -11573,17 +11574,57 @@
             "SaveToDatabase": false
         },
         {
-            "Name": "Cold_Atmosphere",
+            "Name": "Very_Cold_Atmosphere",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ColdRES.Icon_ColdRES'",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cold_Atmosphere-ModifierName\", \"Intensely Frigid\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cold_Atmosphere-ModifierDescription\", \"The extreme chill of the atmosphere results in reduced food spoil time and slower movement.\")",
+            "Type": "Biome",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Very_Cold_Atmosphere-ModifierName\", \"Intensely Frigid\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Very_Cold_Atmosphere-ModifierDescription\", \"The extreme chill of the atmosphere results in reduced food spoil time and slower movement.\")",
             "GrantedStats": {
                 "(Value=\"BaseInventorySpoilRate_+%\")": -50,
-                "(Value=\"BaseMovementSpeed_+%\")": -20
+                "(Value=\"BaseMovementSpeed_+%\")": -20,
+                "(Value=\"BaseFoodConsumption_+%\")": 50
             },
             "MergeType": "Stack",
             "bEffectsObjects": true,
             "SaveToDatabase": false
+        },
+        {
+            "Name": "Cold_Atmosphere",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MountTameIcons/ICON_TemperatureCold.ICON_TemperatureCold'",
+            "Type": "Biome",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cold_Atmosphere-ModifierName\", \"Extreme Chill\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cold_Atmosphere-ModifierDescription\", \"The extreme chill of the atmosphere results in reduced food spoil time.\")",
+            "GrantedStats": {
+                "(Value=\"BaseInventorySpoilRate_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": 50
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Quest_Creature_Health",
+            "ModifierName": "INVTEXT(\"[DNT] Scaled Health\")",
+            "ModifierDescription": "INVTEXT(\"[DNT] Additional +% max health scaling based on prospect difficulty\")",
+            "VisibleToPlayer": false,
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": 100
+            },
+            "MergeType": "Stack",
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Filtered_Trough_Water",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Water_Purified.T_ICON_Water_Purified'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Filtered_Trough_Water-ModifierName\", \"Filtered Trough Water\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Filtered_Trough_Water-ModifierDescription\", \"Water that has undergone a filtration process.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": -15,
+                "(Value=\"BaseFoodConsumption_+%\")": -15,
+                "(Value=\"BaseStaminaRegen_+%\")": 100
+            },
+            "MergeType": "Stack",
+            "bEffectsPlayers": false
         }
     ]
 }

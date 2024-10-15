@@ -5919,7 +5919,8 @@
         {
             "Name": "Common_Explore_End",
             "Class": "/Game/BP/Quests/Common/BPQ_Common_Launch.BPQ_Common_Launch_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Explore_End-Description\", \"Interact and Launch your Dropship to Complete the Mission\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Explore_End-Description\", \"Interact and Launch your Dropship to Complete the Mission\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Common_Explore_End-InfoText\", \"Press J to open the Field Guide for more world and items information.\")"
         },
         {
             "Name": "STYX_D_Research2",
@@ -8020,6 +8021,7 @@
             "Name": "PRO_Story0_Craft",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0_Craft.BPQ_PRO_Story0_Craft_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a C0NT4CT Device (Crafting Bench) to engage with SMPL3 Missions and Operations\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-InfoText\", \"Press J to open the Field Guide for more world and items information.\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "OpenWorldIntroSRR",
@@ -8829,6 +8831,9 @@
             "Name": "PRO_Ashlands_Story",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story.BPQ_PRO_Ashlands_Story_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Story-Description\", \"UNKNOWN VENTURE: Ashlands\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Blocker"
+            },
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "AshlandsIntro",
@@ -8864,7 +8869,10 @@
         {
             "Name": "PRO_Ashlands_Enter_Locate",
             "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Enter_Locate.BPQ_PRO_Ashlands_Story_Enter_Locate_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Enter_Locate-Description\", \"Find an Entrance to the Null Sector\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Enter_Locate-Description\", \"Find an Entrance to the Null Sector\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Blocker"
+            }
         },
         {
             "Name": "PRO_Ashlands_Enter_Blocker",
@@ -8921,12 +8929,6 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Outpost_Collect-Description\", \"Search the Outpost for Evidence of the Science Team\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_Outpost"
-            },
-            "DialogueEvents": {
-                "QuestEnd": {
-                    "RowName": "AshlandsEnding",
-                    "DataTableName": "D_Dialogue"
-                }
             }
         },
         {
@@ -8935,12 +8937,6 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Beacon_Icesheets-Description\", \"Place the final beacon around the entrance to the Icesheet\")",
             "LocationQuery": {
                 "RowName": "PRO_Ashlands_IcesheetTransition"
-            },
-            "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "AshlandsEnding",
-                    "DataTableName": "D_Dialogue"
-                }
             }
         },
         {
@@ -8982,7 +8978,10 @@
         {
             "Name": "PRO_Icesheet_Enter_Locate",
             "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Enter_Locate.BPQ_PRO_Icesheet_Story_Enter_Locate_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Enter_Locate-Description\", \"Find an Entrance to the Icesheet in the Ashlands\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Enter_Locate-Description\", \"Find an Entrance to the Icesheet in the Ashlands\")",
+            "LocationQuery": {
+                "RowName": "PRO_Icesheet_Blocker"
+            }
         },
         {
             "Name": "PRO_Icesheet_Enter_Blocker",
@@ -9003,7 +9002,7 @@
             "Class": "/Game/BP/Quests/Prometheus/E/Story/BPQ_PRO_Icesheet_Story_Beacon.BPQ_PRO_Icesheet_Story_Beacon_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Icesheet_Beacon-Description\", \"Place Trail Beacon at Entrance to the Icesheet\")",
             "LocationQuery": {
-                "RowName": "PRO_Icesheet_Entrance"
+                "RowName": "PRO_Icesheet_Blocker"
             },
             "DialogueEvents": {
                 "QuestStart": {
@@ -9471,7 +9470,7 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Research_AerosolWildlife-Description\", \"Eradicate Mutated Wildlife\")",
             "DialogueEvents": {
                 "QuestStart": {
-                    "RowName": "Research2aPoisoned",
+                    "RowName": "ExterminationCorpse1",
                     "DataTableName": "D_Dialogue"
                 },
                 "QuestEnd": {
@@ -9595,7 +9594,7 @@
         {
             "Name": "PRO_E_Research_Collect_0",
             "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research_Collect_Stone.BPQ_PRO_E_Research_Collect_Stone_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_Collect_0-Description\", \"Provide station {0} {1} for analysis.\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_Collect_0-Description\", \"Provide pylon {0} {1} for analysis.\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "None",
@@ -9606,12 +9605,12 @@
         {
             "Name": "PRO_E_Research_Collect_1",
             "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research_Collect_Gold.BPQ_PRO_E_Research_Collect_Gold_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_Collect_1-Description\", \"Provide station {0} {1} for analysis.\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_Collect_1-Description\", \"Provide pylon {0} {1} for analysis.\")"
         },
         {
             "Name": "PRO_E_Research_Collect_2",
             "Class": "/Game/BP/Quests/Prometheus/E/Research/BPQ_PRO_E_Research_Collect_Sulfur.BPQ_PRO_E_Research_Collect_Sulfur_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_Collect_2-Description\", \"Provide station {0} {1} for analysis.\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_E_Research_Collect_2-Description\", \"Provide pylon {0} {1} for analysis.\")"
         },
         {
             "Name": "PRO_D_Recovery",
@@ -9635,8 +9634,8 @@
         {
             "Name": "PRO_D_Recovery_Prepare_Craft",
             "Class": "/Game/BP/Quests/Prometheus/D/Recovery/BPQ_PRO_D_Recovery_Prepare_Craft.BPQ_PRO_D_Recovery_Prepare_Craft_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Craft-Description\", \"Craft a H.E.A.L. Device\")",
-            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Craft-InfoText\", \"The H.E.A.L Device is Crafted at the Fabricator\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Craft-Description\", \"Unlock, Craft and pick up a H.E.A.L. Device\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_D_Recovery_Prepare_Craft-InfoText\", \"The H.E.A.L Device is Unlocked on the T3 Tech Tree and Crafted at the Fabricator\")"
         },
         {
             "Name": "PRO_D_Recovery_Prepare_Optional",
@@ -9885,6 +9884,155 @@
             "Name": "Common_Travel_Medium",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel_Medium.BPQ_Travel_Medium_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Travel_Medium-Description\", \"Travel to the map location (M)\")"
+        },
+        {
+            "Name": "PRO_Nullsector_Story",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story2/BPQ_PRO_Nullsector_Story.BPQ_PRO_Nullsector_Story_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story-Description\", \"NULLSECTOR: Finality\")",
+            "LocationQuery": {
+                "RowName": "PRO_NUL_CAVE"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "NULSEC_FINAL_SMPL3_INTRO",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Travel",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Travel-Description\", \"Check out the Nearby Cave near the Icesheet Outpost\")"
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Blocker",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story2/BPQ_PRO_Nullsector_Story_Blocker.BPQ_PRO_Nullsector_Story_Blocker_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Blocker-Description\", \"Find a way to get through the Cave In\")"
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Blocker_Equipment",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story2/BPQ_PRO_Nullsector_Story_Blocker_Equipment.BPQ_PRO_Nullsector_Story_Blocker_Equipment_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Blocker_Equipment-Description\", \"Search the Surrounding Area for Explosives\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Blocker_Equipment-InfoText\", \"Check the Outpost and Area under the Cave for Supplies.\")"
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Blocker_Deploy",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story2/BPQ_PRO_Nullsector_Story_Blocker_Deploy.BPQ_PRO_Nullsector_Story_Blocker_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Blocker_Deploy-Description\", \"Place the Explosive on the Cave In\")"
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Blocker_Run",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story2/BPQ_PRO_Nullsector_Story_Blocker_Run.BPQ_PRO_Nullsector_Story_Blocker_Run_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Blocker_Run-Description\", \"Step Away to Trigger the Explosive\")"
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Explore",
+            "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Explore-Description\", \"Head into the Cave\")",
+            "LocationQuery": {
+                "RowName": "PRO_NUL_CAVE_ENTRANCE"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "NULSEC_FINAL_NPC_01",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Cave",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story2/BPQ_PRO_Nullsector_Story_Cave.BPQ_PRO_Nullsector_Story_Cave_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Cave-Description\", \"Head Deeper Inside...\")",
+            "LocationQuery": {
+                "RowName": "PRO_NUL_CAVE_EVENT_RUNNING"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "NULSEC_FINAL_NPC_02",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Follow",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story2/BPQ_PRO_Nullsector_Story_Follow.BPQ_PRO_Nullsector_Story_Follow_C",
+            "Variation": 3,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Follow-Description\", \"Follow the Voice...\")",
+            "LocationQuery": {
+                "RowName": "PRO_NUL_CAVE_CHAMBER"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "NULSEC_FINAL_NPC_04",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Camp",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story2/BPQ_PRO_Nullsector_Story_Final.BPQ_PRO_Nullsector_Story_Final_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Camp-Description\", \"Head into the Cavern...\")",
+            "LocationQuery": {
+                "RowName": "PRO_NUL_CAVE_CAMP"
+            }
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Listen",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story2/BPQ_PRO_Nullsector_Story_Listen.BPQ_PRO_Nullsector_Story_Listen_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Listen-Description\", \"Listen...\")",
+            "LocationQuery": {
+                "RowName": "PRO_NUL_CAVE_CAMP"
+            },
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "NULSEC_FINAL_NPC_05",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Nullsector_Story_Exotics",
+            "Class": "/Game/BP/Quests/Prometheus/E/Story2/BPQ_PRO_Nullsector_Story_Exotics.BPQ_PRO_Nullsector_Story_Exotics_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Nullsector_Story_Exotics-Description\", \"Examine the Exotic Formation\")",
+            "LocationQuery": {
+                "RowName": "PRO_NUL_CAVE_EXOTICS"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "NULSEC_FINAL_SMPL3_OUTRO",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Ashlands_Blocker",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Blocker.BPQ_PRO_Ashlands_Story_Blocker_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Blocker-Description\", \"Reach the entry to the Ashlands\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Blocker"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "StyxCExpeditionFindCave",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Ashlands_Blocker_Travel",
+            "Class": "/Game/BP/Quests/Prometheus/D/Story/BPQ_PRO_Ashlands_Story_Blocker_Travel.BPQ_PRO_Ashlands_Story_Blocker_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Ashlands_Blocker_Travel-Description\", \"Destroy the barricade wall and reach the Ashlands\")",
+            "LocationQuery": {
+                "RowName": "PRO_Ashlands_Entrances"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "AshlandsWarning",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
         }
     ]
 }

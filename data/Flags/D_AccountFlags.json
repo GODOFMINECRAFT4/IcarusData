@@ -1,6 +1,10 @@
 {
     "RowStruct": "/Script/Icarus.AccountFlag",
-    "Defaults": {},
+    "Defaults": {
+        "Mission_Description": "",
+        "Blueprint_Description": "",
+        "Talent_Description": ""
+    },
     "GenerateEnum": true,
     "Rows": [
         {
@@ -45,6 +49,25 @@
         },
         {
             "Name": "Has_Seen_NewGame_Prompt",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "GrantedTalent_Nullsector_Story",
+            "Mission_Description": "NSLOCTEXT(\"D_AccountFlags\", \"GrantedTalent_Nullsector_Story-Mission_Description\", \"One Time 3 Character Talent Points (Account Wide)\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "GrantedBlueprint_Medical_Device",
+            "Mission_Description": "NSLOCTEXT(\"D_AccountFlags\", \"GrantedBlueprint_Medical_Device-Mission_Description\", \"Unlockable H.E.A.L. Device Blueprint (Account Wide)\")",
+            "Blueprint_Description": "NSLOCTEXT(\"D_AccountFlags\", \"GrantedBlueprint_Medical_Device-Blueprint_Description\", \"Complete CRISIS: Ashlands to Unlock\")",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"

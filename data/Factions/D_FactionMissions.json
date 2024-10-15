@@ -15,6 +15,7 @@
         "bUseOpenWorldRetryTimeout": true,
         "AdditionalRulesets": [],
         "ItemsRewarded": [],
+        "AccountFlagsRewarded": [],
         "CharacterFlagsRewarded": [],
         "TalentsRewarded": [],
         "CurrencyRewarded": [],
@@ -5369,6 +5370,12 @@
             "InitialQuest": {
                 "RowName": "PRO_D_Recovery"
             },
+            "AccountFlagsRewarded": [
+                {
+                    "RowName": "GrantedBlueprint_Medical_Device",
+                    "DataTableName": "D_AccountFlags"
+                }
+            ],
             "TalentsRewarded": [
                 {
                     "RowName": "Prospect_Pro_D_Recovery",
@@ -5392,7 +5399,12 @@
                 }
             ],
             "AccountExperience": 50,
-            "FactionExperience": 10
+            "FactionExperience": 10,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "PRO_D_Resupply",
@@ -5456,7 +5468,12 @@
                 }
             ],
             "AccountExperience": 50,
-            "FactionExperience": 10
+            "FactionExperience": 10,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         },
         {
             "Name": "PRO_D_Rescue",
@@ -5506,7 +5523,66 @@
                 }
             ],
             "AccountExperience": 50,
-            "FactionExperience": 10
+            "FactionExperience": 10,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "PRO_Nullsector_Story",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Cave_Lantern01_Small.T_Prospect_Cave_Lantern01_Small",
+            "MissionObjectives": [
+                {
+                    "QuestRow": {
+                        "RowName": "PRO_Nullsector_Story_Travel",
+                        "DataTableName": "D_Quests"
+                    },
+                    "Depth": 0
+                }
+            ],
+            "Faction": {
+                "RowName": "Norex"
+            },
+            "InitialQuest": {
+                "RowName": "PRO_Nullsector_Story"
+            },
+            "AccountFlagsRewarded": [
+                {
+                    "RowName": "GrantedTalent_Nullsector_Story",
+                    "DataTableName": "D_AccountFlags"
+                }
+            ],
+            "TalentsRewarded": [
+                {
+                    "RowName": "Prospect_Pro_Nullsector_Story",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "CurrencyRewarded": [
+                {
+                    "Meta": {
+                        "RowName": "Credits",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 200
+                },
+                {
+                    "Meta": {
+                        "RowName": "Exotic_Red",
+                        "DataTableName": "D_MetaCurrency"
+                    },
+                    "Amount": 200
+                }
+            ],
+            "AccountExperience": 50,
+            "FactionExperience": 10,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
         }
     ]
 }
