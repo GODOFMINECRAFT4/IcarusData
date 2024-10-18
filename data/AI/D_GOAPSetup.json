@@ -4338,6 +4338,15 @@
             "DefaultGoal": {
                 "RowName": "Wander"
             }
+        },
+        {
+            "Name": "Cow",
+            "DefaultGoal": {
+                "RowName": "Wander"
+            },
+            "DynamicSubtreeOverrides": {
+                "(TagName=\"BT.Mount.IdleBehaviour\")": "BehaviorTree'/Game/BP/AI/Basic/Mounts/BT_Tame_CowIdle.BT_Tame_CowIdle'"
+            }
         }
     ]
 }

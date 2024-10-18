@@ -15434,6 +15434,139 @@
             "StatCategory": {
                 "RowName": "Stamina"
             }
+        },
+        {
+            "Name": "CreatureIsMale_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CreatureIsMale_?-Title\", \"Creature Is Male\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CreatureIsFemale_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CreatureIsFemale_?-Title\", \"Creature Is Female\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "CowTimeBetweenMilk_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CowTimeBetweenMilk_+-Title\", \"Time Between Milking\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"CowTimeBetweenMilk_+-PositiveTitleFormat\", \"+{0}s\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"CowTimeBetweenMilk_+-NegativeTitleFormat\", \"-{0}s\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCowTimeBetweenMilk_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowTimeBetweenMilk_+-PositiveDescription\", \"{0}s Time Between Producing Milk\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowTimeBetweenMilk_+-NegativeDescription\", \"-{0}s Time Between Producing Milk\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCowTimeBetweenMilk_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowTimeBetweenMilk_+%-PositiveDescription\", \"{0}% Time Between Producing Milk\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowTimeBetweenMilk_+%-NegativeDescription\", \"-{0}% Time Between Producing Milk\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCowResourcesConsumedPerMilk_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowResourcesConsumedPerMilk_+%-PositiveDescription\", \"{0}% More Resources Consumed Per Producing Milk\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowResourcesConsumedPerMilk_+%-NegativeDescription\", \"{0}% Less Resources Consumed Per Producing Milk\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CowWaterConsumedPerMilk_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CowWaterConsumedPerMilk_+-Title\", \"Water Consumed Per Producing Milk\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCowWaterConsumedPerMilk_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowWaterConsumedPerMilk_+-PositiveDescription\", \"{0} Water Consumed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowWaterConsumedPerMilk_+-NegativeDescription\", \"-{0} Water Consumed\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CowFoodConsumedPerMilk_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CowFoodConsumedPerMilk_+-Title\", \"Food Consumed Per Producing Milk\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCowFoodConsumedPerMilk_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowFoodConsumedPerMilk_+-PositiveDescription\", \"{0} Food Consumed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowFoodConsumedPerMilk_+-NegativeDescription\", \"-{0} Food Consumed\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CowMilkProduced_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CowMilkProduced_+%-Title\", \"Milk Produced\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCowMilkProduced_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowMilkProduced_+%-PositiveDescription\", \"{0}% Milk Produced\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowMilkProduced_+%-NegativeDescription\", \"-{0}% Milk Produced\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CowMilkProduced_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CowMilkProduced_+-Title\", \"Milk Produced\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"CowMilkProduced_+-PositiveTitleFormat\", \"+{0}mL\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"CowMilkProduced_+-NegativeTitleFormat\", \"-{0}mL\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCowMilkProduced_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowMilkProduced_+-PositiveDescription\", \"{0}mL Milk Produced\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCowMilkProduced_+-NegativeDescription\", \"-{0}mL Milk Produced\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "ReadyToMilk_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ReadyToMilk_?-Title\", \"Ready To Milk\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"ReadyToMilk_?-PositiveDescription\", \"Ready To Milk\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"ReadyToMilk_?-NegativeDescription\", \"Not Ready To Milk\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
         }
     ]
 }

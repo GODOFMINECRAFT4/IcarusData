@@ -17,6 +17,7 @@
             "None"
         ],
         "SupportedGrazingStates": [],
+        "SupportedHusbandryStates": [],
         "Animations": {},
         "InventoryPreviewCameraSettings": {
             "RowName": "Mount",
@@ -1287,6 +1288,105 @@
                 "X": -17,
                 "Y": 26
             }
+        },
+        {
+            "Name": "Cow",
+            "AISetup": {
+                "RowName": "Cow"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Stand_Idle_Montage.Buffalo_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Rest_Montage.Buffalo_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Eating_Montage.Buffalo_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Jump_Montage.Buffalo_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Attack_Montage.Buffalo_Attack_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-0\", \"Dolly\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-1\", \"Bessie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-2\", \"Muffin\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-3\", \"Milky\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-4\", \"Clarabelle\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-5\", \"Buttercup\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-6\", \"Moo\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-7\", \"Pearl\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-8\", \"Clover\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Cow-DefaultNames-9\", \"Penny\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Cat"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
+        },
+        {
+            "Name": "Bull",
+            "AISetup": {
+                "RowName": "Bull"
+            },
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "SupportedHusbandryStates": [
+                "Fertilize",
+                "None"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Stand_Idle_Montage.Buffalo_Stand_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Rest_Montage.Buffalo_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Eating_Montage.Buffalo_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Jump_Montage.Buffalo_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ThirdPartyAssets/AnimalsVol01/Buffalo/Meshes/Animations/Buffalo_Attack_Montage.Buffalo_Attack_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-0\", \"Beast\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-1\", \"Maddox\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-2\", \"Vader\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-3\", \"Angus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-4\", \"Spartacus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-5\", \"Ruckus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-6\", \"Bandit\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-7\", \"Havoc\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-8\", \"Duke\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Bull-DefaultNames-9\", \"Maverick\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Cat"
+            },
+            "bUseTemperature": true
         }
     ]
 }

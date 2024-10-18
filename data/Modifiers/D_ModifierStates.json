@@ -11625,6 +11625,48 @@
             },
             "MergeType": "Stack",
             "bEffectsPlayers": false
+        },
+        {
+            "Name": "Creature_Male",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Male.T_ICON_Male'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Creature_Male-ModifierName\", \"Male Creature\")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"CreatureIsMale_?\")": 1
+            },
+            "MergeType": "Stack",
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Creature_Female",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Icon_Female.T_Icon_Female'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Creature_Female-ModifierName\", \"Female Creature\")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"CreatureIsFemale_?\")": 1
+            },
+            "MergeType": "Stack",
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "ReadyToMilk",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Resource_Milk.T_ICON_Resource_Milk'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"ReadyToMilk-ModifierName\", \"Ready To Milk\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"ReadyToMilk-ModifierDescription\", \"This animal is ready to Milk.\")",
+            "GrantedStats": {
+                "(Value=\"ReadyToMilk_?\")": 1
+            },
+            "MergeType": "Stack",
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Animal_Fertilize",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ContextPlant.Icon_ContextPlant'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilize-ModifierName\", \"Fertilize\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilize-ModifierDescription\", \"This animal is attempting to fertilize other animals of the same species in range.\")",
+            "MergeType": "Stack",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         }
     ]
 }

@@ -2377,6 +2377,39 @@
                 }
             },
             "bUseClientPrediction": true
+        },
+        {
+            "Name": "Generic_MilkContainer",
+            "ActionMapping": {
+                "(RowName=\"Milk_Cow\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Secondary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                },
+                "(RowName=\"Feed_Mount\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Secondary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            }
         }
     ]
 }

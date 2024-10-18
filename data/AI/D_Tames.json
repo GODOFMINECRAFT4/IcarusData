@@ -15,6 +15,7 @@
             "RowName": "None",
             "DataTableName": "D_AISetup"
         },
+        "TamedAIOverride": {},
         "MatureCreatureType": {
             "RowName": "None",
             "DataTableName": "D_AISetup"
@@ -343,6 +344,51 @@
             },
             "bAutomaticallySpawnJuvenileWithParent": true,
             "PercentChanceToSpawnJuvenile": 50
+        },
+        {
+            "Name": "Calf",
+            "TameDurationInSeconds": 900,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Cow"
+            },
+            "TamedAIOverride": {
+                "(RowName=\"Cow\",DataTableName=\"D_AISetup\")": {
+                    "Stat": {
+                        "Value": "CreatureIsMale_?"
+                    },
+                    "Value": 1
+                },
+                "(RowName=\"Bull\",DataTableName=\"D_AISetup\")": {
+                    "Stat": {
+                        "Value": "CreatureIsFemale_?"
+                    },
+                    "Value": 1
+                }
+            },
+            "MatureCreatureType": {
+                "RowName": "Cow"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Calf"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0
         }
     ]
 }
