@@ -8053,7 +8053,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Sandworm-ModifierName\", \"Heat Resistance Inhaler\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Sandworm-ModifierDescription\", \"Increased Heat, Hyperthermia and Fire Resistance.\")",
             "GrantedStats": {
-                "(Value=\"BaseHeatResistance_%\")": 30,
+                "(Value=\"BaseHeatResistance_%\")": 20,
                 "(Value=\"BaseHyperthermiaResistance_%\")": 50,
                 "(Value=\"BaseFireDamageResistance_%\")": 30
             },
@@ -8062,25 +8062,25 @@
         },
         {
             "Name": "Meta_Biolab_Inhaler_AlphaWolf",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_AlphaWolf-ModifierName\", \"Pheromone Inhaler\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_AlphaWolf-ModifierDescription\", \"Increased stamina, tamed creature stamina and taming speed. Reduces threat.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_AlphaWolf-ModifierName\", \"Regenerative Combat Inhaler\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_AlphaWolf-ModifierDescription\", \"Increases health regeneration, reduces chance for wounds.\")",
             "GrantedStats": {
-                "(Value=\"BaseMaximumStamina_+%\")": 20,
-                "(Value=\"BaseTamedCreatureMaximumStamina_+%\")": 30,
-                "(Value=\"BaseTamingSpeed_%\")": 50,
-                "(Value=\"BaseAnimalThreatModifier_+%\")": -40
+                "(Value=\"BaseHealthRegen_+%\")": 100,
+                "(Value=\"BaseWoundResistance_%\")": 30,
+                "(Value=\"BaseDeepWoundResistance_%\")": 50
             },
             "MergeType": "Replace",
             "bEffectsNPCs": false
         },
         {
             "Name": "Meta_Biolab_Inhaler_Scorpion",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Scorpion-ModifierName\", \"Health Inhaler\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Scorpion-ModifierDescription\", \"Increased Health regeneration and resistance to wounds and deep wounds.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Scorpion-ModifierName\", \"Defensive Combat Inhaler\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Scorpion-ModifierDescription\", \"Increases health and grants damage return.\")",
             "GrantedStats": {
-                "(Value=\"BaseHealthRegen_+%\")": 200,
-                "(Value=\"BaseWoundResistance_%\")": 30,
-                "(Value=\"BaseDeepWoundResistance_%\")": 50
+                "(Value=\"BaseMaximumHealth_+%\")": 10,
+                "(Value=\"BaseDamageReturned_%\")": 40,
+                "(Value=\"BaseChanceToReturnDamage_%\")": 100,
+                "(Value=\"BaseShieldBlock_+%\")": 5
             },
             "MergeType": "Replace",
             "bEffectsNPCs": false
@@ -8090,7 +8090,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_IceMammoth-ModifierName\", \"Cold Resistance Inhaler\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_IceMammoth-ModifierDescription\", \"Increased Cold, Hypothermia and Frost Resistance.\")",
             "GrantedStats": {
-                "(Value=\"BaseColdResistance_%\")": 30,
+                "(Value=\"BaseColdResistance_%\")": 20,
                 "(Value=\"BaseHypothermiaResistance_%\")": 50,
                 "(Value=\"BaseFrostDamageResistance_%\")": 30
             },
@@ -11664,9 +11664,299 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ContextPlant.Icon_ContextPlant'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilize-ModifierName\", \"Fertilize\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilize-ModifierDescription\", \"This animal is attempting to fertilize other animals of the same species in range.\")",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Fertilize.BP_Modifier_Fertilize_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 30,
             "MergeType": "Stack",
             "bEffectsPlayers": false,
             "SaveToDatabase": false
+        },
+        {
+            "Name": "Animal_Chance_Fertilized",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/ICON_SelectionTimed.ICON_SelectionTimed'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Chance_Fertilized-ModifierName\", \"Hopeful?\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Chance_Fertilized-ModifierDescription\", \"This animal may be Pregnant, time will tell.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": 200,
+                "(Value=\"BaseFoodConsumption_+%\")": 200,
+                "(Value=\"BaseMovementSpeed_+%\")": -25
+            },
+            "bEscalates": true,
+            "Escalation": {
+                "RowName": "Animal_Fertilization"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_GestatingEsculation.BP_Modifier_GestatingEsculation_C",
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Husbandry.Fertilized"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "NPC.Husbandry.Pregnant"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( NPC.Husbandry.Pregnant )"
+            },
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Animal_Fertilized",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/FieldGuide/Icons/Icon_FishQuality.Icon_FishQuality'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilized-ModifierName\", \"Pregnant\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilized-ModifierDescription\", \"This animal is with child and will soon give birth.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": 200,
+                "(Value=\"BaseFoodConsumption_+%\")": 200,
+                "(Value=\"BaseMovementSpeed_+%\")": -25
+            },
+            "bRemovedOnEscalation": false,
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Husbandry.Fertilized"
+                    },
+                    {
+                        "TagName": "NPC.Husbandry.Pregnant"
+                    }
+                ]
+            },
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "New_Mother",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MapIcons/T_ICON_Map_Upsilon.T_ICON_Map_Upsilon'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"New_Mother-ModifierName\", \"Recently Given Birth\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"New_Mother-ModifierDescription\", \"Animal has recently had a child.\")",
+            "GrantedStats": {
+                "(Value=\"BaseCowMilkProduced_+%\")": 50
+            },
+            "MergeType": "Stack",
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Meta_Biolab_Inhaler_LavaHunter",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_LavaHunter-ModifierName\", \"Lava Survival Inhaler\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_LavaHunter-ModifierDescription\", \"Increased Fire Resist while in Lava, and Volcanic Health Regen and Exposure Resist. Reduces Water Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFireDamageResistanceWhileInLava_%\")": 90,
+                "(Value=\"BaseVolcanicHealthRegen_+%\")": 50,
+                "(Value=\"BaseVolcanicExposureResistance_+%\")": 10,
+                "(Value=\"BaseWaterConsumption_+%\")": -20
+            },
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Meta_Biolab_Inhaler_Hammerhead",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Hammerhead-ModifierName\", \"Noxious Mining Inhaler\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Hammerhead-ModifierDescription\", \"Increases mining rewards and radius. Grants a small portion of mined materials as extra Noxious Crust. \")",
+            "GrantedStats": {
+                "(Value=\"BasePyriticCrustPerMinedResource_%\")": 15,
+                "(Value=\"BaseMiningRewards_+%\")": 10,
+                "(Value=\"BaseMiningRadius_+\")": 5
+            },
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Meta_Biolab_Inhaler_RockGolem",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_RockGolem-ModifierName\", \"Cave Survival Inhaler\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_RockGolem-ModifierDescription\", \"Increased Cave Sickness Resistance, Stamina Regen and Health Regen. Grants additional stone when mining.\")",
+            "GrantedStats": {
+                "(Value=\"BasePneumoniaResistance_%\")": 50,
+                "(Value=\"BaseCaveStaminaRegen_+%\")": 30,
+                "(Value=\"BaseCaveHealthRegen_+%\")": 50,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 15
+            },
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Meta_Biolab_Inhaler_SwampApe",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_SwampApe-ModifierName\", \"Noxious Logging Inhaler\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_SwampApe-ModifierDescription\", \"Increases Felling Damage and Collision Resistance. Grants some Infected Bark when chopping wood.\")",
+            "GrantedStats": {
+                "(Value=\"BaseInfectedBarkPerWoodChopped_%\")": 15,
+                "(Value=\"BaseFellingDamage_+%\")": 20,
+                "(Value=\"BaseCollisionDamageResistance_+%\")": 30
+            },
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Meta_Biolab_Inhaler_Scyther",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Scyther-ModifierName\", \"Thrown Combat Inhaler\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Scyther-ModifierDescription\", \"Increased abilities with thrown weaponry.\")",
+            "GrantedStats": {
+                "(Value=\"BaseKnifeProjectileDamage_+%\")": 50,
+                "(Value=\"BaseSpearProjectileDamage_+%\")": 15,
+                "(Value=\"BaseKnifeProjectileSpeed_+%\")": 30,
+                "(Value=\"BaseSpearProjectileSpeed_+%\")": 15,
+                "(Value=\"BaseChargeSpeed_+%\")": 30
+            },
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Meta_Biolab_Inhaler_Thornet",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Thornet-ModifierName\", \"Noxious Skinning Inhaler\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_Thornet-ModifierDescription\", \"Grants Acidic Glands when skinning, increased Bone Yield and Poison Damage.\")",
+            "GrantedStats": {
+                "(Value=\"BaseAcidicGlandsPerSkinnedResource_%\")": 15,
+                "(Value=\"BaseBoneHarvestedFromAnimals_+%\")": 20,
+                "(Value=\"BasePoisonDamage_+\")": 30
+            },
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Meta_Biolab_Inhaler_PlantBoss",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_PlantBoss-ModifierName\", \"Melee Combat Inhaler\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_PlantBoss-ModifierDescription\", \"Increased abilities with melee weaponry.\")",
+            "GrantedStats": {
+                "(Value=\"BaseAttackSpeed_+%\")": 10,
+                "(Value=\"BaseMeleeDamage_+%\")": 30,
+                "(Value=\"BaseMeleeDamageResistance_+%\")": 10
+            },
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Meta_Biolab_Inhaler_GiantCat",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_GiantCat-ModifierName\", \"Ranged Combat Inhaler\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Meta_Biolab_Inhaler_GiantCat-ModifierDescription\", \"Increased abilities with ranged weaponry.\")",
+            "GrantedStats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 30,
+                "(Value=\"BaseProjectileAccuracy_+%\")": 50,
+                "(Value=\"BaseChanceToNotConsumeAmmo_%\")": 15
+            },
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Animal_Fertilized_Chicken",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/FieldGuide/Icons/Icon_FishQuality.Icon_FishQuality'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilized_Chicken-ModifierName\", \"Fertalized\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilized_Chicken-ModifierDescription\", \"This animal will produced fertilized eggs.\")",
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": 200,
+                "(Value=\"BaseFoodConsumption_+%\")": 200,
+                "(Value=\"BaseMovementSpeed_+%\")": -25
+            },
+            "bRemovedOnEscalation": false,
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Husbandry.Fertilized"
+                    },
+                    {
+                        "TagName": "NPC.Husbandry.Pregnant"
+                    }
+                ]
+            },
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Chocolate_Cake_Piece",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Chocolate_Cake_Piece-ModifierName\", \"Chocolate Cake Piece\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Chocolate_Cake_Piece-ModifierDescription\", \"A decadant cake, good for health and regen.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 300,
+                "(Value=\"BaseMaximumStamina_+\")": 200,
+                "(Value=\"BaseExperience_+%\")": 25,
+                "(Value=\"BaseStaminaRegen_+%\")": 200,
+                "(Value=\"BaseHealthRegen_+%\")": 200,
+                "(Value=\"BaseFoodConsumption_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Carrot_Cake_Piece",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Carrot_Cake_Piece-ModifierName\", \"Carrot Cake Piece\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Carrot_Cake_Piece-ModifierDescription\", \"A rich cake, good for ranged combat.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 100,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseExperience_+%\")": 25,
+                "(Value=\"BaseChargeSpeed_+%\")": 30,
+                "(Value=\"BaseReloadSpeed_+%\")": 30,
+                "(Value=\"BaseHealthRegen_+%\")": 50,
+                "(Value=\"BaseProjectileDamage_+%\")": 30
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Coconut_Cake_Piece",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Coconut_Cake_Piece-ModifierName\", \"Coconut Cake Piece\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Coconut_Cake_Piece-ModifierDescription\", \"A light cake good for crafting and using tools. \")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 250,
+                "(Value=\"BaseMaximumStamina_+\")": 250,
+                "(Value=\"BaseExperience_+%\")": 25,
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -40,
+                "(Value=\"BaseHealthRegen_+%\")": 50,
+                "(Value=\"BaseCraftingSpeed_+%\")": 50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Cheese",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cheese-ModifierName\", \"Cheese\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cheese-ModifierDescription\", \"Provides a Health Boost.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 100,
+                "(Value=\"BaseSharedExperience_+%\")": 10,
+                "(Value=\"BaseHealthRegen_+%\")": 50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
         }
     ]
 }

@@ -1276,6 +1276,13 @@
                         "DataTableName": "D_DynamicQuestRewardItems"
                     },
                     "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Dirt",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
                 }
             ],
             "Weighting": 10
@@ -2033,6 +2040,35 @@
                 }
             ],
             "Weighting": 90
+        },
+        {
+            "Name": "Resource_Veges_KiwiFruit",
+            "DisplayName": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resource_Veges_KiwiFruit-DisplayName\", \"Vegetables: New Species, Kiwifruit\")",
+            "Description": "NSLOCTEXT(\"D_DynamicQuestRewards\", \"Resource_Veges_KiwiFruit-Description\", \"UDA special delivery straight from Earth for introduction to the Icarus enviroment.\")",
+            "PotentialRewards": [
+                {
+                    "Item": {
+                        "RowName": "Resource_KiwiFruit",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_KiwiFruit_Seed",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                },
+                {
+                    "Item": {
+                        "RowName": "Resource_Seeds_Veg",
+                        "DataTableName": "D_DynamicQuestRewardItems"
+                    },
+                    "bScales": true
+                }
+            ],
+            "Weighting": 130
         }
     ]
 }

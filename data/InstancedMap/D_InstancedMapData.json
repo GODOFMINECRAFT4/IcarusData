@@ -16,7 +16,20 @@
             "IsValid": 0
         },
         "CaveID": -1,
-        "NumEntrances": -1
+        "NumEntrances": -1,
+        "RVTBounds": {
+            "Min": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Max": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "IsValid": 0
+        }
     },
     "Rows": [
         {
@@ -102,16 +115,46 @@
                 "Min": {
                     "X": -10000,
                     "Y": -60000,
-                    "Z": -12040
+                    "Z": -24519.482421875
                 },
                 "Max": {
                     "X": 60000,
                     "Y": 10000,
-                    "Z": 17025.517578125
+                    "Z": 29675.505859375
                 },
                 "IsValid": 1
             },
             "CaveID": 5,
+            "NumEntrances": 1,
+            "RVTBounds": {
+                "Min": {
+                    "Y": -50400,
+                    "Z": -4527.34375
+                },
+                "Max": {
+                    "X": 50400,
+                    "Z": -3807.8125
+                },
+                "IsValid": 1
+            }
+        },
+        {
+            "Name": "Arena_IceMammoth",
+            "MapAsset": "/Game/Maps/GreatHunt/Arena_IceMammoth/Arena_IceMammoth.Arena_IceMammoth",
+            "MapBounds": {
+                "Min": {
+                    "X": -100800,
+                    "Y": -100800,
+                    "Z": -56193.6640625
+                },
+                "Max": {
+                    "X": 100800,
+                    "Y": 100800,
+                    "Z": 56193.6640625
+                },
+                "IsValid": 1
+            },
+            "CaveID": 6,
             "NumEntrances": 1
         }
     ]

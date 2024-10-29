@@ -2410,6 +2410,28 @@
                     }
                 }
             }
+        },
+        {
+            "Name": "Melee_GolemGauntlet",
+            "ActionMapping": {
+                "(RowName=\"Melee_GolemGauntlet\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "Generic_Melee_1H",
+                            "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Secondary": {
+                            "RowName": "Gauntlet_Charge",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
         }
     ]
 }

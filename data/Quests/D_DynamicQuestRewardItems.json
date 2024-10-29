@@ -3428,6 +3428,15 @@
                     "MinimumStack": 1,
                     "MaximumStack": 1,
                     "Weighting": 1
+                },
+                {
+                    "Item": {
+                        "RowName": "Dirt",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "MinimumStack": 20,
+                    "MaximumStack": 40,
+                    "Weighting": 2
                 }
             ]
         },
@@ -3473,7 +3482,7 @@
                     },
                     "MinimumStack": 20,
                     "MaximumStack": 100,
-                    "Weighting": 1
+                    "Weighting": 5
                 },
                 {
                     "Item": {
@@ -3482,6 +3491,15 @@
                     },
                     "MinimumStack": 20,
                     "MaximumStack": 100,
+                    "Weighting": 5
+                },
+                {
+                    "Item": {
+                        "RowName": "Dirt",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "MinimumStack": 20,
+                    "MaximumStack": 50,
                     "Weighting": 1
                 }
             ]
@@ -4640,6 +4658,48 @@
                     },
                     "MinimumStack": 5,
                     "MaximumStack": 10,
+                    "Weighting": 1
+                }
+            ]
+        },
+        {
+            "Name": "Resource_KiwiFruit_Seed",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Kiwi_Fruit_Seed",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "MinimumStack": 5,
+                    "MaximumStack": 10,
+                    "Weighting": 1
+                }
+            ]
+        },
+        {
+            "Name": "Resource_Dirt",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Dirt",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "MinimumStack": 20,
+                    "MaximumStack": 50,
+                    "Weighting": 1
+                }
+            ]
+        },
+        {
+            "Name": "Resource_KiwiFruit",
+            "Rewards": [
+                {
+                    "Item": {
+                        "RowName": "Kiwi_Fruit",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "MinimumStack": 5,
+                    "MaximumStack": 15,
                     "Weighting": 1
                 }
             ]

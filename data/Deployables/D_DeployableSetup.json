@@ -7112,8 +7112,9 @@
         {
             "Name": "Workshop_Animal_Medium",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Creatures/BP_Workshop_Animal_MED.BP_Workshop_Animal_MED_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Cryo_Medium.T_ITEM_Animal_Cryo_Medium",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_AnimalCrate_Cryo/SM_DEP_AnimalCrate_Cryo_MED.SM_DEP_AnimalCrate_Cryo_MED",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "AudioOcclusionAmount": 0.5,
             "SupportsCustomRotation": false,
             "Metadata": {
@@ -7856,7 +7857,7 @@
         {
             "Name": "Slug_Trophy_Vial_Med",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Tank_MED.BP_Trophy_Slug_Boss_Tank_MED_C",
-            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Slug_Trophy_TANK_MED.T_ITEM_Slug_Trophy_TANK_MED",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Slug_Trophy_Vial_Med-DeployableName\", \"Medium\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Tank_MED.SM_DEP_Trophy_Slug_Boss_Tank_MED",
             "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY.SFX_DEPLOY_HAMMERHEAD_LIQUID_TROPHY"
@@ -7864,12 +7865,14 @@
         {
             "Name": "Slug_Trophy_Habitat",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Tank_LRG.BP_Trophy_Slug_Boss_Tank_LRG_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Slug_Trophy_Habitat.T_ITEM_Slug_Trophy_Habitat",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Tank_LRG.SM_DEP_Trophy_Slug_Boss_Tank_LRG",
             "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_SOLID_TROPHY.SFX_DEPLOY_HAMMERHEAD_SOLID_TROPHY"
         },
         {
             "Name": "Slug_Trophy_Coil",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Circle.BP_Trophy_Slug_Boss_Circle_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Slug_Trophy_Coil.T_ITEM_Slug_Trophy_Coil",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Circle.SM_DEP_Trophy_Slug_Boss_Circle",
             "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_SLUG_TROPHY.SFX_DEPLOY_HAMMERHEAD_SLUG_TROPHY"
         },
@@ -7980,7 +7983,7 @@
         {
             "Name": "Great_Hunt_Device",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/MissionCommunication/BP_Great_Hunt_Device.BP_Great_Hunt_Device_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_T4_Communication_Device.SM_DEP_T4_Communication_Device",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Great_Hunt_Device/SM_DEP_Great_Hunt_Device.SM_DEP_Great_Hunt_Device",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
             "DeployCollisionExtentOffset": {
                 "Z": -100
@@ -8646,8 +8649,9 @@
         {
             "Name": "Workshop_Animal_Large",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Creatures/BP_Workshop_Animal_LRG.BP_Workshop_Animal_LRG_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Animal_Cryo_LRG.T_ITEM_Animal_Cryo_LRG",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_AnimalCrate_Cryo/SM_DEP_AnimalCrate_Cryo_LRG.SM_DEP_AnimalCrate_Cryo_LRG",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "AudioOcclusionAmount": 0.5,
             "SupportsCustomRotation": false,
             "Metadata": {
@@ -8679,8 +8683,15 @@
         {
             "Name": "Windmill",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Wind/BP_Windmill.BP_Windmill_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/Windmill/SM_DEP_WindMill_Main.SM_DEP_WindMill_Main",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
+            "PreviewStaticMesh": "/Game/ASS/DEP/Windmill/SM_DEP_WindMill_DeployStatic.SM_DEP_WindMill_DeployStatic",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "DeployCollisionExtentOffset": {
+                "X": -10,
+                "Y": -80
+            },
+            "DeployCollisionLocationOffset": {
+                "X": -20
+            }
         },
         {
             "Name": "Cow_Trophy",
@@ -8699,6 +8710,62 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Ram_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Ram.BP_Trophy_Ram_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_DesertDeer_A/SM_DEP_Trophy_DesertDeer_A.SM_DEP_Trophy_DesertDeer_A",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Rooster_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Rooster.BP_Trophy_Rooster_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_DesertDeer_A/SM_DEP_Trophy_DesertDeer_A.SM_DEP_Trophy_DesertDeer_A",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Egg_Incubator",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Mission_Incubator.BP_Mission_Incubator_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Analyzer.SM_DEP_Analyzer",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "DeployCollisionExtentOffset": {
+                "Z": -100
+            }
+        },
+        {
+            "Name": "Chocolate_Cake",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Food/BP_Cake_Chocolate.BP_Cake_Chocolate_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_DEP_Teddy_Bear.SM_DEP_Teddy_Bear",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_TEDDY.SFX_DEPLOY_TEDDY",
+            "MaxSurfaceSnapAngle": 180,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Carrot_Cake",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Food/BP_Cake_Carrot.BP_Cake_Carrot_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_DEP_Teddy_Bear.SM_DEP_Teddy_Bear",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_TEDDY.SFX_DEPLOY_TEDDY",
+            "MaxSurfaceSnapAngle": 180,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Coconut_Cake",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Food/BP_Cake_Coconut.BP_Cake_Coconut_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Bunker_Props/SM_DEP_Teddy_Bear.SM_DEP_Teddy_Bear",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_TEDDY.SFX_DEPLOY_TEDDY",
+            "MaxSurfaceSnapAngle": 180,
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         }

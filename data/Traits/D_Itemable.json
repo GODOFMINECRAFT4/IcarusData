@@ -1889,10 +1889,10 @@
         {
             "Name": "Item_Rifle_Assault",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Assault-DisplayName\", \"Assault Rifle\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/ITEM_Rifle_Assault.ITEM_Rifle_Assault",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Rifle_Assault.T_ITEM_Rifle_Assault",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Assault-Description\", \"An automatic weapon which fires small caliber pistol bullets.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Assault-FlavorText\", \"Quantity over quality.\")",
-            "Weight": 1000
+            "Weight": 3000
         },
         {
             "Name": "Item_Ghillie_Head",
@@ -7193,7 +7193,7 @@
             "Name": "Item_Radar_Biofuel",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Biofuel-DisplayName\", \"Biofuel Radar\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Radar_Biofuel.ITEM_Radar_Biofuel",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Biofuel-Description\", \"A portable topographical radar unit powered by Biofuel. Nearby Local wildlife become agressive when this is active.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Biofuel-Description\", \"A portable Exotics detection unit powered by Biofuel. Approximate directional arc shown on your map. Attracts animals while active.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Biofuel-FlavorText\", \"Powered by good old Icarus Biofuel.\")",
             "Weight": 2000
         },
@@ -7201,7 +7201,7 @@
             "Name": "Item_Radar_Electric",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Electric-DisplayName\", \"Electric Radar\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Radar.ITEM_Kit_Radar",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Electric-Description\", \"A portable topographical radar unit powered by Electricity, angers local wildlife when active.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Electric-Description\", \"A portable Exotics detection unit powered by Electricity. Approximate directional arc shown on your map. Attracts animals while active.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Electric-FlavorText\", \"Connect this baby up to a generator and you are good to go.\")",
             "Weight": 2000
         },
@@ -7209,7 +7209,7 @@
             "Name": "Item_Radar_Meta",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Meta-DisplayName\", \"IC-001 Radar\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Radar_Meta.ITEM_Radar_Meta",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Meta-Description\", \"Uses an internal power system to scan, though this does seem to attract a large amount of local wildlife when active.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Meta-Description\", \"Portable Exotics detection unit, uses an internal power system that attracts a large amount of wildlife when active. Approximate directional arc shown on your map. \")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Radar_Meta-FlavorText\", \"Prime First Cohort Scanning Technology\")",
             "Weight": 2000
         },
@@ -14722,7 +14722,7 @@
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_AlphaWolf",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_AlphaWolf-DisplayName\", \"Stamina Survival Inhaler\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_AlphaWolf-DisplayName\", \"Regenerative Combat Inhaler\")",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_AlphaWolf-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with health and stamina regulation.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_AlphaWolf-FlavorText\", \"Ah, the wonders of modern medicine.\")",
             "Weight": 100,
@@ -14730,8 +14730,8 @@
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_Scorpion",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scorpion-DisplayName\", \"Health Survival Inhaler\")",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scorpion-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with health restoration.\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scorpion-DisplayName\", \"Defensive Combat Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scorpion-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with surving a wildlife attack.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scorpion-FlavorText\", \"Ah, the wonders of modern medicine.\")",
             "Weight": 100,
             "MaxStack": 5
@@ -15830,8 +15830,8 @@
         {
             "Name": "Item_FlameThrower",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_FlameThrower-DisplayName\", \"Flamethrower\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/ITEM_FlameThrower_Small.ITEM_FlameThrower_Small",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_FlameThrower-Description\", \"A fuel powered device which ejects fuel and ignites it when thrown.\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Flame_Thrower.T_ITEM_Flame_Thrower",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_FlameThrower-Description\", \"A biofuel powered device which ejects fuel and ignites it when thrown. This can be filled in a composter.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_FlameThrower-FlavorText\", \"Sure beats a can of aerosol and a lighter.\")",
             "Weight": 2500
         },
@@ -18611,7 +18611,7 @@
         {
             "Name": "Item_Great_Hunt_Device",
             "DisplayName": "INVTEXT(\"[DNT] Great Hunt Device\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Mission_Communication_Device_T2.T_ITEM_Mission_Communication_Device_T2",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Great_Hunt_Device.T_ITEM_Great_Hunt_Device",
             "Weight": 10000
         },
         {
@@ -19260,57 +19260,69 @@
         },
         {
             "Name": "Item_ReinforcedWood_Floor",
-            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Floor\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Floor-DisplayName\", \"Beeswax Wood Floor\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ReinforcedWood_Floor_0.T_ITEM_ReinforcedWood_Floor_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Floor-Description\", \"Rugged timber flooring, treated with a coating of beeswax for reinforcement.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Floor-FlavorText\", \"Surprisingly not that sticky.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_ReinforcedWood_Wall",
-            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Wall\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Wall-DisplayName\", \"Beeswax Wood Wall\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ReinforcedWood_Wall_0.T_ITEM_ReinforcedWood_Wall_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Wall-Description\", \"A wall of treated wooden logging.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_ReinforcedWood_Wall_Angle",
-            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Wall Angled\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Wall_Angle-DisplayName\", \"Beeswax Wood Wall Angled\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ReinforcedWood_Wall_Angle_0.T_ITEM_ReinforcedWood_Wall_Angle_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Wall_Angle-Description\", \"Treated angular inserts for gables and other tilted designs.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_ReinforcedWood_Ramp",
-            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Roof/Ramp\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Ramp-DisplayName\", \"Beeswax Wood Roof/Ramp\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ReinforcedWood_Ramp_0.T_ITEM_ReinforcedWood_Ramp_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Ramp-Description\", \"A basic wooden ramp or roof, coated in beeswax to protect it from the elements.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Ramp-FlavorText\", \"May still be susceptable to the great storms of Icarus.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_ReinforcedWood_Beam",
-            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Beam\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Beam-DisplayName\", \"Beeswax Wood Beam\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ReinforcedWood_Beam_0.T_ITEM_ReinforcedWood_Beam_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Beam-Description\", \"Anchors structures to the ground for higher building.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Beam-FlavorText\", \"Beams connect vertically and diagonally to support multi-level construction. Your HUD will indicate when beams are anchored with a blue cursor.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_ReinforcedWood_Roof_Corner",
-            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Roof Corner\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Roof_Corner-DisplayName\", \"Beeswax Wood Roof Corner\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ReinforcedWood_Roof_Corner_0.T_ITEM_ReinforcedWood_Roof_Corner_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Roof_Corner-Description\", \"A roughly cut and coated insert for angled roofs.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_ReinforcedWood_Roof_Half_Pitch",
-            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Halfpitches\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Roof_Half_Pitch-DisplayName\", \"Beeswax Wood Halfpitches\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ReinforcedWood_Half_Pitch_2.T_ITEM_ReinforcedWood_Half_Pitch_2",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Roof_Half_Pitch-Description\", \"Shallow-sloped roof building elements.\")",
             "Weight": 500,
             "MaxStack": 20
         },
         {
             "Name": "Item_ReinforcedWood_Halfpiece",
-            "DisplayName": "INVTEXT(\"[DNT] Beeswax Wood Halfpieces\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Halfpiece-DisplayName\", \"Beeswax Wood Halfpieces\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ReinforcedWood_Halfpiece_0.T_ITEM_ReinforcedWood_Halfpiece_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Halfpiece-Description\", \"Half- and quarter-sized building elements for detailed construction work.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_ReinforcedWood_Halfpiece-FlavorText\", \"These sets are useful for creating walkways, balconies, trims and a range of other smaller constructions.\")",
             "Weight": 500,
             "MaxStack": 20
         },
@@ -19449,7 +19461,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Platinum_Plow.T_ITEM_Platinum_Plow",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Plough_Platinum-Description\", \"An attachment for the seeding cart to create medium quality mounds when seeding.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Plough_Platinum-FlavorText\", \"Excellent for farming.\")",
-            "Weight": 25000
+            "Weight": 15000
         },
         {
             "Name": "Item_Plough_Titanium",
@@ -19457,7 +19469,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_Titanium_Plow.T_ITEM_Titanium_Plow",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Plough_Titanium-Description\", \"An attachment for the seeding cart to create high quality mounds when seeding.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Plough_Titanium-FlavorText\", \"Excellent for farming.\")",
-            "Weight": 10000
+            "Weight": 15000
         },
         {
             "Name": "Item_Metal_Grate_Building",
@@ -19472,7 +19484,7 @@
             "Name": "Item_Guano",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Guano-DisplayName\", \"Guano\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Guano.T_ITEM_Guano",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Guano-Description\", \"Excrement of some bat-like creatures in Icarus, very rich in Nitrogen and Phophorus.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Guano-Description\", \"Excrement of some bat-like creatures in Icarus, very rich in Nitrogen and Phosphorus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Guano-FlavorText\", \"Surely there is a use for this.\")",
             "Weight": 1,
             "MaxStack": 500
@@ -19672,12 +19684,14 @@
         {
             "Name": "Item_Rock_Golem_Grenade",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Grenade-DisplayName\", \"Quarrite Grenade\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Rock_Golem_Grenade.T_ITEM_Rock_Golem_Grenade",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Grenade-Description\", \"Explodes into many sharp objects that damage and slow.\")",
             "Weight": 500
         },
         {
             "Name": "Item_Rock_Golem_Grenade_Caltrops",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Grenade_Caltrops-DisplayName\", \"Quarrite Caltrops\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Rock_Golem_Grenade.T_ITEM_Rock_Golem_Grenade",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Grenade_Caltrops-Description\", \"The sharp remains of a Quarrite Grenade. Will slow and cause damage when stepped on.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Grenade_Caltrops-FlavorText\", \"Like those little colored toy building blocks, but much much older.\")",
             "Weight": 50
@@ -19700,6 +19714,7 @@
         {
             "Name": "Item_Windmill",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Windmill-DisplayName\", \"Windmill\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Windmill.T_ITEM_Windmill",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Windmill-Description\", \"A mill using mechanical power from wind to grind various items found on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Windmill-FlavorText\", \"A tride and true method used for 100s of years.\")",
             "Weight": 5000
@@ -19723,6 +19738,7 @@
         {
             "Name": "Item_Milk_Bottle_Glass",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Milk_Bottle_Glass-DisplayName\", \"Glass Milk Bottle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Milk_Bottle_Glass.T_ITEM_Milk_Bottle_Glass",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Milk_Bottle_Glass-Description\", \"A glass bottle made for storing milk.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Milk_Bottle_Glass-FlavorText\", \"Milk was considered \\'food of the gods\\' in ancient cultures.\")",
             "Weight": 500
@@ -19730,6 +19746,7 @@
         {
             "Name": "Item_Milk_Bucket",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Milk_Bucket-DisplayName\", \"Milk Pail\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Milk_Bucket.T_ITEM_Milk_Bucket",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Milk_Bucket-Description\", \"A steel pail made for storing milk.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Milk_Bucket-FlavorText\", \"A farmers friend.\")",
             "Weight": 500
@@ -19751,16 +19768,24 @@
         {
             "Name": "Item_Workshop_Calf",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Calf-DisplayName\", \"Cryogenically Frozen Calf\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Calf.T_ITEM_Workshop_Calf",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Calf-Description\", \"A Calf preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Calf-FlavorText\", \"Preserved for revival - not eating.\")",
             "Weight": 10
         },
         {
             "Name": "Item_Workshop_Chick",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Chick-DisplayName\", \"Cryogenically Frozen Chick\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Chick.T_ITEM_Workshop_Chick",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Chick-Description\", \"A Chick preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Chick-FlavorText\", \"About the size of a large chicken nugget.\")",
             "Weight": 10
         },
         {
             "Name": "Item_Workshop_Lamb",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb-DisplayName\", \"Cryogenically Frozen Lamb\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb-Description\", \"A Lamb preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb-FlavorText\", \"Preserved for revival - not eating.\")",
             "Weight": 10
         },
         {
@@ -19782,6 +19807,9 @@
         {
             "Name": "Item_Cow_Head",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Cow_Head-DisplayName\", \"Cow Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Cow_Head.T_ITEM_Cow_Head",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Cow_Head-Description\", \"What is left of a large friend.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Cow_Head-FlavorText\", \"Will no longer produce milk.\")",
             "Weight": 1500,
             "MaxStack": 5
         },
@@ -19795,6 +19823,9 @@
         {
             "Name": "Item_Bull_Head",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Bull_Head-DisplayName\", \"Bull Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Bull_Head.T_ITEM_Bull_Head",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Bull_Head-Description\", \"The remains of a mighty bull.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Bull_Head-FlavorText\", \"Even in death it is majestic.\")",
             "Weight": 1500,
             "MaxStack": 5
         },
@@ -19804,6 +19835,182 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Bull_Trophy-Description\", \"A mounted Bull head.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Bull_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
             "Weight": 2000
+        },
+        {
+            "Name": "Item_Windmill_Blade_Steel",
+            "DisplayName": "INVTEXT(\"[DNT] Windmill Blade Steel\")",
+            "Description": "INVTEXT(\"[DNT] Blades that can be fit to a windmill to increase production.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Spin to win\")",
+            "Weight": 15000
+        },
+        {
+            "Name": "Item_Windmill_Blade_Platinum",
+            "DisplayName": "INVTEXT(\"[DNT] Windmill Blade Platinum\")",
+            "Description": "INVTEXT(\"[DNT] Blades that can be fit to a windmill to increase production.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Spin to win\")",
+            "Weight": 15000
+        },
+        {
+            "Name": "Item_Windmill_Blade_Titanium",
+            "DisplayName": "INVTEXT(\"[DNT] Windmill Blade Titanium\")",
+            "Description": "INVTEXT(\"[DNT] Blades that can be fit to a windmill to increase production.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Spin to win\")",
+            "Weight": 15000
+        },
+        {
+            "Name": "Item_Meta_Biolab_Inhaler_LavaHunter",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_LavaHunter-DisplayName\", \"Lava Survival Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_LavaHunter-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with molten magma.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_LavaHunter-FlavorText\", \"Ah, the wonders of modern medicine.\")",
+            "Weight": 100,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Meta_Biolab_Inhaler_Hammerhead",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Hammerhead-DisplayName\", \"Noxious Mining Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Hammerhead-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals, assists with gathering ore.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Hammerhead-FlavorText\", \"Ah, the wonders of modern medicine.\")",
+            "Weight": 100,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Meta_Biolab_Inhaler_RockGolem",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RockGolem-DisplayName\", \"Cave Survival Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RockGolem-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with cave tolerance, and grants additional stone\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RockGolem-FlavorText\", \"Ah, the wonders of modern medicine.\")",
+            "Weight": 100,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Meta_Biolab_Inhaler_SwampApe",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_SwampApe-DisplayName\", \"Noxious Logging Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_SwampApe-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist gathering infected bark.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_SwampApe-FlavorText\", \"Ah, the wonders of modern medicine.\")",
+            "Weight": 100,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Meta_Biolab_Inhaler_Scyther",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scyther-DisplayName\", \"Thrown Combat Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scyther-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with combat with thrown weapons.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scyther-FlavorText\", \"Ah, the wonders of modern medicine.\")",
+            "Weight": 100,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Meta_Biolab_Inhaler_Thornet",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Thornet-DisplayName\", \"Noxious Skinning Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Thornet-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with skinning.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Thornet-FlavorText\", \"Ah, the wonders of modern medicine.\")",
+            "Weight": 100,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Meta_Biolab_Inhaler_PlantBoss",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_PlantBoss-DisplayName\", \"Melee Combat Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_PlantBoss-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with melee combat.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_PlantBoss-FlavorText\", \"Ah, the wonders of modern medicine.\")",
+            "Weight": 100,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Meta_Biolab_Inhaler_GiantCat",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_GiantCat-DisplayName\", \"Ranged Combat Inhaler\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_GiantCat-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with ranged combat.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_GiantCat-FlavorText\", \"Ah, the wonders of modern medicine.\")",
+            "Weight": 100,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Rooster_Head",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rooster_Head-DisplayName\", \"Rooster Vestige\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rooster_Head-Description\", \"What remains of a feathered friend.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rooster_Head-FlavorText\", \"No longer will this wake up nearby prospectors at 5am.\")",
+            "Weight": 1500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Rooster_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rooster_Trophy-DisplayName\", \"Rooster Trophy\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rooster_Trophy-Description\", \"A mounted Rooster.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rooster_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Ram_Head",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ram_Head-DisplayName\", \"Ram Vestige\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ram_Head-Description\", \"The remains of a majestic Ram.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ram_Head-FlavorText\", \"A terrible loss.\")",
+            "Weight": 1500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Ram_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ram_Trophy-DisplayName\", \"Ram Trophy\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ram_Trophy-Description\", \"A mounted Ram.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ram_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Egg_Incubator",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg_Incubator-DisplayName\", \"Egg Incubator\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Mission_Analyzer_Egg.ITEM_Mission_Analyzer_Egg",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg_Incubator-Description\", \"A device designed to replicate various atmospheres to allow for optimal egg growth for multiple creatures. \")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg_Incubator-FlavorText\", \"Are we seriously hatching creatures now?\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Chocolate_Cake",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chocolate_Cake-DisplayName\", \"Chocolate Cake\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chocolate_Cake-Description\", \"A big chocolate cake of 8 pieces. Deploy this to enjoy with friends.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chocolate_Cake-FlavorText\", \"Just like Grandma used to make.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Chocolate_Cake_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chocolate_Cake_Piece-DisplayName\", \"Chocolate Cake Piece\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chocolate_Cake_Piece-Description\", \"A piece of chocolate cake, made from scatch on Icarus.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chocolate_Cake_Piece-FlavorText\", \"Just like Grandma used to make.\")",
+            "Weight": 500,
+            "MaxStack": 8
+        },
+        {
+            "Name": "Item_Carrot_Cake",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carrot_Cake-DisplayName\", \"Carrot Cake\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carrot_Cake-Description\", \"A big carrot cake of 8 pieces. Deploy this to enjoy with friends.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carrot_Cake-FlavorText\", \"Who new vegetables could taste this great.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Carrot_Cake_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carrot_Cake_Piece-DisplayName\", \"Carrot Cake Piece\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carrot_Cake_Piece-Description\", \"A piece of carrot cake, made from scatch on Icarus.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carrot_Cake_Piece-FlavorText\", \"Who new vegetables could taste this great.\")",
+            "Weight": 500,
+            "MaxStack": 8
+        },
+        {
+            "Name": "Item_Coconut_Cake",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Coconut_Cake-DisplayName\", \"Coconut Cake\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Coconut_Cake-Description\", \"A big coconut cake of 8 pieces. Deploy this to enjoy with friends.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Coconut_Cake-FlavorText\", \"A taste of home.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Coconut_Cake_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Coconut_Cake_Piece-DisplayName\", \"Coconut Cake Piece\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Coconut_Cake_Piece-Description\", \"A piece of coconut cake, made from scatch on Icarus.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Coconut_Cake_Piece-FlavorText\", \"A taste of home.\")",
+            "Weight": 500,
+            "MaxStack": 8
+        },
+        {
+            "Name": "Item_Cheese",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Cheese-DisplayName\", \"Cheese\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Cheese-Description\", \"A chunk of cheese, made on Icarus.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Cheese-FlavorText\", \"One of the best human inventions.\")",
+            "Weight": 250,
+            "MaxStack": 50
         }
     ]
 }

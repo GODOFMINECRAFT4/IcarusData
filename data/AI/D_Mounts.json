@@ -1387,6 +1387,105 @@
                 "RowName": "Creature_Cat"
             },
             "bUseTemperature": true
+        },
+        {
+            "Name": "Rooster",
+            "AISetup": {
+                "RowName": "Rooster"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "SupportedHusbandryStates": [
+                "Fertilize",
+                "None"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_StandIdle_Montage.Chicken_StandIdle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Sleep_Montage.Chicken_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Eat_Montage.Chicken_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_Jump_Montage.Chicken_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.LayEgg\")": "/Game/ASS/CRE/Chicken/Anim/Chicken_LayEgg_Montage.Chicken_LayEgg_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-0\", \"Cluck\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-1\", \"Peck\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-2\", \"Bok\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-3\", \"Chirp\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-4\", \"Blaze\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-5\", \"Rusty\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-6\", \"Cinder\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-7\", \"Sizzle\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Rooster-DefaultNames-8\", \"Flash\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Chicken"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            },
+            "bUseTemperature": true
+        },
+        {
+            "Name": "Ram",
+            "AISetup": {
+                "RowName": "Ram"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander"
+            ],
+            "SupportedHusbandryStates": [
+                "Fertilize",
+                "None"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Idle_Montage.Sheep_Idle_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Rest_Montage.Sheep_Rest_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Eating_Montage.Sheep_Eating_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Jump_Montage.Sheep_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Sheep/Anim/Sheep_Eating_Montage.Sheep_Eating_Montage"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-0\", \"Pan\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-1\", \"Bacchus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-2\", \"Faunus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-3\", \"Khaldi\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-4\", \"Marduk\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-5\", \"Silenus\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-6\", \"Amalthea\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-7\", \"Aries\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Ram-DefaultNames-8\", \"Set\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": -17.5,
+                "Z": 10
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Sheep"
+            },
+            "GrowthCurve": {
+                "RowName": "AI_Pets"
+            }
         }
     ]
 }

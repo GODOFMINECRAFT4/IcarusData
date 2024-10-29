@@ -66820,17 +66820,12 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Wood_Floor",
+                        "RowName": "ReinforcedWood_Floor",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": [
-                        {
-                            "RowName": "Reinforced_Building",
-                            "DataTableName": "D_Alterations"
-                        }
-                    ]
+                    "Alterations": []
                 }
             ],
             "Audio": {
@@ -66886,17 +66881,12 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Wood_Wall",
+                        "RowName": "ReinforcedWood_Wall",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": [
-                        {
-                            "RowName": "Reinforced_Building",
-                            "DataTableName": "D_Alterations"
-                        }
-                    ]
+                    "Alterations": []
                 }
             ],
             "Audio": {
@@ -66952,17 +66942,12 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Wood_Wall_Angle",
+                        "RowName": "ReinforcedWood_Wall_Angle",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": [
-                        {
-                            "RowName": "Reinforced_Building",
-                            "DataTableName": "D_Alterations"
-                        }
-                    ]
+                    "Alterations": []
                 }
             ],
             "Audio": {
@@ -67018,17 +67003,12 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Wood_Ramp",
+                        "RowName": "ReinforcedWood_Ramp",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": [
-                        {
-                            "RowName": "Reinforced_Building",
-                            "DataTableName": "D_Alterations"
-                        }
-                    ]
+                    "Alterations": []
                 }
             ],
             "Audio": {
@@ -67084,17 +67064,12 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Wood_Halfpiece",
+                        "RowName": "ReinforcedWood_Halfpiece",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": [
-                        {
-                            "RowName": "Reinforced_Building",
-                            "DataTableName": "D_Alterations"
-                        }
-                    ]
+                    "Alterations": []
                 }
             ],
             "Audio": {
@@ -67150,17 +67125,12 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Wood_Half_Pitch",
+                        "RowName": "ReinforcedWood_Half_Pitch",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": [
-                        {
-                            "RowName": "Reinforced_Building",
-                            "DataTableName": "D_Alterations"
-                        }
-                    ]
+                    "Alterations": []
                 }
             ],
             "Audio": {
@@ -67216,17 +67186,12 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Wood_Roof_Corner",
+                        "RowName": "ReinforcedWood_Roof_Corner",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
                     "DynamicProperties": [],
-                    "Alterations": [
-                        {
-                            "RowName": "Reinforced_Building",
-                            "DataTableName": "D_Alterations"
-                        }
-                    ]
+                    "Alterations": []
                 }
             ],
             "Audio": {
@@ -80520,6 +80485,126 @@
             }
         },
         {
+            "Name": "Glass_Window_Reinforced",
+            "Requirement": {
+                "RowName": "Glass_Trim"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Glassworking_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Epoxy",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": {
+                        "Value": "Water"
+                    },
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Glass_Window_Reinforced",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Glassbench"
+            }
+        },
+        {
+            "Name": "Glass_Door_Reinforced",
+            "Requirement": {
+                "RowName": "Reinforced_Glass_Basic"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Glassworking_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Epoxy",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 6,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": {
+                        "Value": "Water"
+                    },
+                    "RequiredUnits": 100
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Glass_Door_Reinforced",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Glassbench"
+            }
+        },
+        {
             "Name": "Choc_Chip_Cookie",
             "RequiredMillijoules": 25000,
             "RecipeSets": [
@@ -81289,6 +81374,67 @@
                 "RequiredFeatureLevel": {
                     "RowName": "Laika"
                 }
+            }
+        },
+        {
+            "Name": "Reinforced_Wood_Beam",
+            "Requirement": {
+                "RowName": "Reinforced_Wood_Basic"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Carpentry_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Carpentry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseWoodBuildingCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 6,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Beeswax",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 6,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "ReinforcedWood_Beam",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CarpentryBench"
             }
         }
     ]
