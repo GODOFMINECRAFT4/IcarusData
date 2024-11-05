@@ -64,6 +64,7 @@
             "Name": "Wood_Crate_Small",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate.BP_Wood_Crate_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Wood_Crate_Small.ITEM_Wood_Crate_Small",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Wood_Crate_Small-DeployableName\", \"Angled\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_SML_Wood.SM_DEP_Crate_SML_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
@@ -72,6 +73,7 @@
             "Name": "Wood_Crate_Small_Flat",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Flat.BP_Wood_Crate_Flat_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Wood_Crate_Small_Flat.T_ITEM_Wood_Crate_Small_Flat",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Wood_Crate_Small_Flat-DeployableName\", \"Flat\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_FlatCrate_SML.SM_DEP_FlatCrate_SML",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
@@ -537,6 +539,7 @@
             "Name": "Wood_Crate_Medium",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Medium.BP_Wood_Crate_Medium_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Wood_Crate_Medium.ITEM_Wood_Crate_Medium",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Wood_Crate_Medium-DeployableName\", \"Angled\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_Medium_Wood.SM_DEP_Crate_Medium_Wood",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
@@ -545,6 +548,7 @@
             "Name": "Wood_Crate_Medium_Flat",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Wood_Crate_Medium_Flat.BP_Wood_Crate_Medium_Flat_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Wood_Crate_Medium_Flat.T_ITEM_Wood_Crate_Medium_Flat",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Wood_Crate_Medium_Flat-DeployableName\", \"Flat\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_FlatCrate_MED.SM_DEP_FlatCrate_MED",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD",
             "MaxRestackingAmount": 1
@@ -7874,20 +7878,13 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Slug_Boss_Circle.BP_Trophy_Slug_Boss_Circle_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Slug_Trophy_Coil.T_ITEM_Slug_Trophy_Coil",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Slug_Boss/SM_DEP_Trophy_Slug_Boss_Circle.SM_DEP_Trophy_Slug_Boss_Circle",
-            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_SLUG_TROPHY.SFX_DEPLOY_HAMMERHEAD_SLUG_TROPHY"
-        },
-        {
-            "Name": "Rock_Golem_Trap",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_Rock_Golem_Trap.BP_Rock_Golem_Trap_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Trap_Black_Wolf.SM_DEP_Trap_Black_Wolf",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
-            "SupportsCustomRotation": false,
-            "bCanAffectNavigation": false
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Hammerhead_Trophys/SFX_DEPLOY_HAMMERHEAD_SLUG_TROPHY.SFX_DEPLOY_HAMMERHEAD_SLUG_TROPHY",
+            "WorldPlacementType": "WallPlacement"
         },
         {
             "Name": "Rock_Golem_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Rock_Golem.BP_Trophy_Rock_Golem_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Scorpion_Boss/SM_DEP_Trophy_ScorpionBoss_Tail.SM_DEP_Trophy_ScorpionBoss_Tail",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Rock_Golem/SM_DEP_Trophy_Golem_Statue.SM_DEP_Trophy_Golem_Statue",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
@@ -8768,6 +8765,12 @@
             "MaxSurfaceSnapAngle": 180,
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Rock_Golem_Chair",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Lava_Hunter_Trophy_Chair.BP_Lava_Hunter_Trophy_Chair_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Rock_Golem/SM_DEP_Trophy_Golem_Throne.SM_DEP_Trophy_Golem_Throne",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         }
     ]
 }
