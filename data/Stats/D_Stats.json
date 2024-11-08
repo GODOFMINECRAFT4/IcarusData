@@ -93,7 +93,8 @@
             "StatCategory": {
                 "RowName": "Melee_DMG"
             },
-            "bHideStatInUserInterface": true
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
         },
         {
             "Name": "BaseMeleeDamage_+%",
@@ -385,7 +386,8 @@
             "StatCategory": {
                 "RowName": "Generic_Damage"
             },
-            "bHideStatInUserInterface": true
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
         },
         {
             "Name": "BaseFireDamage_+%",
@@ -6337,7 +6339,8 @@
             "StatCategory": {
                 "RowName": "Generic_Damage"
             },
-            "bHideStatInUserInterface": true
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
         },
         {
             "Name": "BasePoisonDamage_+%",
@@ -9744,7 +9747,8 @@
             "StatCategory": {
                 "RowName": "Generic_Damage"
             },
-            "bHideStatInUserInterface": true
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
         },
         {
             "Name": "BaseFrostDamage_+%",
@@ -9797,7 +9801,8 @@
             "StatCategory": {
                 "RowName": "Generic_Damage"
             },
-            "bHideStatInUserInterface": true
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
         },
         {
             "Name": "BaseElectricDamage_+%",
@@ -9850,7 +9855,8 @@
             "StatCategory": {
                 "RowName": "Generic_Damage"
             },
-            "bHideStatInUserInterface": true
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
         },
         {
             "Name": "ExplosiveDamage_+%",
@@ -15572,6 +15578,41 @@
             "Name": "FertilizedEgg_?",
             "Title": "NSLOCTEXT(\"D_Stats\", \"FertilizedEgg_?-Title\", \"Fertilized Egg\")",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"FertilizedEgg_?-PositiveDescription\", \"Fertilized Egg\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CollectableNote_Enum",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "InfusionGold_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"InfusionGold_?-Title\", \"Infused with Gold\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"InfusionGold_?-PositiveDescription\", \"Infused with Gold\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "InfusionCopper_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"InfusionCopper_?-Title\", \"Infused with Copper\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"InfusionCopper_?-PositiveDescription\", \"Infused with Copper\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "InfusionOxite_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"InfusionOxite_?-Title\", \"Infused with Oxite\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"InfusionOxite_?-PositiveDescription\", \"Infused with Oxite\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "AI"

@@ -11009,12 +11009,15 @@
         },
         {
             "Name": "Ape_Tonic",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Strength_Enhancement_Tonic.ITEM_Strength_Enhancement_Tonic'",
-            "ModifierName": "INVTEXT(\"[DNT] Ape Tonic\")",
-            "ModifierDescription": "INVTEXT(\"[DNT] Ape Strong\")",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Health_Garganutan_Tonic.T_ITEM_Health_Garganutan_Tonic'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Ape_Tonic-ModifierName\", \"Garganutan Frenzy Tonic \")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Ape_Tonic-ModifierDescription\", \"Greatly increasees your attack and movement speeds, and greatly increases stamina regeneration, but reduces felling and mining rewards.\")",
             "GrantedStats": {
-                "(Value=\"BaseMeleeDamage_+%\")": 100,
-                "(Value=\"BasePhysicalDamageResistance_+%\")": 100
+                "(Value=\"BaseAttackSpeed_+%\")": 25,
+                "(Value=\"BaseMovementSpeed_+%\")": 25,
+                "(Value=\"BaseStaminaRegen_+%\")": 1000,
+                "(Value=\"BaseFellingRewards_+%\")": -50,
+                "(Value=\"BaseMiningRewards_+%\")": -50
             },
             "MergeType": "Replace",
             "EffectsCustomActor": {
@@ -11988,6 +11991,90 @@
             "ModifierTickRate": 0.5,
             "RemovedOnDeath": false,
             "MergeType": "Count",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Infused_Copper",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/ITEM_Ore_Copper.ITEM_Ore_Copper'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Infused_Copper-ModifierName\", \"Copper Infused\")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"BaseProjectileDamageResistance_%\")": -25,
+                "(Value=\"BaseMeleeDamage_+\")": 25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Infused_Iron",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/ITEM_Ore_Metal.ITEM_Ore_Metal'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Infused_Iron-ModifierName\", \"Iron Infused\")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 25,
+                "(Value=\"BaseMovementSpeed_+%\")": -25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Infused_Oxite",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/ITEM_Ore_Oxite.ITEM_Ore_Oxite'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Infused_Oxite-ModifierName\", \"Oxite Infused\")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"BaseHealthRegen_+%\")": 100,
+                "(Value=\"BaseMaximumHealth_+%\")": 25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Infused_Coal",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/ITEM_Ore_Coal.ITEM_Ore_Coal'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Infused_Coal-ModifierName\", \"Coal Infused\")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"BaseFireDamageResistance_%\")": -25,
+                "(Value=\"BaseMovementSpeed_+%\")": 25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Infused_Gold",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/ITEM_Ore_Gold.ITEM_Ore_Gold'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Infused_Gold-ModifierName\", \"Gold Infused\")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"BaseFireDamageResistance_%\")": -25,
+                "(Value=\"BaseMovementSpeed_+%\")": 25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Infused_Purple_Exotic",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/ITEM_Ore_Exotic.ITEM_Ore_Exotic'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Infused_Purple_Exotic-ModifierName\", \"Exotic Infused\")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"BaseFireDamageResistance_%\")": -25,
+                "(Value=\"BaseMovementSpeed_+%\")": 25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false,
             "SaveToDatabase": false
         }
     ]

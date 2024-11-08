@@ -1581,7 +1581,7 @@
             "Name": "Item_FireExtinguisher",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_FireExtinguisher-DisplayName\", \"Fire Extinguisher\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Extinguisher.ITEM_Extinguisher",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_FireExtinguisher-Description\", \"A canister of compressed flame-extinguishing gel.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_FireExtinguisher-Description\", \"A canister of compressed flame-extinguishing liquid. Refill using water devices.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_FireExtinguisher-FlavorText\", \"The instructions say: \\'Aim towards flame.\\'\")",
             "Weight": 1000
         },
@@ -13446,7 +13446,8 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_LavaHunter.T_ITEM_Head_LavaHunter",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Lava_Hunter_Head-Description\", \"A preserved memory of a once-great Lava Hunter.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Lava_Hunter_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
-            "Weight": 5000
+            "Weight": 5000,
+            "MaxStack": 5
         },
         {
             "Name": "Item_Lava_Broodling_Head",
@@ -13535,7 +13536,8 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_GiantScorpion.T_ITEM_Head_GiantScorpion",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Scorpion_Boss_Head-Description\", \"A preserved memory of a once-great Giant Scorpion.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Scorpion_Boss_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
-            "Weight": 5000
+            "Weight": 5000,
+            "MaxStack": 5
         },
         {
             "Name": "Item_Reaver_Head",
@@ -14718,8 +14720,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_Sandworm.T_ITEM_Meta_Biolab_Inhaler_Sandworm",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Sandworm-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with temperature regulation.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Sandworm-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_AlphaWolf",
@@ -14727,8 +14728,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_Wolf.T_ITEM_Meta_Biolab_Inhaler_Wolf",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_AlphaWolf-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with health and stamina regulation.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_AlphaWolf-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_Scorpion",
@@ -14736,8 +14736,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_Scorpion.T_ITEM_Meta_Biolab_Inhaler_Scorpion",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scorpion-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with surving a wildlife attack.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scorpion-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_IceMammoth",
@@ -14745,8 +14744,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_IceMammoth.T_ITEM_Meta_Biolab_Inhaler_IceMammoth",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_IceMammoth-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with temperature regulation.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_IceMammoth-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Gold_Bed",
@@ -16268,7 +16266,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Chicken.T_ITEM_Workshop_Chicken",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Chicken-Description\", \"A Chicken preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Chicken-FlavorText\", \"Comes in 3 different colours\")",
-            "Weight": 10
+            "Weight": 1000
         },
         {
             "Name": "Item_Workshop_Sheep",
@@ -16276,7 +16274,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Sheep.T_ITEM_Workshop_Sheep",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Sheep-Description\", \"A Sheep preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Sheep-FlavorText\", \"Ba Ba Black Sheep...\")",
-            "Weight": 10
+            "Weight": 5000
         },
         {
             "Name": "Item_Hitching_Post",
@@ -16393,7 +16391,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Horse_A1.T_ITEM_Workshop_Horse_A1",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Horse_A1-Description\", \"A Horse preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Horse_A1-FlavorText\", \"Neigh\")",
-            "Weight": 10
+            "Weight": 10000
         },
         {
             "Name": "Item_Workshop_Horse_A2",
@@ -16401,7 +16399,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Horse_A2.T_ITEM_Workshop_Horse_A2",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Horse_A2-Description\", \"A Horse preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Horse_A2-FlavorText\", \"Neigh\")",
-            "Weight": 10
+            "Weight": 10000
         },
         {
             "Name": "Item_Workshop_Horse_A3",
@@ -16409,7 +16407,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Horse_A3.T_ITEM_Workshop_Horse_A3",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Horse_A3-Description\", \"A Horse preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Horse_A3-FlavorText\", \"Neigh\")",
-            "Weight": 10
+            "Weight": 10000
         },
         {
             "Name": "Item_Workshop_Dog_A1",
@@ -16417,7 +16415,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Dog_A1.T_ITEM_Workshop_Dog_A1",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_A1-Description\", \"A Dog preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_A1-FlavorText\", \"Woof\")",
-            "Weight": 10
+            "Weight": 5000
         },
         {
             "Name": "Item_Workshop_Dog_A2",
@@ -16425,7 +16423,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Dog_A2.T_ITEM_Workshop_Dog_A2",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_A2-Description\", \"A Dog preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_A2-FlavorText\", \"Woof\")",
-            "Weight": 10
+            "Weight": 5000
         },
         {
             "Name": "Item_Workshop_Dog_B1",
@@ -16433,7 +16431,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Dog_B1.T_ITEM_Workshop_Dog_B1",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_B1-Description\", \"A Dog preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_B1-FlavorText\", \"Woof\")",
-            "Weight": 10
+            "Weight": 5000
         },
         {
             "Name": "Item_Workshop_Dog_B2",
@@ -16441,7 +16439,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Dog_B2.T_ITEM_Workshop_Dog_B2",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_B2-Description\", \"A Dog preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_B2-FlavorText\", \"Woof\")",
-            "Weight": 10
+            "Weight": 5000
         },
         {
             "Name": "Item_Workshop_Cat_A1",
@@ -16449,7 +16447,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Cat_A1.T_ITEM_Workshop_Cat_A1",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Cat_A1-Description\", \"A Cat preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Cat_A1-FlavorText\", \"Meow\")",
-            "Weight": 10
+            "Weight": 3000
         },
         {
             "Name": "Item_Workshop_Cat_A2",
@@ -16457,7 +16455,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Cat_A2.T_ITEM_Workshop_Cat_A2",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Cat_A2-Description\", \"A Cat preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Cat_A2-FlavorText\", \"Meow\")",
-            "Weight": 10
+            "Weight": 3000
         },
         {
             "Name": "Item_Workshop_Cat_A3",
@@ -16465,7 +16463,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Cat_A3.T_ITEM_Workshop_Cat_A3",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Cat_A3-Description\", \"A Cat preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Cat_A3-FlavorText\", \"Meow\")",
-            "Weight": 10
+            "Weight": 3000
         },
         {
             "Name": "Item_Animal_Bench",
@@ -16925,7 +16923,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Tame_Dog_C1.T_ITEM_Workshop_Tame_Dog_C1",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_C1-Description\", \"A Dog preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_C1-FlavorText\", \"Woof\")",
-            "Weight": 10
+            "Weight": 5000
         },
         {
             "Name": "Item_Dog_Head_C1",
@@ -17209,7 +17207,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Dog_D1.T_ITEM_Workshop_Dog_D1",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_D1-Description\", \"A Dog preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_D1-FlavorText\", \"It is Laika - Back from space - what a good dog.\")",
-            "Weight": 10
+            "Weight": 5000
         },
         {
             "Name": "Item_Workshop_Dog_D2",
@@ -17217,7 +17215,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Dog_D2.T_ITEM_Workshop_Dog_D2",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_D2-Description\", \"A Dog preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dog_D2-FlavorText\", \"It is Laika - Back from space - what a good dog.\")",
-            "Weight": 10
+            "Weight": 5000
         },
         {
             "Name": "Item_Dog_Head_D1",
@@ -17821,10 +17819,10 @@
         },
         {
             "Name": "Item_Slug_Module",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Slug_Module-DisplayName\", \"Hammerhead Slug Swamp Module\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Slug_Module-DisplayName\", \"Hammerhead Swamp Module\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_BOSS_Hammerhead.T_ITEM_MODULE_BOSS_Hammerhead",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Slug_Module-Description\", \"Provides advantages in Swamp Environments.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Slug_Module-FlavorText\", \"A module which can grant envirosuits characteristics of the Hammerhead Slug Creature.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Slug_Module-FlavorText\", \"A module which can grant envirosuits characteristics of the Hammerhead Creature.\")",
             "Weight": 500
         },
         {
@@ -17961,8 +17959,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Rock_Golem_Trophy.T_ITEM_Rock_Golem_Trophy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Trophy-Description\", \"A preserved specimen from a Quarrite that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 1000,
-            "MaxStack": 5
+            "Weight": 1000
         },
         {
             "Name": "Item_Rock_Golem_Sledgehammer",
@@ -18109,8 +18106,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Ape_Trophy.T_ITEM_Ape_Trophy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Trophy-Description\", \"A preserved specimen from a Garganutan that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 1000,
-            "MaxStack": 5
+            "Weight": 1000
         },
         {
             "Name": "Item_Ape_Fishing_Trap",
@@ -18172,7 +18168,7 @@
         },
         {
             "Name": "Item_Ape_Attractor",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Attractor-DisplayName\", \"Gargantuan Sonic Attactor\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Attractor-DisplayName\", \"Garganutan Sonic Attactor\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Ape_Attachment.T_ITEM_Ape_Attachment",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Attractor-Description\", \"A device which when powered will draw creatures to its location.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Attractor-FlavorText\", \"The opposite of a Creature Deterrent. \")",
@@ -18180,7 +18176,8 @@
         },
         {
             "Name": "Item_Ape_Tonic",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Tonic-DisplayName\", \"Gargantuan Frenzy Tonic\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Tonic-DisplayName\", \"Garganutan Frenzy Tonic\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Health_Garganutan_Tonic.T_ITEM_Health_Garganutan_Tonic",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Tonic-Description\", \"A tonic that sends one into a frenzy ready to engage in fist to fist combat.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Tonic-FlavorText\", \"Use only in moderation.\")",
             "Weight": 250,
@@ -18191,7 +18188,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Module-DisplayName\", \"Garganutan Damage Module\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_BOSS_ApeBoss.T_ITEM_MODULE_BOSS_ApeBoss",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Module-Description\", \"Provides Bonuses to Melee Combat.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Module-FlavorText\", \"A module which can grant envirosuits characteristics of the GargantuanCreature.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Module-FlavorText\", \"A module which can grant envirosuits characteristics of the Garganutan creature.\")",
             "Weight": 500
         },
         {
@@ -18219,21 +18216,19 @@
         },
         {
             "Name": "Item_IceMammoth_Trophy_Head",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_IceMammoth_Trophy_Head-DisplayName\", \"Rimetusk Head\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_IceMammoth_Trophy_Head-DisplayName\", \"Rimetusk Head Trophy\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_IceMammoth_Trophy_Head.T_ITEM_IceMammoth_Trophy_Head",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_IceMammoth_Trophy_Head-Description\", \"A preserved specimen from a Rimetusk that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_IceMammoth_Trophy_Head-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 2000,
-            "MaxStack": 5
+            "Weight": 2000
         },
         {
             "Name": "Item_IceMammoth_Trophy_Feature",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_IceMammoth_Trophy_Feature-DisplayName\", \"Rimetusk Display\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_IceMammoth_Trophy_Feature-DisplayName\", \"Rimetusk Display Trophy\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_IceMammoth_Trophy_Feature.T_ITEM_IceMammoth_Trophy_Feature",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_IceMammoth_Trophy_Feature-Description\", \"A preserved specimen from a Rimetusk that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_IceMammoth_Trophy_Feature-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 2000,
-            "MaxStack": 5
+            "Weight": 2000
         },
         {
             "Name": "Item_IceMammoth_Trophy_Chandelier",
@@ -18241,8 +18236,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_IceMammoth_Trophy_Chandelier.T_ITEM_IceMammoth_Trophy_Chandelier",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_IceMammoth_Trophy_Chandelier-Description\", \"A preserved specimen from a Rimetusk that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_IceMammoth_Trophy_Chandelier-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 2000,
-            "MaxStack": 5
+            "Weight": 2000
         },
         {
             "Name": "Item_IceMammoth_Armor_Head",
@@ -18369,8 +18363,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Scyther_Trophy.T_ITEM_Scyther_Trophy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Scyther_Trophy-Description\", \"A preserved specimen from a Marrowraith that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Scyther_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 1000,
-            "MaxStack": 5
+            "Weight": 1000
         },
         {
             "Name": "Item_Scyther_Aquarium",
@@ -18430,8 +18423,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Hornet_Trophy-DisplayName\", \"Thornet Trophy\")",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Hornet_Trophy-Description\", \"A preserved specimen from a Thornet that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Hornet_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 1000,
-            "MaxStack": 5
+            "Weight": 1000
         },
         {
             "Name": "Item_Hornet_Module",
@@ -18498,8 +18490,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Trophy-DisplayName\", \"Vineshade Trophy\")",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Trophy-Description\", \"A preserved specimen from a Vineshade that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 1000,
-            "MaxStack": 5
+            "Weight": 1000
         },
         {
             "Name": "Item_Plant_Boss_Turret",
@@ -18564,8 +18555,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Cat_Boss_Trophy-DisplayName\", \"Felixus Trophy\")",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Cat_Boss_Trophy-Description\", \"A preserved specimen from a Felixus that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Cat_Boss_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 1000,
-            "MaxStack": 5
+            "Weight": 1000
         },
         {
             "Name": "Item_Cat_Boss_Gauntlets",
@@ -18860,8 +18850,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Mini_Hippo_Trophy.T_ITEM_Mini_Hippo_Trophy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mini_Hippo_Trophy-Description\", \"Three mounted Dribbos, mounted for all to see.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mini_Hippo_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 1000,
-            "MaxStack": 5
+            "Weight": 1000
         },
         {
             "Name": "Item_Mini_Hippo_Head",
@@ -19531,7 +19520,7 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Arctic_Bat_Head-Description\", \"What remains of a mutated bat-like creature.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Arctic_Bat_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
             "Weight": 1000,
-            "MaxStack": 20
+            "MaxStack": 5
         },
         {
             "Name": "Item_Arctic_Bat_Trophy",
@@ -19539,8 +19528,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Arctic_Bat_Trophy.T_ITEM_Arctic_Bat_Trophy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Arctic_Bat_Trophy-Description\", \"A Trophy of a mutated bat like creature.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Arctic_Bat_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 1000,
-            "MaxStack": 5
+            "Weight": 1000
         },
         {
             "Name": "Item_Saddle_Basic_Arctic",
@@ -19807,7 +19795,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Calf.T_ITEM_Workshop_Calf",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Calf-Description\", \"A Calf preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Calf-FlavorText\", \"Preserved for revival - not eating.\")",
-            "Weight": 10
+            "Weight": 10000
         },
         {
             "Name": "Item_Workshop_Chick",
@@ -19815,14 +19803,14 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Workshop_Chick.T_ITEM_Workshop_Chick",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Chick-Description\", \"A Chick preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Chick-FlavorText\", \"About the size of a large chicken nugget.\")",
-            "Weight": 10
+            "Weight": 500
         },
         {
             "Name": "Item_Workshop_Lamb",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb-DisplayName\", \"Cryogenically Frozen Lamb\")",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb-Description\", \"A Lamb preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb-FlavorText\", \"Preserved for revival - not eating.\")",
-            "Weight": 10
+            "Weight": 3000
         },
         {
             "Name": "Item_Cow_Head",
@@ -19883,8 +19871,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_LavaHunter.T_ITEM_Meta_Biolab_Inhaler_LavaHunter",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_LavaHunter-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with molten magma.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_LavaHunter-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_Hammerhead",
@@ -19892,8 +19879,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_Hammerhead.T_ITEM_Meta_Biolab_Inhaler_Hammerhead",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Hammerhead-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals, assists with gathering ore.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Hammerhead-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_RockGolem",
@@ -19901,8 +19887,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_RockGolem.T_ITEM_Meta_Biolab_Inhaler_RockGolem",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RockGolem-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist your body with cave tolerance, and grants additional stone\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RockGolem-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_SwampApe",
@@ -19910,8 +19895,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_ApeBoss.T_ITEM_Meta_Biolab_Inhaler_ApeBoss",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_SwampApe-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist gathering infected bark.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_SwampApe-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_Scyther",
@@ -19919,8 +19903,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_Scyther.T_ITEM_Meta_Biolab_Inhaler_Scyther",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scyther-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with combat with thrown weapons.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Scyther-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_Thornet",
@@ -19928,8 +19911,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_Thornet.T_ITEM_Meta_Biolab_Inhaler_Thornet",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Thornet-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with skinning.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_Thornet-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_PlantBoss",
@@ -19937,8 +19919,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_PlantBoss.T_ITEM_Meta_Biolab_Inhaler_PlantBoss",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_PlantBoss-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with melee combat.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_PlantBoss-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Meta_Biolab_Inhaler_GiantCat",
@@ -19946,8 +19927,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_CatBoss.T_ITEM_Meta_Biolab_Inhaler_CatBoss",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_GiantCat-Description\", \"An inhaler that delivers a concentrated dose of UDA-approved chemicals which may assist with ranged combat.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_GiantCat-FlavorText\", \"Ah, the wonders of modern medicine.\")",
-            "Weight": 100,
-            "MaxStack": 5
+            "Weight": 100
         },
         {
             "Name": "Item_Rooster_Head",
@@ -20082,10 +20062,10 @@
         },
         {
             "Name": "Item_Carcass_RockGolem_Juvie",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockGolem_Juvie-DisplayName\", \"Juvenile Rock Golem Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing",
-            "Description": "INVTEXT(\"[DNT] Juvenile Rock Golem Carcass\")",
-            "FlavorText": "INVTEXT(\"[DNT] Juvenile Rock Golem Carcass\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockGolem_Juvie-DisplayName\", \"Young Quarrite Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Rock_Golem_Head.T_ITEM_Rock_Golem_Head",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockGolem_Juvie-Description\", \"This thing could have grown into a monster if it was left alive.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockGolem_Juvie-FlavorText\", \"If this is just a young one...\")",
             "Weight": 10000
         },
         {
@@ -20096,6 +20076,151 @@
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Frozen_Wood-FlavorText\", \"Needs to be defrosted to be useful.\")",
             "Weight": 150,
             "MaxStack": 100
+        },
+        {
+            "Name": "Item_Collectable_Note",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Collectable_Note-DisplayName\", \"Note\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Collectable_Note-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Collectable_Note-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Collectable_Logbook",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Collectable_Logbook-DisplayName\", \"Log Book\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Logbook.T_ITEM_Collectable_Logbook",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Collectable_Logbook-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Collectable_Logbook-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Collectable_Audio_Log",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Collectable_Audio_Log-DisplayName\", \"Audio Log\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/ITEM_Module_Waypoint.ITEM_Module_Waypoint",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Collectable_Audio_Log-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Collectable_Audio_Log-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Ashlands_Bunker_Note_1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ashlands_Bunker_Note_1-DisplayName\", \"Ruaumoko Bunker - Note #1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ashlands_Bunker_Note_1-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ashlands_Bunker_Note_1-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Ashlands_Bunker_Note_2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ashlands_Bunker_Note_2-DisplayName\", \"Ruaumoko Bunker - Note #2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ashlands_Bunker_Note_2-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ashlands_Bunker_Note_2-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Ashlands_Bunker_Note_3",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ashlands_Bunker_Note_3-DisplayName\", \"Ruaumoko Bunker - Note #3\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ashlands_Bunker_Note_3-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ashlands_Bunker_Note_3-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Icesheet_Outpost_Note_1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Outpost_Note_1-DisplayName\", \"Icesheet Outpost - Note #1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Outpost_Note_1-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Outpost_Note_1-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Icesheet_Outpost_Note_2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Outpost_Note_2-DisplayName\", \"Icesheet Outpost - Note #2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Outpost_Note_2-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Outpost_Note_2-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Icesheet_Outpost_Note_3",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Outpost_Note_3-DisplayName\", \"Icesheet Outpost - Note #3\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Outpost_Note_3-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Outpost_Note_3-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Icesheet_Cave_Note_1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Cave_Note_1-DisplayName\", \"Icesheet Cave - Note #1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Cave_Note_1-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Cave_Note_1-FlavorText\", \"Written by someone insane.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Icesheet_Cave_Note_2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Cave_Note_2-DisplayName\", \"Icesheet Cave - Note #2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Cave_Note_2-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Cave_Note_2-FlavorText\", \"Written by someone insane.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Icesheet_Cave_Note_3",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Cave_Note_3-DisplayName\", \"Icesheet Cave - Note #3\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Cave_Note_3-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Icesheet_Cave_Note_3-FlavorText\", \"Written by someone insane.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_GH_RG_MiningCamp_1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_RG_MiningCamp_1-DisplayName\", \"Olympus Mining Site Alpha - Scribbled Note #1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_RG_MiningCamp_1-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_RG_MiningCamp_1-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_GH_RG_MiningCamp_2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_RG_MiningCamp_2-DisplayName\", \"Olympus Mining Site Alpha - Scribbled Note #2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_RG_MiningCamp_2-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_RG_MiningCamp_2-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_GH_RG_MiningCamp_3",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_RG_MiningCamp_3-DisplayName\", \"Olympus Mining Site Alpha - Logbook\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Logbook.T_ITEM_Collectable_Logbook",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_RG_MiningCamp_3-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_RG_MiningCamp_3-FlavorText\", \"Looks Encypted\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Note_GH_RG_MiningOutpost_1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Note_GH_RG_MiningOutpost_1-DisplayName\", \"Olympus Mining Site Beta - Logbook\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Logbook.T_ITEM_Collectable_Logbook",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Note_GH_RG_MiningOutpost_1-Description\", \"A note written by someone. Right click to read.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Note_GH_RG_MiningOutpost_1-FlavorText\", \"Someone really needs to improve their handwriting.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Rock_Golem_Juvenile_Head",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Juvenile_Head-DisplayName\", \"Young Quarrite Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_RockGolem_Juvie_Head.T_ITEM_RockGolem_Juvie_Head",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Juvenile_Head-Description\", \"A preserved memory of a great beast.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Juvenile_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Condensed_Exotic",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Condensed_Exotic-DisplayName\", \"Unearthed Exotic Shard\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Condensed_Exotic.T_ITEM_Condensed_Exotic",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Condensed_Exotic-Description\", \"Exotic matter, an impossibility in your hands. Requires Lasers to be Cut into smaller useable pieces.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Condensed_Exotic-FlavorText\", \"Previously believed to exist only in the heart of stars, the most common form of exotics, elanthium, has permitted extraordinary leaps in low temperature super conductors and high-density power storage.\")",
+            "Weight": 40000
         }
     ]
 }

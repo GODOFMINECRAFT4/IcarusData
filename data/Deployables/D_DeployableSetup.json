@@ -8722,11 +8722,10 @@
         },
         {
             "Name": "Rooster_Trophy",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Rooster.BP_Trophy_Rooster_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_DesertDeer_A/SM_DEP_Trophy_DesertDeer_A.SM_DEP_Trophy_DesertDeer_A",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Notes/BP_Note.BP_Note_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Notebook/SM_DEP_Notebook.SM_DEP_Notebook",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
         },
@@ -8771,6 +8770,54 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Lava_Hunter_Trophy_Chair.BP_Lava_Hunter_Trophy_Chair_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Rock_Golem/SM_DEP_Trophy_Golem_Throne.SM_DEP_Trophy_Golem_Throne",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
+        },
+        {
+            "Name": "Collectable_Note",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Notes/BP_Note.BP_Note_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Notebook/SM_DEP_Notebook.SM_DEP_Notebook",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Items/Lore_Notes/DEPLOY_LORE_NOTE.DEPLOY_LORE_NOTE",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 2,
+            "DeployCollisionExtentOffset": {
+                "Z": 2
+            },
+            "DeployPlacementOffset": {
+                "Z": 2
+            }
+        },
+        {
+            "Name": "Collectable_AudioLog",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Notes/BP_AudioLog.BP_AudioLog_C",
+            "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_Module_Waypoint.SM_ITM_Module_Waypoint",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_TEDDY.SFX_DEPLOY_TEDDY",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 2,
+            "DeployCollisionExtentOffset": {
+                "Z": 2
+            },
+            "DeployPlacementOffset": {
+                "Z": 2
+            }
+        },
+        {
+            "Name": "Collectable_Logbook",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Notes/BP_Logbook.BP_Logbook_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_LogBook/SM_DEP_Logbook.SM_DEP_Logbook",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_TEDDY.SFX_DEPLOY_TEDDY",
+            "MaxSurfaceSnapAngle": 180,
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 2,
+            "DeployCollisionExtentOffset": {
+                "Z": 2
+            },
+            "DeployPlacementOffset": {
+                "Z": 2
+            }
         }
     ]
 }

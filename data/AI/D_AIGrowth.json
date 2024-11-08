@@ -794,7 +794,7 @@
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 500,
                 "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 1000,
-                "(Value=\"BaseFireDamageResistance_%\")": -2000,
+                "(Value=\"BaseFireDamageResistance_%\")": -100,
                 "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 1000,
                 "(Value=\"BaseHealthPerConnectedPlayer_+\")": 5000,
                 "(Value=\"BaseProjectileDamageResistance_%\")": 33,
@@ -827,10 +827,10 @@
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 500,
                 "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 300,
-                "(Value=\"BaseFireDamageResistance_%\")": -2000,
+                "(Value=\"BaseFireDamageResistance_%\")": -100,
                 "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 1500,
                 "(Value=\"BaseHealthPerConnectedPlayer_+\")": 50,
-                "(Value=\"BaseExplosiveDamageResistance_%\")": -500
+                "(Value=\"BaseExplosiveDamageResistance_%\")": -50
             }
         },
         {
@@ -1928,7 +1928,7 @@
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 500,
                 "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 500,
-                "(Value=\"BaseFireDamageResistance_%\")": -2000,
+                "(Value=\"BaseFireDamageResistance_%\")": -100,
                 "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 1500,
                 "(Value=\"BaseHealthPerConnectedPlayer_+\")": 150,
                 "(Value=\"BaseExplosiveDamageResistance_%\")": -50
@@ -3734,9 +3734,9 @@
         {
             "Name": "Calf",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 130,
-                "(Value=\"BaseSwimSpeed_+\")": 300,
-                "(Value=\"BaseHealthRegenPerMinute_+\")": 10,
+                "(Value=\"BaseMovementSpeed_+\")": 86,
+                "(Value=\"BaseSwimSpeed_+\")": 150,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 3,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
                 "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
@@ -3746,18 +3746,16 @@
                 "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
                 "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
                 "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
-                "(Value=\"BaseCharacterMass_+\")": 500,
+                "(Value=\"BaseCharacterMass_+\")": 333,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
-                "(Value=\"BaseNPCAttackRadius_+\")": 500,
-                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
-                "(Value=\"BaseNPCMinTargetDistanceForCharge_+\")": 300,
-                "(Value=\"BaseNPCMaxTargetDistanceForCharge_+\")": 1500,
-                "(Value=\"BaseNPCChargeAttackCooldown_+\")": 10,
-                "(Value=\"CanNPCDamageVoxels_?\")": 1,
-                "(Value=\"BaseMiningRadius_+\")": 100,
-                "(Value=\"BasePoisonDamageResistance_%\")": -100
+                "(Value=\"BaseMaximumHealth_+\")": 300,
+                "(Value=\"BaseGOAPActionWanderMinDistance_+\")": 250,
+                "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 850,
+                "(Value=\"BaseMaximumFood_+\")": 100,
+                "(Value=\"BaseMaximumWater_+\")": 100,
+                "(Value=\"BaseFoodConsumptionPerHour_+\")": 1200,
+                "(Value=\"BaseWaterConsumptionPerHour_+\")": 0
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_MediumDeerHealth.C_MediumDeerHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -3789,7 +3787,10 @@
                 "(Value=\"BaseCowMilkProduced_+\")": 10000,
                 "(Value=\"BaseCowFoodConsumedPerMilk_+\")": 50,
                 "(Value=\"BaseCowWaterConsumedPerMilk_+\")": 50,
-                "(Value=\"BaseCowTimeBetweenMilk_+\")": 10
+                "(Value=\"BaseCowTimeBetweenMilk_+\")": 10,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 2,
+                "(Value=\"BaseMaximumFood_+\")": 200,
+                "(Value=\"BaseMaximumWater_+\")": 200
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Mount_Buffalo_Health.C_Mount_Buffalo_Health'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
@@ -3850,8 +3851,7 @@
                 "(Value=\"BaseFoodConsumptionPerHour_+\")": 60,
                 "(Value=\"BaseWaterConsumptionPerHour_+\")": 120,
                 "(Value=\"BaseChickenResourcesConsumedPerEgg_+%\")": 50,
-                "(Value=\"BaseFallDamageResistance_%\")": 40,
-                "(Value=\"BaseMaximumStomachFullness_+\")": 2
+                "(Value=\"BaseFallDamageResistance_%\")": 40
             },
             "Health": "CurveFloat'/Game/Data/AI/C_ChickenHealth.C_ChickenHealth'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"

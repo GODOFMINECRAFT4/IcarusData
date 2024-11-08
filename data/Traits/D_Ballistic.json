@@ -3413,7 +3413,7 @@
         {
             "Name": "IceMammoth_Ice_Projectile",
             "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
-            "Damage": 50,
+            "Damage": 75,
             "DamageVariationPercentage": 10,
             "bCanStealthAttack": false,
             "bHomingProjectile": false,
@@ -3432,10 +3432,17 @@
                 "BounceVelocityStopSimulatingThreshold": 10,
                 "MinTimeBetweenBounces": 0.30000001192092896
             },
+            "RotationFollowsVelocity": false,
+            "AngularRotation": {
+                "Pitch": 90,
+                "Yaw": 90,
+                "Roll": 90
+            },
             "AudioData": {
                 "FlySound": "/Game/FMOD/Events/SFX/Creatures/Movement/Ice_Mammoth/SFX_CRE_ICEMAMMOTH_PROJECTILE_TRAVELLING.SFX_CRE_ICEMAMMOTH_PROJECTILE_TRAVELLING",
                 "ImpactSound": "/Game/FMOD/Events/SFX/Creatures/Movement/Ice_Mammoth/SFX_ICE_MAMMOTH_PROJECTILE_IMPACT.SFX_ICE_MAMMOTH_PROJECTILE_IMPACT"
-            }
+            },
+            "bUseActorPooling": true
         },
         {
             "Name": "Spider_Web",
@@ -3759,6 +3766,40 @@
             "AudioData": {
                 "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ROCK_GOLEM_GRENADE_SPIKE_FLY.SFX_BALLISTIC_ROCK_GOLEM_GRENADE_SPIKE_FLY",
                 "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Grenades/SFX_BALLISTIC_ROCKGOLEM_GRENADE_SPIKE_IMPACT.SFX_BALLISTIC_ROCKGOLEM_GRENADE_SPIKE_IMPACT"
+            },
+            "bUseActorPooling": true
+        },
+        {
+            "Name": "IceMammoth_Fractured_Ice",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 20,
+            "DamageVariationPercentage": 10,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "Weight": 0.5,
+            "AllowPickupAfterSettle": false,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_IceMammoth_Ice_Fracture.BP_Payload_IceMammoth_Ice_Fracture_C",
+            "PayloadDeploymentType": "OnBounceImmediate",
+            "PayloadDeploymentTimerDelay": 0,
+            "TrailParticle": "/Game/ASS/VFX/ENV/IceCool/NS_DryIceMist.NS_DryIceMist",
+            "BreakChance": 100,
+            "PostDeployLifetime": 0.10000000149011612,
+            "AttachOnHit": false,
+            "ProjectileBounceSettings": {
+                "Bounciness": 0.20000000298023224,
+                "Friction": 0.5,
+                "BounceVelocityStopSimulatingThreshold": 10,
+                "MinTimeBetweenBounces": 0.30000001192092896
+            },
+            "RotationFollowsVelocity": false,
+            "AngularRotation": {
+                "Pitch": 90,
+                "Yaw": 90,
+                "Roll": 90
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/Creatures/Movement/Ice_Mammoth/SFX_CRE_ICEMAMMOTH_PROJECTILE_TRAVELLING_MANY.SFX_CRE_ICEMAMMOTH_PROJECTILE_TRAVELLING_MANY",
+                "ImpactSound": "/Game/FMOD/Events/SFX/Creatures/Movement/Ice_Mammoth/SFX_ICE_MAMMOTH_PROJECTILE_IMPACT_MANY.SFX_ICE_MAMMOTH_PROJECTILE_IMPACT_MANY"
             },
             "bUseActorPooling": true
         }

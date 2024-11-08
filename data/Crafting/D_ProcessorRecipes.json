@@ -12242,6 +12242,14 @@
                     "DynamicProperties": []
                 }
             ],
+            "ResourceInputs": [
+                {
+                    "Type": {
+                        "Value": "Water"
+                    },
+                    "RequiredUnits": 500
+                }
+            ],
             "Outputs": [
                 {
                     "Element": {
@@ -12249,7 +12257,12 @@
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
-                    "DynamicProperties": [],
+                    "DynamicProperties": [
+                        {
+                            "PropertyType": "Fillable_StoredUnits",
+                            "Value": 10000
+                        }
+                    ],
                     "Alterations": []
                 }
             ],
@@ -81500,6 +81513,140 @@
             ],
             "Audio": {
                 "RowName": "CarpentryBench"
+            }
+        },
+        {
+            "Name": "Flamethrower",
+            "Requirement": {
+                "RowName": "Flamethrower"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Aluminium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3,
+                    "DynamicProperties": []
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": {
+                        "Value": "Biofuel"
+                    },
+                    "RequiredUnits": 5000
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Flame_Thrower",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Frozen_Wood",
+            "RequiredMillijoules": 7500,
+            "RecipeSets": [
+                {
+                    "RowName": "Campfire",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Firepit",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "PotBellyStove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Kitchen_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Stove",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Stone_Furnace",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Concrete_Furnace",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Electric_Furnace",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Frozen_Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Campfire"
             }
         }
     ]

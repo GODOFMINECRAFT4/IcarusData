@@ -31857,7 +31857,7 @@
             },
             "Position": {
                 "X": 500,
-                "Y": 950
+                "Y": 800
             },
             "Size": {
                 "X": 250,
@@ -31876,7 +31876,7 @@
             },
             "Position": {
                 "X": 500,
-                "Y": 650
+                "Y": 500
             },
             "Size": {
                 "X": 250,
@@ -54955,6 +54955,30 @@
             }
         },
         {
+            "Name": "Flamethrower",
+            "ExtraData": {
+                "RowName": "Item_FlameThrower",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 3200,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Composter",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Workshop_Resource_Pack_Dirt",
             "ExtraData": {
                 "RowName": "Meta_Resource_Pack_Dirt",
@@ -54965,13 +54989,1171 @@
             },
             "Position": {
                 "X": 500,
-                "Y": 1250
+                "Y": 1100
             },
             "Size": {
                 "X": 250,
                 "Y": 250
             },
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Workshop_Resource_Pack_Scoria",
+            "ExtraData": {
+                "RowName": "Meta_Resource_Pack_Scoria",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Resources"
+            },
+            "Position": {
+                "X": 3000,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Resource_Pack_Obsidian",
+            "ExtraData": {
+                "RowName": "Meta_Resource_Pack_Obsidian",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Resources"
+            },
+            "Position": {
+                "X": 3000,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Resource_Pack_Clay",
+            "ExtraData": {
+                "RowName": "Meta_Resource_Pack_Clay",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Resources"
+            },
+            "Position": {
+                "X": 3000,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "NewFrontiers"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Biolab_Inhaler_Scorpion",
+            "ExtraData": {
+                "RowName": "Meta_Biolab_Inhaler_Scorpion",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Biolab"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 400
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            }
+        },
+        {
+            "Name": "Workshop_Biolab_Inhaler_RockGolem",
+            "ExtraData": {
+                "RowName": "Meta_Biolab_Inhaler_RockGolem",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Biolab"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            }
+        },
+        {
+            "Name": "Workshop_Biolab_Inhaler_Sandworm",
+            "ExtraData": {
+                "RowName": "Meta_Biolab_Inhaler_Sandworm",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Biolab"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            }
+        },
+        {
+            "Name": "Workshop_Biolab_Inhaler_Hammerhead",
+            "ExtraData": {
+                "RowName": "Meta_Biolab_Inhaler_Hammerhead",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Biolab"
+            },
+            "Position": {
+                "X": 1300,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            }
+        },
+        {
+            "Name": "Workshop_Biolab_Inhaler_IceMammoth",
+            "ExtraData": {
+                "RowName": "Meta_Biolab_Inhaler_IceMammoth",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Biolab"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            }
+        },
+        {
+            "Name": "Workshop_Biolab_Inhaler_Alphawolf",
+            "ExtraData": {
+                "RowName": "Meta_Biolab_Inhaler_AlphaWolf",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Biolab"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 400
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            }
+        },
+        {
+            "Name": "Workshop_Biolab_Inhaler_SwampApe",
+            "ExtraData": {
+                "RowName": "Meta_Biolab_Inhaler_SwampApe",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Biolab"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            }
+        },
+        {
+            "Name": "Workshop_Biolab_Inhaler_LavaHunter",
+            "ExtraData": {
+                "RowName": "Meta_Biolab_Inhaler_LavaHunter",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Biolab"
+            },
+            "Position": {
+                "X": 1300,
+                "Y": 650
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            }
+        },
+        {
+            "Name": "GH_RG_A_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_A",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 3202.0009765625,
+                "Y": 2681.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            }
+        },
+        {
+            "Name": "GH_RG_D_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_D",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 4202.0009765625,
+                "Y": 3131.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_RG_B",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "GH_RG_C_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_C",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 1952.0009765625,
+                "Y": 3131.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_RG_B",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "GH_RG_Final_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_Final",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 3202.0009765625,
+                "Y": 4781.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_RG_F",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "GH_RG_C2",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "GH_RG_E",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "GH_RG_B_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_B",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 3202.0009765625,
+                "Y": 3131.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_RG_A",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "GH_RG_D2_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_D2",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 4202.0009765625,
+                "Y": 3831.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_RG_D",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "GH_RG_F_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_F",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 4202.0009765625,
+                "Y": 4281.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_RG_D2",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "GH_RG_C2_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_C2",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 1952.0009765625,
+                "Y": 4231.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_RG_C",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "GH_RG_O1_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_O1",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 2852.0009765625,
+                "Y": 3481.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_RG_B",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "GH_RG_O2_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_O2",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 2302.0009765625,
+                "Y": 3881.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_RG_C2",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "GH_RG_E_0",
+            "ExtraData": {
+                "RowName": "Rock_Golem_E",
+                "DataTableName": "D_GreatHunts"
+            },
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 3202.0009765625,
+                "Y": 3831.00048828125
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_RG_D2",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Creature_Cow_Coziness",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_Coziness-DisplayName\", \"Calming Moos\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_Coziness-Description\", \"Increase Coziness Bonus\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_GatheringGuru.Talent_GatheringGuru",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 600,
+                "Y": 900
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseComfortLevel_+\")": 4
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseComfortLevel_+\")": 8
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseComfortLevel_+\")": 16
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_ReducedFoodConsumption_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Creature_Cow_ResourceUsage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_ResourceUsage-DisplayName\", \"Fed Well\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_ResourceUsage-Description\", \"Increased Wool Growth\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Buffalo_AuraHeatResist.T_Talent_Buffalo_AuraHeatResist",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 500
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCowResourcesConsumedPerMilk_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCowResourcesConsumedPerMilk_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCowResourcesConsumedPerMilk_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_HealthRegeneration_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "CombatPet_Health_Cow",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Health_Cow-DisplayName\", \"Wild Fortitude\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Health_Cow-Description\", \"Increased Maximum Health\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Health.T_Talent_Base_Health",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 300
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumHealth_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumHealth_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumHealth_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumHealth_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_Base_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "CombatPet_ReducedFoodConsumption_Cow",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedFoodConsumption_Cow-DisplayName\", \"Metabolic Preservation\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedFoodConsumption_Cow-Description\", \"Reduced Food Usage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedFoodConsumption.T_Talent_Base_ReducedFoodConsumption",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 700
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodConsumption_+%\")": -2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodConsumption_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodConsumption_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodConsumption_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_Base_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "CombatPet_Base_Cow",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_Cow-DisplayName\", \"Cow\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_Cow-Description\", \"Can be specialized into further milk yield or defensive bonuses.\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Sheep.T_Talent_Base_Sheep",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 500
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {},
+                    "GrantedFlags": [
+                        {
+                            "RowName": "None",
+                            "DataTableName": "D_CharacterFlags"
+                        }
+                    ]
+                }
+            ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "NonCombatPet_Coziness_Cow",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"NonCombatPet_Coziness_Cow-DisplayName\", \"Calming Presence\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"NonCombatPet_Coziness_Cow-Description\", \"Increase Coziness Bonus\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Buffalo_FireResist.T_Talent_Buffalo_FireResist",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 700,
+                "Y": 500
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseComfortLevel_+\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseComfortLevel_+\")": 6
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseComfortLevel_+\")": 12
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseComfortLevel_+\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_Base_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "CombatPet_HealthRegeneration_Cow",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_HealthRegeneration_Cow-DisplayName\", \"Nurtured Recovery\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_HealthRegeneration_Cow-Description\", \"Increased Health Regeneration\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_HealthRegeneration.T_Talent_Base_HealthRegeneration",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 300,
+                "Y": 500
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseHealthRegen_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseHealthRegen_+%\")": 15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseHealthRegen_+%\")": 30
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseHealthRegen_+%\")": 60
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_Base_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "CombatPet_FoodSlot_Cow",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodSlot_Cow-DisplayName\", \"Large Stomach\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodSlot_Cow-Description\", \"Increases Food Buff Effectiveness and allows an additional Food Buff\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodSlot.T_Talent_Base_FoodSlot",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 900
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 3
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 7
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 12
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 15,
+                        "(Value=\"BaseMaximumStomachFullness_+\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "NonCombatPet_Coziness_Cow",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "CombatPet_ReducedFoodConsumption_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "CombatPet_ReducedWaterUsage_Cow",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Cow-DisplayName\", \"Hydration Elasticity \")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Cow-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 100
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": -2,
+                        "(Value=\"BaseHeatResistance_%\")": 1
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": -5,
+                        "(Value=\"BaseHeatResistance_%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": -10,
+                        "(Value=\"BaseHeatResistance_%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": -20,
+                        "(Value=\"BaseHeatResistance_%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_Health_Cow",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "NonCombatPet_Coziness_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "CombatPet_FoodBuffDuration_Cow",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Cow-DisplayName\", \"Perfect Pasturage\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Cow-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 100
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                        "(Value=\"BaseColdResistance_%\")": 1
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 10,
+                        "(Value=\"IsMountGrazingEnabled_?\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_HealthRegeneration_Cow",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "CombatPet_Health_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "CombatPet_DamageReduction_Cow",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_DamageReduction_Cow-DisplayName\", \"Tough as Leather\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_DamageReduction_Cow-Description\", \"Increased Physical Damage Reduction\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_DamageReduction.T_Talent_Base_DamageReduction",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 900
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 4
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 8
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 15
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_ReducedFoodConsumption_Cow",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "CombatPet_HealthRegeneration_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_Cow_PhysicalResist",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_PhysicalResist-DisplayName\", \"Thick Hide\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_PhysicalResist-Description\", \"Increased Physical Damage Reduction\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Buffalo_DamageReduction.T_Talent_Buffalo_DamageReduction",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 500
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "NonCombatPet_Coziness_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Creature_Cow_MilkProduced",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_MilkProduced-DisplayName\", \"Holstein Harvest\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_MilkProduced-Description\", \"Increases milk production\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_StaminaRegeneration.T_Talent_Base_StaminaRegeneration",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 100
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCowMilkProduced_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCowMilkProduced_+%\")": 15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseCowMilkProduced_+%\")": 30
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_Health_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Creature_Cow_Threat",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_Threat-DisplayName\", \"Soft Hoofed\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_Threat-Description\", \"Reduced Animal Threat\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Wolf_MarkOnHit.T_Talent_Wolf_MarkOnHit",
+            "TalentTree": {
+                "RowName": "Creature_Cow"
+            },
+            "Position": {
+                "X": 400,
+                "Y": 900
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseAnimalThreatModifier_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseAnimalThreatModifier_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseAnimalThreatModifier_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "CombatPet_ReducedFoodConsumption_Cow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
         }
     ]
 }

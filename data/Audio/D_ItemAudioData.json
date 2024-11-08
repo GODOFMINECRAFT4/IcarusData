@@ -23,7 +23,14 @@
             "Name": "Default",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
-            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "EQUIP": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/SFX_WEP_GEN_EQUIP.SFX_WEP_GEN_EQUIP"
+                    ]
+                }
+            }
         },
         {
             "Name": "Armour",
@@ -101,7 +108,14 @@
             "DamagedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_DMG_METAL.SFX_DEP_DMG_METAL",
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_DST_METAL_DENSE.SFX_DEP_DST_METAL_DENSE",
             "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
-            "BackpackFootstepSound": "/Game/FMOD/Events/SFX/Character/Movement/SFX_CHAR_MOVE_BACKPACK.SFX_CHAR_MOVE_BACKPACK"
+            "BackpackFootstepSound": "/Game/FMOD/Events/SFX/Character/Movement/SFX_CHAR_MOVE_BACKPACK.SFX_CHAR_MOVE_BACKPACK",
+            "AnimSounds": {
+                "EQUIP": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/Weapons/SFX_WEP_GEN_EQUIP.SFX_WEP_GEN_EQUIP"
+                    ]
+                }
+            }
         },
         {
             "Name": "Fur_Armour",
@@ -205,7 +219,7 @@
         },
         {
             "Name": "MetalSledgehammer",
-            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "PickUpSound": "/Game/FMOD/Events/SFX/Weapons/SFX_WEP_PICKUP_SLEDGEHAMMER.SFX_WEP_PICKUP_SLEDGEHAMMER",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
             "HitSound": "/Game/FMOD/Events/SFX/Weapons/Pickaxes/SFX_IMPACT_META_SLEDGEHAMMER.SFX_IMPACT_META_SLEDGEHAMMER",
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
@@ -225,7 +239,7 @@
                 },
                 "EQUIP": {
                     "FMODEvents": [
-                        "/Game/FMOD/Events/SFX/Weapons/SFX_WEP_AXE_EQUIP_METAL.SFX_WEP_AXE_EQUIP_METAL"
+                        "/Game/FMOD/Events/SFX/Weapons/SFX_WEP_PICKUP_SLEDGEHAMMER.SFX_WEP_PICKUP_SLEDGEHAMMER"
                     ]
                 }
             }
@@ -1618,7 +1632,7 @@
         },
         {
             "Name": "RockGolemSledgehammer",
-            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "PickUpSound": "/Game/FMOD/Events/SFX/Weapons/SFX_WEP_PICKUP_SLEDGEHAMMER.SFX_WEP_PICKUP_SLEDGEHAMMER",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
             "HitSound": "/Game/FMOD/Events/SFX/Weapons/Sledgehammer/SFX_IMPACT_ROCK_GOLEM_SLEDGEHAMMER.SFX_IMPACT_ROCK_GOLEM_SLEDGEHAMMER",
             "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
@@ -1638,7 +1652,7 @@
                 },
                 "EQUIP": {
                     "FMODEvents": [
-                        "/Game/FMOD/Events/SFX/Weapons/SFX_WEP_AXE_EQUIP_METAL.SFX_WEP_AXE_EQUIP_METAL"
+                        "/Game/FMOD/Events/SFX/Weapons/SFX_WEP_PICKUP_SLEDGEHAMMER.SFX_WEP_PICKUP_SLEDGEHAMMER"
                     ]
                 }
             }

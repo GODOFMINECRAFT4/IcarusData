@@ -387,6 +387,33 @@
                     "bMustOwnInventory": false
                 }
             ]
+        },
+        {
+            "Name": "Place_Read",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Place",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": true
+                },
+                {
+                    "Use": {
+                        "RowName": "Read",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
         }
     ]
 }
