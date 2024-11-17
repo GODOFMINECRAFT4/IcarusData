@@ -417,6 +417,16 @@
             "ResourceFlowRate": 1500,
             "AutoShutoffFlowPercent": 99,
             "bAllowAutoRestart": true
+        },
+        {
+            "Name": "LandingPad",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "ResourceFlowRate": 500,
+            "BrownOutModifier": {
+                "RowName": "Electronic_Light_Brownout"
+            },
+            "bAllowAutoRestart": true
         }
     ]
 }

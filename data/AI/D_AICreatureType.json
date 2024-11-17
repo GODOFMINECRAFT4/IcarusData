@@ -1489,7 +1489,7 @@
         },
         {
             "Name": "Hammerhead_Slug",
-            "CreatureName": "INVTEXT(\"[DNT] Hammerhead Slug\")",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Hammerhead_Slug-CreatureName\", \"Hammerhead \")",
             "Tag": {
                 "TagName": "NPC.Slug"
             },
@@ -1606,7 +1606,7 @@
         },
         {
             "Name": "Mange_Wolf_Alpha",
-            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Mange_Wolf_Alpha-CreatureName\", \"Skulmutt\")",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Mange_Wolf_Alpha-CreatureName\", \"Alpha Skulmutt\")",
             "Tag": {
                 "TagName": "NPC.MangeWolf.Alpha"
             },
@@ -1631,32 +1631,6 @@
             },
             "SkinningXPEvent": {
                 "RowName": "Skin_Kiwi"
-            }
-        },
-        {
-            "Name": "Ice_Mammoth",
-            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Ice_Mammoth-CreatureName\", \"Ice Mammoth\")",
-            "Tag": {
-                "TagName": "NPC.Mammoth"
-            },
-            "SpawnStat": {
-                "Value": "IceMammothSpawnRate_+%"
-            },
-            "AdditionalDamageStat": {
-                "Value": "IceMammothExtraDamage_+%"
-            },
-            "AdditionalResistanceStat": {
-                "Value": "IceMammothExtraDamageResistance_+%"
-            },
-            "SkinningXPEvent": {
-                "RowName": "Skin_Mammoth"
-            }
-        },
-        {
-            "Name": "Ape",
-            "CreatureName": "INVTEXT(\"[DNT] Ape\")",
-            "Tag": {
-                "TagName": "NPC.Ape"
             }
         },
         {
@@ -1739,13 +1713,6 @@
             }
         },
         {
-            "Name": "RockGolem",
-            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"RockGolem-CreatureName\", \"Quarrite\")",
-            "Tag": {
-                "TagName": "NPC.RockGolem"
-            }
-        },
-        {
             "Name": "Bull",
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Bull-CreatureName\", \"Bull\")",
             "Tag": {
@@ -1756,14 +1723,14 @@
             "Name": "Cow",
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Cow-CreatureName\", \"Cow\")",
             "Tag": {
-                "TagName": "BT.Mount.Cow"
+                "TagName": "NPC.Cow"
             }
         },
         {
             "Name": "Calf",
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Calf-CreatureName\", \"Calf\")",
             "Tag": {
-                "TagName": "NPC.Calf"
+                "TagName": "NPC.Juvenile.Calf"
             }
         }
     ]

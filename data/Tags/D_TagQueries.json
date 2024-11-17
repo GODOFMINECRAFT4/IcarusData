@@ -1508,19 +1508,27 @@
                     },
                     {
                         "TagName": "Item.AnimalFeed"
+                    },
+                    {
+                        "TagName": "Item.Resource.Spoilable"
+                    },
+                    {
+                        "TagName": "Item.Spoilable"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     1,
-                    4,
+                    6,
                     0,
                     1,
                     2,
-                    3
+                    3,
+                    4,
+                    5
                 ],
-                "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish, Item.Resource.Ice, Item.AnimalFeed )"
+                "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish, Item.Resource.Ice, Item.AnimalFeed, Item.Resource.Spoilable, Item.Spoilable )"
             }
         },
         {
@@ -6877,6 +6885,44 @@
                     0
                 ],
                 "AutoDescription": " ALL( Item.Note )"
+            }
+        },
+        {
+            "Name": "Spoilable_ColdSlowsSpoilRate",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food"
+                    },
+                    {
+                        "TagName": "NPC.Fish"
+                    },
+                    {
+                        "TagName": "Item.Resource.Ice"
+                    },
+                    {
+                        "TagName": "Item.AnimalFeed"
+                    },
+                    {
+                        "TagName": "Item.Resource.Spoilable"
+                    },
+                    {
+                        "TagName": "Item.Spoilable"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    6,
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish, Item.Resource.Ice, Item.AnimalFeed, Item.Resource.Spoilable, Item.Spoilable )"
             }
         }
     ]

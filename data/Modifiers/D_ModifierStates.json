@@ -11011,7 +11011,7 @@
             "Name": "Ape_Tonic",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Health_Garganutan_Tonic.T_ITEM_Health_Garganutan_Tonic'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Ape_Tonic-ModifierName\", \"Garganutan Frenzy Tonic \")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Ape_Tonic-ModifierDescription\", \"Greatly increasees your attack and movement speeds, and greatly increases stamina regeneration, but reduces felling and mining rewards.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Ape_Tonic-ModifierDescription\", \"Greatly increases your attack and movement speeds, and greatly increases stamina regeneration, but reduces felling and mining rewards.\")",
             "GrantedStats": {
                 "(Value=\"BaseAttackSpeed_+%\")": 25,
                 "(Value=\"BaseMovementSpeed_+%\")": 25,
@@ -11869,7 +11869,7 @@
             "Name": "Animal_Fertilized_Chicken",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/FieldGuide/Icons/Icon_FishQuality.Icon_FishQuality'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilized_Chicken-ModifierName\", \"Fertalized\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilized_Chicken-ModifierName\", \"Fertilized\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Animal_Fertilized_Chicken-ModifierDescription\", \"This animal will produced fertilized eggs.\")",
             "GrantedStats": {
                 "(Value=\"BaseWaterConsumption_+%\")": 200,
@@ -11894,7 +11894,7 @@
         {
             "Name": "Chocolate_Cake_Piece",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Chocolate_Cake_Piece-ModifierName\", \"Chocolate Cake Piece\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Chocolate_Cake_Piece-ModifierDescription\", \"A decadant cake, good for health and regen.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Chocolate_Cake_Piece-ModifierDescription\", \"A decadent cake, good for health and regen.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumHealth_+\")": 300,
@@ -11957,13 +11957,14 @@
         },
         {
             "Name": "Cheese",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Cheese.T_ITEM_Cheese'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cheese-ModifierName\", \"Cheese\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cheese-ModifierDescription\", \"Provides a Health Boost.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodStomachSlots_+\")": 1,
                 "(Value=\"BaseMaximumHealth_+\")": 100,
                 "(Value=\"BaseSharedExperience_+%\")": 10,
-                "(Value=\"BaseHealthRegen_+%\")": 50
+                "(Value=\"BaseHealthRegen_+%\")": 25
             },
             "ModifierLifetimeAffectors": [
                 {
@@ -12076,6 +12077,203 @@
             "MergeType": "LongestDuration",
             "bEffectsPlayers": false,
             "SaveToDatabase": false
+        },
+        {
+            "Name": "GrantedAura_Frostnip",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Chilled.Icon_Chilled'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Frostnip-ModifierName\", \"Frosty\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Frostnip-ModifierDescription\", \"You\\'re cold and at risk of frostbite. Speed and stamina regen are reduced. Counter with heat bandages.\")",
+            "bAura": true,
+            "AuraRange": 1250,
+            "AuraFlags": {
+                "EffectsSelf": false
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_Frostnip"
+            },
+            "bEscalates": true,
+            "bRemovedOnEscalation": false,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_Frostnip",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Frosted.T_ICON_Frosted'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Frostnip-ModifierName\", \"Frosty\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Frostnip-ModifierDescription\", \"You\\'re cold and at risk of frostbite. Speed and stamina regen are reduced. Counter with heat bandages.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -15,
+                "(Value=\"BaseStaminaRegen_+%\")": -10
+            },
+            "bEscalates": true,
+            "Escalation": {
+                "RowName": "Frostnip_Escalation"
+            },
+            "EscalationTime": 10,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_TemperatureClear.BP_Modifier_TemperatureClear_C",
+            "MergeType": "Replace",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Frostbite"
+                    },
+                    {
+                        "TagName": "ModifierState.HeatBandage"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Frostbite, ModifierState.HeatBandage )"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Milk",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Resource_Milk.T_ICON_Resource_Milk'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Milk-ModifierName\", \"Milk\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Milk-ModifierDescription\", \"Gives you strong bones.\")",
+            "GrantedStats": {
+                "(Value=\"BaseSharedExperience_+%\")": 10,
+                "(Value=\"BaseFallDamageResistance_%\")": 10,
+                "(Value=\"BaseStaminaRegen_+%\")": 40
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Thermos_Coffee_With_Cream",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Thermos.ITEM_Thermos'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_Coffee_With_Cream-ModifierName\", \"Hot Coffee with Cream\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Thermos_Coffee_With_Cream-ModifierDescription\", \"Keeps you warm, boosts energy.\")",
+            "GrantedStats": {
+                "(Value=\"BaseInternalTemperatureModification_+\")": 1000,
+                "(Value=\"BaseMaximumStamina_+%\")": 25,
+                "(Value=\"BaseStaminaRegen_+%\")": 25
+            },
+            "MergeType": "Replace",
+            "bEffectsNPCs": false,
+            "RemovedOnClick": true
+        },
+        {
+            "Name": "Cheese_Roll",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Cheese_Roll.T_ITEM_Cheese_Roll'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cheese_Roll-ModifierName\", \"Cheese Roll\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cheese_Roll-ModifierDescription\", \"Provides a boost to health, stamina, health regeneration, stamina regeneration and experience gained and granted to allies. \")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 150,
+                "(Value=\"BaseMaximumStamina_+\")": 125,
+                "(Value=\"BaseSharedExperience_+%\")": 10,
+                "(Value=\"BaseExperience_+%\")": 10,
+                "(Value=\"BaseHealthRegen_+%\")": 25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "MaxStackNum": 4,
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Cheese_Pizza",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Cheese_Pizza.T_ITEM_Cheese_Pizza'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cheese_Pizza-ModifierName\", \"Cheese Pizza\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cheese_Pizza-ModifierDescription\", \"Provides a boost to health, stamina, stamina regeneration and experience gained and granted to allies. \")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 125,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseSharedExperience_+%\")": 10,
+                "(Value=\"BaseExperience_+%\")": 5,
+                "(Value=\"BaseStaminaRegen_+%\")": 50
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Pavlova",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Pavlova.T_ITEM_Pavlova'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pavlova-ModifierName\", \"Pavlova\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pavlova-ModifierDescription\", \"Provides a boost to health, stamina and ranged combat. Grants resistance to cave sickness and a chance to gain extra stone while mining.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 125,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 20,
+                "(Value=\"BasePneumoniaResistance_%\")": 20,
+                "(Value=\"BaseReloadSpeed_+%\")": 10,
+                "(Value=\"BaseChargeSpeed_+%\")": 10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Strawberries_And_Cream",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_BerriesAndCream.T_ITEM_BerriesAndCream'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Strawberries_And_Cream-ModifierName\", \"Strawberries and Cream\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Strawberries_And_Cream-ModifierDescription\", \"Provides a boost to health and stamina, and a significant boost to experience gain.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 50,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseExperience_+%\")": 30
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Bacon_Sandwich",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Bacon_Sandwich.T_ITEM_Bacon_Sandwich'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Bacon_Sandwich-ModifierName\", \"Bacon Butty\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Bacon_Sandwich-ModifierDescription\", \"Provides a boost to health, stamina, health regeneration, experience gained and critical damage.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 150,
+                "(Value=\"BaseMaximumStamina_+\")": 125,
+                "(Value=\"BaseHealthRegen_+%\")": 25,
+                "(Value=\"BaseExperience_+%\")": 25,
+                "(Value=\"BaseCriticalDamage_+%\")": 25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
         }
     ]
 }

@@ -4452,6 +4452,62 @@
             "DefaultGoal": {
                 "RowName": "Wander"
             }
+        },
+        {
+            "Name": "Juvenile_Domesticated",
+            "Motivations": [
+                {
+                    "RowName": "Loneliness",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Tiredness",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Hunger",
+                    "DataTableName": "D_GOAPMotivations"
+                }
+            ],
+            "Actions": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Find_Company",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Get_Parent_Domesticated",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Rest_At_Animal_Bed",
+                    "DataTableName": "D_GOAPActions"
+                }
+            ],
+            "Goals": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Rest",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Find_Company",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Hunger",
+                    "DataTableName": "D_GOAPGoals"
+                }
+            ],
+            "DefaultGoal": {
+                "RowName": "Wander"
+            }
         }
     ]
 }

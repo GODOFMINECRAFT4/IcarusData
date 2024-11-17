@@ -9166,6 +9166,49 @@
             ]
         },
         {
+            "Name": "Arctic_Blizzard_Ice_Mammoth",
+            "Difficulty": "Medium",
+            "Tier": 6,
+            "DurationSeconds": 9999,
+            "DurationMinutes": 167,
+            "BiomeGroups": [
+                {
+                    "RowName": "Arena_IceMammoth",
+                    "DataTableName": "D_WeatherBiomeGroups"
+                }
+            ],
+            "WeatherImage": "Texture2D'/Game/Assets/2DArt/UI/HUD/WeatherCards/WeatherEvent_HeavySnow.WeatherEvent_HeavySnow'",
+            "WeatherName": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_Blizzard_Ice_Mammoth-WeatherName\", \"Light Blizzard\")",
+            "WeatherDescription": "NSLOCTEXT(\"D_WeatherEvents\", \"Arctic_Blizzard_Ice_Mammoth-WeatherDescription\", \"Incoming Blizzard!\")",
+            "WeatherActions": [
+                {
+                    "Action": {
+                        "RowName": "ArcticBlizzard_IceMam2",
+                        "DataTableName": "D_WeatherActions"
+                    },
+                    "TimeInSeconds": 9999
+                }
+            ],
+            "MusicCues": [
+                {
+                    "MusicCondition": "Storm_Ramp",
+                    "TriggerTime": 0
+                },
+                {
+                    "MusicCondition": "Storm_Damage",
+                    "TriggerTime": 3
+                },
+                {
+                    "MusicCondition": "Storm_Chaos",
+                    "TriggerTime": 70
+                },
+                {
+                    "MusicCondition": "Normal",
+                    "TriggerTime": 9999
+                }
+            ]
+        },
+        {
             "Name": "Dev_EmptyEvent",
             "DurationSeconds": 340,
             "DurationMinutes": 6,

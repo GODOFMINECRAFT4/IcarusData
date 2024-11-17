@@ -42539,7 +42539,7 @@
             },
             "Position": {
                 "X": 500,
-                "Y": 650
+                "Y": 800
             },
             "Size": {
                 "X": 250,
@@ -42563,7 +42563,7 @@
             },
             "Position": {
                 "X": 500,
-                "Y": 950
+                "Y": 1100
             },
             "Size": {
                 "X": 250,
@@ -52393,8 +52393,9 @@
         },
         {
             "Name": "Boss_Crafting",
-            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Boss_Crafting-DisplayName\", \"Boss Crafting\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/BossMonsters/Icon_Mammoth.Icon_Mammoth",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Boss_Crafting-DisplayName\", \"Great Hunt Crafting\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Boss_Crafting-Description\", \"Enables crafting using world boss parts. Acquire the Great Hunt Device through the Orbital Exchange Interface.\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Great_Hunt_Device.T_ITEM_Great_Hunt_Device",
             "ExtraData": {
                 "DataTableName": "D_Itemable"
             },
@@ -54955,6 +54956,73 @@
             }
         },
         {
+            "Name": "Workshop_Creature_Cow",
+            "ExtraData": {
+                "RowName": "Meta_Calf",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Creatures"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Milk_Bucket",
+            "ExtraData": {
+                "RowName": "Item_Milk_Bucket",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 1650,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Milk_Bottle",
+            "ExtraData": {
+                "RowName": "Item_Milk_Bottle_Glass",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 13550,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Glassworking_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Flamethrower",
             "ExtraData": {
                 "RowName": "Item_FlameThrower",
@@ -55079,7 +55147,7 @@
                 "RowName": "Workshop_Biolab"
             },
             "Position": {
-                "X": 900,
+                "X": 1400,
                 "Y": 400
             },
             "Size": {
@@ -55097,7 +55165,7 @@
                 "RowName": "Workshop_Biolab"
             },
             "Position": {
-                "X": 500,
+                "X": 1000,
                 "Y": 1200
             },
             "Size": {
@@ -55115,7 +55183,7 @@
                 "RowName": "Workshop_Biolab"
             },
             "Position": {
-                "X": 500,
+                "X": 1000,
                 "Y": 800
             },
             "Size": {
@@ -55133,7 +55201,7 @@
                 "RowName": "Workshop_Biolab"
             },
             "Position": {
-                "X": 1300,
+                "X": 1800,
                 "Y": 1050
             },
             "Size": {
@@ -55151,7 +55219,7 @@
                 "RowName": "Workshop_Biolab"
             },
             "Position": {
-                "X": 900,
+                "X": 1400,
                 "Y": 800
             },
             "Size": {
@@ -55169,7 +55237,7 @@
                 "RowName": "Workshop_Biolab"
             },
             "Position": {
-                "X": 500,
+                "X": 1000,
                 "Y": 400
             },
             "Size": {
@@ -55187,7 +55255,7 @@
                 "RowName": "Workshop_Biolab"
             },
             "Position": {
-                "X": 900,
+                "X": 1400,
                 "Y": 1200
             },
             "Size": {
@@ -55205,279 +55273,13 @@
                 "RowName": "Workshop_Biolab"
             },
             "Position": {
-                "X": 1300,
+                "X": 1800,
                 "Y": 650
             },
             "Size": {
                 "X": 250,
                 "Y": 250
             }
-        },
-        {
-            "Name": "GH_RG_A_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_A",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 3202.0009765625,
-                "Y": 2681.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            }
-        },
-        {
-            "Name": "GH_RG_D_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_D",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 4202.0009765625,
-                "Y": 3131.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_RG_B",
-                    "DataTableName": "D_Talents"
-                }
-            ]
-        },
-        {
-            "Name": "GH_RG_C_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_C",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 1952.0009765625,
-                "Y": 3131.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_RG_B",
-                    "DataTableName": "D_Talents"
-                }
-            ]
-        },
-        {
-            "Name": "GH_RG_Final_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_Final",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 3202.0009765625,
-                "Y": 4781.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_RG_F",
-                    "DataTableName": "D_Talents"
-                },
-                {
-                    "RowName": "GH_RG_C2",
-                    "DataTableName": "D_Talents"
-                },
-                {
-                    "RowName": "GH_RG_E",
-                    "DataTableName": "D_Talents"
-                }
-            ]
-        },
-        {
-            "Name": "GH_RG_B_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_B",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 3202.0009765625,
-                "Y": 3131.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_RG_A",
-                    "DataTableName": "D_Talents"
-                }
-            ]
-        },
-        {
-            "Name": "GH_RG_D2_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_D2",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 4202.0009765625,
-                "Y": 3831.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_RG_D",
-                    "DataTableName": "D_Talents"
-                }
-            ]
-        },
-        {
-            "Name": "GH_RG_F_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_F",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 4202.0009765625,
-                "Y": 4281.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_RG_D2",
-                    "DataTableName": "D_Talents"
-                }
-            ]
-        },
-        {
-            "Name": "GH_RG_C2_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_C2",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 1952.0009765625,
-                "Y": 4231.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_RG_C",
-                    "DataTableName": "D_Talents"
-                }
-            ]
-        },
-        {
-            "Name": "GH_RG_O1_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_O1",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 2852.0009765625,
-                "Y": 3481.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_RG_B",
-                    "DataTableName": "D_Talents"
-                }
-            ]
-        },
-        {
-            "Name": "GH_RG_O2_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_O2",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 2302.0009765625,
-                "Y": 3881.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_RG_C2",
-                    "DataTableName": "D_Talents"
-                }
-            ]
-        },
-        {
-            "Name": "GH_RG_E_0",
-            "ExtraData": {
-                "RowName": "Rock_Golem_E",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Ape"
-            },
-            "Position": {
-                "X": 3202.0009765625,
-                "Y": 3831.00048828125
-            },
-            "Size": {
-                "X": 256,
-                "Y": 256
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_RG_D2",
-                    "DataTableName": "D_Talents"
-                }
-            ]
         },
         {
             "Name": "Creature_Cow_Coziness",
@@ -55671,7 +55473,7 @@
             "Name": "CombatPet_Base_Cow",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_Cow-DisplayName\", \"Cow\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_Cow-Description\", \"Can be specialized into further milk yield or defensive bonuses.\")",
-            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Sheep.T_Talent_Base_Sheep",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Cow.T_Talent_Base_Cow",
             "TalentTree": {
                 "RowName": "Creature_Cow"
             },
@@ -56154,6 +55956,48 @@
                 }
             ],
             "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Workshop_Biolab_GreatHuntDevice",
+            "ExtraData": {
+                "RowName": "Meta_Biolab_Great_Hunt_Device",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Biolab"
+            },
+            "Position": {
+                "X": 550,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            }
+        },
+        {
+            "Name": "Rock_Golem_Lamp",
+            "ExtraData": {
+                "RowName": "Item_Rock_Golem_Trophy_Lamp",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 8850,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Rock_Golem_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
         }
     ]
 }

@@ -3420,16 +3420,15 @@
             "Weight": 0.5,
             "AllowPickupAfterSettle": false,
             "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_IceMammoth_Ice_Projectile.BP_Payload_IceMammoth_Ice_Projectile_C",
-            "PayloadDeploymentType": "OnBounceImmediate",
             "PayloadDeploymentTimerDelay": 1,
             "TrailParticle": "/Game/ASS/VFX/ENV/IceCool/NS_DryIceMist.NS_DryIceMist",
             "BreakChance": 0,
             "PostDeployLifetime": 10,
             "AttachOnHit": false,
             "ProjectileBounceSettings": {
-                "Bounciness": 0.20000000298023224,
+                "Bounciness": 0,
                 "Friction": 0.5,
-                "BounceVelocityStopSimulatingThreshold": 10,
+                "BounceVelocityStopSimulatingThreshold": 30,
                 "MinTimeBetweenBounces": 0.30000001192092896
             },
             "RotationFollowsVelocity": false,
@@ -3779,16 +3778,15 @@
             "Weight": 0.5,
             "AllowPickupAfterSettle": false,
             "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_IceMammoth_Ice_Fracture.BP_Payload_IceMammoth_Ice_Fracture_C",
-            "PayloadDeploymentType": "OnBounceImmediate",
             "PayloadDeploymentTimerDelay": 0,
             "TrailParticle": "/Game/ASS/VFX/ENV/IceCool/NS_DryIceMist.NS_DryIceMist",
             "BreakChance": 100,
             "PostDeployLifetime": 0.10000000149011612,
             "AttachOnHit": false,
             "ProjectileBounceSettings": {
-                "Bounciness": 0.20000000298023224,
+                "Bounciness": 0,
                 "Friction": 0.5,
-                "BounceVelocityStopSimulatingThreshold": 10,
+                "BounceVelocityStopSimulatingThreshold": 30,
                 "MinTimeBetweenBounces": 0.30000001192092896
             },
             "RotationFollowsVelocity": false,
@@ -3802,6 +3800,33 @@
                 "ImpactSound": "/Game/FMOD/Events/SFX/Creatures/Movement/Ice_Mammoth/SFX_ICE_MAMMOTH_PROJECTILE_IMPACT_MANY.SFX_ICE_MAMMOTH_PROJECTILE_IMPACT_MANY"
             },
             "bUseActorPooling": true
+        },
+        {
+            "Name": "Drill_Arrow",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 100,
+            "DamageVariationPercentage": 10,
+            "bCanKillCam": true,
+            "Weight": 0.09000000357627869,
+            "GravityScale": 0.5,
+            "TrailParticle": "/Game/Fx/Particles/P_ArrowTrail.P_ArrowTrail",
+            "BreakChance": 0.10000000149011612,
+            "PostDeployLifetime": 60,
+            "ProjectileBounceSettings": {
+                "bBounceAngleAffectsFriction": false,
+                "Bounciness": 0.6000000238418579,
+                "Friction": 0.20000000298023224,
+                "BounceVelocityStopSimulatingThreshold": 5,
+                "MinFrictionFraction": 0
+            },
+            "OverridePhysicsAsset": "/Game/ASS/WEP/SK_ARR_Water_Scyther_BallisticPhysicsAsset.SK_ARR_Water_Scyther_BallisticPhysicsAsset",
+            "SpawnPositionOffset": {
+                "X": 94
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ARROW_FLY.SFX_BALLISTIC_ARROW_FLY",
+                "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ARROW_HIT.SFX_BALLISTIC_ARROW_HIT"
+            }
         }
     ]
 }

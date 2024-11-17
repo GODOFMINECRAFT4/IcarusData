@@ -3275,6 +3275,28 @@
                     "BiomesGroupsIncluded": []
                 }
             ]
+        },
+        {
+            "Name": "Ice_Arena_Blizzard",
+            "WeatherEvents": [
+                {
+                    "Event": {
+                        "RowName": "Arctic_Blizzard_Ice_Mammoth",
+                        "DataTableName": "D_WeatherEvents"
+                    },
+                    "Weight": 1
+                }
+            ],
+            "ContainedTiers": [
+                {
+                    "Tier": 6,
+                    "NumEvents": 1,
+                    "MinEventDurationMinutes": 167,
+                    "BiomesGroupsIncluded": [
+                        "Arena_IceMammoth"
+                    ]
+                }
+            ]
         }
     ]
 }
