@@ -3157,6 +3157,91 @@
                     }
                 }
             ]
+        },
+        {
+            "Name": "Outpost_009",
+            "AISpawnRules": {
+                "(Value=\"Bear\")": {
+                    "SpawnRules": [
+                        {
+                            "Value": "Away_From_Dropships"
+                        },
+                        {
+                            "Value": "Bear_Population"
+                        }
+                    ]
+                },
+                "(Value=\"Polar_Bear\")": {
+                    "SpawnRules": [
+                        {
+                            "Value": "Away_From_Dropships"
+                        },
+                        {
+                            "Value": "PolarBear_Population"
+                        }
+                    ]
+                },
+                "(Value=\"Mammoth_Arctic\")": {
+                    "SpawnRules": [
+                        {
+                            "Value": "MammothArctic_Population"
+                        }
+                    ]
+                },
+                "(Value=\"Mammoth_Desert\")": {
+                    "SpawnRules": [
+                        {
+                            "Value": "MammothDesert_Population"
+                        }
+                    ]
+                },
+                "(Value=\"Scorpion_Arctic\")": {
+                    "SpawnRules": [
+                        {
+                            "Value": "ScorpionArctic_Population"
+                        }
+                    ]
+                }
+            },
+            "SpawnMap": "/Game/Heatmaps/Outpost_009/GT_Outpost009_Biome.GT_Outpost009_Biome",
+            "SpawnZones": [
+                {
+                    "Color": {
+                        "B": 25,
+                        "G": 129,
+                        "R": 126,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "Outpost_Tundra",
+                        "DataTableName": "D_AISpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 254,
+                        "G": 248,
+                        "R": 3,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "Outpost_Arctic_Full",
+                        "DataTableName": "D_AISpawnZones"
+                    }
+                },
+                {
+                    "Color": {
+                        "B": 0,
+                        "G": 0,
+                        "R": 91,
+                        "A": 255
+                    },
+                    "SpawnZone": {
+                        "RowName": "Outpost_009_Volcano",
+                        "DataTableName": "D_AISpawnZones"
+                    }
+                }
+            ]
         }
     ]
 }

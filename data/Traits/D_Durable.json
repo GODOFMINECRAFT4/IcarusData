@@ -1007,7 +1007,15 @@
         {
             "Name": "FireExtinguisher",
             "Max_Durability": 10000,
-            "Destroyed_At_Zero": true
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
         },
         {
             "Name": "Meta_Armor",
@@ -1945,7 +1953,7 @@
             "ItemsForRepair": [
                 {
                     "Item": {
-                        "RowName": "Steel_Ingot",
+                        "RowName": "Titanium_Ingot",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Amount": 1
@@ -1993,6 +2001,19 @@
                 {
                     "Item": {
                         "RowName": "Titanium_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Flamethrower",
+            "Max_Durability": 10000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Aluminium",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Amount": 1

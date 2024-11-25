@@ -6924,6 +6924,32 @@
                 ],
                 "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish, Item.Resource.Ice, Item.AnimalFeed, Item.Resource.Spoilable, Item.Spoilable )"
             }
+        },
+        {
+            "Name": "Any_Food_Or_Plant",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food"
+                    },
+                    {
+                        "TagName": "NPC.Fish"
+                    },
+                    {
+                        "TagName": "Item.Plant"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    3,
+                    0,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish, Item.Plant )"
+            }
         }
     ]
 }

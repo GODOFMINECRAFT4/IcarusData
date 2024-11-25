@@ -3566,7 +3566,7 @@
         },
         {
             "Name": "CarryingMovementSpeed_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"CarryingMovementSpeed_+%-Title\", \"Movement Speed while Carrying an object\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CarryingMovementSpeed_+%-Title\", \"Movement Speed while Carrying\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -3576,8 +3576,8 @@
         },
         {
             "Name": "BaseAnimalCarryingMovementSpeed_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAnimalCarryingMovementSpeed_+%-PositiveDescription\", \"+{0}% Movement Speed while Carrying an Animal\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAnimalCarryingMovementSpeed_+%-NegativeDescription\", \"-{0}% Movement Speed while Carrying an Animal\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAnimalCarryingMovementSpeed_+%-PositiveDescription\", \"+{0}% Movement Speed while Carrying\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAnimalCarryingMovementSpeed_+%-NegativeDescription\", \"-{0}% Movement Speed while Carrying\")",
             "StatCategory": {
                 "RowName": "Modifiers"
             }
@@ -15874,6 +15874,17 @@
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseHammerheadSlugExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Hammerheads\")",
             "StatCategory": {
                 "RowName": "AI"
+            }
+        },
+        {
+            "Name": "RockGolemArmourDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemArmourDamage_+%-Title\", \"Rock Golem Armor Penetration Damage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_CriticalDMG.Icon_CriticalDMG",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Generic_Damage"
             }
         }
     ]

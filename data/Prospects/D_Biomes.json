@@ -913,6 +913,55 @@
             "Audio": {
                 "RowName": "Conifer"
             }
+        },
+        {
+            "Name": "Outpost_009_Tundra",
+            "BiomeName": "Lowlands Tundra",
+            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Outpost_009_Tundra-DisplayName\", \"Lowlands Tundra\")",
+            "Color": {
+                "B": 25,
+                "G": 129,
+                "R": 126,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/TundraTemperatureCurve.TundraTemperatureCurve'",
+            "WeatherFrequency": 2,
+            "Audio": {
+                "RowName": "ArcticTundra"
+            }
+        },
+        {
+            "Name": "Outpost_009_Lava",
+            "BiomeName": "Volcanic Mountain",
+            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Outpost_009_Lava-DisplayName\", \"Volcanic Mountain\")",
+            "Color": {
+                "R": 91,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/VolcanicTemperatureCurve.VolcanicTemperatureCurve'",
+            "WeatherFrequency": 3,
+            "AtmosphereType": {
+                "RowName": "Volcanic"
+            },
+            "Audio": {
+                "RowName": "Lava"
+            }
+        },
+        {
+            "Name": "Outpost_009_Arctic",
+            "BiomeName": "Arctic",
+            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Outpost_009_Arctic-DisplayName\", \"Arctic\")",
+            "Color": {
+                "B": 254,
+                "G": 248,
+                "R": 3,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
+            "WeatherFrequency": 5,
+            "Audio": {
+                "RowName": "Arctic"
+            }
         }
     ]
 }

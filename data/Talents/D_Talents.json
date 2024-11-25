@@ -2358,7 +2358,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 350,
+                "X": 450,
                 "Y": 1200
             },
             "Size": {
@@ -10593,7 +10593,7 @@
         {
             "Name": "Gathering_Corpse_Movement",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Gathering_Corpse_Movement-DisplayName\", \"Strong Shoulders\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Gathering_Corpse_Movement-Description\", \"Increased movespeed when carrying animal corpses\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Gathering_Corpse_Movement-Description\", \"Increased movespeed when carrying animal carcasses\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_StrongShoulders.Talent_Hunting_StrongShoulders",
             "TalentTree": {
                 "RowName": "Survival_Hunting"
@@ -41004,7 +41004,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 850,
+                "X": 750,
                 "Y": 1200
             },
             "Size": {
@@ -41025,7 +41025,7 @@
                 "RowName": "Blueprint_T4_Fabricator"
             },
             "Position": {
-                "X": 600,
+                "X": 750,
                 "Y": 850
             },
             "Size": {
@@ -54921,6 +54921,30 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "T4_Assault_Rifle",
+            "ExtraData": {
+                "RowName": "Item_Rifle_Assault",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 1050,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T4_Gun_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Medical_Scanner",
             "ExtraData": {
                 "RowName": "Item_Medical_Scanner",
@@ -55328,7 +55352,7 @@
         {
             "Name": "Creature_Cow_ResourceUsage",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_ResourceUsage-DisplayName\", \"Fed Well\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_ResourceUsage-Description\", \"Increased Wool Growth\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cow_ResourceUsage-Description\", \"Reduced resources consumed for producing milk\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Buffalo_AuraHeatResist.T_Talent_Buffalo_AuraHeatResist",
             "TalentTree": {
                 "RowName": "Creature_Cow"

@@ -11453,6 +11453,127 @@
             "MinLevel": 50,
             "MedianLevel": 70,
             "MaxLevel": 90
+        },
+        {
+            "Name": "Outpost_Tundra",
+            "Creatures": {
+                "AISpawnList": [
+                    {
+                        "AISetup": {
+                            "Value": "Rabbit_Variant"
+                        },
+                        "SpawnWeight": 3,
+                        "EpicCreature": {
+                            "Value": "None"
+                        }
+                    },
+                    {
+                        "AISetup": {
+                            "Value": "SnowLeopard"
+                        },
+                        "SpawnWeight": 3,
+                        "EpicCreature": {
+                            "Value": "None"
+                        }
+                    },
+                    {
+                        "AISetup": {
+                            "Value": "Snow_Wolf"
+                        },
+                        "SpawnWeight": 8,
+                        "EpicCreature": {
+                            "Value": "None"
+                        }
+                    },
+                    {
+                        "AISetup": {
+                            "Value": "Deer_Variant"
+                        },
+                        "SpawnWeight": 4,
+                        "EpicCreature": {
+                            "Value": "None"
+                        }
+                    },
+                    {
+                        "AISetup": {
+                            "Value": "Snow_Rabbit"
+                        },
+                        "SpawnWeight": 3,
+                        "EpicCreature": {
+                            "Value": "None"
+                        }
+                    },
+                    {
+                        "AISetup": {
+                            "Value": "BlueBack"
+                        },
+                        "SpawnWeight": 3,
+                        "EpicCreature": {
+                            "Value": "None"
+                        }
+                    },
+                    {
+                        "AISetup": {
+                            "Value": "Deer"
+                        },
+                        "SpawnWeight": 4,
+                        "EpicCreature": {
+                            "Value": "None"
+                        }
+                    }
+                ],
+                "RelevantAutonomousSpawners": [
+                    {
+                        "RowName": "Kea",
+                        "DataTableName": "D_AutonomousSpawns"
+                    }
+                ]
+            },
+            "MedianLevel": 15,
+            "MaxLevel": 30
+        },
+        {
+            "Name": "Outpost_009_Volcano",
+            "Creatures": {
+                "AISpawnList": [
+                    {
+                        "AISetup": {
+                            "Value": "Buffalo"
+                        },
+                        "SpawnWeight": 10,
+                        "EpicCreature": {
+                            "Value": "None"
+                        }
+                    },
+                    {
+                        "AISetup": {
+                            "Value": "Lava_Komodo"
+                        },
+                        "SpawnWeight": 3,
+                        "EpicCreature": {
+                            "Value": "None"
+                        }
+                    },
+                    {
+                        "AISetup": {
+                            "Value": "LavaBroodlingWorldSpawn"
+                        },
+                        "SpawnWeight": 1,
+                        "EpicCreature": {
+                            "Value": "None"
+                        }
+                    }
+                ],
+                "BiomeSpawnDensity": 4,
+                "RelevantAutonomousSpawners": [
+                    {
+                        "RowName": "Gas_Flyer",
+                        "DataTableName": "D_AutonomousSpawns"
+                    }
+                ]
+            },
+            "MedianLevel": 15,
+            "MaxLevel": 30
         }
     ]
 }

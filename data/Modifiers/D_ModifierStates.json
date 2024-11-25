@@ -11893,6 +11893,7 @@
         },
         {
             "Name": "Chocolate_Cake_Piece",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Chocolate_Cake_Piece.T_ITEM_Chocolate_Cake_Piece'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Chocolate_Cake_Piece-ModifierName\", \"Chocolate Cake Piece\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Chocolate_Cake_Piece-ModifierDescription\", \"A decadent cake, good for health and regen.\")",
             "GrantedStats": {
@@ -11914,6 +11915,7 @@
         },
         {
             "Name": "Carrot_Cake_Piece",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Carrot_Cake_Piece.T_ITEM_Carrot_Cake_Piece'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Carrot_Cake_Piece-ModifierName\", \"Carrot Cake Piece\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Carrot_Cake_Piece-ModifierDescription\", \"A rich cake, good for ranged combat.\")",
             "GrantedStats": {
@@ -11936,6 +11938,7 @@
         },
         {
             "Name": "Coconut_Cake_Piece",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Coconut_Cake_Piece.T_ITEM_Coconut_Cake_Piece'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Coconut_Cake_Piece-ModifierName\", \"Coconut Cake Piece\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Coconut_Cake_Piece-ModifierDescription\", \"A light cake good for crafting and using tools. \")",
             "GrantedStats": {
@@ -12085,14 +12088,13 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Frostnip-ModifierName\", \"Frosty\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Frostnip-ModifierDescription\", \"You\\'re cold and at risk of frostbite. Speed and stamina regen are reduced. Counter with heat bandages.\")",
             "bAura": true,
-            "AuraRange": 1250,
+            "AuraRange": 1500,
             "AuraFlags": {
                 "EffectsSelf": false
             },
             "ModifierGrantedByAura": {
-                "RowName": "AuraEffect_Frostnip"
+                "RowName": "AuraEffect_FrostAura"
             },
-            "bEscalates": true,
             "bRemovedOnEscalation": false,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
             "ShouldTick": true,
@@ -12101,13 +12103,13 @@
             "SaveToDatabase": false
         },
         {
-            "Name": "AuraEffect_Frostnip",
+            "Name": "AuraEffect_FrostAura",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Frosted.T_ICON_Frosted'",
             "Type": "Debuff",
-            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Frostnip-ModifierName\", \"Frosty\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Frostnip-ModifierDescription\", \"You\\'re cold and at risk of frostbite. Speed and stamina regen are reduced. Counter with heat bandages.\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_FrostAura-ModifierName\", \"Frosty\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_FrostAura-ModifierDescription\", \"You\\'re cold and at risk of frostbite. Speed and stamina regen are reduced. Counter with heat bandages.\")",
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -15,
+                "(Value=\"BaseSprintSpeed_+%\")": -50,
                 "(Value=\"BaseStaminaRegen_+%\")": -10
             },
             "bEscalates": true,
@@ -12115,7 +12117,15 @@
                 "RowName": "Frostnip_Escalation"
             },
             "EscalationTime": 10,
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_TemperatureClear.BP_Modifier_TemperatureClear_C",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Frost.BP_ModifierStateBehaviour_TickDamage_Frost_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 10,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 2,
             "MergeType": "Replace",
             "ModifierAllowedQuery": {
                 "TagDictionary": [
@@ -12274,6 +12284,109 @@
             ],
             "MergeType": "Replace",
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "GrantedAura_Earthquake",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
+            "Type": "Aura_Negative",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Earthquake-ModifierName\", \"Aura: Decreased Movement Speed\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Earthquake-ModifierDescription\", \"Nearby players have reduced movement speed\")",
+            "bAura": true,
+            "AuraRange": 25000,
+            "AuraFlags": {
+                "EffectsSelf": false,
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_Earthquake"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_Earthquake",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Earthquake-ModifierName\", \"Aura Effect: Unstable\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Earthquake-ModifierDescription\", \"Decreased Movement Speed\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseSprintSpeed_+%\")": -50
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Frostnip_Escalated",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_FreezingDebuff.Icon_FreezingDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Frostnip_Escalated-ModifierName\", \"Frostbite\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Frostnip_Escalated-ModifierDescription\", \"You\\'re freezing and suffering frostbite. Speed and stamina regen are heavily reduced. Counter with heat bandages.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -25,
+                "(Value=\"BaseStaminaRegen_+%\")": -30,
+                "(Value=\"BaseWaterConsumption_+%\")": 10,
+                "(Value=\"BaseSprintSpeed_+%\")": -90
+            },
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Frostbite"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.HeatBandage"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( ModifierState.HeatBandage )"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "IceMammoth_IcePool",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Chilled.T_ICON_Chilled'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"IceMammoth_IcePool-ModifierName\", \"Frost Pool\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"IceMammoth_IcePool-ModifierDescription\", \"Drastically slows movement and deals damage over time. Alerts the owner of this sticky trail to your presence\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Frost.BP_ModifierStateBehaviour_TickDamage_Frost_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 30,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 2,
+            "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    0
+                ],
+                "AutoDescription": " NONE( )"
+            }
         }
     ]
 }
