@@ -2473,6 +2473,24 @@
                     }
                 }
             }
+        },
+        {
+            "Name": "Melee_2H_Pitchfork",
+            "ActionMapping": {
+                "(RowName=\"Melee_2H_Pitchfork\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "Spear_Melee",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
         }
     ]
 }

@@ -14095,8 +14095,8 @@
                 "Y": 2250
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "bDefaultUnlocked": true
         },
@@ -14110,19 +14110,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 1250,
-                "Y": 2700
+                "X": 3100,
+                "Y": 2800
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "ProspectReroute_1",
+                    "RowName": "Prospect_OLY_Forest_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Forest_Research",
@@ -14134,37 +14135,36 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 3350,
-                "Y": 2250
+                "X": 5350,
+                "Y": 1700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "ProspectReroute_2",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Forest_Exploration",
-            "ExtraData": {
-                "RowName": "Tier1_Forest_Exploration_0",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 2250,
+                "X": 1250,
                 "Y": 2250
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Forest_Recon",
@@ -14183,19 +14183,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 1250,
-                "Y": 1950
+                "X": 2250,
+                "Y": 3400
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "ProspectReroute",
+                    "RowName": "Prospect_OLY_Forest_Scan",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Forest_Survey",
@@ -14207,19 +14208,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 2250,
-                "Y": 3150
+                "X": 4500,
+                "Y": 1100
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "ProspectReroute_8",
+                    "RowName": "Prospect_OLY_Forest_Construction",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Canyon_Expedition",
@@ -14231,19 +14233,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 4100,
-                "Y": 1100
+                "X": 6900,
+                "Y": 1650
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Forest_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Canyon_Scan",
@@ -14255,19 +14258,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 6950,
-                "Y": 600
+                "X": 8650,
+                "Y": 700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Canyon_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Glacier_Expedition",
@@ -14279,19 +14283,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 4050,
-                "Y": 3400
+                "X": 6900,
+                "Y": 2800
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Forest_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Glacier_Scan",
@@ -14303,43 +14308,44 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 6500,
-                "Y": 4000
+                "X": 10650,
+                "Y": 3700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Glacier_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Glacier_Exploration",
-            "ExtraData": {
-                "RowName": "Tier2_Glacier_Exploration_0",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 6500,
-                "Y": 3400
+                "X": 7600,
+                "Y": 3300
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Glacier_Expedition",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Glacier_Construction",
@@ -14351,19 +14357,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 5800,
-                "Y": 3750
+                "X": 8650,
+                "Y": 3700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Glacier_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Glacier_Recovery",
@@ -14375,19 +14382,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 7250,
-                "Y": 2550
+                "X": 11250,
+                "Y": 2650
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_4",
+                    "RowName": "Prospect_OLY_Glacier_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Glacier_Research",
@@ -14399,19 +14407,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 5800,
-                "Y": 2950
+                "X": 10100,
+                "Y": 2650
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 750,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Glacier_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Canyon_Recovery",
@@ -14423,19 +14432,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 7250,
-                "Y": 1850
+                "X": 10650,
+                "Y": 1650
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_7",
+                    "RowName": "Prospect_Canyon_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Canyon_Construction",
@@ -14447,43 +14457,44 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 6000,
-                "Y": 600
+                "X": 9500,
+                "Y": 1650
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Canyon_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_Canyon_Exploration",
-            "ExtraData": {
-                "RowName": "Tier2_Canyon_Exploration_0",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 6500,
-                "Y": 1100
+                "X": 7600,
+                "Y": 1200
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Canyon_Expedition",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Canyon_Survey",
@@ -14495,19 +14506,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 7550,
-                "Y": 1100
+                "X": 10100,
+                "Y": 700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Canyon_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Riverlands_Expedition",
@@ -14519,23 +14531,24 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 9000,
-                "Y": 2250
+                "X": 12600,
+                "Y": 2200
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_7",
+                    "RowName": "Prospect_OLY_Glacier_Exploration",
                     "DataTableName": "D_Talents"
                 },
                 {
-                    "RowName": "Prospect_Reroute_4",
+                    "RowName": "Prospect_Canyon_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Riverlands_Scan",
@@ -14547,19 +14560,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 11250,
-                "Y": 1350
+                "X": 17200,
+                "Y": 1600
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Riverlands_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Riverlands_Extermination",
@@ -14571,19 +14585,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 13050,
-                "Y": 2250
+                "X": 16350,
+                "Y": 2850
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_9",
+                    "RowName": "Prospect_OLY_Riverlands_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Riverlands_Research",
@@ -14595,19 +14610,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 12150,
-                "Y": 1400
+                "X": 18200,
+                "Y": 950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_18",
+                    "RowName": "Prospect_OLY_Riverlands_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Riverlands_Survey",
@@ -14619,43 +14635,44 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 10300,
-                "Y": 2500
+                "X": 15100,
+                "Y": 3700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_OLY_Riverlands_Exploration",
+                    "RowName": "Prospect_OLY_Riverlands_Construction",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Riverlands_Exploration",
-            "ExtraData": {
-                "RowName": "Tier3_RiverLands_Exploration_0",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 11250,
-                "Y": 2250
+                "X": 13800,
+                "Y": 2200
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Riverlands_Expedition",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Riverlands_Stockpile",
@@ -14667,19 +14684,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 10600,
+                "X": 15500,
                 "Y": 1600
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Riverlands_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Desert_Expedition",
@@ -14691,19 +14709,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 13800,
-                "Y": 3400
+                "X": 20900,
+                "Y": 2800
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_11",
+                    "RowName": "Prospect_OLY_Riverlands_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Arctic_Expedition",
@@ -14715,19 +14734,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 13800,
-                "Y": 1100
+                "X": 20900,
+                "Y": 1750
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_18",
+                    "RowName": "Prospect_OLY_Riverlands_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Arctic_Scan",
@@ -14739,19 +14759,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 16200,
-                "Y": 650
+                "X": 23700,
+                "Y": 1750
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Arctic_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Desert_Scan",
@@ -14763,43 +14784,44 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 15250,
+                "X": 24950,
                 "Y": 3800
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Desert_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Desert_Exploration",
-            "ExtraData": {
-                "RowName": "Tier4_Desert_Exploration_0",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 15750,
-                "Y": 3400
+                "X": 21650,
+                "Y": 3300
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Desert_Expedition",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Desert_Research",
@@ -14811,19 +14833,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 15400,
-                "Y": 2750
+                "X": 23100,
+                "Y": 2800
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_Desert_Oly",
+                    "RowName": "Prospect_OLY_Desert_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Desert_Construction",
@@ -14835,19 +14858,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 16200,
-                "Y": 3800
+                "X": 24250,
+                "Y": 2800
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Desert_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Desert_Extermination",
@@ -14859,19 +14883,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 15200,
+                "X": 25750,
                 "Y": 4300
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_21",
+                    "RowName": "Prospect_OLY_Desert_Scan",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Arctic_Extermination",
@@ -14883,19 +14908,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 15300,
-                "Y": 1550
+                "X": 22550,
+                "Y": 1750
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Arctic_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Arctic_Extraction",
@@ -14907,19 +14933,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 9000,
-                "Y": 1700
+                "X": 14650,
+                "Y": 950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_OLY_Riverlands_Expedition",
+                    "RowName": "Prospect_OLY_Riverlands_Extraction",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Arctic_Recovery",
@@ -14931,43 +14958,44 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 15300,
-                "Y": 650
+                "X": 23100,
+                "Y": 750
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Arctic_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Arctic_Exploration",
-            "ExtraData": {
-                "RowName": "Tier4_Arctic_Exploration_0",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 15750,
-                "Y": 1100
+                "X": 21650,
+                "Y": 1150
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Arctic_Expedition",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Omni_Exploration",
@@ -14979,19 +15007,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 18500,
-                "Y": 2250
+                "X": 27050,
+                "Y": 2550
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Omni_",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Glacier_Extraction",
@@ -15003,12 +15032,12 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 3650,
-                "Y": 3800
+                "X": 6050,
+                "Y": 3400
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "Rewards": [
                 {
@@ -15026,7 +15055,8 @@
                     "RowName": "Prospect_OLY_Glacier_Expedition",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Biofuel_Generator",
@@ -15649,59 +15679,13 @@
             "DrawMethodOverride": "XThenY"
         },
         {
-            "Name": "ProspectReroute",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 1800,
-                "Y": 1950
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Forest_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
-        },
-        {
-            "Name": "ProspectReroute_1",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 1800,
-                "Y": 2700
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Forest_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
-        },
-        {
             "Name": "ProspectReroute_2",
             "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 2950,
+                "X": 3050,
                 "Y": 2250
             },
             "Size": {
@@ -15715,53 +15699,8 @@
                     "DataTableName": "D_Talents"
                 }
             ],
-            "bDefaultUnlocked": true
-        },
-        {
-            "Name": "Prospect_Reroute_4",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 7250,
-                "Y": 2800
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Glacier_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
-        },
-        {
-            "Name": "Prospect_Reroute_7",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 7250,
-                "Y": 1600
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_Canyon_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Workshop_Spear_Shengong_Beta",
@@ -17997,75 +17936,6 @@
             ]
         },
         {
-            "Name": "Prospect_Reroute_9",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 12050,
-                "Y": 2250
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Riverlands_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
-        },
-        {
-            "Name": "Prospect_Reroute_11",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 12350,
-                "Y": 2950
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Riverlands_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
-        },
-        {
-            "Name": "Prospect_Reroute_15",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 16450,
-                "Y": 2850
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Desert_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
-        },
-        {
             "Name": "Reroute_T4Devices01",
             "bIsReroute": true,
             "TalentTree": {
@@ -18519,19 +18389,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 10600,
-                "Y": 2900
+                "X": 14250,
+                "Y": 2850
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Riverlands_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Basic_Backpack",
@@ -18567,12 +18438,12 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 6500,
+                "X": 8100,
                 "Y": 2200
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -18583,7 +18454,8 @@
                     "RowName": "Prospect_OLY_Glacier_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Riverlands_Delivery",
@@ -18595,19 +18467,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 11250,
-                "Y": 3150
+                "X": 16400,
+                "Y": 950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_OLY_Riverlands_Exploration",
+                    "RowName": "Prospect_OLY_Riverlands_Scan",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Workshop_Campfire_Printed",
@@ -18647,75 +18520,6 @@
             "DrawMethodOverride": "XThenY"
         },
         {
-            "Name": "Prospect_Reroute_18",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 12350,
-                "Y": 1600
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Riverlands_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
-        },
-        {
-            "Name": "Prospect_Reroute_21",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 15750,
-                "Y": 3950
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Desert_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
-        },
-        {
-            "Name": "ProspectReroute_8",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 2250,
-                "Y": 2850
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Forest_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
-        },
-        {
             "Name": "Prospect_OLY_Forest_Stockpile",
             "ExtraData": {
                 "RowName": "Tier1_Forest_Stockpile",
@@ -18725,19 +18529,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 3350,
-                "Y": 1900
+                "X": 2800,
+                "Y": 1100
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "ProspectReroute_2",
+                    "RowName": "Prospect_OLY_Forest_Construction",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Arctic_Stockpile",
@@ -18749,19 +18554,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 15750,
-                "Y": 300
+                "X": 24650,
+                "Y": 750
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Arctic_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Omni_Recovery",
@@ -18773,19 +18579,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 18950,
-                "Y": 1850
+                "X": 27850,
+                "Y": 1500
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_OLY_Omni_Exploration",
+                    "RowName": "Prospect_OLY_Omni_",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Canyon_LongSurvey",
@@ -18797,19 +18604,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 6500,
-                "Y": 250
+                "X": 10950,
+                "Y": 300
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Canyon_Exploration",
+                    "RowName": "Prospect_OLY_Canyon_Survey",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Riverlands_Stockpile_2",
@@ -18821,19 +18629,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 12250,
-                "Y": 1900
+                "X": 17200,
+                "Y": 3700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_9",
+                    "RowName": "Prospect_OLY_Riverlands_Extermination",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Titanium_Hammer",
@@ -20575,19 +20384,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 9000,
-                "Y": 2750
+                "X": 13400,
+                "Y": 3700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_OLY_Riverlands_Expedition",
+                    "RowName": "Prospect_OLY_Riverlands_Construction",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Wood_Composter",
@@ -20750,19 +20560,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 19400,
-                "Y": 2250
+                "X": 29600,
+                "Y": 2100
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_OLY_Omni_Exploration",
+                    "RowName": "Prospect_OLY_Omni_",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_Omni_Research",
@@ -20774,19 +20585,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 18950,
-                "Y": 2600
+                "X": 28600,
+                "Y": 2550
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_OLY_Omni_Exploration",
+                    "RowName": "Prospect_OLY_Omni_",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Bandage_Cooling",
@@ -20822,19 +20634,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 12150,
-                "Y": 3150
+                "X": 18550,
+                "Y": 2850
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_11",
+                    "RowName": "Prospect_OLY_Riverlands_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Workshop_Axe_Larkwell",
@@ -21078,19 +20891,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 5800,
-                "Y": 1450
+                "X": 8950,
+                "Y": 2650
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Canyon_Exploration",
+                    "RowName": "Prospect_OLY_Canyons_Stockpile",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Workshop_Meta_Scanner",
@@ -21168,19 +20982,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 12250,
-                "Y": 2600
+                "X": 13800,
+                "Y": 1600
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_9",
+                    "RowName": "Prospect_OLY_Riverlands_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Desert_Extermination_2",
@@ -21192,19 +21007,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 16650,
-                "Y": 3400
+                "X": 22550,
+                "Y": 3800
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_OLY_Desert_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Desert_Research_2",
@@ -21216,19 +21032,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 16250,
+                "X": 21700,
                 "Y": 4300
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_21",
+                    "RowName": "Prospect_OLY_Desert_Extermination_2",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_OLY_Forest_Defence",
@@ -21240,19 +21057,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 2250,
-                "Y": 1500
+                "X": 3950,
+                "Y": 3400
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_OLY_Forest_Exploration",
+                    "RowName": "Prospect_OLY_Forest_Scan",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Workshop_Envirosuit_Inaris",
@@ -21656,13 +21474,14 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 1950,
-                "Y": 1850
+                "X": 1700,
+                "Y": 1950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21671,27 +21490,27 @@
         },
         {
             "Name": "Prospect_Styx_A_Exploration",
-            "ExtraData": {
-                "RowName": "STYX_A_Exploration",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 1950,
-                "Y": 1450
+                "X": 3850,
+                "Y": 1950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Styx_A_Expedition",
                     "DataTableName": "D_Talents"
                 }
             ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21708,12 +21527,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 1250,
-                "Y": 750
+                "X": 4650,
+                "Y": 1500
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -21721,6 +21540,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21737,12 +21557,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 2650,
-                "Y": 750
+                "X": 9100,
+                "Y": 1450
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -21750,6 +21570,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21766,12 +21587,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 1250,
-                "Y": 2150
+                "X": 6300,
+                "Y": 2400
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -21779,6 +21600,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21795,12 +21617,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 2650,
-                "Y": 2150
+                "X": 11200,
+                "Y": 2350
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -21808,6 +21630,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21816,27 +21639,27 @@
         },
         {
             "Name": "Prospect_Styx_B_Exploration",
-            "ExtraData": {
-                "RowName": "STYX_B_Exploration",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 850,
-                "Y": 350
+                "X": 5500,
+                "Y": 950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Styx_B_Expedition",
                     "DataTableName": "D_Talents"
                 }
             ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21845,27 +21668,27 @@
         },
         {
             "Name": "Prospect_Styx_C_Exploration",
-            "ExtraData": {
-                "RowName": "STYX_C_Exploration",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 850,
-                "Y": 2550
+                "X": 7150,
+                "Y": 2900
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Styx_C_Expedition",
                     "DataTableName": "D_Talents"
                 }
             ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21874,27 +21697,27 @@
         },
         {
             "Name": "Prospect_Styx_E_Exploration",
-            "ExtraData": {
-                "RowName": "STYX_E_Exploration",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 3050,
-                "Y": 350
+                "X": 9950,
+                "Y": 950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Styx_E_Expedition",
                     "DataTableName": "D_Talents"
                 }
             ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21911,12 +21734,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 3450,
-                "Y": 2150
+                "X": 13500,
+                "Y": 2900
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -21924,6 +21747,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21932,27 +21756,27 @@
         },
         {
             "Name": "Prospect_Styx_D_Exploration",
-            "ExtraData": {
-                "RowName": "STYX_D_Exploration",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 3050,
-                "Y": 2550
+                "X": 12050,
+                "Y": 2900
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Styx_D_Expedition",
                     "DataTableName": "D_Talents"
                 }
             ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21969,12 +21793,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 450,
-                "Y": 2150
+                "X": 6300,
+                "Y": 3450
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -21982,6 +21806,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -21998,12 +21823,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 2650,
-                "Y": 2950
+                "X": 11200,
+                "Y": 3450
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -22011,6 +21836,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -22027,12 +21853,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 1250,
-                "Y": 2950
+                "X": 8600,
+                "Y": 2900
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -22040,6 +21866,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -22056,12 +21883,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 450,
-                "Y": 750
+                "X": 6900,
+                "Y": 950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -22069,6 +21896,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -22085,12 +21913,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 3450,
-                "Y": 750
+                "X": 9100,
+                "Y": 400
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -22098,6 +21926,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -22138,19 +21967,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 1400,
-                "Y": 1500
+                "X": 3650,
+                "Y": 1700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "ProspectReroute",
+                    "RowName": "Prospect_OLY_Forest_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Biofuel_Radar",
@@ -22294,19 +22124,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 16200,
-                "Y": 2600
+                "X": 23800,
+                "Y": 4300
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_15",
+                    "RowName": "Prospect_OLY_Desert_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Workshop_Module_World_Boss",
@@ -22559,12 +22390,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 850,
-                "Y": 1150
+                "X": 3800,
+                "Y": 950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -22572,6 +22403,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -22588,23 +22420,24 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 17200,
-                "Y": 2250
+                "X": 25950,
+                "Y": 2100
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_15",
+                    "RowName": "Prospect_OLY_Arctic_Exploration",
                     "DataTableName": "D_Talents"
                 },
                 {
-                    "RowName": "Prospect_OLY_Arctic_Exploration",
+                    "RowName": "Prospect_OLY_Desert_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Vapour_Condenser",
@@ -22641,12 +22474,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 2650,
-                "Y": -50
+                "X": 10550,
+                "Y": 400
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -22654,6 +22487,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -22670,12 +22504,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 3450,
-                "Y": 2950
+                "X": 12650,
+                "Y": 3450
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -22683,6 +22517,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -22699,12 +22534,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 3450,
-                "Y": -50
+                "X": 11400,
+                "Y": 950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -22712,6 +22547,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -22728,19 +22564,20 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 3200,
-                "Y": 1100
+                "X": 3900,
+                "Y": 2600
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Styx_A_Reroute_0",
+                    "RowName": "Prospect_Styx_A_Reroute",
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -22852,18 +22689,19 @@
             },
             "Position": {
                 "X": 1450,
-                "Y": 3150
+                "Y": 2800
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "ProspectReroute_1",
+                    "RowName": "Prospect_OLY_Forest_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Workshop_Crossbow_Inaris_A",
@@ -22978,29 +22816,6 @@
                 }
             ],
             "DrawMethodOverride": "YThenX"
-        },
-        {
-            "Name": "Prospect_Styx_A_Reroute",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Styx"
-            },
-            "Position": {
-                "X": 2350,
-                "Y": 1050
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_Styx_A_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
         },
         {
             "Name": "Ranged_Attachment_Pack",
@@ -23385,8 +23200,8 @@
                 "Y": 1550
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -23405,12 +23220,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 2200,
+                "X": 2300,
                 "Y": 1550
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -23426,27 +23241,27 @@
         },
         {
             "Name": "Prospect_Pro_B_Exploration",
-            "ExtraData": {
-                "RowName": "PRO_B_Exploration",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 4800,
-                "Y": 2200
+                "X": 6500,
+                "Y": 2100
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Pro_Story_4",
                     "DataTableName": "D_Talents"
                 }
             ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -23455,27 +23270,27 @@
         },
         {
             "Name": "Prospect_Pro_C_Exploration",
-            "ExtraData": {
-                "RowName": "PRO_C_Exploration",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 3500,
-                "Y": 800
+                "X": 4800,
+                "Y": 950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Pro_Story_3",
                     "DataTableName": "D_Talents"
                 }
             ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -23484,27 +23299,27 @@
         },
         {
             "Name": "Prospect_Pro_A_Exploration",
-            "ExtraData": {
-                "RowName": "PRO_A_Exploration",
-                "DataTableName": "D_ProspectList"
-            },
+            "bIsReroute": true,
             "TalentTree": {
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 2200,
-                "Y": 2250
+                "X": 3100,
+                "Y": 2100
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 0,
+                "Y": 0
             },
+            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Pro_Story_2",
                     "DataTableName": "D_Talents"
                 }
             ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -23522,12 +23337,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 3500,
+                "X": 3950,
                 "Y": 1550
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -23552,12 +23367,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 4800,
+                "X": 5650,
                 "Y": 1550
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -23582,12 +23397,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 7450,
-                "Y": 1550
+                "X": 8300,
+                "Y": 2100
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -23595,6 +23410,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -23612,12 +23428,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 6100,
+                "X": 7400,
                 "Y": 1550
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -23625,6 +23441,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -23641,12 +23458,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 3050,
-                "Y": 350
+                "X": 3950,
+                "Y": 500
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -23654,6 +23471,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -23670,12 +23488,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 4250,
-                "Y": 2750
+                "X": 5650,
+                "Y": 2600
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -23683,6 +23501,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -23699,12 +23518,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 1700,
-                "Y": 2750
+                "X": 2300,
+                "Y": 2600
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -23712,6 +23531,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -23728,12 +23548,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 1250,
-                "Y": -50
+                "X": 6100,
+                "Y": 400
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -23741,6 +23561,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -24022,19 +23843,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 3350,
-                "Y": 2650
+                "X": 1950,
+                "Y": 1700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "ProspectReroute_2",
+                    "RowName": "Prospect_OLY_Forest_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Saddle_Standard",
@@ -24995,19 +24817,20 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 450,
-                "Y": 2950
+                "X": 7750,
+                "Y": 3450
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Styx_C_Exploration",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Exotic_Delivery_Interface",
@@ -25043,19 +24866,20 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 2250,
-                "Y": 350
+                "X": 8300,
+                "Y": 950
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Styx_E_Expedition",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Workshop_Dropship_Beacon",
@@ -25539,12 +25363,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 450,
-                "Y": -50
+                "X": 4650,
+                "Y": 400
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -25552,6 +25376,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -26218,47 +26043,25 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 3200,
-                "Y": 1450
+                "X": 3050,
+                "Y": 3150
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_Styx_A_Reroute_0",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "Styx"
-                }
-            }
-        },
-        {
-            "Name": "Prospect_Styx_A_Reroute_0",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Styx"
-            },
-            "Position": {
-                "X": 2800,
-                "Y": 1450
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Styx_A_Reroute",
                     "DataTableName": "D_Talents"
                 }
             ],
-            "bDefaultUnlocked": true
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Styx"
+                }
+            }
         },
         {
             "Name": "Workshop_Meta_Fishfinder",
@@ -29046,12 +28849,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 2700,
-                "Y": 2750
+                "X": 3950,
+                "Y": 2600
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -29059,6 +28862,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -30452,12 +30256,12 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 850,
-                "Y": 1750
+                "X": 5400,
+                "Y": 2900
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -30465,6 +30269,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Styx"
@@ -31804,12 +31609,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 3950,
-                "Y": 350
+                "X": 5650,
+                "Y": 500
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -31817,6 +31622,7 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -32525,19 +32331,20 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 16650,
-                "Y": 1100
+                "X": 25500,
+                "Y": 200
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_OLY_Arctic_Exploration",
+                    "RowName": "Prospect_OLY_Arctic_Stockpile",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Brutalist_Decorations",
@@ -32713,19 +32520,20 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 6650,
+                "X": 8300,
                 "Y": 1000
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Pro_Story_5",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Raw_Wood_Sign",
@@ -33603,16 +33411,16 @@
                 "RowName": "Prospect_Olympus"
             },
             "Position": {
-                "X": 14650,
-                "Y": 3050
+                "X": 20050,
+                "Y": 3350
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Reroute_Desert_Oly",
+                    "RowName": "Prospect_OLY_Desert_Expedition",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -33622,34 +33430,12 @@
                     "RowName": "Zebra_Rescue_Mission"
                 }
             ],
+            "DrawMethodOverride": "XThenY",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Laika"
                 }
             }
-        },
-        {
-            "Name": "Prospect_Reroute_Desert_Oly",
-            "bIsReroute": true,
-            "TalentTree": {
-                "RowName": "Prospect_Olympus"
-            },
-            "Position": {
-                "X": 15400,
-                "Y": 3050
-            },
-            "Size": {
-                "X": 0,
-                "Y": 0
-            },
-            "Rewards": [],
-            "RequiredTalents": [
-                {
-                    "RowName": "Prospect_OLY_Desert_Exploration",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "bDefaultUnlocked": true
         },
         {
             "Name": "Beehive",
@@ -42514,12 +42300,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 8000,
+                "X": 10250,
                 "Y": 1000
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -42923,19 +42709,20 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 2250,
-                "Y": 2550
+                "X": 10350,
+                "Y": 2900
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Styx_D_Expedition",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Animal_Bench",
@@ -52134,16 +51921,16 @@
                 "RowName": "Prospect_Styx"
             },
             "Position": {
-                "X": 3200,
-                "Y": 1800
+                "X": 1700,
+                "Y": 3150
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
-                    "RowName": "Prospect_Styx_A_Reroute_0",
+                    "RowName": "Prospect_Styx_A_Reroute",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -52152,7 +51939,8 @@
                     "DataTableName": "D_DLCPackageData",
                     "RowName": "Matariki_Mission"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Workshop_Seed_SugarCane_0",
@@ -52182,12 +51970,12 @@
                 "RowName": "Prospect_Dev"
             },
             "Position": {
-                "X": 100,
-                "Y": 1000
+                "X": 1950,
+                "Y": 150
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "bDefaultUnlocked": true
         },
@@ -52202,19 +51990,20 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 7150,
-                "Y": 500
+                "X": 9400,
+                "Y": 1700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Pro_Ashlands_Story",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Prospect_Pro_E_Research",
@@ -52227,19 +52016,20 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 8600,
-                "Y": 500
+                "X": 11050,
+                "Y": 1700
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Pro_Icesheet_Story",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "XThenY"
         },
         {
             "Name": "Seed_Pouch_T2",
@@ -54467,19 +54257,20 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 6050,
-                "Y": 500
+                "X": 9350,
+                "Y": 300
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
                     "RowName": "Prospect_Pro_Ashlands_Story",
                     "DataTableName": "D_Talents"
                 }
-            ]
+            ],
+            "DrawMethodOverride": "YThenX"
         },
         {
             "Name": "BioFuel_Barrel_T4",
@@ -54641,12 +54432,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 5050,
-                "Y": 500
+                "X": 12750,
+                "Y": 300
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -54666,12 +54457,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 5550,
-                "Y": 1000
+                "X": 11050,
+                "Y": 300
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -54881,12 +54672,12 @@
                 "RowName": "Prospect_Prometheus"
             },
             "Position": {
-                "X": 9350,
+                "X": 11900,
                 "Y": 1000
             },
             "Size": {
-                "X": 256,
-                "Y": 256
+                "X": 730,
+                "Y": 364
             },
             "RequiredTalents": [
                 {
@@ -56022,6 +55813,60 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Drill_Arrow",
+            "ExtraData": {
+                "RowName": "Item_Drill_Arrow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_Bosses"
+            },
+            "Position": {
+                "X": 7450,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Rock_Golem_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedBlueprint_DrillArrows"
+                }
+            ]
+        },
+        {
+            "Name": "Prospect_Styx_A_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 2450,
+                "Y": 2600
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_A_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY"
         }
     ]
 }

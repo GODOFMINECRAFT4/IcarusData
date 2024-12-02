@@ -287,6 +287,25 @@
             ]
         },
         {
+            "Name": "Melee_2H_Pitchfork",
+            "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Spear_Melee.BP_ActionableBehaviour_Spear_Melee_C'",
+            "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_ShovelAttack_Montage.3RD_CHA_ShovelAttack_Montage",
+            "TP_ActionMissMontageVariations": [
+                "Action_0"
+            ],
+            "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_ShovelAttack_Montage.1ST_CHA_ShovelAttack_Montage",
+            "FP_ActionMissMontageVariations": [
+                "Action_0"
+            ],
+            "BeginStaminaActionNotify": "DoHit",
+            "ActionCooldown": 1,
+            "CooldownMultipliers": [
+                {
+                    "Value": "AttackSpeed_+%"
+                }
+            ]
+        },
+        {
             "Name": "Throw_1H_Generic",
             "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Throwable.BP_ActionableBehaviour_Throwable_C'",
             "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HKNI_Throw_Montage.3RD_CHA_1HKNI_Throw_Montage",

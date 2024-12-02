@@ -1,12 +1,12 @@
 {
     "RowStruct": "/Script/Icarus.FactionMission",
     "Defaults": {
-        "Icon": "None",
         "MissionObjectives": [],
         "Faction": {
             "RowName": "None",
             "DataTableName": "D_FactionInfo"
         },
+        "Types": [],
         "CurrencyCost": [],
         "InitialQuest": {
             "RowName": "None",
@@ -25,7 +25,6 @@
     "Rows": [
         {
             "Name": "OLY_Forest_Recon",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExpeditionSpear01_Small.T_Prospect_Forest_ExpeditionSpear01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -33,6 +32,20 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Training",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -60,7 +73,6 @@
         },
         {
             "Name": "OLY_Forest_Scan",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterDefense01_Small.T_Prospect_Forest_TransmitterDefense01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -82,6 +94,12 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -109,7 +127,6 @@
         },
         {
             "Name": "OLY_Forest_Survey",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterWolves01_Small.T_Prospect_Forest_TransmitterWolves01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -143,6 +160,12 @@
             "Faction": {
                 "RowName": "Uniao"
             },
+            "Types": [
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "BW6_Survey"
             },
@@ -166,7 +189,6 @@
         },
         {
             "Name": "OLY_Forest_Stockpile",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Delivery01_Small.T_Prospect_Forest_Delivery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -179,6 +201,20 @@
             "Faction": {
                 "RowName": "ACS"
             },
+            "Types": [
+                {
+                    "RowName": "Farming",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Forest_Stockpile_0"
             },
@@ -202,7 +238,6 @@
         },
         {
             "Name": "OLY_Forest_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ResearchPlant01_Small.T_Prospect_Forest_ResearchPlant01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -210,6 +245,16 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -235,7 +280,6 @@
         },
         {
             "Name": "OLY_Forest_Extermination",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Extermination01_Small.T_Prospect_Forest_Extermination01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -255,6 +299,12 @@
             "Faction": {
                 "RowName": "The_Assembly"
             },
+            "Types": [
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "BW6_Extermination"
             },
@@ -278,7 +328,6 @@
         },
         {
             "Name": "OLY_Forest_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Expedition01_Small.T_Prospect_Arctic_Expedition01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -286,6 +335,16 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Exploration",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -300,7 +359,6 @@
         },
         {
             "Name": "OLY_Farming",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Farming01_Small.T_Prospect_Forest_Farming01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -327,6 +385,12 @@
             "Faction": {
                 "RowName": "ACS"
             },
+            "Types": [
+                {
+                    "RowName": "Farming",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Farming"
             },
@@ -350,7 +414,6 @@
         },
         {
             "Name": "OLY_Forest_Defense",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_DefenseSpear01_Small.T_Prospect_Forest_DefenseSpear01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -370,6 +433,12 @@
             "Faction": {
                 "RowName": "The_Assembly"
             },
+            "Types": [
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Forest_Defense"
             },
@@ -393,7 +462,6 @@
         },
         {
             "Name": "OLY_Forest_Construction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Base_Chill01_Small.T_Prospect_Base_Chill01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -406,6 +474,12 @@
             "Faction": {
                 "RowName": "The_Assembly"
             },
+            "Types": [
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Forest_Construction"
             },
@@ -429,7 +503,6 @@
         },
         {
             "Name": "OLY_Glacier_Expedition",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Storm01_Small.T_Prospect_Arctic_Storm01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -467,6 +540,20 @@
                     "Depth": 1
                 }
             ],
+            "Types": [
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Glacier_Expedition"
             },
@@ -492,7 +579,6 @@
         },
         {
             "Name": "OLY_Glacier_Scan",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterDefense01_Small.T_Prospect_Forest_TransmitterDefense01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -514,6 +600,12 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -541,7 +633,6 @@
         },
         {
             "Name": "OLY_Glacier_Recovery",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Recovery01_Small.T_Prospect_Arctic_Recovery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -568,6 +659,12 @@
             "Faction": {
                 "RowName": "Lagos"
             },
+            "Types": [
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "BW4_Satellites"
             },
@@ -591,7 +688,6 @@
         },
         {
             "Name": "OLY_Glacier_Construction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Pickaxe01_Small.T_Prospect_Arctic_Pickaxe01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -611,6 +707,12 @@
             "Faction": {
                 "RowName": "Uniao"
             },
+            "Types": [
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Glacier_Construction_0"
             },
@@ -644,7 +746,6 @@
         },
         {
             "Name": "OLY_Glacier_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Cave_Lantern01_Small.T_Prospect_Cave_Lantern01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -678,6 +779,12 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Glacier_Research"
             },
@@ -699,7 +806,6 @@
         },
         {
             "Name": "OLY_Glacier_Extraction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_PolarbearDeath01_Small.T_Prospect_Arctic_PolarbearDeath01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -733,6 +839,16 @@
             "Faction": {
                 "RowName": "The_Assembly"
             },
+            "Types": [
+                {
+                    "RowName": "Training",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Exotic",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Glacier_Extraction_0"
             },
@@ -754,7 +870,6 @@
         },
         {
             "Name": "OLY_Glacier_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Small.T_Prospect_Arctic_HeavyFog01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -776,7 +891,6 @@
         },
         {
             "Name": "OLY_Canyons_Expedition",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Small.T_Prospect_Desert_GroupBase01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -784,6 +898,16 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -811,7 +935,6 @@
         },
         {
             "Name": "OLY_Canyons_Scan",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterDefense01_Small.T_Prospect_Forest_TransmitterDefense01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -833,6 +956,12 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -860,7 +989,6 @@
         },
         {
             "Name": "OLY_Canyons_Recovery",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Lurker01_Small.T_Prospect_Desert_Lurker01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -894,6 +1022,12 @@
             "Faction": {
                 "RowName": "ACS"
             },
+            "Types": [
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "BW6_Recovery"
             },
@@ -929,7 +1063,6 @@
         },
         {
             "Name": "OLY_Canyons_Survey",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Delivery01_Small.T_Prospect_Desert_Delivery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -949,6 +1082,12 @@
             "Faction": {
                 "RowName": "Uniao"
             },
+            "Types": [
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Canyon_Survey"
             },
@@ -972,7 +1111,6 @@
         },
         {
             "Name": "OLY_Canyons_Construction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Small.T_Prospect_Desert_GroupBase01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -992,6 +1130,12 @@
             "Faction": {
                 "RowName": "The_Assembly"
             },
+            "Types": [
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Canyon_Construction_0"
             },
@@ -1013,7 +1157,6 @@
         },
         {
             "Name": "OLY_Canyons_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Expedition01_Small.T_Prospect_Arctic_Expedition01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1035,7 +1178,6 @@
         },
         {
             "Name": "OLY_Canyons_Stockpile",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Delivery01_Small.T_Prospect_Desert_Delivery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1048,6 +1190,16 @@
             "Faction": {
                 "RowName": "ACS"
             },
+            "Types": [
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Mining",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Canyon_Stockpile"
             },
@@ -1071,7 +1223,6 @@
         },
         {
             "Name": "OLY_Canyons_Stockpile_2",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Delivery01_Small.T_Prospect_Desert_Delivery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1084,6 +1235,16 @@
             "Faction": {
                 "RowName": "Group_15"
             },
+            "Types": [
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Canyon_Stockpile2"
             },
@@ -1107,7 +1268,6 @@
         },
         {
             "Name": "OLY_Canyon_LongSurvey",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Delivery01_Small.T_Prospect_Desert_Delivery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1120,6 +1280,12 @@
             "Faction": {
                 "RowName": "Uniao"
             },
+            "Types": [
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Canyon_LongSurvey_0"
             },
@@ -1143,7 +1309,6 @@
         },
         {
             "Name": "OLY_Riverlands_Expedition",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_SwampSpearDeer01_Small.T_Prospect_Forest_SwampSpearDeer01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1158,6 +1323,16 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -1185,7 +1360,6 @@
         },
         {
             "Name": "OLY_Riverlands_Scan",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterDefense01_Small.T_Prospect_Forest_TransmitterDefense01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1207,6 +1381,12 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -1234,7 +1414,6 @@
         },
         {
             "Name": "OLY_Riverlands_Extermination",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Extermination01_Small.T_Prospect_Forest_Extermination01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1261,6 +1440,12 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Riverlands_Extermination_0"
             },
@@ -1288,7 +1473,6 @@
         },
         {
             "Name": "OLY_Riverlands_LongSurvey",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterWolves01_Small.T_Prospect_Forest_TransmitterWolves01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1301,6 +1485,12 @@
             "Faction": {
                 "RowName": "Uniao"
             },
+            "Types": [
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Riverlands_LongSurvey_0"
             },
@@ -1324,7 +1514,6 @@
         },
         {
             "Name": "OLY_Riverlands_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ResearchPlant01_Small.T_Prospect_Forest_ResearchPlant01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1344,6 +1533,12 @@
             "Faction": {
                 "RowName": "Group_15"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Riverlands_Research_0"
             },
@@ -1365,7 +1560,6 @@
         },
         {
             "Name": "OLY_Riverlands_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_SwampSpearDeer01_Small.T_Prospect_Forest_SwampSpearDeer01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1387,7 +1581,6 @@
         },
         {
             "Name": "OLY_Riverlands_Stockpile",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Delivery01_Small.T_Prospect_Forest_Delivery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1400,6 +1593,12 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Riverlands_Stockpile"
             },
@@ -1423,7 +1622,6 @@
         },
         {
             "Name": "OLY_Riverlands_Stockpile_2",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Extermination01_Small.T_Prospect_Forest_Extermination01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1436,6 +1634,20 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Riverlands_Stockpile_2"
             },
@@ -1459,7 +1671,6 @@
         },
         {
             "Name": "OLY_Riverlands_Construction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Lumberjack01_Small.T_Prospect_Forest_Lumberjack01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1479,6 +1690,12 @@
             "Faction": {
                 "RowName": "ACS"
             },
+            "Types": [
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Riverlands_Construction_0"
             },
@@ -1500,7 +1717,6 @@
         },
         {
             "Name": "OLY_Riverlands_Delivery",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Small.T_Prospect_Arctic_HeavyFog01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1520,6 +1736,12 @@
             "Faction": {
                 "RowName": "Group_15"
             },
+            "Types": [
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Riverlands_Delivery"
             },
@@ -1541,7 +1763,6 @@
         },
         {
             "Name": "OLY_Riverlands_Extraction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Lantern01_Small.T_Prospect_Arctic_Lantern01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1561,6 +1782,16 @@
             "Faction": {
                 "RowName": "Group_15"
             },
+            "Types": [
+                {
+                    "RowName": "Mining",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Riverlands_Extraction"
             },
@@ -1600,7 +1831,6 @@
         },
         {
             "Name": "OLY_Arctic_Expedition",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Storm01_Small.T_Prospect_Arctic_Storm01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1615,6 +1845,16 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -1642,7 +1882,6 @@
         },
         {
             "Name": "OLY_Arctic_Scan",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterDefense01_Small.T_Prospect_Forest_TransmitterDefense01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1664,6 +1903,12 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -1695,7 +1940,6 @@
         },
         {
             "Name": "OLY_Arctic_Extraction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_PolarbearDeath01_Small.T_Prospect_Arctic_PolarbearDeath01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1729,6 +1973,20 @@
             "Faction": {
                 "RowName": "Uniao"
             },
+            "Types": [
+                {
+                    "RowName": "Training",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Exotic",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Mining",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Arctic_Extraction_0"
             },
@@ -1750,7 +2008,6 @@
         },
         {
             "Name": "OLY_Arctic_Extermination",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Extermination01_Small.T_Prospect_Forest_Extermination01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1770,6 +2027,12 @@
             "Faction": {
                 "RowName": "Group_15"
             },
+            "Types": [
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "BW3_Mammoth"
             },
@@ -1791,7 +2054,6 @@
         },
         {
             "Name": "OLY_Arctic_Recovery",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Recovery01_Small.T_Prospect_Arctic_Recovery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1799,6 +2061,12 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -1822,7 +2090,6 @@
         },
         {
             "Name": "OLY_Arctic_LongSurvey",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterDefense01_Small.T_Prospect_Forest_TransmitterDefense01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1835,6 +2102,12 @@
             "Faction": {
                 "RowName": "Uniao"
             },
+            "Types": [
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Arctic_LongSurvey_0"
             },
@@ -1858,7 +2131,6 @@
         },
         {
             "Name": "OLY_Arctic_Stockpile",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Lumberjack01_Small.T_Prospect_Forest_Lumberjack01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1871,6 +2143,12 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Arctic_Stockpile_0"
             },
@@ -1894,7 +2172,6 @@
         },
         {
             "Name": "OLY_Arctic_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Pickaxe01_Small.T_Prospect_Arctic_Pickaxe01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1933,7 +2210,6 @@
         },
         {
             "Name": "OLY_Desert_Expedition",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Lurker01_Small.T_Prospect_Desert_Lurker01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1941,6 +2217,20 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -1968,7 +2258,6 @@
         },
         {
             "Name": "OLY_Desert_Scan",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_TransmitterDefense01_Small.T_Prospect_Forest_TransmitterDefense01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -1990,6 +2279,12 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -2021,7 +2316,6 @@
         },
         {
             "Name": "OLY_Desert_Extermination",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Extermination01_Small.T_Prospect_Forest_Extermination01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2034,6 +2328,12 @@
             "Faction": {
                 "RowName": "Lagos"
             },
+            "Types": [
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Desert_Extermination_0"
             },
@@ -2055,7 +2355,6 @@
         },
         {
             "Name": "OLY_Desert_Extermination_2",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionBoss01_Small.T_Prospect_Desert_ScorpionBoss01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2068,6 +2367,16 @@
             "Faction": {
                 "RowName": "Lagos"
             },
+            "Types": [
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Desert_Extermination_2"
             },
@@ -2089,7 +2398,6 @@
         },
         {
             "Name": "OLY_Desert_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ResearchPlant01_Small.T_Prospect_Forest_ResearchPlant01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2102,6 +2410,12 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Desert_Research_0"
             },
@@ -2123,7 +2437,6 @@
         },
         {
             "Name": "OLY_Desert_Research_2",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionSummon01_Small.T_Prospect_Desert_ScorpionSummon01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2136,6 +2449,16 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Desert_Research_2"
             },
@@ -2163,7 +2486,6 @@
         },
         {
             "Name": "OLY_Desert_Recovery",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionSpear01_Small.T_Prospect_Desert_ScorpionSpear01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2183,6 +2505,16 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Desert_Recovery"
             },
@@ -2204,7 +2536,6 @@
         },
         {
             "Name": "OLY_Desert_Recovery_2",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Building01_Small.T_Prospect_Desert_Building01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2224,6 +2555,16 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Desert_Recovery_2"
             },
@@ -2245,7 +2586,6 @@
         },
         {
             "Name": "OLY_Desert_Construction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Small.T_Prospect_Desert_GroupBase01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2265,6 +2605,12 @@
             "Faction": {
                 "RowName": "The_Assembly"
             },
+            "Types": [
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Desert_Construction_0"
             },
@@ -2286,7 +2632,6 @@
         },
         {
             "Name": "OLY_Desert_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Expedition01_Small.T_Prospect_Arctic_Expedition01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2308,7 +2653,6 @@
         },
         {
             "Name": "OLY_Desert_Survey",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Sandworm01_Small.T_Prospect_Desert_Sandworm01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2342,6 +2686,12 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Desert_Survey"
             },
@@ -2391,7 +2741,6 @@
         },
         {
             "Name": "OLY_Omni_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExtractorExpedition01_Small.T_Prospect_Forest_ExtractorExpedition01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2399,6 +2748,16 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Exploration",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Exotic",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -2413,7 +2772,6 @@
         },
         {
             "Name": "OLY_Omni_Recovery",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_CrashSatellite01_Small.T_Prospect_Forest_CrashSatellite01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2433,6 +2791,16 @@
             "Faction": {
                 "RowName": "ACS"
             },
+            "Types": [
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Omni_Recovery"
             },
@@ -2461,7 +2829,6 @@
         },
         {
             "Name": "OLY_Omni_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Cave_WormRifle01_Small.T_Prospect_Cave_WormRifle01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2474,6 +2841,12 @@
             "Faction": {
                 "RowName": "ACS"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Omni_Research"
             },
@@ -2508,7 +2881,6 @@
         },
         {
             "Name": "OLY_Omni_Research_2",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_CrashSatellite01_Small.T_Prospect_Forest_CrashSatellite01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2528,6 +2900,16 @@
             "Faction": {
                 "RowName": "Group_15"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Omni_Research_2"
             },
@@ -2556,7 +2938,6 @@
         },
         {
             "Name": "STYX_A_Expedition",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_SwampSpearDeer01_Small.T_Prospect_Forest_SwampSpearDeer01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2583,6 +2964,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_A_Expedition"
             },
@@ -2610,7 +3005,6 @@
         },
         {
             "Name": "STYX_A_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Expedition01_Small.T_Prospect_Arctic_Expedition01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2637,7 +3031,6 @@
         },
         {
             "Name": "STYX_A_Extermination",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionBoss01_Small.T_Prospect_Desert_ScorpionBoss01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2650,6 +3043,12 @@
             "Faction": {
                 "RowName": "ACS"
             },
+            "Types": [
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_A_Extermination"
             },
@@ -2686,7 +3085,6 @@
         },
         {
             "Name": "STYX_B_Expedition",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Pickaxe01_Small.T_Prospect_Arctic_Pickaxe01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2713,6 +3111,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_B_Expedition"
             },
@@ -2747,7 +3159,6 @@
         },
         {
             "Name": "STYX_B_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Small.T_Prospect_Arctic_HeavyFog01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2774,7 +3185,6 @@
         },
         {
             "Name": "STYX_B_Extermination",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Lantern01_Small.T_Prospect_Arctic_Lantern01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2787,6 +3197,16 @@
             "Faction": {
                 "RowName": "ACS"
             },
+            "Types": [
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_B_Extermination"
             },
@@ -2817,7 +3237,6 @@
         },
         {
             "Name": "STYX_C_Expedition",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition01_Small.T_Prospect_Desert_Expedition01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2830,6 +3249,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_C_Expedition_0"
             },
@@ -2864,7 +3297,6 @@
         },
         {
             "Name": "STYX_C_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Small.T_Prospect_Desert_GroupBase01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2891,7 +3323,6 @@
         },
         {
             "Name": "STYX_C_Construction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Building01_Small.T_Prospect_Desert_Building01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2904,6 +3335,12 @@
             "Faction": {
                 "RowName": "Uniao"
             },
+            "Types": [
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_C_Construction"
             },
@@ -2934,7 +3371,6 @@
         },
         {
             "Name": "STYX_C_Extermination",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Sandworm01_Small.T_Prospect_Desert_Sandworm01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2947,6 +3383,12 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_C_Extermination"
             },
@@ -2970,7 +3412,6 @@
         },
         {
             "Name": "STYX_D_Expedition",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExpeditionSpear01_Small.T_Prospect_Forest_ExpeditionSpear01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -2990,6 +3431,24 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_D_Expedition"
             },
@@ -3024,7 +3483,6 @@
         },
         {
             "Name": "STYX_D_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_PolarbearDeath01_Small.T_Prospect_Arctic_PolarbearDeath01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3051,7 +3509,6 @@
         },
         {
             "Name": "STYX_D_Extermination",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_SnowWolf01_Small.T_Prospect_Arctic_SnowWolf01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3064,6 +3521,12 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_D_Extermination"
             },
@@ -3100,7 +3563,6 @@
         },
         {
             "Name": "STYX_D_Delivery",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Delivery01_Small.T_Prospect_Arctic_Delivery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3113,6 +3575,12 @@
             "Faction": {
                 "RowName": "Uniao"
             },
+            "Types": [
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_D_Delivery"
             },
@@ -3143,7 +3611,6 @@
         },
         {
             "Name": "STYX_D_Recovery",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Crossbow01_Small.T_Prospect_Forest_Crossbow01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3207,7 +3674,6 @@
         },
         {
             "Name": "STYX_D_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Lantern01_Small.T_Prospect_Arctic_Lantern01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3227,6 +3693,16 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_D_Research"
             },
@@ -3257,7 +3733,6 @@
         },
         {
             "Name": "STYX_D_Research2",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExtractorExpedition01_Small.T_Prospect_Forest_ExtractorExpedition01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3305,6 +3780,16 @@
             "Faction": {
                 "RowName": "Group_15"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_D_Research2"
             },
@@ -3335,7 +3820,6 @@
         },
         {
             "Name": "STYX_E_Expedition",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition02_Small.T_Prospect_Desert_Expedition02_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3362,6 +3846,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_E_Expedition"
             },
@@ -3396,7 +3894,6 @@
         },
         {
             "Name": "STYX_E_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Lurker01_Small.T_Prospect_Desert_Lurker01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3423,7 +3920,6 @@
         },
         {
             "Name": "STYX_E_Survey",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ScorpionSummon01_Small.T_Prospect_Desert_ScorpionSummon01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3436,6 +3932,16 @@
             "Faction": {
                 "RowName": "Lagos"
             },
+            "Types": [
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_E_Survey"
             },
@@ -3459,7 +3965,6 @@
         },
         {
             "Name": "STYX_E_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_ArmorScorpion01_Small.T_Prospect_Desert_ArmorScorpion01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3479,6 +3984,16 @@
             "Faction": {
                 "RowName": "Group_15"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_E_Research"
             },
@@ -3509,7 +4024,6 @@
         },
         {
             "Name": "OLY_Omni_Outpost",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExtractorExpedition01_Small.T_Prospect_Forest_ExtractorExpedition01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3529,6 +4043,20 @@
             "Faction": {
                 "RowName": "Group_15"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Omni_Outpost"
             },
@@ -3561,7 +4089,6 @@
         },
         {
             "Name": "STYX_A_Construction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Construction01_Small.T_Prospect_Forest_Construction01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3588,6 +4115,12 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_A_Construction"
             },
@@ -3611,7 +4144,6 @@
         },
         {
             "Name": "OLY_Forest_Range",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_BearBow01_Small.T_Prospect_Arctic_BearBow01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3619,6 +4151,12 @@
                         "DataTableName": "D_Quests"
                     },
                     "Depth": 0
+                }
+            ],
+            "Types": [
+                {
+                    "RowName": "Training",
+                    "DataTableName": "D_MissionTypes"
                 }
             ],
             "InitialQuest": {
@@ -3650,7 +4188,6 @@
         },
         {
             "Name": "STYX_B_Stockpile",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Farming01_Small.T_Prospect_Forest_Farming01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3684,6 +4221,12 @@
             "Faction": {
                 "RowName": "ACS"
             },
+            "Types": [
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_B_Stockpile"
             },
@@ -3714,7 +4257,6 @@
         },
         {
             "Name": "OLY_Forest_WS_Stockpile",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Dropship01_Small.T_Prospect_Forest_Dropship01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3748,6 +4290,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Training",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Mining",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "OLY_Forest_WS_Stockpile"
             },
@@ -3785,7 +4341,6 @@
         },
         {
             "Name": "PRO_Story_1",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_1_Small.T_Prospect_PROSTORY_1_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3805,6 +4360,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Farming",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_Story_1"
             },
@@ -3838,7 +4407,6 @@
         },
         {
             "Name": "PRO_Story_2",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_2_Small.T_Prospect_PROSTORY_2_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3851,6 +4419,16 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_Story_2"
             },
@@ -3888,7 +4466,6 @@
         },
         {
             "Name": "PRO_Story_3",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_3_Small.T_Prospect_PROSTORY_3_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3908,6 +4485,16 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Scan",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_Story_3"
             },
@@ -3945,7 +4532,6 @@
         },
         {
             "Name": "PRO_Story_4",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_4_Small.T_Prospect_PROSTORY_4_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -3965,6 +4551,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_Story_4"
             },
@@ -4002,7 +4602,6 @@
         },
         {
             "Name": "PRO_Story_5",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_5_Small.T_Prospect_PROSTORY_5_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4022,6 +4621,16 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_Story_5"
             },
@@ -4055,7 +4664,6 @@
         },
         {
             "Name": "PRO_Story_6",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_6_Small.T_Prospect_PROSTORY_6_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4075,6 +4683,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_Story_6"
             },
@@ -4244,7 +4866,6 @@
         },
         {
             "Name": "STYX_C_Extermination2",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Crossbow01_Small.T_Prospect_Forest_Crossbow01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4299,6 +4920,16 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_C_Extermination2"
             },
@@ -4329,7 +4960,6 @@
         },
         {
             "Name": "STYX_E_Extraction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Cave_Lantern01_Small.T_Prospect_Cave_Lantern01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4384,6 +5014,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Training",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Exotic",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_E_Extraction"
             },
@@ -4414,7 +5058,6 @@
         },
         {
             "Name": "STYX_B_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Transport01_Small.T_Prospect_Forest_Transport01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4441,6 +5084,16 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Mining",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_B_Research"
             },
@@ -4471,7 +5124,6 @@
         },
         {
             "Name": "STYX_A_Extermination2",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Delivery01_Small.T_Prospect_Forest_Delivery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4498,6 +5150,16 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_A_Extermination2"
             },
@@ -4528,7 +5190,6 @@
         },
         {
             "Name": "PRO_A_Stockpile",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Delivery01_Small.T_Prospect_Arctic_Delivery01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4541,6 +5202,12 @@
             "Faction": {
                 "RowName": "Uniao"
             },
+            "Types": [
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_A_Stockpile"
             },
@@ -4574,7 +5241,6 @@
         },
         {
             "Name": "STYX_C_Fishing",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Angler01_Small.T_Prospect_Desert_Angler01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4601,6 +5267,16 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Fishing",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "STYX_C_Fishing"
             },
@@ -4631,7 +5307,6 @@
         },
         {
             "Name": "PRO_A_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Building01_Small.T_Prospect_Forest_Building01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4663,7 +5338,6 @@
         },
         {
             "Name": "PRO_B_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Sandworm01_Small.T_Prospect_Desert_Sandworm01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4695,7 +5369,6 @@
         },
         {
             "Name": "PRO_C_Exploration",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_SwampSpearDeer01_Small.T_Prospect_Forest_SwampSpearDeer01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4727,7 +5400,6 @@
         },
         {
             "Name": "PRO_C_Construction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Crossbow01_Small.T_Prospect_Forest_Crossbow01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4740,6 +5412,12 @@
             "Faction": {
                 "RowName": "The_Assembly"
             },
+            "Types": [
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_C_Construction"
             },
@@ -4775,7 +5453,6 @@
         },
         {
             "Name": "PRO_C_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Extermination01_Small.T_Prospect_Forest_Extermination01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4802,6 +5479,16 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_C_Research"
             },
@@ -4837,7 +5524,6 @@
         },
         {
             "Name": "PRO_A_Extraction",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Storm01_Small.T_Prospect_Arctic_Storm01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4864,6 +5550,20 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Construction",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Mining",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_A_Extraction"
             },
@@ -4899,7 +5599,6 @@
         },
         {
             "Name": "PRO_B_Extermination",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Small.T_Prospect_Desert_GroupBase01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4926,6 +5625,16 @@
             "Faction": {
                 "RowName": "Lagos"
             },
+            "Types": [
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Fishing",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_B_Extermination"
             },
@@ -4961,7 +5670,6 @@
         },
         {
             "Name": "PRO_Ashlands_Story",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Small.T_Prospect_Desert_GroupBase01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -4988,6 +5696,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_Ashlands_Story"
             },
@@ -5023,7 +5745,6 @@
         },
         {
             "Name": "PRO_Icesheet_Story",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Storm01_Small.T_Prospect_Arctic_Storm01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -5050,6 +5771,20 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_Icesheet_Story"
             },
@@ -5103,7 +5838,6 @@
         },
         {
             "Name": "STYX_A_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Kiwi_Small.T_Prospect_Kiwi_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -5160,7 +5894,6 @@
         },
         {
             "Name": "PRO_D_Transport",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_Transport01_Small.T_Prospect_Forest_Transport01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -5180,6 +5913,16 @@
             "Faction": {
                 "RowName": "UDA"
             },
+            "Types": [
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_D_Transport"
             },
@@ -5209,7 +5952,6 @@
         },
         {
             "Name": "PRO_D_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition01_Small.T_Prospect_Desert_Expedition01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -5236,6 +5978,20 @@
             "Faction": {
                 "RowName": "Sinotai"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Extermination",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Boss",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_D_Research"
             },
@@ -5271,7 +6027,6 @@
         },
         {
             "Name": "PRO_E_Research",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Small.T_Prospect_Arctic_HeavyFog01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -5312,6 +6067,16 @@
             "Faction": {
                 "RowName": "The_Assembly"
             },
+            "Types": [
+                {
+                    "RowName": "Research",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_E_Research"
             },
@@ -5347,7 +6112,6 @@
         },
         {
             "Name": "PRO_D_Recovery",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Small.T_Prospect_Arctic_HeavyFog01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -5367,6 +6131,16 @@
             "Faction": {
                 "RowName": "Recovery_Crew"
             },
+            "Types": [
+                {
+                    "RowName": "Recon",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_D_Recovery"
             },
@@ -5408,7 +6182,6 @@
         },
         {
             "Name": "PRO_D_Resupply",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Small.T_Prospect_Arctic_HeavyFog01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -5442,6 +6215,16 @@
             "Faction": {
                 "RowName": "Recovery_Crew"
             },
+            "Types": [
+                {
+                    "RowName": "Stockpile",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_D_Resupply"
             },
@@ -5477,7 +6260,6 @@
         },
         {
             "Name": "PRO_D_Rescue",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_HeavyFog01_Small.T_Prospect_Arctic_HeavyFog01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -5497,6 +6279,12 @@
             "Faction": {
                 "RowName": "Recovery_Crew"
             },
+            "Types": [
+                {
+                    "RowName": "Delivery",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_D_Rescue"
             },
@@ -5532,7 +6320,6 @@
         },
         {
             "Name": "PRO_Nullsector_Story",
-            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Cave_Lantern01_Small.T_Prospect_Cave_Lantern01_Small",
             "MissionObjectives": [
                 {
                     "QuestRow": {
@@ -5545,6 +6332,16 @@
             "Faction": {
                 "RowName": "Norex"
             },
+            "Types": [
+                {
+                    "RowName": "Main",
+                    "DataTableName": "D_MissionTypes"
+                },
+                {
+                    "RowName": "Expedition",
+                    "DataTableName": "D_MissionTypes"
+                }
+            ],
             "InitialQuest": {
                 "RowName": "PRO_Nullsector_Story"
             },

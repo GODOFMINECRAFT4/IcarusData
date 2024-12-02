@@ -5820,7 +5820,8 @@
             "Name": "Metal_CoffeeTable",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Metal_CoffeeTable.BP_Metal_CoffeeTable_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/CoffeeTable_MetalGlass/SM_DCO_CoffeeTable_MetalGlass.SM_DCO_CoffeeTable_MetalGlass",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "bCanAffectNavigation": false
         },
         {
             "Name": "Water_Purifier_T1_Water",
@@ -6039,6 +6040,13 @@
             "Name": "Brutalist_Lamp",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Lamp.BP_Brutalist_Lamp_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/DeskLamp_Brutalist/SM_DCO_DeskLamp_Brutalist.SM_DCO_DeskLamp_Brutalist",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST",
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Brutalist_Square_Lamp",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Brutalist_Square_Lamp.BP_Brutalist_Square_Lamp_C",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Brutalist/DeskLamp_Var2_Brutalist/SM_DCO_DeskLamp_Var2_Brutalist.SM_DCO_DeskLamp_Var2_Brutalist",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST",
             "MaxRestackingAmount": 1
         },
@@ -8841,16 +8849,6 @@
             }
         },
         {
-            "Name": "ResearchEquipment_1",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_ResearchEquipment_1.BP_ResearchEquipment_1_C",
-            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_FactionMission_Tech1.ITEM_FactionMission_Tech1",
-            "PreviewStaticMesh": "/Game/ASS/ITM/SM_ITM_LARK_Tech_A.SM_ITM_LARK_Tech_A",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
-            "AudioOcclusionAmount": 0.5,
-            "bCanAffectNavigation": false,
-            "MaxRestackingAmount": 1
-        },
-        {
             "Name": "SurveyTransmitter_NoSnap",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Communication/BP_SurveyTransmitter.BP_SurveyTransmitter_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Laser_Uplink.SM_DEP_Laser_Uplink",
@@ -8879,6 +8877,21 @@
             "DeployableBlueprint": "/Game/BP/World/MissionDecal/BP_Decal_Blood_Deployable.BP_Decal_Blood_Deployable_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_HealthBars.Talent_Hunting_HealthBars",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Decal_Blood-DeployableName\", \"Blood\")",
+            "PreviewStaticMesh": "/Game/ASS/DCO/Rug_Cougar/SM_DCO_Rug_Cougar.SM_DCO_Rug_Cougar",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "MaxSurfaceSnapAngle": 180,
+            "WorldPlacementType": "GroundOrWallPlacement",
+            "bCanAffectNavigation": false,
+            "DeployCollisionExtentOffset": {
+                "X": -100,
+                "Y": -100
+            }
+        },
+        {
+            "Name": "Decal_Blood_2",
+            "DeployableBlueprint": "/Game/BP/World/MissionDecal/BP_Decal_Blood_Deployable_1.BP_Decal_Blood_Deployable_1_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Talents/Hunting/Talent_Hunting_ChaseEmDown.Talent_Hunting_ChaseEmDown",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Decal_Blood_2-DeployableName\", \"Blood Alternate\")",
             "PreviewStaticMesh": "/Game/ASS/DCO/Rug_Cougar/SM_DCO_Rug_Cougar.SM_DCO_Rug_Cougar",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
             "MaxSurfaceSnapAngle": 180,
@@ -8926,6 +8939,107 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Beds/BP_Bed_Quilted.BP_Bed_Quilted_C",
             "PreviewStaticMesh": "/Game/ASS/DCO/BedDouble_Quilted/SM_DCO_Bed_Quilted_Double.SM_DCO_Bed_Quilted_Double",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_BRUTALIST.SFX_DEPLOY_BRUTALIST"
+        },
+        {
+            "Name": "Chick_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Chick.BP_Trophy_Chick_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Chick/SM_DEP_Trophy_Chick.SM_DEP_Trophy_Chick",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "ResearchEquipment_Centrifuge",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_ResearchEquipment_Centrifuge.BP_ResearchEquipment_Centrifuge_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Lab_Equipment/SM_DEP_Lab_Centrifuge.SM_DEP_Lab_Centrifuge",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "AudioOcclusionAmount": 0.5,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "ResearchEquipment_Flasks",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_ResearchEquipment_Flasks.BP_ResearchEquipment_Flasks_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Lab_Equipment/SM_DEP_Lab_Flasks.SM_DEP_Lab_Flasks",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "AudioOcclusionAmount": 0.5,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "ResearchEquipment_Microscope",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_ResearchEquipment_Microscope.BP_ResearchEquipment_Microscope_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Lab_Equipment/SM_DEP_Lab_Microscope.SM_DEP_Lab_Microscope",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "AudioOcclusionAmount": 0.5,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "ResearchEquipment_TestTubes",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_ResearchEquipment_TestTubes.BP_ResearchEquipment_TestTubes_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Lab_Equipment/SM_DEP_Lab_TestTubes.SM_DEP_Lab_TestTubes",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "AudioOcclusionAmount": 0.5,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "ResearchEquipment_LabDesk",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Lab_Desk.BP_Lab_Desk_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Desk_Lab/SM_DEP_Desk_Lab.SM_DEP_Desk_Lab",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM"
+        },
+        {
+            "Name": "Farm_Railing_Gate",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Railings/BP_Railing_Farm_Gate.BP_Railing_Farm_Gate_C",
+            "PreviewStaticMesh": "/Game/ASS/BLD/Farm/Farm_Gate_Wood/SM_BLD_Farm_Gate_Wood.SM_BLD_Farm_Gate_Wood",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Building_Floor"
+            ],
+            "SnapSocketsOrTags": [
+                "RailingSocket1",
+                "RailingSocket2",
+                "RailingSocket3",
+                "RailingSocket4"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Z": -4
+            },
+            "DeployPlacementOffset": {
+                "Z": -4
+            }
+        },
+        {
+            "Name": "Farm_Railing",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Railings/BP_Railing_Farm.BP_Railing_Farm_C",
+            "PreviewStaticMesh": "/Game/ASS/BLD/Farm/Farm_Fence_Wood/SM_BLD_Farm_Fence_Wood.SM_BLD_Farm_Fence_Wood",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_WOOD.SFX_BLD_WOOD",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "WorldAndSnap",
+            "SnapActorTags": [
+                "Building_Floor"
+            ],
+            "SnapSocketsOrTags": [
+                "RailingSocket1",
+                "RailingSocket2",
+                "RailingSocket3",
+                "RailingSocket4"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true,
+            "DeployCollisionExtentOffset": {
+                "Z": -4
+            },
+            "DeployPlacementOffset": {
+                "Z": -4
+            }
         }
     ]
 }
