@@ -7588,7 +7588,7 @@
             "Name": "Seed_SpoilPrevention",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_SeedSpoilPrevention.T_ICON_SeedSpoilPrevention'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SpoilPrevention-ModifierName\", \"Evergreen\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SpoilPrevention-ModifierDescription\", \"Crop will not wilt\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_SpoilPrevention-ModifierDescription\", \"Crop will not wilt naturally. Storms will still cause wilting if the quality of the crop drops to zero.\")",
             "GrantedStats": {
                 "(Value=\"BasePlantedCropCannotSpoil_?\")": 1
             },
@@ -12312,7 +12312,7 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Earthquake-ModifierName\", \"Aura Effect: Unstable\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Earthquake-ModifierDescription\", \"Decreased Movement Speed\")",
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -50,
+                "(Value=\"BaseMovementSpeed_+%\")": -25,
                 "(Value=\"BaseSprintSpeed_+%\")": -50
             },
             "AuraRange": 500,
@@ -12385,6 +12385,18 @@
                 ],
                 "AutoDescription": " NONE( )"
             }
+        },
+        {
+            "Name": "Frenzied",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ConcussionDebuff.Icon_ConcussionDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Frenzied-ModifierName\", \"Frenzied\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Frenzied-ModifierDescription\", \"Unable to tell between friend and foe, highly aggressive\")",
+            "GrantedStats": {
+                "(Value=\"IsFrenzied_?\")": 1
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false
         }
     ]
 }

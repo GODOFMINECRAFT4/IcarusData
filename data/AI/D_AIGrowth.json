@@ -3184,7 +3184,7 @@
             "Name": "Ape",
             "Base": {
                 "(Value=\"BaseSwimSpeed_+\")": 300,
-                "(Value=\"BaseHealthRegenPerMinute_+\")": 50,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 130,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
                 "(Value=\"BaseMaximumFallDamage_%\")": 100,
                 "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
@@ -3194,18 +3194,22 @@
                 "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
                 "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
                 "(Value=\"BaseAIPerceptionSoundRadius_+\")": 1500,
-                "(Value=\"BaseCharacterMass_+\")": 600,
-                "(Value=\"BaseNPCAttackRadius_+\")": 400,
+                "(Value=\"BaseCharacterMass_+\")": 1000,
+                "(Value=\"BaseNPCAttackRadius_+\")": 600,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 100,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseSlowResistance_%\")": 33,
                 "(Value=\"BaseImmobiliseResistance_%\")": 33,
-                "(Value=\"BaseMovementSpeed_+\")": 385
+                "(Value=\"BaseMovementSpeed_+\")": 275,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 1000,
+                "(Value=\"BaseExplosiveDamageResistance_%\")": 50,
+                "(Value=\"BasePoisonDamageResistance_%\")": 50
             },
             "Health": "CurveFloat'/Game/Data/AI/C_ApeHealth.C_ApeHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_ApeMeleeDamage.C_ApeMeleeDamage'",
+            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_ApeMovementSpeed.C_ApeMovementSpeed'",
             "CustomStats": [
                 {
                     "Stat": {
@@ -4077,6 +4081,25 @@
                 "(Value=\"BaseFoodConsumptionPerHour_+\")": 1200,
                 "(Value=\"BaseWaterConsumptionPerHour_+\")": 0
             },
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
+            "Name": "LavaFlyer_Player",
+            "Base": {
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseMaximumHealth_+\")": 25,
+                "(Value=\"BaseCharacterMass_+\")": 10,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseExplosiveDamageRadius_+\")": 275,
+                "(Value=\"BaseExplosiveDamage_+\")": 225,
+                "(Value=\"BaseExplosiveDamageResistance_%\")": 100
+            },
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_AlphaWolfMeleeDamage.C_AlphaWolfMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         }
     ]
