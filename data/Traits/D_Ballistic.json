@@ -3421,7 +3421,6 @@
             "AllowPickupAfterSettle": false,
             "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_IceMammoth_Ice_Projectile.BP_Payload_IceMammoth_Ice_Projectile_C",
             "PayloadDeploymentTimerDelay": 1,
-            "TrailParticle": "/Game/ASS/VFX/ENV/IceCool/NS_DryIceMist.NS_DryIceMist",
             "BreakChance": 0,
             "PostDeployLifetime": 10,
             "AttachOnHit": false,
@@ -3779,7 +3778,6 @@
             "AllowPickupAfterSettle": false,
             "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_IceMammoth_Ice_Fracture.BP_Payload_IceMammoth_Ice_Fracture_C",
             "PayloadDeploymentTimerDelay": 0,
-            "TrailParticle": "/Game/ASS/VFX/ENV/IceCool/NS_DryIceMist.NS_DryIceMist",
             "BreakChance": 100,
             "PostDeployLifetime": 0.10000000149011612,
             "AttachOnHit": false,
@@ -3831,7 +3829,7 @@
         {
             "Name": "GreatApe_Rock_Projectile",
             "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
-            "Damage": 200,
+            "Damage": 250,
             "DamageVariationPercentage": 50,
             "bCanStealthAttack": false,
             "bHomingProjectile": false,
@@ -3844,7 +3842,7 @@
             "AttachOnHit": false,
             "ProjectileBounceSettings": {
                 "Bounciness": 0,
-                "Friction": 10,
+                "Friction": 20,
                 "BounceVelocityStopSimulatingThreshold": 10,
                 "MinTimeBetweenBounces": 0.30000001192092896
             },
@@ -3863,7 +3861,7 @@
         {
             "Name": "GreatApe_Rock_Projectile_Fast",
             "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
-            "Damage": 75,
+            "Damage": 100,
             "DamageVariationPercentage": 20,
             "bCanStealthAttack": false,
             "bHomingProjectile": false,
@@ -3875,8 +3873,8 @@
             "PostDeployLifetime": 5,
             "AttachOnHit": false,
             "ProjectileBounceSettings": {
-                "Bounciness": 3,
-                "Friction": 0.5,
+                "Bounciness": 1,
+                "Friction": 10,
                 "BounceVelocityStopSimulatingThreshold": 30,
                 "MinTimeBetweenBounces": 0.30000001192092896
             },
@@ -3962,11 +3960,11 @@
         {
             "Name": "GreatApe_Log_Projectile",
             "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
-            "Damage": 175,
+            "Damage": 275,
             "DamageVariationPercentage": 30,
             "bCanStealthAttack": false,
             "bHomingProjectile": false,
-            "Weight": 0.5,
+            "Weight": 10,
             "AllowPickupAfterSettle": false,
             "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_GreatApe_Projectile.BP_Payload_GreatApe_Projectile_C",
             "PayloadDeploymentTimerDelay": 1,
@@ -3975,7 +3973,7 @@
             "AttachOnHit": false,
             "ProjectileBounceSettings": {
                 "Bounciness": 0,
-                "Friction": 0.5,
+                "Friction": 10,
                 "BounceVelocityStopSimulatingThreshold": 30,
                 "MinTimeBetweenBounces": 0.30000001192092896
             },
@@ -3987,9 +3985,10 @@
             },
             "AudioData": {
                 "FlySound": "/Game/FMOD/Events/SFX/Creatures/Movement/Ape/SFX_CRE_APE_PROJECTILE_TRAVELLING.SFX_CRE_APE_PROJECTILE_TRAVELLING",
-                "ImpactSound": "/Game/FMOD/Events/SFX/Creatures/Movement/Ape/SFX_CRE_APE_PROJECTILE_ROCK_FALL_IMPACT.SFX_CRE_APE_PROJECTILE_ROCK_FALL_IMPACT"
+                "ImpactSound": "/Game/FMOD/Events/SFX/Creatures/Movement/Ape/SFX_CRE_APE_PROJECTILE_TREE_IMPACT.SFX_CRE_APE_PROJECTILE_TREE_IMPACT"
             },
-            "bUseActorPooling": true
+            "bUseActorPooling": true,
+            "OnHitAINoiseEventRange": 400
         }
     ]
 }

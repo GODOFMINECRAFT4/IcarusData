@@ -9538,7 +9538,7 @@
             "Name": "Item_Thumper",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Thumper-DisplayName\", \"Prototype Thumper\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Thumper.ITEM_Thumper",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Thumper-Description\", \"Deploy and activate to unearth mineable ores. Replenishes mineable rocks in the surrounding area. \")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Thumper-Description\", \"Deploy and activate to unearth mineable ore. Replenishes mineable ore in the surrounding area. \")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Thumper-FlavorText\", \"Sure hope this doesn\\'t attract anything big...\")",
             "Weight": 90000
         },
@@ -11192,7 +11192,7 @@
         },
         {
             "Name": "Item_Meta_Fishfinder",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Fishfinder-DisplayName\", \"F.I.S.H.\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Fishfinder-DisplayName\", \"FISH\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Fishfinder.ITEM_Meta_Fishfinder",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Fishfinder-Description\", \"Fish Identification and Scanning Hardware. A handheld device that scans the waterbodies at the present location for fish like creatures.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Fishfinder-FlavorText\", \"A glorified fish finder.\")",
@@ -12530,7 +12530,7 @@
         },
         {
             "Name": "Item_Meta_Creature_Scanner",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Creature_Scanner-DisplayName\", \"B.E.A.S.T.\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Creature_Scanner-DisplayName\", \"BEAST\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Meta_Creature_Scanner.T_ITEM_Meta_Creature_Scanner",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Creature_Scanner-Description\", \"Bio-Entity Analysis and Scanning Technology. A handheld device that scans nearby creatures for analysis and locates weaknesses.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Creature_Scanner-FlavorText\", \"A beauty of a device that will make surviving Icarus that much easier.\")",
@@ -13641,7 +13641,7 @@
             "Name": "Item_Mission_Device",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Device-DisplayName\", \"C0NT4CT Device\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Mission_Communication_Device_T2.T_ITEM_Mission_Communication_Device_T2",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Device-Description\", \"Certified Online Network Transmitter for Contractor Tasking. Grants access to SMPL3 Missions and Operations.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Device-Description\", \"Certified Online Network Transmitter for Contractor Tasking. Allows contact to Orbital station SMPL3 Missions and Operations.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Device-FlavorText\", \"Replacing UDA agents one mission at a time.\")",
             "Weight": 10000
         },
@@ -17052,7 +17052,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Burner-DisplayName\", \"Wood Burner\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Wood_Burner.T_ITEM_Wood_Burner",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Burner-Description\", \"For keeping you warm in cold environments and basic cooking.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Burner-FlavorText\", \"Your a true survivor now.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Burner-FlavorText\", \"You\\'re a true survivor now.\")",
             "Weight": 10000
         },
         {
@@ -17874,7 +17874,8 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Slug_Grenade.T_ITEM_Slug_Grenade",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Slug_Grenade-Description\", \"A grenade crafted from the spoils of victory against a Hammerhead.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Slug_Grenade-FlavorText\", \"An item that was truly hard-won.\")",
-            "Weight": 500
+            "Weight": 500,
+            "MaxStack": 5
         },
         {
             "Name": "Item_Slug_Axe",
@@ -18658,7 +18659,7 @@
         },
         {
             "Name": "Item_Great_Hunt_Device",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Great_Hunt_Device-DisplayName\", \"N.O.V.A. Station\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Great_Hunt_Device-DisplayName\", \"NOVA Station\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Great_Hunt_Device.T_ITEM_Great_Hunt_Device",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Great_Hunt_Device-Description\", \"A Communications Device Provided by Norex to Engage in Hunt Contracts. Also provides advanced facilities for crafting Creature Related Items.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Great_Hunt_Device-FlavorText\", \"The Norex Operations Verification Assembly - Your one stop shop for everything black market.\")",
@@ -18668,8 +18669,8 @@
             "Name": "Item_Ape_Grenade",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Grenade-DisplayName\", \"Garganutan Grenade\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Ape_Grenade.T_ITEM_Ape_Grenade",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Grenade-Description\", \"A grenade crafted from the spoils of victory against a Garganutan.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Grenade-FlavorText\", \"An item that was truly hard-won.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Grenade-Description\", \"A high-tech sonic grenade which causes creatures to become frenzied and attack each other.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Grenade-FlavorText\", \"A grenade crafted from the spoils of victory against a Garganutan.\")",
             "Weight": 50,
             "MaxStack": 5
         },
@@ -19235,7 +19236,7 @@
         },
         {
             "Name": "Item_Medical_Scanner",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Medical_Scanner-DisplayName\", \"H.E.A.L. Device\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Medical_Scanner-DisplayName\", \"HEAL Device\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Mission_Medical_Device.T_ITEM_Mission_Medical_Device",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Medical_Scanner-Description\", \"Health Examination & Analysis Lens. Hold to scan prospectors and see their ailments.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Medical_Scanner-FlavorText\", \"XIGO\\'s latest innovation for the furtherment of medical technolgies.\")",
@@ -20324,6 +20325,7 @@
         {
             "Name": "Item_SonicDevice",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_SonicDevice-DisplayName\", \"Experimental Sonic Device\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Bunker_Prop_2.T_ITEM_Bunker_Prop_2",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_SonicDevice-Description\", \"A sonic device made based on the findings from the Research station.\")",
             "Weight": 10000
         },
@@ -20617,6 +20619,23 @@
             "DisplayName": "INVTEXT(\"[DNT] Icon Only\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_DRINK_Coffeeand_Cream.T_ITEM_DRINK_Coffeeand_Cream",
             "Weight": 1
+        },
+        {
+            "Name": "Item_GH_Radio",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_Radio-DisplayName\", \"NOVA Radio\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Mission_Radio.T_ITEM_Mission_Radio",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_Radio-Description\", \"Contacts a nearby NOVA Station for accessing Great Hunts.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_Radio-FlavorText\", \"A truly remarkable piece of equipment.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Light_Test",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Light_Test-DisplayName\", \"Light Test\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Kit_Floor_Torch.ITEM_Kit_Floor_Torch",
+            "Description": "INVTEXT(\"[DNT] Cams Light test item\")",
+            "FlavorText": "INVTEXT(\"[DNT] Lights are cool\")",
+            "Weight": 1,
+            "MaxStack": 100
         }
     ]
 }

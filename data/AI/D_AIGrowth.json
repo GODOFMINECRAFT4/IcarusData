@@ -2800,7 +2800,8 @@
                 "(Value=\"BaseFireDamageResistance_%\")": -100,
                 "(Value=\"BaseMovementSpeed_+\")": 150,
                 "(Value=\"BaseHealthPerConnectedPlayer_+\")": 450,
-                "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 1250
+                "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 1250,
+                "(Value=\"BaseMeleeDamageResistance_+%\")": -50
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Hammerhead_Slug_S_Health.C_Hammerhead_Slug_S_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Hammerhead_Slug_S_Damage.C_Hammerhead_Slug_S_Damage'",
@@ -2840,7 +2841,10 @@
                 "(Value=\"BaseFireDamageResistance_%\")": -100,
                 "(Value=\"BaseMovementSpeed_+\")": 150,
                 "(Value=\"BaseHealthPerConnectedPlayer_+\")": 1000,
-                "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 8000
+                "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 8000,
+                "(Value=\"BaseProjectileDamageResistance_+%\")": 50,
+                "(Value=\"BaseMovementSpeed_+%\")": 50,
+                "(Value=\"BaseMeleeDamageResistance_+%\")": -50
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Hammerhead_Slug_L_Health.C_Hammerhead_Slug_L_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Hammerhead_Slug_L_Damage.C_Hammerhead_Slug_L_Damage'",
@@ -2880,7 +2884,10 @@
                 "(Value=\"BaseFireDamageResistance_%\")": -100,
                 "(Value=\"BaseMovementSpeed_+\")": 150,
                 "(Value=\"BaseHealthPerConnectedPlayer_+\")": 300,
-                "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 2500
+                "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 2500,
+                "(Value=\"BaseMovementSpeed_+%\")": 50,
+                "(Value=\"BaseProjectileDamageResistance_+%\")": 50,
+                "(Value=\"BaseMeleeDamageResistance_+%\")": -50
             },
             "Health": "CurveFloat'/Game/Data/AI/C_Hammerhead_Slug_M_Health.C_Hammerhead_Slug_M_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Hammerhead_Slug_M_Damage.C_Hammerhead_Slug_M_Damage'",
@@ -3184,18 +3191,18 @@
             "Name": "Ape",
             "Base": {
                 "(Value=\"BaseSwimSpeed_+\")": 300,
-                "(Value=\"BaseHealthRegenPerMinute_+\")": 130,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 300,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
-                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMaximumFallDamage_%\")": 50,
                 "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
                 "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
                 "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
                 "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
-                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 5500,
                 "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
                 "(Value=\"BaseAIPerceptionSoundRadius_+\")": 1500,
                 "(Value=\"BaseCharacterMass_+\")": 1000,
-                "(Value=\"BaseNPCAttackRadius_+\")": 600,
+                "(Value=\"BaseNPCAttackRadius_+\")": 450,
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"CanNPCDamageVoxels_?\")": 1,
                 "(Value=\"BaseMiningRadius_+\")": 100,
@@ -3205,11 +3212,12 @@
                 "(Value=\"BaseMovementSpeed_+\")": 275,
                 "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 1000,
                 "(Value=\"BaseExplosiveDamageResistance_%\")": 50,
-                "(Value=\"BasePoisonDamageResistance_%\")": 50
+                "(Value=\"BasePoisonDamageResistance_%\")": 50,
+                "(Value=\"BaseGOAPMotivationPreservationRetreatRegen_%\")": 4,
+                "(Value=\"BaseMaximumHealth_+\")": 35000,
+                "(Value=\"BaseMeleeDamage_+\")": 140,
+                "(Value=\"BaseNPCKnockbackStrength_+%\")": 800
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_ApeHealth.C_ApeHealth'",
-            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_ApeMeleeDamage.C_ApeMeleeDamage'",
-            "MovementSpeed": "CurveFloat'/Game/Data/AI/C_ApeMovementSpeed.C_ApeMovementSpeed'",
             "CustomStats": [
                 {
                     "Stat": {
@@ -3673,15 +3681,16 @@
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseMovementSpeed_+\")": 180,
-                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 400,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 1000,
                 "(Value=\"BaseHealthPerConnectedPlayer_+\")": 10000,
                 "(Value=\"IsKnockbackResisted_?\")": 1,
                 "(Value=\"BaseSlowResistance_%\")": 100,
                 "(Value=\"BaseImmobiliseResistance_%\")": 100,
-                "(Value=\"BaseExplosiveDamageResistance_%\")": -50,
-                "(Value=\"BaseFrostDamageResistance_%\")": -100,
-                "(Value=\"BaseMeleeDamage_+\")": 125,
-                "(Value=\"BaseMaximumArmor_+\")": 4000
+                "(Value=\"BaseExplosiveDamageResistance_%\")": 50,
+                "(Value=\"BaseFrostDamageResistance_%\")": 0,
+                "(Value=\"BaseMeleeDamage_+\")": 150,
+                "(Value=\"BaseMaximumArmor_+\")": 4000,
+                "(Value=\"BaseElectroshockResistance_%\")": 100
             },
             "Health": "CurveFloat'/Game/Data/AI/C_ScorpionBossHealth.C_ScorpionBossHealth'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"

@@ -53837,6 +53837,30 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Pistol_T4",
+            "ExtraData": {
+                "RowName": "Item_Pistol_T4",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 150,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T4_Gun_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Trail_Beacon",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Trail_Beacon-DisplayName\", \"Prototype Trail Beacon\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Trail_Beacon.T_ITEM_Trail_Beacon",
@@ -56544,6 +56568,30 @@
                     "DataTableName": "D_Talents"
                 }
             ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "GH_Ape_Reroute",
+            "bIsReroute": true,
+            "TalentTree": {
+                "RowName": "GreatHunt_Ape"
+            },
+            "Position": {
+                "X": 2100,
+                "Y": 1250
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "GH_Ape_B",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
         }
     ]

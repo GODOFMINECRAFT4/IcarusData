@@ -15620,7 +15620,7 @@
         },
         {
             "Name": "WorldJuvenileRockGolemDesertSpawn_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemDesertSpawn_?-Title\", \"Young Quarrite Burrow\\'s Will Appear In Desert Areas\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemDesertSpawn_?-Title\", \"Young Quarrite Burrows Will Appear In Desert Areas\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15630,7 +15630,7 @@
         },
         {
             "Name": "WorldJuvenileRockGolemWorldSpawn_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemWorldSpawn_?-Title\", \"Young Quarrite Burrow\\'s Will Appear In All Areas\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemWorldSpawn_?-Title\", \"Young Quarrite Burrows Will Appear In All Areas\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15893,6 +15893,75 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseAttacksCauseSprain_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksCauseSprain_%-PositiveDescription\", \"{0}% Chance to Apply Sprain on Hit\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "AttacksCauseSprain_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCauseSprain_%-Title\", \"Chance to Apply a Sprain on Hit\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "WorldJuvenileApeOuterForestSpawn_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileApeOuterForestSpawn_?-Title\", \"Garganutan Jr Lairs Will Appear In Outer Forest Areas\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldJuvenileApeCentralForestSpawn_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileApeCentralForestSpawn_?-Title\", \"Garganutan Jr Lairs Will Appear In Central Forest Areas\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldJuvenileApeDesertSpawn_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileApeDesertSpawn_?-Title\", \"Garganutan Jr Lairs Will Appear In Desert Areas\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldApePoisonWeakness_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldApePoisonWeakness_?-Title\", \"Garganutan Boss Has Increased Weakness to Poison During Final Hunt\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldPlayerCanSeeJuvenileApeDenOnMap_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldPlayerCanSeeJuvenileApeDenOnMap_?-Title\", \"Garganutan Jr Lairs Appear on Map\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "Map"
             },
             "bHideStatInUserInterface": true
         }

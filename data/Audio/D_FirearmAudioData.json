@@ -687,7 +687,7 @@
             "Name": "CrossbowSandworm",
             "FireSounds": [
                 {
-                    "Event": "/Game/FMOD/Events/SFX/Weapons/Crossbow/SFX_WEP_CROSSBOW_SANDWORM.SFX_WEP_CROSSBOW_SANDWORM",
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Crossbow/SFX_WEP_CROSSBOW_SANDWORM_FIRE.SFX_WEP_CROSSBOW_SANDWORM_FIRE",
                     "AttachPoint": "SK_CSB_Srossbow_JNT_DRAW",
                     "bUseChargeParameter": false,
                     "bUseChargingParameter": false,
@@ -922,6 +922,42 @@
                 {
                     "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Pistol/SFX_PISTOL_DRY_FIRE.SFX_PISTOL_DRY_FIRE",
                     "AttachPoint": "Trigger1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": true,
+                    "bUseAimingParameter": false
+                }
+            ]
+        },
+        {
+            "Name": "RockGolemGun",
+            "FireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_ROCK_GOLEM_GUN.SFX_ROCK_GOLEM_GUN",
+                    "AttachPoint": "None",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": true,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": false
+                }
+            ],
+            "PersistentSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Aiming/SFX_SHOTGUN_AIM_UP.SFX_SHOTGUN_AIM_UP",
+                    "AttachPoint": "bn_Root_1",
+                    "bUseChargeParameter": false,
+                    "bUseChargingParameter": false,
+                    "bUseAmmoCountParameter": false,
+                    "bUseReloadingParameter": false,
+                    "bUseAimingParameter": true
+                }
+            ],
+            "NoFireSounds": [
+                {
+                    "Event": "/Game/FMOD/Events/SFX/Weapons/Guns/Rifle/SFX_RIFLE_DRYFIRE.SFX_RIFLE_DRYFIRE",
+                    "AttachPoint": "None",
                     "bUseChargeParameter": false,
                     "bUseChargingParameter": false,
                     "bUseAmmoCountParameter": true,

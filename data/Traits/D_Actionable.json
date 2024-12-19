@@ -371,6 +371,10 @@
                         "Primary": {
                             "RowName": "Grenade_Throw",
                             "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Reload": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
                         }
                     },
                     "ModifierState": {
@@ -1080,6 +1084,10 @@
                         "Primary": {
                             "RowName": "Grenade_Throw",
                             "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Reload": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
                         }
                     },
                     "ModifierState": {
@@ -1604,6 +1612,10 @@
                         "Primary": {
                             "RowName": "Knife_Throw",
                             "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Reload": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
                         }
                     },
                     "ModifierState": {
@@ -1621,6 +1633,10 @@
                     "InputTypes": {
                         "Primary": {
                             "RowName": "Spear_Throw",
+                            "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Reload": {
+                            "RowName": "None",
                             "DataTableName": "D_StaminaActionCosts"
                         }
                     },
@@ -2304,6 +2320,10 @@
                         "Primary": {
                             "RowName": "Grenade_Throw",
                             "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Reload": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
                         }
                     },
                     "ModifierState": {
@@ -2491,6 +2511,27 @@
                 }
             },
             "bUseClientPrediction": true
+        },
+        {
+            "Name": "GH_Radio",
+            "ActionMapping": {
+                "(RowName=\"GH_Radio\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Secondary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            }
         }
     ]
 }
