@@ -192,9 +192,6 @@
             "InventoryID": {
                 "Value": "Loadout"
             },
-            "SlotTemplate": {
-                "RowName": "No_Envirosuits"
-            },
             "StartingSlots": 15
         },
         {
@@ -1443,9 +1440,6 @@
             "InventoryID": {
                 "Value": "On_Prospect_Loadout"
             },
-            "SlotTemplate": {
-                "RowName": "No_Envirosuits"
-            },
             "StartingSlots": 15,
             "bIsClientSideOnly": true
         },
@@ -1464,7 +1458,7 @@
             "InventoryID": {
                 "Value": "Device_Upgrade"
             },
-            "StartingSlots": 2,
+            "StartingSlots": 3,
             "SlotOverrides": [
                 {
                     "Query": {
@@ -1479,6 +1473,13 @@
                         "DataTableName": "D_TagQueries"
                     },
                     "Location": 1
+                },
+                {
+                    "Query": {
+                        "RowName": "Mission_Norex_Device",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 2
                 }
             ]
         },
@@ -1490,7 +1491,7 @@
             "SlotTemplate": {
                 "RowName": "Any_Seed"
             },
-            "StartingSlots": 6
+            "StartingSlots": 12
         },
         {
             "Name": "Water_Purifier",
@@ -1768,17 +1769,7 @@
             "SlotTemplate": {
                 "RowName": "Any_Seed_Or_Fertalizer"
             },
-            "StartingSlots": 16
-        },
-        {
-            "Name": "Rock_Ammo",
-            "InventoryID": {
-                "Value": "Slotable"
-            },
-            "SlotTemplate": {
-                "RowName": "Resource_Stone"
-            },
-            "StartingSlots": 1
+            "StartingSlots": 24
         },
         {
             "Name": "Processor_T5",
@@ -1817,12 +1808,12 @@
         {
             "Name": "ArmourStand",
             "InventoryID": {
-                "Value": "Equipment"
+                "Value": "General"
             },
             "SlotTemplate": {
                 "RowName": "General_Inventory_Slot"
             },
-            "StartingSlots": 6,
+            "StartingSlots": 10,
             "SlotOverrides": [
                 {
                     "Query": {
@@ -1861,10 +1852,38 @@
                 },
                 {
                     "Query": {
-                        "RowName": "Any_Backpack",
+                        "RowName": "Envirosuit",
                         "DataTableName": "D_TagQueries"
                     },
                     "Location": 5
+                },
+                {
+                    "Query": {
+                        "RowName": "Skin_Head",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 6
+                },
+                {
+                    "Query": {
+                        "RowName": "Skin_Head_HairStyle",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 7
+                },
+                {
+                    "Query": {
+                        "RowName": "Any_Backpack",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 8
+                },
+                {
+                    "Query": {
+                        "RowName": "Any_FocusableArmour",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 9
                 }
             ]
         },
@@ -1891,6 +1910,96 @@
                 "Value": "General"
             },
             "StartingSlots": 1
+        },
+        {
+            "Name": "Sandworm_Crossbow",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Throwing_Spear"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "Inventory_Condensed_Enzymes",
+            "InventoryID": {
+                "Value": "Fuel"
+            },
+            "SlotTemplate": {
+                "RowName": "Is_Condensed_Enzyme"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "RockGun_Ammo_Attachment",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Shotgun_Attachment"
+            },
+            "StartingSlots": 2,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Resource_Stone",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 0
+                }
+            ]
+        },
+        {
+            "Name": "Weapon_Rack",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Weapon_Or_Tool"
+            },
+            "StartingSlots": 2
+        },
+        {
+            "Name": "Harvester_Attachment",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Harvester_Attachment"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "Storage_Plastic_Crate",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 12
+        },
+        {
+            "Name": "Storage_Burlap_Sack",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 6
+        },
+        {
+            "Name": "Storage_Saddle_Bag",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 3
+        },
+        {
+            "Name": "Pouch_Generic",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "General_Inventory_Slot_NoBag"
+            },
+            "StartingSlots": 6
         }
     ]
 }

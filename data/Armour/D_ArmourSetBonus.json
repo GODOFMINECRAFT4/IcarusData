@@ -36,7 +36,10 @@
             "RequiredGear": 5,
             "Description": "NSLOCTEXT(\"D_ArmourSetBonus\", \"Ghillie_5-Description\", \"Ghillie Armor Set\")",
             "StatsGranted": {
-                "(Value=\"BaseAnimalThreatModifier_+%\")": -25
+                "(Value=\"BaseSwampAnimalThreatModifier_+%\")": -25,
+                "(Value=\"BaseConiferAnimalThreatModifier_+%\")": -25,
+                "(Value=\"BaseSwampWaterConsumption_+%\")": -10,
+                "(Value=\"BaseConiferOxygenConsumption_+%\")": -10
             }
         },
         {
@@ -76,7 +79,9 @@
             "StatsGranted": {
                 "(Value=\"BaseCrouchSpeed_+%\")": 15,
                 "(Value=\"BaseAnimalThreatModifier_+%\")": -25,
-                "(Value=\"BaseStaminaRegen_+%\")": 5
+                "(Value=\"BaseSwampWaterConsumption_+%\")": -10,
+                "(Value=\"BaseConiferFoodConsumption_+%\")": -10,
+                "(Value=\"BaseSwampParasitesResistance_%\")": 50
             }
         },
         {
@@ -86,7 +91,8 @@
             "StatsGranted": {
                 "(Value=\"BasePoisonDamageResistance_+%\")": 25,
                 "(Value=\"BasePoisonModifierDuration_+%\")": -50,
-                "(Value=\"BaseDesertWaterConsumption_+%\")": -75
+                "(Value=\"BaseDesertWaterConsumption_+%\")": -75,
+                "(Value=\"BaseDesertHealthRegen_+%\")": 25
             }
         },
         {
@@ -180,11 +186,11 @@
         {
             "Name": "Larkwell_Armor_Black",
             "RequiredGear": 5,
-            "Description": "NSLOCTEXT(\"D_ArmourSetBonus\", \"Larkwell_Armor_Black-Description\", \"Larkwell Black Armor Set\")",
+            "Description": "NSLOCTEXT(\"D_ArmourSetBonus\", \"Larkwell_Armor_Black-Description\", \"LM Beastmaster\")",
             "StatsGranted": {
-                "(Value=\"BaseWaterConsumption_+%\")": -10,
-                "(Value=\"BasePhysicalTraumaModifierDuration_+%\")": -25,
-                "(Value=\"BaseMeleeDamageResistance_%\")": 20
+                "(Value=\"BaseTamedCreatureMovementSpeed_+%\")": 10,
+                "(Value=\"BaseTamedCreatureMeleeDamage_+%\")": 20,
+                "(Value=\"BaseTamedCreatureHealthRegen_+%\")": 40
             }
         },
         {
@@ -224,6 +230,61 @@
                 "(Value=\"BaseAttackSpeed_+%\")": 15,
                 "(Value=\"BaseMeleeDamageResistance_%\")": 15,
                 "(Value=\"BaseWeightCapacity_+%\")": 15
+            }
+        },
+        {
+            "Name": "IceMammoth",
+            "RequiredGear": 5,
+            "Description": "NSLOCTEXT(\"D_ArmourSetBonus\", \"IceMammoth-Description\", \"Rimetusk Armor Set\")",
+            "StatsGranted": {
+                "(Value=\"BaseArcticHealthRegen_+%\")": 20,
+                "(Value=\"BaseArcticColdResistance_+%\")": 10,
+                "(Value=\"BaseAttacksCauseFreeze_%\")": 15
+            }
+        },
+        {
+            "Name": "Sand",
+            "RequiredGear": 5,
+            "Description": "NSLOCTEXT(\"D_ArmourSetBonus\", \"Sand-Description\", \"Carbonweave Armor Set\")",
+            "StatsGranted": {
+                "(Value=\"BaseDesertMovementSpeed_+%\")": 10,
+                "(Value=\"BaseVolcanicMovementSpeed_+%\")": 10,
+                "(Value=\"BaseDesertAnimalThreatModifier_+%\")": -25,
+                "(Value=\"BaseVolcanicAnimalThreatModifier_+%\")": -25,
+                "(Value=\"BaseDesertExposureResistance_+%\")": 25,
+                "(Value=\"BaseVolcanicExposureResistance_+%\")": 25
+            }
+        },
+        {
+            "Name": "ArcticArmor",
+            "RequiredGear": 5,
+            "Description": "NSLOCTEXT(\"D_ArmourSetBonus\", \"ArcticArmor-Description\", \"Arctic Survival Armor Set\")",
+            "StatsGranted": {
+                "(Value=\"BaseArcticMovementSpeed_+%\")": 10,
+                "(Value=\"BaseArcticExposureResistance_+%\")": 50,
+                "(Value=\"BaseArcticAnimalThreatModifier_+%\")": -25
+            }
+        },
+        {
+            "Name": "MinerArmor",
+            "RequiredGear": 5,
+            "Description": "NSLOCTEXT(\"D_ArmourSetBonus\", \"MinerArmor-Description\", \"Dusty Miner Armor Set\")",
+            "StatsGranted": {
+                "(Value=\"BaseCavewormExtraDamage_+%\")": 20,
+                "(Value=\"BaseCaveBatExtraDamage_+%\")": 20,
+                "(Value=\"BaseRockGolemJuvenileExtraDamage_+%\")": 20,
+                "(Value=\"BaseMiningRewards_+%\")": 20
+            }
+        },
+        {
+            "Name": "CavewormScale",
+            "RequiredGear": 5,
+            "Description": "NSLOCTEXT(\"D_ArmourSetBonus\", \"CavewormScale-Description\", \"Caveworm Armor Set\")",
+            "StatsGranted": {
+                "(Value=\"BaseExposureResistance_+%\")": 10,
+                "(Value=\"BasePneumoniaResistance_%\")": 50,
+                "(Value=\"BaseMiningRewards_+%\")": 15,
+                "(Value=\"BasePoisonDamageResistance_%\")": 25
             }
         }
     ]

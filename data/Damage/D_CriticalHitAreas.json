@@ -12,6 +12,7 @@
         },
         "ReductionStatMultiplier": 1,
         "MultiplierStatMultiplier": 1,
+        "WhitelistedDamageTypes": [],
         "ModifiersToApply": [],
         "Priority": 10,
         "AudioData": {
@@ -86,10 +87,10 @@
                 "Value": "HardenedPointDamageProtection_%"
             },
             "DamageReductionMitigatingStat": {
-                "Value": "RockGolemArmourDamage_+%"
+                "Value": "ArmorDamageModifier_+%"
             },
             "DamageMultiplierStat": {
-                "Value": "RockGolemArmourDamage_+%"
+                "Value": "ArmorDamageModifier_+%"
             },
             "Priority": 8,
             "AudioData": {
@@ -103,6 +104,27 @@
             "Priority": 0,
             "AudioData": {
                 "RowName": "LowDamageHit"
+            }
+        },
+        {
+            "Name": "Crit_Ricochet",
+            "WhitelistedDamageTypes": [
+                "Projectile"
+            ],
+            "Priority": -1,
+            "AudioData": {
+                "RowName": "NoDamageRicochet"
+            }
+        },
+        {
+            "Name": "Crit_MiniWeakPoint",
+            "DamageMultiplierStat": {
+                "Value": "CriticalDamage_+%"
+            },
+            "MultiplierStatMultiplier": 0.15000000596046448,
+            "Priority": 6,
+            "AudioData": {
+                "RowName": "CriticalHit"
             }
         }
     ]

@@ -227,7 +227,10 @@
                     "DataTableName": "D_ModifierStates"
                 }
             ],
-            "ChanceInPercent": 5,
+            "ChanceStat": {
+                "Value": "SwampParasitesResistance_%"
+            },
+            "ChanceInPercent": 10,
             "DurationInSeconds": 300
         },
         {
@@ -484,6 +487,47 @@
             ],
             "ChanceInPercent": 100,
             "DurationInSeconds": 120
+        },
+        {
+            "Name": "IceMammoth_Trap",
+            "Afflictions": [
+                {
+                    "RowName": "IceMammoth_Trap",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "HypothermiaResistance_%"
+            },
+            "ChanceInPercent": 100,
+            "DurationInSeconds": 120
+        },
+        {
+            "Name": "Hemorrhage",
+            "Afflictions": [
+                {
+                    "RowName": "Hemorrage",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "HemorrhageResistance_%"
+            },
+            "ChanceInPercent": 100,
+            "DurationInSeconds": 30
+        },
+        {
+            "Name": "Wound",
+            "Afflictions": [
+                {
+                    "RowName": "Wound",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "WoundResistance_%"
+            },
+            "ChanceInPercent": 100
         }
     ]
 }

@@ -1531,6 +1531,61 @@
             "FatigueModifier": {
                 "RowName": "Seed_Fatigue"
             }
+        },
+        {
+            "Name": "Banana",
+            "CropRewards": {
+                "RowName": "Banana_Crop"
+            },
+            "DecayedRewards": {
+                "RowName": "Spoiled_Crops_Banana"
+            },
+            "Audio": {
+                "PlantedSound": "/Game/FMOD/Events/SFX/Farming/SFX_FARMING_CORN_SOW.SFX_FARMING_CORN_SOW",
+                "HarvestedSound": "/Game/FMOD/Events/SFX/D_Resource_Nodes/SFX_CARROT_HARVEST.SFX_CARROT_HARVEST",
+                "ClearedSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM"
+            },
+            "OptimalBiomes": [
+                {
+                    "RowName": "Conifer",
+                    "DataTableName": "D_Atmospheres"
+                },
+                {
+                    "RowName": "Grasslands",
+                    "DataTableName": "D_Atmospheres"
+                },
+                {
+                    "RowName": "Desert",
+                    "DataTableName": "D_Atmospheres"
+                }
+            ],
+            "Stage1": {
+                "RowName": "Banana_Growth_01"
+            },
+            "Stage2": {
+                "RowName": "Banana_Growth_02"
+            },
+            "Stage3": {
+                "RowName": "Banana_Growth_03"
+            },
+            "Stage4": {
+                "RowName": "Banana_Growth_04"
+            },
+            "Mature": {
+                "RowName": "Banana_Growth_05"
+            },
+            "Decayed": {
+                "RowName": "Banana_Dead"
+            },
+            "Itemable": {
+                "RowName": "Item_Banana_Seed"
+            },
+            "Deployable": {
+                "RowName": "Farming_Mound_Banana"
+            },
+            "FatigueModifier": {
+                "RowName": "Seed_Fatigue"
+            }
         }
     ]
 }

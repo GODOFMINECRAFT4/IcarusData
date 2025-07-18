@@ -207,7 +207,7 @@
         },
         {
             "Name": "Caveworm_Knife",
-            "Max_Durability": 2500,
+            "Max_Durability": 7500,
             "ItemsForRepair": [
                 {
                     "Item": {
@@ -233,7 +233,7 @@
         },
         {
             "Name": "Sandworm_Knife",
-            "Max_Durability": 5000,
+            "Max_Durability": 22000,
             "ItemsForRepair": [
                 {
                     "Item": {
@@ -369,7 +369,7 @@
         },
         {
             "Name": "Sandworm_Bow",
-            "Max_Durability": 10000,
+            "Max_Durability": 15000,
             "ItemsForRepair": [
                 {
                     "Item": {
@@ -483,6 +483,26 @@
             ]
         },
         {
+            "Name": "Meta_Item_Printed_Deployable",
+            "Max_Durability": 30000,
+            "Destroyed_At_Zero": true,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
             "Name": "Crossbow",
             "Max_Durability": 10000,
             "ItemsForRepair": [
@@ -546,7 +566,7 @@
         },
         {
             "Name": "Caveworm_Spear",
-            "Max_Durability": 5000,
+            "Max_Durability": 8000,
             "ItemsForRepair": [
                 {
                     "Item": {
@@ -572,7 +592,7 @@
         },
         {
             "Name": "Sandworm_Spear",
-            "Max_Durability": 15000,
+            "Max_Durability": 25000,
             "ItemsForRepair": [
                 {
                     "Item": {
@@ -751,6 +771,11 @@
         {
             "Name": "Deployable_1000",
             "Max_Durability": 1000,
+            "Destroyed_At_Zero": true
+        },
+        {
+            "Name": "Deployable_1250",
+            "Max_Durability": 1250,
             "Destroyed_At_Zero": true
         },
         {
@@ -1235,7 +1260,7 @@
         },
         {
             "Name": "Black_Wolf_Knife",
-            "Max_Durability": 2500,
+            "Max_Durability": 22000,
             "ItemsForRepair": [
                 {
                     "Item": {
@@ -1754,7 +1779,7 @@
         },
         {
             "Name": "Rock_Golem_Sledgehammer",
-            "Max_Durability": 4000,
+            "Max_Durability": 120000,
             "ItemsForRepair": [
                 {
                     "Item": {
@@ -1901,7 +1926,7 @@
         },
         {
             "Name": "LightningRod_Platinum",
-            "Max_Durability": 2500,
+            "Max_Durability": 10000,
             "Destroyed_At_Zero": true
         },
         {
@@ -1948,12 +1973,12 @@
             ]
         },
         {
-            "Name": "Rifle_Assault",
-            "Max_Durability": 17500,
+            "Name": "Submachine_Gun",
+            "Max_Durability": 45000,
             "ItemsForRepair": [
                 {
                     "Item": {
-                        "RowName": "Titanium_Ingot",
+                        "RowName": "Titanium_Plate",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Amount": 1
@@ -1962,11 +1987,41 @@
         },
         {
             "Name": "LegendaryWeapon_SlugLauncher",
-            "Max_Durability": 10000
+            "Max_Durability": 20000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
         },
         {
             "Name": "LegendaryWeapon_GolemGauntlet",
-            "Max_Durability": 10000
+            "Max_Durability": 140000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
         },
         {
             "Name": "Windmill_Blade_Steel",
@@ -2014,6 +2069,249 @@
                 {
                     "Item": {
                         "RowName": "Aluminium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "LegendaryWeapon_Black_Wolf_Revolver",
+            "Max_Durability": 35000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "LegendaryWeapon_Scorpion_Rifle",
+            "Max_Durability": 35000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "LegendaryWeapon_Sandworm_Crossbow",
+            "Max_Durability": 20000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "LegendaryWeapon_Ape_Club",
+            "Max_Durability": 25000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "LegendaryWeapon_LavaHunter_FlameThrower",
+            "Max_Durability": 10000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "LegendaryWeapon_IceMammoth_Sledgehammer",
+            "Max_Durability": 40000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "Rifle_Assault_T4",
+            "Max_Durability": 55000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Titanium_Plate",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Rifle_Assault_Legacy",
+            "Max_Durability": 17500,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Titanium_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Slug_Axe",
+            "Max_Durability": 120000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Titanium_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Seed_Harvester",
+            "Max_Durability": 90000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "LegendaryWeapon_Bow",
+            "Max_Durability": 30000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "LegendaryWeapon_Sniper",
+            "Max_Durability": 7500,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "SandArmor",
+            "Max_Durability": 4000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Carbon_Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "ArcticArmor",
+            "Max_Durability": 4000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Wool",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "MinersArmor",
+            "Max_Durability": 4000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Titanium_Ingot",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Amount": 1

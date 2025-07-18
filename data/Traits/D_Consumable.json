@@ -568,6 +568,15 @@
             }
         },
         {
+            "Name": "Splint_Workshop",
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Splint_Worksop"
+                },
+                "ModifierLifetime": 300
+            }
+        },
+        {
             "Name": "Antibiotic_Paste",
             "Modifier": {
                 "Modifier": {
@@ -721,6 +730,19 @@
             "Name": "Raw_Food",
             "Stats": {
                 "(Value=\"BaseFoodRecovery_+\")": 20
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Raw_Food"
+                },
+                "ModifierLifetime": 60
+            }
+        },
+        {
+            "Name": "Tomato",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 20,
+                "(Value=\"BaseWaterRecovery_+\")": 10
             },
             "Modifier": {
                 "Modifier": {
@@ -3640,6 +3662,115 @@
                 },
                 "ModifierLifetime": 1200
             }
+        },
+        {
+            "Name": "Meta_Resource_Pack_Synthetic_Enzymes",
+            "Modifier": {
+                "ModifierLifetime": 0
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Synthetic_Enzyme_Stack",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Enzyme_Elixir",
+            "Stats": {
+                "(Value=\"BaseHealthRecovery_+\")": 50
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Enzyme_Elixir"
+                },
+                "ModifierLifetime": 600
+            }
+        },
+        {
+            "Name": "Food_Banana",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 10
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Banana"
+                },
+                "ModifierLifetime": 600
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Meta_Banana_Seed",
+            "Modifier": {
+                "ModifierLifetime": 0
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Banana_Pack",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Shell_Bundle",
+            "Modifier": {
+                "ModifierLifetime": 1
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Ammo_Shell_Workshop_x25",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Splint_Bundle",
+            "Modifier": {
+                "ModifierLifetime": 1
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Splint_Workshop_x5",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Sniper_Ammo_Bundle",
+            "Modifier": {
+                "ModifierLifetime": 1
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Ammo_Sniper_Round_Workshop_x25",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_Rifle_Ammo_Bundle",
+            "Modifier": {
+                "ModifierLifetime": 1
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Ammo_Rifle_Round_Workshop_x25",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Workshop_AssaultRifle_Ammo_Bundle",
+            "Modifier": {
+                "ModifierLifetime": 1
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Ammo_AssaultRifle_Round_Workshop_x25",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
         }
     ]
 }

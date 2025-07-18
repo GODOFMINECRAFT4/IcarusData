@@ -357,7 +357,7 @@
         },
         {
             "Name": "Enzyme_Cannon",
-            "ResourceFlowRate": 5000
+            "AlwaysActive": true
         },
         {
             "Name": "Water_Trough_T4",
@@ -425,6 +425,27 @@
             "ResourceFlowRate": 500,
             "BrownOutModifier": {
                 "RowName": "Electronic_Light_Brownout"
+            },
+            "bAllowAutoRestart": true
+        },
+        {
+            "Name": "Enzyme_Propagation_Unit",
+            "AlwaysActive": true,
+            "AutoActivate": true,
+            "ResourceFlowRate": 500,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Enzyme_Propagation_Unit_Craftable",
+            "AutoActivate": true,
+            "AutoShutoffFlowPercent": 99
+        },
+        {
+            "Name": "Enemy_Turret",
+            "AutoActivate": true,
+            "ResourceFlowRate": 500,
+            "BrownOutModifier": {
+                "RowName": "Energy_Brownout_Turret"
             },
             "bAllowAutoRestart": true
         }

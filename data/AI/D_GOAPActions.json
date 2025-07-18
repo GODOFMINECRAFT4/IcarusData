@@ -1127,6 +1127,32 @@
             "AssociatedMovementState": "Jog",
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_GetParent_Domesticated.BP_IcarusGOAPAction_GetParent_Domesticated_C",
             "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_GetParent.BT_IcarusGOAP_GetParent"
+        },
+        {
+            "Name": "Wander_Anchored",
+            "Description": "Wander",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Wander",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Wander",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "TimeOut": 60,
+            "AssociatedMovementState": "Walk",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Wander.BP_IcarusGOAPAction_Wander_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_AnchoredWander.BT_IcarusGOAP_AnchoredWander"
         }
     ]
 }

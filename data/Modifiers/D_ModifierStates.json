@@ -152,7 +152,8 @@
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Health_Regen",
@@ -2140,7 +2141,8 @@
                     }
                 ]
             },
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Underground",
@@ -2370,6 +2372,9 @@
                 ],
                 "AutoDescription": " NONE( ModifierState.Frostbite, ModifierState.HeatBandage )"
             },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
             "bEffectsNPCs": false
         },
         {
@@ -2570,6 +2575,27 @@
                     0
                 ],
                 "AutoDescription": " ANY( ModifierState.Damage.Broken )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Splint_Worksop",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Splint_Workshop.T_ITEM_Splint_Workshop'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Splint_Worksop-ModifierName\", \"Xigo SplintX\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Splint_Worksop-ModifierDescription\", \"Broken legs will be healed and prevented for a small period.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFallDamageResistance_%\")": 10
+            },
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Splint"
+                    }
+                ]
             },
             "EffectsCustomActor": {
                 "RowName": "Faction_Mission_NPC"
@@ -4294,7 +4320,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"WaterConnectionSpeedUp-ModifierName\", \"Water Speed\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"WaterConnectionSpeedUp-ModifierDescription\", \"Water is speeding crafting up\")",
             "GrantedStats": {
-                "(Value=\"BaseCraftingSpeed_+%\")": 50
+                "(Value=\"BaseCraftingSpeed_+%\")": 50,
+                "(Value=\"BaseCraftingCost_+%\")": -5
             },
             "MergeType": "Replace",
             "bEffectsObjects": true,
@@ -4308,7 +4335,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"WaterConnectionSpeedUp_2x-ModifierName\", \"Water Speed\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"WaterConnectionSpeedUp_2x-ModifierDescription\", \"Water is greatly speeding crafting up\")",
             "GrantedStats": {
-                "(Value=\"BaseCraftingSpeed_+%\")": 200
+                "(Value=\"BaseCraftingSpeed_+%\")": 200,
+                "(Value=\"BaseCraftingCost_+%\")": -10
             },
             "MergeType": "Replace",
             "bEffectsObjects": true,
@@ -4816,7 +4844,8 @@
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1000
             },
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Komodo_Bite",
@@ -6544,7 +6573,8 @@
             "ShouldTick": true,
             "MergeType": "Stack",
             "MaxStackNum": 3,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Burn",
@@ -6727,7 +6757,8 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Scanned_Creature-ModifierDescription\", \"Creature has Been Scanned\")",
             "GrantedStats": {
                 "(Value=\"BaseMeleeDamageResistance_%\")": -20,
-                "(Value=\"BaseProjectileDamageResistance_+%\")": -20
+                "(Value=\"BaseProjectileDamageResistance_+%\")": -20,
+                "(Value=\"IsNPCHighlighted_?\")": 1
             },
             "MergeType": "Count",
             "ModifierTags": {
@@ -6737,7 +6768,8 @@
                     }
                 ]
             },
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "LavaHunter_FlameOn",
@@ -6752,7 +6784,8 @@
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_LavaHunter_FlameOn.BP_Modifier_LavaHunter_FlameOn_C",
             "MergeType": "Stack",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Clogged_Ash",
@@ -7762,6 +7795,7 @@
             ],
             "MergeType": "LongestDuration",
             "bEffectsPlayers": false,
+            "SaveToDatabase": false,
             "RemovedOnClick": true
         },
         {
@@ -7823,9 +7857,11 @@
                 "RowName": "Generic_Negative"
             },
             "bAura": true,
-            "AuraRange": 150,
+            "AuraRange": 200,
             "AuraFlags": {
-                "EffectsSelf": false
+                "EffectsSelf": false,
+                "EffectsNPCs": true,
+                "EffectsDeployables": true
             },
             "ModifierGrantedByAura": {
                 "RowName": "AuraEffect_LavaSpot"
@@ -8121,7 +8157,8 @@
                 }
             ],
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Animal_Feed_CarryWeight",
@@ -8143,7 +8180,8 @@
                 }
             ],
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Smoked_Giant_Steak",
@@ -9268,7 +9306,8 @@
                 }
             ],
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "ExoticDebuff",
@@ -9982,6 +10021,7 @@
                 "(Value=\"BaseHealthRegen_+%\")": 15,
                 "(Value=\"BaseExperience_+%\")": 10
             },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierState_BigBreakfast.BP_ModifierState_BigBreakfast_C",
             "ModifierLifetimeAffectors": [
                 {
                     "Value": "FoodModifierDuration_+%"
@@ -10116,7 +10156,8 @@
                 }
             ],
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Animal_Feed_Pumpkin",
@@ -10140,7 +10181,8 @@
                 }
             ],
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Animal_Feed_Potato",
@@ -10164,7 +10206,8 @@
                 }
             ],
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Animal_Feed_Corn",
@@ -10187,7 +10230,8 @@
                 }
             ],
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Animal_Feed_Carrot",
@@ -10210,7 +10254,8 @@
                 }
             ],
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Animal_Feed_Mushroom",
@@ -10233,7 +10278,8 @@
                 }
             ],
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Animal_Feed_Bean",
@@ -10256,7 +10302,8 @@
                 }
             ],
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Tame_Hunger_1_Sheep",
@@ -11618,7 +11665,8 @@
                 "(Value=\"BaseMaximumHealth_+%\")": 100
             },
             "MergeType": "Stack",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Filtered_Trough_Water",
@@ -12132,17 +12180,21 @@
                     },
                     {
                         "TagName": "ModifierState.HeatBandage"
+                    },
+                    {
+                        "TagName": "ModifierState.OnFire"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     3,
-                    2,
+                    3,
                     0,
-                    1
+                    1,
+                    2
                 ],
-                "AutoDescription": " NONE( ModifierState.Frostbite, ModifierState.HeatBandage )"
+                "AutoDescription": " NONE( ModifierState.Frostbite, ModifierState.HeatBandage, ModifierState.OnFire )"
             },
             "bEffectsNPCs": false
         },
@@ -12285,7 +12337,7 @@
         },
         {
             "Name": "GrantedAura_Earthquake",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_Earthquake.T_ICON_MODIFIER_Earthquake'",
             "Type": "Aura_Negative",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Earthquake-ModifierName\", \"Aura: Decreased Movement Speed\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Earthquake-ModifierDescription\", \"Nearby players have reduced movement speed\")",
@@ -12307,7 +12359,7 @@
         },
         {
             "Name": "AuraEffect_Earthquake",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_Earthquake.T_ICON_MODIFIER_Earthquake'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Earthquake-ModifierName\", \"Aura Effect: Unstable\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Earthquake-ModifierDescription\", \"Decreased Movement Speed\")",
@@ -12322,7 +12374,7 @@
         },
         {
             "Name": "Frostnip_Escalated",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_FreezingDebuff.Icon_FreezingDebuff'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_Frostnip.T_ICON_MODIFIER_Frostnip'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Frostnip_Escalated-ModifierName\", \"Frostbite\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Frostnip_Escalated-ModifierDescription\", \"You\\'re freezing and suffering frostbite. Speed and stamina regen are heavily reduced. Counter with heat bandages.\")",
@@ -12359,7 +12411,7 @@
         },
         {
             "Name": "IceMammoth_IcePool",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Chilled.T_ICON_Chilled'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_IcePool.T_ICON_MODIFIER_IcePool'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"IceMammoth_IcePool-ModifierName\", \"Frost Pool\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"IceMammoth_IcePool-ModifierDescription\", \"Drastically slows movement and deals damage over time. Alerts the owner of this sticky trail to your presence\")",
@@ -12388,7 +12440,7 @@
         },
         {
             "Name": "Frenzied",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_ConcussionDebuff.Icon_ConcussionDebuff'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_Frenzied.T_ICON_MODIFIER_Frenzied'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Frenzied-ModifierName\", \"Frenzied\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Frenzied-ModifierDescription\", \"Unable to tell between friend and foe, highly aggressive\")",
@@ -12396,16 +12448,17 @@
                 "(Value=\"IsFrenzied_?\")": 1
             },
             "MergeType": "LongestDuration",
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Poison_Hammerhead",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__HAMMERHEADSLIME.T_ICON_MODIFIER__HAMMERHEADSLIME'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Hammerhead-ModifierName\", \"Poisoned\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Hammerhead-ModifierDescription\", \"Slowly drains health from poisoned targets.\")",
             "GrantedStats": {
-                "(Value=\"BaseMovementSpeed_+%\")": -5
+                "(Value=\"BaseSprintSpeed_+%\")": -20
             },
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
             "ModifierVariables": {
@@ -12448,6 +12501,1292 @@
                 ],
                 "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
             }
+        },
+        {
+            "Name": "Rage",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_RAGE.T_ICON_MODIFIER_RAGE'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Rage-ModifierName\", \"Rage\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Rage-ModifierDescription\", \"Physical Damage Increase\")",
+            "GrantedStats": {
+                "(Value=\"BaseMeleeDamage_+%\")": 10,
+                "(Value=\"BaseProjectileDamage_+%\")": 10
+            },
+            "MergeType": "Stack",
+            "MaxStackNum": 10,
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Adrenaline",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_ADRENALINE.T_ICON_MODIFIER_ADRENALINE'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Adrenaline-ModifierName\", \"Adrenaline\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Adrenaline-ModifierDescription\", \"Increase movement speed and stamina\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 3,
+                "(Value=\"BaseStaminaRegen_+%\")": 25
+            },
+            "MergeType": "Stack",
+            "MaxStackNum": 10,
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Summon_Wolf",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__SUMMONWOLF.T_ICON_MODIFIER__SUMMONWOLF'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Summon_Wolf-ModifierName\", \"Wolf Attack\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Summon_Wolf-ModifierDescription\", \"A wolf will be summoned to attack the target.\")",
+            "MergeType": "Replace",
+            "MaxStackNum": 10,
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "IceMutation",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__ICEMUTATION.T_ICON_MODIFIER__ICEMUTATION'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"IceMutation-ModifierName\", \"Enzyme Enhancement\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"IceMutation-ModifierDescription\", \"This creature has been mutated by an unsanctioned experiment.\")",
+            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_IceMutation.ModifierCosmetic_IceMutation_C",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseFireDamageResistance_+%\")": -25,
+                "(Value=\"BaseFrostDamage_+\")": 20,
+                "(Value=\"BaseAttacksCauseFreeze_%\")": 25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Vulnerable",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__VULNERABLE.T_ICON_MODIFIER__VULNERABLE'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Vulnerable-ModifierName\", \"Vulnerable\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Vulnerable-ModifierDescription\", \"Take more damage from physical damage.\")",
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": -5
+            },
+            "MergeType": "Stack",
+            "MaxStackNum": 5
+        },
+        {
+            "Name": "ElectricAmmoInfusion",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__ELECTRICAMMOINFUSION.T_ICON_MODIFIER__ELECTRICAMMOINFUSION'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"ElectricAmmoInfusion-ModifierName\", \"Electrically Charged Ammo\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"ElectricAmmoInfusion-ModifierDescription\", \"Ammo on the current Weapon is Electrically Charged and Will apply more Damage\")",
+            "GrantedStats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 100
+            },
+            "MergeType": "Replace"
+        },
+        {
+            "Name": "FocusedItemCharging",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__FOCUSEDITEMCHARGING.T_ICON_MODIFIER__FOCUSEDITEMCHARGING'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"FocusedItemCharging-ModifierName\", \"Passive Recharge\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"FocusedItemCharging-ModifierDescription\", \"The Currently Focused Item is Slowly Recharging\")",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Recharge.BP_Modifier_Recharge_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 5,
+            "MergeType": "Replace"
+        },
+        {
+            "Name": "Enraged_Ape",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Enrage.T_ICON_Enrage'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Enraged_Ape-ModifierName\", \"Enraged Ape\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Enraged_Ape-ModifierDescription\", \"Great Ape Is Angry\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 25,
+                "(Value=\"BaseMeleeDamage_+%\")": 100,
+                "(Value=\"BaseApeExtraDamage_+%\")": 100,
+                "(Value=\"BaseAttacksCauseHemorrhage_%\")": 25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Enraged_Ape.BP_Modifier_Enraged_Ape_C",
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Pyrophobia",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__PYROPHOBIA.T_ICON_MODIFIER__PYROPHOBIA'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pyrophobia-ModifierName\", \"Pyrophobia\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pyrophobia-ModifierDescription\", \"Take more damage from Fire damage.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFireDamageResistance_%\")": -5
+            },
+            "MergeType": "Stack",
+            "MaxStackNum": 5
+        },
+        {
+            "Name": "GrantedAura_ApeResist",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__APERESIST.T_ICON_MODIFIER__APERESIST'",
+            "Type": "Aura_Positive",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ApeResist-ModifierName\", \"Aura: Rumbling Roar\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ApeResist-ModifierDescription\", \"Nearby allies receive Extra Health and Resistance\")",
+            "bAura": true,
+            "AuraRange": 2000,
+            "AuraFlags": {
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_MedicBackpack"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_ApeResist",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__APERESIST.T_ICON_MODIFIER__APERESIST'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_ApeResist-ModifierName\", \"Aura Effect: Rumbling Roar\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_ApeResist-ModifierDescription\", \"Extra Health and Resistances\")",
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": 25,
+                "(Value=\"BasePoisonResistance_%\")": 25,
+                "(Value=\"BaseBurnResistance_%\")": 25
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "GrantedAura_ApeStrong",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__APESTRENGTH.T_ICON_MODIFIER__APESTRENGTH'",
+            "Type": "Aura_Positive",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ApeStrong-ModifierName\", \"Aura: Deafening Roar\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ApeStrong-ModifierDescription\", \"Nearby allies receive Melee Buffs\")",
+            "bAura": true,
+            "AuraRange": 2000,
+            "AuraFlags": {
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_ApeStrong"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_ApeStrong",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__APESTRENGTH.T_ICON_MODIFIER__APESTRENGTH'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_ApeStrong-ModifierName\", \"Aura Effect: Deafening Roar\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_ApeStrong-ModifierDescription\", \"Increased Effectiveness In Melee Combat\")",
+            "GrantedStats": {
+                "(Value=\"BaseMeleeDamage_+%\")": 20,
+                "(Value=\"BaseAttackSpeed_+%\")": 15,
+                "(Value=\"BasePhysicalDamageResistance_%\")": -10
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "GrantedAura_ApeFast",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__APEFAST.T_ICON_MODIFIER__APEFAST'",
+            "Type": "Aura_Positive",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ApeFast-ModifierName\", \"Aura: Thundering Roar\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_ApeFast-ModifierDescription\", \"Nearby allies receive Movement Speed and Health Regeneration\")",
+            "bAura": true,
+            "AuraRange": 2000,
+            "AuraFlags": {
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_ApeFast"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_ApeFast",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__APEFAST.T_ICON_MODIFIER__APEFAST'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_ApeFast-ModifierName\", \"Aura Effect: Thundering Roar\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_ApeFast-ModifierDescription\", \"Movement Speed and Health Regeneration\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 15,
+                "(Value=\"BaseHealthRegen_+%\")": 25
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "BoomingRumble",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__BOOMINGRUMBLE.T_ICON_MODIFIER__BOOMINGRUMBLE'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"BoomingRumble-ModifierName\", \"Booming Rumble\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"BoomingRumble-ModifierDescription\", \"Slowed\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -90
+            },
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 5,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "ResonantRumble",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__RESONANTRUMBLE.T_ICON_MODIFIER__RESONANTRUMBLE'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"ResonantRumble-ModifierName\", \"Resonant Rumble\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"ResonantRumble-ModifierDescription\", \"Physical Resistance has been Lowered\")",
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": -20
+            },
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 5,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "CreakingRumble",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__CREAKINGRUMBLE.T_ICON_MODIFIER__CREAKINGRUMBLE'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"CreakingRumble-ModifierName\", \"Creaking Rumble\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"CreakingRumble-ModifierDescription\", \"Taking Periodic Physical Damage\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+\")": -10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Physical.BP_ModifierStateBehaviour_TickDamage_Physical_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 40,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 2,
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 10,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "EnragedBlood",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/FactionMissionTypes/icon-factionmission-build.icon-factionmission-build'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"EnragedBlood-ModifierName\", \"Enraged Blood\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"EnragedBlood-ModifierDescription\", \"Increases Effectiveness the Lower your Health\")",
+            "GrantedStats": {
+                "(Value=\"BaseAttackSpeed_+%\")": 100,
+                "(Value=\"BaseMeleeDamage_+%\")": 100
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Modify_Effectiveness_InverseHealth.BP_Modifier_Modify_Effectiveness_InverseHealth_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 2,
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 10,
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "GrantedAura_FrostCloud",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__FROSTCLOUD.T_ICON_MODIFIER__FROSTCLOUD'",
+            "Type": "Aura_Positive",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_FrostCloud-ModifierName\", \"Aura: Glacial Femur\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_FrostCloud-ModifierDescription\", \"Nearby foes receive a Movement Speed Reduction\")",
+            "bAura": true,
+            "AuraRange": 2000,
+            "AuraFlags": {
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_FrostCloud"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_FrostCloud",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__FROSTCLOUD.T_ICON_MODIFIER__FROSTCLOUD'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_FrostCloud-ModifierName\", \"Aura Effect: Glacial Femur\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_FrostCloud-ModifierDescription\", \"Movement Speed is Reduced\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Growth_Enzyme",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/ICON_SelectionSun.ICON_SelectionSun'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Growth_Enzyme-ModifierName\", \"Growth Enzyme\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Growth_Enzyme-ModifierDescription\", \"Temporarily enhances the target for increased durability and rewards. \")",
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": 30,
+                "(Value=\"BaseHealthRegen_+%\")": 50,
+                "(Value=\"BaseProjectileDamageResistance_+%\")": 25,
+                "(Value=\"BaseHarvestingRewards_+%\")": 300,
+                "(Value=\"BaseMovementSpeed_+%\")": 5,
+                "(Value=\"IsNPCHighlightedBlue_?\")": 1
+            },
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 5,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Poison_Ape_Gas",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Ape_Gas-ModifierName\", \"Ape Gas Fungi\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Ape_Gas-ModifierDescription\", \"Slowly drains health from poisoned targets.\")",
+            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_CorpseFlies.ModifierCosmetic_CorpseFlies_C",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20,
+                "(Value=\"BaseReloadSpeed_+%\")": -20,
+                "(Value=\"BaseRifleReloadSpeed_+%\")": -20,
+                "(Value=\"BaseMovementSpeedInShallowWater_+%\")": -30,
+                "(Value=\"BaseOxygenConsumption_+%\")": 50
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "PoisonModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "MaxStackNum": 4,
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Poison"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Poison_Ape_Gas_Stackable",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Ape_Gas_Stackable-ModifierName\", \"Ape Gas Fungi\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Ape_Gas_Stackable-ModifierDescription\", \"Slowly drains health from poisoned targets.\")",
+            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_CorpseFlies.ModifierCosmetic_CorpseFlies_C",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -20,
+                "(Value=\"BaseReloadSpeed_+%\")": -20,
+                "(Value=\"BaseRifleReloadSpeed_+%\")": -20,
+                "(Value=\"BaseMovementSpeedInShallowWater_+%\")": -30,
+                "(Value=\"BaseOxygenConsumption_+%\")": 50
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 5,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "PoisonModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "MaxStackNum": 3,
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Poison"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Damage_Broken_Leg_Minor",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BrokenBone.Icon_BrokenBone'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Damage_Broken_Leg_Minor-ModifierName\", \"Minor broken Leg\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Damage_Broken_Leg_Minor-ModifierDescription\", \"You\\'ve sustained a broken leg. You will move slowly. Use a Splint to Heal.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -10,
+                "(Value=\"BaseStaminaRegen_+%\")": -25,
+                "(Value=\"BaseFoodConsumption_+%\")": 25,
+                "(Value=\"BaseWeightCapacity_+%\")": -10
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "BrokenLegModifierDuration_+%"
+                }
+            ],
+            "RemovedOnDeath": false,
+            "MergeType": "LongestDuration",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Damage.Broken"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Character.Player.Invincible"
+                    },
+                    {
+                        "TagName": "ModifierState.Splint"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( Character.Player.Invincible, ModifierState.Splint )"
+            },
+            "EffectsCustomActor": {
+                "RowName": "Faction_Mission_NPC"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "HammerheadSlug_Slime",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__HAMMERHEADSLIME.T_ICON_MODIFIER__HAMMERHEADSLIME'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"HammerheadSlug_Slime-ModifierName\", \"Toxic Slime\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"HammerheadSlug_Slime-ModifierDescription\", \"Drastically slows movement and deals damage over time. Alerts the owner of this sticky trail to your presence\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -55
+            },
+            "MergeType": "Replace",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "NPC.SlugBoss"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( NPC.SlugBoss )"
+            }
+        },
+        {
+            "Name": "Poison_Ape_Gas_Buff",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Strength.Icon_Strength'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Ape_Gas_Buff-ModifierName\", \"Ape Gas Fungi\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_Ape_Gas_Buff-ModifierDescription\", \"Provides cover from ranged attacks.\")",
+            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_Gas.ModifierCosmetic_Gas_C",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 10,
+                "(Value=\"BaseProjectileDamageResistance_%\")": 50
+            },
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 4,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "IceSpire",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__ICEPILLAR.T_ICON_MODIFIER__ICEPILLAR'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"IceSpire-ModifierName\", \"Ice Spire\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"IceSpire-ModifierDescription\", \"Stabbed By An Ice Spire\")",
+            "VisibleToPlayer": false,
+            "GrantedStats": {
+                "(Value=\"BaseArcticExposureResistance_+%\")": -50
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Afflication_IceSpire.BP_ModifierStateBehaviour_Afflication_IceSpire_C",
+            "MergeType": "Replace",
+            "MaxStackNum": 4,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Slow_WatchExplosion",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_PoorVision.Icon_BestTrait_PoorVision'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Slow_WatchExplosion-ModifierName\", \"Watching Explosion\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Slow_WatchExplosion-ModifierDescription\", \"Moving slowly to watch explosion\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -50
+            },
+            "MergeType": "Replace",
+            "MaxStackNum": 4,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "SlugGrenade_Slime",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SlugGrenade_Slime-ModifierName\", \"Toxic Slime\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SlugGrenade_Slime-ModifierDescription\", \"Drastically slows movement and deals damage over time.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -55
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamageScale.BP_ModifierStateBehaviour_PoisonDamageScale_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 40,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "NPC.SlugBoss"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( NPC.SlugBoss )"
+            }
+        },
+        {
+            "Name": "SlugLauncher_Corrosive",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SlugLauncher_Corrosive-ModifierName\", \"Corrosive Slime\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SlugLauncher_Corrosive-ModifierDescription\", \"Slows slightly and damages over time.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -60,
+                "(Value=\"BaseAttackSpeed_+%\")": -15
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "PoisonModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Poison"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            }
+        },
+        {
+            "Name": "SlugLauncher_Slow",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SlugLauncher_Slow-ModifierName\", \"Slowing Slime\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SlugLauncher_Slow-ModifierDescription\", \"Significantly slows targets.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -75,
+                "(Value=\"BaseAttackSpeed_+%\")": -30
+            },
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 40,
+                    "Deviation": 5
+                }
+            },
+            "MergeType": "Replace"
+        },
+        {
+            "Name": "SlugLauncher_Heal",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HealthRegen.Icon_HealthRegen'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SlugLauncher_Heal-ModifierName\", \"Restorative Slime\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SlugLauncher_Heal-ModifierDescription\", \"Restores health of targets in the area.\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseHealthRegen_+%\")": 100,
+                "(Value=\"BaseMaximumHealth_+%\")": 15,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 60
+            },
+            "MergeType": "Replace"
+        },
+        {
+            "Name": "SlugLauncher_Explosive",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BestiaryTraits/Icon_BestTrait_Fire.Icon_BestTrait_Fire'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"SlugLauncher_Explosive-ModifierName\", \"Volatile Slime\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"SlugLauncher_Explosive-ModifierDescription\", \"Deals significant damage over a short time. Increases physical damage taken.\")",
+            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_Flaming.ModifierCosmetic_Flaming_C",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_+%\")": -10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Fire.BP_ModifierStateBehaviour_TickDamage_Fire_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 40,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FireModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.OnFire"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.ExtingishFire"
+                    },
+                    {
+                        "TagName": "Harvest.Node"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.ExtingishFire, Harvest.Node )"
+            }
+        },
+        {
+            "Name": "IceMammoth_Trap",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_FreezingDebuff.Icon_FreezingDebuff'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"IceMammoth_Trap-ModifierName\", \"Hypothermia\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"IceMammoth_Trap-ModifierDescription\", \"Your core temperature is very low. Hunger is greatly increased, and you\\'re taking damage. Find a way to warm up fast.\")",
+            "AudioData": {
+                "RowName": "Cold"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMaximumStamina_+%\")": -50,
+                "(Value=\"BaseStaminaRegen_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": 30,
+                "(Value=\"BaseWaterConsumption_+%\")": -10,
+                "(Value=\"BaseMovementSpeed_+%\")": -10
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_AfflictionFreezing.BP_ModifierStateBehaviour_AfflictionFreezing_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 1,
+                    "Deviation": 0
+                }
+            },
+            "ShouldTick": true,
+            "TickOnApply": true,
+            "ModifierTickRate": 2,
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Cold"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Character.Player.Invincible"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Character.Player.Invincible )"
+            },
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Poison_SandwormCrossbow_Gas",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_SandwormCrossbow_Gas-ModifierName\", \"Toxic Cloud\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Poison_SandwormCrossbow_Gas-ModifierDescription\", \"Weakens and Slowly drains health from poisoned targets.\")",
+            "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_CorpseFlies.ModifierCosmetic_CorpseFlies_C",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -30,
+                "(Value=\"BaseHealthRegen_+%\")": -50,
+                "(Value=\"BaseMeleeDamage_+%\")": -25
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_PoisonDamage.BP_ModifierStateBehaviour_PoisonDamage_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 20,
+                    "Deviation": 5
+                }
+            },
+            "ShouldTick": true,
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "PoisonModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "MaxStackNum": 4,
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Affliction.Poison"
+                    }
+                ]
+            },
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T2"
+                    },
+                    {
+                        "TagName": "ModifierState.Medicine.Antipoison.T3"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " NONE( ModifierState.Medicine.Antipoison.T2, ModifierState.Medicine.Antipoison.T3 )"
+            }
+        },
+        {
+            "Name": "Seed_More_Seeds",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_MORESEEDS.T_ICON_MODIFIER_MORESEEDS'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_More_Seeds-ModifierName\", \"Prolific\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Seed_More_Seeds-ModifierDescription\", \"Crop will produce more seeds than usual\")",
+            "GrantedStats": {
+                "(Value=\"BasePlantedCropSeedYield_+%\")": 25
+            },
+            "MergeType": "Stack",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Fertilizer_Progenitive",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER_ProgenetiveFertiliser.T_ICON_MODIFIER_ProgenetiveFertiliser'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Progenitive-ModifierName\", \"Progenitive Fertilizer\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Fertilizer_Progenitive-ModifierDescription\", \"Decreases the Crop Yield but allows crop to produce seeds and Provides a big Increase to Seed Yield\")",
+            "GrantedStats": {
+                "(Value=\"CanHarvestSeeds_?\")": 1,
+                "(Value=\"BasePlantedCropSeedYield_+%\")": 300,
+                "(Value=\"BasePlantedCropYield_+%\")": -100
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FertilizerConsumption_+%"
+                }
+            ],
+            "MergeType": "Stack",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Farming.Plant.Fertalized"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false
+        },
+        {
+            "Name": "Enzyme_Slug_Slime",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MountTameIcons/ICON_TemperatureCold.ICON_TemperatureCold'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Enzyme_Slug_Slime-ModifierName\", \"Frosty Slime\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Enzyme_Slug_Slime-ModifierDescription\", \"Drastically slows movement and deals damage over time. Alerts the owner of this sticky trail to your presence\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -75,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -1000
+            },
+            "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "NPC.SlugBoss"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( NPC.SlugBoss )"
+            },
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "IncreasedPowerRequirement",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Electricity.Icon_Electricity'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"IncreasedPowerRequirement-ModifierName\", \"Rising Power Requirement\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"IncreasedPowerRequirement-ModifierDescription\", \"Device has increased power requirement.\")",
+            "GrantedStats": {
+                "(Value=\"BaseEnergyNetworkModifier_+%\")": 100
+            },
+            "MergeType": "Replace",
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "GrantedAura_Cold",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-solosnow1.icon-weather-solosnow1'",
+            "Type": "Aura_Negative",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Cold-ModifierName\", \"Aura: Cold\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_Cold-ModifierDescription\", \"Nearby Players will become cold\")",
+            "bAura": true,
+            "AuraRange": 1000,
+            "AuraFlags": {
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_Cold"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_Cold",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Weather/icon-weather-solosnow1.icon-weather-solosnow1'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Cold-ModifierName\", \"Aura Effect: Cold\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Cold-ModifierDescription\", \"Something Nearby is Providing a Chill\")",
+            "GrantedStats": {
+                "(Value=\"BaseInternalTemperatureModification_+\")": -1000
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.NPC"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( FactionMission.NPC )"
+            },
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Enzyme_Elixir",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/T_ITEM_Enzyme_Elixir.T_ITEM_Enzyme_Elixir'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Enzyme_Elixir-ModifierName\", \"Luriform Serum\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Enzyme_Elixir-ModifierDescription\", \"Agressive Enzyme-Enhanced Creatures are drawn to you.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFrostDamageResistance_%\")": 25,
+                "(Value=\"BaseHealthRegen_+%\")": 25,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 30
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierState_Enzyme_Elixir.BP_ModifierState_Enzyme_Elixir_C",
+            "ShouldTick": true,
+            "TickOnApply": true,
+            "ModifierTickRate": 2,
+            "MergeType": "Replace",
+            "RemovedOnClick": true
+        },
+        {
+            "Name": "Heavy_Weapon_Reload_Slow",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Slowed.Icon_Slowed'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Heavy_Weapon_Reload_Slow-ModifierName\", \"Reload Slow\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Heavy_Weapon_Reload_Slow-ModifierDescription\", \"Slows Target While Reloading\")",
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 100
+            },
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 40,
+                    "Deviation": 5
+                }
+            },
+            "MergeType": "Replace"
+        },
+        {
+            "Name": "Unkillable",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Grace.Icon_Grace'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Unkillable-ModifierName\", \"Unkillable\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Unkillable-ModifierDescription\", \"Cannot be killed (but can still take damage)\")",
+            "VisibleToPlayer": false,
+            "GrantedStats": {
+                "(Value=\"ShouldPreventDeath_?\")": 1
+            },
+            "RemovedOnDeath": false,
+            "MergeType": "Replace",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Stone",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Stone-ModifierName\", \"Imbued: Stone\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Metal",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Metal-ModifierName\", \"Imbued: Metal\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Oxite",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Oxite-ModifierName\", \"Imbued: Oxite\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Copper",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Copper-ModifierName\", \"Imbued: Copper\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Gold",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Gold-ModifierName\", \"Imbued: Gold\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Bauxite",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Bauxite-ModifierName\", \"Imbued: Aluminum\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Sulfur",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Sulfur-ModifierName\", \"Imbued: Sulfur\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Silica",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Silica-ModifierName\", \"Imbued: Silica\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Ice",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Ice-ModifierName\", \"Imbued: Ice\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Platinum",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Platinum-ModifierName\", \"Imbued: Platinum\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Titanium",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Titanium-ModifierName\", \"Imbued: Titanium\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Coal",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Coal-ModifierName\", \"Imbued: Coal\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Exotic_A",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Exotic_A-ModifierName\", \"Imbued: Exotics\")",
+            "ModifierDescription": "",
+            "VisibleToPlayer": false,
+            "GrantedStats": {
+                "(Value=\"BaseFireDamage_+\")": 25,
+                "(Value=\"BasePoisonDamage_+\")": 25,
+                "(Value=\"BaseElectricDamage_+\")": 25,
+                "(Value=\"BaseExplosiveDamage_+\")": 25
+            },
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Salt",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Salt-ModifierName\", \"Imbued: Salt\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "VoxelCharged_Limestone",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_MetaResource.Icon_MetaResource'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Limestone-ModifierName\", \"Imbued: Limestone\")",
+            "ModifierDescription": "",
+            "MergeType": "LongestDuration",
+            "bEffectsObjects": true
+        },
+        {
+            "Name": "Banana",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Banana.T_ITEM_Banana'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Banana-ModifierName\", \"Banana\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Banana-ModifierDescription\", \"Boosts stamina for a short time.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseFoodConsumption_+%\")": -10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "OxygenRecovery_Buff",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_OxygenBuff.Icon_OxygenBuff'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"OxygenRecovery_Buff-ModifierName\", \"Boost Oxygen Recovery\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"OxygenRecovery_Buff-ModifierDescription\", \"Boost Oxygen Recovery\")",
+            "VisibleToPlayer": false,
+            "GrantedStats": {
+                "(Value=\"BaseOxygenRecovery_+\")": 300,
+                "(Value=\"BaseOxygenConsumption_+%\")": -75,
+                "(Value=\"BaseOxygenConsumptionPerHour_+\")": -75
+            },
+            "MergeType": "Stack"
+        },
+        {
+            "Name": "BlockCaveSpawns_Aura",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Cave.Icon_Cave'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"BlockCaveSpawns_Aura-ModifierName\", \"Blocks Cave Creature Spawning\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"BlockCaveSpawns_Aura-ModifierDescription\", \"Hidden From Players\")",
+            "VisibleToPlayer": false,
+            "bAura": true,
+            "AuraRange": 5000,
+            "AuraFlags": {
+                "EffectsSelf": false,
+                "EffectsPlayers": false
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_RangeModifiable.BP_Modifier_Aura_RangeModifiable_C",
+            "ShouldTick": true,
+            "MergeType": "Replace",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.Dehumidified"
+                    }
+                ]
+            },
+            "bEffectsObjects": true,
+            "bEffectsNPCs": false,
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Endurance",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HealthBuff.Icon_HealthBuff'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Endurance-ModifierName\", \"Endurance\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Endurance-ModifierDescription\", \"Health Regneration Increase\")",
+            "GrantedStats": {
+                "(Value=\"BaseHealthRegen_+%\")": 50,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 6
+            },
+            "MergeType": "Stack",
+            "MaxStackNum": 5,
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Ape_Slam_Boost",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_StrengthBuff.Icon_StrengthBuff'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Ape_Slam_Boost-ModifierName\", \"Melee Boost\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Ape_Slam_Boost-ModifierDescription\", \"Increases melee damage\")",
+            "VisibleToPlayer": false,
+            "GrantedStats": {
+                "(Value=\"BaseMeleeDamage_+%\")": 200
+            },
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
         }
     ]
 }

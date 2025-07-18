@@ -137,29 +137,29 @@
             "MaxSpawnCount": 5,
             "MaxDistanceToPlayers": 30000,
             "RequiredStat": {
-                "Value": "WorldJuvenileRockGolemDesertSpawn_?"
+                "Value": "WorldJuvenileRockGolemWorldSpawn_?"
             }
         },
         {
-            "Name": "Ape_Forest_Outer",
+            "Name": "Ape_Forest",
             "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Ape_Spawner.BP_Ape_Spawner_C",
             "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
             "MaxNumAroundPlayers": 2,
             "MaxSpawnCount": 5,
             "MaxDistanceToPlayers": 30000,
             "RequiredStat": {
-                "Value": "WorldJuvenileApeOuterForestSpawn_?"
+                "Value": "WorldJuvenileApeForestSpawn_?"
             }
         },
         {
-            "Name": "Ape_Forest_Central",
-            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Ape_Spawner.BP_Ape_Spawner_C",
+            "Name": "Ape_Forest_Poison",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Ape_Spawner_GasClouds.BP_Ape_Spawner_GasClouds_C",
             "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
             "MaxNumAroundPlayers": 2,
-            "MaxSpawnCount": 5,
+            "MaxSpawnCount": 2,
             "MaxDistanceToPlayers": 30000,
             "RequiredStat": {
-                "Value": "WorldJuvenileApeCentralForestSpawn_?"
+                "Value": "WorldJuvenileApeForestPoisonSpawn_?"
             }
         },
         {
@@ -171,6 +171,37 @@
             "MaxDistanceToPlayers": 30000,
             "RequiredStat": {
                 "Value": "WorldJuvenileApeDesertSpawn_?"
+            }
+        },
+        {
+            "Name": "Ape_Arctic",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Ape_Spawner_Arctic.BP_Ape_Spawner_Arctic_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000,
+            "RequiredStat": {
+                "Value": "WorldJuvenileApeArcticSpawn_?"
+            }
+        },
+        {
+            "Name": "Caveworm_Spawner",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Pawn_WorldSpawner.BP_Pawn_WorldSpawner_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 6,
+            "RequiredStat": {
+                "Value": "WorldCavewormsSpawnOutsideCaves_?"
+            }
+        },
+        {
+            "Name": "Snow_Slug",
+            "IcarusActorClass": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_IceSlug_Spawner.BP_IceSlug_Spawner_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 1,
+            "MaxSpawnCount": 3,
+            "RequiredStat": {
+                "Value": "WorldSnowSlugSpawn_?"
             }
         }
     ]

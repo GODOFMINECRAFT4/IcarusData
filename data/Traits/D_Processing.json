@@ -609,6 +609,50 @@
             },
             "RequiresEnergy": false,
             "QueueSize": 5
+        },
+        {
+            "Name": "Great_Hunt_Device",
+            "DefaultRecipeSet": {
+                "RowName": "Crafting_Bench"
+            },
+            "RequiresEnergy": false,
+            "QueueSize": 5,
+            "MaxMilliwattage": 2500,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Seed_Extractor",
+            "DefaultRecipeSet": {
+                "RowName": "Seed_Extractor"
+            },
+            "RequiresEnergy": false,
+            "AutoSelectRecipe": true,
+            "QueueSize": 5,
+            "MaxMilliwattage": 500
+        },
+        {
+            "Name": "Fireplace_Gas",
+            "DefaultRecipeSet": {
+                "RowName": "Campfire"
+            },
+            "AutoSelectRecipe": true,
+            "ManualActivation": true,
+            "MaxMilliwattage": 400,
+            "AutoTurnOffDeviceWhileNotProcessing": false
+        },
+        {
+            "Name": "Fireplace_Electric",
+            "DefaultRecipeSet": {
+                "RowName": "Campfire"
+            },
+            "AutoSelectRecipe": true,
+            "ManualActivation": true,
+            "MaxMilliwattage": 450,
+            "AutoTurnOffDeviceWhileNotProcessing": false
         }
     ]
 }

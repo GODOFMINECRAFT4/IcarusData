@@ -408,7 +408,7 @@
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
                 "(Value=\"BaseCookedFoodModifierDuration_+%\")": 25,
-                "(Value=\"BaseBackpackSlots_+\")": 12,
+                "(Value=\"BaseBackpackSlots_+\")": 6,
                 "(Value=\"BaseFoodConsumption_+%\")": -25,
                 "(Value=\"BaseWaterConsumption_+%\")": -25,
                 "(Value=\"BaseCookedFoodModifierEffectiveness_+%\")": 25,
@@ -879,6 +879,18 @@
                 "(Value=\"BaseOreCarryWeight_+%\")": -10
             },
             "bStackedModifiersGiveDiminishingReturns": true
+        },
+        {
+            "Name": "Sand_Armor_Backpack",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": -50,
+                "(Value=\"BaseOxygenConsumption_+%\")": -50,
+                "(Value=\"BaseVolcanicExposureResistance_+%\")": 20,
+                "(Value=\"BaseDesertExposureResistance_+%\")": 20
+            },
+            "bBindToAllInventoryUpdates": false
         }
     ]
 }

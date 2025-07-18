@@ -359,7 +359,8 @@
             "StatCategory": {
                 "RowName": "Ranged_DMG"
             },
-            "bHideStatInUserInterface": true
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
         },
         {
             "Name": "BaseProjectileDamage_+%",
@@ -1347,7 +1348,7 @@
         },
         {
             "Name": "CriticalDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"CriticalDamage_+%-Title\", \"Weak Point Damage\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CriticalDamage_+%-Title\", \"Critical Damage\")",
             "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_CriticalDMG.Icon_CriticalDMG",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
@@ -2491,10 +2492,28 @@
             "Name": "BaseProjectileAimingSpreadXCentidegrees_+",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseProjectileAimingSpreadYCentidegrees_+",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseProjectileAimingSpreadHorizontal_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileAimingSpreadHorizontal_+-PositiveDescription\", \"+{0} Horizontal Projectile Spread While Aiming\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileAimingSpreadHorizontal_+-NegativeDescription\", \"-{0} Horizontal Projectile Spread While Aiming\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseProjectileAimingSpreadVertical_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileAimingSpreadVertical_+-PositiveDescription\", \"+{0} Vertical Projectile Spread While Aiming\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileAimingSpreadVertical_+-NegativeDescription\", \"-{0} Vertical Projectile Spread While Aiming\")",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             }
@@ -3208,8 +3227,8 @@
         {
             "Name": "SprintingStaminaActionCost_+%",
             "Title": "NSLOCTEXT(\"D_Stats\", \"SprintingStaminaActionCost_+%-Title\", \"Sprinting Stamina Consumed\")",
-            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SprintingStaminaActionCost_+%-PositiveTitleFormat\", \"+{0}% Stamina Consumed by Sprinting\")",
-            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SprintingStaminaActionCost_+%-NegativeTitleFormat\", \"-{0}% Stamina Consumed by Sprinting\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Stamina"
@@ -6181,7 +6200,7 @@
         {
             "Name": "BaseReapingRewards_%",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReapingRewards_%-PositiveDescription\", \"+{0}% Yield from Reaping Plants\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReapingRewards_%-NegativeDescription\", \"-{0}% Yield from Reaping Planets\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReapingRewards_%-NegativeDescription\", \"-{0}% Yield from Reaping Plants\")",
             "StatCategory": {
                 "RowName": "Reaping"
             }
@@ -6841,8 +6860,8 @@
         },
         {
             "Name": "BasePistolAmmoCapacity_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAmmoCapacity_+%-PositiveDescription\", \"+{0}% Pistol Ammo Capacity\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAmmoCapacity_+%-NegativeDescription\", \"-{0}% Pistol Ammo Capacity\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAmmoCapacity_+%-PositiveDescription\", \"+{0}% Pistol & SMG Ammo Capacity\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAmmoCapacity_+%-NegativeDescription\", \"-{0}% Pistol & SMG Ammo Capacity\")",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             }
@@ -6865,8 +6884,8 @@
         },
         {
             "Name": "BasePistolChargeSpeed_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolChargeSpeed_+%-PositiveDescription\", \"+{0}% Charge Speed of Pistols\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolChargeSpeed_+%-NegativeDescription\", \"-{0}% Charge Speed of Pistols\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolChargeSpeed_+%-PositiveDescription\", \"+{0}% Charge Speed of Pistols & SMGs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolChargeSpeed_+%-NegativeDescription\", \"-{0}% Charge Speed of Pistols & SMGs\")",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             }
@@ -6889,8 +6908,8 @@
         },
         {
             "Name": "BasePistolReloadSpeed_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolReloadSpeed_+%-PositiveDescription\", \"+{0}% Reload Speed of Pistols\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolReloadSpeed_+%-NegativeDescription\", \"-{0}% Reload Speed of Pistols\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolReloadSpeed_+%-PositiveDescription\", \"+{0}% Reload Speed of Pistols & SMGs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolReloadSpeed_+%-NegativeDescription\", \"-{0}% Reload Speed of Pistols & SMGs\")",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             }
@@ -6913,8 +6932,8 @@
         },
         {
             "Name": "BasePistolEquipSpeed_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolEquipSpeed_+%-PositiveDescription\", \"+{0}% Equip Speed of Pistols\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolEquipSpeed_+%-NegativeDescription\", \"-{0}% Equip Speed of Pistols\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolEquipSpeed_+%-PositiveDescription\", \"+{0}% Equip Speed of Pistols & SMGs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolEquipSpeed_+%-NegativeDescription\", \"-{0}% Equip Speed of Pistols & SMGs\")",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             }
@@ -6937,8 +6956,8 @@
         },
         {
             "Name": "BasePistolAimDownSightsSpeed_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAimDownSightsSpeed_+%-PositiveDescription\", \"+{0}% Aim Speed with Pistols\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAimDownSightsSpeed_+%-NegativeDescription\", \"-{0}% Aim Speed with Pistols\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAimDownSightsSpeed_+%-PositiveDescription\", \"+{0}% Aim Speed with Pistols & SMGs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAimDownSightsSpeed_+%-NegativeDescription\", \"-{0}% Aim Speed with Pistols & SMGs\")",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             }
@@ -6961,8 +6980,8 @@
         },
         {
             "Name": "BasePistolAttacksCauseWound_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseWound_%-PositiveDescription\", \"{0}% chance to Wound on Hit with Pistols\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseWound_%-NegativeDescription\", \"-{0}% chance to Wound on Hit with Pistols\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseWound_%-PositiveDescription\", \"{0}% chance to Wound on Hit with Pistols & SMGs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseWound_%-NegativeDescription\", \"-{0}% chance to Wound on Hit with Pistols & SMGs\")",
             "StatCategory": {
                 "RowName": "Modifiers"
             }
@@ -6985,8 +7004,8 @@
         },
         {
             "Name": "BasePistolAttacksCauseSlow_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseSlow_%-PositiveDescription\", \"{0}% chance to Slow on Hit with Pistols\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseSlow_%-NegativeDescription\", \"-{0}% chance to Slow on Hit with Pistols\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseSlow_%-PositiveDescription\", \"{0}% chance to Slow on Hit with Pistols & SMGs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseSlow_%-NegativeDescription\", \"-{0}% chance to Slow on Hit with Pistols & SMGs\")",
             "StatCategory": {
                 "RowName": "Modifiers"
             }
@@ -7009,8 +7028,8 @@
         },
         {
             "Name": "BasePistolAttacksCauseImmobilise_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseImmobilise_%-PositiveDescription\", \"{0}% chance to Immobilize on Hit with Pistols\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseImmobilise_%-NegativeDescription\", \"-{0}% chance to Immobilize on Hit with Pistols\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseImmobilise_%-PositiveDescription\", \"{0}% chance to Immobilize on Hit with Pistols & SMGs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAttacksCauseImmobilise_%-NegativeDescription\", \"-{0}% chance to Immobilize on Hit with Pistols & SMGs\")",
             "StatCategory": {
                 "RowName": "Modifiers"
             }
@@ -7033,8 +7052,8 @@
         },
         {
             "Name": "BasePistolProjectileAccuracy_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolProjectileAccuracy_+%-PositiveDescription\", \"+{0}% Accuracy with Pistols\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolProjectileAccuracy_+%-NegativeDescription\", \"-{0}% Accuracy with Pistols\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolProjectileAccuracy_+%-PositiveDescription\", \"+{0}% Accuracy with Pistols & SMGs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolProjectileAccuracy_+%-NegativeDescription\", \"-{0}% Accuracy with Pistols & SMGs\")",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             }
@@ -7057,8 +7076,8 @@
         },
         {
             "Name": "BasePistolCriticalDamage_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolCriticalDamage_+%-PositiveDescription\", \"+{0}% Critical Damage with Pistols\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolCriticalDamage_+%-NegativeDescription\", \"-{0}% Critical Damage with Pistols\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolCriticalDamage_+%-PositiveDescription\", \"+{0}% Critical Damage with Pistols & SMGs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolCriticalDamage_+%-NegativeDescription\", \"-{0}% Critical Damage with Pistols & SMGs\")",
             "StatCategory": {
                 "RowName": "Generic_Damage"
             }
@@ -7204,8 +7223,8 @@
         },
         {
             "Name": "BasePistolProjectileDamage_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolProjectileDamage_+%-PositiveDescription\", \"+{0}% Damage with Pistols\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolProjectileDamage_+%-NegativeDescription\", \"-{0}% Damage with Pistols\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolProjectileDamage_+%-PositiveDescription\", \"+{0}% Damage with Pistols & SMGs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolProjectileDamage_+%-NegativeDescription\", \"-{0}% Damage with Pistols & SMGs\")",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             }
@@ -7260,8 +7279,8 @@
         },
         {
             "Name": "BasePistolAmmoCraftingCost_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAmmoCraftingCost_+%-PositiveDescription\", \"+{0}% Crafted Pistol Ammo Resource Cost\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAmmoCraftingCost_+%-NegativeDescription\", \"-{0}% Crafted Pistol Ammo Resource Cost\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAmmoCraftingCost_+%-PositiveDescription\", \"+{0}% Crafted Pistol & SMG Ammo Resource Cost\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAmmoCraftingCost_+%-NegativeDescription\", \"-{0}% Crafted Pistol & SMG Ammo Resource Cost\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Crafting"
@@ -7465,8 +7484,8 @@
         },
         {
             "Name": "BasePistolAimingMovementSpeed_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAimingMovementSpeed_+%-PositiveDescription\", \"+{0}% Movement Speed while Aiming a Pistol\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAimingMovementSpeed_+%-NegativeDescription\", \"-{0}% Movement Speed while Aiming a Pistol\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAimingMovementSpeed_+%-PositiveDescription\", \"+{0}% Movement Speed while Aiming a Pistol or SMG\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePistolAimingMovementSpeed_+%-NegativeDescription\", \"-{0}% Movement Speed while Aiming a Pistol or SMG\")",
             "StatCategory": {
                 "RowName": "Character"
             }
@@ -9042,6 +9061,8 @@
         {
             "Name": "BaseShieldBlockRadiusDegrees_+",
             "Title": "NSLOCTEXT(\"D_Stats\", \"BaseShieldBlockRadiusDegrees_+-Title\", \"Shield Effective Radius in Degrees\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseShieldBlockRadiusDegrees_+-PositiveDescription\", \"{0} Degree Blocking Angle\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseShieldBlockRadiusDegrees_+-NegativeDescription\", \"This should not be a negative value.\")",
             "StatCategory": {
@@ -9063,6 +9084,8 @@
         {
             "Name": "BaseShieldBlock_%",
             "Title": "NSLOCTEXT(\"D_Stats\", \"BaseShieldBlock_%-Title\", \"Percent Damage Blocked By Shield\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseShieldBlock_%-PositiveDescription\", \"{0}% of Damage Blocked by Shield\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseShieldBlock_%-NegativeDescription\", \"This should not be a negative value.\")",
             "StatCategory": {
@@ -11991,7 +12014,8 @@
             "StatCategory": {
                 "RowName": "Item"
             },
-            "bHideStatInUserInterface": true
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
         },
         {
             "Name": "Weight_+",
@@ -12487,7 +12511,7 @@
         },
         {
             "Name": "RockdogExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"RockdogExtraDamage_+%-Title\", \"Stonejaw\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RockdogExtraDamage_+%-Title\", \"Damage vs Stonejaw\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12505,7 +12529,7 @@
         },
         {
             "Name": "BatdogExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"BatdogExtraDamage_+%-Title\", \"Drac\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BatdogExtraDamage_+%-Title\", \"Damage vs Drac\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12523,7 +12547,7 @@
         },
         {
             "Name": "NeedlerExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"NeedlerExtraDamage_+%-Title\", \"Needler\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"NeedlerExtraDamage_+%-Title\", \"Damage vs Needler\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12541,7 +12565,7 @@
         },
         {
             "Name": "PredatorBirdExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"PredatorBirdExtraDamage_+%-Title\", \"Dreadwing\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PredatorBirdExtraDamage_+%-Title\", \"Damage vs Dreadwing\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12559,7 +12583,7 @@
         },
         {
             "Name": "GasFlyerExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"GasFlyerExtraDamage_+%-Title\", \"Drifter\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GasFlyerExtraDamage_+%-Title\", \"Damage vs Drifter\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12577,7 +12601,7 @@
         },
         {
             "Name": "DeerVariantExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"DeerVariantExtraDamage_+%-Title\", \"Plains Equix\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"DeerVariantExtraDamage_+%-Title\", \"Damage vs Plains Equix\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12595,7 +12619,7 @@
         },
         {
             "Name": "SwampQuadrupedExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampQuadrupedExtraDamage_+%-Title\", \"Stryders\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampQuadrupedExtraDamage_+%-Title\", \"Damage vs Stryders\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12613,7 +12637,7 @@
         },
         {
             "Name": "SwampBirdExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampBirdExtraDamage_+%-Title\", \"Ubis\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampBirdExtraDamage_+%-Title\", \"Damage vs Ubis\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12631,7 +12655,7 @@
         },
         {
             "Name": "ChamiosVariantExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ChamiosVariantExtraDamage_+%-Title\", \"Chala\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ChamiosVariantExtraDamage_+%-Title\", \"Damage vs Chala\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12649,7 +12673,7 @@
         },
         {
             "Name": "BluebackExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"BluebackExtraDamage_+%-Title\", \"Blueback\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BluebackExtraDamage_+%-Title\", \"Damage vs Blueback\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12667,7 +12691,7 @@
         },
         {
             "Name": "LavaBluebackExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaBluebackExtraDamage_+%-Title\", \"Redback\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaBluebackExtraDamage_+%-Title\", \"Damage vs Redback\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12685,7 +12709,7 @@
         },
         {
             "Name": "SnowStrikerExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SnowStrikerExtraDamage_+%-Title\", \"Snow Stalker\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SnowStrikerExtraDamage_+%-Title\", \"Damage vs Stalkers\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12703,7 +12727,7 @@
         },
         {
             "Name": "DesertStrikerExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"DesertStrikerExtraDamage_+%-Title\", \"Arid Striker\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"DesertStrikerExtraDamage_+%-Title\", \"Damage vs Strikers\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12721,7 +12745,7 @@
         },
         {
             "Name": "WoolyZebraExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WoolyZebraExtraDamage_+%-Title\", \"Shaggy Zebra\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WoolyZebraExtraDamage_+%-Title\", \"Damage vs Shaggy Zebra\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12739,7 +12763,7 @@
         },
         {
             "Name": "SwampRoatExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampRoatExtraDamage_+%-Title\", \"Roat\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampRoatExtraDamage_+%-Title\", \"Damage vs Roat\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12757,7 +12781,7 @@
         },
         {
             "Name": "LavaHunterSpawnExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaHunterSpawnExtraDamage_+%-Title\", \"LavaHunterSpawn\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaHunterSpawnExtraDamage_+%-Title\", \"Damage vs Broodlings\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12775,7 +12799,7 @@
         },
         {
             "Name": "SwampSlugExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampSlugExtraDamage_+%-Title\", \"Viscid\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampSlugExtraDamage_+%-Title\", \"Damage vs Viscid\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12793,7 +12817,7 @@
         },
         {
             "Name": "LavaHunterExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaHunterExtraDamage_+%-Title\", \"Lava Hunter\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaHunterExtraDamage_+%-Title\", \"Damage vs Lava Hunter\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12811,7 +12835,7 @@
         },
         {
             "Name": "LavaKomodoExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaKomodoExtraDamage_+%-Title\", \"Ashen Drake\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaKomodoExtraDamage_+%-Title\", \"Damage vs Ashen Drakes\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12829,7 +12853,7 @@
         },
         {
             "Name": "SpiderExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SpiderExtraDamage_+%-Title\", \"Spider\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SpiderExtraDamage_+%-Title\", \"Damage vs Spider\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12847,7 +12871,7 @@
         },
         {
             "Name": "RockdogExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"RockdogExtraDamageResistance_+%-Title\", \"Stonejaw\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RockdogExtraDamageResistance_+%-Title\", \"Resistance vs Stonejaw\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12865,7 +12889,7 @@
         },
         {
             "Name": "BatdogExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"BatdogExtraDamageResistance_+%-Title\", \"Drac\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BatdogExtraDamageResistance_+%-Title\", \"Resistance vs Drac\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12883,7 +12907,7 @@
         },
         {
             "Name": "NeedlerExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"NeedlerExtraDamageResistance_+%-Title\", \"Needler\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"NeedlerExtraDamageResistance_+%-Title\", \"Resistance vs Needlers\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12901,7 +12925,7 @@
         },
         {
             "Name": "PredatorBirdExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"PredatorBirdExtraDamageResistance_+%-Title\", \"Dreadwing\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PredatorBirdExtraDamageResistance_+%-Title\", \"Resistance vs Dreadwing\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12919,7 +12943,7 @@
         },
         {
             "Name": "GasFlyerExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"GasFlyerExtraDamageResistance_+%-Title\", \"Drifter\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GasFlyerExtraDamageResistance_+%-Title\", \"Resistance vs Drifter\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12937,7 +12961,7 @@
         },
         {
             "Name": "DeerVariantExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"DeerVariantExtraDamageResistance_+%-Title\", \"Plains Equix\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"DeerVariantExtraDamageResistance_+%-Title\", \"Resistance vs Plains Equix\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12955,7 +12979,7 @@
         },
         {
             "Name": "SwampQuadrupedExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampQuadrupedExtraDamageResistance_+%-Title\", \"Stryders\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampQuadrupedExtraDamageResistance_+%-Title\", \"Resistance vs Stryders\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12973,7 +12997,7 @@
         },
         {
             "Name": "SwampBirdExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampBirdExtraDamageResistance_+%-Title\", \"Ubis\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampBirdExtraDamageResistance_+%-Title\", \"Resistance vs Ubis\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -12991,7 +13015,7 @@
         },
         {
             "Name": "ChamiosVariantExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ChamiosVariantExtraDamageResistance_+%-Title\", \"Chala\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ChamiosVariantExtraDamageResistance_+%-Title\", \"Resistance vs Chalas\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13009,7 +13033,7 @@
         },
         {
             "Name": "BluebackExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"BluebackExtraDamageResistance_+%-Title\", \"Blueback\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BluebackExtraDamageResistance_+%-Title\", \"Resistance vs Blueback\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13027,7 +13051,7 @@
         },
         {
             "Name": "LavaBluebackExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaBluebackExtraDamageResistance_+%-Title\", \"Redback\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaBluebackExtraDamageResistance_+%-Title\", \"Resistance vs Redback\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13045,7 +13069,7 @@
         },
         {
             "Name": "SnowStrikerExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SnowStrikerExtraDamageResistance_+%-Title\", \"Snow Stalker\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SnowStrikerExtraDamageResistance_+%-Title\", \"Resistance vs Stalkers\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13055,15 +13079,15 @@
         },
         {
             "Name": "BaseSnowStrikerExtraDamageResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSnowStrikerExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Snow Stalkers\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSnowStrikerExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Snow Stalkers\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSnowStrikerExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Stalkers\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSnowStrikerExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Stalkers\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "DesertStrikerExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"DesertStrikerExtraDamageResistance_+%-Title\", \"Arid Striker\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"DesertStrikerExtraDamageResistance_+%-Title\", \"Resistance vs Strikers\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13073,15 +13097,15 @@
         },
         {
             "Name": "BaseDesertStrikerExtraDamageResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertStrikerExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Arid Strikers\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertStrikerExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Arid Strikers\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertStrikerExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Strikers\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertStrikerExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Strikers\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "WoolyZebraExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WoolyZebraExtraDamageResistance_+%-Title\", \"Shaggy Zebra\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WoolyZebraExtraDamageResistance_+%-Title\", \"Resistance vs Shaggy Zebras\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13099,7 +13123,7 @@
         },
         {
             "Name": "SwampRoatExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampRoatExtraDamageResistance_+%-Title\", \"Roat\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampRoatExtraDamageResistance_+%-Title\", \"Resistance vs Roats\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13117,7 +13141,7 @@
         },
         {
             "Name": "LavaHunterSpawnExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaHunterSpawnExtraDamageResistance_+%-Title\", \"LavaHunterSpawn\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaHunterSpawnExtraDamageResistance_+%-Title\", \"Resistance vs Broodlings\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13127,15 +13151,15 @@
         },
         {
             "Name": "BaseLavaHunterSpawnExtraDamageResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterSpawnExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Lava Hunter Spawns\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterSpawnExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Lava Hunter Spawns\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterSpawnExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Broodlings\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLavaHunterSpawnExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Broodlings\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "SwampSlugExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampSlugExtraDamageResistance_+%-Title\", \"Viscid\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampSlugExtraDamageResistance_+%-Title\", \"Resistance vs Viscids\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13153,7 +13177,7 @@
         },
         {
             "Name": "LavaHunterExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaHunterExtraDamageResistance_+%-Title\", \"Lava Hunter\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaHunterExtraDamageResistance_+%-Title\", \"Resistance vs Lava Hunter\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13171,7 +13195,7 @@
         },
         {
             "Name": "LavaKomodoExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaKomodoExtraDamageResistance_+%-Title\", \"Ashen Drake\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaKomodoExtraDamageResistance_+%-Title\", \"Resistance vs Ashen Drakes\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13189,7 +13213,7 @@
         },
         {
             "Name": "SpiderExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"SpiderExtraDamageResistance_+%-Title\", \"Spider\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SpiderExtraDamageResistance_+%-Title\", \"Resistance vs Spiders\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -13307,7 +13331,7 @@
         },
         {
             "Name": "LavaSlugExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaSlugExtraDamage_+%-Title\", \"Arid Viscid\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaSlugExtraDamage_+%-Title\", \"Damage vs Ignari\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true
@@ -13319,7 +13343,7 @@
         },
         {
             "Name": "LavaSlugExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaSlugExtraDamageResistance_+%-Title\", \"Arid Viscid\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"LavaSlugExtraDamageResistance_+%-Title\", \"Resistance vs Ignari\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true
@@ -14294,7 +14318,7 @@
         },
         {
             "Name": "BeeExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"BeeExtraDamage_+%-Title\", \"Bee\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BeeExtraDamage_+%-Title\", \"Damage vs Bees\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -14312,7 +14336,7 @@
         },
         {
             "Name": "BeeExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"BeeExtraDamageResistance_+%-Title\", \"Bee\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BeeExtraDamageResistance_+%-Title\", \"Resistance vs Bees\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -14529,8 +14553,8 @@
         },
         {
             "Name": "BaseMiniHippoExtraDamageResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMiniHippoExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Mini Hippos\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMiniHippoExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Mini Hippos\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMiniHippoExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Dribbos\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMiniHippoExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Dribbos\")",
             "StatCategory": {
                 "RowName": "AI"
             }
@@ -14679,15 +14703,15 @@
         },
         {
             "Name": "BaseIceMammothExtraDamageResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Mammoths\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Mammoths\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Rimetusks\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Rimetusks\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "IceMammothExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"IceMammothExtraDamageResistance_+%-Title\", \"Resistance vs Mammoths\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IceMammothExtraDamageResistance_+%-Title\", \"Resistance vs Rimetusks\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -14710,15 +14734,15 @@
         },
         {
             "Name": "BaseIceMammothExtraDamage_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Mammoths\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Mammoths\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Rimetusks\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Rimetusks\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "IceMammothExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"IceMammothExtraDamage_+%-Title\", \"Damage vs Mammoths\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IceMammothExtraDamage_+%-Title\", \"Damage vs Rimetusks\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -15371,8 +15395,8 @@
         },
         {
             "Name": "BaseConiferExposureResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferExposureResistance_+%-PositiveDescription\", \"+{0}% Conifer Exposure Resistance\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferExposureResistance_+%-NegativeDescription\", \"-{0}% Conifer Exposure Resistance\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferExposureResistance_+%-PositiveDescription\", \"+{0}% Forest Exposure Resistance\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferExposureResistance_+%-NegativeDescription\", \"-{0}% Forest Exposure Resistance\")",
             "StatCategory": {
                 "RowName": "Exposure"
             }
@@ -15403,8 +15427,8 @@
         },
         {
             "Name": "BaseConiferStaminaRegen_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferStaminaRegen_+%-PositiveDescription\", \"+{0}% Conifer Stamina Regeneration\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferStaminaRegen_+%-NegativeDescription\", \"-{0}% Conifer Stamina Regeneration\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferStaminaRegen_+%-PositiveDescription\", \"+{0}% Forest Stamina Regeneration\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferStaminaRegen_+%-NegativeDescription\", \"-{0}% Forest Stamina Regeneration\")",
             "StatCategory": {
                 "RowName": "Stamina"
             }
@@ -15619,8 +15643,17 @@
             }
         },
         {
+            "Name": "InfusionExotic_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"InfusionExotic_?-Title\", \"Infused with Exotics\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"InfusionExotic_?-PositiveDescription\", \"Infused with Exotics\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
             "Name": "WorldJuvenileRockGolemDesertSpawn_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemDesertSpawn_?-Title\", \"Young Quarrite Burrows Will Appear In Desert Areas\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemDesertSpawn_?-Title\", \"Quarrites and their Burrows Will Appear In Desert Areas\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15630,7 +15663,7 @@
         },
         {
             "Name": "WorldJuvenileRockGolemWorldSpawn_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemWorldSpawn_?-Title\", \"Young Quarrite Burrows Will Appear In All Areas\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemWorldSpawn_?-Title\", \"Quarrites and their Burrows Will Appear In All Areas\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15640,7 +15673,7 @@
         },
         {
             "Name": "WorldJuvenileRockGolemExoticSpawn_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemExoticSpawn_?-Title\", \"Exotic Infused Young Quarrite Burrows Have a Chance to Spawn\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemExoticSpawn_?-Title\", \"Exotic Infused Quarrite Burrows Have a Chance to Spawn\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15660,7 +15693,7 @@
         },
         {
             "Name": "WorldRockGolemMinionsReduced_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRockGolemMinionsReduced_?-Title\", \"Quarrite Boss Has Reduced Minions During Final Hunt\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRockGolemMinionsReduced_?-Title\", \"Unstable Quarrite Has Reduced Caveworm Minions During Final Hunt\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15670,7 +15703,7 @@
         },
         {
             "Name": "WorldJuvenileRockGolemLootIncreased_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemLootIncreased_?-Title\", \"Young Quarrites Drop More Resources on Death\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileRockGolemLootIncreased_?-Title\", \"Quarrites Drop More Resources on Death\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15680,7 +15713,7 @@
         },
         {
             "Name": "WorldRockGolemExplosiveWeakness_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRockGolemExplosiveWeakness_?-Title\", \"Quarrite Boss Has Increased Weakness to Explosives During Final Hunt\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRockGolemExplosiveWeakness_?-Title\", \"The Unstable Quarrite will have a Weakness to Explosives.\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15698,7 +15731,7 @@
         },
         {
             "Name": "RockGolemExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemExtraDamage_+%-Title\", \"Damage vs Quarrites\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemExtraDamage_+%-Title\", \"Damage vs Unstable Quarrites\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -15708,15 +15741,15 @@
         },
         {
             "Name": "BaseRockGolemExtraDamage_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Quarrites\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Quarrites\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Unstable Quarrites\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Unstable Quarrites\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "RockGolemExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemExtraDamageResistance_+%-Title\", \"Resistance vs Quarrites\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemExtraDamageResistance_+%-Title\", \"Resistance vs Unstable Quarrites\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -15726,15 +15759,15 @@
         },
         {
             "Name": "BaseRockGolemExtraDamageResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Quarrites\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Quarrites\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Unstable Quarrite\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Unstable Quarrite\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "RockGolemJuvenileExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemJuvenileExtraDamage_+%-Title\", \"Damage vs Young Quarrites\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemJuvenileExtraDamage_+%-Title\", \"Damage vs Quarrites\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -15744,15 +15777,15 @@
         },
         {
             "Name": "BaseRockGolemJuvenileExtraDamage_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemJuvenileExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Young Quarrites\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemJuvenileExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Young Quarrites\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemJuvenileExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Quarrites\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemJuvenileExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Quarrites\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "RockGolemJuvenileExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemJuvenileExtraDamageResistance_+%-Title\", \"Resistance vs Young Quarrites\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemJuvenileExtraDamageResistance_+%-Title\", \"Resistance vs Quarrites\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -15762,15 +15795,15 @@
         },
         {
             "Name": "BaseRockGolemJuvenileExtraDamageResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemJuvenileExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Young Quarrites\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemJuvenileExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Young Quarrites\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemJuvenileExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Quarrites\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRockGolemJuvenileExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Quarrites\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "ApeExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeExtraDamage_+%-Title\", \"Damage vs Garganutans\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeExtraDamage_+%-Title\", \"Damage vs Garganutan Primes\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -15780,15 +15813,15 @@
         },
         {
             "Name": "BaseApeExtraDamage_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Garganutans\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Garganutans\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Garganutan Primes\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Garganutan Primes\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "ApeExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeExtraDamageResistance_+%-Title\", \"Resistance vs Garganutans\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeExtraDamageResistance_+%-Title\", \"Resistance vs Garganutan Primes\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -15798,15 +15831,15 @@
         },
         {
             "Name": "BaseApeExtraDamageResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Garganutans\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Garganutans\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Garganutan Primes\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Garganutan Primes\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "ApeJuvenileExtraDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeJuvenileExtraDamage_+%-Title\", \"Damage vs Garganutans Jrs\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeJuvenileExtraDamage_+%-Title\", \"Damage vs Garganutans\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -15824,7 +15857,7 @@
         },
         {
             "Name": "ApeJuvenileExtraDamageResistance_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeJuvenileExtraDamageResistance_+%-Title\", \"Resistance vs Garganutans Jrs\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeJuvenileExtraDamageResistance_+%-Title\", \"Resistance vs Garganutans\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -15834,8 +15867,8 @@
         },
         {
             "Name": "BaseApeJuvenileExtraDamageResistance_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeJuvenileExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Garganutans Jrs\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeJuvenileExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Garganutans Jrs\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeJuvenileExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Garganutans\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseApeJuvenileExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Garganutans\")",
             "StatCategory": {
                 "RowName": "AI"
             }
@@ -15877,17 +15910,6 @@
             }
         },
         {
-            "Name": "RockGolemArmourDamage_+%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemArmourDamage_+%-Title\", \"Rock Golem Armor Penetration Damage\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_CriticalDMG.Icon_CriticalDMG",
-            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
-            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
-            "bIsReplicated": true,
-            "StatCategory": {
-                "RowName": "Generic_Damage"
-            }
-        },
-        {
             "Name": "IsFrenzied_?",
             "Title": "NSLOCTEXT(\"D_Stats\", \"IsFrenzied_?-Title\", \"In a State of Frenzy\")",
             "bIsReplicated": true,
@@ -15915,18 +15937,8 @@
             "bHideStatInUserInterface": true
         },
         {
-            "Name": "WorldJuvenileApeOuterForestSpawn_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileApeOuterForestSpawn_?-Title\", \"Garganutan Jr Lairs Will Appear In Outer Forest Areas\")",
-            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
-            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
-            "bIsWorldStat": true,
-            "StatCategory": {
-                "RowName": "World"
-            }
-        },
-        {
-            "Name": "WorldJuvenileApeCentralForestSpawn_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileApeCentralForestSpawn_?-Title\", \"Garganutan Jr Lairs Will Appear In Central Forest Areas\")",
+            "Name": "WorldJuvenileApeForestSpawn_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileApeForestSpawn_?-Title\", \"Garganutan and their Lairs Appear In Forest Areas\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15936,7 +15948,7 @@
         },
         {
             "Name": "WorldJuvenileApeDesertSpawn_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileApeDesertSpawn_?-Title\", \"Garganutan Jr Lairs Will Appear In Desert Areas\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileApeDesertSpawn_?-Title\", \"Garganutans and their Lairs will Appear in Desert Areas\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15946,7 +15958,7 @@
         },
         {
             "Name": "WorldApePoisonWeakness_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldApePoisonWeakness_?-Title\", \"Garganutan Boss Has Increased Weakness to Poison During Final Hunt\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldApePoisonWeakness_?-Title\", \"Garganutan Prime Has Increased Weakness to Poison During Final Hunt\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15956,7 +15968,7 @@
         },
         {
             "Name": "WorldPlayerCanSeeJuvenileApeDenOnMap_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldPlayerCanSeeJuvenileApeDenOnMap_?-Title\", \"Garganutan Jr Lairs Appear on Map\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldPlayerCanSeeJuvenileApeDenOnMap_?-Title\", \"Garganutan and their Lairs are visible on the Map\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -15964,6 +15976,1920 @@
                 "RowName": "Map"
             },
             "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseNightThreatModifier_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseNightThreatModifier_+%-PositiveDescription\", \"+{0}% Perceived Threat at Night\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseNightThreatModifier_+%-NegativeDescription\", \"-{0}% Perceived Threat at Night\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseProjectileDamageAtNight_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileDamageAtNight_+%-PositiveDescription\", \"+{0}% Projectile Damage at Night\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileDamageAtNight_+%-NegativeDescription\", \"-{0}% Projectile Damage at Night\")",
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "BaseItemWearAtNight_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseItemWearAtNight_+%-PositiveDescription\", \"+{0}% Wear Rate of Items at Night\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseItemWearAtNight_+%-NegativeDescription\", \"-{0}% Wear Rate of Items at Night\")",
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "BaseItemWearAtDay_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseItemWearAtDay_+%-PositiveDescription\", \"+{0}% Wear Rate of Items During the Day\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseItemWearAtDay_+%-NegativeDescription\", \"-{0}% Wear Rate of Items During the Day\")",
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "BaseElementalDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseElementalDamage_+%-PositiveDescription\", \"+{0}% Elemental Damage (Fire, Frost, Electic, Poison)\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseElementalDamage_+%-NegativeDescription\", \"-{0}% Elemental Damage (Fire, Frost, Electic, Poison)\")",
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "BaseRageChance_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRageChance_%-PositiveDescription\", \"{0}% Chance on Attack to Add a Rage Modifier to the Player\")",
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "RageChance_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RageChance_%-Title\", \"Rage Chance on Attack\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "PhysicalDamage_+",
+            "StatCategory": {
+                "RowName": "Melee_DMG"
+            },
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BasePhysicalDamage_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePhysicalDamage_+-PositiveDescription\", \"+{0} Physical (Melee + Projectile) Damage\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePhysicalDamage_+-NegativeDescription\", \"-{0} Physical (Melee + Projectile) Damage\")",
+            "StatCategory": {
+                "RowName": "Melee_DMG"
+            },
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BasePhysicalDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePhysicalDamage_+%-PositiveDescription\", \"+{0}% Physical (Melee + Projectile) Damage\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePhysicalDamage_+%-NegativeDescription\", \"+{0}% Physical (Melee + Projectile) Damage\")",
+            "StatCategory": {
+                "RowName": "Melee_DMG"
+            }
+        },
+        {
+            "Name": "BaseAdrenalineChance_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAdrenalineChance_%-PositiveDescription\", \"{0}% Chance on Attack to Add a Adrenaline Modifier to the Player\")",
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "AdrenalineChance_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AdrenalineChance_%-Title\", \"Adrenaline Chance on Attack\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "BaseAttacksSummonWolf_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksSummonWolf_%-PositiveDescription\", \"+{0}% chance a Wolf will be Summoned to Attack the Target\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksSummonWolf_%-NegativeDescription\", \"-{0}% chance a Wolf will be Summoned to Attack the Target\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "AttacksSummonWolf_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksSummonWolf_%-Title\", \"Chance a Wolf will be Summoned\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseKiwiExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseKiwiExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Kiwi\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseKiwiExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Kiwi\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "KiwiExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"KiwiExtraDamage_+%-Title\", \"Damage vs Kiwi\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseKiwiExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseKiwiExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Kiwi\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseKiwiExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Kiwi\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "KiwiExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"KiwiExtraDamageResistance_+%-Title\", \"Resistance vs Kiwi\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseMangeWolfExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMangeWolfExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Skulmutt\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMangeWolfExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Skulmutt\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "MangeWolfExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"MangeWolfExtraDamage_+%-Title\", \"Damage vs Skulmutt\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseMangeWolfExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMangeWolfExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Skulmutt\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMangeWolfExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Skulmutt\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "MangeWolfExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"MangeWolfExtraDamageResistance_+%-Title\", \"Resistance vs Skulmutt\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseAttacksCauseVulnerable_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksCauseVulnerable_%-PositiveDescription\", \"{0}% chance to inflict Vulnerable on Hit with Attacks\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "AttacksCauseVulnerable_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCauseVulnerable_%-Title\", \"Chance Attacks will cause Vulnerable\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "ItemChargesEnergyWhenFocused_?",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"ItemChargesEnergyWhenFocused_?-PositiveDescription\", \"Will Recharge Slowly While Focused\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "ConsumedEnergyPerUse_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ConsumedEnergyPerUse_+-Title\", \"Consumes Stored Electricity on Use\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ConsumedEnergyPerUse_+-PositiveTitleFormat\", \"{0} kJ\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ConsumedEnergyPerUse_+-NegativeTitleFormat\", \"-{0} kJ\")",
+            "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseConsumedEnergyPerUse_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConsumedEnergyPerUse_+-PositiveDescription\", \"{0} kJ of Electricity Consumed Per Use\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConsumedEnergyPerUse_+-NegativeDescription\", \"-{0} kJ of Electricity Consumed Per Use\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "EnergyInfusedWeaponDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"EnergyInfusedWeaponDamage_+%-Title\", \"Weapon Damage When Used with Available Stored Electricity\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseEnergyInfusedWeaponDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseEnergyInfusedWeaponDamage_+%-PositiveDescription\", \"+{0}% Weapon Damage When Used with Available Stored Electricity\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseEnergyInfusedWeaponDamage_+%-NegativeDescription\", \"-{0}% Weapon Damage When Used with Available Stored Electricity\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseFlamethrowerRange_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFlamethrowerRange_+%-PositiveDescription\", \"+{0}% Flamethrower Range\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFlamethrowerRange_+%-NegativeDescription\", \"-{0}% Flamethrower Range\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "FlamethrowerRange_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FlamethrowerRange_+%-Title\", \"Flamethrower Range\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseAttacksCausePyrophobia_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksCausePyrophobia_%-PositiveDescription\", \"{0}% chance to inflict Pyrophobia on Hit with Attacks\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "AttacksCausePyrophobia_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCausePyrophobia_+%-Title\", \"Chance Attacks will cause Pyrophobia\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseFlamethrowerFuelUse_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFlamethrowerFuelUse_+%-PositiveDescription\", \"+{0}% Biofuel consumption\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFlamethrowerFuelUse_+%-NegativeDescription\", \"-{0}% Biofuel consumption\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "FlamethrowerFuelUse_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FlamethrowerFuelUse_+%-Title\", \"Flamethrower Fuel Usage\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "FlamethrowerHasSplitter_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FlamethrowerHasSplitter_?-Title\", \"Flamethrower Splitter\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"FlamethrowerHasSplitter_?-PositiveDescription\", \"Flamethrower will split the fired stream into two, resulting in 35% increased hit area\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "GrantedAuraApeResist_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraApeResist_?-PositiveDescription\", \"Nearby allies receive Extra Health and Resistance\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "GrantedAuraApeStrong_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraApeStrong_?-PositiveDescription\", \"Nearby allies receive Melee Buffs\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "GrantedAuraApeSpeed_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraApeSpeed_?-PositiveDescription\", \"Nearby allies receive Movement Speed and Health Regeneration\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "AttacksLeechHealth_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksLeechHealth_%-Title\", \"Chance Attacks will Leech Health\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseAttacksLeechHealth_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksLeechHealth_%-PositiveDescription\", \"{0}% chance to Leech Health on Hit with Attacks\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksLeechHealth_%-NegativeDescription\", \"-{0}% chance to Leech Health on Hit with Attacks\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "HealthLeeched_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"HealthLeeched_%-Title\", \"Health Leeched On Hit\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseHealthLeeched_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseHealthLeeched_%-PositiveDescription\", \"{0}% Damage Leeched as Health On Hit\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseHealthLeeched_%-NegativeDescription\", \"-{0}% Damage Leeched as Health On Hit\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "GrantedModifierEnrangedBlood_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedModifierEnrangedBlood_?-PositiveDescription\", \"Increases Melee Damage and Attack Speed the Lower your Health\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "RepairBuildingOnHit_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RepairBuildingOnHit_+-Title\", \"Repair Buildings On Hit\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseRepairBuildingsOnHit_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRepairBuildingsOnHit_+-PositiveDescription\", \"{0} Repaired when Hitting Buildings\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRepairBuildingsOnHit_+-NegativeDescription\", \"-{0} Repaired when Hitting Buildings\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "ArmorDamageModifier_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ArmorDamageModifier_+%-Title\", \"Damage to Armor\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseArmorDamageModifier_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArmorDamageModifier_+%-PositiveDescription\", \"+{0}% Damage To Armor\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArmorDamageModifier_+%-NegativeDescription\", \"-{0}% Damage To Armor\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "CanMineVoxels_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"CanMineVoxels_?-PositiveDescription\", \"Can Mine Ores\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "GrantedAuraFrostCloud_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraFrostCloud_?-PositiveDescription\", \"Nearby foes receive 20% reduced Movement Speed\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "AttacksCauseGrowthEnzyme_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCauseGrowthEnzyme_+%-Title\", \"Chance Attacks will inflict Enzyme Growth\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseAttacksCauseGrowthEnzyme_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksCauseGrowthEnzyme_+%-PositiveDescription\", \"+{0}% Chance to Inflict \\'Enzyme Growth\\'\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "ChanceFlamethrowerSpawnsLavaPuddle_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ChanceFlamethrowerSpawnsLavaPuddle_%-Title\", \"Chance Flamethrowers will Cause a Fire on Impact when Shot at the Ground\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseChanceFlamethrowerSpawnsLavaPuddle_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceFlamethrowerSpawnsLavaPuddle_%-PositiveDescription\", \"{0}% Chance Flamethrowers will Cause a Fire on Impact when Shot at the Ground\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "CanUseAlternateFireFlamethrowerFireball_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"CanUseAlternateFireFlamethrowerFireball_?-PositiveDescription\", \"Alternate Fire: Shoots Flaming Balls\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "CanUseAlternateFireFlamethrowerBurst_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"CanUseAlternateFireFlamethrowerBurst_?-PositiveDescription\", \"Alternate Fire: Radial Fire Burst\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "WorldIsLavaHunterQuestlineActive_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldIsLavaHunterQuestlineActive_?-Title\", \"Lava Hunter questline is currently active\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseGolemGauntletMaximumVoxelCharges_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletMaximumVoxelCharges_+-PositiveDescription\", \"+{0} Stored Charges\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletMaximumVoxelCharges_+-NegativeDescription\", \"-{0} Stored Charges\")",
+            "StatCategory": {
+                "RowName": "Item"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "GolemGauntletMaximumVoxelCharges_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GolemGauntletMaximumVoxelCharges_+-Title\", \"Stored Charges\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "BaseGolemGauntletHammerFistAOE_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletHammerFistAOE_+-PositiveDescription\", \"+{0} Hammer Fist Radius\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletHammerFistAOE_+-NegativeDescription\", \"-{0} Hammer Fist Radius\")",
+            "StatCategory": {
+                "RowName": "Item"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "GolemGauntletHammerFistAOE_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GolemGauntletHammerFistAOE_+-Title\", \"Hammer Fist Radius\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "BaseGolemGauntletHammerFistAOE_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletHammerFistAOE_+%-PositiveDescription\", \"+{0}% Hammer Fist Radius\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletHammerFistAOE_+%-NegativeDescription\", \"-{0}% Hammer Fist Radius\")",
+            "StatCategory": {
+                "RowName": "Item"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "GolemGauntletCanMineExotics_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GolemGauntletCanMineExotics_?-Title\", \"Can Punch Exotics\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GolemGauntletCanMineExotics_?-PositiveDescription\", \"Can Punch Exotics\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "FirearmFillablePerShot_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FirearmFillablePerShot_+-Title\", \"L Consumed Per Shot\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseFirearmFillablePerShot_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFirearmFillablePerShot_+-PositiveDescription\", \"+{0}L Consumed Per Shot\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFirearmFillablePerShot_+-NegativeDescription\", \"-{0}L Consumed Per Shot\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseFirearmFillablePerShot_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFirearmFillablePerShot_+%-PositiveDescription\", \"+{0}% Consumption Per Shot\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFirearmFillablePerShot_+%-NegativeDescription\", \"-{0}% Consumption Per Shot\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "ProjectileAOE_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ProjectileAOE_+-Title\", \"Projectile Splash Radius\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseProjectileAOE_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileAOE_+-PositiveDescription\", \"+{0} Projectile Splash Radius\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileAOE_+-NegativeDescription\", \"-{0} Projectile Splash Radius\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseProjectileAOE_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileAOE_+%-PositiveDescription\", \"+{0}% Projectile Splash Radius\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileAOE_+%-NegativeDescription\", \"-{0}% Projectile Splash Radius\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "ProjectileSplashLifespan_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ProjectileSplashLifespan_+-Title\", \"Projectile Splash Lifespan\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseProjectileSplashLifespan_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileSplashLifespan_+-PositiveDescription\", \"+{0} Projectile Splash Lifespan\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileSplashLifespan_+-NegativeDescription\", \"-{0} Projectile Splash Lifespan\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseProjectileSplashLifespan_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileSplashLifespan_+%-PositiveDescription\", \"+{0}% Projectile Splash Lifespan\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileSplashLifespan_+%-NegativeDescription\", \"-{0}% Projectile Splash Lifespan\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "ProjectileBounciness_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ProjectileBounciness_+-Title\", \"Projectile Bounciness\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseProjectileBounciness_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileBounciness_+-PositiveDescription\", \"+{0}% Bounciness\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileBounciness_+-NegativeDescription\", \"-{0}% Bounciness\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "AmmoSpreadX_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AmmoSpreadX_+-Title\", \"Horizontal Spread\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseAmmoSpreadX_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAmmoSpreadX_+-PositiveDescription\", \"+{0} Horizontal Spread\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAmmoSpreadX_+-NegativeDescription\", \"-{0} Horizontal Spread\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "AmmoSpreadY_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AmmoSpreadY_+-Title\", \"Vertical Spread\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseAmmoSpreadY_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAmmoSpreadY_+-PositiveDescription\", \"+{0} Vertical Spread\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAmmoSpreadY_+-NegativeDescription\", \"-{0} Vertical Spread\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "GunAmmoIsExplosive_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GunAmmoIsExplosive_?-Title\", \"Ammo Becomes Explosive\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GunAmmoIsExplosive_?-PositiveDescription\", \"Ammo Becomes Explosive\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "GunAmmoIsExploLarger_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GunAmmoIsExploLarger_?-Title\", \"Ammo Larger Explosion\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "INVTEXT(\"[DNT] Unsed\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "GunAmmoIsStickyTrails_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GunAmmoIsStickyTrails_?-Title\", \"Ammo Becomes Corrosive\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GunAmmoIsStickyTrails_?-PositiveDescription\", \"Ammo Becomes Corrosive\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "GunAmmoTargetedPlayersHeal_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GunAmmoTargetedPlayersHeal_?-Title\", \"Ammo Heals Targets\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GunAmmoTargetedPlayersHeal_?-PositiveDescription\", \"Ammo Heals Targets\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "DoesNotRequireUtilitySlot_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"DoesNotRequireUtilitySlot_?-PositiveDescription\", \"Does not Require Utility Slot\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "IceSledgeHammerStd_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerStd_?-Title\", \"Sledgehammer Standard\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerStd_?-PositiveDescription\", \"Sledgehammer Standard\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "IceSledgeHammerSweep_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerSweep_?-Title\", \"Attacks Sweep to Hit Multiple Targets\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerSweep_?-PositiveDescription\", \"Attacks Sweep to Hit Multiple Targets\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "WorldIceMammothSpawn_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldIceMammothSpawn_?-Title\", \"Rimetusks Appear in Arctic Regions\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldIceMammothFireWeakness_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldIceMammothFireWeakness_?-Title\", \"Rimetusk Matriarch Has Increased Weakness to Fire During Final Hunt\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldIceMammothLessBirds_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldIceMammothLessBirds_?-Title\", \"Rimetusk Matriarch Spawns Less Vespers During Final Hunt\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldIceMammothLessArmor_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldIceMammothLessArmor_?-Title\", \"Rimetusk Matriarch Has Less Armor During Final Hunt\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldIceMammothLessHealth_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldIceMammothLessHealth_?-Title\", \"Rimetusk Matriarch Has Less Health During Final Hunt\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "IceSledgeHammerSlam_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerSlam_?-Title\", \"Alternate Fire is Area Slam\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerSlam_?-PositiveDescription\", \"Alternate Fire is Area Slam\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "AttacksCauseIceSpire_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCauseIceSpire_+%-Title\", \"Chance Attacks will inflict Ice Spire\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseAttacksCauseIceSpire_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksCauseIceSpire_+%-PositiveDescription\", \"+{0}% Chance to Inflict \\'Ice Spire\\'\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "IceSledgeHammerBlock_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerBlock_?-Title\", \"Alternate Fire Blocks Attacks\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerBlock_?-PositiveDescription\", \"Alternate Fire Blocks Attacks\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "IceSledgeHammerShoot_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerShoot_?-Title\", \"Alternate Fire Shoots Ice\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerShoot_?-PositiveDescription\", \"Alternate Fire Shoots Ice\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "ApeClubSlamAttack_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeClubSlamAttack_?-Title\", \"Club Slam Attack\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"ApeClubSlamAttack_?-PositiveDescription\", \"Alternate Fire: Heavy Slam\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "ApeClubSlamAttackBooming_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeClubSlamAttackBooming_?-Title\", \"Booming Slam\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"ApeClubSlamAttackBooming_?-PositiveDescription\", \"Slam Attack Causes Slow to all within Range\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "ApeClubSlamAttackResonant_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeClubSlamAttackResonant_?-Title\", \"Resonant Slam\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"ApeClubSlamAttackResonant_?-PositiveDescription\", \"Slam Attack Causes Physical Resistance Shred to all within Range\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "ApeClubSlamAttackCreaking_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ApeClubSlamAttackCreaking_?-Title\", \"Creaking Slam\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"ApeClubSlamAttackCreaking_?-PositiveDescription\", \"Slam Attack Causes Periodic Physical Damage to all within Range\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "ChanceSandwormCrossbowSpawnsToxicGas_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ChanceSandwormCrossbowSpawnsToxicGas_%-Title\", \"Chance to Cause Toxic Cloud on Hit\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseChanceSandwormCrossbowSpawnsToxicGas_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceSandwormCrossbowSpawnsToxicGas_%-PositiveDescription\", \"{0}% Chance to Cause Toxic Cloud on Hit\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "ChanceSandwormCrossbowSpawnsSandworm_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ChanceSandwormCrossbowSpawnsSandworm_%-Title\", \"Chance to Spawn Sandworm on Hit\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseChanceSandwormCrossbowSpawnsSandworm_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceSandwormCrossbowSpawnsSandworm_%-PositiveDescription\", \"{0}% Chance to Spawn Sandworm on Hit\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "RockGolemGauntletEnableProjectileAttack_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemGauntletEnableProjectileAttack_?-Title\", \"Gauntlet Projectile\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"RockGolemGauntletEnableProjectileAttack_?-PositiveDescription\", \"Alternate Fire: Launch Rocky Projectiles\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "RockGolemGauntletEnableShield_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemGauntletEnableShield_?-Title\", \"Gauntlet Shield\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"RockGolemGauntletEnableShield_?-PositiveDescription\", \"Alternate Fire: Shield / Shield Bash\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "RockGolemGauntletEnableHammerFistCharge_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RockGolemGauntletEnableHammerFistCharge_?-Title\", \"Gauntlet Charge\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"RockGolemGauntletEnableHammerFistCharge_?-PositiveDescription\", \"Alternate Fire: Charged Hammerfist\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseGolemGauntletShieldBashAOE_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletShieldBashAOE_+-PositiveDescription\", \"+{0} Shield Bash Radius\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletShieldBashAOE_+-NegativeDescription\", \"-{0} Shield Bash Radius\")",
+            "StatCategory": {
+                "RowName": "Item"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "GolemGauntletShieldBashAOE_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GolemGauntletShieldBashAOE_+-Title\", \"Shield Bash Radius\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "BaseGolemGauntletHammerFistDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletHammerFistDamage_+%-PositiveDescription\", \"+{0}% Hammer Fist Damage\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletHammerFistDamage_+%-NegativeDescription\", \"-{0}% Hammer Fist Damage\")",
+            "StatCategory": {
+                "RowName": "Item"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "GolemGauntletHammerFistDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GolemGauntletHammerFistDamage_+%-Title\", \"Hammer Fist Melee Damage\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "BaseGolemGauntletHammerFistChargeMultiplier_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletHammerFistChargeMultiplier_+%-PositiveDescription\", \"+{0}% Charged Hammer Fist Damage\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGolemGauntletHammerFistChargeMultiplier_+%-NegativeDescription\", \"-{0}% Charged Hammer Fist Damage\")",
+            "StatCategory": {
+                "RowName": "Item"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "GolemGauntletHammerFistChargeMultiplier_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GolemGauntletHammerFistChargeMultiplier_+%-Title\", \"Charged Hammer Fist Damage\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "BaseProjectileRicochetCount_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileRicochetCount_+-PositiveDescription\", \"+{0} Projectile Ricochets\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileRicochetCount_+-NegativeDescription\", \"-{0} Projectile Ricochets\")",
+            "StatCategory": {
+                "RowName": "Item"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "ProjectileRicochetCount_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ProjectileRicochetCount_+-Title\", \"Projectile Ricochet Count\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "ScorpionRifleEnableMultishot_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ScorpionRifleEnableMultishot_+-Title\", \"Multishot\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"ScorpionRifleEnableMultishot_+-PositiveDescription\", \"Fires Multiple Projectiles at Once\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseScorpionRifleMultishotProjectileCount_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseScorpionRifleMultishotProjectileCount_+-PositiveDescription\", \"+{0} Projectiles\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseScorpionRifleMultishotProjectileCount_+-NegativeDescription\", \"-{0} Projectiles\")",
+            "StatCategory": {
+                "RowName": "Item"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "ScorpionRifleMultishotProjectileCount_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ScorpionRifleMultishotProjectileCount_+-Title\", \"Projectile Count\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "ShouldForceAimAssist_?",
+            "bIsReplicated": true,
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseHomingMagnitude_+%",
+            "bIsReplicated": true,
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "GunAmmoTargetedPlayersHealAmount_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GunAmmoTargetedPlayersHealAmount_+-Title\", \"Target Player Heal Amount\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseGunAmmoTargetedPlayersHealAmount_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGunAmmoTargetedPlayersHealAmount_+-PositiveDescription\", \"+{0} Projectile Payload Heal\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGunAmmoTargetedPlayersHealAmount_+-NegativeDescription\", \"-{0} Projectile Payload Heal\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "TamedCreaturePhysicalResistance_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TamedCreaturePhysicalResistance_%-Title\", \"Tamed Creature Physical Resistance\")",
+            "PositiveDescription": "INVTEXT(\"+{0}%\")",
+            "NegativeDescription": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Mounts"
+            }
+        },
+        {
+            "Name": "BaseTamedCreaturePhysicalResistance_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTamedCreaturePhysicalResistance_%-PositiveDescription\", \"+{0}% Tamed Creature Physical Resistance\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTamedCreaturePhysicalResistance_%-NegativeDescription\", \"-{0}% Tamed Creature Physical Resistance\")",
+            "StatCategory": {
+                "RowName": "Mounts"
+            }
+        },
+        {
+            "Name": "BaseSummonedWolfLifetime_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSummonedWolfLifetime_+-PositiveDescription\", \"+{0}s Summoned Wolf Lifetime\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSummonedWolfLifetime_+-NegativeDescription\", \"-{0}s Summoned Wolf Lifetime\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "SummonedWolfLifetime_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SummonedWolfLifetime_+-Title\", \"Summoned Wolf Lifetime\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SummonedWolfLifetime_+-PositiveTitleFormat\", \"{0}s\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SummonedWolfLifetime_+-NegativeTitleFormat\", \"-{0}s\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "ProjectilePayloadDamage_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ProjectilePayloadDamage_+-Title\", \"Projectile Payload Damage\")",
+            "PositiveDescription": "INVTEXT(\"+{0}\")",
+            "NegativeDescription": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseProjectilePayloadDamage_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectilePayloadDamage_+-PositiveDescription\", \"+{0} Projectile Payload Damage\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectilePayloadDamage_+-NegativeDescription\", \"-{0} Projectile Payload Damage\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseProjectilePayloadDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectilePayloadDamage_+%-PositiveDescription\", \"+{0}% Projectile Payload Damage\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectilePayloadDamage_+%-NegativeDescription\", \"-{0}% Projectile Payload Damage\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "ProjectileMaxBounces_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ProjectileMaxBounces_+-Title\", \"Projectile Max Bounces\")",
+            "PositiveDescription": "INVTEXT(\"+{0}\")",
+            "NegativeDescription": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Addition",
+                    "Value": 1
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseProjectileMaxBounces_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileMaxBounces_+-PositiveDescription\", \"+{0} Projectile Max Bounces\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileMaxBounces_+-NegativeDescription\", \"-{0} Projectile Max Bounces\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Addition",
+                    "Value": 1
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "GunAmmoMultiProjectiles_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GunAmmoMultiProjectiles_+-Title\", \"Additional Projectiles\")",
+            "PositiveDescription": "INVTEXT(\"+{0}\")",
+            "NegativeDescription": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseGunAmmoMultiProjectiles_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGunAmmoMultiProjectiles_+-PositiveDescription\", \"+{0} Additional Projectiles\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGunAmmoMultiProjectiles_+-NegativeDescription\", \"-{0} Additional Projectiles\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "CanHarvestSeeds_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CanHarvestSeeds_?-Title\", \"Gain Seeds when Harvesting\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"CanHarvestSeeds_?-PositiveDescription\", \"Gain Seeds when Harvesting\")",
+            "bIsReplicated": true
+        },
+        {
+            "Name": "PlantedCropSeedYield_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PlantedCropSeedYield_+%-Title\", \"Planted Crop Seed Yield\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Farming"
+            }
+        },
+        {
+            "Name": "BasePlantedCropSeedYield_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantedCropSeedYield_+%-PositiveDescription\", \"+{0}% Yield of Seeds From Planted Crops\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantedCropSeedYield_+%-NegativeDescription\", \"-{0}% Yield of Seeds From Planted Crops\")",
+            "StatCategory": {
+                "RowName": "Farming"
+            }
+        },
+        {
+            "Name": "PlantedSeedProducesMoreSeedsAlt_+"
+        },
+        {
+            "Name": "IsKillcamDisabled_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IsKillcamDisabled_?-Title\", \"Killcam Disabled\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsKillcamDisabled_?-PositiveDescription\", \"Killcam Disabled\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "IceSledgeHammerRepair_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerRepair_?-Title\", \"Enables Repair Hold Action\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IceSledgeHammerRepair_?-PositiveDescription\", \"Enables Repair Hold Action\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "FlamethrowerFuelUse_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FlamethrowerFuelUse_+-Title\", \"Flamethrower Fuel Usage\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseFlamethrowerFuelUse_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFlamethrowerFuelUse_+-PositiveDescription\", \"+{0} Biofuel consumed per second\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFlamethrowerFuelUse_+-NegativeDescription\", \"-{0} Biofuel consumed per second\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Multiply",
+                    "Value": 10
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "AlternateFlameThrowerFuelUse_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AlternateFlameThrowerFuelUse_+-Title\", \"Flamethrower Alt Fire Fuel Usage\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseAlternateFlameThrowerFuelUse_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAlternateFlameThrowerFuelUse_+-PositiveDescription\", \"+{0} Biofuel used when alt firing\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAlternateFlameThrowerFuelUse_+-NegativeDescription\", \"-{0} Biofuel used when alt firing\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "WorldSnowSlugSpawn_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldSnowSlugSpawn_?-Title\", \"Glaci & Their Dens Appear in Arctic Regions\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "MovementSpeedWhileReloading_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"MovementSpeedWhileReloading_+%-Title\", \"Movement Speed While Reloading\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseMovementSpeedWhileReloading_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMovementSpeedWhileReloading_+%-PositiveDescription\", \"+{0}% Movement Speed While Reloading\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMovementSpeedWhileReloading_+%-NegativeDescription\", \"-{0}% Movement Speed While Reloading\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "WorldApeNorex_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldApeNorex_?-Title\", \"Most Garganutans Become Neutral To Players\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldApeBlackmarket_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldApeBlackmarket_?-Title\", \"Stronger Garganutans, Better Rewards From Lairs\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldApeApeEscape_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldApeApeEscape_?-Title\", \"Players Deal Increased Damage to Garganutan Prime\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldApeExpurgation_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldApeExpurgation_?-Title\", \"Reduced Garganutan Spawns In the Final Hunt\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldApeStrangeTroop_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldApeStrangeTroop_?-Title\", \"Reduced Gas Damage From Prime Garganutan During In the Final Hunt\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "ShouldPreventDeath_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ShouldPreventDeath_?-Title\", \"Should Prevent Death\")",
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "ContainsVesper_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ContainsVesper_?-Title\", \"Object Contains a Vesper\")",
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "WorldApeInquisitiveDesire_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldApeInquisitiveDesire_?-Title\", \"Garganutan and their Lairs Will Appear In All Areas\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldPolarBearInGrasslandsSpawn_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldPolarBearInGrasslandsSpawn_?-Title\", \"Polar Bears Appear in Grassland Regions\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldIceMammothSpawnInPairs_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldIceMammothSpawnInPairs_?-Title\", \"Rimetusks Spawn in Pairs\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "SnowSlugExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SnowSlugExtraDamage_+%-Title\", \"Damage vs Glaci\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseSnowSlugExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSnowSlugExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Glaci\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSnowSlugExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Glaci\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "SnowSlugExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SnowSlugExtraDamageResistance_+%-Title\", \"Resistance vs Glaci\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseSnowSlugExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSnowSlugExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Glaci\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSnowSlugExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Glaci\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseIceMammothBossExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothBossExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Rimetusk Matriarchs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothBossExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Rimetusk Matriarchs\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "IceMammothExtraBossDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IceMammothExtraBossDamageResistance_+%-Title\", \"Resistance vs Rimetusk Matriarchs\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseIceMammothBossExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothBossExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Rimetusk Matriarchs\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseIceMammothBossExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Rimetusk Matriarchs \")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "IceMammothExtraBossDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IceMammothExtraBossDamage_+%-Title\", \"Damage vs Rimetusk Matriarchs\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "WorldJuvenileApeArcticSpawn_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileApeArcticSpawn_?-Title\", \"Garganutan and their Lairs Appear in Arctic Areas\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "EnableNonMiningPureDamage_?",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "World"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "WorldJuvenileApeForestPoisonSpawn_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldJuvenileApeForestPoisonSpawn_?-Title\", \"Garganutan and their Poisonous Lairs With Crystallised Miasma Appear in Forest Areas\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "WorldLandsharksAppearInCaves_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldLandsharksAppearInCaves_?-Title\", \"Landsharks will Appear in Large Caves\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "bIsWorldStat": true,
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "IsNPCHighlightedBlue_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IsNPCHighlightedBlue_?-Title\", \"Whether or not NPC is currently highlighted\")",
+            "StatCategory": {
+                "RowName": "AI"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseSwampAnimalThreatModifier_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampAnimalThreatModifier_+%-PositiveDescription\", \"+{0}% Perceived Threat in Swamp\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampAnimalThreatModifier_+%-NegativeDescription\", \"-{0}% Perceived Threat in Swamp\")",
+            "StatCategory": {
+                "RowName": "Stealth"
+            }
+        },
+        {
+            "Name": "BaseVolcanicAnimalThreatModifier_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicAnimalThreatModifier_+%-PositiveDescription\", \"+{0}% Perceived Threat in Volcanic\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicAnimalThreatModifier_+%-NegativeDescription\", \"-{0}% Perceived Threat in Volcanic\")",
+            "StatCategory": {
+                "RowName": "Stealth"
+            }
+        },
+        {
+            "Name": "BaseConiferAnimalThreatModifier_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferAnimalThreatModifier_+%-PositiveDescription\", \"+{0}% Perceived Threat in the Forest\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferAnimalThreatModifier_+%-NegativeDescription\", \"-{0}% Perceived Threat in the Forest\")",
+            "StatCategory": {
+                "RowName": "Stealth"
+            }
+        },
+        {
+            "Name": "BaseSwampFoodConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampFoodConsumption_+%-PositiveDescription\", \"+{0}% Food Consumption while in the Swamp\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampFoodConsumption_+%-NegativeDescription\", \"-{0}% Food Consumption while in the Swamp\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseVolcanicFoodConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicFoodConsumption_+%-PositiveDescription\", \"+{0}% Food Consumption while in the Volcanic\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicFoodConsumption_+%-NegativeDescription\", \"-{0}% Food Consumption while in the Volcanic\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseConiferFoodConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferFoodConsumption_+%-PositiveDescription\", \"+{0}% Food Consumption while in the Forest\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferFoodConsumption_+%-NegativeDescription\", \"-{0}% Food Consumption while in the Forest\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseDesertFoodConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertFoodConsumption_+%-PositiveDescription\", \"+{0}% Food Consumption while in the Desert\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertFoodConsumption_+%-NegativeDescription\", \"-{0}% Food Consumption while in the Desert\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseSwampWaterConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampWaterConsumption_+%-PositiveDescription\", \"+{0}% Water Consumed in the Swamp\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampWaterConsumption_+%-NegativeDescription\", \"-{0}% Water Consumed in the Swamp\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseVolcanicWaterConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicWaterConsumption_+%-PositiveDescription\", \"+{0}% Water Consumed in the Volcanic\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicWaterConsumption_+%-NegativeDescription\", \"-{0}% Water Consumed in the Volcanic\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseArcticWaterConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticWaterConsumption_+%-PositiveDescription\", \"+{0}% Water Consumed in the Arctic\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticWaterConsumption_+%-NegativeDescription\", \"-{0}% Water Consumed in the Arctic\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseSwampOxygenConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampOxygenConsumption_+%-PositiveDescription\", \"+{0}% Oxygen Consumption in the Swamp\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampOxygenConsumption_+%-NegativeDescription\", \"-{0}% Oxygen Consumption  in the Swamp\")",
+            "StatCategory": {
+                "RowName": "Upkeep"
+            }
+        },
+        {
+            "Name": "BaseVolcanicOxygenConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicOxygenConsumption_+%-PositiveDescription\", \"+{0}% Oxygen Consumption in Volcanic\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicOxygenConsumption_+%-NegativeDescription\", \"-{0}% Oxygen Consumption in Volcanic\")",
+            "StatCategory": {
+                "RowName": "Upkeep"
+            }
+        },
+        {
+            "Name": "BaseArcticOxygenConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticOxygenConsumption_+%-PositiveDescription\", \"+{0}% Oxygen Consumption in the Arctic\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseArcticOxygenConsumption_+%-NegativeDescription\", \"-{0}% Oxygen Consumption in the Arctic\")",
+            "StatCategory": {
+                "RowName": "Upkeep"
+            }
+        },
+        {
+            "Name": "BaseConiferOxygenConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferOxygenConsumption_+%-PositiveDescription\", \"+{0}% Oxygen Consumption while in the Forest\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseConiferOxygenConsumption_+%-NegativeDescription\", \"-{0}% Oxygen Consumption while in the Forest\")",
+            "StatCategory": {
+                "RowName": "Upkeep"
+            }
+        },
+        {
+            "Name": "BaseDesertOxygenConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertOxygenConsumption_+%-PositiveDescription\", \"+{0}% Oxygen Consumption\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDesertOxygenConsumption_+%-NegativeDescription\", \"-{0}% Oxygen Consumption\")",
+            "StatCategory": {
+                "RowName": "Upkeep"
+            }
+        },
+        {
+            "Name": "BaseSwampParasitesResistance_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampParasitesResistance_%-PositiveDescription\", \"+{0}% chance to Resist Swamp Parasites\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampParasitesResistance_%-NegativeDescription\", \"-{0}% chance to Resist Swamp Parasites\")",
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "SwampParasitesResistance_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SwampParasitesResistance_%-Title\", \"Chance to Resist Swamp Parasites\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseSwampMovementSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampMovementSpeed_+%-PositiveDescription\", \"+{0}% Movement Speed in the Swamp\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSwampMovementSpeed_+%-NegativeDescription\", \"-{0}% Movement Speed in the Swamp\")",
+            "StatCategory": {
+                "RowName": "Movement"
+            }
+        },
+        {
+            "Name": "BaseVolcanicMovementSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicMovementSpeed_+%-PositiveDescription\", \"+{0}% Movement Speed in the Volcanic\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseVolcanicMovementSpeed_+%-NegativeDescription\", \"-{0}% Movement Speed in the Volcanic\")",
+            "StatCategory": {
+                "RowName": "Movement"
+            }
+        },
+        {
+            "Name": "BaseCraftingCost_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCraftingCost_+%-PositiveDescription\", \"+{0}% Crafting Cost\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCraftingCost_+%-NegativeDescription\", \"-{0}% Crafting Cost\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Crafting"
+            }
+        },
+        {
+            "Name": "FirearmScopeType_Enum",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "RemoveProjectileTypeOnFire_?",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "IgnoresRicochet_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"IgnoresRicochet_?-Title\", \"Projectile Ignores Ricochet Effect from Armor\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IgnoresRicochet_?-PositiveDescription\", \"Projectile Ignores Ricochet Effect from Armor\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_DMG"
+            }
+        },
+        {
+            "Name": "BaseEnduranceChance_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseEnduranceChance_%-PositiveDescription\", \"{0}% Chance on Attack to Add a Endurance Modifier to the Player\")",
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "EnduranceChance_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"EnduranceChance_%-Title\", \"Endurance Chance on Attack\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "BaseChanceToDealDoubleDamage_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToDealDoubleDamage_%-PositiveDescription\", \"{0}% Chance to Deal Double Damage\")",
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "ChanceToDealDoubleDamage_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ChanceToDealDoubleDamage_%-Title\", \"Chance to Deal Double Damage\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Generic_Damage"
+            }
+        },
+        {
+            "Name": "BaseFirearmLoudness_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFirearmLoudness_+-PositiveDescription\", \"+{0} Firearm Loudness\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFirearmLoudness_+-NegativeDescription\", \"-{0}% Firearm Loudness\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseFirearmLoudness_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFirearmLoudness_+%-PositiveDescription\", \"+{0}% Firearm Loudness\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFirearmLoudness_+%-NegativeDescription\", \"-{0}% Firearm Loudness\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "FirearmLoudness_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FirearmLoudness_+-Title\", \"Firearm Loudness\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "IsAudioSilenced_?",
+            "bIsReplicated": true,
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseBiofuelConsumedOnUse_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBiofuelConsumedOnUse_+-PositiveDescription\", \"+{0} Biofuel consumed per use\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBiofuelConsumedOnUse_+-NegativeDescription\", \"-{0} Biofuel consumed per use\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseBiofuelConsumedOnUse_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBiofuelConsumedOnUse_+%-PositiveDescription\", \"+{0}% Biofuel consumed per use\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBiofuelConsumedOnUse_+%-NegativeDescription\", \"-{0}% Biofuel consumed per use\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BiofuelConsumedOnUse_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BiofuelConsumedOnUse_+-Title\", \"Biofuel Consumed Per Use\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseMeleeDamageAgainstDeployables_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMeleeDamageAgainstDeployables_+%-PositiveDescription\", \"+{0}% Melee Damage versus Deployables\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMeleeDamageAgainstDeployables_+%-NegativeDescription\", \"-{0}% Melee Damage versus Deployables\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseProjectileDamageAgainstDeployables_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileDamageAgainstDeployables_+%-PositiveDescription\", \"+{0}% Projectile Damage versus Deployables\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileDamageAgainstDeployables_+%-NegativeDescription\", \"-{0}% Projectile Damage versus Deployables\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "InfusionIron_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"InfusionIron_?-Title\", \"Infused with Iron\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"InfusionIron_?-PositiveDescription\", \"Infused with Iron\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "InfusionCoal_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"InfusionCoal_?-Title\", \"Infused with Coal\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"InfusionCoal_?-PositiveDescription\", \"Infused with Coal\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseAnimalHighlightDistance_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAnimalHighlightDistance_+-PositiveDescription\", \"+{0}m Animal Highlight Distance\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAnimalHighlightDistance_+-NegativeDescription\", \"-{0}m Animal Highlight Distance\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Hunting"
+            }
+        },
+        {
+            "Name": "AnimalHighlightDistance_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AnimalHighlightDistance_+-Title\", \"Animal Highlight Distance\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"AnimalHighlightDistance_+-PositiveTitleFormat\", \"{0}m\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"AnimalHighlightDistance_+-NegativeTitleFormat\", \"{0}m\")",
+            "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Hunting"
+            }
         }
     ]
 }

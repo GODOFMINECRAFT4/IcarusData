@@ -843,7 +843,8 @@
             "Stats": {
                 "(Value=\"BaseProjectileDamage_+%\")": 20,
                 "(Value=\"BaseCriticalDamage_+%\")": 25,
-                "(Value=\"BaseHardenedPointPenetration_%\")": 35
+                "(Value=\"BaseHardenedPointPenetration_%\")": 35,
+                "(Value=\"BaseRateOfFirePerMinute_+%\")": -8
             }
         },
         {
@@ -854,7 +855,8 @@
             "Stats": {
                 "(Value=\"BaseProjectileDamage_+%\")": 40,
                 "(Value=\"BaseCriticalDamage_+%\")": 40,
-                "(Value=\"BaseHardenedPointPenetration_%\")": 60
+                "(Value=\"BaseHardenedPointPenetration_%\")": 60,
+                "(Value=\"BaseRateOfFirePerMinute_+%\")": -15
             }
         },
         {
@@ -1111,7 +1113,7 @@
         {
             "Name": "Scorpion_Tail_Lure",
             "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Tail_Lure-DisplayName\", \"Scorpion Tail Lure\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Fishing/ITEM_Scorpian_Lure.ITEM_Scorpian_Lure",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Fishing/T_ITEM_Scorpion_Lure.T_ITEM_Scorpion_Lure",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
             "Stats": {
                 "(Value=\"BaseCaughtFishLength_+%\")": 35,
@@ -1241,6 +1243,196 @@
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
                 "(Value=\"BaseSpoilTime_+%\")": 100
+            }
+        },
+        {
+            "Name": "BlackWolf_Handle_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Handle_A-DisplayName\", \"Lightweight Grip\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_HB.T_BW_HB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Handle_A-Description\", \"Run Faster and Resist Physical Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 10,
+                "(Value=\"BasePhysicalDamageResistance_+%\")": 15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Handle_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Handle_B-DisplayName\", \"Tactical Grip\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_HC.T_BW_HC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Handle_B-Description\", \"Less Threat and Increased Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAnimalThreatModifier_+%\")": -20,
+                "(Value=\"BaseStealthDamage_+%\")": 30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Handle_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Handle_C-DisplayName\", \"Reinforced Grip\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_HD.T_BW_HD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Handle_C-Description\", \"Increase Projectile Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Chamber_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Chamber_A-DisplayName\", \"High-impact Chamber\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_CB.T_BW_CB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Chamber_A-Description\", \"Fewer Rounds but Greatly Increased Damage and Chance to Slow\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAmmoCapacity_+\")": -3,
+                "(Value=\"BaseAttacksCauseSlow_%\")": 75,
+                "(Value=\"BaseProjectileDamage_+%\")": 50,
+                "(Value=\"BaseCriticalDamage_+%\")": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Chamber_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Chamber_B-DisplayName\", \"Accelerated Chamber\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_CC.T_BW_CC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Chamber_B-Description\", \"Fewer Rounds but Increased Fire Rate, Damage and Chance to Reduce Physical Resistance\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAmmoCapacity_+\")": -2,
+                "(Value=\"BaseRateOfFirePerMinute_+%\")": 20,
+                "(Value=\"BaseAttacksCauseVulnerable_%\")": 25,
+                "(Value=\"BaseProjectileDamage_+%\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Chamber_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Chamber_C-DisplayName\", \"Combustive chamber\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_CD.T_BW_CD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Chamber_C-Description\", \"Increased Fire Rate and a Chance to Cause Burn\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseRateOfFirePerMinute_+%\")": 33,
+                "(Value=\"BaseAttacksCauseBurn_%\")": 10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Trigger_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Trigger_A-DisplayName\", \"Amplifying Trigger\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_TB.T_BW_TB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Trigger_A-Description\", \"Increases all Fire, Electric, Cold and Poison Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseElementalDamage_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Trigger_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Trigger_B-DisplayName\", \"Impact Trigger\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_TC.T_BW_TC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Trigger_B-Description\", \"Buff yourself with Rage on Hit. A Stacking Physical Damage Buff. \")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseRageChance_%\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Trigger_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Trigger_C-DisplayName\", \"Reflex Trigger\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_TD.T_BW_TD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Trigger_C-Description\", \"Buff yourself with Adrenaline on Hit. A Movement Speed and Stamina Buff. \")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAdrenalineChance_%\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Barrel_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Barrel_A-DisplayName\", \"Optimized Barrel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_BB.T_BW_BB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Barrel_A-Description\", \"Chance to Not Consume Ammo\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseChanceToNotConsumeAmmo_%\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Barrel_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Barrel_B-DisplayName\", \"Serrated Barrel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_BC.T_BW_BC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Barrel_B-Description\", \"Cause Bleed and Wound on Hit\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseBleed_%\")": 33,
+                "(Value=\"BaseAttacksCauseWound_%\")": 33
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "BlackWolf_Barrel_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Barrel_C-DisplayName\", \"Binding Barrel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_BW_BD.T_BW_BD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"BlackWolf_Barrel_C-Description\", \"Cause Immobilise on Hit\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseImmobilise_%\")": 15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
             }
         },
         {
@@ -1469,7 +1661,8 @@
             "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Plough_Steel-DisplayName\", \"Dug with a Steel Plow\")",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
-                "(Value=\"BaseCreatesCropPlotTier_+\")": 2
+                "(Value=\"BaseCreatesCropPlotTier_+\")": 2,
+                "(Value=\"CanHarvestSeeds_?\")": 1
             }
         },
         {
@@ -1579,6 +1772,1804 @@
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
                 "(Value=\"FertilizedEgg_?\")": 1
+            }
+        },
+        {
+            "Name": "LW_Placeholder",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Placeholder-DisplayName\", \"LW Placeholder\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned",
+            "Description": "INVTEXT(\"[DNT] LW Placeholder\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 20,
+                "(Value=\"BasePhysicalDamageResistance_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Stock_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Stock_A-DisplayName\", \"Stacking Stock\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_SB.T_SR_SB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Stock_A-Description\", \"Chance to Inflict a Vulnerable Debuff, Increasing Damage Taken on Targets\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseVulnerable_%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Stock_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Stock_B-DisplayName\", \"Lucky Stock\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_SC.T_SR_SC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Stock_B-Description\", \"Chance to Not Consume Ammo\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseChanceToNotConsumeAmmo_%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Stock_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Stock_C-DisplayName\", \"Precision Stock\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_SD.T_SR_SD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Stock_C-Description\", \"Hit Weak and Strong Points Harder\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseCriticalDamage_+%\")": 25,
+                "(Value=\"BaseHardenedPointDamage_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Chamber_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Chamber_A-DisplayName\", \"Miasma Infuser\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_CB.T_SR_CB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Chamber_A-Description\", \"Adds Poison Damage and a Chance to Inflict Miasma\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BasePoisonDamage_+\")": 50,
+                "(Value=\"BaseAttacksCauseMiasma_%\")": 5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Chamber_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Chamber_B-DisplayName\", \"Fire Infuser\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_CC.T_SR_CC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Chamber_B-Description\", \"Adds Fire Damage and a Chance to Inflict Burn\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseFireDamage_+\")": 50,
+                "(Value=\"BaseAttacksCauseBurn_%\")": 5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Chamber_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Chamber_C-DisplayName\", \"Frost Infuser\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_CD.T_SR_CD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Chamber_C-Description\", \"Adds Frost Damage and a Chance to Inflict Freeze\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseFrostDamage_+\")": 50,
+                "(Value=\"BaseAttacksCauseFreeze_%\")": 5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Mag_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Mag_A-DisplayName\", \"Heavy Magazine\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_MB.T_SR_MB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Mag_A-Description\", \"Lower Capacity but Hits Harder\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAmmoCapacity_+\")": -3,
+                "(Value=\"BaseProjectileDamage_+%\")": 25,
+                "(Value=\"BaseCriticalDamage_+%\")": 50,
+                "(Value=\"BaseHardenedPointDamage_+%\")": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Mag_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Mag_B-DisplayName\", \"Agile Magazine\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_MC.T_SR_MC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Mag_B-Description\", \"Increase to Reload Speed and Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseReloadSpeed_+%\")": 25,
+                "(Value=\"BaseProjectileDamage_+%\")": 10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Mag_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Mag_C-DisplayName\", \"Loaded Magazine\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_MD.T_SR_MD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Mag_C-Description\", \"More Capacity but Less Reload Speed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAmmoCapacity_+\")": 6,
+                "(Value=\"BaseReloadSpeed_+%\")": -25,
+                "(Value=\"BaseRateOfFirePerMinute_+%\")": 10,
+                "(Value=\"BaseProjectileDamage_+%\")": -10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Barrel_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Barrel_A-DisplayName\", \"Focussing Barrel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_BB.T_SR_BB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Barrel_A-Description\", \"Shots have a Chance to Mark the Target, Increasing Damage from the next hit\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseMarkedTarget_%\")": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Barrel_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Barrel_B-DisplayName\", \"Bounce Barrel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_BC.T_SR_BC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Barrel_B-Description\", \"Bullets Ricochet off Surfaces and Targets\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileRicochetCount_+\")": 3
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Scorpion_Barrel_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Barrel_C-DisplayName\", \"Homing Barrel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SR_BD.T_SR_BD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Scorpion_Barrel_C-Description\", \"Smart Targeting Allows Projectiles to Home in on Targets\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseBulletHomingBehaviourEnabled_?\")": 1,
+                "(Value=\"ShouldForceAimAssist_?\")": 1,
+                "(Value=\"BaseHomingMagnitude_+%\")": 25000
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Head_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Head_A-DisplayName\", \"Shattering Face\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_H2.T_IM_H2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Head_A-Description\", \"Gain Frozen Ore And Break Rock Nodes Easier\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseShatteringDamage_+\")": 200,
+                "(Value=\"BaseFrozenOrePerMinedResource_%\")": 10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Head_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Head_B-DisplayName\", \"Heavy Face\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_H3.T_IM_H3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Head_B-Description\", \"Extra Damage and Crit Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseCriticalDamage_+%\")": 35,
+                "(Value=\"BaseAttackSpeed_+%\")": -5,
+                "(Value=\"BaseMeleeDamage_+%\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Head_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Head_C-DisplayName\", \"Blunt Face\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_H4.T_IM_H4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Head_C-Description\", \"Chance to Immobilize Target\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseImmobilise_%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Back_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Back_A-DisplayName\", \"Fracturing Head\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_B2.T_IM_B2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Back_A-Description\", \"Can Mine Basic Ore\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"CanMineVoxels_?\")": 1,
+                "(Value=\"BaseMiningRewards_%\")": 130,
+                "(Value=\"BaseMiningRadius_+\")": 80
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Back_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Back_B-DisplayName\", \"Sweeping Head\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_B3.T_IM_B3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Back_B-Description\", \"Sweep Attack Hits Multiple Targets\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"IceSledgeHammerStd_?\")": -1,
+                "(Value=\"IceSledgeHammerSweep_?\")": 1,
+                "(Value=\"BaseAttackSpeed_+%\")": -5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Back_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Back_C-DisplayName\", \"Shattering Head\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_B4.T_IM_B4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Back_C-Description\", \"Extra Damage, Increased Against Armor and Hardened Points\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseMeleeDamage_+%\")": 15,
+                "(Value=\"BaseHardenedPointDamage_+%\")": 15,
+                "(Value=\"BaseArmorDamageModifier_+%\")": 20,
+                "(Value=\"BaseHardenedPointPenetration_%\")": 15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Weight_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Weight_A-DisplayName\", \"Glacial Base\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_W2.T_IM_W2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Weight_A-Description\", \"Emits an Aura which Slows Nearby Enemies\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_3.Icon_Alteration_3",
+            "Stats": {
+                "(Value=\"GrantedAuraFrostCloud_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Weight_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Weight_B-DisplayName\", \"Balanced Base\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_W3.T_IM_W3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Weight_B-Description\", \"Reduce Stamina Cost and Increase Shattering Yield\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_3.Icon_Alteration_3",
+            "Stats": {
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -15,
+                "(Value=\"BaseShatteringRewards_%\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Weight_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Weight_C-DisplayName\", \"Frosty Base\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_W4.T_IM_W4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Weight_C-Description\", \"Freeze Target with Persistent Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_3.Icon_Alteration_3",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseFreeze_%\")": 35
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Handle_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Handle_A-DisplayName\", \"Sturdy Frame\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_S2.T_IM_S2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Handle_A-Description\", \"Alternate Fire Can Now Block\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_4.Icon_Alteration_4",
+            "Stats": {
+                "(Value=\"IceSledgeHammerBlock_?\")": 1,
+                "(Value=\"BaseShieldBlockRadiusDegrees_+\")": 125,
+                "(Value=\"BaseShieldBlock_%\")": 75
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Handle_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Handle_B-DisplayName\", \"Impact Frame\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_S3.T_IM_S3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Handle_B-Description\", \"Alternate Fire is Now an Area of Effect Ground Slam\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_4.Icon_Alteration_4",
+            "Stats": {
+                "(Value=\"IceSledgeHammerSlam_?\")": 1,
+                "(Value=\"BaseMeleeDamage_+%\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Mammoth_Sledgehammer_Handle_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Handle_C-DisplayName\", \"Light Frame\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_IM_S4.T_IM_S4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Mammoth_Sledgehammer_Handle_C-Description\", \"Light Frame allows faster attacks and movement\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_4.Icon_Alteration_4",
+            "Stats": {
+                "(Value=\"BaseAttackSpeed_+%\")": 15,
+                "(Value=\"BaseMovementSpeed_+%\")": 5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Stock_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Stock_A-DisplayName\", \"Farsight Stock\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_SB.T_SW_SB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Stock_A-Description\", \"Increased Zoom and Accuracy when Aiming\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAimDownSightsZoom_+%\")": 20,
+                "(Value=\"BaseAimDownSightsSpeed_+%\")": -10,
+                "(Value=\"BaseProjectileAimingSpreadHorizontal_+\")": -15,
+                "(Value=\"BaseProjectileAimingSpreadVertical_+\")": -15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Stock_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Stock_B-DisplayName\", \"Lightweight Stock\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_SC.T_SW_SC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Stock_B-Description\", \"Reduced Movement Penalties\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 5,
+                "(Value=\"BaseMovementSpeedWhileReloading_+%\")": 30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Stock_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Stock_C-DisplayName\", \"Signal Stock\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_SD.T_SW_SD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Stock_C-Description\", \"Shows Bosses on Map and Highlights Shot Javelins\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"MapCanSeeWorldBosses_?\")": 1,
+                "(Value=\"HighlightShotProjectile_?\")": 1,
+                "(Value=\"BaseChanceProjectilesBreak_%\")": -5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Barrel_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Barrel_A-DisplayName\", \"Rending Rail \")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_BB.T_SW_BB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Barrel_A-Description\", \"Increased Damage and Reload Speed, and Causes Bleed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseBleed_%\")": 100,
+                "(Value=\"BaseProjectileDamage_+%\")": 25,
+                "(Value=\"BaseReloadSpeed_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Barrel_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Barrel_B-DisplayName\", \"Corrosive Rail\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_BC.T_SW_BC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Barrel_B-Description\", \"Infuses Projectiles to Poison Damage and Chance to Inflict a Poison Debuff\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BasePoisonDamage_+\")": 100,
+                "(Value=\"BaseAttacksCausePoison_%\")": 100,
+                "(Value=\"BasePoisonDamage_+%\")": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Barrel_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Barrel_C-DisplayName\", \"Miasmic Rail\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_BD.T_SW_BD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Barrel_C-Description\", \"Creates a Toxic Cloud at Hit Location, Weakening and Damaging Enemies over time.\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseChanceSandwormCrossbowSpawnsToxicGas_%\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Arm_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Arm_A-DisplayName\", \"Reinforced Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_AD.T_SW_AD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Arm_A-Description\", \"Increases Projectile Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Arm_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Arm_B-DisplayName\", \"Piercing Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_AB.T_SW_AB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Arm_B-Description\", \"Hardened Point Penetration and Extra Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseHardenedPointPenetration_%\")": 100,
+                "(Value=\"BaseHardenedPointDamage_+%\")": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Arm_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Arm_C-DisplayName\", \"Streamlined Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_AC.T_SW_AC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Arm_C-Description\", \"Increases Reload Speed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseReloadSpeed_+%\")": 33
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Launcher_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Launcher_A-DisplayName\", \"Impaling Launcher\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_LA.T_SW_LA",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Launcher_A-Description\", \"Pin Enemies to the Spot\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseImmobilise_%\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Launcher_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Launcher_B-DisplayName\", \"Precise Launcher\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_LC.T_SW_LC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Launcher_B-Description\", \"Critical Damage Boost\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseCriticalDamage_+%\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "SandwormCrossbow_Launcher_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Launcher_C-DisplayName\", \"Heavy Launcher\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SW_LD.T_SW_LD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"SandwormCrossbow_Launcher_C-Description\", \"Increase the Raw Damage of the Launcher\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 50,
+                "(Value=\"BaseProjectileSpeed_+%\")": 10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Chassis_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Chassis_A-DisplayName\", \"Safety Frame\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_CB.T_LH_CB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Chassis_A-Description\", \"Adds Fire Damage Resistance\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseFireDamageResistance_+%\")": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Chassis_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Chassis_B-DisplayName\", \"Lightweight Frame\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_CC.T_LH_CC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Chassis_B-Description\", \"Removes Safeguards for a Lighter Weapon\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseWeight_+\")": -5000,
+                "(Value=\"BaseMovementSpeed_+%\")": 5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Chassis_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Chassis_C-DisplayName\", \"Sturdy Frame\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_CD.T_LH_CD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Chassis_C-Description\", \"Sturdy Material that Reduces Degradation when Firing\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseItemWear_+%\")": -25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Fuel_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Fuel_A-DisplayName\", \"Searing Tank\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_FB.T_LH_FB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Fuel_A-Description\", \"Modified Biofuel Creates Searing Heat\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseFireDamage_+%\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Fuel_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Fuel_B-DisplayName\", \"Flaring Tank\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_FC.T_LH_FC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Fuel_B-Description\", \"Superheated Biofuel Causes Lingering Burn Effects\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseBurn_%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Fuel_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Fuel_C-DisplayName\", \"Efficient Tank\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_FD.T_LH_FD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Fuel_C-Description\", \"Consumes Biofuel in Parallel to Increase Efficiency\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseFlamethrowerFuelUse_+%\")": -25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Injector_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Injector_A-DisplayName\", \"Charged Injector\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_IB.T_LH_IB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Injector_A-Description\", \"Adds Alternate Fire to Shoot Fireballs.\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"CanUseAlternateFireFlamethrowerFireball_?\")": 1,
+                "(Value=\"BaseAlternateFlameThrowerFuelUse_+\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Injector_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Injector_B-DisplayName\", \"Persistent Injector\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_IC.T_LH_IC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Injector_B-Description\", \"A Compression Injector which Leaves Persistent Pools of Fire on the Ground\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseChanceFlamethrowerSpawnsLavaPuddle_%\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Injector_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Injector_C-DisplayName\", \"Burst Injector\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_ID.T_LH_ID",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Injector_C-Description\", \"Adds Alternate Fire which Triggers a Fire Burst Around the user\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"CanUseAlternateFireFlamethrowerBurst_?\")": 1,
+                "(Value=\"BaseAlternateFlameThrowerFuelUse_+\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Nozzle_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Nozzle_A-DisplayName\", \"Ignition Nozzle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_NB.T_LH_NB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Nozzle_A-Description\", \"A more Intense Flame that can Burn through Resistances\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCausePyrophobia_%\")": 10,
+                "(Value=\"BaseFlamethrowerRange_+%\")": -10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Nozzle_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Nozzle_B-DisplayName\", \"Splitting Nozzle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_NC.T_LH_NC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Nozzle_B-Description\", \"Shoots an additional stream of Flame\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"FlamethrowerHasSplitter_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LavaHunterFlamethrower_Nozzle_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Nozzle_C-DisplayName\", \"Lengthened Nozzle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_LH_ND.T_LH_ND",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LavaHunterFlamethrower_Nozzle_C-Description\", \"Streamlined Nozzle which Increases Range\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseFlamethrowerRange_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Enhancer_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Enhancer_A-DisplayName\", \"Fortified Injector\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_I2.T_AC_I2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Enhancer_A-Description\", \"Increased Physical Damage Resistance\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BasePhysicalDamageResistance_+%\")": 15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Enhancer_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Enhancer_B-DisplayName\", \"Resolute Injector\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_I3.T_AC_I3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Enhancer_B-Description\", \"Chance to Resist Wounds, Deep Wounds and Hemorrhage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseWoundResistance_%\")": 75,
+                "(Value=\"BaseDeepWoundResistance_%\")": 75,
+                "(Value=\"BaseHemorrhageResistance_%\")": 75,
+                "(Value=\"BaseBleedResistance_%\")": 75
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Enhancer_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Enhancer_C-DisplayName\", \"Crippling Injector\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_I4.T_AC_I4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Enhancer_C-Description\", \"Chance to Slow Target on Hit\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseSlow_%\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Plate_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Plate_A-DisplayName\", \"Balanced Plates\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_P2.T_AC_P2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Plate_A-Description\", \"Stamina Regeneration and Swing Cost Reduction\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseStaminaRegen_+%\")": 100,
+                "(Value=\"BaseStaminaConsumed_+%\")": -25,
+                "(Value=\"BaseMovementSpeed_+%\")": 5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Plate_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Plate_B-DisplayName\", \"Lightweight Plates\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_P3.T_AC_P3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Plate_B-Description\", \"A Lighter Head which reduces attack but drastically increases swing speed.\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttackSpeed_+%\")": 45,
+                "(Value=\"BaseMeleeDamage_+\")": -30,
+                "(Value=\"BaseItemWear_+%\")": -30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Plate_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Plate_C-DisplayName\", \"Weighted Plates\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_P4.T_AC_P4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Plate_C-Description\", \"A Heavier Head which Deals more Damage, but is slower to swing.\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttackSpeed_+%\")": -25,
+                "(Value=\"BaseMeleeDamage_+\")": 50,
+                "(Value=\"BaseAttacksCauseBluntTrauma_%\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Dampener_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Dampener_A-DisplayName\", \"Crushing Reinforcement\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_A2.T_AC_A2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Dampener_A-Description\", \"Attacks Cause Vulnerable and Bleed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseVulnerable_%\")": 100,
+                "(Value=\"BaseAttacksCauseBleed_%\")": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Dampener_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Dampener_B-DisplayName\", \"Restraining Reinforcement\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_A3.T_AC_A3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Dampener_B-Description\", \"Chance to Immobilize the Target\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseImmobilise_%\")": 30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Dampener_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Dampener_C-DisplayName\", \"Forceful Reinforcement\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_A4.T_AC_A4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Dampener_C-Description\", \"Raw Damage and Critical Hit Increase\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseCriticalDamage_+%\")": 50,
+                "(Value=\"BaseMeleeDamage_+%\")": 35
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Amp_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Amp_A-DisplayName\", \"Sustaining Core\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_M2.T_AC_M2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Amp_A-Description\", \"Increase Health Regen on Attacks\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseEnduranceChance_%\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Amp_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Amp_B-DisplayName\", \"Breaching Core\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_M3.T_AC_M3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Amp_B-Description\", \"Additional Damage to Armor\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseArmorDamageModifier_+%\")": 200
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_ApeClub_Amp_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Amp_C-DisplayName\", \"Tactical Core\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_AC_M4.T_AC_M4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_ApeClub_Amp_C-Description\", \"Chance to Deal Double Damage on Hit\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseChanceToDealDoubleDamage_%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Backpack_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Backpack_A-DisplayName\", \"Noxious Cephalon\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_B2.T_SL_B2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Backpack_A-Description\", \"Projectiles Leave Poisonous Trails\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"GunAmmoIsStickyTrails_?\")": 1,
+                "(Value=\"BaseProjectilePayloadDamage_+\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Backpack_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Backpack_B-DisplayName\", \"Rejuvenating Cephalon\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_B3.T_SL_B3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Backpack_B-Description\", \"Projectiles Heal And Leave Healing Areas\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"GunAmmoTargetedPlayersHeal_?\")": 1,
+                "(Value=\"BaseGunAmmoTargetedPlayersHealAmount_+\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Backpack_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Backpack_C-DisplayName\", \"Explosive Cephalon\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_B4.T_SL_B4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Backpack_C-Description\", \"Projectiles Explode On Impact\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"GunAmmoIsExplosive_?\")": 1,
+                "(Value=\"BaseProjectilePayloadDamage_+\")": 250
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Loader_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Loader_A-DisplayName\", \"Vicious Gills\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_L2.T_SL_L2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Loader_A-Description\", \"Sacrifice Firerate & Ammo for a Larger Splash Zone\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseSemiAutomaticRateOfFirePerMinute_+%\")": -30,
+                "(Value=\"BaseProjectileAOE_+%\")": 20,
+                "(Value=\"BaseFirearmFillablePerShot_+%\")": 30,
+                "(Value=\"BaseProjectilePayloadDamage_+%\")": 30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Loader_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Loader_B-DisplayName\", \"Efficient Gills\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_L3.T_SL_L3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Loader_B-Description\", \"Conserve Ammo while Sacrificing Speed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseSemiAutomaticRateOfFirePerMinute_+%\")": -5,
+                "(Value=\"BaseFirearmFillablePerShot_+%\")": -20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Loader_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Loader_C-DisplayName\", \"Accelerated Gills\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_L4.T_SL_L4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Loader_C-Description\", \"Fire Fast with Less Splash\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseSemiAutomaticRateOfFirePerMinute_+%\")": 35,
+                "(Value=\"BaseFirearmFillablePerShot_+%\")": -10,
+                "(Value=\"BaseProjectileAOE_+%\")": -30,
+                "(Value=\"BaseProjectilePayloadDamage_+%\")": -30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Guard_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Guard_A-DisplayName\", \"Light Mantle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_S2.T_SL_S2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Guard_A-Description\", \"Increases the Speed of the Projectile\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileSpeed_+%\")": 30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Guard_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Guard_B-DisplayName\", \"Persisting Mantle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_S3.T_SL_S3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Guard_B-Description\", \"Splash Effects And Debuffs Last Longer\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileSplashLifespan_+%\")": 35
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Guard_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Guard_C-DisplayName\", \"Expanding Mantle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_S4.T_SL_S4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Guard_C-Description\", \"Expands the Range of Splash Effects\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileAOE_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Muzzle_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Muzzle_A-DisplayName\", \"Savage Radula\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_M2.T_SL_M2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Muzzle_A-Description\", \"Increases initial impact Damage or Healing\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectilePayloadDamage_+%\")": 20,
+                "(Value=\"BaseGunAmmoTargetedPlayersHealAmount_+\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Muzzle_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Muzzle_B-DisplayName\", \"Swarming Radula\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_M3.T_SL_M3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Muzzle_B-Description\", \"Fire Multiple Projectiles\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAmmoSpreadX_+\")": 30,
+                "(Value=\"BaseAmmoSpreadY_+\")": 15,
+                "(Value=\"BaseProjectileAOE_+%\")": -40,
+                "(Value=\"BaseProjectilePayloadDamage_+%\")": -40,
+                "(Value=\"BaseGunAmmoMultiProjectiles_+\")": 4
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_Slug_Muzzle_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Muzzle_C-DisplayName\", \"Rubbery Radula\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_SL_M4.T_SL_M4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_Slug_Muzzle_C-Description\", \"Projectiles will now Bounce\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileBounciness_+\")": 50,
+                "(Value=\"BaseProjectileMaxBounces_+\")": 3
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "MissionModifiedEDS",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"MissionModifiedEDS-DisplayName\", \"Modified Formula\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Balanced.Icon_Balanced",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"MissionModifiedEDS-Description\", \"A modified version of the EDS Ammo.\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"IsInvolvedInQuest_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Fist_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Fist_A-DisplayName\", \"Breaking Fist\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_F2.T_RG_F2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Fist_A-Description\", \"Increased Mining Yield\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseMiningRewards_+%\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Fist_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Fist_B-DisplayName\", \"Wide Fist\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_F3.T_RG_F3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Fist_B-Description\", \"Increased Mining Radius\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseMiningRadius_+%\")": 15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Fist_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Fist_C-DisplayName\", \"Defender\\'s Fist\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_F4.T_RG_F4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Fist_C-Description\", \"Reduces Physical and Poison Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BasePoisonDamageResistance_+%\")": 50,
+                "(Value=\"BasePoisonModifierDuration_+%\")": -60,
+                "(Value=\"BasePhysicalDamageResistance_+%\")": 15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Bracket_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Bracket_A-DisplayName\", \"Injector Core\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_K2.T_RG_K2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Bracket_A-Description\", \"Increased Stamina Regeneration and Movement Speed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseStaminaRegen_+%\")": 50,
+                "(Value=\"BaseMovementSpeed_+%\")": 5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Bracket_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Bracket_B-DisplayName\", \"Broadened Core\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_K3.T_RG_K3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Bracket_B-Description\", \"Increased Mining Yield\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseMiningRewards_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Bracket_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Bracket_C-DisplayName\", \"Streamlined Core\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_K4.T_RG_K4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Bracket_C-Description\", \"Increases Attack Speed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttackSpeed_+%\")": 15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Battery_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Battery_A-DisplayName\", \"Smelting Gadget\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_B2.T_RG_B2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Battery_A-Description\", \"Chance to Automatically Smelt Mined Ore\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseMiningSmeltChance_%\")": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Battery_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Battery_B-DisplayName\", \"Lucky Gadget\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_B3.T_RG_B3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Battery_B-Description\", \"Chance to Fully Mine a Voxel\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseChanceToMineVoxelInstantly_+%\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Battery_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Battery_C-DisplayName\", \"Delving Gadget\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_B4.T_RG_B4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Battery_C-Description\", \"Immune to Cave Sickness\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BasePneumoniaResistance_%\")": 100
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Cuff_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Cuff_A-DisplayName\", \"Efficient Handle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_C2.T_RG_C2",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Cuff_A-Description\", \"Reduced Biofuel Usage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseFlamethrowerFuelUse_+%\")": -20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Cuff_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Cuff_B-DisplayName\", \"Light Handle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_C3.T_RG_C3",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Cuff_B-Description\", \"Significantly Reduced Stamina Cost\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseStaminaActionCost_+%\")": -70
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "LW_RG_Cuff_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Cuff_C-DisplayName\", \"Sturdy Handle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_RG_C4.T_RG_C4",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"LW_RG_Cuff_C-Description\", \"Reduced Item Wear\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseItemWear_+%\")": -50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Threshing_1",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Threshing_1-DisplayName\", \"Threshing\")",
+            "Icon": "/Game/Assets/2DArt/UI/Alterations/T_Alteration_Threshing.T_Alteration_Threshing",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"CanHarvestSeeds_?\")": 1
+            }
+        },
+        {
+            "Name": "Seed_Harvester",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Seed_Harvester-DisplayName\", \"Seed Harvester\")",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Seed_Harvester-Description\", \"Allows collection of seeds while harvesting at the penalty of slightly reduced yields\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseReapingRewards_%\")": -15,
+                "(Value=\"CanHarvestSeeds_?\")": 1
+            }
+        },
+        {
+            "Name": "Contains_Vesper",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Contains_Vesper-DisplayName\", \"Contains Vesper\")",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Contains_Vesper-Description\", \"Contains a Vesper\")",
+            "Stats": {
+                "(Value=\"ContainsVesper_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Contains_Infected_Vesper",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Contains_Infected_Vesper-DisplayName\", \"Contains Infected Vesper\")",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Contains_Infected_Vesper-Description\", \"Contains a Vesper treated with a Synthetic Enzyme Virus\")",
+            "Stats": {
+                "(Value=\"ContainsVesper_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Stock_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Stock_A-DisplayName\", \"Balanced Stock\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_KB.T_S_KB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Stock_A-Description\", \"Increased Aim and Movement Speed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAimDownSightsSpeed_+%\")": 20,
+                "(Value=\"BaseMovementSpeed_+%\")": 5,
+                "(Value=\"BaseAimingMovementSpeed_+%\")": 5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Stock_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Stock_B-DisplayName\", \"Impact Stock\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_KC.T_S_KC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Stock_B-Description\", \"Allows Piercing of Hardened Points\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseHardenedPointPenetration_%\")": 100,
+                "(Value=\"BaseHardenedPointDamage_+%\")": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Stock_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Stock_C-DisplayName\", \"Conductive Stock\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_KD.T_S_KD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Stock_C-Description\", \"Increases the Usefulness for Fire, Ice, Poison and Electric Damage.\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseElementalDamage_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Barrel_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Barrel_A-DisplayName\", \"Silenced Barrel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_BB.T_S_BB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Barrel_A-Description\", \"Draws Far Less Animal Threat when Firing and Deals additional Stealth Damage.\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseFirearmLoudness_+%\")": -90,
+                "(Value=\"BaseStealthDamage_+%\")": 25,
+                "(Value=\"IsAudioSilenced_?\")": 1
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Barrel_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Barrel_B-DisplayName\", \"Match Grade Barrel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_BC.T_S_BC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Barrel_B-Description\", \"Raw Damage Increase And Increased Accuracy\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 35,
+                "(Value=\"BaseProjectileAccuracy_+%\")": 60
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Barrel_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Barrel_C-DisplayName\", \"Stabilized Barrel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_BD.T_S_BD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Barrel_C-Description\", \"Sometimes Prevents Consumption of Ammo\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseChanceToNotConsumeAmmo_%\")": 25,
+                "(Value=\"BaseAimDownSightsSpeed_+%\")": 15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Scope_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Scope_A-DisplayName\", \"Spotter Scope\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_SC.T_S_SC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Scope_A-Description\", \"Highlights Creatures when Aiming and Deals Extra Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"HighlightSmallAnimalsWhenADS_?\")": 1,
+                "(Value=\"HighlightMediumAnimalsWhenADS_?\")": 1,
+                "(Value=\"HighlightLargeAnimalsWhenADS_?\")": 1,
+                "(Value=\"BaseProjectileDamage_+%\")": 15,
+                "(Value=\"FirearmScopeType_Enum\")": 5,
+                "(Value=\"BaseAnimalHighlightDistance_+\")": 17500
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Scope_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Scope_B-DisplayName\", \"Precision Scope\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_SB.T_S_SB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Scope_B-Description\", \"Deals more Raw Critical Damage\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseCriticalDamage_+%\")": 100,
+                "(Value=\"FirearmScopeType_Enum\")": 6
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Scope_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Scope_C-DisplayName\", \"Pinning Scope\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_SD.T_S_SD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Scope_C-Description\", \"Chance to Apply Immobilise\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseImmobilise_%\")": 33,
+                "(Value=\"FirearmScopeType_Enum\")": 7
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Module_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Module_A-DisplayName\", \"Storage Module\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_CB.T_S_CB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Module_A-Description\", \"Allows for the Chambering of an Additional Round.\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAmmoCapacity_+\")": 1,
+                "(Value=\"BaseReloadSpeed_+%\")": -10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Module_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Module_B-DisplayName\", \"Kinetic Module\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_CC.T_S_CC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Module_B-Description\", \"Increases Base Projectile Damage and Reload Speed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 50,
+                "(Value=\"BaseReloadSpeed_+%\")": 10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Sniper_Module_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Module_C-DisplayName\", \"Preservation Module\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_S_CD.T_S_CD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Sniper_Module_C-Description\", \"Sometimes Prevents Consumption of Ammo\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseChanceToNotConsumeAmmo_%\")": 30
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Grip_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Grip_A-DisplayName\", \"Masterwork Grip\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_GB.T_B_GB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Grip_A-Description\", \"Deals More Consistent Damage and Lasts Longer.\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 15,
+                "(Value=\"BaseBowItemWear_+%\")": -25,
+                "(Value=\"BaseBowProjectileAccuracy_+%\")": 15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Grip_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Grip_B-DisplayName\", \"Fortified Grip\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_GC.T_B_GC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Grip_B-Description\", \"Block Incoming Damage While Aiming\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"IceSledgeHammerBlock_?\")": 1,
+                "(Value=\"BaseShieldBlockRadiusDegrees_+\")": 85,
+                "(Value=\"BaseShieldBlock_%\")": 85
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Grip_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Grip_C-DisplayName\", \"Braced Grip\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_GD.T_B_GD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Grip_C-Description\", \"Fire Slower and Hit Harder\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseBowStaminaActionCost_+%\")": 150,
+                "(Value=\"BaseProjectileDamage_+%\")": 40,
+                "(Value=\"BaseRateOfFirePerMinute_+%\")": -50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Shelf_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Shelf_A-DisplayName\", \"Hardened Point Rest\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_RB.T_B_RB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Shelf_A-Description\", \"Allows Piercing of Hardened Points\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseHardenedPointPenetration_%\")": 100,
+                "(Value=\"BaseHardenedPointDamage_+%\")": 50
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Shelf_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Shelf_B-DisplayName\", \"Anchored Rest\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_RC.T_B_RC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Shelf_B-Description\", \"Immobilise Chance\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseImmobilise_%\")": 15
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Shelf_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Shelf_C-DisplayName\", \"Aligned Rest\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_RC.T_B_RC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Shelf_C-Description\", \"Fire with More Accuracy and Chance to Reuse Ammo\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseChanceProjectilesBreak_%\")": -5,
+                "(Value=\"BaseProjectileAccuracy_+%\")": 20
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Arms_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Arms_A-DisplayName\", \"Low-Profile Limb\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_HB.T_B_HB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Arms_A-Description\", \"Deal More Damage while Stealthed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseStealthDamage_+%\")": 50,
+                "(Value=\"BaseAimingMovementSpeed_+%\")": 10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Arms_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Arms_B-DisplayName\", \"Flexible Limb\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_HC.T_B_HC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Arms_B-Description\", \"Fired Arrows Move Faster Towards their Target\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseArrowProjectileSpeed_+%\")": 75,
+                "(Value=\"BaseProjectileDamage_+%\")": 10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Arms_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Arms_C-DisplayName\", \"Agile Limb\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_HD.T_B_HD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Arms_C-Description\", \"Increased Rate of Fire and Reload Speed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseRateOfFirePerMinute_+%\")": 30,
+                "(Value=\"BaseReloadSpeed_+%\")": 25
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Module_A",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Module_A-DisplayName\", \"Defence Module\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_CB.T_B_CB",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Module_A-Description\", \"Provides more Physical Resistance\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BasePhysicalDamageResistance_+%\")": 8
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Module_B",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Module_B-DisplayName\", \"Tracking Module\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_CC.T_B_CC",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Module_B-Description\", \"Improved Target Acquisition\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseBowAimDownSightsSpeed_+%\")": 15,
+                "(Value=\"BaseBowStaminaActionCost_+%\")": -10
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "Legendary_Bow_Module_C",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Module_C-DisplayName\", \"Lightweight Module\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_B_CD.T_B_CD",
+            "Description": "NSLOCTEXT(\"D_Alterations\", \"Legendary_Bow_Module_C-Description\", \"Allows for Faster Movement Speed\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseMovementSpeed_+%\")": 5
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
             }
         }
     ]

@@ -25,6 +25,7 @@
         "RequiredCharacterFlags": [],
         "ForbiddenCharacterFlags": [],
         "RequiredFlags": [],
+        "bDisableWorldBosses": false,
         "WorldBosses": {},
         "InitialForecast": {
             "RowName": "Initial",
@@ -911,16 +912,6 @@
                     }
                 }
             },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 3
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -933,6 +924,9 @@
             "bIsPersistent": true,
             "bIsOpenWorld": true,
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "DefaultMetaResourceAmount": {
+                "X": 200
+            },
             "NumMetaSpawnsMin": 3,
             "NumMetaSpawnsMax": 3,
             "WorldStatList": [
@@ -1667,12 +1661,6 @@
             },
             "LandingDialogue": {
                 "RowName": "ExplorationLanding1"
-            },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
             },
             "Forecast": {
                 "RowName": "MidPeak"
@@ -2544,7 +2532,8 @@
                     "MaxMetaAmount": 120
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T2_GlacierExploration.GT_T016_Bounds_T2_GlacierExploration"
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T2_GlacierExploration.GT_T016_Bounds_T2_GlacierExploration",
+            "OnProspectAvailability": "Base"
         },
         {
             "Name": "Tier2_Glacier_Survey_0",
@@ -2762,7 +2751,8 @@
                     "MaxMetaAmount": 120
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T2_GlacierExploration.GT_T016_Bounds_T2_GlacierExploration"
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T2_GlacierExploration.GT_T016_Bounds_T2_GlacierExploration",
+            "OnProspectAvailability": "Base"
         },
         {
             "Name": "Tier2_Glacier_Extraction_0",
@@ -2935,12 +2925,6 @@
             },
             "LandingDialogue": {
                 "RowName": "ExplorationLanding2"
-            },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
             },
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
@@ -3782,12 +3766,6 @@
             "LandingDialogue": {
                 "RowName": "ExplorationLanding2"
             },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
-            },
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -4279,7 +4257,8 @@
                     "MaxMetaAmount": 220
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T2_CanyonExploration.GT_T016_Bounds_T2_CanyonExploration"
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T2_CanyonExploration.GT_T016_Bounds_T2_CanyonExploration",
+            "OnProspectAvailability": "Upgrade1"
         },
         {
             "Name": "Tier3_RiverLands_Expedition_0",
@@ -4892,12 +4871,6 @@
             "LandingDialogue": {
                 "RowName": "ExplorationLanding3"
             },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
-            },
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -5473,7 +5446,8 @@
                     "MaxMetaAmount": 160
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_T2_Riverlands_Delivery.GT_Terrain016_T2_Riverlands_Delivery"
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_T2_Riverlands_Delivery.GT_Terrain016_T2_Riverlands_Delivery",
+            "OnProspectAvailability": "Upgrade1"
         },
         {
             "Name": "Tier3_RiverLands_Extraction",
@@ -5933,7 +5907,8 @@
                     "MaxMetaAmount": 220
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW4.GT_Terrain016_Bounds_BW4"
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW4.GT_Terrain016_Bounds_BW4",
+            "OnProspectAvailability": "Upgrade1"
         },
         {
             "Name": "Tier4_Arctic_Extermination_0",
@@ -6036,7 +6011,8 @@
                     "MaxMetaAmount": 220
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW4.GT_Terrain016_Bounds_BW4"
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_Terrain016_Bounds_BW4.GT_Terrain016_Bounds_BW4",
+            "OnProspectAvailability": "Upgrade1"
         },
         {
             "Name": "Tier4_Arctic_Recovery_0",
@@ -6255,7 +6231,8 @@
                     "MaxMetaAmount": 220
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T4_ArcticStockpile.GT_T016_Bounds_T4_ArcticStockpile"
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T4_ArcticStockpile.GT_T016_Bounds_T4_ArcticStockpile",
+            "OnProspectAvailability": "Upgrade1"
         },
         {
             "Name": "Tier4_Arctic_Stockpile",
@@ -6452,12 +6429,6 @@
             },
             "LandingDialogue": {
                 "RowName": "ExplorationLanding4"
-            },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
             },
             "Forecast": {
                 "RowName": "MidPeak"
@@ -6871,7 +6842,8 @@
                     "MaxMetaAmount": 220
                 }
             ],
-            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T4_DesertExploration.GT_T016_Bounds_T4_DesertExploration"
+            "BoundsOverride": "/Game/Heatmaps/Terrain_016_OLY/GT_T016_Bounds_T4_DesertExploration.GT_T016_Bounds_T4_DesertExploration",
+            "OnProspectAvailability": "Upgrade1"
         },
         {
             "Name": "Tier4_Desert_Extermination_2",
@@ -6940,12 +6912,6 @@
                 "RowName": "MissionComplete9"
             },
             "RequiredTech": "Tier2",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 1
-                }
-            },
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -7059,12 +7025,6 @@
                 "RowName": "MissionComplete10"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                }
-            },
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -7175,12 +7135,6 @@
                 "RowName": "MissionComplete10"
             },
             "RequiredTech": "Tier4",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 1
-                }
-            },
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -7297,12 +7251,6 @@
                 "RowName": "MissionComplete10"
             },
             "RequiredTech": "Tier3",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 2
-                }
-            },
             "Forecast": {
                 "RowName": "Esculation"
             },
@@ -7419,12 +7367,6 @@
                 "RowName": "MissionComplete10"
             },
             "RequiredTech": "Tier2",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 2
-                }
-            },
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -7545,12 +7487,6 @@
                 "RowName": "MissionComplete11"
             },
             "RequiredTech": "Tier4",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 2
-                }
-            },
             "Forecast": {
                 "RowName": "Surprise"
             },
@@ -7655,12 +7591,6 @@
             },
             "LandingDialogue": {
                 "RowName": "ExplorationLanding5"
-            },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
             },
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
@@ -7934,12 +7864,6 @@
             "LandingDialogue": {
                 "RowName": "ExplorationLanding6"
             },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
-            },
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -8071,12 +7995,6 @@
                 "RowName": "ExtractionComplete4b"
             },
             "RequiredTech": "Tier4",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "TokenGesture"
             },
@@ -8210,12 +8128,6 @@
                 "RowName": "ExtractionComplete4b"
             },
             "RequiredTech": "Tier4",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "SlowBurn"
             },
@@ -8349,12 +8261,6 @@
                 "RowName": "MissionComplete8"
             },
             "RequiredTech": "Tier3",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                }
-            },
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -8622,20 +8528,6 @@
                 "RowName": "StyxIntroMissionComplete"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -8720,20 +8612,6 @@
             },
             "LandingDialogue": {
                 "RowName": "ExplorationLanding1"
-            },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
             },
             "Forecast": {
                 "RowName": "MidPeak"
@@ -8825,16 +8703,6 @@
                 "RowName": "StyxIntroMissionComplete"
             },
             "RequiredTech": "Tier2",
-            "WorldBosses": {
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 5
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 1
-                }
-            },
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -8926,20 +8794,6 @@
                 "RowName": "StyxBExpeditionComplete"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 4
-                }
-            },
             "InitialForecast": {
                 "RowName": "Initial_RoughLanding"
             },
@@ -9029,20 +8883,6 @@
             },
             "LandingDialogue": {
                 "RowName": "ExplorationLanding2"
-            },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 2,
-                    "Y": 5
-                }
             },
             "Forecast": {
                 "RowName": "MidPeak"
@@ -9135,20 +8975,6 @@
                 "RowName": "MissionComplete6"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -9241,20 +9067,6 @@
                 "RowName": "StyxCExpeditionMissionComplete"
             },
             "RequiredTech": "Tier3",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 2,
-                    "Y": 5
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 5
-                }
-            },
             "Forecast": {
                 "RowName": "Surprise"
             },
@@ -9340,20 +9152,6 @@
             },
             "LandingDialogue": {
                 "RowName": "ExplorationLanding3"
-            },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 2,
-                    "Y": 6
-                }
             },
             "Forecast": {
                 "RowName": "MidPeak"
@@ -9446,20 +9244,6 @@
                 "RowName": "MissionComplete12"
             },
             "RequiredTech": "Tier4",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 2,
-                    "Y": 4
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "FrontLoaded"
             },
@@ -9553,20 +9337,6 @@
                 "RowName": "MissionComplete9"
             },
             "RequiredTech": "Tier2",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 2
-                }
-            },
             "Forecast": {
                 "RowName": "FrontLoaded"
             },
@@ -9662,20 +9432,6 @@
                 "RowName": "StyxDExpeditionMissionComplete"
             },
             "RequiredTech": "Tier4",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "Esculation"
             },
@@ -9762,20 +9518,6 @@
             },
             "LandingDialogue": {
                 "RowName": "ExplorationLanding4"
-            },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 2,
-                    "Y": 4
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 6
-                }
             },
             "Forecast": {
                 "RowName": "MidPeak"
@@ -9868,12 +9610,6 @@
                 "RowName": "MissionComplete9"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 7
-                }
-            },
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -9966,20 +9702,6 @@
                 "RowName": "MissionComplete2"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 2,
-                    "Y": 5
-                }
-            },
             "Forecast": {
                 "RowName": "SlowBurn"
             },
@@ -10073,20 +9795,6 @@
                 "RowName": "MissionComplete2"
             },
             "RequiredTech": "Tier4",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 2,
-                    "Y": 5
-                }
-            },
             "Forecast": {
                 "RowName": "SlowBurn"
             },
@@ -10180,20 +9888,6 @@
                 "RowName": "MissionComplete11"
             },
             "RequiredTech": "Tier4",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
-            },
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -10286,20 +9980,6 @@
                 "RowName": "MissionComplete13"
             },
             "RequiredTech": "Tier3",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                }
-            },
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -10396,20 +10076,6 @@
                 "RowName": "StyxEExpeditionMissionComplete"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
-            },
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -10496,20 +10162,6 @@
             },
             "LandingDialogue": {
                 "RowName": "ExplorationLanding5"
-            },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 5
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 2,
-                    "Y": 6
-                }
             },
             "Forecast": {
                 "RowName": "MidPeak"
@@ -10602,20 +10254,6 @@
                 "RowName": "MissionComplete13"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 5
-                }
-            },
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -10709,20 +10347,6 @@
                 "RowName": "MissionComplete4"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
-            },
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -10819,20 +10443,6 @@
                 "RowName": "MissionComplete15"
             },
             "RequiredTech": "Tier3",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 2,
-                    "Y": 4
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "Surprise"
             },
@@ -12013,6 +11623,12 @@
             "PlayerSpawnGroupIndex": 1,
             "NumMetaSpawnsMin": 4,
             "NumMetaSpawnsMax": 5,
+            "WorldStatList": [
+                {
+                    "RowName": "Mission_LavaHunterQuestlineActive",
+                    "DataTableName": "D_ProspectStats"
+                }
+            ],
             "OnProspectAvailability": "Upgrade2",
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -12086,20 +11702,6 @@
                 "RowName": "MissionComplete15"
             },
             "RequiredTech": "Tier3",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "SlowBurn"
             },
@@ -12294,20 +11896,6 @@
                     }
                 }
             },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 3
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -12320,6 +11908,9 @@
             "bIsPersistent": true,
             "bIsOpenWorld": true,
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "DefaultMetaResourceAmount": {
+                "X": 200
+            },
             "NumMetaSpawnsMin": 3,
             "NumMetaSpawnsMax": 3,
             "WorldStatList": [
@@ -12395,20 +11986,6 @@
                 "RowName": "MissionComplete13"
             },
             "RequiredTech": "Tier3",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 2
-                }
-            },
             "InitialForecast": {
                 "RowName": "Initial_MiniRamp"
             },
@@ -12505,20 +12082,6 @@
                 "RowName": "ExtractionComplete4b"
             },
             "RequiredTech": "Tier3",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 3
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 4
-                }
-            },
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -12593,20 +12156,6 @@
                     }
                 }
             },
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 3
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 3
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 3,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "MidPeak"
             },
@@ -12619,6 +12168,9 @@
             "bIsPersistent": true,
             "bIsOpenWorld": true,
             "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "DefaultMetaResourceAmount": {
+                "X": 200
+            },
             "NumMetaSpawnsMin": 3,
             "NumMetaSpawnsMax": 3,
             "WorldStatList": [
@@ -12699,20 +12251,6 @@
                 "RowName": "MissionComplete2"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "IThoughtItWasOver"
             },
@@ -12805,20 +12343,6 @@
                 "RowName": "MissionComplete2"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "Pulse"
             },
@@ -13241,20 +12765,6 @@
                 "RowName": "MissionComplete12"
             },
             "RequiredTech": "Tier1",
-            "WorldBosses": {
-                "(RowName=\"SandWorm\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"Scorpion\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 0,
-                    "Y": 2
-                },
-                "(RowName=\"AlphaWolf\",DataTableName=\"D_WorldBosses\")": {
-                    "X": 1,
-                    "Y": 3
-                }
-            },
             "Forecast": {
                 "RowName": "MostlyMild"
             },
@@ -13532,6 +13042,939 @@
             "PlayerSpawnGroupIndex": 18,
             "NumMetaSpawnsMax": 3,
             "OnProspectAvailability": "Upgrade2"
+        },
+        {
+            "Name": "GH_RG_A",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_A-DropName\", \"MISSING MINERS\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_A-Description\", \"INVESTIGATE THE DISTURBANCE AT THE MINING OUTPOST\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_A-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_A.T_Prospect_GH_RG_A'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RG_A_END"
+            },
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_A"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_B",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_B-DropName\", \"HABITAT\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_B-Description\", \"COLLECT AND ANALYZE DATA FROM NEWLY IDENTIFIED CREATURES\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_B-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_B.T_Prospect_GH_RG_B'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RCKGLM_B_4"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_B"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_C",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_C-DropName\", \"LIBERATION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_C-Description\", \"DEFEND THE MINING OUTPOST\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_C-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_C.T_Prospect_GH_RG_C'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RCKGLM_C_5"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_C"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_C2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_C2-DropName\", \"RESEARCH\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_C2-Description\", \"LOCATE AND OBSERVE THE NEWLY IDENTIFIED CREATURES\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_C2-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_C2.T_Prospect_GH_RG_C2'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RCKGLM_C2_6"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_C2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_D",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_D-DropName\", \"BRILLIANCE\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_D-Description\", \"INVESTIGATE THE MOUND OF UNEARTHED EXOTICS\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_D-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_D.T_Prospect_GH_RG_D'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RCKGLM_D_4"
+            },
+            "RequiredTech": "Tier2",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_D"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_D2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_D2-DropName\", \"REPERCUSSION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_D2-Description\", \"REBUILD THE MINING STATION\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_D2-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_D2.T_Prospect_GH_RG_D2'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RCKGLM_D2_7"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_D2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_E",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_E-DropName\", \"REBUILDING\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_E-Description\", \"ASSIST IN COLLECTING RESOURCES\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_E-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_E.T_Prospect_GH_RG_E'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RCKGLM_E_3"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_E"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_F",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_F-DropName\", \"ELIMINATION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_F-Description\", \"CULL THE CREATURE POPULATION TO A MANAGEABLE LEVEL\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_F-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_F.T_Prospect_GH_RG_F'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RCKGLM_F_8"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_F"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_O1",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_O1-DropName\", \"PROTOTYPE\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_O1-Description\", \"DEVELOP AND TEST NEW WEAPONS AGAINST THE THREAT\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_O1-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_O1.T_Prospect_GH_RG_O1'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RCKGLM_OPT1_7"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_O1"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_O2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_O2-DropName\", \"WEAKNESS\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_O2-Description\", \"TRIAL VARIOUS WEAPON TYPES AGAINST THE NEW CREATURE\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_O2-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_O2.T_Prospect_GH_RG_O2'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RCKGLM_OPT2_8"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_O2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_RG_Final",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_Final-DropName\", \"EARTHQUAKE\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_Final-Description\", \"THE FINAL HUNT\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_RG_Final-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_RG_Final.T_Prospect_GH_RG_Final'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Extreme",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_RCKGLM_END_5"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "GH_RG_Final"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
         },
         {
             "Name": "PRO_D_Recovery",
@@ -13984,6 +14427,2137 @@
                     "DataTableName": "D_ProspectStats"
                 }
             ]
+        },
+        {
+            "Name": "GH_Ape_A",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_A-DropName\", \"BREAKOUT\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_A-Description\", \"INVESTIGATE REPORTS OF A SMASHED LABORATORY\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_A-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_GA_A.T_Prospect_GH_GA_A'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_APE_A_3"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_A"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_B",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_B-DropName\", \"ENCLAVE\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_B-Description\", \"FIND MISSING EXPERIMENT SCIENTIST\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_B-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_GH_APE_Enclave.T_GH_APE_Enclave'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "RequiredTech": "Tier1",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_B"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_C",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_C-DropName\", \"COMPLIANCE\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_C-Description\", \"EXTRACT GARGANUTAN DNA AND DELIVER TO NOREX\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_C-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_GH_APE_Compliance.T_GH_APE_Compliance'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_APE_C_4"
+            },
+            "RequiredTech": "Tier4",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_C"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_C2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_C2-DropName\", \"EXPURGATION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_C2-Description\", \"TRY AND RECAPTURE EXPERIMENT 001\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_C2-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_GA_C2.T_Prospect_GH_GA_C2'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_APE_C2_4"
+            },
+            "RequiredTech": "Tier4",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_C2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_D",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_D-DropName\", \"SELLOUT\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_D-Description\", \"STRIKE A BARGAIN WITH THE BLACK MARKET\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_D-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_GA_D.T_Prospect_GH_GA_D'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_APE_D_4"
+            },
+            "RequiredTech": "Tier2",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_D"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_D2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_D2-DropName\", \"ETHICS\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_D2-Description\", \"ABDUCT AN INFANT APE FOR THE BLACK MARKET\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_D2-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_GH_APE_Ethics.T_GH_APE_Ethics'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_AGENT_NEW_APE_D2_04"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_D2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_E",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_E-DropName\", \"CURIOSITY\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_E-Description\", \"CONDUCT EXPERIMENTS FOR YOUR OWN PERSONAL GAIN\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_E-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_GA_E.T_Prospect_GH_GA_E'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_APE_E_4"
+            },
+            "RequiredTech": "Tier4",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_E"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_E2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_E2-DropName\", \"BLOOD THIRST\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_E2-Description\", \"CULL THE GARGANUTAN THREAT IN THE DESERT\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_E2-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_GA_O1.T_Prospect_GH_GA_O1'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_MissionComplete"
+            },
+            "RequiredTech": "Tier4",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_E2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_F",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_F-DropName\", \"STRANGE TROOP\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_F-Description\", \"LOCATE SPECIMENS FROM THE EXPERIMENT\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_F-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_GH_APE_StrangeTroop.T_GH_APE_StrangeTroop'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_APE_F_4"
+            },
+            "RequiredTech": "Tier2",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_F"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_G",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_G-DropName\", \"APE ESCAPE\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_G-Description\", \"INVESTIGATE A GARGANUTAN DOMESTICATION FACILITY \")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_G-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_GH_APE_Escape.T_GH_APE_Escape'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_AGENT_NEW_APE_G_03"
+            },
+            "RequiredTech": "Tier2",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_G"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_O1",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_O1-DropName\", \"OBLITERATION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_O1-Description\", \"FIND ZOOLOGIST MORRIS\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_O1-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_GH_APE_Obliteration.T_GH_APE_Obliteration'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_AGENT_NEW_APE_OPT1_05"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_O1"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "WorldStatList": [
+                {
+                    "RowName": "VisibleApeDens",
+                    "DataTableName": "D_ProspectStats"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_O2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_O2-DropName\", \"PURSUIT\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_O2-Description\", \"MONITOR GARGANUTANS AND COLLECT DATA\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_O2-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_GA_O2.T_Prospect_GH_GA_O2'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "GH_APE_OPT2_4"
+            },
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_O2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_Ape_Final",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_Final-DropName\", \"EXTINCTION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_Final-Description\", \"THE FINAL HUNT\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_Final-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_GH_APE_MissionBoss.T_GH_APE_MissionBoss'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Extreme",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_APE_END_3"
+            },
+            "RequiredTech": "Tier1",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "GH_Ape_Final"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_A",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_A-DropName\", \"RESEARCH\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_A-Description\", \"TRACK DOWN LAB-12 FOR MORE INFORMATION ON THE ENZYME-ENHANCED CREATURES\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_A-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_A.T_Prospect_GH_IM_A'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_ICEMAM_A_5"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_A"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_A2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_A2-DropName\", \"EXPERIMENTS\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_A2-Description\", \"FOLLOW THE BIO CHIPS OF THE ENZYME ENHANCED CREATURES AND SHUT DOWN EXPERIMENTS IN THE SOUTHERN ARCTIC\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_A2-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_A2.T_Prospect_GH_IM_A2'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_IM_NEW_A2_05"
+            },
+            "RequiredTech": "Tier3",
+            "InitialForecast": {
+                "RowName": "IceStorm"
+            },
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_A2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_B",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_B-DropName\", \"MUTATION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_B-Description\", \"INVESTIGATE RESEARCH LOCATIONS\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_B-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_B.T_Prospect_GH_IM_B'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_ICEMAM_B_7"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_B"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_C",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_C-DropName\", \"HYPOTHESIS\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_C-Description\", \"COLLECT DATA AND SAMPLES TO SEND TO NOREX\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_C-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_C.T_Prospect_GH_IM_C'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_IM_NEW_C_01"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_C"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_C2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_C2-DropName\", \"FIELDWORK\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_C2-Description\", \"COMPLETE THE RIMETUSK EXPERIMENT\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_C2-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_C2.T_Prospect_GH_IM_C2'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_ICEMAM_C3_4"
+            },
+            "RequiredTech": "Tier4",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_C2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_D",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_D-DropName\", \"DESTRUCTION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_D-Description\", \"DESTROY THE INCRIMINATING RESEARCH\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_D-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_D.T_Prospect_GH_IM_D'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_IM_NEW_D_04B"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_D"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_D2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_D2-DropName\", \"PREVENTION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_D2-Description\", \"STOP EXPERIMENTATION OF CREATURES IN THE SWAMP\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_D2-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_D2.T_Prospect_GH_IM_D2'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_ICEMAM_OPT4_4"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_D2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_O1",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_O1-DropName\", \"SURVIVORS\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_O1-Description\", \"LOCATE ANY SURVIVING TEAM MEMBERS OF THE RESEARCH TEAM\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_O1-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_O1.T_Prospect_GH_IM_O1'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_IM_NEW_OZ1_07"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_O1"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_O2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_O2-DropName\", \"SUPPLEMENTARY\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_O2-Description\", \"TEST RESEARCH ON ALTERNATIVE CREATURES\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_O2-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_O2.T_Prospect_GH_IM_O2'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_ICEMAM_OPT2_4"
+            },
+            "RequiredTech": "Tier4",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_O2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_O3",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_O3-DropName\", \"PROPAGATION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_O3-Description\", \"ELIMINATE THE ENHANCED CREATURES\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_O3-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_O3.T_Prospect_GH_IM_O3'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_ICEMAM_OPT3_3"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_O3"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GH_IM_Final",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_Final-DropName\", \"GLACIATION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_Final-Description\", \"THE FINAL HUNT\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GH_IM_Final-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_Final.T_Prospect_GH_IM_Final'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Extreme",
+            "MissionCompleteDialogue": {
+                "RowName": "GH_ICEMAM_END_4"
+            },
+            "RequiredTech": "Tier1",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "GH_IM_Final"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GreatHunt_Ape",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GreatHunt_Ape-DropName\", \"GARGANUTAN\")",
+            "DesignNotes": "Same name as talent archtype. GH_Ape",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GreatHunt_Ape-Description\", \"Reports have been obtained by NOREX of a hostile new species that broke out of an unsanctioned experimental lab.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GreatHunt_Ape-FlavourText\", \"//OPERATOR: NOREX // REGION: STYX // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Large.T_Prospect_Desert_GroupBase01_Large'",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GreatHunt_RockGolem",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GreatHunt_RockGolem-DropName\", \"QUARRITE\")",
+            "DesignNotes": "Same name as talent archtype. GH_RG_",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GreatHunt_RockGolem-Description\", \"A number of miners have gone missing. Reports (mostly screaming) have been parsed by NOREX and seem to indicate a new species is involved.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GreatHunt_RockGolem-FlavourText\", \"//OPERATOR: NOREX // REGION: OLYMPUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Large.T_Prospect_Desert_GroupBase01_Large'",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
+        },
+        {
+            "Name": "GreatHunt_IceMammoth",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GreatHunt_IceMammoth-DropName\", \"RIMETUSK\")",
+            "DesignNotes": "Same name as talent archtype. GH_IM_",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"GreatHunt_IceMammoth-Description\", \"A team of NOREX researchers have stopped responding to call requests, their work is REDACTED and must be dealt with discreetly.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"GreatHunt_IceMammoth-FlavourText\", \"//OPERATOR: NOREX // REGION: PROMETHEUS // BACKGROUND: Norex has been in Contact through back channels to request freelance prospector help. // MISSION: Details will be provided on a secure line when on site. //TERMS: Flat fee. All resources and construction materials responsibility of the Contractor.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_GroupBase01_Large.T_Prospect_Desert_GroupBase01_Large'",
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 30,
+                    "Max": 30
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 12,
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "GreatHunts"
+                }
+            }
         }
     ]
 }
