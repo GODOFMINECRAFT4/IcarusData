@@ -5556,11 +5556,12 @@
             "Name": "Sustenence_Enhancement_Tonic",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Sustenence_Enhancement_Tonic.ITEM_Sustenence_Enhancement_Tonic'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Sustenence_Enhancement_Tonic-ModifierName\", \"Sustenance Enhancement Tonic\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Sustenence_Enhancement_Tonic-ModifierDescription\", \"Greatly reduced food, water and oxygen consumption, for a short time.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Sustenence_Enhancement_Tonic-ModifierDescription\", \"Greatly reduced food, water and oxygen consumption, for a short time. Extends active food buffs.\")",
             "GrantedStats": {
                 "(Value=\"BaseFoodConsumption_+%\")": -30,
                 "(Value=\"BaseWaterConsumption_+%\")": -30,
-                "(Value=\"BaseOxygenConsumption_+%\")": -30
+                "(Value=\"BaseOxygenConsumption_+%\")": -30,
+                "(Value=\"BaseFoodModifierDuration_+%\")": 30
             },
             "MergeType": "Replace",
             "EffectsCustomActor": {
@@ -6581,7 +6582,7 @@
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_BurningBuff.Icon_BurningBuff'",
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierName\", \"Burning\")",
-            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierDescription\", \"A wound that is on fire. Reducing stamina regen and maximum health. Deals periodic fire damage.\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Burn-ModifierDescription\", \"A wound that is on fire. Reducing health regen and maximum health. Deals periodic fire damage.\")",
             "CosmeticAttachComponent": "/Game/BP/Behaviours/Modifiers/CosmeticEffects/ModifierCosmetic_Flaming.ModifierCosmetic_Flaming_C",
             "AudioData": {
                 "RowName": "Generic_Negative"

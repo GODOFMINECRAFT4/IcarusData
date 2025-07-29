@@ -1004,6 +1004,15 @@
             "MaxStack": 5
         },
         {
+            "Name": "Item_Frag_Grenade_Impact",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Frag_Grenade_Impact-DisplayName\", \"Impact Frag Grenade\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Grenade_Frag_Impact.T_ITEM_Grenade_Frag_Impact",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Frag_Grenade_Impact-Description\", \"A fragmentation grenade that will explode on impact.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Frag_Grenade_Impact-FlavorText\", \"Don\\'t drop it.\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
             "Name": "Item_Smoke_Grenade",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoke_Grenade-DisplayName\", \"Smoke Grenade\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Genade_Smoke.ITEM_Genade_Smoke",
@@ -2565,7 +2574,8 @@
         {
             "Name": "Item_SplineTool_Fuel",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_SplineTool_Fuel-DisplayName\", \"Fuel Pipe Tool\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Fuel.Icon_Fuel",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_SplineTool_Fuel.T_ITEM_SplineTool_Fuel",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_SplineTool_Fuel-Description\", \"A tool to help create and connect Biofuel networks.\")",
             "Weight": 100
         },
         {
@@ -14057,7 +14067,7 @@
             "Name": "Item_Biomass",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Biomass-DisplayName\", \"Legendary Biomass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/T_ITEM_Biomass_WithIcon.T_ITEM_Biomass_WithIcon",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Biomass-Description\", \"A biomass carefully extracted from a Legendary Creature.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Biomass-Description\", \"A biomass carefully extracted from a Legendary Creature. Use an Orbital Exchange Interface to send to orbit.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Biomass-FlavorText\", \"The scientists at the Bio-Lab would be interested in this...\")",
             "Weight": 750,
             "MaxStack": 30,
@@ -19037,51 +19047,55 @@
         {
             "Name": "Item_Manufacturer",
             "DisplayName": "INVTEXT(\"[DNT] Manufacturing Unit\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Manufacturer-Description\", \"Upgrades your manufacturing abilities with industrial equipment.\")",
             "Weight": 40000
         },
         {
             "Name": "Item_Oil_Barrel",
             "DisplayName": "INVTEXT(\"[DNT] Oil Barrel\")",
-            "Weight": 50000
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Oil_Barrel-Description\", \"A sturdy container perfect for the transportation and storage of Refined Oil.\")",
+            "Weight": 20000
         },
         {
             "Name": "Item_SplineTool_Crude_Oil",
             "DisplayName": "INVTEXT(\"[DNT] Crude Oil Piping Tool\")",
-            "Weight": 100
-        },
-        {
-            "Name": "Item_SplineTool_Refined_Oil",
-            "DisplayName": "INVTEXT(\"[DNT] Refined Oil Piping Tool\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_SplineTool_Crude_Oil-Description\", \"A tool to help create and connect Crude Oil networks.\")",
             "Weight": 100
         },
         {
             "Name": "Item_Pump_Jack",
             "DisplayName": "INVTEXT(\"[DNT] Pump Jack\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Pump_Jack-Description\", \"A machine designed to extract Crude Oil from Oil Geysers present on Icarus. \")",
             "Weight": 100
         },
         {
             "Name": "Item_Crude_Oil_Refiner",
             "DisplayName": "INVTEXT(\"[DNT] Crude Oil Refiner\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Crude_Oil_Refiner-Description\", \"A machine that converts Crude Oil to Refined Oil and Stores in Barrels placed in its inventory.\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Natural_Oil_Refiner",
             "DisplayName": "INVTEXT(\"[DNT] Natural Oil Refiner\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Natural_Oil_Refiner-Description\", \"A machine that Converts Biofuel into Refined Oil and Stores in Barrels placed in its inventory.\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Polymerizer",
             "DisplayName": "INVTEXT(\"[DNT] Polymerizer\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Polymerizer-Description\", \"A machine that converts refined oil into various useful products.\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Organic_Extractor",
             "DisplayName": "INVTEXT(\"[DNT] Organic_Extractor\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Organic_Extractor-Description\", \"A Machine that Converts items into biofuel and pushes the biofuel into a network.\")",
             "Weight": 10000
         },
         {
-            "Name": "Item_Crude_Oil_Power_Generator",
+            "Name": "Item_Oil_Power_Generator",
             "DisplayName": "INVTEXT(\"[DNT] Crude Oil Power Generator\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Oil_Power_Generator-Description\", \"An advanced machine that generates a lot of power at the cost of pollution.\")",
             "Weight": 10000
         },
         {
@@ -22718,7 +22732,7 @@
             "Name": "Item_Sniper_Round",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round-DisplayName\", \"12.7mm CHAC Round\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Sniper_Round.T_ITEM_Ammo_Sniper_Round",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round-Description\", \".50 Caliber Anti-Material Rifle Round\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round-Description\", \"Standard Anti-Materiel Rifle Round\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round-FlavorText\", \"Aim Front Towards Enemy\")",
             "Weight": 20,
             "MaxStack": 50
@@ -22730,6 +22744,47 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Workshop_Bundle-Description\", \"A Box of 25 CHAC 12.7mm Ammo. \\'CONSUME\\' to open box.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Workshop_Bundle-FlavorText\", \"The latest addition from the China Hangzhou Armament Company\")",
             "Weight": 250
+        },
+        {
+            "Name": "Item_Sniper_Round_Explosive",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Explosive-DisplayName\", \"12.7mm CHAC Explosive Round\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Sniper_Round_Explosive.T_ITEM_Ammo_Sniper_Round_Explosive",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Explosive-Description\", \"Explosive Anti-Materiel Rifle Round\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Explosive-FlavorText\", \"Aim Front Towards Enemy\")",
+            "Weight": 20,
+            "MaxStack": 50
+        },
+        {
+            "Name": "Item_Sniper_Round_Explosive_Workshop_Bundle",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Explosive_Workshop_Bundle-DisplayName\", \"12.7mm CHAC Explosive Ammo Box\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Sniper_Round_Explosive_Workshop_Bundle.T_ITEM_Sniper_Round_Explosive_Workshop_Bundle",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Explosive_Workshop_Bundle-Description\", \"A Box of 25 CHAC 12.7mm Ammo. \\'CONSUME\\' to open box.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Explosive_Workshop_Bundle-FlavorText\", \"The latest addition from the China Hangzhou Armament Company\")",
+            "Weight": 250
+        },
+        {
+            "Name": "Item_Sniper_Round_Incendiary",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Incendiary-DisplayName\", \"12.7mm CHAC Incendiary Round\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Sniper_Round_Incendiary.T_ITEM_Ammo_Sniper_Round_Incendiary",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Incendiary-Description\", \"Incendiary Anti-Materiel Rifle Round\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Incendiary-FlavorText\", \"Aim Front Towards Enemy\")",
+            "Weight": 20,
+            "MaxStack": 50
+        },
+        {
+            "Name": "Item_Sniper_Round_Incendiary_Workshop_Bundle",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Incendiary_Workshop_Bundle-DisplayName\", \"12.7mm CHAC Incendiary Ammo Box\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Sniper_Round_Incendiary_Workshop_Bundle.T_ITEM_Sniper_Round_Incendiary_Workshop_Bundle",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Incendiary_Workshop_Bundle-Description\", \"A Box of 25 CHAC 12.7mm Ammo. \\'CONSUME\\' to open box.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Sniper_Round_Incendiary_Workshop_Bundle-FlavorText\", \"The latest addition from the China Hangzhou Armament Company\")",
+            "Weight": 250
+        },
+        {
+            "Name": "Item_Sniper_Round_Illumination",
+            "DisplayName": "INVTEXT(\"[DNT] 12.7mm CHAC Illumination Round\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Sniper_Round.T_ITEM_Ammo_Sniper_Round",
+            "Weight": 20,
+            "MaxStack": 50
         },
         {
             "Name": "Item_Rifle_Round_Workshop",
@@ -22858,6 +22913,78 @@
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Juvenile_Armor_Coal-FlavorText\", \"How did the Quarrite Even Grow This?\")",
             "Weight": 1000,
             "MaxStack": 5
+        },
+        {
+            "Name": "Item_Saddle_Advanced_Arctic",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Advanced_Arctic-DisplayName\", \"Arctic Survival Saddle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Arctic_Saddle_Survival.T_ITEM_Arctic_Saddle_Survival",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Advanced_Arctic-Description\", \"Place this saddle inside a tamed creature\\'s inventory to allow it to become rideable\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Advanced_Arctic-FlavorText\", \"Feel the wind in your hair.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Plastics",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Plastics-DisplayName\", \"Plastics\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Plastics.T_ITEM_Plastics",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Plastics-Description\", \"Mouldable panels for use for containers, shells, casings and housings.\")",
+            "Weight": 500,
+            "MaxStack": 50
+        },
+        {
+            "Name": "Item_Synthetics",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Synthetics-DisplayName\", \"Synthetics\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Synthetics.T_ITEM_Synthetics",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Synthetics-Description\", \"Engineered flexible materials for use in fabrics and insulation.\")",
+            "Weight": 200,
+            "MaxStack": 50
+        },
+        {
+            "Name": "Item_Compounds",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Compounds-DisplayName\", \"Compounds\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Compounds.T_ITEM_Compounds",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Compounds-Description\", \"Reactive fluids and reagents for use in adhesives, solvents and acids.\")",
+            "Weight": 100,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Exotic_Uranium_Collector",
+            "DisplayName": "INVTEXT(\"[DNT] Uranium Extraction Unit\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Exotic_Uranium_Collector-Description\", \"A machine that can safely extract Raw Uranium.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Exotic_Uranium_Collector-FlavorText\", \"A new machine for new types of Exotics!\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Uranium_Raw",
+            "DisplayName": "INVTEXT(\"[DNT] Raw Uranium\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Uranium_Raw.T_ITEM_Uranium_Raw",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Raw-Description\", \"Raw Radioactive Uranium, will cause radiation poisioning if not stored correctly. Can be processed to convert into Inert and Rod Form.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Raw-FlavorText\", \"This one doesn\\'t look safe.\")",
+            "Weight": 1000,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Uranium_Inert",
+            "DisplayName": "INVTEXT(\"[DNT] Inert Uranium Ingot\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Uranium_Inert.T_ITEM_Uranium_Inert",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Inert-Description\", \"Uranium Metal that can be moulded to be used in for crafting. \")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Inert-FlavorText\", \"This one looks safe.\")",
+            "Weight": 250,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Uranium_Rod",
+            "DisplayName": "INVTEXT(\"[DNT] Uranium Rod\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Uranium_Rod.T_ITEM_Uranium_Rod",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Rod-Description\", \"Refined Radioactive Uranium, will cause radiation poisioning if not stored correctly. Use an Orbital Exchange Interface to send to orbit.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Rod-FlavorText\", \"Deadly, but worth a pretty penny.\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Uranium_Converter",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Converter-DisplayName\", \"[DNT Uranium Converter\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Converter-Description\", \"Machine that Converts Raw Uranium into Rods and Ingots. Does not run in Radioactive Zones.\")",
+            "Weight": 50000
         }
     ]
 }

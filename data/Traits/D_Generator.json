@@ -562,26 +562,13 @@
         {
             "Name": "Pump_Jack",
             "Resource": {
-                "Value": "Oil"
+                "Value": "Crude_Oil"
             },
-            "GenerationRate": 2000,
-            "GenerationRatio": 2,
+            "GenerationRate": 200,
+            "GenerationRatio": 0.20000000298023224,
             "TransmutableResources": [
                 {
-                    "Value": "None"
-                }
-            ],
-            "RequiresManualActivation": false,
-            "OutOfFuelThresholdPercent": -1
-        },
-        {
-            "Name": "Crude_Oil_Refiner",
-            "Resource": {
-                "Value": "Oil"
-            },
-            "TransmutableResources": [
-                {
-                    "Value": "None"
+                    "Value": "Energy"
                 }
             ],
             "RequiresManualActivation": false,
@@ -590,7 +577,7 @@
         {
             "Name": "Natural_Oil_Refiner",
             "Resource": {
-                "Value": "Oil"
+                "Value": "Refined_Oil"
             },
             "TransmutableResources": [
                 {
@@ -605,6 +592,7 @@
             "Resource": {
                 "Value": "Biofuel"
             },
+            "GenerationRate": 500,
             "TransmutableItems": [
                 {
                     "RowName": "Seed_Oil",
@@ -627,13 +615,15 @@
             "Resource": {
                 "Value": "Energy"
             },
-            "GenerationRate": 5000,
-            "GenerationRatio": 7500,
+            "GenerationRate": 8000,
+            "GenerationRatio": 53.29999923706055,
             "TransmutableResources": [
                 {
-                    "Value": "None"
+                    "Value": "Crude_Oil"
                 }
-            ]
+            ],
+            "RequiresManualActivation": false,
+            "OutOfFuelThresholdPercent": -1
         },
         {
             "Name": "Portable_Biofuel_Generator",

@@ -7369,17 +7369,21 @@
                     },
                     {
                         "TagName": "Item.Fillable.Biofuel"
+                    },
+                    {
+                        "TagName": "Item.Fillable.RefinedOil"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     1,
-                    2,
+                    3,
                     0,
-                    1
+                    1,
+                    2
                 ],
-                "AutoDescription": " ANY( Item.Fillable.Water, Item.Fillable.Biofuel )"
+                "AutoDescription": " ANY( Item.Fillable.Water, Item.Fillable.Biofuel, Item.Fillable.RefinedOil )"
             }
         },
         {
@@ -7409,6 +7413,30 @@
                 ],
                 "AutoDescription": " ALL(  NONE( Item.Utility, Item.Bag, Item.Resource.Miasmic ) )"
             }
+        },
+        {
+            "Name": "Any_Oil_Barrel",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Fillable.RefinedOil"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Fillable.RefinedOil )"
+            }
+        },
+        {
+            "Name": "Fuel_Organic_Extractor"
+        },
+        {
+            "Name": "Inventory_Organic_Extractor"
         }
     ]
 }

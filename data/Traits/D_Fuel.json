@@ -33,15 +33,19 @@
         },
         {
             "Name": "Organic_Extractor",
-            "FlowType": "Produce",
+            "FlowType": "Store",
             "AutoActivate": true,
-            "ResourceFlowRate": 10,
             "bAllowPullingResourceFromInventory": true
         },
         {
             "Name": "Biofuel_Battery",
             "FlowType": "Store",
             "AutoActivate": true
+        },
+        {
+            "Name": "Natural_Oil_Refiner",
+            "AutoActivate": true,
+            "AutoShutoffFlowPercent": -1
         }
     ]
 }

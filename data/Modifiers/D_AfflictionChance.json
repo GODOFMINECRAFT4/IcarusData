@@ -18,6 +18,9 @@
                     "DataTableName": "D_ModifierStates"
                 }
             ],
+            "ChanceStat": {
+                "Value": "PoisonResistance_%"
+            },
             "ChanceInPercent": 25,
             "DurationInSeconds": 180
         },
@@ -528,6 +531,20 @@
                 "Value": "WoundResistance_%"
             },
             "ChanceInPercent": 100
+        },
+        {
+            "Name": "Caveworm_Poison",
+            "Afflictions": [
+                {
+                    "RowName": "Cave_Worm_Poison",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "ChanceStat": {
+                "Value": "PoisonResistance_%"
+            },
+            "ChanceInPercent": 100,
+            "DurationInSeconds": 20
         }
     ]
 }

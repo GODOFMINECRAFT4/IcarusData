@@ -652,10 +652,22 @@
         },
         {
             "Name": "AllSnipers",
-            "DisplayName": "INVTEXT(\"[DNT] Snipers\")",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllSnipers-DisplayName\", \"Sniper Rifles\")",
             "AmmoTypes": [
                 {
                     "RowName": "Ammo_Sniper_Round",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Sniper_Round_Explosive",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Sniper_Round_Incendiary",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Ammo_Sniper_Round_Illumination",
                     "DataTableName": "D_ItemsStatic"
                 }
             ],

@@ -588,10 +588,10 @@
             "DefaultRecipeSet": {
                 "RowName": "Polymerizer"
             },
-            "RequiresEnergy": false,
             "bRequiresShelter": true,
-            "QueueSize": 10,
-            "MaxMilliwattage": 2500
+            "QueueSize": 5,
+            "MaxMilliwattage": 2500,
+            "AutoTurnOffDeviceWhileNotProcessing": false
         },
         {
             "Name": "Workshop_Cooker",
@@ -652,6 +652,27 @@
             "AutoSelectRecipe": true,
             "ManualActivation": true,
             "MaxMilliwattage": 450,
+            "AutoTurnOffDeviceWhileNotProcessing": false
+        },
+        {
+            "Name": "Natural_Oil_Refiner",
+            "DefaultRecipeSet": {
+                "RowName": "Composter"
+            },
+            "AutoSelectRecipe": true,
+            "ManualActivation": true,
+            "MaxMilliwattage": 1250,
+            "AutoTurnOffDeviceWhileNotProcessing": false
+        },
+        {
+            "Name": "Uranium_Converter",
+            "DefaultRecipeSet": {
+                "RowName": "Uranium_Coverter"
+            },
+            "bRequiresShelter": true,
+            "AutoSelectRecipe": true,
+            "ManualActivation": true,
+            "MaxMilliwattage": 2500,
             "AutoTurnOffDeviceWhileNotProcessing": false
         }
     ]

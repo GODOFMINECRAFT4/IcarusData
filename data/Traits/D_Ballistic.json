@@ -1540,6 +1540,39 @@
             }
         },
         {
+            "Name": "Frag_Grenade_Impact",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "DamageVariationPercentage": 10,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "bUnbreakableDuringKillCam": false,
+            "Weight": 0.7699999809265137,
+            "AllowPickupAfterSettle": false,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Frag_Grenade.BP_Payload_Frag_Grenade_C",
+            "PayloadDeploymentTimerDelay": 1,
+            "BreakChance": 0,
+            "PostDeployLifetime": 0.10000000149011612,
+            "ProjectileBounceSettings": {
+                "bBounceAngleAffectsFriction": false,
+                "Bounciness": 0.20000000298023224,
+                "Friction": 0.20000000298023224,
+                "BounceVelocityStopSimulatingThreshold": 40,
+                "MinTimeBetweenBounces": 0.30000001192092896
+            },
+            "RotationFollowsVelocity": false,
+            "VelocityRotationOffset": {
+                "Roll": 5
+            },
+            "AngularRotation": {
+                "Pitch": 90,
+                "Roll": 45
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_GRN_FLY.SFX_BALLISTIC_GRN_FLY",
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Grenades/SFX_BALLISTIC_GRENADE_IMPACT.SFX_BALLISTIC_GRENADE_IMPACT"
+            }
+        },
+        {
             "Name": "Molotov",
             "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "DamageVariationPercentage": 10,
@@ -4215,6 +4248,64 @@
             "PostDeployLifetime": 0,
             "CullDistanceSquared": 400000000,
             "OverrideStaticMesh": "/Game/ASS/WEP/SM_Buckshot.SM_Buckshot",
+            "RotationFollowsVelocity": false,
+            "AudioData": {
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_RIFLE.SFX_IMPACT_RIFLE"
+            },
+            "bUseActorPooling": true
+        },
+        {
+            "Name": "Sniper_Round_Explosive",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "DamageVariationPercentage": 10,
+            "bHomingProjectile": false,
+            "bCanKillCam": true,
+            "bUnbreakableDuringKillCam": false,
+            "Weight": 0.0035000001080334187,
+            "AllowPickupAfterSettle": false,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Explosive.BP_Payload_Explosive_C",
+            "BreakChance": 1,
+            "PostDeployLifetime": 0,
+            "CullDistanceSquared": 400000000,
+            "OverrideStaticMesh": "/Game/ASS/WEP/SM_Buckshot.SM_Buckshot",
+            "RotationFollowsVelocity": false,
+            "AudioData": {
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_RIFLE_EXPLOSIVE.SFX_IMPACT_RIFLE_EXPLOSIVE"
+            },
+            "bUseActorPooling": true
+        },
+        {
+            "Name": "Sniper_Round_Incendiary",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "DamageVariationPercentage": 10,
+            "bHomingProjectile": false,
+            "bCanKillCam": true,
+            "bUnbreakableDuringKillCam": false,
+            "Weight": 0.0035000001080334187,
+            "AllowPickupAfterSettle": false,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_IncendiaryRound.BP_Payload_IncendiaryRound_C",
+            "BreakChance": 1,
+            "PostDeployLifetime": 0,
+            "CullDistanceSquared": 400000000,
+            "OverrideStaticMesh": "/Game/ASS/WEP/SM_Buckshot.SM_Buckshot",
+            "RotationFollowsVelocity": false,
+            "AudioData": {
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_SNIPER_RIFLE_BULLET.SFX_IMPACT_SNIPER_RIFLE_BULLET"
+            },
+            "bUseActorPooling": true
+        },
+        {
+            "Name": "Sniper_Round_Persistent",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "DamageVariationPercentage": 10,
+            "bHomingProjectile": false,
+            "bCanKillCam": true,
+            "bUnbreakableDuringKillCam": false,
+            "Weight": 0.009999999776482582,
+            "AllowPickupAfterSettle": false,
+            "BreakChance": 0,
+            "PostDeployLifetime": 0,
+            "CullDistanceSquared": 1600000000,
             "RotationFollowsVelocity": false,
             "AudioData": {
                 "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_RIFLE.SFX_IMPACT_RIFLE"

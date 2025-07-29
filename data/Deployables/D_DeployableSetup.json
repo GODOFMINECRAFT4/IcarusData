@@ -8095,10 +8095,10 @@
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
             "SnapActorTags": [
-                "Enzyme_Geyser"
+                "Oil_Well"
             ],
             "SnapSocketsOrTags": [
-                "Enzyme_Geyser_Attachment"
+                "Pump_Jack_Attachment"
             ],
             "IgnoreCollisionWhenSnapped": true,
             "UseSnapSocketRotation": true
@@ -12506,6 +12506,29 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Thumper_Mini.SM_DEP_Thumper_Mini",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Exotic_Uranium_Collector",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Extractors/BP_Exotic_Uranium_Collector.BP_Exotic_Uranium_Collector_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_ExoticTreeDevice.SM_DEP_ExoticTreeDevice",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Radar/SFX_DEP_DEPLOY_SPAWN_BLOCKER_T3.SFX_DEP_DEPLOY_SPAWN_BLOCKER_T3",
+            "SupportsCustomRotation": false,
+            "SnapBehaviour": "SnapPlacementOnly",
+            "SnapActorTags": [
+                "Deployable_UraniumDeposit"
+            ],
+            "SnapSocketsOrTags": [
+                "CollectorSnap"
+            ],
+            "IgnoreCollisionWhenSnapped": true,
+            "UseSnapSocketRotation": true
+        },
+        {
+            "Name": "Uranium_Converter",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furnaces/BP_UraniumConverter.BP_UraniumConverter_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Furnace_Electric.SM_DEP_Furnace_Electric",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SnapToSurfaceNormal": false
         }
     ]
 }

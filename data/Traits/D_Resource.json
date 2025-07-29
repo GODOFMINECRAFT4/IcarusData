@@ -20,6 +20,16 @@
         "OxygenFlow": {
             "RowName": "None",
             "DataTableName": "D_Oxygen"
+        },
+        "bHasCrudeOilConnection": false,
+        "CrudeOilFlow": {
+            "RowName": "None",
+            "DataTableName": "D_CrudeOil"
+        },
+        "bHasRefinedOilConnection": false,
+        "RefinedOilFlow": {
+            "RowName": "None",
+            "DataTableName": "D_RefinedOil"
         }
     },
     "Rows": [
@@ -298,6 +308,13 @@
             }
         },
         {
+            "Name": "T3_Cleaner",
+            "bHasWaterConnection": true,
+            "WaterFlow": {
+                "RowName": "T3_Cleaner"
+            }
+        },
+        {
             "Name": "Glassworking_Bench",
             "bHasWaterConnection": true,
             "WaterFlow": {
@@ -554,7 +571,8 @@
             "bHasEnergyConnection": true,
             "EnergyFlow": {
                 "RowName": "Auto_Shutoff_At_0"
-            }
+            },
+            "bHasCrudeOilConnection": true
         },
         {
             "Name": "Polymerizer",
@@ -565,10 +583,6 @@
         },
         {
             "Name": "Organic_Extractor",
-            "bHasEnergyConnection": true,
-            "EnergyFlow": {
-                "RowName": "Processor_Generic"
-            },
             "bHasFuelConnection": true,
             "FuelFlow": {
                 "RowName": "Organic_Extractor"
@@ -576,7 +590,11 @@
         },
         {
             "Name": "Crude_Oil_Power_Generator",
-            "bHasEnergyConnection": true
+            "bHasEnergyConnection": true,
+            "bHasCrudeOilConnection": true,
+            "CrudeOilFlow": {
+                "RowName": "Oil_Power_Generator"
+            }
         },
         {
             "Name": "Portable_Biofuel_Generator",
@@ -657,6 +675,28 @@
             "bHasEnergyConnection": true,
             "EnergyFlow": {
                 "RowName": "Mission_Incubator"
+            }
+        },
+        {
+            "Name": "Crude_Oil_Refiner",
+            "bHasEnergyConnection": true,
+            "EnergyFlow": {
+                "RowName": "Crude_Oil_Refiner"
+            },
+            "bHasCrudeOilConnection": true,
+            "CrudeOilFlow": {
+                "RowName": "Crude_Oil_Refiner"
+            }
+        },
+        {
+            "Name": "Natural_Oil_Refiner",
+            "bHasEnergyConnection": true,
+            "EnergyFlow": {
+                "RowName": "Natural_Oil_Refiner"
+            },
+            "bHasFuelConnection": true,
+            "FuelFlow": {
+                "RowName": "Natural_Oil_Refiner"
             }
         }
     ]
