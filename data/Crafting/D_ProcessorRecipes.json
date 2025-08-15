@@ -36816,78 +36816,6 @@
                     "Count": 400,
                     "DynamicProperties": [],
                     "Alterations": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Crushed_Bone",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 50,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Crushed_Bone",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 50,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Crushed_Bone",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 50,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Crushed_Bone",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 50,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Crushed_Bone",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 50,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Crushed_Bone",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 50,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Crushed_Bone",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 50,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                },
-                {
-                    "Element": {
-                        "RowName": "Crushed_Bone",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 50,
-                    "DynamicProperties": [],
-                    "Alterations": []
                 }
             ],
             "Audio": {
@@ -78100,7 +78028,7 @@
             "Requirement": {
                 "RowName": "Charging_Station"
             },
-            "RequiredMillijoules": 25000,
+            "RequiredMillijoules": 100000,
             "RecipeSets": [
                 {
                     "RowName": "Fabricator",
@@ -98756,6 +98684,83 @@
             ],
             "Audio": {
                 "RowName": "ArmorBench"
+            }
+        },
+        {
+            "Name": "Charging_Station_Wall",
+            "Requirement": {
+                "RowName": "Charging_Station_Wall"
+            },
+            "RequiredMillijoules": 100000,
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Concrete_Mix",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 6,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Copper_Wire",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 65,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Aluminium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Charging_Device",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
             }
         }
     ]

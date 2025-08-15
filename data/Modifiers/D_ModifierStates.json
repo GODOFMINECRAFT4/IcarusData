@@ -13737,6 +13737,33 @@
             "bEffectsNPCs": false
         },
         {
+            "Name": "Banana_Bread",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Banana_Bread-ModifierName\", \"Banana Bread\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Banana_Bread-ModifierDescription\", \"Boosts Health, Stamina and Experience. Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumHealth_+\")": 200,
+                "(Value=\"BaseHealthRegen_+%\")": 50,
+                "(Value=\"BaseMaximumStamina_+\")": 200,
+                "(Value=\"BaseStaminaRegen_+%\")": 50,
+                "(Value=\"BaseStaminaRegenDelay_+%\")": -50,
+                "(Value=\"BaseFoodConsumption_+%\")": -10,
+                "(Value=\"BaseExperience_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
             "Name": "OxygenRecovery_Buff",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_OxygenBuff.Icon_OxygenBuff'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"OxygenRecovery_Buff-ModifierName\", \"Boost Oxygen Recovery\")",
@@ -13915,6 +13942,579 @@
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_RadiationInjection.BP_ModifierStateBehaviour_RadiationInjection_C",
             "ShouldTick": true,
             "MergeType": "Replace"
+        },
+        {
+            "Name": "Cooked_Onion",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Onion-ModifierName\", \"Grilled Onion\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Onion-ModifierDescription\", \"Increases Harvesting Rewards and Threat Against Animals. Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 5,
+                "(Value=\"BaseFoodConsumption_+%\")": -10,
+                "(Value=\"BaseForagingHarvestingRewards_+%\")": 5
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Caramelized_Onions",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Caramelized_Onions-ModifierName\", \"Caramelized Onions\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Caramelized_Onions-ModifierDescription\", \"Boosts max Stamina and Harvesting Rewards, and Increases Threat Against Animals.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10,
+                "(Value=\"BaseForagingHarvestingRewards_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "French_Onion_Soup",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"French_Onion_Soup-ModifierName\", \"French Onion Soup\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"French_Onion_Soup-ModifierDescription\", \"Boosts max Stamina and Health, Increases Harvesting Rewards, and Increases Threat Against Animals.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 50,
+                "(Value=\"BaseMaximumHealth_+\")": 50,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10,
+                "(Value=\"BaseForagingHarvestingRewards_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Onion_Rings",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Onion_Rings-ModifierName\", \"Onion Rings\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Onion_Rings-ModifierDescription\", \"Boosts max Stamina and Regen, Increases Harvesting Rewards, and Increases Threat Against Animals.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 50,
+                "(Value=\"BaseStaminaRegen_+%\")": 10,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10,
+                "(Value=\"BaseForagingHarvestingRewards_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Onion_Souffle",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Onion_Souffle-ModifierName\", \"Onion Souffle\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Onion_Souffle-ModifierDescription\", \"Boosts max Stamina, Harvesting Rewards, and Increases Threat Against Animals. Grants a chance of additional stone when mining.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 100,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 10,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10,
+                "(Value=\"BaseForagingHarvestingRewards_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Cooked_Agave",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Agave-ModifierName\", \"Charred Agave\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Agave-ModifierDescription\", \"Increases Explosive Damage and Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExplosiveDamage_+%\")": 5,
+                "(Value=\"BaseFoodConsumption_+%\")": -10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Agave_Syrup",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Agave_Syrup-ModifierName\", \"Agave Syrup\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Agave_Syrup-ModifierDescription\", \"Increases Explosive Damage.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExplosiveDamage_+%\")": 5
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Tequila",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tequila-ModifierName\", \"Tequila\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tequila-ModifierDescription\", \"Increases Explosive Damage, Temperature and Melee Resistance. Increased Thirst.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExplosiveDamage_+%\")": 5,
+                "(Value=\"BaseMeleeDamageResistance_%\")": 10,
+                "(Value=\"BaseWaterConsumption_+%\")": 10,
+                "(Value=\"BaseColdResistance_%\")": 5,
+                "(Value=\"BaseHeatResistance_%\")": 5
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Glazed_Carrots",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Glazed_Carrots-ModifierName\", \"Glazed Carrots\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Glazed_Carrots-ModifierDescription\", \"Increases Explosive and Projectile Damage. Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExplosiveDamage_+%\")": 5,
+                "(Value=\"BaseProjectileDamage_+%\")": 5
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Pumpkin_Pie",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pumpkin_Pie-ModifierName\", \"Pumpkin Pie\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pumpkin_Pie-ModifierDescription\", \"Increases Explosive Damage and Exposure Resistance. Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExplosiveDamage_+%\")": 5,
+                "(Value=\"BaseExposureResistance_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Cooked_PricklyPear",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_PricklyPear-ModifierName\", \"Burnt Prickly Pear\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_PricklyPear-ModifierDescription\", \"Adds a Chance to Return Melee Damage to Attacker. Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseChanceToReturnDamage_%\")": 10,
+                "(Value=\"BaseDamageReturned_%\")": 15,
+                "(Value=\"BaseFoodConsumption_+%\")": -10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "PricklyPear_Margarita",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Margarita-ModifierName\", \"Prickly Pear Margarita\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Margarita-ModifierDescription\", \"Increases Explosive Damage and Melee Resistance. Adds a Chance to Return Melee Damage to Attacker.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExplosiveDamage_+%\")": 5,
+                "(Value=\"BaseMeleeDamageResistance_%\")": 10,
+                "(Value=\"BaseWaterConsumption_+%\")": 10,
+                "(Value=\"BaseColdResistance_%\")": 5,
+                "(Value=\"BaseHeatResistance_%\")": 5,
+                "(Value=\"BaseChanceToReturnDamage_%\")": 10,
+                "(Value=\"BaseDamageReturned_%\")": 25
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "PricklyPear_Jelly",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Jelly-ModifierName\", \"Prickly Pear Jelly\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Jelly-ModifierDescription\", \"Increases Explosive Damage and Experience. Adds a Chance to Return Melee Damage to Attacker.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExplosiveDamage_+%\")": 5,
+                "(Value=\"BaseSharedExperience_+%\")": 10,
+                "(Value=\"BaseExperience_+%\")": 10,
+                "(Value=\"BaseChanceToReturnDamage_%\")": 10,
+                "(Value=\"BaseDamageReturned_%\")": 25
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "PricklyPear_Muffins",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Muffins-ModifierName\", \"Prickly Pear Muffins\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Muffins-ModifierDescription\", \"Increases Explosive Damage and Experience. Adds a Chance to Return Melee Damage to Attacker.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExplosiveDamage_+%\")": 5,
+                "(Value=\"BaseMaximumStamina_+\")": 150,
+                "(Value=\"BaseChanceToReturnDamage_%\")": 10,
+                "(Value=\"BaseDamageReturned_%\")": 25
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Cooked_Garlic",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Garlic-ModifierName\", \"Seared Garlic\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Garlic-ModifierDescription\", \"Increases Health Regen and Threat Against Animals. Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 5,
+                "(Value=\"BaseFoodConsumption_+%\")": -10,
+                "(Value=\"BaseHealthRegen_+%\")": 15
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Garlic_Butter",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Butter-ModifierName\", \"Garlic Butter\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Butter-ModifierDescription\", \"Increases Health Regen and Threat Against Animals.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 5,
+                "(Value=\"BaseHealthRegen_+%\")": 15
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Garlic_Bread",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Bread-ModifierName\", \"Garlic Bread\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Bread-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10,
+                "(Value=\"BaseHealthRegen_+%\")": 35,
+                "(Value=\"BaseExperience_+%\")": 20,
+                "(Value=\"BaseFoodConsumption_+%\")": -10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Garlic_Pizza",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Pizza-ModifierName\", \"Garlic Pizza\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Pizza-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10,
+                "(Value=\"BaseHealthRegen_+%\")": 35,
+                "(Value=\"BaseExperience_+%\")": 20,
+                "(Value=\"BaseFoodConsumption_+%\")": -10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Smoked_Garlic",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Garlic-ModifierName\", \"Smoked Garlic\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Garlic-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10,
+                "(Value=\"BaseHealthRegen_+%\")": 25,
+                "(Value=\"BaseExperience_+%\")": 20,
+                "(Value=\"BaseWaterConsumption_+%\")": 15
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Cooked_Truffle",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Truffle-ModifierName\", \"Toasted Truffle\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Truffle-ModifierDescription\", \"Increases Taming Speed of Nearby Creatures. Decreases Threat Against Animals and Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": -5,
+                "(Value=\"BaseFoodConsumption_+%\")": -10,
+                "(Value=\"GrantedAuraTamingSpeed_?\")": 1
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Vodka",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Vodka-ModifierName\", \"Vodka\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Vodka-ModifierDescription\", \"Increases Explosive Damage, Temperature and Projectile Resistance. Increased Thirst.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExplosiveDamage_+%\")": 5,
+                "(Value=\"BaseProjectileDamageResistance_+%\")": 10,
+                "(Value=\"BaseWaterConsumption_+%\")": 10,
+                "(Value=\"BaseColdResistance_%\")": 5,
+                "(Value=\"BaseHeatResistance_%\")": 5
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Truffle_Vodka",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Vodka-ModifierName\", \"Truffle Vodka\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Vodka-ModifierDescription\", \"Increases Explosive Damage, Thirst, Temperature and Projectile Resistance. Increased Taming Speed of Nearby Creatures.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseExplosiveDamage_+%\")": 5,
+                "(Value=\"BaseProjectileDamageResistance_+%\")": 10,
+                "(Value=\"BaseWaterConsumption_+%\")": 10,
+                "(Value=\"BaseColdResistance_%\")": 5,
+                "(Value=\"BaseHeatResistance_%\")": 5,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": -5,
+                "(Value=\"GrantedAuraTamingSpeed_?\")": 1
+            },
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Truffle_Focaccia",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Focaccia-ModifierName\", \"Truffle Focaccia\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Focaccia-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10,
+                "(Value=\"BaseHealthRegen_+%\")": 35,
+                "(Value=\"BaseExperience_+%\")": 10,
+                "(Value=\"BaseFoodConsumption_+%\")": -10,
+                "(Value=\"BaseSharedExperience_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Truffle_Pasta",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Pasta-ModifierName\", \"Truffle Pasta\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Pasta-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption. Grants a Chance of Additional Stone when Mining.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10,
+                "(Value=\"BaseHealthRegen_+%\")": 35,
+                "(Value=\"BaseExperience_+%\")": 10,
+                "(Value=\"BaseFoodConsumption_+%\")": -10,
+                "(Value=\"BaseSharedExperience_+%\")": 10,
+                "(Value=\"BaseVoxelChanceToHarvestSecondaryResource_%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
+        },
+        {
+            "Name": "Truffle_Fries",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Fries-ModifierName\", \"Truffle Fries\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Fries-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption. Grants a Chance of Additional Stone when Mining.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": 10,
+                "(Value=\"BaseHealthRegen_+%\")": 35,
+                "(Value=\"BaseExperience_+%\")": 10,
+                "(Value=\"BaseFoodConsumption_+%\")": -10,
+                "(Value=\"BaseSharedExperience_+%\")": 10,
+                "(Value=\"BaseMaximumStamina_+%\")": 15
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "Replace",
+            "bEffectsNPCs": false
         }
     ]
 }
