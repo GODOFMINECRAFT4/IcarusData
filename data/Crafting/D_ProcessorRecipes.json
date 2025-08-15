@@ -98699,6 +98699,64 @@
                     "RowName": "GreatHunts"
                 }
             }
+        },
+        {
+            "Name": "Saddle_Arctic_Survival",
+            "Requirement": {
+                "RowName": "Saddle_Arctic_Survival"
+            },
+            "RequiredMillijoules": 20000,
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "SaddleCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Platinum_Weave",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Wool",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 25,
+                    "DynamicProperties": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": []
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Saddle_Advanced_Arctic",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "ArmorBench"
+            }
         }
     ]
 }

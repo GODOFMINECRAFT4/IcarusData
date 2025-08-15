@@ -11370,6 +11370,21 @@
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
             "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Aura.ReceivesMedic"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( ModifierState.Aura.ReceivesMedic )"
+            },
             "SaveToDatabase": false
         },
         {
@@ -13818,10 +13833,88 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Radioactive-ModifierName\", \"Irradiated\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Radioactive-ModifierDescription\", \"Currently exposed to Radiation\")",
             "AuraRange": 500,
-            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
-            "MergeType": "LongestDuration",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Irradiated.BP_ModifierStateBehaviour_Irradiated_C",
+            "ShouldTick": true,
+            "MergeType": "Count",
             "bEffectsNPCs": false,
             "SaveToDatabase": false
+        },
+        {
+            "Name": "RadiationPoisoning_1",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_RAD1.T_ICON_RAD1'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Mild Radiation Poisoning\")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": -20,
+                "(Value=\"BaseMaximumStamina_+%\")": -20
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "Count",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "RadiationPoisoning_2",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_RAD2.T_ICON_RAD2'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Acute Radiation Poisoning \")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": -50,
+                "(Value=\"BaseMaximumStamina_+%\")": -50
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "Count",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "RadiationPoisoning_3",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_RAD3.T_ICON_RAD3'",
+            "Type": "Debuff",
+            "ModifierName": "INVTEXT(\"[DNT] Terminal Radiation Poisoning\")",
+            "ModifierDescription": "",
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": -80,
+                "(Value=\"BaseMaximumStamina_+%\")": -80
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "Count",
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "RadiationBurn",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_RadiationBurn.T_ICON_RadiationBurn'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"RadiationBurn-ModifierName\", \"Radiation Burn\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"RadiationBurn-ModifierDescription\", \"A radiation burn that will slowly increase radiation exposure until healed.\")",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Irradiated_Small.BP_ModifierStateBehaviour_Irradiated_Small_C",
+            "ShouldTick": true,
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 3
+        },
+        {
+            "Name": "AntiRadiation_Transfusion",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_AntiRadiation_Transfusion.T_ITEM_AntiRadiation_Transfusion'",
+            "ModifierName": "INVTEXT(\"[DNT] RadEx Transfusion\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AntiRadiation_Transfusion-ModifierDescription\", \"Slowly Cleans Irradiated Blood and Stimulates The Repair of Cells.\")",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_RadiationRecovery.BP_ModifierStateBehaviour_RadiationRecovery_C",
+            "ShouldTick": true,
+            "MergeType": "Replace"
+        },
+        {
+            "Name": "AntiRadiation_Injection",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_AntiRadiation_Injection.T_ITEM_AntiRadiation_Injection'",
+            "ModifierName": "INVTEXT(\"[DNT] RadEx Injection\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AntiRadiation_Injection-ModifierDescription\", \"Instantly removes a large amount of Radiation Exposure.\")",
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_RadiationInjection.BP_ModifierStateBehaviour_RadiationInjection_C",
+            "ShouldTick": true,
+            "MergeType": "Replace"
         }
     ]
 }
