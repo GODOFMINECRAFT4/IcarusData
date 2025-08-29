@@ -2033,6 +2033,25 @@
                 "RowName": "Any_Uranium_Rod"
             },
             "StartingSlots": 1
+        },
+        {
+            "Name": "Nailgun_Ammo_Attachment",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Hammer_Attachment"
+            },
+            "StartingSlots": 2,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Any_Nail",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 0
+                }
+            ]
         }
     ]
 }

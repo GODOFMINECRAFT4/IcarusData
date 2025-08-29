@@ -862,7 +862,8 @@
                     0
                 ],
                 "AutoDescription": " NONE( ModifierState.Lava )"
-            }
+            },
+            "SaveToDatabase": false
         },
         {
             "Name": "FireExtinguished",
@@ -1239,7 +1240,8 @@
                 ],
                 "AutoDescription": " NONE( ModifierState.Lava )"
             },
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "Bandaging",
@@ -1255,7 +1257,8 @@
             "EffectsCustomActor": {
                 "RowName": "Faction_Mission_NPC"
             },
-            "bEffectsNPCs": false
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Slow",
@@ -2188,7 +2191,8 @@
                 ],
                 "AutoDescription": " NONE( ModifierState.Dehumidified, ModifierState.Medicine.Antibiotic.T3, ModifierState.Affliction.Pneumonia )"
             },
-            "bEffectsNPCs": false
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Pneumonia",
@@ -4312,7 +4316,8 @@
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "WaterConnectionSpeedUp",
@@ -4908,7 +4913,8 @@
             "MergeType": "Stack",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Bleed_LarkwellBleedArrow",
@@ -5600,7 +5606,8 @@
             "MergeType": "LongestDuration",
             "EffectsCustomActor": {
                 "RowName": "Faction_Mission_NPC"
-            }
+            },
+            "SaveToDatabase": false
         },
         {
             "Name": "Washed_Hands",
@@ -6182,7 +6189,8 @@
                         "TagName": "ModifierState.Lava"
                     }
                 ]
-            }
+            },
+            "SaveToDatabase": false
         },
         {
             "Name": "Fried_Fish_Chunks",
@@ -6430,7 +6438,8 @@
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration",
-            "MaxStackNum": 3
+            "MaxStackNum": 3,
+            "SaveToDatabase": false
         },
         {
             "Name": "SwampWater",
@@ -6447,7 +6456,8 @@
                 "RowName": "SwampParasites"
             },
             "MergeType": "LongestDuration",
-            "MaxStackNum": 3
+            "MaxStackNum": 3,
+            "SaveToDatabase": false
         },
         {
             "Name": "SwampWater_Parasite",
@@ -6559,7 +6569,8 @@
             },
             "ShouldTick": true,
             "MergeType": "LongestDuration",
-            "bEffectsNPCs": false
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Arctic_Scorpion_MovementSpeed_Bonus",
@@ -6816,7 +6827,8 @@
             },
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Carrying_Miasmic_Items",
@@ -6844,7 +6856,8 @@
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Shallow_Water-ModifierDescription\", \"Should have brought your waders\")",
             "VisibleToPlayer": false,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
-            "MergeType": "Stack"
+            "MergeType": "Stack",
+            "SaveToDatabase": false
         },
         {
             "Name": "GrantedAura_SulfurPool",
@@ -7437,7 +7450,8 @@
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Plant_No_Sun",
@@ -7451,7 +7465,8 @@
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Plant_InGreenhouse",
@@ -7464,7 +7479,8 @@
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Plant_Powered",
@@ -7477,7 +7493,8 @@
             "MergeType": "Replace",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Plant_WillNotDecay",
@@ -7944,7 +7961,8 @@
                 ],
                 "AutoDescription": " NONE( ModifierState.Lava )"
             },
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "Seed_Fatigue",
@@ -10527,7 +10545,8 @@
             "EffectsCustomActor": {
                 "RowName": "Faction_Mission_NPC"
             },
-            "bEffectsNPCs": false
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Consuming_Paste",
@@ -10546,7 +10565,8 @@
             "EffectsCustomActor": {
                 "RowName": "Faction_Mission_NPC"
             },
-            "bEffectsNPCs": false
+            "bEffectsNPCs": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Vitamins",
@@ -10636,7 +10656,8 @@
                 "(Value=\"IsHarvestCartActive_?\")": 1,
                 "(Value=\"IsSprintDisabled_?\")": 1
             },
-            "MergeType": "Stack"
+            "MergeType": "Stack",
+            "SaveToDatabase": false
         },
         {
             "Name": "Turret_Idle",
@@ -10892,7 +10913,8 @@
             "MergeType": "Stack",
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
-            "bEffectsPlayers": false
+            "bEffectsPlayers": false,
+            "SaveToDatabase": false
         },
         {
             "Name": "Dirt_Mound_Wood_Shovel",
@@ -12596,7 +12618,8 @@
             "GrantedStats": {
                 "(Value=\"BaseProjectileDamage_+%\")": 100
             },
-            "MergeType": "Replace"
+            "MergeType": "Replace",
+            "SaveToDatabase": false
         },
         {
             "Name": "FocusedItemCharging",
@@ -13571,7 +13594,8 @@
                     "Deviation": 5
                 }
             },
-            "MergeType": "Replace"
+            "MergeType": "Replace",
+            "SaveToDatabase": false
         },
         {
             "Name": "Unkillable",
@@ -13592,7 +13616,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Stone-ModifierName\", \"Imbued: Stone\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Metal",
@@ -13600,7 +13625,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Metal-ModifierName\", \"Imbued: Metal\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Oxite",
@@ -13608,7 +13634,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Oxite-ModifierName\", \"Imbued: Oxite\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Copper",
@@ -13616,7 +13643,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Copper-ModifierName\", \"Imbued: Copper\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Gold",
@@ -13624,7 +13652,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Gold-ModifierName\", \"Imbued: Gold\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Bauxite",
@@ -13632,7 +13661,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Bauxite-ModifierName\", \"Imbued: Aluminum\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Sulfur",
@@ -13640,7 +13670,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Sulfur-ModifierName\", \"Imbued: Sulfur\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Silica",
@@ -13648,7 +13679,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Silica-ModifierName\", \"Imbued: Silica\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Ice",
@@ -13656,7 +13688,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Ice-ModifierName\", \"Imbued: Ice\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Platinum",
@@ -13664,7 +13697,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Platinum-ModifierName\", \"Imbued: Platinum\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Titanium",
@@ -13672,7 +13706,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Titanium-ModifierName\", \"Imbued: Titanium\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Coal",
@@ -13680,7 +13715,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Coal-ModifierName\", \"Imbued: Coal\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Exotic_A",
@@ -13695,7 +13731,8 @@
                 "(Value=\"BaseExplosiveDamage_+\")": 25
             },
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Salt",
@@ -13703,7 +13740,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Salt-ModifierName\", \"Imbued: Salt\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "VoxelCharged_Limestone",
@@ -13711,7 +13749,8 @@
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"VoxelCharged_Limestone-ModifierName\", \"Imbued: Limestone\")",
             "ModifierDescription": "",
             "MergeType": "LongestDuration",
-            "bEffectsObjects": true
+            "bEffectsObjects": true,
+            "SaveToDatabase": false
         },
         {
             "Name": "Banana",
@@ -13738,6 +13777,7 @@
         },
         {
             "Name": "Banana_Bread",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Banana_Bread.T_ITEM_Banana_Bread'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Banana_Bread-ModifierName\", \"Banana Bread\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Banana_Bread-ModifierDescription\", \"Boosts Health, Stamina and Experience. Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -13945,6 +13985,7 @@
         },
         {
             "Name": "Cooked_Onion",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Cooked_Onion.T_ITEM_Cooked_Onion'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Onion-ModifierName\", \"Grilled Onion\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Onion-ModifierDescription\", \"Increases Harvesting Rewards and Threat Against Animals. Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -13968,6 +14009,7 @@
         },
         {
             "Name": "Caramelized_Onions",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Caramelized_Onion.T_ITEM_Caramelized_Onion'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Caramelized_Onions-ModifierName\", \"Caramelized Onions\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Caramelized_Onions-ModifierDescription\", \"Boosts max Stamina and Harvesting Rewards, and Increases Threat Against Animals.\")",
             "GrantedStats": {
@@ -13991,6 +14033,7 @@
         },
         {
             "Name": "French_Onion_Soup",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Onion_Soup.T_ITEM_Onion_Soup'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"French_Onion_Soup-ModifierName\", \"French Onion Soup\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"French_Onion_Soup-ModifierDescription\", \"Boosts max Stamina and Health, Increases Harvesting Rewards, and Increases Threat Against Animals.\")",
             "GrantedStats": {
@@ -14015,6 +14058,7 @@
         },
         {
             "Name": "Onion_Rings",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Onion_Rings.T_ITEM_Onion_Rings'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Onion_Rings-ModifierName\", \"Onion Rings\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Onion_Rings-ModifierDescription\", \"Boosts max Stamina and Regen, Increases Harvesting Rewards, and Increases Threat Against Animals.\")",
             "GrantedStats": {
@@ -14039,6 +14083,7 @@
         },
         {
             "Name": "Onion_Souffle",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Onion_Souffle.T_ITEM_Onion_Souffle'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Onion_Souffle-ModifierName\", \"Onion Souffle\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Onion_Souffle-ModifierDescription\", \"Boosts max Stamina, Harvesting Rewards, and Increases Threat Against Animals. Grants a chance of additional stone when mining.\")",
             "GrantedStats": {
@@ -14063,6 +14108,7 @@
         },
         {
             "Name": "Cooked_Agave",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Cooked_Agave.T_ITEM_Cooked_Agave'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Agave-ModifierName\", \"Charred Agave\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Agave-ModifierDescription\", \"Increases Explosive Damage and Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -14085,6 +14131,7 @@
         },
         {
             "Name": "Agave_Syrup",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Agave_Syrup.T_ITEM_Agave_Syrup'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Agave_Syrup-ModifierName\", \"Agave Syrup\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Agave_Syrup-ModifierDescription\", \"Increases Explosive Damage.\")",
             "GrantedStats": {
@@ -14106,6 +14153,7 @@
         },
         {
             "Name": "Tequila",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Tequila.T_ITEM_Tequila'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tequila-ModifierName\", \"Tequila\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tequila-ModifierDescription\", \"Increases Explosive Damage, Temperature and Melee Resistance. Increased Thirst.\")",
             "GrantedStats": {
@@ -14126,6 +14174,7 @@
         },
         {
             "Name": "Glazed_Carrots",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Glazed_Carrots.T_ITEM_Glazed_Carrots'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Glazed_Carrots-ModifierName\", \"Glazed Carrots\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Glazed_Carrots-ModifierDescription\", \"Increases Explosive and Projectile Damage. Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -14148,6 +14197,7 @@
         },
         {
             "Name": "Pumpkin_Pie",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Pumpkin_Pie.T_ITEM_Pumpkin_Pie'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Pumpkin_Pie-ModifierName\", \"Pumpkin Pie\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Pumpkin_Pie-ModifierDescription\", \"Increases Explosive Damage and Exposure Resistance. Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -14170,6 +14220,7 @@
         },
         {
             "Name": "Cooked_PricklyPear",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Cooked_PricklyPear.T_ITEM_Cooked_PricklyPear'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_PricklyPear-ModifierName\", \"Burnt Prickly Pear\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_PricklyPear-ModifierDescription\", \"Adds a Chance to Return Melee Damage to Attacker. Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -14193,6 +14244,7 @@
         },
         {
             "Name": "PricklyPear_Margarita",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_PricklyPear_Margarita.T_ITEM_PricklyPear_Margarita'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Margarita-ModifierName\", \"Prickly Pear Margarita\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Margarita-ModifierDescription\", \"Increases Explosive Damage and Melee Resistance. Adds a Chance to Return Melee Damage to Attacker.\")",
             "GrantedStats": {
@@ -14215,6 +14267,7 @@
         },
         {
             "Name": "PricklyPear_Jelly",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_PricklyPear_Jelly.T_ITEM_PricklyPear_Jelly'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Jelly-ModifierName\", \"Prickly Pear Jelly\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Jelly-ModifierDescription\", \"Increases Explosive Damage and Experience. Adds a Chance to Return Melee Damage to Attacker.\")",
             "GrantedStats": {
@@ -14240,6 +14293,7 @@
         },
         {
             "Name": "PricklyPear_Muffins",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_PricklyPear_Muffin.T_ITEM_PricklyPear_Muffin'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Muffins-ModifierName\", \"Prickly Pear Muffins\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"PricklyPear_Muffins-ModifierDescription\", \"Increases Explosive Damage and Experience. Adds a Chance to Return Melee Damage to Attacker.\")",
             "GrantedStats": {
@@ -14264,6 +14318,7 @@
         },
         {
             "Name": "Cooked_Garlic",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Cooked_Garlic.T_ITEM_Cooked_Garlic'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Garlic-ModifierName\", \"Seared Garlic\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Garlic-ModifierDescription\", \"Increases Health Regen and Threat Against Animals. Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -14287,6 +14342,7 @@
         },
         {
             "Name": "Garlic_Butter",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Garlic_Butter.T_ITEM_Garlic_Butter'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Butter-ModifierName\", \"Garlic Butter\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Butter-ModifierDescription\", \"Increases Health Regen and Threat Against Animals.\")",
             "GrantedStats": {
@@ -14304,6 +14360,7 @@
         },
         {
             "Name": "Garlic_Bread",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Garlic_Bread.T_ITEM_Garlic_Bread'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Bread-ModifierName\", \"Garlic Bread\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Bread-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -14328,6 +14385,7 @@
         },
         {
             "Name": "Garlic_Pizza",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Garlic_Pizza.T_ITEM_Garlic_Pizza'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Pizza-ModifierName\", \"Garlic Pizza\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Garlic_Pizza-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -14352,6 +14410,7 @@
         },
         {
             "Name": "Smoked_Garlic",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Smoked_Garlic.T_ITEM_Smoked_Garlic'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Garlic-ModifierName\", \"Smoked Garlic\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Smoked_Garlic-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -14376,6 +14435,7 @@
         },
         {
             "Name": "Cooked_Truffle",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Cooked_Truffle.T_ITEM_Cooked_Truffle'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Truffle-ModifierName\", \"Toasted Truffle\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Truffle-ModifierDescription\", \"Increases Taming Speed of Nearby Creatures. Decreases Threat Against Animals and Food Consumption.\")",
             "GrantedStats": {
@@ -14399,6 +14459,7 @@
         },
         {
             "Name": "Vodka",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Vodka.T_ITEM_Vodka'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Vodka-ModifierName\", \"Vodka\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Vodka-ModifierDescription\", \"Increases Explosive Damage, Temperature and Projectile Resistance. Increased Thirst.\")",
             "GrantedStats": {
@@ -14419,6 +14480,7 @@
         },
         {
             "Name": "Truffle_Vodka",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Truffle_Vodka.T_ITEM_Truffle_Vodka'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Vodka-ModifierName\", \"Truffle Vodka\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Vodka-ModifierDescription\", \"Increases Explosive Damage, Thirst, Temperature and Projectile Resistance. Increased Taming Speed of Nearby Creatures.\")",
             "GrantedStats": {
@@ -14441,6 +14503,7 @@
         },
         {
             "Name": "Truffle_Focaccia",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Truffle_Focaccia.T_ITEM_Truffle_Focaccia'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Focaccia-ModifierName\", \"Truffle Focaccia\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Focaccia-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption.\")",
             "GrantedStats": {
@@ -14466,6 +14529,7 @@
         },
         {
             "Name": "Truffle_Pasta",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Truffle_Pasta.T_ITEM_Truffle_Pasta'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Pasta-ModifierName\", \"Truffle Pasta\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Pasta-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption. Grants a Chance of Additional Stone when Mining.\")",
             "GrantedStats": {
@@ -14492,6 +14556,7 @@
         },
         {
             "Name": "Truffle_Fries",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Truffle_Fries.T_ITEM_Truffle_Fries'",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Fries-ModifierName\", \"Truffle Fries\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Truffle_Fries-ModifierDescription\", \"Increases Health Regen, Experience and Threat Against Animals. Decreases Food Consumption. Grants a Chance of Additional Stone when Mining.\")",
             "GrantedStats": {

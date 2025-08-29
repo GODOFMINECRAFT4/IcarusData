@@ -3201,7 +3201,7 @@
                 "(Value=\"BaseHeatResistance_%\")": -5,
                 "(Value=\"BaseArcticFoodConsumption_+%\")": -10
             },
-            "ArmourType": "Head",
+            "ArmourType": "Undersuit_Helmet",
             "ArmourSet": {
                 "RowName": "ArcticArmor"
             }
@@ -3466,22 +3466,28 @@
         },
         {
             "Name": "Hazmat_Head",
-            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Head_CavewormA.SK_CHA_MAL_ARM_Head_CavewormA",
-            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Head_CavewormA.SK_CHA_MAL_ARM_Head_CavewormA",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Hazmat_Head.SK_CHA_MAL_ARM_Hazmat_Head",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Hazmat_Head.SK_CHA_MAL_ARM_Hazmat_Head",
             "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP_C",
             "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Head_Base_CopyPose_AnimBP_C",
             "ArmourStats": {
                 "(Value=\"BaseRadiationResistance_%\")": 20
             },
-            "ArmourType": "Head",
+            "ArmourType": "Undersuit_Helmet",
             "ArmourSet": {
                 "RowName": "Hazmat"
-            }
+            },
+            "ImplicitDefaultArmour": [
+                {
+                    "RowName": "None",
+                    "DataTableName": "D_Armour"
+                }
+            ]
         },
         {
             "Name": "Hazmat_Chest",
-            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Chest_CavewormA.SK_CHA_MAL_ARM_Chest_CavewormA",
-            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_FEM_ARM_Chest_CavewormA.SK_CHA_FEM_ARM_Chest_CavewormA",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Hazmat_Chest.SK_CHA_MAL_ARM_Hazmat_Chest",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Hazmat_Chest.SK_CHA_MAL_ARM_Hazmat_Chest",
             "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP_C",
             "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Chest_Base_CopyPose_AnimBP_C",
             "ArmourStats": {
@@ -3494,9 +3500,9 @@
         },
         {
             "Name": "Hazmat_Arms",
-            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Arms_CavewormA.SK_CHA_MAL_ARM_Arms_CavewormA",
-            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Arms_CavewormA.SK_CHA_MAL_ARM_Arms_CavewormA",
-            "FirstPersonMeshVariant": "/Game/ASS/CHA/ARM/SK_1ST_CHA_MAL_ARM_CavewormA.SK_1ST_CHA_MAL_ARM_CavewormA",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Hazmat_Hands.SK_CHA_MAL_ARM_Hazmat_Hands",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Hazmat_Hands.SK_CHA_MAL_ARM_Hazmat_Hands",
+            "FirstPersonMeshVariant": "/Game/ASS/CHA/ARM/SK_1ST_CHA_MAL_ARM_Hazmat_Hands.SK_1ST_CHA_MAL_ARM_Hazmat_Hands",
             "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP_C",
             "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Arm_base_CopyPose_AnimBP_C",
             "FirstPersonAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_1ST_CHA_MAL_ARM_Arm_AnimBP.SK_1ST_CHA_MAL_ARM_Arm_AnimBP_C",
@@ -3510,8 +3516,8 @@
         },
         {
             "Name": "Hazmat_Legs",
-            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Legs_CavewormA.SK_CHA_MAL_ARM_Legs_CavewormA",
-            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Legs_CavewormA.SK_CHA_MAL_ARM_Legs_CavewormA",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Hazmat_Legs.SK_CHA_MAL_ARM_Hazmat_Legs",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Hazmat_Legs.SK_CHA_MAL_ARM_Hazmat_Legs",
             "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP_C",
             "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Legs_Base_CopyPose_AnimBP_C",
             "ArmourStats": {
@@ -3524,8 +3530,8 @@
         },
         {
             "Name": "Hazmat_Feet",
-            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Boots_CavewormA.SK_CHA_MAL_ARM_Boots_CavewormA",
-            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Boots_CavewormA.SK_CHA_MAL_ARM_Boots_CavewormA",
+            "ArmourMesh": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Hazmat_Feet.SK_CHA_MAL_ARM_Hazmat_Feet",
+            "FemaleMeshVariant": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Hazmat_Feet.SK_CHA_MAL_ARM_Hazmat_Feet",
             "AnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP_C",
             "FemaleAnimBlueprintClass": "/Game/ASS/CHA/ARM/SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP.SK_CHA_MAL_ARM_Feet_Base_CopyPose_AnimBP_C",
             "ArmourStats": {

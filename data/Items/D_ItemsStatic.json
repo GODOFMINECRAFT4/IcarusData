@@ -35555,20 +35555,32 @@
             "Highlightable": {
                 "RowName": "Generic"
             },
+            "Ballistic": {
+                "RowName": "Nail"
+            },
             "Decayable": {
                 "RowName": "Decay_General"
+            },
+            "AmmoType": {
+                "RowName": "Ammo_Nail"
             },
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "Item.Ammo.Nail"
+                    },
+                    {
+                        "TagName": "Item.Resource.Nail"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "Item.Ammo.Nail"
+                    },
+                    {
+                        "TagName": "Item.Resource.Nail"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -35581,6 +35593,9 @@
                     },
                     {
                         "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Ballistic"
                     }
                 ],
                 "ParentTags": []
@@ -35600,20 +35615,32 @@
             "Highlightable": {
                 "RowName": "Generic"
             },
+            "Ballistic": {
+                "RowName": "Nail"
+            },
             "Decayable": {
                 "RowName": "Decay_General"
+            },
+            "AmmoType": {
+                "RowName": "Ammo_Nail"
             },
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "Item.Ammo.Nail"
+                    },
+                    {
+                        "TagName": "Item.Resource.Nail"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "Item.Ammo.Nail"
+                    },
+                    {
+                        "TagName": "Item.Resource.Nail"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -35626,6 +35653,9 @@
                     },
                     {
                         "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Ballistic"
                     }
                 ],
                 "ParentTags": []
@@ -132757,7 +132787,8 @@
             },
             "AdditionalStats": {
                 "(Value=\"BaseFireDamage_+\")": 15,
-                "(Value=\"BaseFlamethrowerFuelUse_+\")": 10
+                "(Value=\"BaseFlamethrowerFuelUse_+\")": 10,
+                "(Value=\"BaseFlamethrowerFlameDamageRadius_+\")": 44
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -141022,7 +141053,7 @@
                 "RowName": "Mesh_Generic_Trophy"
             },
             "Itemable": {
-                "RowName": "Item_Cat_Trophy_A2"
+                "RowName": "Item_Cat_Trophy_A3"
             },
             "Interactable": {
                 "RowName": "Deployable_NoInteract"
@@ -141105,7 +141136,7 @@
                 "RowName": "Mesh_Generic_Trophy"
             },
             "Itemable": {
-                "RowName": "Item_Cat_Trophy_A3"
+                "RowName": "Item_Cat_Trophy_A2"
             },
             "Interactable": {
                 "RowName": "Deployable_NoInteract"
@@ -163560,7 +163591,8 @@
             },
             "AdditionalStats": {
                 "(Value=\"BaseFireDamage_+\")": 25,
-                "(Value=\"BaseFlamethrowerFuelUse_+\")": 10
+                "(Value=\"BaseFlamethrowerFuelUse_+\")": 10,
+                "(Value=\"BaseFlamethrowerFlameDamageRadius_+\")": 44
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -170859,6 +170891,84 @@
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
                 }
+            }
+        },
+        {
+            "Name": "Composite_Sign_Small",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Fabricator"
+            },
+            "Itemable": {
+                "RowName": "Item_Composite_Sign_Small"
+            },
+            "Interactable": {
+                "RowName": "Deployable"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Composite_Sign_Small"
+            },
+            "Durable": {
+                "RowName": "Deployable_500"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "MetalDeployable"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseComfortLevel_+\")": 8
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
             }
         },
         {
