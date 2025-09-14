@@ -2666,13 +2666,6 @@
             "MaxStack": 10
         },
         {
-            "Name": "Item_Faction_Body",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Faction_Body-DisplayName\", \"Prospector Body\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Envirosuit_1.ITEM_Envirosuit_1",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Faction_Body-Description\", \"The body of another prospector\")",
-            "Weight": 1000
-        },
-        {
             "Name": "Item_Player_Fist",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Player_Fist-DisplayName\", \"Fists\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Fists.ITEM_Fists",
@@ -4106,13 +4099,6 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Steel_Hammer-Description\", \"The most efficient tool for repairing damaged structures.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Steel_Hammer-FlavorText\", \"The tidal forces of Minos produce exceptionally violent weather on Icarus, its largest moon, which in turn damages even the most robust construction. A steel hammer can even the odds ... a little.\")",
             "Weight": 500
-        },
-        {
-            "Name": "Faction_Satellite",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Faction_Satellite-DisplayName\", \"Terraforming Satellite\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Satellite.Icon_Satellite",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Faction_Satellite-Description\", \"A downed and damaged Inaris orbital terraforming unit.\")",
-            "Weight": 10000
         },
         {
             "Name": "Item_Steel_Rebar",
@@ -12569,7 +12555,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Hammerhead_Slug-DisplayName\", \"Hammerhead Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Hammerhead_Slug_Small.T_ITEM_AnimalCarcass_Hammerhead_Slug_Small",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Hammerhead_Slug-Description\", \"The slimy remains of a giant Hammerhead Slug\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Hammerhead_Slug-FlavorText\", \"This actually is it\\'s final form...\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Hammerhead_Slug-FlavorText\", \"This actually is its final form...\")",
             "Weight": 20000
         },
         {
@@ -19074,8 +19060,9 @@
         {
             "Name": "Item_Oil_Barrel",
             "DisplayName": "INVTEXT(\"[DNT] Oil Barrel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Steel_Barrel.T_ITEM_Steel_Barrel",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Oil_Barrel-Description\", \"A sturdy container perfect for the transportation and storage of Refined Oil.\")",
-            "Weight": 20000
+            "Weight": 5000
         },
         {
             "Name": "Item_SplineTool_Crude_Oil",
@@ -19114,6 +19101,7 @@
         {
             "Name": "Item_Organic_Extractor",
             "DisplayName": "INVTEXT(\"[DNT] Organic_Extractor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Organic_Extractor.T_ITEM_Organic_Extractor",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Organic_Extractor-Description\", \"A Machine that Converts items into biofuel and pushes the biofuel into a network.\")",
             "Weight": 10000
         },
@@ -23048,6 +23036,7 @@
         {
             "Name": "Item_Concrete_Diagonal_Set",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Diagonal_Set-DisplayName\", \"Concrete Diagonal Buildings\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Diagonal_Set_0.T_ITEM_Concrete_Diagonal_Set_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Diagonal_Set-Description\", \"A set of cross-tile diagonal pieces.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23055,6 +23044,7 @@
         {
             "Name": "Item_Concrete_Curved_Set",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Curved_Set-DisplayName\", \"Concrete Curved Buildings\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Curved_Set_0.T_ITEM_Concrete_Curved_Set_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Curved_Set-Description\", \"A set of cross-tile curved pieces.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23062,6 +23052,7 @@
         {
             "Name": "Item_Concrete_Diagonal_Curved_Wall_Angles",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Diagonal_Curved_Wall_Angles-DisplayName\", \"Concrete Curved Wall Angles\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Diagonal_Curved_Wall_Angles_0.T_ITEM_Concrete_Diagonal_Curved_Wall_Angles_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Diagonal_Curved_Wall_Angles-Description\", \"A set of cross-tile curved walls in various angles.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23069,6 +23060,7 @@
         {
             "Name": "Item_Concrete_Roof_CurvedAngles",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Roof_CurvedAngles-DisplayName\", \"Concrete Roof Curved Angle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Roof_CurvedAngles_0.T_ITEM_Concrete_Roof_CurvedAngles_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Roof_CurvedAngles-Description\", \"A set of curved roof pieces to place over or under curved wall angles.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23076,6 +23068,7 @@
         {
             "Name": "Item_Concrete_Curved_Wall",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Curved_Wall-DisplayName\", \"Concrete Wall/Roof Curved\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Wall_Curved_0.T_ITEM_Concrete_Wall_Curved_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Curved_Wall-Description\", \"Curved versions of the wall angles, for use underneath curved roofs.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23083,6 +23076,7 @@
         {
             "Name": "Item_Concrete_Advanced_Beam_Set",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Advanced_Beam_Set-DisplayName\", \"Concrete Advanced Beams\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Advanced_Beam_Set_0.T_ITEM_Concrete_Advanced_Beam_Set_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Concrete_Advanced_Beam_Set-Description\", \"An advanced set of beams for use with diagonal and curved pieces.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23090,6 +23084,7 @@
         {
             "Name": "Item_Glass_Diagonal_Set",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Diagonal_Set-DisplayName\", \"Glass Diagonal Buildings\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Diagonal_Set_0.T_ITEM_Glass_Diagonal_Set_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Diagonal_Set-Description\", \"A set of cross-tile diagonal pieces.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23097,6 +23092,7 @@
         {
             "Name": "Item_Glass_Curved_Set",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Curved_Set-DisplayName\", \"Glass Curved Buildings\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Curved_Set_0.T_ITEM_Glass_Curved_Set_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Curved_Set-Description\", \"A set of cross-tile curved pieces.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23104,6 +23100,7 @@
         {
             "Name": "Item_Glass_Diagonal_Curved_Wall_Angles",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Diagonal_Curved_Wall_Angles-DisplayName\", \"Glass Curved Wall Angles\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Diagonal_Curved_Wall_Angles_0.T_ITEM_Glass_Diagonal_Curved_Wall_Angles_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Diagonal_Curved_Wall_Angles-Description\", \"A set of cross-tile curved walls in various angles.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23111,6 +23108,7 @@
         {
             "Name": "Item_Glass_Roof_CurvedAngles",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Roof_CurvedAngles-DisplayName\", \"Glass Roof Curved Angle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Roof_CurvedAngles_0.T_ITEM_Glass_Roof_CurvedAngles_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Roof_CurvedAngles-Description\", \"A set of curved roof pieces to place over or under curved wall angles.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23118,6 +23116,7 @@
         {
             "Name": "Item_Glass_Curved_Wall",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Curved_Wall-DisplayName\", \"Glass Wall/Roof Curved\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Wall_Curved_0.T_ITEM_Glass_Wall_Curved_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Curved_Wall-Description\", \"Curved versions of the wall angles, for use underneath curved roofs.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23125,6 +23124,7 @@
         {
             "Name": "Item_Glass_Advanced_Beam_Set",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Advanced_Beam_Set-DisplayName\", \"Glass Advanced Beams\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Advanced_Beam_Set_0.T_ITEM_Glass_Advanced_Beam_Set_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Advanced_Beam_Set-Description\", \"An advanced set of beams for use with diagonal and curved pieces.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23132,6 +23132,7 @@
         {
             "Name": "Item_Glass_Diagonal_Set_Tempered",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Diagonal_Set_Tempered-DisplayName\", \"Reinforced Glass Diagonal Buildings\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Diagonal_Set_Tempered_0.T_ITEM_Glass_Diagonal_Set_Tempered_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Diagonal_Set_Tempered-Description\", \"A set of cross-tile diagonal pieces.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23139,6 +23140,7 @@
         {
             "Name": "Item_Glass_Curved_Set_Tempered",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Curved_Set_Tempered-DisplayName\", \"Reinforced Glass Curved Buildings\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Curved_Set_Tempered_0.T_ITEM_Glass_Curved_Set_Tempered_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Curved_Set_Tempered-Description\", \"A set of cross-tile curved pieces.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23146,6 +23148,7 @@
         {
             "Name": "Item_Glass_Diagonal_Curved_Wall_Angles_Tempered",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Diagonal_Curved_Wall_Angles_Tempered-DisplayName\", \"Reinforced Glass Curved Wall Angles\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Wall_Angle_Tempered_0.T_ITEM_Glass_Wall_Angle_Tempered_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Diagonal_Curved_Wall_Angles_Tempered-Description\", \"A set of cross-tile curved walls in various angles.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23153,6 +23156,7 @@
         {
             "Name": "Item_Glass_Roof_CurvedAngles_Tempered",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Roof_CurvedAngles_Tempered-DisplayName\", \"Reinforced Glass Roof Curved Angle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Roof_CurvedAngles_Tempered_0.T_ITEM_Glass_Roof_CurvedAngles_Tempered_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Roof_CurvedAngles_Tempered-Description\", \"A set of curved roof pieces to place over or under curved wall angles.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23160,6 +23164,7 @@
         {
             "Name": "Item_Glass_Curved_Wall_Tempered",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Curved_Wall_Tempered-DisplayName\", \"Reinforced Glass Wall/Roof Curved\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Wall_Curved_Tempered_0.T_ITEM_Glass_Wall_Curved_Tempered_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Curved_Wall_Tempered-Description\", \"Curved versions of the wall angles, for use underneath curved roofs.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23167,6 +23172,7 @@
         {
             "Name": "Item_Glass_Advanced_Beam_Set_Tempered",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Advanced_Beam_Set_Tempered-DisplayName\", \"Reinforced Glass Advanced Beams\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Advanced_Beam_Set_Tempered_0.T_ITEM_Glass_Advanced_Beam_Set_Tempered_0",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Glass_Advanced_Beam_Set_Tempered-Description\", \"An advanced set of beams for use with diagonal and curved pieces.\")",
             "Weight": 5000,
             "MaxStack": 20
@@ -23709,6 +23715,209 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Props/T_ITEM_Prop_Laptop_A.T_ITEM_Prop_Laptop_A",
             "Description": "INVTEXT(\"[DNT] Group 15 Encrypted Data\")",
             "Weight": 500
+        },
+        {
+            "Name": "Item_NationalFlag_NewZealand",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_NewZealand-DisplayName\", \"National Flag (New Zealand)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_NewZealand-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Australia",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Australia-DisplayName\", \"National Flag (Australia)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Australia-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Belgium",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Belgium-DisplayName\", \"National Flag (Belgium)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Belgium-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Brazil",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Brazil-DisplayName\", \"National Flag (Brazil)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Brazil-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Canada",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Canada-DisplayName\", \"National Flag (Canada)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Canada-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_China",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_China-DisplayName\", \"National Flag (China)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_China-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Czech",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Czech-DisplayName\", \"National Flag (Czech Republic)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Czech-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Denmark",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Denmark-DisplayName\", \"National Flag (Denmark)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Denmark-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_EuropeanUnion",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_EuropeanUnion-DisplayName\", \"National Flag (European Union)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_EuropeanUnion-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Finland",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Finland-DisplayName\", \"National Flag (Finland)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Finland-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_France",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_France-DisplayName\", \"National Flag (France)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_France-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Germany",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Germany-DisplayName\", \"National Flag (Germany)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Germany-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Hungry",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Hungry-DisplayName\", \"National Flag (Hungary)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Hungry-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Italy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Italy-DisplayName\", \"National Flag (Italy)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Italy-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Japan",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Japan-DisplayName\", \"National Flag (Japan)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Japan-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Netherlands",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Netherlands-DisplayName\", \"National Flag (Netherlands)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Netherlands-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Norway",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Norway-DisplayName\", \"National Flag (Norway)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Norway-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Romania",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Romania-DisplayName\", \"National Flag (Romania)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Romania-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Russia",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Russia-DisplayName\", \"National Flag (Russia)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Russia-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_SouthAfrica",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_SouthAfrica-DisplayName\", \"National Flag (South Africa)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_SouthAfrica-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_SouthKorea",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_SouthKorea-DisplayName\", \"National Flag (South Korea)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_SouthKorea-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Spain",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Spain-DisplayName\", \"National Flag (Spain)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Spain-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Sweden",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Sweden-DisplayName\", \"National Flag (Sweden)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Sweden-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Switzerland",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Switzerland-DisplayName\", \"National Flag (Switzerland)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Switzerland-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Taiwan",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Taiwan-DisplayName\", \"National Flag (Taiwan)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Taiwan-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Turkey",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Turkey-DisplayName\", \"National Flag (Turkey)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Turkey-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_Ukraine",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Ukraine-DisplayName\", \"National Flag (Ukraine)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Ukraine-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_UnitedKingdom",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_UnitedKingdom-DisplayName\", \"National Flag (United Kingdom)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_UnitedKingdom-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_NationalFlag_UnitedStates",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_UnitedStates-DisplayName\", \"National Flag (United States)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_UnitedStates-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
+            "Weight": 5000
         }
     ]
 }

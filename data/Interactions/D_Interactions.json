@@ -257,16 +257,6 @@
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Add_Oxite_Processor-InteractionText\", \"Add 1 Oxite\")"
         },
         {
-            "Name": "Faction_Satellite_Arm",
-            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_ArmSatellite.BP_Interactable_Interact_ArmSatellite_C",
-            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Faction_Satellite_Arm-InteractionText\", \"Arm\")"
-        },
-        {
-            "Name": "Faction_Satellite_Interact",
-            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_SatelliteAccessInventory.BP_Interactable_Interact_SatelliteAccessInventory_C",
-            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Faction_Satellite_Interact-InteractionText\", \"Access Inventory\")"
-        },
-        {
             "Name": "Faction_Laser_Interact",
             "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Activate_Laser.BP_Interactable_Interact_Activate_Laser_C",
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Faction_Laser_Interact-InteractionText\", \"Toggle Laser\")"
@@ -773,6 +763,16 @@
             "AuthorityType": "ClientOnly",
             "InteractCooldown": 2,
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Teleport_RetrieveLoot-InteractionText\", \"Retrieve Loot\")"
+        },
+        {
+            "Name": "Interact_EDEN_NPC",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_EDEN_NPC.BP_Interactable_EDEN_NPC_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_EDEN_NPC-InteractionText\", \"Speak\")"
+        },
+        {
+            "Name": "Interact_NPC_Inventory_Take",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC_Inventory_Take.BP_Interactable_NPC_Inventory_Take_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_Inventory_Take-InteractionText\", \"Take Items\")"
         }
     ]
 }

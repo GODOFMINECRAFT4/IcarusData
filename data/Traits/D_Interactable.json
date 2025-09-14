@@ -658,25 +658,6 @@
             ]
         },
         {
-            "Name": "Faction_Body",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Interact_Deployable",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                },
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Item",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ]
-        },
-        {
             "Name": "Wall_Torch",
             "WorldPressInteracts": [
                 {
@@ -1035,25 +1016,6 @@
                 {
                     "InteractionRow": {
                         "RowName": "Pickup_Deployable",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ]
-        },
-        {
-            "Name": "Faction_Satellite_Defend",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Faction_Satellite_Arm",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                },
-                {
-                    "InteractionRow": {
-                        "RowName": "Faction_Satellite_Interact",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -3518,6 +3480,36 @@
                 {
                     "InteractionRow": {
                         "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "NPC_EDEN_Interact",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_EDEN_NPC",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Medical_Scan",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_NPC_Inventory_Take",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""

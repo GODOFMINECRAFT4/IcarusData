@@ -41065,6 +41065,30 @@
             }
         },
         {
+            "Name": "Workshop_CHAC_Rifle",
+            "ExtraData": {
+                "RowName": "Meta_CHAC_Rifle",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Firearms"
+            },
+            "Position": {
+                "X": 1500,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_CHAC_Pistol",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
             "Name": "Workshop_Creature_Horse_A1",
             "ExtraData": {
                 "RowName": "Meta_Horse_A1",
@@ -57815,7 +57839,7 @@
         },
         {
             "Name": "Arctic_Armor",
-            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Arctic_Armor-DisplayName\", \"Arctic Survial Armor\")",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Arctic_Armor-DisplayName\", \"Arctic Survival Armor\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_ArcticArmor_Chest.T_ITEM_ArcticArmor_Chest",
             "ExtraData": {
                 "DataTableName": "D_Itemable"
@@ -57937,6 +57961,30 @@
                     "RowName": "GreatHunts"
                 }
             }
+        },
+        {
+            "Name": "Workshop_Rifle_Round",
+            "ExtraData": {
+                "RowName": "Meta_Rifle_Ammo",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Firearms"
+            },
+            "Position": {
+                "X": 1500,
+                "Y": 400
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_CHAC_Rifle",
+                    "DataTableName": "D_Talents"
+                }
+            ]
         },
         {
             "Name": "Caveworm_ArmorSet",

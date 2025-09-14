@@ -1276,11 +1276,6 @@
             "EquipHandMesh": "/Game/ASS/ITM/Bandage_Cooling/SM_ITM_Bandage_Cooling.SM_ITM_Bandage_Cooling"
         },
         {
-            "Name": "Mesh_Faction_Body",
-            "ItemMesh": "/Game/Prototypes/Factions/SM_Corpse.SM_Corpse",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Faction_Body.BP_Faction_Body_C"
-        },
-        {
             "Name": "Player_Fist",
             "ItemMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
@@ -1816,11 +1811,6 @@
             "Name": "Mesh_Carcass_Alpha_Desert_Wolf",
             "ItemMesh": "/Game/ASS/CRE/Wolf/DesertWolf/SK_CRE_Desert_Wolf_Alpha.SK_CRE_Desert_Wolf_Alpha",
             "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Alpha_Desert_Wolf_Corpse.BP_Alpha_Desert_Wolf_Corpse_C"
-        },
-        {
-            "Name": "Mesh_Faction_Satellite",
-            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
-            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Containers/BP_Faction_Satellite.BP_Faction_Satellite_C"
         },
         {
             "Name": "Mesh_Poison_Arrow",
@@ -6670,7 +6660,7 @@
             "Name": "Mesh_Rifle_CHAC",
             "ItemMesh": "/Game/ASS/WEP/SK_GUN_HuntingRifle_CHAC/SK_GUN_HuntingRifle_CHAC_Repeater.SK_GUN_HuntingRifle_CHAC_Repeater",
             "EquipHandMesh": "/Game/ASS/WEP/SK_GUN_HuntingRifle_CHAC/SK_GUN_HuntingRifle_CHAC_Repeater.SK_GUN_HuntingRifle_CHAC_Repeater",
-            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_HuntingRifle.BP_SkeletalItem_HuntingRifle_C"
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Rifle_CHAC.BP_SkeletalItem_Rifle_CHAC_C"
         },
         {
             "Name": "Mesh_Carcass_Mount_Horse_Standard",
@@ -7083,8 +7073,10 @@
         },
         {
             "Name": "Mesh_Oil_Barrel",
-            "ItemMesh": "/Game/ASS/ITM/SM_ITM_PowerSource_META.SM_ITM_PowerSource_META",
-            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
+            "ItemMesh": "/Game/ASS/DEP/DEP_Steel_Barrel/SM_DEP_Steel_Barrel.SM_DEP_Steel_Barrel",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/DEP/DEP_Steel_Barrel/SM_DEP_Steel_Barrel.SM_DEP_Steel_Barrel",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Back/BP_Back_Portable_Tank_Oil.BP_Back_Portable_Tank_Oil_C"
         },
         {
             "Name": "Mesh_Generic_Manufacturer",

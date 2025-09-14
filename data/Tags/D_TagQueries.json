@@ -7494,6 +7494,24 @@
                 ],
                 "AutoDescription": " ANY( FactionMission.Item.Nail, Item.Resource.Nail )"
             }
+        },
+        {
+            "Name": "Any_National_Flag",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.NationalFlag"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.NationalFlag )"
+            }
         }
     ]
 }

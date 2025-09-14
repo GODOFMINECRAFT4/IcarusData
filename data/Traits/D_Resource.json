@@ -447,7 +447,9 @@
         {
             "Name": "Flow_Meter",
             "bHasEnergyConnection": true,
-            "bHasWaterConnection": true
+            "bHasWaterConnection": true,
+            "bHasFuelConnection": true,
+            "bHasCrudeOilConnection": true
         },
         {
             "Name": "Biofuel_Aquarium",
@@ -708,6 +710,17 @@
             "bHasEnergyConnection": true,
             "EnergyFlow": {
                 "RowName": "Tesla_Coil"
+            }
+        },
+        {
+            "Name": "Flame_Turret",
+            "bHasEnergyConnection": true,
+            "EnergyFlow": {
+                "RowName": "Turret"
+            },
+            "bHasFuelConnection": true,
+            "FuelFlow": {
+                "RowName": "Flame_Turret_Store"
             }
         }
     ]

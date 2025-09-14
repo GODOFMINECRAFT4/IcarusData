@@ -8132,7 +8132,7 @@
             "Name": "Manufacturer",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Manufacturer.BP_Manufacturer_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Bench_GreatHunt_Crafting/SM_DEP_Manufacturing_Unit_T5_Bench.SM_DEP_Manufacturing_Unit_T5_Bench",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/T5_Polymerizer/SFX_DEPLOY_POLYMERIZER.SFX_DEPLOY_POLYMERIZER",
             "SnapToSurfaceNormal": false
         },
         {
@@ -8166,7 +8166,7 @@
             "Name": "Natural_Oil_Refiner",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Refiner/BP_Natural_Oil_Refiner.BP_Natural_Oil_Refiner_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Natural_Oil_Refiner_T5/SM_DEP_Natural_Oil_Refiner_T5.SM_DEP_Natural_Oil_Refiner_T5",
-            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Geyser_Analyzer/SFX_DEPLOY_GEYSER_ANALYZER.SFX_DEPLOY_GEYSER_ANALYZER",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/T5_Polymerizer/SFX_DEPLOY_POLYMERIZER.SFX_DEPLOY_POLYMERIZER",
             "MaxSurfaceSnapAngle": 360,
             "SupportsCustomRotation": false,
             "IgnoreCollisionWhenSnapped": true,
@@ -8175,7 +8175,7 @@
         {
             "Name": "Polymerizer",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Polymerizer.BP_Polymerizer_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Polymerizer_T5/SM_DEP_Polymerizer_T5.SM_DEP_Polymerizer_T5",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Polymerizer_T5/SM_DEP_Polymerizer_T5_Combined.SM_DEP_Polymerizer_T5_Combined",
             "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/T5_Polymerizer/SFX_DEPLOY_POLYMERIZER.SFX_DEPLOY_POLYMERIZER",
             "SnapToSurfaceNormal": false
         },
@@ -8183,14 +8183,14 @@
             "Name": "Organic_Extractor",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Organic_Extractor.BP_Organic_Extractor_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Organic_Extractor_T5/SM_DEP_Organic_Extractor_T5.SM_DEP_Organic_Extractor_T5",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/T5_Polymerizer/SFX_DEPLOY_POLYMERIZER.SFX_DEPLOY_POLYMERIZER",
             "SnapToSurfaceNormal": false
         },
         {
             "Name": "Crude_Oil_Power_Generator",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Generators/BP_Crude_Oil_Power_Generator.BP_Crude_Oil_Power_Generator_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Crude_Oil_Generator_T5/SM_DEP_Oil_Powered_Generator_T5_Combined.SM_DEP_Oil_Powered_Generator_T5_Combined",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/T5_Polymerizer/SFX_DEPLOY_POLYMERIZER.SFX_DEPLOY_POLYMERIZER"
         },
         {
             "Name": "Portable_Generator",
@@ -8511,7 +8511,10 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
             "SnapToSurfaceNormal": false,
             "MaxSurfaceSnapAngle": 60,
-            "SupportsCustomRotation": false
+            "SupportsCustomRotation": false,
+            "DeployCollisionExtentOffset": {
+                "Z": -20
+            }
         },
         {
             "Name": "Flagpole_Wall",
@@ -12618,7 +12621,7 @@
             "Name": "ClayBrick_Fireplace_Ext",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Cooking/BP_ClayBrick_Fireplace_Ext.BP_ClayBrick_Fireplace_Ext_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Fireplace_Clay_Brick/SM_DEP_Fireplace_ClayBrick_Grey_Extension.SM_DEP_Fireplace_ClayBrick_Grey_Extension",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_CONC.SFX_BLD_CONC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
@@ -12639,7 +12642,7 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Fireplace_Chimney_Cap1.T_ITEM_Fireplace_Chimney_Cap1",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"ClayBrick_Fireplace_Cap-DeployableName\", \"Full Height\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Fireplace_Clay_Brick/SM_DEP_Fireplace_ClayBrick_Grey_CAP_LRG.SM_DEP_Fireplace_ClayBrick_Grey_CAP_LRG",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_CONC.SFX_BLD_CONC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
@@ -12660,7 +12663,7 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Fireplace_Chimney_Cap2.T_ITEM_Fireplace_Chimney_Cap2",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"ClayBrick_Fireplace_Cap_Half-DeployableName\", \"Half Height\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Fireplace_Clay_Brick/SM_DEP_Fireplace_ClayBrick_Grey_CAP.SM_DEP_Fireplace_ClayBrick_Grey_CAP",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_CONC.SFX_BLD_CONC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
@@ -12780,7 +12783,7 @@
             "Name": "Homestead_Fireplace_Ext",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Cooking/BP_Homestead_Fireplace_Ext.BP_Homestead_Fireplace_Ext_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Fireplace_Brick/SM_DEP_Fireplace_Brick_Extension.SM_DEP_Fireplace_Brick_Extension",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_CONC.SFX_BLD_CONC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
@@ -12801,7 +12804,7 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Homestead_Fireplace_Cap_0.T_ITEM_Homestead_Fireplace_Cap_0",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Homestead_Fireplace_Cap-DeployableName\", \"Full Height\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Fireplace_Brick/SM_DEP_Fireplace_Brick_Cap.SM_DEP_Fireplace_Brick_Cap",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_CONC.SFX_BLD_CONC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
@@ -12822,7 +12825,7 @@
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Homestead_Fireplace_Cap_1.T_ITEM_Homestead_Fireplace_Cap_1",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Homestead_Fireplace_Cap_Half-DeployableName\", \"Half Height\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Fireplace_Brick/SM_DEP_Fireplace_Brick_Cap_SML.SM_DEP_Fireplace_Brick_Cap_SML",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_CONC.SFX_BLD_CONC",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE.SFX_BLD_STONE",
             "SnapToSurfaceNormal": false,
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",

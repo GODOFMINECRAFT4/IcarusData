@@ -46,6 +46,16 @@
             "Name": "Natural_Oil_Refiner",
             "AutoActivate": true,
             "AutoShutoffFlowPercent": -1
+        },
+        {
+            "Name": "Flame_Turret_Store",
+            "AutoActivate": true,
+            "bAllowPullingResourceFromInventory": true,
+            "AutoShutoffFlowPercent": -1,
+            "bIsOptional": true,
+            "OptionalFlowType": {
+                "RowName": "Flame_Turret_Fuel"
+            }
         }
     ]
 }
