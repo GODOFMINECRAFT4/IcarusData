@@ -2807,6 +2807,15 @@
             "Weight": 10000
         },
         {
+            "Name": "Item_Flat_Solar_Panel",
+            "DisplayName": "INVTEXT(\"[DNT] Flat Solar Panel\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flat_Solar_Panel.T_ITEM_Flat_Solar_Panel",
+            "Description": "INVTEXT(\"[DNT] This solar panel needs to be in direct sunlight to create power. Must be placed on a roof piece.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Flat_Solar_Panel-FlavorText\", \"As effective under this star as any other.\")",
+            "Weight": 10000,
+            "MaxStack": 5
+        },
+        {
             "Name": "Item_Interior_Wood_Ladder",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Interior_Wood_Ladder-DisplayName\", \"Interior Wood Ladder\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Interior_Wood_Ladder.ITEM_Interior_Wood_Ladder",
@@ -3449,7 +3458,7 @@
         {
             "Name": "Item_Carcass_DesertDeer",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_DesertDeer-DisplayName\", \"Antelope Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_DeerDesert.ITEM_AnimalCarcass_DeerDesert",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_DeerDesert.T_ITEM_AnimalCarcass_DeerDesert",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_DesertDeer-Description\", \"Imported from Earth, adjusted and released to the reformed deserts of Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_DesertDeer-FlavorText\", \"\\'A hunter who is going to shoot an antelope does not waste his bullets on the dog.\\' - Israelmore Ayivor\")",
             "Weight": 10000
@@ -3573,24 +3582,6 @@
             "Weight": 500
         },
         {
-            "Name": "Item_Raw_Prime_Meat",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Raw_Prime_Meat-DisplayName\", \"Raw Prime Meat\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Raw_Prime_Meat.ITEM_Raw_Prime_Meat",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Raw_Prime_Meat-Description\", \"HIgh quality meat, though quick to spoil.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Raw_Prime_Meat-FlavorText\", \"The last word in Icarus cuisine, when properly cooked, though requires refrigeration soon after killing or will spoil.\")",
-            "Weight": 100,
-            "MaxStack": 10
-        },
-        {
-            "Name": "Item_Cooked_Prime_Meat",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Cooked_Prime_Meat-DisplayName\", \"Cooked Prime Meat\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/ITEM_Cooked_Prime_Meat.ITEM_Cooked_Prime_Meat",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Cooked_Prime_Meat-Description\", \"Energy dense, high quality cut.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Cooked_Prime_Meat-FlavorText\", \"Cooked meat is easier to digest and provides more nutrition than raw flesh.\")",
-            "Weight": 100,
-            "MaxStack": 10
-        },
-        {
             "Name": "Item_Repair_Bench",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Repair_Bench-DisplayName\", \"Repair Bench\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Repair_Bench.ITEM_Repair_Bench",
@@ -3601,7 +3592,7 @@
         {
             "Name": "Item_Carcass_DesertDeerLarge",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_DesertDeerLarge-DisplayName\", \"Large Antelope Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_DeerDesertLarge.ITEM_AnimalCarcass_DeerDesertLarge",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_DeerDesertLarge.T_ITEM_AnimalCarcass_DeerDesertLarge",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_DesertDeerLarge-Description\", \"A large, genetically modified ruminant.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_DesertDeerLarge-FlavorText\", \"Further from the savannah than anyone ever expected.\")",
             "Weight": 13000
@@ -3746,7 +3737,7 @@
         {
             "Name": "Item_Carcass_Alpha_Desert_Wolf",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Alpha_Desert_Wolf-DisplayName\", \"Alpha Hyena Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Alpha_Wolf.ITEM_AnimalCarcass_Alpha_Wolf",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Desert_Wolf.ITEM_AnimalCarcass_Desert_Wolf",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Alpha_Desert_Wolf-Description\", \"A savage hunter.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Alpha_Desert_Wolf-FlavorText\", \"The Formidable Alpha wolf variant endures where little else survives.\")",
             "Weight": 12000
@@ -6990,7 +6981,7 @@
         {
             "Name": "Item_Carcass_Lava_Komodo",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Lava_Komodo-DisplayName\", \"Ashen Drake Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Komodo.ITEM_AnimalCarcass_Komodo",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Lava_Komodo.T_ITEM_AnimalCarcass_Lava_Komodo",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Lava_Komodo-Description\", \"A dead Ashen Drake.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Lava_Komodo-FlavorText\", \"Probably safer than a live one.\")",
             "Weight": 3500
@@ -8877,6 +8868,13 @@
             "Weight": 5000
         },
         {
+            "Name": "Item_Carcass_Needler_Fire",
+            "DisplayName": "INVTEXT(\"[DNT] Fire Needler Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Needler_Fire-Description\", \"Genetically divergent reptile.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Needler_Fire-FlavorText\", \"Bone-like spines push through the scales of this mutated reptile. This animal led a pain filled existence.\")",
+            "Weight": 5000
+        },
+        {
             "Name": "Item_Mission_AudioLog_Prometheus_1",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_AudioLog_Prometheus_1-DisplayName\", \"Damaged Audio Log\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/ITEM_Module_Compass.ITEM_Module_Compass",
@@ -9116,6 +9114,12 @@
             "Weight": 10000
         },
         {
+            "Name": "Item_Carcass_BlueBack_Juvenile",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BlueBack_Juvenile-DisplayName\", \"Juvenile Blueback Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BlueBack_Juvenile-Description\", \"What the Blueback lacks in speed, it makes up for in bulk.\")",
+            "Weight": 10000
+        },
+        {
             "Name": "Item_Carcass_Roat_Swamp",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat_Swamp-DisplayName\", \"Swamp Roat Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Roat.ITEM_AnimalCarcass_Roat",
@@ -9128,6 +9132,12 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BlueBack_Lava-DisplayName\", \"Redback Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_BlueBack_Lava.T_ITEM_AnimalCarcass_BlueBack_Lava",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BlueBack_Lava-Description\", \"The corpse of a sometimes gentle giant.\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Carcass_BlueBack_Lava_Juvenile",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BlueBack_Lava_Juvenile-DisplayName\", \"Juvenile Redback Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_BlueBack_Lava_Juvenile-Description\", \"The corpse of a sometimes gentle giant.\")",
             "Weight": 10000
         },
         {
@@ -9384,15 +9394,15 @@
         {
             "Name": "Item_Carcass_WoolyZebra",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_WoolyZebra-DisplayName\", \"Shaggy Zebra Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Zebra.ITEM_AnimalCarcass_Zebra",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Wooly_Zebra.T_ITEM_AnimalCarcass_Wooly_Zebra",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_WoolyZebra-Description\", \"A gregarious, migratory grazer and icon of the savannah.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_WoolyZebra-FlavorText\", \"The exact purpose of zebra stripes remains a mystery.\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Carcass_WoolyZebra_Juvenile",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_WoolyZebra_Juvenile-DisplayName\", \"Shaggy Juvenile Zebra Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Zebra.ITEM_AnimalCarcass_Zebra",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_WoolyZebra_Juvenile-DisplayName\", \"Juvenile Shaggy Zebra Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Wooly_Zebra_Juvenile.T_ITEM_AnimalCarcass_Wooly_Zebra_Juvenile",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_WoolyZebra_Juvenile-Description\", \"A gregarious, migratory grazer and icon of the savannah.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_WoolyZebra_Juvenile-FlavorText\", \"The exact purpose of zebra stripes remains a mystery.\")",
             "Weight": 10000
@@ -11844,7 +11854,7 @@
         {
             "Name": "Item_Carcass_PolarBearCub",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_PolarBearCub-DisplayName\", \"Polar Bear Cub Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_PolarBear.ITEM_AnimalCarcass_PolarBear",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_PolarBearCub.T_ITEM_AnimalCarcass_PolarBearCub",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_PolarBearCub-Description\", \"Highly aggressive, protected by the emperor of the arctic.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_PolarBearCub-FlavorText\", \"As an apex predator these polar bear cubs face little threat, except from you.\")",
             "Weight": 10000
@@ -12555,6 +12565,14 @@
             "Weight": 20000
         },
         {
+            "Name": "Item_Carcass_Hammerhead_Slug",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Hammerhead_Slug-DisplayName\", \"Hammerhead Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Hammerhead_Slug_Small.T_ITEM_AnimalCarcass_Hammerhead_Slug_Small",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Hammerhead_Slug-Description\", \"The slimy remains of a giant Hammerhead Slug\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Hammerhead_Slug-FlavorText\", \"This actually is it\\'s final form...\")",
+            "Weight": 20000
+        },
+        {
             "Name": "Item_Carcass_Lava_Slug",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Lava_Slug-DisplayName\", \"Ignari Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Lava_Slug.T_ITEM_AnimalCarcass_Lava_Slug",
@@ -12573,7 +12591,7 @@
         {
             "Name": "Item_Carcass_Rabbit_Variant",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rabbit_Variant-DisplayName\", \"Pygmy Lop Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Rabbit.ITEM_AnimalCarcass_Rabbit",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Rabbit_Variant.T_ITEM_AnimalCarcass_Rabbit_Variant",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rabbit_Variant-Description\", \"As on Earth, a survivor, but not today.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rabbit_Variant-FlavorText\", \"The rabbit variant has found a new niche on this malformed environment.\")",
             "Weight": 1000
@@ -14307,14 +14325,14 @@
         {
             "Name": "Item_Carcass_Tusker",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tusker-DisplayName\", \"Tusker Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Tusker_Head.T_ITEM_Tusker_Head",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Tusker.T_ITEM_AnimalCarcass_Tusker",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tusker-Description\", \"A once proud beast, now lies dead at your feet.\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Carcass_Tusker_Juvenile",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tusker_Juvenile-DisplayName\", \"Juvenile Tusker Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Tusker_Head.T_ITEM_Tusker_Head",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Tusker_Juvenile.T_ITEM_AnimalCarcass_Tusker_Juvenile",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tusker_Juvenile-Description\", \"A juvenile Tusker which never quite made it to full adulthood.\")",
             "Weight": 4500
         },
@@ -14773,7 +14791,7 @@
         {
             "Name": "Item_Tusker_Head",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Tusker_Head-DisplayName\", \"Tusker Vestige\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Tusker_Head.T_ITEM_Tusker_Head",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Tusker_Head.T_ITEM_Tusker_Head",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Tusker_Head-Description\", \"A preserved memory of a once-great Tusker.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Tusker_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
             "Weight": 2000,
@@ -16390,7 +16408,7 @@
         {
             "Name": "Item_Carcass_Ape",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ape-DisplayName\", \"Garganutan Prime Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_PassiveCreature.Icon_PassiveCreature",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Ape.T_ITEM_AnimalCarcass_Ape",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ape-Description\", \"The Apex of the Garganutan Line\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ape-FlavorText\", \"Another one bites the dust.\")",
             "Weight": 5000
@@ -17429,7 +17447,6 @@
         {
             "Name": "Item_Carcass_Eagle",
             "DisplayName": "INVTEXT(\"[DNT] Eagle Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_PassiveCreature.Icon_PassiveCreature",
             "Description": "INVTEXT(\"[DNT] Eagle Carcass\")",
             "FlavorText": "INVTEXT(\"[DNT] Eagle Carcass\")",
             "Weight": 1250
@@ -19069,24 +19086,28 @@
         {
             "Name": "Item_Pump_Jack",
             "DisplayName": "INVTEXT(\"[DNT] Pump Jack\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Pump_Jack.T_ITEM_Pump_Jack",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Pump_Jack-Description\", \"A machine designed to extract Crude Oil from Oil Geysers present on Icarus. \")",
             "Weight": 100
         },
         {
             "Name": "Item_Crude_Oil_Refiner",
             "DisplayName": "INVTEXT(\"[DNT] Crude Oil Refiner\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Crude_Oil_Refiner.T_ITEM_Crude_Oil_Refiner",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Crude_Oil_Refiner-Description\", \"A machine that converts Crude Oil to Refined Oil and Stores in Barrels placed in its inventory.\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Natural_Oil_Refiner",
             "DisplayName": "INVTEXT(\"[DNT] Natural Oil Refiner\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Natural_Oil_Refiner.T_ITEM_Natural_Oil_Refiner",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Natural_Oil_Refiner-Description\", \"A machine that Converts Biofuel into Refined Oil and Stores in Barrels placed in its inventory.\")",
             "Weight": 10000
         },
         {
             "Name": "Item_Polymerizer",
             "DisplayName": "INVTEXT(\"[DNT] Polymerizer\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Polymerizer.T_ITEM_Polymerizer",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Polymerizer-Description\", \"A machine that converts refined oil into various useful products.\")",
             "Weight": 10000
         },
@@ -19099,6 +19120,7 @@
         {
             "Name": "Item_Oil_Power_Generator",
             "DisplayName": "INVTEXT(\"[DNT] Crude Oil Power Generator\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Oil_Power_Generator.T_ITEM_Oil_Power_Generator",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Oil_Power_Generator-Description\", \"An advanced machine that generates a lot of power at the cost of pollution.\")",
             "Weight": 10000
         },
@@ -19694,7 +19716,7 @@
         {
             "Name": "Item_Carcass_Roat_Lava",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat_Lava-DisplayName\", \"Lava Roat Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Roat.ITEM_AnimalCarcass_Roat",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Roat_Lava.T_ITEM_AnimalCarcass_Roat_Lava",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat_Lava-Description\", \"A dead specimen of local wildlife.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Roat_Lava-FlavorText\", \"One of the rare endemic lifeforms able to survive in the failed terraforming zone, the roat endured the savage shift in Icarus\\'s climate, due to its uniquely flexible respiratory system.\")",
             "Weight": 1000
@@ -19769,10 +19791,10 @@
         },
         {
             "Name": "Item_Carcass_Bull",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Bull-DisplayName\", \"Buffalo Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Buffalo.ITEM_AnimalCarcass_Buffalo",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Bull-DisplayName\", \"Bull Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Bull.T_ITEM_AnimalCarcass_Bull",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Bull-Description\", \"No longer roaming.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Bull-FlavorText\", \"Often confused with bison.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Bull-FlavorText\", \"Often confused with Bison.\")",
             "Weight": 10000
         },
         {
@@ -19872,7 +19894,6 @@
         {
             "Name": "Item_Carcass_Rooster",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rooster-DisplayName\", \"Rooster Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Chicken.T_ITEM_AnimalCarcass_Chicken",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rooster-Description\", \"A feathered friend lies at your feet, now dead.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rooster-FlavorText\", \"Frozen on Earth, Defrosted on Icarus, What a Life...\")",
             "Weight": 5000
@@ -19880,7 +19901,6 @@
         {
             "Name": "Item_Carcass_Chick",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Chick-DisplayName\", \"Chick Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Chicken.T_ITEM_AnimalCarcass_Chicken",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Chick-Description\", \"A feathered friend lies at your feet, now dead.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Chick-FlavorText\", \"Frozen on Earth, Defrosted on Icarus, What a Life...\")",
             "Weight": 5000
@@ -19904,7 +19924,6 @@
         {
             "Name": "Item_Carcass_Ram",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ram-DisplayName\", \"Ram Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_PassiveCreature.Icon_PassiveCreature",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ram-Description\", \"A woolly friend lies at your feet, now dead.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ram-FlavorText\", \"Frozen on Earth, Defrosted on Icarus, What a Life...\")",
             "Weight": 5000
@@ -20233,9 +20252,17 @@
         {
             "Name": "Item_Carcass_RockGolem_Juvie",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockGolem_Juvie-DisplayName\", \"Quarrite Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Rock_Golem_Head.T_ITEM_Rock_Golem_Head",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_RockGolem_Juvie.T_ITEM_AnimalCarcass_RockGolem_Juvie",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockGolem_Juvie-Description\", \"This thing could have grown into a monster if it was left alive.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockGolem_Juvie-FlavorText\", \"If this is just a young one...\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Carcass_RockGolem_Juvie_Arctic",
+            "DisplayName": "INVTEXT(\"[DNT] Arctic Quarrite Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_RockGolem_Juvie_Arctic.T_ITEM_AnimalCarcass_RockGolem_Juvie_Arctic",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockGolem_Juvie_Arctic-Description\", \"This thing could have grown into a monster if it was left alive.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_RockGolem_Juvie_Arctic-FlavorText\", \"If this is just a young one...\")",
             "Weight": 10000
         },
         {
@@ -20554,7 +20581,7 @@
         {
             "Name": "Item_Carcass_Ape_Juvenile",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ape_Juvenile-DisplayName\", \"Garganutan Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_PassiveCreature.Icon_PassiveCreature",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Ape.T_ITEM_AnimalCarcass_Ape",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ape_Juvenile-Description\", \"The Carcass of what looks like a Giant Ape.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ape_Juvenile-FlavorText\", \"What are the scientists on Icarus doing?\")",
             "Weight": 5000
@@ -20799,6 +20826,7 @@
         {
             "Name": "Item_Carcass_Orka_Arctic",
             "DisplayName": "INVTEXT(\"[DNT] Orka Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Orka_Arctic.T_ITEM_AnimalCarcass_Orka_Arctic",
             "Weight": 10000
         },
         {
@@ -21310,7 +21338,7 @@
         {
             "Name": "Item_Carcass_Mammoth_Icy",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mammoth_Icy-DisplayName\", \"Rimetusk Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Mammoth.ITEM_AnimalCarcass_Mammoth",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Ice_Mammoth.T_ITEM_AnimalCarcass_Ice_Mammoth",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mammoth_Icy-Description\", \"A behemoth from prehistory.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mammoth_Icy-FlavorText\", \"In the aftermath of failed terraforming, this mammoth variant was released illicitly by a disillusioned geneticist. It found an unexpected home in the newly arctified snowfields of Icarus.\")",
             "Weight": 10000
@@ -22012,7 +22040,7 @@
         {
             "Name": "Item_Carcass_Ape_Juvenile_Wounded",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ape_Juvenile_Wounded-DisplayName\", \"Wounded Garganutan\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_PassiveCreature.Icon_PassiveCreature",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Ape.T_ITEM_AnimalCarcass_Ape",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ape_Juvenile_Wounded-Description\", \"The Wounded Body of what looks like a Giant Ape.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Ape_Juvenile_Wounded-FlavorText\", \"What are the scientists on Icarus doing?\")",
             "Weight": 5000
@@ -23013,7 +23041,7 @@
         },
         {
             "Name": "Item_Uranium_Converter",
-            "DisplayName": "INVTEXT(\"[DNT] Uranium Converter\")",
+            "DisplayName": "INVTEXT(\"[DNT] Nuclear Centrifuge\")",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Converter-Description\", \"Machine that Converts Raw Uranium into Rods and Ingots. Does not run in Radioactive Zones.\")",
             "Weight": 50000
         },
@@ -23273,7 +23301,7 @@
         },
         {
             "Name": "Item_Uranium_Generator",
-            "DisplayName": "INVTEXT(\"[DNT] Uranium Generator\")",
+            "DisplayName": "INVTEXT(\"[DNT] Nuclear Reactor\")",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Generator-Description\", \"A Power Generation device that can output large amounts of power through the use of Radioactive Substances.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Generator-FlavorText\", \"Power through Fission!\")",
             "Weight": 2000
@@ -23487,31 +23515,37 @@
         {
             "Name": "Item_ClayBrick_Fireplace",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ClayBrick_Fireplace-DisplayName\", \"Clay Brick Fireplace\")",
-            "Weight": 5000
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_ClayBrick_Fireplace.T_ITEM_ClayBrick_Fireplace",
+            "Weight": 25000
         },
         {
             "Name": "Item_ClayBrick_Fireplace_Ext",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ClayBrick_Fireplace_Ext-DisplayName\", \"Clay Brick Fireplace Extension\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_ClayBrick_Fireplace_Ext.T_ITEM_ClayBrick_Fireplace_Ext",
             "Weight": 5000
         },
         {
             "Name": "Item_ClayBrick_Fireplace_Cap",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_ClayBrick_Fireplace_Cap-DisplayName\", \"Clay Brick Fireplace Cap\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_ClayBrick_Fireplace_Cap.T_ITEM_ClayBrick_Fireplace_Cap",
             "Weight": 5000
         },
         {
             "Name": "Item_StoneBrick_Fireplace",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_StoneBrick_Fireplace-DisplayName\", \"Stone Brick Fireplace\")",
-            "Weight": 5000
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_StoneBrick_Fireplace.T_ITEM_StoneBrick_Fireplace",
+            "Weight": 25000
         },
         {
             "Name": "Item_StoneBrick_Fireplace_Ext",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_StoneBrick_Fireplace_Ext-DisplayName\", \"Stone Brick Fireplace Extension\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_StoneBrick_Fireplace_Ext.T_ITEM_StoneBrick_Fireplace_Ext",
             "Weight": 5000
         },
         {
             "Name": "Item_StoneBrick_Fireplace_Cap",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_StoneBrick_Fireplace_Cap-DisplayName\", \"Stone Brick Fireplace Cap\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_StoneBrick_Fireplace_Cap.T_ITEM_StoneBrick_Fireplace_Cap",
             "Weight": 5000
         },
         {
@@ -23535,6 +23569,7 @@
         {
             "Name": "Item_Carcass_Bounder",
             "DisplayName": "INVTEXT(\"[DNT] Bounder Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Bounder_Desert.T_ITEM_AnimalCarcass_Bounder_Desert",
             "Weight": 10000
         },
         {
@@ -23563,6 +23598,7 @@
         {
             "Name": "Item_Carcass_Tundra_Deer",
             "DisplayName": "INVTEXT(\"[DNT] Tundra Deer Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Tundra_Deer.T_ITEM_AnimalCarcass_Tundra_Deer",
             "Weight": 10000
         },
         {
@@ -23588,6 +23624,7 @@
         {
             "Name": "Item_Carcass_Chew",
             "DisplayName": "INVTEXT(\"[DNT] Chew Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Chew.T_ITEM_AnimalCarcass_Chew",
             "Weight": 10000
         },
         {
@@ -23604,8 +23641,16 @@
             "Weight": 500
         },
         {
+            "Name": "Item_Mission_ELY2_Swamp_Map",
+            "DisplayName": "INVTEXT(\"[DNT] Map Showing Old G15 Comms Stations\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Map.T_ITEM_Map",
+            "Description": "INVTEXT(\"[DNT] A Roughly Drawn Map of the Southern Swamp in Elysium.\")",
+            "Weight": 500
+        },
+        {
             "Name": "Item_Carcass_Hopping_Creature",
             "DisplayName": "INVTEXT(\"[DNT] Hopping Creature\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_HoppingCreature.T_ITEM_AnimalCarcass_HoppingCreature",
             "Weight": 10000
         },
         {
@@ -23622,11 +23667,6 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rabbit_Variant_Snow-Description\", \"As on Earth, a survivor, but not today.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rabbit_Variant_Snow-FlavorText\", \"The rabbit variant has found a new niche on this malformed environment.\")",
             "Weight": 1000
-        },
-        {
-            "Name": "Item_Carcass_Raptor_Juvenile",
-            "DisplayName": "INVTEXT(\"[DNT] Juvenile Raptor Carcass\")",
-            "Weight": 3500
         },
         {
             "Name": "Item_Nailgun",
@@ -23648,6 +23688,27 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Hay_Bale_B.T_ITEM_Hay_Bale_B",
             "Weight": 500,
             "MaxStack": 10
+        },
+        {
+            "Name": "Item_Mission_ELY2_Epsilon",
+            "DisplayName": "INVTEXT(\"[DNT] Partial Data Epsilon\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "INVTEXT(\"[DNT] Group 15 Encrypted Data\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Mission_ELY2_Delta",
+            "DisplayName": "INVTEXT(\"[DNT] Partial Data Delta\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "INVTEXT(\"[DNT] Group 15 Encrypted Data\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Mission_ELY2_Laptop",
+            "DisplayName": "INVTEXT(\"[DNT] Encrypted Terraforming Data\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Props/T_ITEM_Prop_Laptop_A.T_ITEM_Prop_Laptop_A",
+            "Description": "INVTEXT(\"[DNT] Group 15 Encrypted Data\")",
+            "Weight": 500
         }
     ]
 }
