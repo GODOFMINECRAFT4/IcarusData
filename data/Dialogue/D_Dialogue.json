@@ -8201,6 +8201,7 @@
         {
             "Name": "PromNomadEvent8",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/NOMAD/PROM_NOMAD_EVENT8.PROM_NOMAD_EVENT8",
+            "Priority": 1,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromNomadEvent8-Text-0\", \"Hello Prospector.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromNomadEvent8-Text-1\", \"Now just a second-\")",
@@ -8299,6 +8300,7 @@
             "Name": "PromNomadEvent9",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/NOMAD/PROM_NOMAD_EVENT9.PROM_NOMAD_EVENT9",
             "Delay": 12,
+            "Priority": 1,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromNomadEvent9-Text-0\", \"Training mission complete.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromNomadEvent9-Text-1\", \"Going offline. Clearing frequency.\")",
@@ -8531,6 +8533,7 @@
         {
             "Name": "PromOffenderAudiolog1",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/OFFENDER/PROM_OFFENDER_AUDIOLOG.PROM_OFFENDER_AUDIOLOG",
+            "Priority": 1,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromOffenderAudiolog1-Text-0\", \"*garbled recording plays*\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromOffenderAudiolog1-Text-1\", \"What-\")",
@@ -8774,6 +8777,7 @@
         {
             "Name": "PromShadowedEvent9",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/SHADOWED/PROM_SHADOWED_EVENT9.PROM_SHADOWED_EVENT9",
+            "Priority": 1,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromShadowedEvent9-Text-0\", \"*Recording plays* Okay. More to do.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromShadowedEvent9-Text-1\", \"I\\'ll need more resin and reed flowers. More gold and Iron.\")",
@@ -9525,6 +9529,7 @@
         {
             "Name": "PromFractureEvent5",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/FRACTURE/PROM_FRACTURE_EVENT5.PROM_FRACTURE_EVENT5",
+            "Priority": 1,
             "Speaker": {
                 "RowName": "Clarke"
             },
@@ -9654,6 +9659,7 @@
         {
             "Name": "PromFractureEvent10",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/FRACTURE/PROM_FRACTURE_EVENT10.PROM_FRACTURE_EVENT10",
+            "Priority": 1,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromFractureEvent10-Text-0\", \"What on earth do you think you\\'re doing, Prospector? You are completely off course.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromFractureEvent10-Text-1\", \"It\\'s not earth, it\\'s Icarus. Idiot.\")",
@@ -9727,6 +9733,7 @@
         {
             "Name": "PromFractureEvent12",
             "Audio": "/Game/FMOD/Events/Dialogue/DLC_1/FRACTURE/PROM_FRACTURE_EVENT12.PROM_FRACTURE_EVENT12",
+            "Priority": 1,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PromFractureEvent12-Text-0\", \"Nicely done, okay let\\'s crack this thing open and-\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"PromFractureEvent12-Text-1\", \"Test test. Alright, hey there Prospector.\")",
@@ -15507,8 +15514,7 @@
                 "NSLOCTEXT(\"D_Dialogue\", \"GH_APE_A_3-Text-8\", \"That goes for you too, AGENT. No funny business, alright?\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"GH_APE_A_3-Text-9\", \"How dare you. I would never...\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"GH_APE_A_3-Text-10\", \"Okay, I gotta go. Corporate are on my ass about- ah nevermind, uh, good luck out there.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"GH_APE_A_3-Text-11\", \"Mission complete - uploading progress report to secure server. Please wait for further instruction.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"GH_APE_A_3-Text-12\", \"Your next contract can be found on your chosen C0NT4CT Device\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"GH_APE_A_3-Text-11\", \"Mission complete. Your next contract can be found on your chosen C0NT4CT Device\")"
             ],
             "bUseSubtitleOverrides": true,
             "SubtitleOverrides": [
@@ -15586,13 +15592,6 @@
                     "OverrideLength": 0,
                     "SpeakerOverride": {
                         "RowName": "Agent",
-                        "DataTableName": "D_DialogueSpeaker"
-                    }
-                },
-                {
-                    "OverrideLength": 0,
-                    "SpeakerOverride": {
-                        "RowName": "Handler",
                         "DataTableName": "D_DialogueSpeaker"
                     }
                 },

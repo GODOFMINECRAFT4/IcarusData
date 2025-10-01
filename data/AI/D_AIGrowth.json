@@ -69,6 +69,28 @@
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
+            "Name": "Deer_Large",
+            "Base": {
+                "(Value=\"BaseMovementSpeed_+\")": 220,
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 10,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 5000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseCharacterMass_+\")": 175,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BasePoisonDamageResistance_%\")": -50
+            },
+            "Health": "CurveFloat'/Game/Data/AI/C_LargeDeerHealth.C_LargeDeerHealth'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
             "Name": "Roat",
             "Base": {
                 "(Value=\"BaseMovementSpeed_+\")": 220,
@@ -715,7 +737,7 @@
                 "(Value=\"BaseMiningRadius_+\")": 100,
                 "(Value=\"BasePoisonDamageResistance_%\")": -100
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_MediumDeerHealth.C_MediumDeerHealth'",
+            "Health": "CurveFloat'/Game/Data/AI/C_BuffaloHealth.C_BuffaloHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -933,10 +955,10 @@
                 "(Value=\"BaseGOAPMotivationDormancyIncreaseRateDayTime_+%\")": 2000,
                 "(Value=\"CanScorpionUseStingAttack_?\")": 1,
                 "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 400,
-                "(Value=\"BaseExplosiveDamageResistance_%\")": -100
+                "(Value=\"BaseExplosiveDamageResistance_%\")": -100,
+                "(Value=\"BaseMaximumHealth_+\")": 65,
+                "(Value=\"BaseMeleeDamage_+\")": 25
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_ScorpionSummon_Health.C_ScorpionSummon_Health'",
-            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_ScorpionSummon_MeleeDamage.C_ScorpionSummon_MeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_ScorpionSummon_Experience.C_ScorpionSummon_Experience'"
         },
         {
@@ -2312,7 +2334,7 @@
                 "(Value=\"BaseFireDamageResistance_%\")": 50,
                 "(Value=\"BaseFrostDamageResistance_%\")": -100
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_BuffaloHealth.C_BuffaloHealth'",
+            "Health": "CurveFloat'/Game/Data/AI/C_Blueback_Health.C_Blueback_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
@@ -2539,8 +2561,8 @@
                 "(Value=\"BasePoisonDamageResistance_%\")": -100,
                 "(Value=\"BaseAttacksCauseBleed_%\")": 75
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_MediumDeerHealth.C_MediumDeerHealth'",
-            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
+            "Health": "CurveFloat'/Game/Data/AI/C_TuskerHealth.C_TuskerHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_TuskerMeleeDamage.C_TuskerMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -3195,7 +3217,7 @@
                 "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 800,
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 2750,
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 750,
-                "(Value=\"BaseProjectileDamageResistance_%\")": 5,
+                "(Value=\"BaseProjectileDamageResistance_%\")": 25,
                 "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": 20,
                 "(Value=\"BaseSlowResistance_%\")": 40,
                 "(Value=\"BaseImmobiliseResistance_%\")": 40,
@@ -4634,8 +4656,8 @@
                 "(Value=\"BaseFoodConsumptionPerHour_+\")": 1200,
                 "(Value=\"BaseWaterConsumptionPerHour_+\")": 0
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_RaptorHealth.C_RaptorHealth'",
-            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_RaptorMeleeDamage.C_RaptorMeleeDamage'",
+            "Health": "CurveFloat'/Game/Data/AI/C_RaptorJuviHealth.C_RaptorJuviHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_RaptorJuviMeleeDamage.C_RaptorJuviMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -4828,7 +4850,7 @@
                 "(Value=\"BaseGOAPActionWanderMaxDistance_+\")": 1500,
                 "(Value=\"BaseExplosiveDamageResistance_%\")": -50
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_SwampHoppingCreature_Health.C_SwampHoppingCreature_Health'",
+            "Health": "CurveFloat'/Game/Data/AI/C_HoppingCreature_Health.C_HoppingCreature_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_SwampHoppingCreatureMeleeDamage.C_SwampHoppingCreatureMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         },
@@ -4856,8 +4878,8 @@
                 "(Value=\"BaseFoodConsumptionPerHour_+\")": 1200,
                 "(Value=\"BaseWaterConsumptionPerHour_+\")": 0
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_RaptorDesertHealth.C_RaptorDesertHealth'",
-            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_RaptorDesertMeleeDamage.C_RaptorDesertMeleeDamage'",
+            "Health": "CurveFloat'/Game/Data/AI/C_RaptorHealth.C_RaptorHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_RaptorMeleeDamage.C_RaptorMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         },
         {
@@ -5146,7 +5168,7 @@
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseSlowResistance_%\")": 33,
                 "(Value=\"BaseImmobiliseResistance_%\")": 33,
-                "(Value=\"BaseMovementSpeed_+\")": 75
+                "(Value=\"BaseMovementSpeed_+\")": 600
             },
             "Health": "CurveFloat'/Game/Data/AI/C_SandwyrmQueenHealth.C_SandwyrmQueenHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/C_SandwymQueenMeleeDamage.C_SandwymQueenMeleeDamage'",
@@ -5159,6 +5181,25 @@
                 }
             ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Geothermal_Bat",
+            "Base": {
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseMaximumHealth_+\")": 25,
+                "(Value=\"BaseCharacterMass_+\")": 10,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 50,
+                "(Value=\"BaseNPCAttackRadius_+\")": 150,
+                "(Value=\"BaseFireDamage_+\")": 5
+            },
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BatMeleeDamage.C_BatMeleeDamage'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
         }
     ]
 }

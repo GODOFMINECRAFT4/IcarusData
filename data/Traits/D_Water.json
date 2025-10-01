@@ -100,7 +100,10 @@
         {
             "Name": "GlassworkingBench",
             "AutoActivate": true,
-            "ResourceFlowRate": 250,
+            "ResourceFlowRate": 0,
+            "BrownOutModifier": {
+                "RowName": "Water_Brownout_Crafting"
+            },
             "AutoShutoffFlowPercent": -1,
             "bIsOptional": true,
             "OptionalFlowType": {

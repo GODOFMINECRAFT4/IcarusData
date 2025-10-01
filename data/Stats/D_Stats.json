@@ -19409,6 +19409,69 @@
             "StatCategory": {
                 "RowName": "Deployable"
             }
+        },
+        {
+            "Name": "AttacksCauseRadiationSickness_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttacksCauseRadiationSickness_%-Title\", \"Chance Attacks will Cause Radiation Sickness\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseAttacksCauseRadiationSickness_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksCauseRadiationSickness_%-PositiveDescription\", \"+{0}% Chance to Inflict Radiation Sickness on Hit with Attacks\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttacksCauseRadiationSickness_%-NegativeDescription\", \"-{0}% Chance to Inflict Radiation Burn on Hit with Attacks\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BiofuelUse_+",
+            "Title": "INVTEXT(\"[DNT] Biofuel Consumed Per Second\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "BaseBiofuelUse_+",
+            "PositiveDescription": "INVTEXT(\"[DNT] +{0} Biofuel Consumed per Second\")",
+            "NegativeDescription": "INVTEXT(\"[DNT] -{0} Biofuel Consumed per Second\")",
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "BaseBiofuelUse_+%",
+            "PositiveDescription": "INVTEXT(\"[DNT] +{0}% Biofuel Consumption\")",
+            "NegativeDescription": "INVTEXT(\"[DNT] -{0}% Biofuel Consumption\")",
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "JackhammerAttackSpeedPerMinute_+",
+            "Title": "INVTEXT(\"[DNT] Jackhammer Drill Speed\")",
+            "PositiveTitleFormat": "INVTEXT(\"[DNT] {0} per minute\")",
+            "NegativeTitleFormat": "INVTEXT(\"[DNT] -{0} per minute\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "BaseJackhammerAttackSpeedPerMinute_+",
+            "PositiveDescription": "INVTEXT(\"[DNT] +{0} Jackhammer Hits per Minute\")",
+            "NegativeDescription": "INVTEXT(\"[DNT] -{0} Jackhammer Hits per Minute\")",
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
         }
     ]
 }

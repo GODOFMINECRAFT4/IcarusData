@@ -14580,6 +14580,21 @@
             ],
             "MergeType": "Replace",
             "bEffectsNPCs": false
+        },
+        {
+            "Name": "Radiation_Sickness",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Radioactive.T_ICON_Radioactive'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Radiation_Sickness-ModifierName\", \"Radiation Sickness\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Radiation_Sickness-ModifierDescription\", \"Reduces Health and Stamina and Deals Pure Unresisted Damage over time.\")",
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": -20,
+                "(Value=\"BaseMaximumStamina_+%\")": -20
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_RadiationSickness.BP_ModifierStateBehaviour_RadiationSickness_C",
+            "MergeType": "Count",
+            "SaveToDatabase": false
         }
     ]
 }

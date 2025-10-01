@@ -847,8 +847,8 @@
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Solar/BP_FlatSolarPanel.BP_FlatSolarPanel_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_GEN_Solar_Flat/SM_DEP_GEN_Solar_Flat.SM_DEP_GEN_Solar_Flat",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
+            "MaxSurfaceSnapAngle": 50,
             "SupportsCustomRotation": false,
-            "SnapBehaviour": "SnapPlacementOnly",
             "SnapActorTags": [
                 "BuildableRamp"
             ],
@@ -8505,7 +8505,7 @@
         {
             "Name": "Flagpole",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_FlagPole.BP_FlagPole_C",
-            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole_0.T_ITEM_Flagpole_0",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole_large.T_ITEM_Flagpole_large",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Flagpole-DeployableName\", \"Ground Flag\")",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_FlagPole/SM_DEP_FlagPole_GuyRopes.SM_DEP_FlagPole_GuyRopes",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
@@ -8618,7 +8618,7 @@
         {
             "Name": "Flagpole_Large",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_FlagPole_Long.BP_FlagPole_Long_C",
-            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole_large.T_ITEM_Flagpole_large",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole_0.T_ITEM_Flagpole_0",
             "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Flagpole_Large-DeployableName\", \"Large Flag Pole\")",
             "PreviewStaticMesh": "/Game/ThirdPartyAssets/VertexAnimatedFlags/SupportingAssets/FlagPole_Ballhead.FlagPole_Ballhead",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
@@ -12588,14 +12588,14 @@
             "Name": "Uranium_Converter",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furnaces/BP_UraniumConverter.BP_UraniumConverter_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Nuclear_Centrifuge/SM_DEP_Nuclear_Centrifuge_Combined.SM_DEP_Nuclear_Centrifuge_Combined",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/T5_Polymerizer/SFX_DEPLOY_POLYMERIZER.SFX_DEPLOY_POLYMERIZER",
             "SnapToSurfaceNormal": false
         },
         {
             "Name": "Uranium_Generator",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Generators/BP_Uranium_Generator.BP_Uranium_Generator_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Portable_Generator_v4.SM_DEP_Portable_Generator_v4",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL"
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Nuclear_Reactor/SM_DEP_Nuclear_Reactor_Combined.SM_DEP_Nuclear_Reactor_Combined",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/T5_Polymerizer/SFX_DEPLOY_POLYMERIZER.SFX_DEPLOY_POLYMERIZER"
         },
         {
             "Name": "ClayBrick_Fireplace",

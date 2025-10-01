@@ -1546,6 +1546,71 @@
                 "X": 12,
                 "Y": 52
             }
+        },
+        {
+            "Name": "Raptor",
+            "AISetup": {
+                "RowName": "Mount_Raptor"
+            },
+            "RelevantSaddleQuery": {
+                "RowName": "Any_Saddle"
+            },
+            "SupportedCombatStates": [
+                "DoNotEngage",
+                "NeutralEngagement",
+                "AggressiveEngagement"
+            ],
+            "SupportedMovementStates": [
+                "Follow",
+                "IdleWander",
+                "IdleStanding",
+                "IdleLying"
+            ],
+            "Animations": {
+                "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Raptor/Raptor_idle4legs_Montage.Raptor_idle4legs_Montage",
+                "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Raptor/Raptor_Sleep_Montage.Raptor_Sleep_Montage",
+                "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Raptor/Raptor_Eat_Montage.Raptor_Eat_Montage",
+                "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Raptor/Raptor_Jump_Montage.Raptor_Jump_Montage",
+                "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Raptor/Raptor_Attack_Montage.Raptor_Attack_Montage"
+            },
+            "InventoryPreviewCameraSettings": {
+                "RowName": "Mount_Horse"
+            },
+            "DefaultNames": [
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-0\", \"Spot\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-1\", \"Patch\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-2\", \"Stripes\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-3\", \"Buddy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-4\", \"Charlie\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-5\", \"Lucky\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-6\", \"Bailey\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-7\", \"Lucy\")",
+                "NSLOCTEXT(\"D_Mounts\", \"Raptor-DefaultNames-8\", \"Rosie\")"
+            ],
+            "MapIcon": {
+                "RowName": "Mount"
+            },
+            "RelativeFeetOffset": {
+                "X": -10,
+                "Y": 20,
+                "Z": -10
+            },
+            "RelativeHandsOffset": {
+                "X": -15
+            },
+            "RelativeLightOffset": {
+                "X": 33,
+                "Y": -54,
+                "Z": 55
+            },
+            "MountTalentArchetype": {
+                "RowName": "Creature_Raptor"
+            },
+            "bUseTemperature": true,
+            "ComfortableTemperatureRange": {
+                "X": 12,
+                "Y": 52
+            }
         }
     ]
 }
