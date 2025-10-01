@@ -31610,10 +31610,14 @@
         {
             "Name": "Attachment_Stomach_Capacity",
             "Requirement": {
-                "RowName": "Advanced_Armor_Attachment_Pack"
+                "RowName": "Armor_Attachment_Pack"
             },
             "RequiredMillijoules": 10000,
             "RecipeSets": [
+                {
+                    "RowName": "Alteration_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
                 {
                     "RowName": "Advanced_Alteration_Bench",
                     "DataTableName": "D_RecipeSets"

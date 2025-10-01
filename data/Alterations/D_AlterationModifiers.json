@@ -10,7 +10,8 @@
             "DataTableName": "D_ModifierStates"
         },
         "Priority": 0,
-        "isCrafted": true,
+        "bIsCrafted": true,
+        "bCannotBeFurtherAltered": false,
         "ModifierEffectiveness": 100
     },
     "GenerateEnum": true,
@@ -24,7 +25,7 @@
             "Modifier": {
                 "RowName": "Dirty_Water_Lava"
             },
-            "isCrafted": false
+            "bIsCrafted": false
         },
         {
             "Name": "Dirty_Water_Swamp",
@@ -36,7 +37,7 @@
                 "RowName": "Dirty_Water_Swamp"
             },
             "Priority": 1,
-            "isCrafted": false
+            "bIsCrafted": false
         },
         {
             "Name": "Dirty_Water",
@@ -48,7 +49,7 @@
                 "RowName": "Dirty_Water"
             },
             "Priority": 2,
-            "isCrafted": false
+            "bIsCrafted": false
         },
         {
             "Name": "Rain_Water",
@@ -60,7 +61,7 @@
                 "RowName": "Rain_Water"
             },
             "Priority": 3,
-            "isCrafted": false
+            "bIsCrafted": false
         },
         {
             "Name": "Filtered_Water",
@@ -72,7 +73,7 @@
                 "RowName": "Filtered_Water"
             },
             "Priority": 4,
-            "isCrafted": false
+            "bIsCrafted": false
         },
         {
             "Name": "Treated_Water",
@@ -84,7 +85,7 @@
                 "RowName": "Treated_Water"
             },
             "Priority": 5,
-            "isCrafted": false
+            "bIsCrafted": false
         },
         {
             "Name": "Purified_Water",
@@ -96,7 +97,7 @@
                 "RowName": "Purified_Water"
             },
             "Priority": 6,
-            "isCrafted": false
+            "bIsCrafted": false
         },
         {
             "Name": "Tea_Green",
@@ -107,7 +108,8 @@
             "Modifier": {
                 "RowName": "Thermos_GreenTea_Modifier"
             },
-            "Priority": -1
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
         },
         {
             "Name": "Tea_Wild",
@@ -118,7 +120,8 @@
             "Modifier": {
                 "RowName": "Thermos_WildTea_Modifier"
             },
-            "Priority": -1
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
         },
         {
             "Name": "Coffee",
@@ -129,7 +132,8 @@
             "Modifier": {
                 "RowName": "Thermos_Coffee_Modifier"
             },
-            "Priority": -1
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
         },
         {
             "Name": "Coffee_With_Cream",
@@ -140,7 +144,8 @@
             "Modifier": {
                 "RowName": "Thermos_Coffee_With_Cream"
             },
-            "Priority": -1
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
         },
         {
             "Name": "Cocoa",
@@ -151,7 +156,8 @@
             "Modifier": {
                 "RowName": "Thermos_Cocoa_Modifier"
             },
-            "Priority": -1
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
         },
         {
             "Name": "Ice_Water",
@@ -173,7 +179,8 @@
             "Modifier": {
                 "RowName": "Thermos_HoneyTea"
             },
-            "Priority": -1
+            "Priority": -1,
+            "bCannotBeFurtherAltered": true
         },
         {
             "Name": "Cooling",
@@ -185,7 +192,7 @@
                 "RowName": "Drink_Cooling"
             },
             "Priority": -1,
-            "isCrafted": false
+            "bIsCrafted": false
         },
         {
             "Name": "Warming",
@@ -197,7 +204,7 @@
                 "RowName": "Drink_Heated"
             },
             "Priority": -1,
-            "isCrafted": false
+            "bIsCrafted": false
         },
         {
             "Name": "Fruit_Smoothie",
@@ -217,7 +224,7 @@
             },
             "ModifierDuration": 300,
             "Priority": 1,
-            "isCrafted": false
+            "bIsCrafted": false
         },
         {
             "Name": "Milk_Spoiled",
@@ -225,7 +232,8 @@
                 "Value": "Milk_Spoiled"
             },
             "ModifierDuration": 300,
-            "isCrafted": false
+            "bIsCrafted": false,
+            "bCannotBeFurtherAltered": true
         }
     ]
 }

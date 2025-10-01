@@ -1179,6 +1179,62 @@
             "AssociatedMovementState": "Walk",
             "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_Wander.BP_IcarusGOAPAction_Wander_C",
             "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusGOAP_IrradiatedProspectorIdle.BT_IcarusGOAP_IrradiatedProspectorIdle"
+        },
+        {
+            "Name": "Hunt_Target_As_Pack",
+            "Description": "Hunt_Target",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Hunting",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Hunting",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 0,
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Sneak",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_HuntTarget_Pack.BP_IcarusGOAPAction_HuntTarget_Pack_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_HuntTarget.BT_IcarusNPCGOAP_HuntTarget",
+            "AudioState": "Stalking"
+        },
+        {
+            "Name": "Hunt_Target_Slinker",
+            "Description": "Hunt_Target",
+            "Preconditions": [
+                {
+                    "Property": {
+                        "RowName": "Hunting",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": true
+                }
+            ],
+            "Effects": [
+                {
+                    "Property": {
+                        "RowName": "Hunting",
+                        "DataTableName": "D_GOAPProperties"
+                    },
+                    "Value": false
+                }
+            ],
+            "TimeOut": 0,
+            "DefaultNavFilterOverride": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_AllowAllAreas.NavFilter_AllowAllAreas_C'",
+            "AssociatedMovementState": "Sneak",
+            "ActionBP": "/Game/BP/AI/GOAP/Actions/BP_IcarusGOAPAction_HuntTarget_Slinker.BP_IcarusGOAPAction_HuntTarget_Slinker_C",
+            "BehaviourTree": "/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_HuntTarget.BT_IcarusNPCGOAP_HuntTarget",
+            "AudioState": "Stalking"
         }
     ]
 }

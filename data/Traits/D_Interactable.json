@@ -658,44 +658,7 @@
             ]
         },
         {
-            "Name": "Wall_Torch",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Interact_TorchUI",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                },
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Item",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Interact_Torch_Toggle",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldAltHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Deployable",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ]
-        },
-        {
-            "Name": "Floor_Torch",
+            "Name": "Deployable_Torch",
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
@@ -1002,28 +965,7 @@
             ]
         },
         {
-            "Name": "Basic_Glass",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Item",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldAltHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Deployable",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ]
-        },
-        {
-            "Name": "IceBox",
+            "Name": "Deployable_Generator",
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
@@ -1049,65 +991,6 @@
                     "Tag": ""
                 }
             ]
-        },
-        {
-            "Name": "Faction_Mission_Drill",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Interact_GeneratorUI",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                },
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Item",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldAltHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Deployable",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ]
-        },
-        {
-            "Name": "Faction_Mission_WallDrill",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Interact_GeneratorUI",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                },
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Item",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldAltHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Deployable",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ]
-        },
-        {
-            "Name": "NoInteracts"
         },
         {
             "Name": "Faction_Mission_Laser",
@@ -1143,18 +1026,6 @@
                 {
                     "InteractionRow": {
                         "RowName": "Interact_Rock_Formation",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ]
-        },
-        {
-            "Name": "Deployable_NoInteract_NoPickup",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "No_Interaction",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -1375,50 +1246,6 @@
             ]
         },
         {
-            "Name": "Advanced_Alteration_Bench",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Alter_Item",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": "Alter"
-                },
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Item",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                },
-                {
-                    "InteractionRow": {
-                        "RowName": "Craft_Attachment",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": "Craft"
-                }
-            ],
-            "WorldHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Interact_Toggle_Device_On",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldAltHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Deployable",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ]
-        },
-        {
             "Name": "Interact_Target_Range_Start",
             "WorldPressInteracts": [
                 {
@@ -1533,34 +1360,6 @@
                 {
                     "InteractionRow": {
                         "RowName": "Harvest_Corpse",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ]
-        },
-        {
-            "Name": "Gate",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "OpenClose_Door",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                },
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Item",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldAltHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Deployable",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -1769,9 +1568,6 @@
                     "Tag": ""
                 }
             ]
-        },
-        {
-            "Name": "NonInteractable"
         },
         {
             "Name": "Interactable_CropPlot_v2",
@@ -2364,59 +2160,6 @@
                 }
             ],
             "WorldAltPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Interact_ManageWhitelist",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldAltHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Deployable",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ]
-        },
-        {
-            "Name": "Water_Trough_T4",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Item",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Interact_Toggle_Device_On",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldAltPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Fill_Water_Trough",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                },
-                {
-                    "InteractionRow": {
-                        "RowName": "Rain_Reservoir_Container",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                },
                 {
                     "InteractionRow": {
                         "RowName": "Interact_ManageWhitelist",
@@ -3408,7 +3151,7 @@
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Interact_GeneratorUI",
+                        "RowName": "Interact_Deployable",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -3440,7 +3183,7 @@
                 },
                 {
                     "InteractionRow": {
-                        "RowName": "Collect_Object_Fuel",
+                        "RowName": "Interact_Fill_Container_Biofuel",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -3510,6 +3253,18 @@
                 {
                     "InteractionRow": {
                         "RowName": "Interact_NPC_Inventory_Take",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "AccessCardDoor",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_AccessCardDoor",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""

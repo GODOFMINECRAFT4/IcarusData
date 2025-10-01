@@ -278,12 +278,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "bn_Head_1",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Roat"
             },
@@ -313,7 +307,13 @@
             },
             "BestiaryGroup": {
                 "RowName": "Roat"
-            }
+            },
+            "BlacklistBones": [
+                {
+                    "BoneName": "bn_Root_1",
+                    "AffectsChildren": false
+                }
+            ]
         },
         {
             "Name": "Snow_Wolf",
@@ -425,12 +425,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Wolf"
             },
@@ -584,12 +578,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Bear"
             },
@@ -737,12 +725,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Chamois"
             },
@@ -885,16 +867,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigTrunk1",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "Elephant"
             },
@@ -1047,20 +1019,13 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "PolarBear"
             },
             "CollisionHitEventBones": [
                 "RigNeck2",
                 "RigSpine2",
-                "RigPelvis",
-                "RigNeck3"
+                "RigPelvis"
             ],
             "LatentDeathDuration": 120,
             "ValidBaitTagQuery": {
@@ -1201,12 +1166,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "MuleDeer"
             },
@@ -1350,12 +1309,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Cougar"
             },
@@ -1503,12 +1456,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Cougar"
             },
@@ -1650,24 +1597,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigTrunk1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigREye1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigLEye1",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "Mammoth"
             },
@@ -1814,24 +1743,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigTrunk1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigREye1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigLEye1",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "Mammoth"
             },
@@ -1984,12 +1895,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Deer"
             },
@@ -2000,7 +1905,6 @@
                 "RigSpine2",
                 "RigSpine1",
                 "RigPelvis",
-                "None",
                 "RigHead"
             ],
             "ValidBaitTagQuery": {
@@ -2141,12 +2045,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Deer"
             },
@@ -2157,7 +2055,6 @@
                 "RigSpine2",
                 "RigSpine1",
                 "RigPelvis",
-                "None",
                 "RigHead"
             ],
             "ValidBaitTagQuery": {
@@ -2298,12 +2195,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "DesertDeerFem"
             },
@@ -2314,7 +2205,6 @@
                 "RigSpine2",
                 "RigSpine1",
                 "RigPelvis",
-                "None",
                 "RigHead"
             ],
             "ValidBaitTagQuery": {
@@ -2455,12 +2345,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "DesertDeer"
             },
@@ -2471,7 +2355,6 @@
                 "RigSpine2",
                 "RigSpine1",
                 "RigPelvis",
-                "None",
                 "RigHead"
             ],
             "ValidBaitTagQuery": {
@@ -2612,12 +2495,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "AlphaWolf"
             },
@@ -2767,12 +2644,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "AlphaWolf"
             },
@@ -2922,12 +2793,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Hyena"
             },
@@ -3081,12 +2946,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "AlphaWolf"
             },
@@ -3233,12 +3092,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "FollowerWolf"
             },
@@ -3382,12 +3235,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Jaguar"
             },
@@ -3535,12 +3382,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "ChamoisVariant"
             },
@@ -3688,12 +3529,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Wolf"
             },
@@ -3841,20 +3676,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigREye1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigLEye1",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "Mammoth_Boss"
             },
@@ -4007,12 +3828,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "SnowLeopard"
             },
@@ -4160,12 +3975,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "SnowLeopard"
             },
@@ -4313,12 +4122,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Jaguar_Boss"
             },
@@ -4466,20 +4269,13 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "PolarBear_Boss"
             },
             "CollisionHitEventBones": [
                 "RigNeck2",
                 "RigSpine2",
-                "RigPelvis",
-                "RigNeck3"
+                "RigPelvis"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -4619,12 +4415,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Rabbit"
             },
@@ -4766,12 +4556,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "RabbitConifer"
             },
@@ -4907,12 +4691,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Buffalo"
             },
@@ -5063,12 +4841,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "AlphaWolf"
             },
@@ -5212,12 +4984,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Wild_Boar"
             },
@@ -5375,12 +5141,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Zebra"
             },
@@ -5442,12 +5202,6 @@
             "AIGrowth": {
                 "RowName": "SandWorm"
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "control_C0_control_jnt",
-                    "AffectsChildren": true
-                }
-            ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
                     {
@@ -5492,12 +5246,6 @@
             "AIGrowth": {
                 "RowName": "SandWorm_Spitter"
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "control_C0_control_jnt",
-                    "AffectsChildren": true
-                }
-            ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
                     {
@@ -5536,12 +5284,6 @@
             "AIGrowth": {
                 "RowName": "CaveWorm"
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "control_C0_control_jnt",
-                    "AffectsChildren": true
-                }
-            ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
                     {
@@ -5677,12 +5419,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Kea"
             },
@@ -5834,22 +5570,14 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "Scorpion"
             },
             "CollisionHitEventBones": [
-                "RigChest",
-                "RigNeck1",
-                "RigChest",
+                "RigSpine3",
                 "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigSpine1",
+                "RigPelvis"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -5986,22 +5714,14 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "ScorpionSummon"
             },
             "CollisionHitEventBones": [
-                "RigChest",
-                "RigNeck1",
-                "RigChest",
+                "RigSpine3",
                 "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigSpine1",
+                "RigPelvis"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -6132,22 +5852,14 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "Scorpion"
             },
             "CollisionHitEventBones": [
-                "RigChest",
-                "RigNeck1",
-                "RigChest",
+                "RigSpine3",
                 "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigSpine1",
+                "RigPelvis"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -6278,12 +5990,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "ScorpionBoss"
             },
@@ -6433,12 +6139,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Crocodile"
             },
@@ -6587,12 +6287,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Crocodile"
             },
@@ -6741,12 +6435,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Komodo"
             },
@@ -6895,22 +6583,14 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "ScorpionLarge"
             },
             "CollisionHitEventBones": [
-                "RigChest",
-                "RigNeck1",
-                "RigChest",
+                "RigSpine3",
                 "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigSpine1",
+                "RigPelvis"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -6959,12 +6639,6 @@
             "AIGrowth": {
                 "RowName": "Teenage_Caveworm"
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "control_C0_control_jnt",
-                    "AffectsChildren": true
-                }
-            ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
                     {
@@ -7009,12 +6683,6 @@
             "AIGrowth": {
                 "RowName": "LandShark"
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "control_C0_control_jnt",
-                    "AffectsChildren": true
-                }
-            ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
                     {
@@ -7147,20 +6815,13 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "PolarBearCub"
             },
             "CollisionHitEventBones": [
                 "RigNeck2",
                 "RigSpine2",
-                "RigPelvis",
-                "RigNeck3"
+                "RigPelvis"
             ],
             "LatentDeathDuration": 120,
             "ValidBaitTagQuery": {
@@ -7298,12 +6959,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "BearCub"
             },
@@ -7582,22 +7237,14 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "Scorpion"
             },
             "CollisionHitEventBones": [
-                "RigChest",
-                "RigNeck1",
-                "RigChest",
+                "RigSpine3",
                 "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigSpine1",
+                "RigPelvis"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -7731,22 +7378,14 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "ScorpionArmored"
             },
             "CollisionHitEventBones": [
-                "RigChest",
-                "RigNeck1",
-                "RigChest",
+                "RigSpine3",
                 "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigSpine1",
+                "RigPelvis"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -7887,12 +7526,14 @@
                 "RowName": "Moa"
             },
             "CollisionHitEventBones": [
+                "RigPelvis",
+                "RigSpine",
                 "RigChest",
                 "RigNeck1",
-                "RigChest",
-                "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigNeck3",
+                "RigHead",
+                "RigAnkle_L",
+                "RigAnkle_R"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -8016,12 +7657,14 @@
                 "RowName": "MoaMount"
             },
             "CollisionHitEventBones": [
+                "RigPelvis",
+                "RigSpine",
                 "RigChest",
                 "RigNeck1",
-                "RigChest",
-                "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigNeck3",
+                "RigHead",
+                "RigAnkle_L",
+                "RigAnkle_R"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -8167,9 +7810,14 @@
                 "RowName": "MoaTeenager"
             },
             "CollisionHitEventBones": [
-                "RigNeck1",
+                "RigPelvis",
+                "RigSpine",
                 "RigChest",
-                "RigSpine1"
+                "RigNeck1",
+                "RigNeck3",
+                "RigHead",
+                "RigAnkle_L",
+                "RigAnkle_R"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -8451,12 +8099,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Wolf"
             },
@@ -8606,12 +8248,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Jaguar"
             },
@@ -8759,12 +8395,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Bear"
             },
@@ -8912,12 +8542,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Bear"
             },
@@ -9062,12 +8686,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "RockDog"
             },
@@ -9224,12 +8842,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "BatDog"
             },
@@ -9386,12 +8998,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Needler"
             },
@@ -9550,12 +9156,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "PredatorBird"
             },
@@ -9660,12 +9260,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "GasFlyer"
             },
@@ -9813,12 +9407,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "DeerVariant"
             },
@@ -9978,12 +9566,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "SwampQuad"
             },
@@ -10166,14 +9748,13 @@
             },
             "CollisionHitEventBones": [
                 "RigChest",
+                "RigNeck",
                 "RigNeck1",
-                "RigChest",
-                "RigSpine2",
-                "RigPelvis",
                 "RigNeck2",
+                "RigSpine",
+                "RigPelvis",
                 "RigHead",
-                "RigJaw",
-                "RigNeck"
+                "RigJaw"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -10318,12 +9899,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "ChamoisVariant"
             },
@@ -10472,12 +10047,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "BlueBack"
             },
@@ -10633,12 +10202,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Roat"
             },
@@ -10779,12 +10342,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "BlueBack"
             },
@@ -10940,24 +10497,17 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Striker"
             },
             "CollisionHitEventBones": [
                 "RigChest",
-                "RigNeck1",
-                "RigChest",
+                "RigNeckPart1",
+                "RigNeck",
                 "RigSpine2",
+                "RigSpine1",
                 "RigPelvis",
-                "RigNeck2",
-                "RigHead",
-                "RigScapula"
+                "RigHead"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -11102,12 +10652,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "WoolyZebra"
             },
@@ -11541,12 +11085,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "RabbitConifer"
             },
@@ -11693,12 +11231,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Komodo"
             },
@@ -11852,24 +11384,17 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Striker"
             },
             "CollisionHitEventBones": [
                 "RigChest",
-                "RigNeck1",
-                "RigChest",
+                "RigNeckPart1",
+                "RigNeck",
                 "RigSpine2",
+                "RigSpine1",
                 "RigPelvis",
-                "RigNeck2",
-                "RigHead",
-                "RigScapula"
+                "RigHead"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -12011,12 +11536,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "LavaHunterBoss"
             },
@@ -12168,12 +11687,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Slug"
             },
@@ -12333,12 +11846,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Slug"
             },
@@ -12496,12 +12003,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Slug"
             },
@@ -12656,24 +12157,15 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "LavaBroodling"
             },
             "CollisionHitEventBones": [
                 "RigChest",
-                "RigNeck1",
-                "RigChest",
-                "RigSpine2",
-                "RigNeck2",
-                "RigRoot1",
                 "RigHead",
-                "RigSpine1"
+                "RigSpine1",
+                "RigTail2",
+                "RigTail4"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -12903,24 +12395,15 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "LavaBroodling"
             },
             "CollisionHitEventBones": [
                 "RigChest",
-                "RigNeck1",
-                "RigChest",
-                "RigSpine2",
-                "RigPelvis",
-                "RigNeck2",
                 "RigHead",
-                "RigSpine1"
+                "RigSpine1",
+                "RigTail2",
+                "RigTail4"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -13055,12 +12538,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "LavaFlyer"
             },
@@ -13345,22 +12822,15 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "LavaBomber"
             },
             "CollisionHitEventBones": [
                 "RigChest",
-                "RigNeck1",
-                "RigChest",
-                "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigHead",
+                "RigSpine1",
+                "RigTail2",
+                "RigTail4"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -13448,12 +12918,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "GasFlyer"
             },
@@ -13743,12 +13207,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Horse"
             },
@@ -14039,12 +13497,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Tusk"
             },
@@ -14468,12 +13920,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "ArcticBat"
             },
@@ -14618,12 +14064,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Chicken"
             },
@@ -14772,12 +14212,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Chicken"
             },
@@ -14926,12 +14360,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Chicken"
             },
@@ -15647,12 +15075,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Bee"
             },
@@ -16078,12 +15500,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Sheep"
             },
@@ -16241,12 +15657,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "HammerheadSlugMEDIUM"
             },
@@ -16395,12 +15805,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "HammerheadSlug"
             },
@@ -16555,12 +15959,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "HammerheadSlugSMALL"
             },
@@ -16850,12 +16248,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Mini_Hippo"
             },
@@ -17014,12 +16406,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Mini_Hippo"
             },
@@ -17167,12 +16553,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Mini_Hippo"
             },
@@ -17310,12 +16690,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Wild_Boar"
             },
@@ -17474,21 +16848,14 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Kiwi"
             },
             "CollisionHitEventBones": [
                 "RigNeck1",
-                "RigNeck2",
+                "RigNeck3",
                 "RigChest",
-                "RigSpine2",
-                "RigSpine1",
+                "RigSpine",
                 "RigPelvis",
                 "RigHead"
             ],
@@ -17631,20 +16998,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigMeatRoot_M",
-                    "AffectsChildren": true
-                },
-                {
-                    "BoneName": "RigTail_1_M",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigHead_M",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "Ape"
             },
@@ -19247,12 +18600,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Slug"
             },
@@ -19696,12 +19043,14 @@
                 "RowName": "Moa"
             },
             "CollisionHitEventBones": [
+                "RigPelvis",
+                "RigSpine",
                 "RigChest",
                 "RigNeck1",
-                "RigChest",
-                "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigNeck3",
+                "RigHead",
+                "RigAnkle_L",
+                "RigAnkle_R"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -19822,12 +19171,14 @@
                 "RowName": "MoaMount"
             },
             "CollisionHitEventBones": [
+                "RigPelvis",
+                "RigSpine",
                 "RigChest",
                 "RigNeck1",
-                "RigChest",
-                "RigSpine2",
-                "RigPelvis",
-                "RigNeck2"
+                "RigNeck3",
+                "RigHead",
+                "RigAnkle_L",
+                "RigAnkle_R"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -19970,9 +19321,14 @@
                 "RowName": "MoaTeenager"
             },
             "CollisionHitEventBones": [
-                "RigNeck1",
+                "RigPelvis",
+                "RigSpine",
                 "RigChest",
-                "RigSpine1"
+                "RigNeck1",
+                "RigNeck3",
+                "RigHead",
+                "RigAnkle_L",
+                "RigAnkle_R"
             ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
@@ -20405,9 +19761,6 @@
                     0
                 ],
                 "AutoDescription": " ANY( GOAP.Food.NoBait )"
-            },
-            "BestiaryGroup": {
-                "RowName": "Scorpion_Boss"
             }
         },
         {
@@ -20514,20 +19867,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigREye1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigLEye1",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "IceMammoth"
             },
@@ -20820,12 +20159,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "ArcticBat"
             },
@@ -20963,12 +20296,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "LavaFlyer"
             },
@@ -21109,12 +20436,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "ArcticBat"
             },
@@ -21258,12 +20579,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Roat"
             },
@@ -21405,12 +20720,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Needler"
             },
@@ -21866,12 +21175,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "RockGolemJuvi"
             },
@@ -22024,12 +21327,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "RockGolemJuvi"
             },
@@ -22179,12 +21476,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "ApeJuviWorld"
             },
@@ -22341,12 +21632,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "ApeJuviWorld"
             },
@@ -22503,12 +21788,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "ApeJuviWorld"
             },
@@ -22665,12 +21944,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "ApeJuviWorld"
             },
@@ -22827,12 +22100,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Ape_Boss_InWorld"
             },
@@ -22989,12 +22256,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "ApeJuvi"
             },
@@ -23135,12 +22396,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "LavaFlyer"
             },
@@ -23278,24 +22533,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigTrunk1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigREye1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigLEye1",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "Mammoth"
             },
@@ -23447,24 +22684,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigTrunk1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigREye1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigLEye1",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "IceMammoth"
             },
@@ -23531,12 +22750,6 @@
             "AIGrowth": {
                 "RowName": "Teenage_Caveworm"
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "control_C0_control_jnt",
-                    "AffectsChildren": true
-                }
-            ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
                     {
@@ -23663,12 +22876,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Wolf"
             },
@@ -23815,12 +23022,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": true
-                }
-            ],
             "Audio": {
                 "RowName": "Slug"
             },
@@ -24123,24 +23324,6 @@
                     "MaxSwimSpeed": 1
                 }
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "RigHead",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigTrunk1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigREye1",
-                    "AffectsChildren": false
-                },
-                {
-                    "BoneName": "RigLEye1",
-                    "AffectsChildren": false
-                }
-            ],
             "Audio": {
                 "RowName": "Mammoth"
             },
@@ -24207,12 +23390,6 @@
             "AIGrowth": {
                 "RowName": "CaveWorm"
             },
-            "CriticalHitBones": [
-                {
-                    "BoneName": "control_C0_control_jnt",
-                    "AffectsChildren": true
-                }
-            ],
             "ValidBaitTagQuery": {
                 "TagDictionary": [
                     {

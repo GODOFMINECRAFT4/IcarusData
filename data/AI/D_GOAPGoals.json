@@ -421,6 +421,24 @@
             "Priority": -1,
             "bIsRepeatable": true,
             "GoalBP": "/Script/Icarus.IcarusGOAPGoal"
+        },
+        {
+            "Name": "Hunt_Target_HighPriority",
+            "Description": "Hunt_Target",
+            "State": {
+                "Properties": [
+                    {
+                        "Property": {
+                            "RowName": "Hunting",
+                            "DataTableName": "D_GOAPProperties"
+                        },
+                        "Value": false
+                    }
+                ]
+            },
+            "Priority": 1,
+            "bIsRepeatable": true,
+            "GoalBP": "/Script/Icarus.IcarusGOAPGoal"
         }
     ]
 }

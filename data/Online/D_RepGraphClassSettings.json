@@ -89,8 +89,29 @@
         {
             "Name": "Spatialized_LowFrequency_Building",
             "Description": "Low replication frequency, long distance cull",
-            "ReplicationPeriodFrame": 3,
+            "ReplicationPeriodFrame": 6,
             "NetCullDistance": 100000
+        },
+        {
+            "Name": "Spatialized_LowFrequency_Deployable",
+            "Description": "Low replication frequency, long distance cull",
+            "DistancePriorityScale": 0.5,
+            "ReplicationPeriodFrame": 6,
+            "NetCullDistance": 50000
+        },
+        {
+            "Name": "AlwaysRelevant_Mount",
+            "Description": "No distance based priority settings or actor channel timeout",
+            "DistancePriorityScale": 0.5,
+            "ReplicationPeriodFrame": 3,
+            "ActorChannelFrameTimeout": 0,
+            "NetCullDistance": 0
+        },
+        {
+            "Name": "AlwaysRelevant_LowFrequency",
+            "Description": "Lowered replication frequency",
+            "ReplicationPeriodFrame": 6,
+            "NetCullDistance": 0
         }
     ]
 }

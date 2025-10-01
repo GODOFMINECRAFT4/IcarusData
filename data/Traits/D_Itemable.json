@@ -7609,18 +7609,34 @@
         },
         {
             "Name": "Item_Axe_Attachment_Felling_Yield_1",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_Felling_Yield_1-DisplayName\", \"Felling Attachment\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_Felling_Yield_1-DisplayName\", \"Wood Yield Attachment\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachWood.ITEM_AttachWood",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_Felling_Yield_1-Description\", \"An attachment that increases the yield of wood from felling trees.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_Felling_Yield_1-FlavorText\", \"Can be equipped to a valid axe at an Alteration Bench.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_Felling_Yield_1-FlavorText\", \"Can be equipped to a valid Axe at an Alteration Bench.\")",
             "Weight": 1000
         },
         {
             "Name": "Item_Axe_Attachment_Felling_Yield_2",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_Felling_Yield_2-DisplayName\", \"Advanced Felling Attachment\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_Felling_Yield_2-DisplayName\", \"Advanced Wood Yield Attachment\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachWood.ITEM_AttachWood",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_Felling_Yield_2-Description\", \"An attachment that greatly increases the yield of wood from felling trees.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_Felling_Yield_2-FlavorText\", \"Can be equipped to a valid axe at an Alteration Bench.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_Felling_Yield_2-FlavorText\", \"Can be equipped to a valid Axe at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Axe_Attachment_FellingDamage_1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_FellingDamage_1-DisplayName\", \"Felling Damage Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachWood.ITEM_AttachWood",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_FellingDamage_1-Description\", \"An attachment that increases damage to felling trees, cutting them down in less strikes.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_FellingDamage_1-FlavorText\", \"Can be equipped to a valid Tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Axe_Attachment_FellingDamage_2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_FellingDamage_2-DisplayName\", \"Advanced Felling Damage Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachWood.ITEM_AttachWood",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_FellingDamage_2-Description\", \"An attachment that increases damage to felling trees, cutting them down in less strikes.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Axe_Attachment_FellingDamage_2-FlavorText\", \"Can be equipped to a valid Tool at an Alteration Bench.\")",
             "Weight": 1000
         },
         {
@@ -7950,7 +7966,15 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Stomach_Capacity-DisplayName\", \"Nutrition Attachment\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachStomachCap.ITEM_ArmorAttachStomachCap",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Stomach_Capacity-Description\", \"An attachment that allows an extra active food buff and increases the duration of food buffs.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Stomach_Capacity-FlavorText\", \"Can be equipped to chest armor at an Alteration Bench.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Stomach_Capacity-FlavorText\", \"Can be equipped to Chest armor at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_StomachCapacity_2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_StomachCapacity_2-DisplayName\", \"Advanced Nutrition Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachStomachCap.ITEM_ArmorAttachStomachCap",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_StomachCapacity_2-Description\", \"An attachment that allows an extra active food buff and increases the duration of food buffs.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_StomachCapacity_2-FlavorText\", \"Can be equipped to Chest armor at an Alteration Bench.\")",
             "Weight": 1000
         },
         {
@@ -22996,6 +23020,7 @@
         {
             "Name": "Item_Exotic_Uranium_Collector",
             "DisplayName": "INVTEXT(\"[DNT] Uranium Extraction Unit\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Exotic_Uranium_Collector.T_ITEM_Exotic_Uranium_Collector",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Exotic_Uranium_Collector-Description\", \"A machine that can safely extract Raw Uranium.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Exotic_Uranium_Collector-FlavorText\", \"A new machine for new types of Exotics!\")",
             "Weight": 10000
@@ -23030,6 +23055,7 @@
         {
             "Name": "Item_Uranium_Converter",
             "DisplayName": "INVTEXT(\"[DNT] Nuclear Centrifuge\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Uranium_Converter.T_ITEM_Uranium_Converter",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Converter-Description\", \"Machine that Converts Raw Uranium into Rods and Ingots. Does not run in Radioactive Zones.\")",
             "Weight": 50000
         },
@@ -23641,14 +23667,14 @@
         },
         {
             "Name": "Item_Mission_ELY1_Towers_Map",
-            "DisplayName": "INVTEXT(\"[DNT] Map Showing TPS Communication Tower\")",
+            "DisplayName": "INVTEXT(\"[DNT] Map of Suspected TPS Communication Towers\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Map.T_ITEM_Map",
             "Description": "INVTEXT(\"[DNT] A Roughly Drawn Map of the Tundra showing potential communication tower locations.\")",
             "Weight": 500
         },
         {
             "Name": "Item_Mission_ELY2_Swamp_Map",
-            "DisplayName": "INVTEXT(\"[DNT] Map Showing Old G15 Comms Stations\")",
+            "DisplayName": "INVTEXT(\"[DNT] Map of Suspected G15 Survey Stations\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Map.T_ITEM_Map",
             "Description": "INVTEXT(\"[DNT] A Roughly Drawn Map of the Southern Swamp in Elysium.\")",
             "Weight": 500
@@ -23717,207 +23743,502 @@
             "Weight": 500
         },
         {
+            "Name": "Item_Attachment_Tool_Durability_1",
+            "DisplayName": "INVTEXT(\"[DNT] Tool Durability Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachRepair.ITEM_AttachRepair",
+            "Description": "INVTEXT(\"[DNT] An attachment that decreases durability loss for tools.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Tool_Durability_1-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Tool_Durability_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Tool Durability Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachRepair.ITEM_AttachRepair",
+            "Description": "INVTEXT(\"[DNT] An attachment that decreases durability loss for tools.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Tool_Durability_2-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Tool_StaminaCost_1",
+            "DisplayName": "INVTEXT(\"[DNT] Tool Stamina Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that decreases stamina loss for tool usage.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Tool_StaminaCost_1-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Tool_StaminaCost_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Tool Stamina Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that decreases stamina loss for tool usage.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Tool_StaminaCost_2-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Knife_VestigeChance_1",
+            "DisplayName": "INVTEXT(\"[DNT] Knife Vestige Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that adds a chance to obtain a vestige when skinning.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Knife_VestigeChance_1-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Knife_VestigeChance_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Knife Vestige Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that adds a chance to obtain a vestige when skinning.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Knife_VestigeChance_2-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Pickaxe_MiningRadius_1",
+            "DisplayName": "INVTEXT(\"[DNT] Mining Radius Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases the mining radius of a pickaxe.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_MiningRadius_1-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Pickaxe_MiningRadius_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Mining Radius Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases the mining radius of a pickaxe.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_MiningRadius_2-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Pickaxe_Bauxite_1",
+            "DisplayName": "INVTEXT(\"[DNT] Aluminum Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases the yield of aluminum.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_1-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Pickaxe_Bauxite_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Aluminum Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases the yield of aluminum.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_2-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Axe_Wood_1",
+            "DisplayName": "INVTEXT(\"[DNT] Wood Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachWood.ITEM_AttachWood",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases the yield of wood.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Axe_Wood_1-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Axe_Wood_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Wood Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachWood.ITEM_AttachWood",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases the yield of wood.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Axe_Wood_2-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Sledgehammer_Slow_1",
+            "DisplayName": "INVTEXT(\"[DNT] Slow Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that adds a chance to slow on attack.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Sledgehammer_Slow_1-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Sledgehammer_Slow_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Slow Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that adds a chance to slow on attack.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Sledgehammer_Slow_2-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Armor_Comfort_1",
+            "DisplayName": "INVTEXT(\"[DNT] Comfort Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases comfort level on armor.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Armor_Comfort_1-FlavorText\", \"Can be equipped to a valid armor piece at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Armor_Comfort_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Comfort Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases comfort level on armor.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Armor_Comfort_2-FlavorText\", \"Can be equipped to a valid armor piece at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Arms_FistDamage_1",
+            "DisplayName": "INVTEXT(\"[DNT] Punch Damage Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachMeleeDmg.ITEM_AttachMeleeDmg",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases damage from fist attacks.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Arms_FistDamage_1-FlavorText\", \"Can be equipped to a valid armor piece at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Arms_FistDamage_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Punch Damage Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachMeleeDmg.ITEM_AttachMeleeDmg",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases damage from fist attacks.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Arms_FistDamage_2-FlavorText\", \"Can be equipped to a valid armor piece at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Arms_ThrowAccuracy_1",
+            "DisplayName": "INVTEXT(\"[DNT] Throw Accuracy Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases accuracy of thrown projectiles.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Arms_ThrowAccuracy_1-FlavorText\", \"Can be equipped to a valid armor piece at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Arms_ThrowAccuracy_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Throw Accuracy Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases accuracy of thrown projectiles.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Arms_ThrowAccuracy_2-FlavorText\", \"Can be equipped to a valid armor piece at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Legs_Jump_1",
+            "DisplayName": "INVTEXT(\"[DNT] Jump Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachSwimClimbSpeed.ITEM_ArmorAttachSwimClimbSpeed",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases jump height and decreases stamina cost.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Legs_Jump_1-FlavorText\", \"Can be equipped to a valid armor piece at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Legs_Jump_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Jump Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachSwimClimbSpeed.ITEM_ArmorAttachSwimClimbSpeed",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases jump height and decreases stamina cost.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Legs_Jump_2-FlavorText\", \"Can be equipped to a valid armor piece at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Chest_Oxygen_1",
+            "DisplayName": "INVTEXT(\"[DNT] Oxygen Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that decreases Oxygen consumption.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Chest_Oxygen_1-FlavorText\", \"Can be equipped to a valid Chest armor piece at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Chest_Oxygen_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Oxygen Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that decreases Oxygen consumption.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Chest_Oxygen_2-FlavorText\", \"Can be equipped to a valid Chest armor piece at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Guns_Damage_1",
+            "DisplayName": "INVTEXT(\"[DNT] Projectile Damage Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases damage for guns.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Guns_Damage_1-FlavorText\", \"Can be equipped to a valid Weapon at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Guns_Damage_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Projectile Damage Attachment\")",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases damage for guns.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Guns_Damage_2-FlavorText\", \"Can be equipped to a valid Weapon at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Guns_ExtendedAmmo_1",
+            "DisplayName": "INVTEXT(\"[DNT] Extended Ammo Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_WeaponAttach_ExtendedChamber.ITEM_WeaponAttach_ExtendedChamber",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases ammo capacity and reload speed for guns.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Guns_ExtendedAmmo_1-FlavorText\", \"Can be equipped to a valid Weapon at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Guns_ExtendedAmmo_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Extended Ammo Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_WeaponAttach_ExtendedChamber.ITEM_WeaponAttach_ExtendedChamber",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases ammo capacity and reload speed for guns.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Guns_ExtendedAmmo_2-FlavorText\", \"Can be equipped to a valid Weapon at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Pistol_Accuracy_1",
+            "DisplayName": "INVTEXT(\"[DNT] Pistol Accuracy Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_WeaponAttach_SpreadReductionModule.ITEM_WeaponAttach_SpreadReductionModule",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases accuracy for Pistols.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pistol_Accuracy_1-FlavorText\", \"Can be equipped to a valid Pistol at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Pistol_Accuracy_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Pistol Accuracy Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_WeaponAttach_SpreadReductionModule.ITEM_WeaponAttach_SpreadReductionModule",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases accuracy for Pistols.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pistol_Accuracy_2-FlavorText\", \"Can be equipped to a valid Pistol at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Rifle_Accuracy_1",
+            "DisplayName": "INVTEXT(\"[DNT] Rifle Accuracy Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_WeaponAttach_SpreadReductionModule.ITEM_WeaponAttach_SpreadReductionModule",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases accuracy for Rifles.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Rifle_Accuracy_1-FlavorText\", \"Can be equipped to a valid Rifle at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_Attachment_Rifle_Accuracy_2",
+            "DisplayName": "INVTEXT(\"[DNT] Advanced Rifle Accuracy Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_WeaponAttach_SpreadReductionModule.ITEM_WeaponAttach_SpreadReductionModule",
+            "Description": "INVTEXT(\"[DNT] An attachment that increases accuracy for Rifles.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Rifle_Accuracy_2-FlavorText\", \"Can be equipped to a valid Rifle at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
             "Name": "Item_NationalFlag_NewZealand",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_NewZealand-DisplayName\", \"National Flag (New Zealand)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_NewZealand.T_ITEM_National_Flag_NewZealand",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_NewZealand-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Australia",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Australia-DisplayName\", \"National Flag (Australia)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Australia.T_ITEM_National_Flag_Australia",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Australia-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Belgium",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Belgium-DisplayName\", \"National Flag (Belgium)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Belgium.T_ITEM_National_Flag_Belgium",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Belgium-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Brazil",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Brazil-DisplayName\", \"National Flag (Brazil)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Brazil.T_ITEM_National_Flag_Brazil",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Brazil-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Canada",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Canada-DisplayName\", \"National Flag (Canada)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Canada.T_ITEM_National_Flag_Canada",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Canada-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_China",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_China-DisplayName\", \"National Flag (China)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_China.T_ITEM_National_Flag_China",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_China-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Czech",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Czech-DisplayName\", \"National Flag (Czech Republic)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Czech.T_ITEM_National_Flag_Czech",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Czech-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Denmark",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Denmark-DisplayName\", \"National Flag (Denmark)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Denmark.T_ITEM_National_Flag_Denmark",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Denmark-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_EuropeanUnion",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_EuropeanUnion-DisplayName\", \"National Flag (European Union)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_EuropeanUnion.T_ITEM_National_Flag_EuropeanUnion",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_EuropeanUnion-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Finland",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Finland-DisplayName\", \"National Flag (Finland)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_finland.T_ITEM_National_Flag_finland",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Finland-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_France",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_France-DisplayName\", \"National Flag (France)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_France.T_ITEM_National_Flag_France",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_France-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Germany",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Germany-DisplayName\", \"National Flag (Germany)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Germany.T_ITEM_National_Flag_Germany",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Germany-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Hungry",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Hungry-DisplayName\", \"National Flag (Hungary)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Hungry.T_ITEM_National_Flag_Hungry",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Hungry-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Italy",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Italy-DisplayName\", \"National Flag (Italy)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Italy.T_ITEM_National_Flag_Italy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Italy-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Japan",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Japan-DisplayName\", \"National Flag (Japan)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Japan.T_ITEM_National_Flag_Japan",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Japan-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Netherlands",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Netherlands-DisplayName\", \"National Flag (Netherlands)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Netherlands.T_ITEM_National_Flag_Netherlands",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Netherlands-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Norway",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Norway-DisplayName\", \"National Flag (Norway)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Norway.T_ITEM_National_Flag_Norway",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Norway-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Romania",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Romania-DisplayName\", \"National Flag (Romania)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Romaina.T_ITEM_National_Flag_Romaina",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Romania-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Russia",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Russia-DisplayName\", \"National Flag (Russia)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Russia.T_ITEM_National_Flag_Russia",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Russia-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_SouthAfrica",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_SouthAfrica-DisplayName\", \"National Flag (South Africa)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_SouthAfrica.T_ITEM_National_Flag_SouthAfrica",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_SouthAfrica-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_SouthKorea",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_SouthKorea-DisplayName\", \"National Flag (South Korea)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_SouthKorea.T_ITEM_National_Flag_SouthKorea",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_SouthKorea-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Spain",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Spain-DisplayName\", \"National Flag (Spain)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Spain.T_ITEM_National_Flag_Spain",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Spain-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Sweden",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Sweden-DisplayName\", \"National Flag (Sweden)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Sweden.T_ITEM_National_Flag_Sweden",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Sweden-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Switzerland",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Switzerland-DisplayName\", \"National Flag (Switzerland)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Switzerland.T_ITEM_National_Flag_Switzerland",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Switzerland-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Taiwan",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Taiwan-DisplayName\", \"National Flag (Taiwan)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Taiwan.T_ITEM_National_Flag_Taiwan",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Taiwan-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Turkey",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Turkey-DisplayName\", \"National Flag (Turkey)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Turkey.T_ITEM_National_Flag_Turkey",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Turkey-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_Ukraine",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Ukraine-DisplayName\", \"National Flag (Ukraine)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_Ukraine.T_ITEM_National_Flag_Ukraine",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_Ukraine-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_UnitedKingdom",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_UnitedKingdom-DisplayName\", \"National Flag (United Kingdom)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_UnitedKingdom.T_ITEM_National_Flag_UnitedKingdom",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_UnitedKingdom-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
         },
         {
             "Name": "Item_NationalFlag_UnitedStates",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_UnitedStates-DisplayName\", \"National Flag (United States)\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Flags/T_ITEM_National_Flag_UnitedStates.T_ITEM_National_Flag_UnitedStates",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NationalFlag_UnitedStates-Description\", \"A Flag Pole with flag, made to withstand harsh conditions.\")",
             "Weight": 5000
+        },
+        {
+            "Name": "Item_Mission_ELY3_Terraforming",
+            "DisplayName": "INVTEXT(\"[DNT] Terraforming Records\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "INVTEXT(\"[DNT] A record of the terraforming process of Icarus.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Mission_ELY3_Experiments",
+            "DisplayName": "INVTEXT(\"[DNT] Icarus Experiment Records\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "INVTEXT(\"[DNT] Experiments performed on the native inhabitants of Icarus.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Mission_ELY3_Laser",
+            "DisplayName": "INVTEXT(\"[DNT] Orbital Laser Logs\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "INVTEXT(\"[DNT] Logs of Orbital Laser Activations\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Mission_ELY3_AccessCard",
+            "DisplayName": "INVTEXT(\"[DNT] LAB-01 Access Card\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "INVTEXT(\"[DNT] Battered Access Card to LAB-01\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Laser_Tripwire",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Laser_Tripwire-DisplayName\", \"Laser Tripwire\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Laser_Tripwire_Enemy.T_ITEM_Laser_Tripwire_Enemy",
+            "Description": "INVTEXT(\"[DNT] Explodes when the laser is broken.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Laser_Tripwire-FlavorText\", \"Dangerous... Very Dangerous....\")",
+            "Weight": 1000,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Orka_Arctic_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Orka Arctic Vestige\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Orka_Arctic_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 2000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Orka_Arctic_Trophy",
+            "DisplayName": "INVTEXT(\"[DNT] Orka Arctic Trophy\")",
+            "Weight": 4000
+        },
+        {
+            "Name": "Item_Thumper_Sandworm",
+            "DisplayName": "INVTEXT(\"[DNT] Prototype Sandworm Thumper\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Thumper_Mini.T_ITEM_Thumper_Mini",
+            "Description": "INVTEXT(\"[DNT] A compact version of the Thumper designed to draw out creatures living underground.\")",
+            "FlavorText": "INVTEXT(\"[DNT] Designed for finding underground caves, turns out it also disturbs everything living in them.\")",
+            "Weight": 50000
         }
     ]
 }

@@ -12571,8 +12571,8 @@
         {
             "Name": "Exotic_Uranium_Collector",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Extractors/BP_Exotic_Uranium_Collector.BP_Exotic_Uranium_Collector_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_ExoticTreeDevice.SM_DEP_ExoticTreeDevice",
-            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Radar/SFX_DEP_DEPLOY_SPAWN_BLOCKER_T3.SFX_DEP_DEPLOY_SPAWN_BLOCKER_T3",
+            "PreviewStaticMesh": "/Game/ASS/DEP/Uranium_Collection_Device/SM_DEP_Uranium_Collection_Device.SM_DEP_Uranium_Collection_Device",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Extractor/SFX_DEP_DEPLOY_URANIUM_COLLECTOR.SFX_DEP_DEPLOY_URANIUM_COLLECTOR",
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
             "SnapActorTags": [
@@ -12587,7 +12587,7 @@
         {
             "Name": "Uranium_Converter",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Furnaces/BP_UraniumConverter.BP_UraniumConverter_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Furnace_Electric.SM_DEP_Furnace_Electric",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Nuclear_Centrifuge/SM_DEP_Nuclear_Centrifuge_Combined.SM_DEP_Nuclear_Centrifuge_Combined",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SnapToSurfaceNormal": false
         },
@@ -12856,7 +12856,7 @@
         {
             "Name": "Turret_Flamethrower",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_Flamethrower_Turret.BP_Flamethrower_Turret_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Turret_T4/SM_DEP_Turret_Pistol_Combined_v2.SM_DEP_Turret_Pistol_Combined_v2",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Turret_T4/SM_DEP_Turret_T4_Flamethrower_Combined.SM_DEP_Turret_T4_Flamethrower_Combined",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
             "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Obstacle'",
             "NavigationFallbackExtents": {
@@ -12934,6 +12934,33 @@
                 "Y": -10,
                 "Z": -20
             }
+        },
+        {
+            "Name": "Laser_Tripwire_Enemy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_Tripwire_Laser.BP_Tripwire_Laser_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Landmine_V2.SM_DEP_Landmine_V2",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Landmine/SFX_DEPLOY_LANDMINE.SFX_DEPLOY_LANDMINE",
+            "MaxSurfaceSnapAngle": 360,
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "GroundOrWallPlacement",
+            "bCanAffectNavigation": false
+        },
+        {
+            "Name": "Orka_Arctic_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Orka_Arctic.BP_Trophy_Orka_Arctic_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Orka_Arctic/SM_DEP_Trophy_Orka_Arctic.SM_DEP_Trophy_Orka_Arctic",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Thumper_Sandworm",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Resources/BP_SandwormThumper.BP_SandwormThumper_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Thumper_Mini.SM_DEP_Thumper_Mini",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "SupportsCustomRotation": false
         }
     ]
 }

@@ -5933,10 +5933,10 @@
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
             "VocalisationSocket": "RigJaw1",
             "FlinchVocalisation": {
-                "RowName": "DeerVariantFlinch"
+                "RowName": "BounderFlinch"
             },
             "DeathVocalisation": {
-                "RowName": "DeerVariantDeath"
+                "RowName": "BounderDeath"
             },
             "StateVocalisations": {
                 "Idle": {
@@ -6056,6 +6056,96 @@
             "MusicConditionOverrideMinThreatLevel": 20,
             "FootstepMaxDistance": 30000,
             "FoliageCheckMaxDistance": 8000
+        },
+        {
+            "Name": "GiantRoach",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/SwampQuad/SFX_FOOTSTEP_ROACH.SFX_FOOTSTEP_ROACH",
+            "FrontFootSocket": "RigHead",
+            "RearFootSocket": "RigTail1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_MEDIUM.SFX_CRE_FOLIAGE_MEDIUM",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigHead",
+            "AttackVocalisation": {
+                "RowName": "GiantRoachAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "GiantRoachFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "GiantRoachDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "GiantRoachIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            }
+        },
+        {
+            "Name": "BounderDeer",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/Deer/SFX_FOOTSTEP_DEER_VARIANT.SFX_FOOTSTEP_DEER_VARIANT",
+            "FrontFootSocket": "RigNeck2",
+            "RearFootSocket": "RigTail1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
+            "DeathCollisionSocket": "RigChest",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
+            "VocalisationSocket": "RigJaw1",
+            "FlinchVocalisation": {
+                "RowName": "DeerVariantFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "DeerVariantDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "BounderIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Fleeing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "TundraDeerFlee",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "FootstepMaxDistance": 6000,
+            "FoliageCheckMaxDistance": 6000
         }
     ]
 }

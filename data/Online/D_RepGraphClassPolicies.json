@@ -67,7 +67,7 @@
         {
             "Name": "Icarus.IcarusNPCCharacter",
             "Class": "/Script/Icarus.IcarusNPCCharacter",
-            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
+            "Description": "Spatialized dynamic",
             "Policy": "Spatialize_Dynamic",
             "Settings": {
                 "RowName": "Spatialized_LowFrequency_NPC"
@@ -109,10 +109,10 @@
         {
             "Name": "Icarus.Deployable",
             "Class": "/Script/Icarus.Deployable",
-            "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
+            "Description": "Spatialized static, runtime-spawed (never moves), distance culled, lower tick rate",
             "Policy": "Spatialize_Static",
             "Settings": {
-                "RowName": "Spatialized_LowFrequency_Building"
+                "RowName": "Spatialized_LowFrequency_Deployable"
             }
         },
         {
@@ -226,19 +226,19 @@
         {
             "Name": "Icarus.BP_IcarusSplineActor_C",
             "Class": "/Game/BP/Building/Roads/BP_IcarusSplineActor.BP_IcarusSplineActor_C",
-            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
-            "Policy": "RelevantAllConnections",
+            "Description": "Spatialized static, runtime-spawed (never moves), distance culled, and low tick rate",
+            "Policy": "Spatialize_Dynamic",
             "Settings": {
-                "RowName": "AlwaysRelevant_Default"
+                "RowName": "Spatialized_LowFrequency"
             }
         },
         {
             "Name": "Icarus.BP_Grid_Base_C",
             "Class": "/Game/BP/Building/BP_Grid_Base.BP_Grid_Base_C",
-            "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
-            "Policy": "RelevantAllConnections",
+            "Description": "Spatialized static, runtime-spawed (never moves), distance culled",
+            "Policy": "Spatialize_Static",
             "Settings": {
-                "RowName": "AlwaysRelevant_Default"
+                "RowName": "Spatialized_LowFrequency_Building"
             }
         },
         {
@@ -310,7 +310,7 @@
             "Description": "Always Relevant (all connections) (TODO: potentially optimize by making Spatialized)",
             "Policy": "RelevantAllConnections",
             "Settings": {
-                "RowName": "AlwaysRelevant_Default"
+                "RowName": "AlwaysRelevant_Mount"
             }
         },
         {
@@ -586,10 +586,10 @@
         {
             "Name": "Icarus.IcarusMountCharacter",
             "Class": "/Script/Icarus.IcarusMountCharacter",
-            "Description": "Always Relevant (all connections)",
+            "Description": "Always Relevant (all connections), lower tick rate, closer = higher priority",
             "Policy": "RelevantAllConnections",
             "Settings": {
-                "RowName": "AlwaysRelevant_Default"
+                "RowName": "AlwaysRelevant_Mount"
             }
         },
         {
@@ -778,6 +778,15 @@
             "Policy": "Spatialize_Dynamic",
             "Settings": {
                 "RowName": "Spatialize_Default"
+            }
+        },
+        {
+            "Name": "Icarus.RadiationManager",
+            "Class": "/Script/Icarus.RadiationManager",
+            "Description": "Always Relevant (all connections)",
+            "Policy": "RelevantAllConnections",
+            "Settings": {
+                "RowName": "AlwaysRelevant_Default"
             }
         }
     ]

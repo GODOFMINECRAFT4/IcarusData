@@ -111,8 +111,8 @@
             }
         },
         {
-            "Name": "Felling_1",
-            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Felling_1-DisplayName\", \"Woodsman 1\")",
+            "Name": "FellingDamage_1",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"FellingDamage_1-DisplayName\", \"Woodsman 1\")",
             "Icon": "/Game/Assets/2DArt/UI/Alterations/Alteration_Wood.Alteration_Wood",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
             "Stats": {
@@ -120,8 +120,8 @@
             }
         },
         {
-            "Name": "Felling_2",
-            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Felling_2-DisplayName\", \"Woodsman 2\")",
+            "Name": "FellingDamage_2",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"FellingDamage_2-DisplayName\", \"Woodsman 2\")",
             "Icon": "/Game/Assets/2DArt/UI/Alterations/Alteration_Wood.Alteration_Wood",
             "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
             "Stats": {
@@ -686,6 +686,16 @@
             "Stats": {
                 "(Value=\"BaseMaximumStomachFullness_+\")": 1,
                 "(Value=\"BaseFoodModifierDuration_+%\")": 10
+            }
+        },
+        {
+            "Name": "Stomach_Capacity_2",
+            "DisplayName": "NSLOCTEXT(\"D_Alterations\", \"Stomach_Capacity_2-DisplayName\", \"Hearty 2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/ArmorAttachments/Icon_StomachCap.Icon_StomachCap",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseMaximumStomachFullness_+\")": 1,
+                "(Value=\"BaseFoodModifierDuration_+%\")": 20
             }
         },
         {
@@ -3575,6 +3585,270 @@
                 "RequiredFeatureLevel": {
                     "RowName": "GreatHunts"
                 }
+            }
+        },
+        {
+            "Name": "Tool_Durability_1",
+            "DisplayName": "INVTEXT(\"[DNT] Tool Durability 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseItemWear_+%\")": -5
+            }
+        },
+        {
+            "Name": "Tool_Durability_2",
+            "DisplayName": "INVTEXT(\"[DNT] Tool Durability 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseItemWear_+%\")": -15
+            }
+        },
+        {
+            "Name": "Tool_StaminaCost_1",
+            "DisplayName": "INVTEXT(\"[DNT] Tool Stamina Cost 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -10
+            }
+        },
+        {
+            "Name": "Tool_StaminaCost_2",
+            "DisplayName": "INVTEXT(\"[DNT] Tool Stamina Cost 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseToolStaminaActionCost_+%\")": -30
+            }
+        },
+        {
+            "Name": "Knife_VestigeChance_1",
+            "DisplayName": "INVTEXT(\"[DNT] Vestige Chance 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseChanceToHarvestCreatureTrophiesOnSkinning_%\")": 25
+            }
+        },
+        {
+            "Name": "Knife_VestigeChance_2",
+            "DisplayName": "INVTEXT(\"[DNT] Vestige Chance 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseChanceToHarvestCreatureTrophiesOnSkinning_%\")": 50
+            }
+        },
+        {
+            "Name": "Pickaxe_MiningRadius_1",
+            "DisplayName": "INVTEXT(\"[DNT] Mining Radius 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseMiningRadius_+%\")": 10
+            }
+        },
+        {
+            "Name": "Pickaxe_MiningRadius_2",
+            "DisplayName": "INVTEXT(\"[DNT] Mining Radius 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseMiningRadius_+%\")": 25
+            }
+        },
+        {
+            "Name": "Pickaxe_BauxiteYield_1",
+            "DisplayName": "INVTEXT(\"[DNT] Aluminium Yield 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseMiningBauxiteRewards_+%\")": 25
+            }
+        },
+        {
+            "Name": "Pickaxe_BauxiteYield_2",
+            "DisplayName": "INVTEXT(\"[DNT] Aluminium Yield 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseMiningBauxiteRewards_+%\")": 40
+            }
+        },
+        {
+            "Name": "Axe_WoodYield_1",
+            "DisplayName": "INVTEXT(\"[DNT] Wood Yield 1\")",
+            "Icon": "/Game/Assets/2DArt/UI/Alterations/Alteration_Wood.Alteration_Wood",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseFellingRewards_+%\")": 25
+            }
+        },
+        {
+            "Name": "Axe_WoodYield_2",
+            "DisplayName": "INVTEXT(\"[DNT] Wood Yield 2\")",
+            "Icon": "/Game/Assets/2DArt/UI/Alterations/Alteration_Wood.Alteration_Wood",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseFellingRewards_+%\")": 40
+            }
+        },
+        {
+            "Name": "Sledgehammer_Slow_1",
+            "DisplayName": "INVTEXT(\"[DNT] Sledge Slow 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseSlow_%\")": 25
+            }
+        },
+        {
+            "Name": "Sledgehammer_Slow_2",
+            "DisplayName": "INVTEXT(\"[DNT] Sledge Slow 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseAttacksCauseSlow_%\")": 40
+            }
+        },
+        {
+            "Name": "Armor_Comfort_1",
+            "DisplayName": "INVTEXT(\"[DNT] Armor Pajama 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseComfortLevel_+\")": 20
+            }
+        },
+        {
+            "Name": "Armor_Comfort_2",
+            "DisplayName": "INVTEXT(\"[DNT] Armor Pajama 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseComfortLevel_+\")": 50
+            }
+        },
+        {
+            "Name": "Arms_FistDamage_1",
+            "DisplayName": "INVTEXT(\"[DNT] Fist Damage 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1"
+        },
+        {
+            "Name": "Arms_FistDamage_2",
+            "DisplayName": "INVTEXT(\"[DNT] Fist Damage 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2"
+        },
+        {
+            "Name": "Arms_ThrowAccuracy_1",
+            "DisplayName": "INVTEXT(\"[DNT] Projectile Accuracy 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseKnifeProjectileAccuracy_+%\")": 10,
+                "(Value=\"BaseSpearProjectileAccuracy_+%\")": 10
+            }
+        },
+        {
+            "Name": "Arms_ThrowAccuracy_2",
+            "DisplayName": "INVTEXT(\"[DNT] Projectile Accuracy 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseKnifeProjectileAccuracy_+%\")": 25,
+                "(Value=\"BaseSpearProjectileAccuracy_+%\")": 25
+            }
+        },
+        {
+            "Name": "Legs_Jump_1",
+            "DisplayName": "INVTEXT(\"[DNT] Jump 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseJumpingStaminaActionCost_+%\")": -10
+            }
+        },
+        {
+            "Name": "Legs_Jump_2",
+            "DisplayName": "INVTEXT(\"[DNT] Jump 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseJumpingStaminaActionCost_+%\")": -20
+            }
+        },
+        {
+            "Name": "Chest_Oxygen_1",
+            "DisplayName": "INVTEXT(\"[DNT] Oxygen 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseOxygenConsumption_+%\")": -10
+            }
+        },
+        {
+            "Name": "Chest_Oxygen_2",
+            "DisplayName": "INVTEXT(\"[DNT] Oxygen 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseOxygenConsumption_+%\")": -20
+            }
+        },
+        {
+            "Name": "Guns_Damage_1",
+            "DisplayName": "INVTEXT(\"[DNT] Guns Damage 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 15,
+                "(Value=\"BaseCriticalDamage_+%\")": 15,
+                "(Value=\"BaseStealthDamage_+%\")": 15
+            }
+        },
+        {
+            "Name": "Guns_Damage_2",
+            "DisplayName": "INVTEXT(\"[DNT] Guns Damage 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseProjectileDamage_+%\")": 30,
+                "(Value=\"BaseCriticalDamage_+%\")": 30,
+                "(Value=\"BaseStealthDamage_+%\")": 30
+            }
+        },
+        {
+            "Name": "Guns_ExtendedAmmo_1",
+            "DisplayName": "INVTEXT(\"[DNT] Guns Extended Ammo 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseAmmoCapacity_+\")": 1,
+                "(Value=\"BaseFirearmReloadSpeed_+%\")": 15
+            }
+        },
+        {
+            "Name": "Guns_ExtendedAmmo_2",
+            "DisplayName": "INVTEXT(\"[DNT] Guns Extended Ammo 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseAmmoCapacity_+\")": 2,
+                "(Value=\"BaseFirearmReloadSpeed_+%\")": 25
+            }
+        },
+        {
+            "Name": "Pistol_Accuracy_1",
+            "DisplayName": "INVTEXT(\"[DNT] Pistol Accuracy 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BasePistolProjectileAccuracy_+%\")": 20,
+                "(Value=\"BasePistolCriticalDamage_+%\")": 15
+            }
+        },
+        {
+            "Name": "Pistol_Accuracy_2",
+            "DisplayName": "INVTEXT(\"[DNT] Pistol Accuracy 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BasePistolProjectileAccuracy_+%\")": 40,
+                "(Value=\"BasePistolCriticalDamage_+%\")": 25
+            }
+        },
+        {
+            "Name": "Rifle_Accuracy_1",
+            "DisplayName": "INVTEXT(\"[DNT] Rifle Accuracy 1\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_1.Icon_Alteration_1",
+            "Stats": {
+                "(Value=\"BaseRifleProjectileAccuracy_+%\")": 20,
+                "(Value=\"BaseRifleCriticalDamage_+%\")": 15
+            }
+        },
+        {
+            "Name": "Rifle_Accuracy_2",
+            "DisplayName": "INVTEXT(\"[DNT] Rifle Accuracy 2\")",
+            "RankIcon": "/Game/Assets/2DArt/UI/Alterations/Icon_Alteration_2.Icon_Alteration_2",
+            "Stats": {
+                "(Value=\"BaseRifleProjectileAccuracy_+%\")": 40,
+                "(Value=\"BaseRifleCriticalDamage_+%\")": 25
             }
         }
     ]
