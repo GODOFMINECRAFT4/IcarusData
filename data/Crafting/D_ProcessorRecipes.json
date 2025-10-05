@@ -95275,6 +95275,70 @@
             "Audio": {
                 "RowName": "Campfire"
             }
+        },
+        {
+            "Name": "Flat_Solar_Panel",
+            "Requirement": {
+                "RowName": "Solar_Panel"
+            },
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Electronics",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 30
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10
+                },
+                {
+                    "Element": {
+                        "RowName": "Glass",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 60
+                },
+                {
+                    "Element": {
+                        "RowName": "Composites",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 18
+                },
+                {
+                    "Element": {
+                        "RowName": "Carbon_Fiber",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Flat_Solar_Panel",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            }
         }
     ]
 }

@@ -848,7 +848,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_GEN_Solar_Flat/SM_DEP_GEN_Solar_Flat.SM_DEP_GEN_Solar_Flat",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
             "MaxSurfaceSnapAngle": 50,
-            "SupportsCustomRotation": false,
             "SnapActorTags": [
                 "BuildableRamp"
             ],
@@ -4256,14 +4255,6 @@
             "SupportsCustomRotation": false,
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
-        },
-        {
-            "Name": "Basic_Turret",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_Basic_Turret.BP_Basic_Turret_C",
-            "PreviewStaticMesh": "/Game/Assets/3DArt/TMP_MSH/SM_DEP_Turret_Base.SM_DEP_Turret_Base",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
-            "bCanAffectNavigation": false,
-            "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Obstacle'"
         },
         {
             "Name": "Tackle_Box",
@@ -8114,15 +8105,6 @@
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEPLOY_HEAVY_WOOD.SFX_DEPLOY_HEAVY_WOOD"
         },
         {
-            "Name": "Great_Hunt_Device",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/MissionCommunication/BP_Great_Hunt_Device.BP_Great_Hunt_Device_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Bench_GreatHunt_Comms/SM_DEP_Bench_GreatHunt_Comms.SM_DEP_Bench_GreatHunt_Comms",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
-            "DeployCollisionExtentOffset": {
-                "Z": -100
-            }
-        },
-        {
             "Name": "Mini_Hippo_Trophy",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_Mini_Hippo.BP_Trophy_Mini_Hippo_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_MiniHippo/SM_DEP_Trophy_Mini_Hippo.SM_DEP_Trophy_Mini_Hippo",
@@ -9614,15 +9596,6 @@
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
-        },
-        {
-            "Name": "Great_Hunt_Crafting",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/MissionCommunication/BP_Great_Hunt_Crafting.BP_Great_Hunt_Crafting_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Bench_GreatHunt_Crafting/SM_DEP_Bench_GreatHunt_Crafting.SM_DEP_Bench_GreatHunt_Crafting",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
-            "DeployCollisionExtentOffset": {
-                "Z": -100
-            }
         },
         {
             "Name": "Homestead_Coffee_Grinder",
@@ -12572,7 +12545,7 @@
             "Name": "Exotic_Uranium_Collector",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Extractors/BP_Exotic_Uranium_Collector.BP_Exotic_Uranium_Collector_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/Uranium_Collection_Device/SM_DEP_Uranium_Collection_Device.SM_DEP_Uranium_Collection_Device",
-            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/Kit_Extractor/SFX_DEP_DEPLOY_URANIUM_COLLECTOR.SFX_DEP_DEPLOY_URANIUM_COLLECTOR",
+            "DeployedSound": "/Game/FMOD/Events/SFX/Deployable/T5_Polymerizer/SFX_DEPLOY_URANIUM_COLLECTOR.SFX_DEPLOY_URANIUM_COLLECTOR",
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
             "SnapActorTags": [

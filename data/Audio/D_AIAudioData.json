@@ -3915,7 +3915,7 @@
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
             "VocalisationSocket": "RigMouth",
             "AttackVocalisation": {
-                "RowName": "NeedlerAttack"
+                "RowName": "GhostCrocAttack"
             },
             "FlinchVocalisation": {
                 "RowName": "GhostCrocFlinch"
@@ -5887,7 +5887,7 @@
                 },
                 "Attacking": {
                     "StateEnteredVocalisation": {
-                        "RowName": "SlinkerSpot",
+                        "RowName": "None",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StatePersistentVocalisation": {
@@ -6090,6 +6090,20 @@
                         "RowName": "None",
                         "DataTableName": "D_Vocalisations"
                     }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "GiantRoachAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
                 }
             },
             "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
@@ -6109,10 +6123,10 @@
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
             "VocalisationSocket": "RigJaw1",
             "FlinchVocalisation": {
-                "RowName": "DeerVariantFlinch"
+                "RowName": "BounderFlinch"
             },
             "DeathVocalisation": {
-                "RowName": "DeerVariantDeath"
+                "RowName": "BounderDeath"
             },
             "StateVocalisations": {
                 "Idle": {
@@ -6216,10 +6230,10 @@
                 "RowName": "StorcaAttack"
             },
             "FlinchVocalisation": {
-                "RowName": "HyenaFlinch"
+                "RowName": "StorcaFlinch"
             },
             "DeathVocalisation": {
-                "RowName": "HyenaDeath"
+                "RowName": "StorcaDeath"
             },
             "StateVocalisations": {
                 "Idle": {
