@@ -1526,6 +1526,17 @@
             "Name": "Melee_2H_Jackhammer_Dig",
             "Behaviour": "BlueprintGeneratedClass'/Game/BP/Behaviours/Actionable/BP_ActionableBehaviour_Jackhammer_Dig.BP_ActionableBehaviour_Jackhammer_Dig_C'",
             "TP_ActionMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Jackhammer_Use_Montage.3RD_CHA_MAL_Jackhammer_Use_Montage",
+            "TP_SuccessAnimations": [
+                {
+                    "SuccessType": {
+                        "RowName": "HitSuccess_Tool",
+                        "DataTableName": "D_ValidHitTypes"
+                    },
+                    "SuccessMontageVariations": [
+                        "Default"
+                    ]
+                }
+            ],
             "FP_ActionMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Jackhammer_Use_Montage.1ST_CHA_Jackhammer_Use_Montage",
             "FP_SuccessAnimations": [
                 {

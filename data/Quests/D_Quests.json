@@ -3359,7 +3359,7 @@
         {
             "Name": "Common_Travel",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Travel-Description\", \"Travel to the map location ([Map])\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Travel-Description\", \"Travel to the map Location ([Map])\")",
             "bPreloadQuestClass": true
         },
         {
@@ -3385,7 +3385,7 @@
         {
             "Name": "Common_Retrieve_Item_Pickup",
             "Class": "/Game/BP/Quests/Common/BPQ_Retrieve_Item_Pickup.BPQ_Retrieve_Item_Pickup_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Retrieve_Item_Pickup-Description\", \"Collect the equipment\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Retrieve_Item_Pickup-Description\", \"Collect the Equipment\")"
         },
         {
             "Name": "Common_Stockpile",
@@ -3421,7 +3421,7 @@
         {
             "Name": "OLY_Farming_Retrieve",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Retrieve.BPQ_OLY_Farming_Retrieve_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Retrieve-Description\", \"Retrieve farming equipment\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Retrieve-Description\", \"Retrieve Farming Equipment from Supply Crate\")",
             "LocationQuery": {
                 "RowName": "T1_Farming_Equipment"
             }
@@ -3429,32 +3429,34 @@
         {
             "Name": "OLY_Farming_Construction_Equipment",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Construction_Equipment.BPQ_OLY_Farming_Construction_Equipment_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_Equipment-Description\", \"Construct farming equipment\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_Equipment-Description\", \"Construct Farming Equipment near Supply Pod\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_Equipment-InfoText\", \"Must be Constructed near Supply Pod\")"
         },
         {
             "Name": "OLY_Farming_Construction_Composter",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Construction_Composter.BPQ_OLY_Farming_Construction_Composter_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_Composter-Description\", \"Construct: Wood Composter\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_Composter-Description\", \"Construct Wood Composter\")"
         },
         {
             "Name": "OLY_Farming_Construction_WaterPump",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Construction_WaterPump.BPQ_OLY_Farming_Construction_WaterPump_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_WaterPump-Description\", \"Construct and power Water Pump\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_WaterPump-Description\", \"Construct and Power Water Pump\")"
         },
         {
             "Name": "OLY_Farming_Construction_Greenhouse",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Construction_Greenhouse.BPQ_OLY_Farming_Construction_Greenhouse_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_Greenhouse-Description\", \"Construct Crop Plots in a green house (Glass building)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_Greenhouse-Description\", \"Construct Crop Plots in a Green House (Glass building)\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_Greenhouse-InfoText\", \"Green House must be Located near Supply Pod\")"
         },
         {
             "Name": "OLY_Farming_Construction_CropPlot",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Construction_CropPlot.BPQ_OLY_Farming_Construction_CropPlot_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_CropPlot-Description\", \"Construct: Crop Plots (inside a green house) ({0} / 4)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_CropPlot-Description\", \"Crop Plots (Inside Green House): ({0} / 4)\")"
         },
         {
             "Name": "OLY_Farming_Construction_CropPlot_Water",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Construction_CropPlot_Water.BPQ_OLY_Farming_Construction_CropPlot_Water_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_CropPlot_Water-Description\", \"Water the crops by connecting it to a Water Network, using a Water Container, or praying for Rain ({0} / 4)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Construction_CropPlot_Water-Description\", \"Water the Crops by Connecting it to a Water Network, Using a Water Container, or Praying for Rain ({0} / 4)\")"
         },
         {
             "Name": "OLY_Farming_Construction_CropPlot_Fertilize",
@@ -3464,22 +3466,22 @@
         {
             "Name": "OLY_Farming_Stockpile_List",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Stockpile_List.BPQ_OLY_Farming_Stockpile_List_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Stockpile_List-Description\", \"Deposit listed grown (in a Crop Plot) resources in Cargo Pod\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Stockpile_List-Description\", \"Deposit Listed Grown (in a Crop Plot) Resources in Supply Pod\")"
         },
         {
             "Name": "OLY_Farming_Stockpile_Carrots",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Stockpile_Deposit_Carrots.BPQ_OLY_Farming_Stockpile_Deposit_Carrots_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Stockpile_Carrots-Description\", \"Grown Carrots (<Number>({0} / {1})</>)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Stockpile_Carrots-Description\", \"Grown Carrots <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Farming_Stockpile_Corn",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Stockpile_Deposit_Corn.BPQ_OLY_Farming_Stockpile_Deposit_Corn_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Stockpile_Corn-Description\", \"Grown Corn (<Number>({0} / {1})</>)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Stockpile_Corn-Description\", \"Grown Corn <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Farming_Stockpile_Pumpkin",
             "Class": "/Game/BP/Quests/Olympus/Farming/BPQ_OLY_Farming_Stockpile_Deposit_Pumpkin.BPQ_OLY_Farming_Stockpile_Deposit_Pumpkin_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Stockpile_Pumpkin-Description\", \"Grown Pumpkin (<Number>({0} / {1})</>)\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Farming_Stockpile_Pumpkin-Description\", \"Grown Pumpkin <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Omni_Research",
@@ -5359,7 +5361,7 @@
         {
             "Name": "STYX_E_Expedition_Scan_Travel",
             "Class": "/Game/BP/Quests/Styx/E/Expedition/BPQ_STYX_E_Expedition_Scan_Travel.BPQ_STYX_E_Expedition_Scan_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Scan_Travel-Description\", \"Travel to the map location ([Map])\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_E_Expedition_Scan_Travel-Description\", \"Travel to the map Location ([Map])\")"
         },
         {
             "Name": "STYX_E_Expedition_Scan_1",
@@ -5737,7 +5739,7 @@
         {
             "Name": "Common_Travel_Large",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel_Large.BPQ_Travel_Large_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Travel_Large-Description\", \"Travel to the map location ([Map])\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Travel_Large-Description\", \"Travel to the map Location ([Map])\")"
         },
         {
             "Name": "STYX_A_Extermination",
@@ -12047,7 +12049,7 @@
         {
             "Name": "Common_Travel_Medium",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel_Medium.BPQ_Travel_Medium_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Travel_Medium-Description\", \"Travel to the map location ([Map])\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Travel_Medium-Description\", \"Travel to the map Location ([Map])\")"
         },
         {
             "Name": "PRO_Nullsector_Story",

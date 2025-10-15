@@ -3659,7 +3659,7 @@
             "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
-                "RowName": "Boss"
+                "RowName": "Default"
             },
             "MusicConditionOverrideMinThreatLevel": 20,
             "FoliageCheckMaxDistance": 6000
@@ -4169,7 +4169,7 @@
             "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
-                "RowName": "Boss"
+                "RowName": "Default"
             },
             "MusicConditionOverrideMinThreatLevel": 20,
             "FoliageCheckMaxDistance": 6000
@@ -4340,7 +4340,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
             "DeathCollisionSocket": "RigPelvis",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
-            "VocalisationSocket": "RigHead",
+            "VocalisationSocket": "RigHead_M",
             "FlinchVocalisation": {
                 "RowName": "ReaverFlinch"
             },
@@ -5403,7 +5403,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
-            "VocalisationSocket": "RigJaw",
+            "VocalisationSocket": "RigHead",
             "AttackVocalisation": {
                 "RowName": "OrcaAttack"
             },
@@ -5672,7 +5672,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
             "DeathCollisionSocket": "RigSpine",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
-            "VocalisationSocket": "RigHead",
+            "VocalisationSocket": "RigRJaw",
             "AttackVocalisation": {
                 "RowName": "RaptorAttack"
             },
@@ -5727,15 +5727,15 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_LARGE.SFX_CRE_DEATHFALL_WATER_LARGE",
-            "VocalisationSocket": "RigJaw1",
+            "VocalisationSocket": "RigTongue3",
             "AttackVocalisation": {
-                "RowName": "BuffaloAttack"
+                "RowName": "ChewFlinch"
             },
             "FlinchVocalisation": {
-                "RowName": "BuffaloFlinch"
+                "RowName": "ChewFlinch"
             },
             "DeathVocalisation": {
-                "RowName": "BuffaloDeath"
+                "RowName": "ChewDeath"
             },
             "StateVocalisations": {
                 "Idle": {
@@ -5773,20 +5773,6 @@
                     },
                     "StatePersistentVocalisation": {
                         "RowName": "ChewIdle",
-                        "DataTableName": "D_Vocalisations"
-                    },
-                    "StateExitedVocalisation": {
-                        "RowName": "None",
-                        "DataTableName": "D_Vocalisations"
-                    }
-                },
-                "Attacking": {
-                    "StateEnteredVocalisation": {
-                        "RowName": "None",
-                        "DataTableName": "D_Vocalisations"
-                    },
-                    "StatePersistentVocalisation": {
-                        "RowName": "BuffaloAttacking",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
@@ -5860,7 +5846,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
-            "VocalisationSocket": "RigJaw",
+            "VocalisationSocket": "RigJaw_M",
             "AttackVocalisation": {
                 "RowName": "SlinkerAttack"
             },
@@ -5917,7 +5903,7 @@
             "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
             "ThreatLevel": 100,
             "ThreatConfig": {
-                "RowName": "Boss"
+                "RowName": "Default"
             },
             "MusicConditionOverrideMinThreatLevel": 20,
             "FoliageCheckMaxDistance": 6000
@@ -5931,7 +5917,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
-            "VocalisationSocket": "RigJaw1",
+            "VocalisationSocket": "RigHead",
             "FlinchVocalisation": {
                 "RowName": "BounderFlinch"
             },
@@ -5980,7 +5966,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_VERY_SMALL.SFX_CRE_BODY_FALL_VERY_SMALL",
             "DeathCollisionSocket": "RigPelvis",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
-            "VocalisationSocket": "RigHead",
+            "VocalisationSocket": "RigJaw_M",
             "AttackVocalisation": {
                 "RowName": "HopperAttack"
             },
@@ -6021,7 +6007,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_LARGE.SFX_CRE_DEATHFALL_WATER_LARGE",
-            "VocalisationSocket": "RigJaw2",
+            "VocalisationSocket": "RigJaw_M",
             "AttackVocalisation": {
                 "RowName": "StomperAttack"
             },
@@ -6066,7 +6052,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_MEDIUM.SFX_CRE_BODY_FALL_MEDIUM",
             "DeathCollisionSocket": "RigPelvis",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
-            "VocalisationSocket": "RigHead",
+            "VocalisationSocket": "RigHead_M",
             "AttackVocalisation": {
                 "RowName": "GiantRoachAttack"
             },
@@ -6104,6 +6090,20 @@
                         "RowName": "None",
                         "DataTableName": "D_Vocalisations"
                     }
+                },
+                "Fleeing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "GiantRoachAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
                 }
             },
             "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
@@ -6121,7 +6121,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
-            "VocalisationSocket": "RigJaw1",
+            "VocalisationSocket": "RigLEyestalk_1",
             "FlinchVocalisation": {
                 "RowName": "BounderFlinch"
             },
@@ -6225,7 +6225,7 @@
             "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_SMALL.SFX_CRE_BODY_FALL_SMALL",
             "DeathCollisionSocket": "RigChest",
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
-            "VocalisationSocket": "RigJaw",
+            "VocalisationSocket": "RigHead_M",
             "AttackVocalisation": {
                 "RowName": "StorcaAttack"
             },

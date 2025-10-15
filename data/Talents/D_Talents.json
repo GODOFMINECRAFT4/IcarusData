@@ -30512,6 +30512,35 @@
             "DrawMethodOverride": "YThenX"
         },
         {
+            "Name": "Workshop_Backpack_Farmers",
+            "ExtraData": {
+                "RowName": "Meta_Farmers_Backpack",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Backpacks"
+            },
+            "Position": {
+                "X": 3000,
+                "Y": 1150
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Archery_Backpack",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Workshop_Backpack_Hunter",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX"
+        },
+        {
             "Name": "Workshop_Backpack_Medic",
             "ExtraData": {
                 "RowName": "Meta_Medic_Backpack",
@@ -58142,6 +58171,30 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Outpost_Island",
+            "ExtraData": {
+                "RowName": "Outpost_012_Island",
+                "DataTableName": "D_Outposts"
+            },
+            "TalentTree": {
+                "RowName": "Outpost"
+            },
+            "Position": {
+                "X": 2050,
+                "Y": 550
+            },
+            "Size": {
+                "X": 256,
+                "Y": 256
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Outpost_012_Island"
+                }
+            ]
         },
         {
             "Name": "Prospect_ELY_Story_6",

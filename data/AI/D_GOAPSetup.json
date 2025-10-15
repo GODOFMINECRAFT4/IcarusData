@@ -4015,19 +4015,11 @@
                     "DataTableName": "D_GOAPMotivations"
                 },
                 {
-                    "RowName": "Protective",
-                    "DataTableName": "D_GOAPMotivations"
-                },
-                {
                     "RowName": "Tiredness",
                     "DataTableName": "D_GOAPMotivations"
                 },
                 {
-                    "RowName": "Loneliness",
-                    "DataTableName": "D_GOAPMotivations"
-                },
-                {
-                    "RowName": "Anchored",
+                    "RowName": "Pack_Follower",
                     "DataTableName": "D_GOAPMotivations"
                 }
             ],
@@ -4053,10 +4045,6 @@
                     "DataTableName": "D_GOAPActions"
                 },
                 {
-                    "RowName": "Warn_Aggressor",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
                     "RowName": "Relax_At_Last_Hostile_Location",
                     "DataTableName": "D_GOAPActions"
                 },
@@ -4065,15 +4053,7 @@
                     "DataTableName": "D_GOAPActions"
                 },
                 {
-                    "RowName": "Find_Company",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Get_Parent",
-                    "DataTableName": "D_GOAPActions"
-                },
-                {
-                    "RowName": "Goto_Anchor",
+                    "RowName": "Pack_Follow",
                     "DataTableName": "D_GOAPActions"
                 }
             ],
@@ -4095,20 +4075,12 @@
                     "DataTableName": "D_GOAPGoals"
                 },
                 {
-                    "RowName": "Warn_Aggressor",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Find_Company",
-                    "DataTableName": "D_GOAPGoals"
-                },
-                {
-                    "RowName": "Return_to_Anchor",
+                    "RowName": "Follow_Pack_Leader",
                     "DataTableName": "D_GOAPGoals"
                 }
             ],
             "DefaultGoal": {
-                "RowName": "Wander"
+                "RowName": "Follow_Pack_Leader"
             },
             "DynamicSubtreeOverrides": {
                 "(TagName=\"BT.GOAP.Melee_Attack\")": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Melee_Attack_Wolf.BT_IcarusNPCGOAP_Melee_Attack_Wolf'"
@@ -5189,6 +5161,89 @@
             "Name": "Geothermal_Bat",
             "DefaultGoal": {
                 "RowName": "Wander"
+            }
+        },
+        {
+            "Name": "GiantRoach",
+            "Motivations": [
+                {
+                    "RowName": "Hunger",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Thirst",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Threat",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Cautious",
+                    "DataTableName": "D_GOAPMotivations"
+                },
+                {
+                    "RowName": "Tiredness",
+                    "DataTableName": "D_GOAPMotivations"
+                }
+            ],
+            "Actions": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Eat_Food_Foliage",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Drink_Water",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Run_For_Safety",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Be_Cautious",
+                    "DataTableName": "D_GOAPActions"
+                },
+                {
+                    "RowName": "Rest",
+                    "DataTableName": "D_GOAPActions"
+                }
+            ],
+            "Goals": [
+                {
+                    "RowName": "Wander",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Hunger",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Satisfy_Thirst",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Run_For_Safety",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Be_Cautious",
+                    "DataTableName": "D_GOAPGoals"
+                },
+                {
+                    "RowName": "Rest",
+                    "DataTableName": "D_GOAPGoals"
+                }
+            ],
+            "DefaultGoal": {
+                "RowName": "Wander"
+            },
+            "DynamicSubtreeOverrides": {
+                "(TagName=\"BT.GOAP.RunForSafety\")": "BehaviorTree'/Game/BP/AI/GOAP/BehaviourTrees/BT_IcarusNPCGOAP_Roach_RunForSafety.BT_IcarusNPCGOAP_Roach_RunForSafety'"
             }
         }
     ]

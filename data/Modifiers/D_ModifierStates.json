@@ -5002,6 +5002,9 @@
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"RadiationWarming-ModifierName\", \"Radiation: Warming\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"RadiationWarming-ModifierDescription\", \"Being warmed by nearby uncontained unstable material. Use a Stabilization Catalyst to prevent this.\")",
+            "AudioData": {
+                "RowName": "Exposure_Radiation"
+            },
             "GrantedStats": {
                 "(Value=\"BaseExternalTemperatureModification_+\")": 2000
             },
@@ -13899,6 +13902,9 @@
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Radioactive-ModifierName\", \"Irradiated\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_Radioactive-ModifierDescription\", \"Currently exposed to Radiation\")",
+            "AudioData": {
+                "RowName": "Exposure_Radiation_HIGH"
+            },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_Irradiated.BP_ModifierStateBehaviour_Irradiated_C",
             "ShouldTick": true,
@@ -13909,9 +13915,12 @@
         {
             "Name": "RadiationPoisoning_1",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_RAD1.T_ICON_RAD1'",
-            "Type": "Debuff",
+            "Type": "Radiation",
             "ModifierName": "INVTEXT(\"[DNT] Mild Radiation Poisoning\")",
             "ModifierDescription": "",
+            "AudioData": {
+                "RowName": "Exposure_Radiation"
+            },
             "GrantedStats": {
                 "(Value=\"BaseMaximumHealth_+%\")": -20,
                 "(Value=\"BaseMaximumStamina_+%\")": -20
@@ -13925,9 +13934,12 @@
         {
             "Name": "RadiationPoisoning_2",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_RAD2.T_ICON_RAD2'",
-            "Type": "Debuff",
+            "Type": "Radiation",
             "ModifierName": "INVTEXT(\"[DNT] Acute Radiation Poisoning \")",
             "ModifierDescription": "",
+            "AudioData": {
+                "RowName": "Exposure_Radiation_MED"
+            },
             "GrantedStats": {
                 "(Value=\"BaseMaximumHealth_+%\")": -50,
                 "(Value=\"BaseMaximumStamina_+%\")": -50
@@ -13941,9 +13953,12 @@
         {
             "Name": "RadiationPoisoning_3",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_RAD3.T_ICON_RAD3'",
-            "Type": "Debuff",
+            "Type": "Radiation",
             "ModifierName": "INVTEXT(\"[DNT] Terminal Radiation Poisoning\")",
             "ModifierDescription": "",
+            "AudioData": {
+                "RowName": "Exposure_Radiation_HIGH"
+            },
             "GrantedStats": {
                 "(Value=\"BaseMaximumHealth_+%\")": -80,
                 "(Value=\"BaseMaximumStamina_+%\")": -80
@@ -14587,6 +14602,9 @@
             "Type": "Debuff",
             "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Radiation_Sickness-ModifierName\", \"Radiation Sickness\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Radiation_Sickness-ModifierDescription\", \"Reduces Health and Stamina and Deals Pure Unresisted Damage over time.\")",
+            "AudioData": {
+                "RowName": "Exposure_Radiation"
+            },
             "GrantedStats": {
                 "(Value=\"BaseMaximumHealth_+%\")": -20,
                 "(Value=\"BaseMaximumStamina_+%\")": -20
@@ -14595,6 +14613,47 @@
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_RadiationSickness.BP_ModifierStateBehaviour_RadiationSickness_C",
             "MergeType": "Count",
             "SaveToDatabase": false
+        },
+        {
+            "Name": "RoachTentacleDebuff",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Poisoned.Icon_Poisoned'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"RoachTentacleDebuff-ModifierName\", \"Neurotoxin\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"RoachTentacleDebuff-ModifierDescription\", \"A paralyzing affliction, caused by contact with a Clicker\\'s tentacles\")",
+            "AudioData": {
+                "RowName": "Generic_Negative_LongCoolDown"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -90,
+                "(Value=\"BaseAttackSpeed_+%\")": -75,
+                "(Value=\"BaseMeleeDamage_+%\")": -50
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_ModifierStateBehaviour_TickDamage_Electric.BP_ModifierStateBehaviour_TickDamage_Electric_C",
+            "ModifierVariables": {
+                "Damage": {
+                    "BaseValue": 10,
+                    "Deviation": 2
+                }
+            },
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 3,
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Harvest.Node"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( Harvest.Node )"
+            }
         }
     ]
 }

@@ -16560,6 +16560,121 @@
                     "RowName": "GreatHunts"
                 }
             }
+        },
+        {
+            "Name": "Outpost_012",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"Outpost_012-DropName\", \"AQUATICA ISLE: Outpost\")",
+            "DesignNotes": "[DNT] Island Life",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"Outpost_012-Description\", \"UDA DESIGNATED \\'SAFE ZONE\\'\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"Outpost_012-FlavourText\", \"Aquatica Isle may look like a tropical sanctuary, but its quiet beaches and cascading waterfalls mask a wilderness that doesn\\'t give up its secrets easily. Beneath the lush canopy lies a tangle of hazards and hidden threats, daring only the boldest prospectors to claim it.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_P_OUTPOST_ISLAND.T_P_OUTPOST_ISLAND'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NoCaveCreatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Medium_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Hard_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Extreme": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Player_XP_25%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Outpost_Arctic_Hard_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "MapNerf",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_DLCPackageData",
+                    "RowName": "Outpost_012_Island"
+                }
+            ],
+            "bDisableWorldBosses": true,
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Outpost_012"
+            },
+            "bIsPersistent": true,
+            "StartingTime": 7,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 0,
+            "NumMetaSpawnsMax": 0,
+            "WorldStatList": [
+                {
+                    "RowName": "Outpost",
+                    "DataTableName": "D_ProspectStats"
+                }
+            ],
+            "BoundsOverride": "/Game/Heatmaps/Outpost_012/GT_Outpost012_Bounds.GT_Outpost012_Bounds"
         }
     ]
 }

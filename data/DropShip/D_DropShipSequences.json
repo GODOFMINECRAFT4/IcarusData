@@ -326,6 +326,180 @@
                 }
             ],
             "Trajectory": "CurveFloat'/Game/BP/DropShipEditor/Respawn_Descent.Respawn_Descent'"
+        },
+        {
+            "Name": "Crash_Descent",
+            "Events": [
+                {
+                    "Action": {
+                        "RowName": "StartEngine",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "EnterSeat",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "StartCone",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "StartShakeHeavy",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.009999999776482582,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "StartSonicBoomFX",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.019999999552965164,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "LockSeat",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.05000000074505806,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "CrashLand_Begin",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.44999998807907104,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "StopCone",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.5,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "StopShakeHeavy",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.5099999904632568,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "StartShakeLight",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.5199999809265137,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "StartLandingThrusterFX",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.6000000238418579,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "SlowDescent",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.699999988079071,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "CrashLand_End",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.7900000214576721,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "DeployFeet",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.800000011920929,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "StopLandingThrusterFX",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.8399999737739563,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "StopEngine",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.8299999833106995,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "StopShakeLight",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.8399999737739563,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "TouchDown",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.8500000238418579,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "OpenDoor",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.9399999976158142,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "UnlockSeat",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 0.9900000095367432,
+                    "Complete": false
+                },
+                {
+                    "Action": {
+                        "RowName": "ExitSeat",
+                        "DataTableName": "D_DropShipActions"
+                    },
+                    "TriggerTime": 1,
+                    "Complete": false
+                }
+            ],
+            "Trajectory": "CurveFloat'/Game/BP/DropShipEditor/DropShip_Descent_Crash.DropShip_Descent_Crash'"
         }
     ]
 }

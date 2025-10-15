@@ -1715,28 +1715,10 @@
         },
         {
             "Name": "Deployable_LandingPad",
-            "WorldPressInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_Item",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
             "WorldHoldInteracts": [
                 {
                     "InteractionRow": {
                         "RowName": "Interact_Toggle_Device_On",
-                        "DataTableName": "D_Interactions"
-                    },
-                    "Tag": ""
-                }
-            ],
-            "WorldAltHoldInteracts": [
-                {
-                    "InteractionRow": {
-                        "RowName": "Pickup_LandingPad",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -3284,6 +3266,27 @@
                 {
                     "InteractionRow": {
                         "RowName": "Interact_Satellite_AccessInventory",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Deployable_Interact_Only",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
