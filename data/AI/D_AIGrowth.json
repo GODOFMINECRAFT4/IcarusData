@@ -1533,7 +1533,7 @@
                 "(Value=\"CanNPCDamageDurableActors_?\")": 1,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseMovementSpeed_+\")": 180,
-                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1000,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
                 "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 250,
                 "(Value=\"BaseGOAPMotivationProtectiveIncreaseRate_+%\")": 50,
                 "(Value=\"BasePoisonDamageResistance_%\")": 50,
@@ -1584,13 +1584,14 @@
                 "(Value=\"BasePhysicalDamageResistance_%\")": 40,
                 "(Value=\"BaseMaximumStomachFullness_+\")": 2,
                 "(Value=\"BaseFallDamageResistance_%\")": 15,
-                "(Value=\"BaseFireDamageResistance_%\")": 40,
+                "(Value=\"BaseFireDamageResistance_%\")": 15,
                 "(Value=\"BaseFrostDamageResistance_%\")": 40,
                 "(Value=\"BaseExplosiveDamageResistance_%\")": 40,
-                "(Value=\"BasePoisonDamageResistance_%\")": 40
+                "(Value=\"BasePoisonDamageResistance_%\")": 60,
+                "(Value=\"IsMountPrimaryAttackDisabledByDefault_?\")": 1
             },
-            "Health": "CurveFloat'/Game/Data/AI/C_Mount_Moa_Health.C_Mount_Moa_Health'",
-            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_BuffaloMeleeDamage.C_BuffaloMeleeDamage'",
+            "Health": "CurveFloat'/Game/Data/AI/C_Mount_SwampBird_Health.C_Mount_SwampBird_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Mount_SwampBird_MeleeDamage.C_Mount_SwampBird_MeleeDamage'",
             "CustomStats": [
                 {
                     "Stat": {
@@ -5326,7 +5327,7 @@
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 50,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
-                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMaximumFallDamage_%\")": 0,
                 "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
                 "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
                 "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,

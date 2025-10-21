@@ -61633,6 +61633,997 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Creature_SwampBird",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird-DisplayName\", \"Ubis\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird-Description\", \"Ubis Talent Tree\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_SwampBird_TEMP.T_Talent_Base_SwampBird_TEMP",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 500
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {},
+                    "GrantedFlags": [
+                        {
+                            "RowName": "None",
+                            "DataTableName": "D_CharacterFlags"
+                        }
+                    ]
+                }
+            ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "YThenX"
+        },
+        {
+            "Name": "Creature_SwampBird_Health",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_Health-DisplayName\", \"Wild Fortitude\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_Health-Description\", \"Increased Maximum Health\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Health.T_Talent_Base_Health",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 300
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumHealth_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumHealth_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumHealth_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumHealth_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_ReducedFoodConsumption",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_ReducedFoodConsumption-DisplayName\", \"Metabolic Preservation\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_ReducedFoodConsumption-Description\", \"Reduced Food Usage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedFoodConsumption.T_Talent_Base_ReducedFoodConsumption",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 700
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodConsumption_+%\")": -2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodConsumption_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodConsumption_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodConsumption_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_WeightCapacity",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_WeightCapacity-DisplayName\", \"Strong Back\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_WeightCapacity-Description\", \"Increased Weight Capacity\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_WeightCapacity.T_Talent_Base_WeightCapacity",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 700,
+                "Y": 100
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWeightCapacity_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWeightCapacity_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWeightCapacity_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWeightCapacity_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_Health",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_Stamina",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_Stamina-DisplayName\", \"Natural Endurance\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_Stamina-Description\", \"Increased Maximum Stamina\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Stamina.T_Talent_Base_Stamina",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 700,
+                "Y": 500
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumStamina_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumStamina_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumStamina_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMaximumStamina_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_ReducedThreat",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_ReducedThreat-DisplayName\", \"Camouflage\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_ReducedThreat-Description\", \"Reduced Animal Threat, Can Become Unaffected by Slug Trails\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedThreatSwamp.T_Talent_Base_ReducedThreatSwamp",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 700
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseAnimalThreatModifier_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseAnimalThreatModifier_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseAnimalThreatModifier_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseAnimalThreatModifier_+%\")": -30,
+                        "(Value=\"IsUnaffectedBySlimeTrails_?\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_Attack",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_FoodSlot",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_FoodSlot-DisplayName\", \"Large Stomach\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_FoodSlot-Description\", \"Increases Food Buff Effectiveness and Allows an Additional Food Buff\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodSlot.T_Talent_Base_FoodSlot",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 900
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 12
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 15,
+                        "(Value=\"BaseMaximumStomachFullness_+\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_FoodBuffDuration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_FoodBuffDuration",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_FoodBuffDuration-DisplayName\", \"Perfect Pasturage\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_FoodBuffDuration-Description\", \"Increased Food Effects Duration\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 700,
+                "Y": 900
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                        "(Value=\"IsMountGrazingEnabled_?\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_ReducedFoodConsumption",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_FallDamageReduction",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_FallDamageReduction-DisplayName\", \"Catlike Grace\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_FallDamageReduction-Description\", \"Increased Fall Damage Reduction\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_WoolyZebra_FallDamageReduction.T_Talent_WoolyZebra_FallDamageReduction",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 500
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFallDamageResistance_%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFallDamageResistance_%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFallDamageResistance_%\")": 20
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseFallDamageResistance_%\")": 40
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_SwampMovement",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_HealthRegeneration",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_HealthRegeneration-DisplayName\", \"Nurtured Recovery\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_HealthRegeneration-Description\", \"Increased Health Regeneration\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_HealthRegeneration.T_Talent_Base_HealthRegeneration",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 300,
+                "Y": 100
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseHealthRegen_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseHealthRegen_+%\")": 30
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseHealthRegen_+%\")": 60
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseHealthRegen_+%\")": 100
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_Health",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_StaminaRegeneration",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_StaminaRegeneration-DisplayName\", \"Roaming Vitality\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_StaminaRegeneration-Description\", \"Increased Stamina Regeneration\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_StaminaRegeneration.T_Talent_Base_StaminaRegeneration",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 700,
+                "Y": 700
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseStaminaRegen_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseStaminaRegen_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseStaminaRegen_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseStaminaRegen_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_Stamina",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_ReducedWaterUsage",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_ReducedWaterUsage-DisplayName\", \"Hydration Elasticity \")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_ReducedWaterUsage-Description\", \"Reduced Water Consumption\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 300,
+                "Y": 900
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": -2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_ReducedFoodConsumption",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_DamageReduction",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_DamageReduction-DisplayName\", \"Tough as Feathers\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_DamageReduction-Description\", \"Increased Physical Damage Reduction\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_DamageReduction.T_Talent_Base_DamageReduction",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 100
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_HealthRegeneration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Creature_SwampBird_MovementSpeed",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_MovementSpeed-DisplayName\", \"Racing Ready\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_MovementSpeed-Description\", \"Increased Movement Speed\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_MovementSpeed.T_Talent_Base_MovementSpeed",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 700
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMovementSpeed_+%\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMovementSpeed_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMovementSpeed_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_Stamina",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_Attack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_Attack-DisplayName\", \"Corrosive Bite\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_Attack-Description\", \"Enables Ubis Melee Attack, Increases Melee Attack Damage, Adds Poison Effect\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_SwampBird_Attack.T_Talent_SwampBird_Attack",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 300,
+                "Y": 500
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"IsMountPrimaryAttackEnabled_?\")": 1
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"IsMountPrimaryAttackEnabled_?\")": 1,
+                        "(Value=\"BaseMeleeDamage_+%\")": 25
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"IsMountPrimaryAttackEnabled_?\")": 1,
+                        "(Value=\"BaseMeleeDamage_+%\")": 50,
+                        "(Value=\"BaseAttacksCausePoison_%\")": 100
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_SwampMovement",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_SwampMovement-DisplayName\", \"Swampfoot\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_SwampMovement-Description\", \"Increased Movement Speed in Swamps and Shallow Water\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Jumping.T_Talent_Base_Jumping",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 300
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSwampMovementSpeed_+%\")": 5,
+                        "(Value=\"BaseMovementSpeedInShallowWater_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSwampMovementSpeed_+%\")": 10,
+                        "(Value=\"BaseMovementSpeedInShallowWater_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSwampMovementSpeed_+%\")": 15,
+                        "(Value=\"BaseMovementSpeedInShallowWater_+%\")": 15
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_Stamina",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_Pack-DisplayName\", \"Call An Ubis\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_Pack-Description\", \"Greatly increased Inventory Slots, reduced Movement Speed\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Moa_PackMoa.T_Talent_Moa_PackMoa",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 100
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMountCargoSlots_+\")": 1,
+                        "(Value=\"BaseMovementSpeed_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMountCargoSlots_+\")": 3,
+                        "(Value=\"BaseMovementSpeed_+%\")": -15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseMountCargoSlots_+\")": 6,
+                        "(Value=\"BaseMovementSpeed_+%\")": -20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_WeightCapacity",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_AttackSpeed",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_AttackSpeed-DisplayName\", \"Lightning Reflexes\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_AttackSpeed-Description\", \"Increases Attack Speed\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Moa_Attack.T_Talent_Moa_Attack",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 300
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseAttackSpeed_+%\")": 5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseAttackSpeed_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseAttackSpeed_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_Attack",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_PoisonResistance",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_PoisonResistance-DisplayName\", \"Anti-Venom\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_PoisonResistance-Description\", \"Poison Damage Resistance, Gives Aura at Max Rank\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_SwampBird_PoisonResistance.T_Talent_SwampBird_PoisonResistance",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 300,
+                "Y": 700
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePoisonDamageResistance_+%\")": 10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePoisonDamageResistance_+%\")": 20
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BasePoisonDamageResistance_+%\")": 30,
+                        "(Value=\"GrantedAuraPoisonResistance_?\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_Attack",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Creature_SwampBird_SprintStaminaConsumption",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_SprintStaminaConsumption-DisplayName\", \"Thicc Drumsticcs\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_SprintStaminaConsumption-Description\", \"Reduced Stamina Cost when Sprinting\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Tusker_SprintSpeed.T_Talent_Tusker_SprintSpeed",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 700,
+                "Y": 300
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSprintingStaminaActionCost_+%\")": -5
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSprintingStaminaActionCost_+%\")": -10
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSprintingStaminaActionCost_+%\")": -15
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_Stamina",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
+        },
+        {
+            "Name": "Creature_SwampBird_IncreasedMetabolism",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_IncreasedMetabolism-DisplayName\", \"Increased Metabolism\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_SwampBird_IncreasedMetabolism-Description\", \"Increased Temperature Resistance at the Cost of Higher Food and Water Consumption\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_SwampBird_IncreasedMetabolism.T_Talent_SwampBird_IncreasedMetabolism",
+            "TalentTree": {
+                "RowName": "Creature_SwampBird"
+            },
+            "Position": {
+                "X": 100,
+                "Y": 900
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": 5,
+                        "(Value=\"BaseFoodConsumption_+%\")": 5,
+                        "(Value=\"BaseColdResistance_%\")": 15,
+                        "(Value=\"BaseHeatResistance_%\")": 15
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": 10,
+                        "(Value=\"BaseFoodConsumption_+%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 30,
+                        "(Value=\"BaseHeatResistance_%\")": 30
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseWaterConsumption_+%\")": 20,
+                        "(Value=\"BaseFoodConsumption_+%\")": 20,
+                        "(Value=\"BaseColdResistance_%\")": 60,
+                        "(Value=\"BaseHeatResistance_%\")": 60
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Creature_SwampBird_ReducedWaterUsage",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "ShortestDistance"
         }
     ]
 }

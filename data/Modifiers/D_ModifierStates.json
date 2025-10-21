@@ -6460,6 +6460,21 @@
             },
             "MergeType": "LongestDuration",
             "MaxStackNum": 3,
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.SwampWaterImmunity"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    3,
+                    1,
+                    0
+                ],
+                "AutoDescription": " NONE( ModifierState.SwampWaterImmunity )"
+            },
             "SaveToDatabase": false
         },
         {
@@ -13919,7 +13934,7 @@
             "ModifierName": "INVTEXT(\"[DNT] Mild Radiation Poisoning\")",
             "ModifierDescription": "",
             "AudioData": {
-                "RowName": "Exposure_Radiation"
+                "RowName": "Generic_Negative"
             },
             "GrantedStats": {
                 "(Value=\"BaseMaximumHealth_+%\")": -20,
@@ -13938,7 +13953,7 @@
             "ModifierName": "INVTEXT(\"[DNT] Acute Radiation Poisoning \")",
             "ModifierDescription": "",
             "AudioData": {
-                "RowName": "Exposure_Radiation_MED"
+                "RowName": "Generic_Negative"
             },
             "GrantedStats": {
                 "(Value=\"BaseMaximumHealth_+%\")": -50,
@@ -13957,7 +13972,7 @@
             "ModifierName": "INVTEXT(\"[DNT] Terminal Radiation Poisoning\")",
             "ModifierDescription": "",
             "AudioData": {
-                "RowName": "Exposure_Radiation_HIGH"
+                "RowName": "Generic_Negative"
             },
             "GrantedStats": {
                 "(Value=\"BaseMaximumHealth_+%\")": -80,
@@ -14654,6 +14669,56 @@
                 ],
                 "AutoDescription": " NONE( Harvest.Node )"
             }
+        },
+        {
+            "Name": "GrantedAura_PoisonResistance",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_PoisonResistance.T_ICON_PoisonResistance'",
+            "Type": "Aura_Positive",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_PoisonResistance-ModifierName\", \"Aura: Poison Resistance\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_PoisonResistance-ModifierDescription\", \"Nearby Allies Receive Poison Resistance\")",
+            "bAura": true,
+            "AuraRange": 2000,
+            "AuraFlags": {
+                "EffectsNPCs": true
+            },
+            "ModifierGrantedByAura": {
+                "RowName": "AuraEffect_PoisonResistance"
+            },
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Aura_Base.BP_Modifier_Aura_Base_C",
+            "ShouldTick": true,
+            "ModifierTickRate": 0.5,
+            "RemovedOnDeath": false,
+            "MergeType": "Count",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "AuraEffect_PoisonResistance",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_PoisonResistance.T_ICON_PoisonResistance'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_PoisonResistance-ModifierName\", \"Aura Effect: Poison Resistance\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_PoisonResistance-ModifierDescription\", \"Take Less Damage from Poison Effects\")",
+            "GrantedStats": {
+                "(Value=\"BasePoisonDamageResistance_%\")": 20,
+                "(Value=\"BasePoisonModifierDuration_+%\")": -20
+            },
+            "AuraRange": 500,
+            "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
+            "MergeType": "LongestDuration",
+            "ModifierAllowedQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "ModifierState.Aura.ReceivesMedic"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( ModifierState.Aura.ReceivesMedic )"
+            },
+            "SaveToDatabase": false
         }
     ]
 }

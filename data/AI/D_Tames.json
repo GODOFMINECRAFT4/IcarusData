@@ -483,6 +483,38 @@
                 "RowName": "Juvenile_Wooly_Zebra"
             },
             "bAutomaticallySpawnJuvenileWithParent": true
+        },
+        {
+            "Name": "SwampBird",
+            "TameDurationInSeconds": 900,
+            "DesiredTemperatureRange": {
+                "X": 8,
+                "Y": 35
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_SwampBird"
+            },
+            "MatureCreatureType": {
+                "RowName": "Swamp_Bird"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_SwampBird"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 50,
+            "MaxNearbyAutoSpawnedJuveniles": 3
         }
     ]
 }

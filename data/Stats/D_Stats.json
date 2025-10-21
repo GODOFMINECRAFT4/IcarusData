@@ -14153,7 +14153,7 @@
         },
         {
             "Name": "BaseMovementSpeedInShallowWater_+%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMovementSpeedInShallowWater_+%-PositiveDescription\", \"{0}% Movement Speed in Shallow Water\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMovementSpeedInShallowWater_+%-PositiveDescription\", \"+{0}% Movement Speed in Shallow Water\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseMovementSpeedInShallowWater_+%-NegativeDescription\", \"-{0}% Movement Speed in Shallow Water\")",
             "StatCategory": {
                 "RowName": "Movement"
@@ -19484,6 +19484,23 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "AI"
+            }
+        },
+        {
+            "Name": "IsUnaffectedBySlimeTrails_?",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"IsUnaffectedBySlimeTrails_?-PositiveTitleFormat\", \"Unaffected by Viscid Slime Trails\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsUnaffectedBySlimeTrails_?-PositiveDescription\", \"Unaffected by Viscid Slime Trails\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GrantedAuraPoisonResistance_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraPoisonResistance_?-PositiveDescription\", \"Provides Nearby Allies with Poison Resistance\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
             }
         }
     ]
