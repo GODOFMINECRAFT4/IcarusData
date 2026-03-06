@@ -591,6 +591,238 @@
             "MaxNearbyAutoSpawnedJuveniles": 3
         },
         {
+            "Name": "Raptor_Desert",
+            "TameDurationInSeconds": 1800,
+            "DesiredTemperatureRange": {
+                "Y": 50
+            },
+            "DesiredShelterPercentage": 0,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Raptor_Desert"
+            },
+            "MatureCreatureType": {
+                "RowName": "Raptor_Desert"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Raptor_Desert"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 10,
+            "MaxNearbyAutoSpawnedJuveniles": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Raptor_Geothermal",
+            "TameDurationInSeconds": 1800,
+            "DesiredTemperatureRange": {
+                "Y": 50
+            },
+            "DesiredShelterPercentage": 0,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Raptor"
+            },
+            "MatureCreatureType": {
+                "RowName": "Raptor"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Raptor"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 10,
+            "MaxNearbyAutoSpawnedJuveniles": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Chew",
+            "TameDurationInSeconds": 1200,
+            "DesiredTemperatureRange": {
+                "Y": 50
+            },
+            "DesiredShelterPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Chew"
+            },
+            "MatureCreatureType": {
+                "RowName": "Chew"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Chew"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 15,
+            "MaxNearbyAutoSpawnedJuveniles": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Slinker",
+            "TameDurationInSeconds": 1800,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "ProhibitedTamingModifiers": [
+                {
+                    "RowName": "Wet",
+                    "DataTableName": "D_ModifierStates"
+                },
+                {
+                    "RowName": "Sleepy",
+                    "DataTableName": "D_ModifierStates"
+                }
+            ],
+            "TamedAI": {
+                "RowName": "Mount_Slinker"
+            },
+            "MatureCreatureType": {
+                "RowName": "Slinker"
+            },
+            "JuvenileCreatureType": {
+                "RowName": "Juvenile_Slinker"
+            },
+            "bAutomaticallySpawnJuvenileWithParent": true,
+            "PercentChanceToSpawnJuvenile": 10,
+            "MaxNearbyAutoSpawnedJuveniles": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Orka",
+            "TameDurationInSeconds": 600,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Orka"
+            },
+            "MatureCreatureType": {
+                "RowName": "Orka_Arctic"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Tundra"
+                },
+                {
+                    "Value": "Arctic"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Storca",
+            "TameDurationInSeconds": 600,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Storca"
+            },
+            "MatureCreatureType": {
+                "RowName": "Storca"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Tundra"
+                },
+                {
+                    "Value": "Arctic"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Tundra_Monkey",
+            "TameDurationInSeconds": 600,
+            "DesiredTemperatureRange": {
+                "X": -10,
+                "Y": 25
+            },
+            "DesiredShelterPercentage": 0,
+            "DesiredNutritionPercentage": 25,
+            "TamedAI": {
+                "RowName": "Tamed_Tundra_Monkey"
+            },
+            "MatureCreatureType": {
+                "RowName": "Tundra_Monkey"
+            },
+            "PercentChanceToSpawnJuvenile": 0,
+            "MaxNearbyAutoSpawnedJuveniles": 0,
+            "TrappingSupportedAtmospheres": [
+                {
+                    "Value": "Tundra"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "WoollyMammoth",
             "TameDurationInSeconds": 1800,
             "DesiredTemperatureRange": {

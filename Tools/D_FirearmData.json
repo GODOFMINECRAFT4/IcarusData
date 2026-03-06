@@ -2678,6 +2678,65 @@
             "WeaponLoudness": 0.5
         },
         {
+            "Name": "Nailgun",
+            "HipAccuracy": {
+                "X": 1.600000023841858,
+                "Y": 1.600000023841858
+            },
+            "AimAccuracy": {
+                "X": 0.5,
+                "Y": 0.550000011920929
+            },
+            "LaunchForce": 600,
+            "ChargeData": {
+                "ChargeSpeed": 0
+            },
+            "VisualData": {
+                "PreviewItemAttachSocket3P": "R_prop_00",
+                "FireShake": "BlueprintGeneratedClass'/Game/BP/CameraShake/Weapons/CS_AssaultRifle_Fire.CS_AssaultRifle_Fire_C'",
+                "FireShakeCrouchScale": 0.4000000059604645,
+                "VisualRecoil": 0,
+                "AimFOVMultiplier": 0.8999999761581421,
+                "SkeletalItemAnimData": {
+                    "Fire": "/Game/ASS/WEP/SK_GUN_Sub_Machine/ANI_GUN_Sub_Machine_Fire_Anim_Montage.ANI_GUN_Sub_Machine_Fire_Anim_Montage",
+                    "AimFire": "/Game/ASS/WEP/SK_GUN_Sub_Machine/ANI_GUN_Sub_Machine_Fire_Anim_Montage.ANI_GUN_Sub_Machine_Fire_Anim_Montage",
+                    "Reload": "/Game/ASS/WEP/SK_GUN_Sub_Machine/ANI_GUN_Sub_Machine_Reload_Montage.ANI_GUN_Sub_Machine_Reload_Montage"
+                },
+                "FirstPersonAnimData": {
+                    "Idle": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolIdle.1ST_CHA_SGL_Shot_PistolIdle",
+                    "Aim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolAimIdle.1ST_CHA_SGL_Shot_PistolAimIdle",
+                    "Fire": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SubmachineGun_Shoot_Montage.1ST_CHA_SubmachineGun_Shoot_Montage",
+                    "AimFire": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SubmachineGun_AimShoot_Montage.1ST_CHA_SubmachineGun_AimShoot_Montage",
+                    "Reload": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Nailgun_Reload.1ST_CHA_Nailgun_Reload"
+                },
+                "ThirdPersonAnimData": {
+                    "Idle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolIdleUp_to_Dwn.3RD_CHA_MAL_SGL_Shot_PistolIdleUp_to_Dwn",
+                    "Aim": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolAimUp_to_Dwn.3RD_CHA_MAL_SGL_Shot_PistolAimUp_to_Dwn",
+                    "Fire": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolShoot_BS.3RD_CHA_PistolShoot_BS",
+                    "AimFire": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolAimShoot_BS.3RD_CHA_PistolAimShoot_BS",
+                    "ReloadMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_CHAC_PistolReload.3RD_CHA_CHAC_PistolReload"
+                }
+            },
+            "RecoilAmount": {
+                "X": 1.600000023841858,
+                "Y": 2
+            },
+            "ValidAmmoTypes": {
+                "RowName": "AllNails"
+            },
+            "AmmoCapacity": 10,
+            "ReloadTime": 3.200000047683716,
+            "AudioData": {
+                "RowName": "Nailgun"
+            },
+            "WeaponLoudness": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Flare_Gun",
             "HipAccuracy": {
                 "X": 0.4000000059604645,
@@ -2788,7 +2847,7 @@
             "LaunchForce": 750,
             "ChargeData": {
                 "bCanCharge": true,
-                "ChargeSpeed": 0.4000000059604645,
+                "ChargeSpeed": 0.800000011920929,
                 "UnchargeSpeed": 0.30000001192092896,
                 "MinimumChargeRequired": 0.8999999761581421,
                 "bReloadCanCancel": true,
@@ -2834,14 +2893,137 @@
             "StaminaData": {
                 "StaminaChargeCost": 8
             },
-            "DamageMultiplier": 2,
+            "DamageMultiplier": 2.25,
             "ValidAmmoTypes": {
                 "RowName": "AllArrows"
             },
             "RoundsPerMinute": 300,
+            "ReloadTime": 1.25,
             "AudioData": {
                 "RowName": "SandwyrmQueenBow"
             }
+        },
+        {
+            "Name": "Submachine_Gun_Scout",
+            "HipAccuracy": {
+                "X": 1.600000023841858,
+                "Y": 1.600000023841858
+            },
+            "AimAccuracy": {
+                "X": 0.5,
+                "Y": 0.550000011920929
+            },
+            "LaunchForce": 600,
+            "ChargeData": {
+                "ChargeSpeed": 0
+            },
+            "VisualData": {
+                "PreviewItemAttachSocket3P": "R_prop_00",
+                "FireShake": "BlueprintGeneratedClass'/Game/BP/CameraShake/Weapons/CS_AssaultRifle_Fire.CS_AssaultRifle_Fire_C'",
+                "FireShakeCrouchScale": 0.4000000059604645,
+                "FireParticle": "/Game/ASS/VFX/WEP/NS_AssaultRifleMuzzle_2.NS_AssaultRifleMuzzle_2",
+                "VisualRecoil": 0,
+                "AimFOVMultiplier": 0.8999999761581421,
+                "SkeletalItemAnimData": {
+                    "Fire": "/Game/ASS/WEP/SK_GUN_Sub_Machine/ANI_GUN_Sub_Machine_Fire_Anim_Montage.ANI_GUN_Sub_Machine_Fire_Anim_Montage",
+                    "AimFire": "/Game/ASS/WEP/SK_GUN_Sub_Machine/ANI_GUN_Sub_Machine_Fire_Anim_Montage.ANI_GUN_Sub_Machine_Fire_Anim_Montage",
+                    "Reload": "/Game/ASS/WEP/SK_GUN_Sub_Machine/ANI_GUN_Sub_Machine_Reload_Montage.ANI_GUN_Sub_Machine_Reload_Montage"
+                },
+                "FirstPersonAnimData": {
+                    "Idle": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolIdle.1ST_CHA_SGL_Shot_PistolIdle",
+                    "Aim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolAimIdle.1ST_CHA_SGL_Shot_PistolAimIdle",
+                    "Fire": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SubmachineGun_Shoot_Montage.1ST_CHA_SubmachineGun_Shoot_Montage",
+                    "AimFire": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SubmachineGun_AimShoot_Montage.1ST_CHA_SubmachineGun_AimShoot_Montage",
+                    "Reload": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_CHAC_Pistol_Action_Reload.1ST_CHA_CHAC_Pistol_Action_Reload"
+                },
+                "ThirdPersonAnimData": {
+                    "Idle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolIdleUp_to_Dwn.3RD_CHA_MAL_SGL_Shot_PistolIdleUp_to_Dwn",
+                    "Aim": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolAimUp_to_Dwn.3RD_CHA_MAL_SGL_Shot_PistolAimUp_to_Dwn",
+                    "Fire": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolShoot_BS.3RD_CHA_PistolShoot_BS",
+                    "AimFire": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolAimShoot_BS.3RD_CHA_PistolAimShoot_BS",
+                    "ReloadMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_CHAC_PistolReload.3RD_CHA_CHAC_PistolReload"
+                }
+            },
+            "RecoilAmount": {
+                "X": 1.600000023841858,
+                "Y": 2
+            },
+            "DamageMultiplier": 1.25,
+            "FireModes": [
+                "Auto",
+                "Semiauto"
+            ],
+            "ValidAmmoTypes": {
+                "RowName": "AllSubmachineGuns"
+            },
+            "AmmoCapacity": 25,
+            "RoundsPerMinute": 400,
+            "ReloadTime": 3.200000047683716,
+            "AudioData": {
+                "RowName": "SMG_SCOUT"
+            },
+            "WeaponLoudness": 2
+        },
+        {
+            "Name": "Submachine_Gun_Sandwyrm",
+            "HipAccuracy": {
+                "X": 1.600000023841858,
+                "Y": 1.600000023841858
+            },
+            "AimAccuracy": {
+                "X": 0.5,
+                "Y": 0.550000011920929
+            },
+            "LaunchForce": 600,
+            "ChargeData": {
+                "ChargeSpeed": 0
+            },
+            "VisualData": {
+                "PreviewItemAttachSocket3P": "R_prop_00",
+                "FireShake": "BlueprintGeneratedClass'/Game/BP/CameraShake/Weapons/CS_AssaultRifle_Fire.CS_AssaultRifle_Fire_C'",
+                "FireShakeCrouchScale": 0.4000000059604645,
+                "FireParticle": "/Game/ASS/VFX/WEP/NS_AssaultRifleMuzzle_2.NS_AssaultRifleMuzzle_2",
+                "VisualRecoil": 0,
+                "AimFOVMultiplier": 0.8999999761581421,
+                "SkeletalItemAnimData": {
+                    "Fire": "/Game/ASS/WEP/SK_GUN_Sub_Machine/ANI_GUN_Sub_Machine_Fire_Anim_Montage.ANI_GUN_Sub_Machine_Fire_Anim_Montage",
+                    "AimFire": "/Game/ASS/WEP/SK_GUN_Sub_Machine/ANI_GUN_Sub_Machine_Fire_Anim_Montage.ANI_GUN_Sub_Machine_Fire_Anim_Montage",
+                    "Reload": "/Game/ASS/WEP/SK_GUN_Sub_Machine/ANI_GUN_Sub_Machine_Reload_Montage.ANI_GUN_Sub_Machine_Reload_Montage"
+                },
+                "FirstPersonAnimData": {
+                    "Idle": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolIdle.1ST_CHA_SGL_Shot_PistolIdle",
+                    "Aim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SGL_Shot_PistolAimIdle.1ST_CHA_SGL_Shot_PistolAimIdle",
+                    "Fire": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SubmachineGun_Shoot_Montage.1ST_CHA_SubmachineGun_Shoot_Montage",
+                    "AimFire": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SubmachineGun_AimShoot_Montage.1ST_CHA_SubmachineGun_AimShoot_Montage",
+                    "Reload": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_CHAC_Pistol_Action_Reload.1ST_CHA_CHAC_Pistol_Action_Reload"
+                },
+                "ThirdPersonAnimData": {
+                    "Idle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolIdleUp_to_Dwn.3RD_CHA_MAL_SGL_Shot_PistolIdleUp_to_Dwn",
+                    "Aim": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SGL_Shot_PistolAimUp_to_Dwn.3RD_CHA_MAL_SGL_Shot_PistolAimUp_to_Dwn",
+                    "Fire": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolShoot_BS.3RD_CHA_PistolShoot_BS",
+                    "AimFire": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_PistolAimShoot_BS.3RD_CHA_PistolAimShoot_BS",
+                    "ReloadMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_CHAC_PistolReload.3RD_CHA_CHAC_PistolReload"
+                }
+            },
+            "RecoilAmount": {
+                "X": 1.600000023841858,
+                "Y": 2
+            },
+            "DamageMultiplier": 1.25,
+            "FireModes": [
+                "Auto",
+                "Semiauto"
+            ],
+            "ValidAmmoTypes": {
+                "RowName": "AllSubmachineGuns"
+            },
+            "AmmoCapacity": 25,
+            "RoundsPerMinute": 400,
+            "ReloadTime": 3.200000047683716,
+            "AudioData": {
+                "RowName": "SMG_SWQ"
+            },
+            "WeaponLoudness": 3
         }
     ]
 }

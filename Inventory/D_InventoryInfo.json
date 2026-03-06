@@ -1205,9 +1205,6 @@
             "InventoryID": {
                 "Value": "General"
             },
-            "SlotTemplate": {
-                "RowName": "General_Inventory_Slot"
-            },
             "StartingSlots": 30
         },
         {
@@ -2135,7 +2132,7 @@
             "InventoryID": {
                 "Value": "General"
             },
-            "StartingSlots": 42
+            "StartingSlots": 36
         },
         {
             "Name": "Pouch_Generic_Large",
@@ -2146,6 +2143,78 @@
                 "RowName": "General_Inventory_Slot_NoBag"
             },
             "StartingSlots": 12
+        },
+        {
+            "Name": "Mission_Drone",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 9,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Drone_Rotor",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 0
+                },
+                {
+                    "Query": {
+                        "RowName": "Drone_Rotor",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 1
+                },
+                {
+                    "Query": {
+                        "RowName": "Drone_Rotor",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 2
+                },
+                {
+                    "Query": {
+                        "RowName": "Drone_Rotor",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 3
+                },
+                {
+                    "Query": {
+                        "RowName": "Drone_Rotor",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 4
+                },
+                {
+                    "Query": {
+                        "RowName": "Drone_Rotor",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 5
+                },
+                {
+                    "Query": {
+                        "RowName": "Drone_Fuel",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 6
+                },
+                {
+                    "Query": {
+                        "RowName": "Drone_Battery",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 7
+                },
+                {
+                    "Query": {
+                        "RowName": "Drone_Nav",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 8
+                }
+            ]
         }
     ]
 }

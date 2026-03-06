@@ -1857,6 +1857,30 @@
             }
         },
         {
+            "Name": "Orka",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Orka-CreatureName\", \"Skulk\")",
+            "Tag": {
+                "TagName": "NPC.Orka"
+            },
+            "SpawnStat": {
+                "Value": "OrkaSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "OrkaExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "OrkaExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Orka"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Ice_Mammoth_WorldSpawn",
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Ice_Mammoth_WorldSpawn-CreatureName\", \"Rimetusk\")",
             "Tag": {
@@ -1908,6 +1932,555 @@
             }
         },
         {
+            "Name": "Slinker",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Slinker-CreatureName\", \"Slinker\")",
+            "Tag": {
+                "TagName": "NPC.Slinker"
+            },
+            "SpawnStat": {
+                "Value": "SlinkerSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "SlinkerExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "SlinkerExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Slinker"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Irradiated_Prospector",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Irradiated_Prospector-CreatureName\", \"Spectre\")",
+            "Tag": {
+                "TagName": "NPC.Irradiated.Prospector"
+            },
+            "SpawnStat": {
+                "Value": "IrradiatedProspectorSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "IrradiatedProspectorExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "IrradiatedProspectorExtraDamageResistance_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Bounder",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Bounder-CreatureName\", \"Korrin\")",
+            "Tag": {
+                "TagName": "NPC.Bounder"
+            },
+            "AdditionalDamageStat": {
+                "Value": "BounderExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "BounderExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Bounder_Desert"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TundraDeer",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"TundraDeer-CreatureName\", \"Drosik\")",
+            "Tag": {
+                "TagName": "NPC.TundraDeer"
+            },
+            "SpawnStat": {
+                "Value": "TundraDeerSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "TundraDeerExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "TundraDeerExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_TundraDeer"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Chew",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Chew-CreatureName\", \"Draven\")",
+            "Tag": {
+                "TagName": "NPC.Chew"
+            },
+            "SpawnStat": {
+                "Value": "ChewSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "ChewExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "ChewExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Chew"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Hopping_Creature",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Hopping_Creature-CreatureName\", \"Hopper\")",
+            "Tag": {
+                "TagName": "NPC.Hopping.Creature"
+            },
+            "SpawnStat": {
+                "Value": "HoppingCreatureSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "HoppingCreatureExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "HoppingCreatureExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_HoppingCreature"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Rabbit_Variant_Snow",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Rabbit_Variant_Snow-CreatureName\", \"Snow Pygmy Lop\")",
+            "Tag": {
+                "TagName": "NPC.PygmyLop.Snow"
+            },
+            "SpawnStat": {
+                "Value": "RabbitSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "RabbitExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "RabbitExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_SnowPygmyLop"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Juvenile_Raptor",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Juvenile_Raptor-CreatureName\", \"Juvenile Raptor\")",
+            "Tag": {
+                "TagName": "NPC.Juvenile.Raptor"
+            },
+            "AdditionalDamageStat": {
+                "Value": "RaptorExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "RaptorExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_BabyRaptor"
+            },
+            "ParentCreatureTag": {
+                "TagName": "NPC.Raptor.Geothermal"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "SulfurWorm",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"SulfurWorm-CreatureName\", \"Sulfur Worm\")",
+            "Tag": {
+                "TagName": "NPC.SulfurWorm"
+            },
+            "AdditionalDamageStat": {
+                "Value": "SulfurWormExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "SulfurWormExtraDamageResistance_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Reaver",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Reaver-CreatureName\", \"Reaver\")",
+            "Tag": {
+                "TagName": "NPC.Reaver"
+            },
+            "SpawnStat": {
+                "Value": "ReaverSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "ReaverExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "ReaverExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Reaver"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Raptor",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Raptor-CreatureName\", \"Raptor\")",
+            "Tag": {
+                "TagName": "NPC.Raptor.Geothermal"
+            },
+            "SpawnStat": {
+                "Value": "RaptorSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "RaptorExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "RaptorExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Raptor"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Juvenile_Chew",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Juvenile_Chew-CreatureName\", \"Juvenile Draven\")",
+            "Tag": {
+                "TagName": "NPC.Juvenile.Chew"
+            },
+            "AdditionalDamageStat": {
+                "Value": "ChewExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "ChewExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_JuvenileChew"
+            },
+            "ParentCreatureTag": {
+                "TagName": "NPC.Chew"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Hopping_Creature_Swamp",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Hopping_Creature_Swamp-CreatureName\", \"Swamp Hopper\")",
+            "Tag": {
+                "TagName": "NPC.Hopping.Creature"
+            },
+            "SpawnStat": {
+                "Value": "SwampHoppingCreatureSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "SwampHoppingCreatureExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "SwampHoppingCreatureExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_HoppingCreature_Swamp"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Raptor_Desert",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Raptor_Desert-CreatureName\", \"Dune Raptor\")",
+            "Tag": {
+                "TagName": "NPC.Raptor.Desert"
+            },
+            "SpawnStat": {
+                "Value": "RaptorDesertSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "RaptorDesertExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "RaptorDesertExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Raptor_Desert"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Stomper",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Stomper-CreatureName\", \"Stomper\")",
+            "Tag": {
+                "TagName": "NPC.Stomper"
+            },
+            "SpawnStat": {
+                "Value": "StomperSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "StomperExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "StomperExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Stomper"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Stomper_Matriarch",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Stomper_Matriarch-CreatureName\", \"Stomper Matriarch\")",
+            "Tag": {
+                "TagName": "NPC.Stomper.Matriarch"
+            },
+            "SpawnStat": {
+                "Value": "StomperSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "StomperExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "StomperExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Stomper"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Juvenile_Slinker",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Juvenile_Slinker-CreatureName\", \"Juvenile Slinker\")",
+            "Tag": {
+                "TagName": "NPC.Juvenile.Slinker"
+            },
+            "AdditionalDamageStat": {
+                "Value": "SlinkerExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "SlinkerExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_SlinkerJuve"
+            },
+            "ParentCreatureTag": {
+                "TagName": "NPC.Slinker"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Storca",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Storca-CreatureName\", \"Storca\")",
+            "Tag": {
+                "TagName": "NPC.Storca"
+            },
+            "SpawnStat": {
+                "Value": "StorcaSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "StorcaExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "StorcaExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Storca"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Giant_Roach",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Giant_Roach-CreatureName\", \"Clicker\")",
+            "Tag": {
+                "TagName": "NPC.GiantRoach"
+            },
+            "SpawnStat": {
+                "Value": "GiantRoachSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "GiantRoachExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "GiantRoachExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Giant_Roach"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "DragonFly",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"DragonFly-CreatureName\", \"Venomfly\")",
+            "Tag": {
+                "TagName": "NPC.DragonFly"
+            },
+            "SpawnStat": {
+                "Value": "DragonFlySpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "DragonFlyExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "DragonFlyExtraDamageResistance_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Flying_Tank",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Flying_Tank-CreatureName\", \"Ravager\")",
+            "Tag": {
+                "TagName": "NPC.FlyingTank"
+            },
+            "SpawnStat": {
+                "Value": "FlyingTankSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "FlyingTankExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "FlyingTankExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Flying_Tank"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Flightless_Tank",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Flightless_Tank-CreatureName\", \"Sandhorn\")",
+            "Tag": {
+                "TagName": "NPC.FlightlessTank"
+            },
+            "SpawnStat": {
+                "Value": "FlightlessTankSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "FlightlessTankExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "FlightlessTankExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Flightless_Tank"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Sandwyrm_Queen",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Sandwyrm_Queen-CreatureName\", \"Sandwyrm Queen\")",
+            "Tag": {
+                "TagName": "NPC.SandwyrmQueen"
+            },
+            "SpawnStat": {
+                "Value": "SandwyrmQueenSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "SandwyrmQueenExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "SandwyrmQueenExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Sandwyrm_Queen"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Geothermal_Bat",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Geothermal_Bat-CreatureName\", \"Sulfur Vesper\")",
+            "Tag": {
+                "TagName": "NPC.SulfurBat"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Juvenile_SwampBird",
             "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Juvenile_SwampBird-CreatureName\", \"Juvenile Ubis\")",
             "Tag": {
@@ -1924,6 +2497,252 @@
             },
             "ParentCreatureTag": {
                 "TagName": "NPC.SwampBird"
+            }
+        },
+        {
+            "Name": "Yeti",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Yeti-CreatureName\", \"Frostfoot\")",
+            "Tag": {
+                "TagName": "NPC.Yeti"
+            },
+            "SpawnStat": {
+                "Value": "YetiSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "YetiExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "YetiExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_Yeti"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Irradiated_Abomination",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Irradiated_Abomination-CreatureName\", \"Revenant\")",
+            "Tag": {
+                "TagName": "NPC.Irradiated.Abomination"
+            },
+            "SpawnStat": {
+                "Value": "IrradiatedAbominationSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "IrradiatedAbominationExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "IrradiatedAbominationExtraDamageResistance_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Sand_Scuttle",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Sand_Scuttle-CreatureName\", \"Scuttler\")",
+            "Tag": {
+                "TagName": "NPC.SandScuttle"
+            },
+            "SpawnStat": {
+                "Value": "SandScuttleSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "SandScuttleExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "SandScuttleExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_SandScuttle"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Drone_Scout",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Drone_Scout-CreatureName\", \"Scout Drone\")",
+            "Tag": {
+                "TagName": "NPC.Drone"
+            },
+            "AdditionalDamageStat": {
+                "Value": "DroneExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "DroneExtraDamageResistance_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Drone_Hunter",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Drone_Hunter-CreatureName\", \"Hunter Drone\")",
+            "Tag": {
+                "TagName": "NPC.Drone"
+            },
+            "AdditionalDamageStat": {
+                "Value": "DroneExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "DroneExtraDamageResistance_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Drone_Carrier",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Drone_Carrier-CreatureName\", \"Carrier Drone\")",
+            "Tag": {
+                "TagName": "NPC.Drone"
+            },
+            "AdditionalDamageStat": {
+                "Value": "DroneExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "DroneExtraDamageResistance_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Tundra_Monkey",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Tundra_Monkey-CreatureName\", \"Gribbler\")",
+            "Tag": {
+                "TagName": "NPC.TundraMonkey"
+            },
+            "SpawnStat": {
+                "Value": "TundraMonkeySpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "TundraMonkeyExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "TundraMonkeyExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_TundraMonkey"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GeothermalSpider",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"GeothermalSpider-CreatureName\", \"Sulfuric Spider\")",
+            "Tag": {
+                "TagName": "NPC.Spider.Geothermal"
+            },
+            "AdditionalDamageStat": {
+                "Value": "SpiderExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "SpiderExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Kill_Geothermal_Spider"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "FleshSac_Floater",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"FleshSac_Floater-CreatureName\", \"Gaseous Floater\")",
+            "Tag": {
+                "TagName": "NPC.FleshSacFloater"
+            },
+            "SpawnStat": {
+                "Value": "FleshSacFloaterSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "FleshSacFloaterExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "FleshSacFloaterExtraDamageResistance_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Irradiated_Mutation",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Irradiated_Mutation-CreatureName\", \"Wraith\")",
+            "Tag": {
+                "TagName": "NPC.Irradiated.Mutation"
+            },
+            "SpawnStat": {
+                "Value": "IrradiatedMutationSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "IrradiatedMutationExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "IrradiatedMutationExtraDamageResistance_+%"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Juvenile_WoollyMammoth",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"Juvenile_WoollyMammoth-CreatureName\", \"Woolly Mammoth\")",
+            "Tag": {
+                "TagName": "NPC.Mammoth"
+            },
+            "SpawnStat": {
+                "Value": "MammothSpawnRate_+%"
+            },
+            "AdditionalDamageStat": {
+                "Value": "MammothExtraDamage_+%"
+            },
+            "AdditionalResistanceStat": {
+                "Value": "MammothExtraDamageResistance_+%"
+            },
+            "SkinningXPEvent": {
+                "RowName": "Skin_WoollyMammoth"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "NPC_Soldier",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"NPC_Soldier-CreatureName\", \"TPS Soldier\")",
+            "Tag": {
+                "TagName": "NPC.Human.Soldier"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
             }
         },
         {
@@ -1953,6 +2772,18 @@
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "SpeederBike",
+            "CreatureName": "NSLOCTEXT(\"D_AICreatureType\", \"SpeederBike-CreatureName\", \"Speeder Bike\")",
+            "Tag": {
+                "TagName": "NPC.Vehicle.SpeederBike"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
                 }
             }
         }

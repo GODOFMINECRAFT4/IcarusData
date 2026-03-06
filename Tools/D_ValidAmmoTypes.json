@@ -754,9 +754,73 @@
             "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllSnipers-Description\", \"12.7mm Rounds\")"
         },
         {
+            "Name": "AllNails",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllNails-DisplayName\", \"Nailguns\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Iron_Nail",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Copper_Nail",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllNails-Description\", \"Nails\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "BioFuel",
             "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"BioFuel-DisplayName\", \"Biofuel Turrets\")",
             "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"BioFuel-Description\", \"Consumes Biofuel\")"
+        },
+        {
+            "Name": "AllFlares",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllFlares-DisplayName\", \"Flare Guns\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Flare_Green",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Flare_Red",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Flare_Blue",
+                    "DataTableName": "D_ItemsStatic"
+                },
+                {
+                    "RowName": "Flare_Yellow",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"AllFlares-Description\", \"Flares\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Laser_Pistol",
+            "DisplayName": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"Laser_Pistol-DisplayName\", \"Laser Weapons\")",
+            "AmmoTypes": [
+                {
+                    "RowName": "Laser_Pistol_Ammo",
+                    "DataTableName": "D_ItemsStatic"
+                }
+            ],
+            "Description": "NSLOCTEXT(\"D_ValidAmmoTypes\", \"Laser_Pistol-Description\", \"Energy\")",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "NPC_Rifle",

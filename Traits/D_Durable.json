@@ -794,6 +794,11 @@
             "Destroyed_At_Zero": true
         },
         {
+            "Name": "Deployable_3000",
+            "Max_Durability": 3000,
+            "Destroyed_At_Zero": true
+        },
+        {
             "Name": "Deployable_5000",
             "Max_Durability": 5000,
             "Destroyed_At_Zero": true
@@ -2526,6 +2531,26 @@
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Speeder_Bike",
+            "Max_Durability": 3050,
+            "Destroyed_At_Zero": true,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Compounds",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
                 }
             ]
         }

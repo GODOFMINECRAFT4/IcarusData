@@ -4836,6 +4836,44 @@
             "bUseActorPooling": true
         },
         {
+            "Name": "Tame_Capture_Grenade",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "DamageVariationPercentage": 10,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "Weight": 1,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Pokeball.BP_Payload_Pokeball_C",
+            "PayloadDeploymentType": "OnLaunch",
+            "PayloadDeploymentTimerDelay": 0,
+            "BreakChance": 0,
+            "PostDeployLifetime": 0,
+            "AttachOnHit": false,
+            "ProjectileBounceSettings": {
+                "Bounciness": 0,
+                "Friction": 0.5,
+                "BounceVelocityStopSimulatingThreshold": 10,
+                "MinFrictionFraction": 0.20000000298023224,
+                "MinTimeBetweenBounces": 1
+            },
+            "RotationFollowsVelocity": false,
+            "VelocityRotationOffset": {
+                "Roll": 5
+            },
+            "AngularRotation": {
+                "Pitch": 90,
+                "Roll": 45
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_GRN_FLY.SFX_BALLISTIC_GRN_FLY",
+                "bPlayImpactSoundOnPayload": true
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "SulfurWorm_Spit",
             "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
             "Damage": 8,

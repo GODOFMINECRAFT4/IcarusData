@@ -14431,6 +14431,84 @@
             ]
         },
         {
+            "Name": "OpenWorld_Elysium",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"OpenWorld_Elysium-DropName\", \"Elysium - Open World\")",
+            "DesignNotes": "Elysium Open World",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"OpenWorld_Elysium-Description\", \"Make Contact with the EDEN outpost in the Region\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"OpenWorld_Elysium-FlavourText\", \"//OPERATOR: UDA // BIOME: All // BACKGROUND: Former UDA Scientist Mo Chou has requested your assistance for an investigation in the newly opened Elysium Region. // MISSION: Join the Eris Inquisition team and discover why this area was hidden by Group 15. //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_ExtractorExpedition01_Large.T_Prospect_Forest_ExtractorExpedition01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Forecast": {
+                "RowName": "MidPeak"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_Story_0"
+            },
+            "bIsPersistent": true,
+            "bIsOpenWorld": true,
+            "StartingTime": 12,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "DefaultMetaResourceAmount": {
+                "X": 200
+            },
+            "NumMetaSpawnsMin": 5,
+            "NumMetaSpawnsMax": 8,
+            "WorldStatList": [
+                {
+                    "RowName": "OpenWorld",
+                    "DataTableName": "D_ProspectStats"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "GH_Ape_A",
             "DropName": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_A-DropName\", \"BREAKOUT\")",
             "Description": "NSLOCTEXT(\"D_ProspectList\", \"GH_Ape_A-Description\", \"INVESTIGATE REPORTS OF A SMASHED LABORATORY\")",
@@ -16675,6 +16753,2639 @@
                 }
             ],
             "BoundsOverride": "/Game/Heatmaps/Outpost_012/GT_Outpost012_Bounds.GT_Outpost012_Bounds"
+        },
+        {
+            "Name": "ELY_Story_1",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_1-DropName\", \"LOST\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_1-Description\", \"Make Contact with the EDEN outpost in the Region\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_1-FlavourText\", \"//OPERATOR: UDA // BIOME: All // BACKGROUND: Former UDA Scientist Mo Chou has requested your assistance for an investigation in the newly opened Elysium Region. // MISSION: Join the Eris Inquisition team and discover why this area was hidden by Group 15. //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY1.T_Prospect_ELY1'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "RequiredTech": "Tier2",
+            "bDisableWorldBosses": true,
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_Story_1"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story_2",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_2-DropName\", \"RELICS\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_2-Description\", \"The Eris Inquisition has intercepted suspicious TPS communication and want to use this to track down intel on G15.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_2-FlavourText\", \"//OPERATOR: UDA // BIOME: Swamp // BACKGROUND: The Eris Inquisition is working to uncover what Group 15 has been hiding on Icarus. // MISSION: Search the Southern Swamp for abandoned G15 locations. //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY2.T_Prospect_ELY2'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_Story_2"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story_3",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_3-DropName\", \"NEXUS\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_3-Description\", \"The Eris Inquisition has a lead on one of the original terraforming facilities run by Group 15.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_3-FlavourText\", \"//OPERATOR: UDA // BIOME: Geothermal // BACKGROUND: The Eris Inquisition is working to uncover what Group 15 has been hiding on Icarus. // MISSION: Search the Northern Geothermal for the Underground facility. //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY3.T_Prospect_ELY3'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_Story_3"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story_4",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_4-DropName\", \"FALLOUT\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_4-Description\", \"The Eris Inquisition is investigating TPS activity in abandonded G15 structures across Elysium.\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_4-FlavourText\", \"//OPERATOR: UDA // BIOME: Volcanic // BACKGROUND: The Eris Inquisition is working to uncover what Group 15 has been hiding on Icarus. // MISSION: Search the Northwestern Volcanic for more Group 15 facilities. //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY4.T_Prospect_ELY4'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "RequiredTech": "Tier4",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_Story_4"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story_5",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_5-DropName\", \"RIFT\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_5-Description\", \"Find Your Missing Commander\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_5-FlavourText\", \"//OPERATOR: UDA // BIOME: Desert // BACKGROUND: The Eris Inquisition is working to uncover what Group 15 has been hiding on Icarus. // MISSION: Mo has gone missing, you\\'re tasked with finding her.//TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY5.T_Prospect_ELY5'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "RequiredTech": "Tier3",
+            "bDisableWorldBosses": true,
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_Story_5"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "WorldStatList": [
+                {
+                    "RowName": "Mission_SandwyrmQueenQuestlineActive",
+                    "DataTableName": "D_ProspectStats"
+                }
+            ],
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_Story_6",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_6-DropName\", \"RECKONING\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_6-Description\", \"Ambush the Stronghold and Stop the Terraforming Process\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_Story_6-FlavourText\", \"//OPERATOR: UDA // BIOME: Arctic // BACKGROUND: The Eris Inquisition is working to uncover what Group 15 has been hiding on Icarus. // MISSION: Prevent TPS from starting the terraforming process before it\\'s too late.//TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY6.T_Prospect_ELY6'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "MissionCompleteDialogue": {
+                "RowName": "Ely_MissionSix_End"
+            },
+            "RequiredTech": "Tier4",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_Story_6"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Igloo",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Igloo-DropName\", \"IGLOO\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Igloo-Description\", \"Build an Emergency Shelter out of Ice\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Igloo-FlavourText\", \"//OPERATOR: UDA // BIOME: Arctic // BACKGROUND: The Eris Inquisition has asked for support on Elysium Operations.// MISSION: Build and furnish an emergency structure made out of Ice.//TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_A.T_Prospect_GH_IM_A'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "IglooBriefing"
+            },
+            "LandingDialogue": {
+                "RowName": "IglooIntro"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "IglooOutro"
+            },
+            "RequiredTech": "Tier2",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Igloo"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Yeti",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Yeti-DropName\", \"EVOLUTION\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Yeti-Description\", \"Investigate the Tundra and Arctic Wildlife\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Yeti-FlavourText\", \"//OPERATOR: UDA // BIOME: Tundra / Arctic // BACKGROUND: The Eris Inquisition has asked for support on Elysium Operations.// MISSION: Tame a Gribbler and then Hunt a Frostfoot.//TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY_SQ_Yeti.T_Prospect_ELY_SQ_Yeti'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GribblerBriefing"
+            },
+            "LandingDialogue": {
+                "RowName": "TameGribblerIntro"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "GribblerOutro"
+            },
+            "RequiredTech": "Tier2",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Yeti"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Fish",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Fish-DropName\", \"ANGLER\")",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Fish-Description\", \"Capture fish for EDEN and Participate in the Contest\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Fish-FlavourText\", \"//OPERATOR: UDA // BIOME: Desert // BACKGROUND: The Eris Inquisition has asked for support on Elysium Operations.// MISSION: Collect Fish for the Eris Inquisiton. //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_GH_IM_A.T_Prospect_GH_IM_A'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "FishingBriefing"
+            },
+            "LandingDialogue": {
+                "RowName": "FishingCompIntro"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "FishingOutro"
+            },
+            "RequiredTech": "Tier2",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Fish"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 3,
+                    "Max": 3
+                }
+            },
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 3,
+            "NumMetaSpawnsMax": 4,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "OLY_SQ_Farmer",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Farmer-DropName\", \"CULTIVATION SPECIALIST\")",
+            "DesignNotes": "Unlocks Farmer Trader on Olympus",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Farmer-Description\", \"Track down and help the UDA cultivation specialist\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Farmer-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Forest // BACKGROUND: Help the Cultivation Specialist Set Up Camp. // MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_NPC_Farmer.T_SQ_NPC_Farmer'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing1"
+            },
+            "LandingDialogue": {
+                "RowName": "StockPileBriefing2"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete4"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_SQ_Farmer"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 4,
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "STYX_SQ_Farmer",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Farmer-DropName\", \"CULTIVATION SPECIALIST\")",
+            "DesignNotes": "Unlocks Farmer Trader on Styx",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Farmer-Description\", \"Track down and help the UDA cultivation specialist\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Farmer-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Forest // BACKGROUND: Help the Cultivation Specialist Set Up Camp. // MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_STYX_NPC_Farmer.T_SQ_STYX_NPC_Farmer'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing1"
+            },
+            "LandingDialogue": {
+                "RowName": "StockPileBriefing2"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete4"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_SQ_Farmer"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 4,
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PRO_SQ_Farmer",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Farmer-DropName\", \"CULTIVATION SPECIALIST\")",
+            "DesignNotes": "Unlocks Farmer Trader on Pro",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Farmer-Description\", \"Track down and help the UDA cultivation specialist\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Farmer-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Grasslands // BACKGROUND: Help the Cultivation Specialist Set Up Camp. // MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_PRO_NPC_Farmer.T_SQ_PRO_NPC_Farmer'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing1"
+            },
+            "LandingDialogue": {
+                "RowName": "StockPileBriefing2"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete4"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "PRO_SQ_Farmer"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 4,
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Farmer",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Farmer-DropName\", \"CULTIVATION SPECIALIST\")",
+            "DesignNotes": "Unlocks Farmer Trader on Ely",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Farmer-Description\", \"Track down and help the UDA cultivation specialist\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Farmer-FlavourText\", \"//OPERATOR: Sinotai // BIOME: Tundra // BACKGROUND: Help the Cultivation Specialist Set Up Camp. // MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_ELY_NPC_Farmer.T_SQ_ELY_NPC_Farmer'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "CSBriefing"
+            },
+            "LandingDialogue": {
+                "RowName": "GenIntro9"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "CSEnding"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Farmer"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Norex",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Norex-DropName\", \"BLACK MARKET\")",
+            "DesignNotes": "Unlocks Biomass Trader on Ely",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Norex-Description\", \"Make contact with Norex\\'s Black Market\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Norex-FlavourText\", \"//OPERATOR: Norex // BIOME: Swamp // BACKGROUND: Make contact with the Black Market// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_ELY_NPC_Norex.T_SQ_ELY_NPC_Norex'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "BriefingDialogue": {
+                "RowName": "BMBriefing"
+            },
+            "LandingDialogue": {
+                "RowName": "DH_AGENT_BM_MISSIONSTART"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "BMEnding"
+            },
+            "RequiredTech": "Tier3",
+            "bDisableWorldBosses": true,
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Norex"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PRO_SQ_Norex",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Norex-DropName\", \"BLACK MARKET\")",
+            "DesignNotes": "Unlocks Biomass Trader on Pro",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Norex-Description\", \"Make contact with Norex\\'s Black Market\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Norex-FlavourText\", \"//OPERATOR: Norex // BIOME: Swamp // BACKGROUND: Make contact with the Black Market// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_PRO_NPC_Norex.T_SQ_PRO_NPC_Norex'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing1"
+            },
+            "LandingDialogue": {
+                "RowName": "DH_AGENT_BM_MISSIONSTART"
+            },
+            "RequiredTech": "Tier3",
+            "bDisableWorldBosses": true,
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "PRO_SQ_Norex"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 4,
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "STYX_SQ_Norex",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Norex-DropName\", \"BLACK MARKET\")",
+            "DesignNotes": "Unlocks Biomass Trader on Styx",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Norex-Description\", \"Make contact with Norex\\'s Black Market\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Norex-FlavourText\", \"//OPERATOR: Norex // BIOME: Desert // BACKGROUND: Make contact with the Black Market// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_STYX_NPC_Norex.T_SQ_STYX_NPC_Norex'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing1"
+            },
+            "LandingDialogue": {
+                "RowName": "DH_AGENT_BM_MISSIONSTART"
+            },
+            "RequiredTech": "Tier3",
+            "bDisableWorldBosses": true,
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_SQ_Norex"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 4,
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "OLY_SQ_Norex",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Norex-DropName\", \"BLACK MARKET\")",
+            "DesignNotes": "Unlocks Biomass Trader on Oly",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Norex-Description\", \"Make contact with Norex\\'s Black Market\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Norex-FlavourText\", \"//OPERATOR: Norex // BIOME: Forest // BACKGROUND: Make contact with the Black Market// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_OLY_NPC_Norex.T_SQ_OLY_NPC_Norex'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Hard",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing1"
+            },
+            "LandingDialogue": {
+                "RowName": "DH_AGENT_BM_MISSIONSTART"
+            },
+            "RequiredTech": "Tier3",
+            "bDisableWorldBosses": true,
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_SQ_Norex"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "PlayerSpawnGroupIndex": 4,
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Hunter",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Hunter-DropName\", \"PREDATOR SPECIALIST\")",
+            "DesignNotes": "Unlocks Vestige Trader on Ely",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Hunter-Description\", \"Help the Predator Control Specialist Hunt Some Game\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Hunter-FlavourText\", \"//OPERATOR: Uniao // BIOME: Geothermal // BACKGROUND: Assist the officer in getting set up and operational planetside.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_ELY_NPC_Hunter.T_SQ_ELY_NPC_Hunter'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "PCBriefing"
+            },
+            "LandingDialogue": {
+                "RowName": "GenIntro12"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "PCEnding"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Hunter"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PRO_SQ_Hunter",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Hunter-DropName\", \"PREDATOR SPECIALIST\")",
+            "DesignNotes": "Unlocks Vestige Trader on Pro",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Hunter-Description\", \"Help the Predator Control Specialist Hunt Some Game\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Hunter-FlavourText\", \"//OPERATOR: Uniao // BIOME: Geothermal // BACKGROUND: Assist the officer in getting set up and operational planetside.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_PRO_NPC_Hunter.T_SQ_PRO_NPC_Hunter'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing2"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLandingFriendly1"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete9"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "PRO_SQ_Hunter"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "STYX_SQ_Hunter",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Hunter-DropName\", \"PREDATOR SPECIALIST\")",
+            "DesignNotes": "Unlocks Vestige Trader on Styx",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Hunter-Description\", \"Help the Predator Control Specialist Hunt Some Game\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Hunter-FlavourText\", \"//OPERATOR: Uniao // BIOME: Geothermal // BACKGROUND: Assist the officer in getting set up and operational planetside.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_STYX_NPC_Hunter.T_SQ_STYX_NPC_Hunter'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing2"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLandingFriendly1"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete9"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_SQ_Hunter"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "OLY_SQ_Hunter",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Hunter-DropName\", \"PREDATOR SPECIALIST\")",
+            "DesignNotes": "Unlocks Vestige Trader on Oly",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Hunter-Description\", \"Help the Predator Control Specialist Hunt Some Game\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Hunter-FlavourText\", \"//OPERATOR: Uniao // BIOME: Geothermal // BACKGROUND: Assist the officer in getting set up and operational planetside.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_OLY_NPC_Hunter.T_SQ_OLY_NPC_Hunter'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing2"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLandingFriendly1"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete9"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_SQ_Hunter"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "OLY_SQ_Fisher",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Fisher-DropName\", \"FISHERIES OFFICER\")",
+            "DesignNotes": "Unlocks Fish Trader on Oly",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Fisher-Description\", \"Help the Chief Fisheries Officer\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"OLY_SQ_Fisher-FlavourText\", \"//OPERATOR: Lagos // BIOME: Desert // BACKGROUND: Assist the fisheries officer in getting set up and operational planetside.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_OLY_NPC_Fisher.T_SQ_OLY_NPC_Fisher'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing4"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLandingExploring2"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete10"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_016"
+            },
+            "FactionMission": {
+                "RowName": "OLY_SQ_Fisher"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "STYX_SQ_Fisher",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Fisher-DropName\", \"FISHERIES OFFICER\")",
+            "DesignNotes": "Unlocks Fish Trader on Styx",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Fisher-Description\", \"Help the Chief Fisheries Officer\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"STYX_SQ_Fisher-FlavourText\", \"//OPERATOR: Lagos // BIOME: Desert // BACKGROUND: Assist the fisheries officer in getting set up and operational planetside.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_STYX_NPC_Fisher.T_SQ_STYX_NPC_Fisher'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing4"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLandingExploring2"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete10"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_017"
+            },
+            "FactionMission": {
+                "RowName": "STYX_SQ_Fisher"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PRO_SQ_Fisher",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Fisher-DropName\", \"FISHERIES OFFICER\")",
+            "DesignNotes": "Unlocks Fish Trader on Pro",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Fisher-Description\", \"Help the Chief Fisheries Officer\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_SQ_Fisher-FlavourText\", \"//OPERATOR: Lagos // BIOME: Desert // BACKGROUND: Assist the fisheries officer in getting set up and operational planetside.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_PRO_NPC_Fisher.T_SQ_PRO_NPC_Fisher'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "GenericBriefing4"
+            },
+            "LandingDialogue": {
+                "RowName": "GenericLandingExploring2"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "MissionComplete10"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_019"
+            },
+            "FactionMission": {
+                "RowName": "PRO_SQ_Fisher"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Fisher",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Fisher-DropName\", \"FISHERIES OFFICER\")",
+            "DesignNotes": "Unlocks Fish Trader on Ely",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Fisher-Description\", \"Help the Chief Fisheries Officer\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Fisher-FlavourText\", \"//OPERATOR: Lagos // BIOME: Desert // BACKGROUND: Assist the fisheries officer in getting set up and operational planetside.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_SQ_ELY_NPC_Fisher.T_SQ_ELY_NPC_Fisher'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "FOBriefing"
+            },
+            "LandingDialogue": {
+                "RowName": "FOIntro"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "FOEnding"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Fisher"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Ambush",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Ambush-DropName\", \"AMBUSH\")",
+            "DesignNotes": "Speeder #1",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Ambush-Description\", \"Find the Forward Recon Team\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Ambush-FlavourText\", \"//OPERATOR: Lagos // BIOME: Arctic // BACKGROUND: Locate and assist the forward recon team.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Recovery01_Large.T_Prospect_Arctic_Recovery01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "AmbushBriefing"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "AmbushEnding"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Ambush"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Lifeline",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Lifeline-DropName\", \"LIFELINE\")",
+            "DesignNotes": "Speeder #2",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Lifeline-Description\", \"Save the Forward Recon Team\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Lifeline-FlavourText\", \"//OPERATOR: Lagos // BIOME: Arctic // BACKGROUND: Search for and rescue the missing team members.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Arctic_Lantern01_Large.T_Prospect_Arctic_Lantern01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "LifelineBriefing"
+            },
+            "LandingDialogue": {
+                "RowName": "LifelineIntro"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "LifelineEnding"
+            },
+            "RequiredTech": "Tier3",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Lifeline"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Courier",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Courier-DropName\", \"COURIER\")",
+            "DesignNotes": "Speeder #3",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Courier-Description\", \"Escort the Downed Transport Drone\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Courier-FlavourText\", \"//OPERATOR: Lagos // BIOME: Arctic // BACKGROUND: Repair and escort the damaged Speeder prototype.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Forest_CrashSatellite01_Large.T_Prospect_Forest_CrashSatellite01_Large'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "CourierBriefing"
+            },
+            "LandingDialogue": {
+                "RowName": "CourierIntro"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "CourierEnding"
+            },
+            "RequiredTech": "Tier5",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Courier"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY_SQ_Trials",
+            "DropName": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Trials-DropName\", \"TRIALS\")",
+            "DesignNotes": "Speeder #4",
+            "Description": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Trials-Description\", \"Test the Prototype Speeder\")",
+            "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"ELY_SQ_Trials-FlavourText\", \"//OPERATOR: Lagos // BIOME: Arctic // BACKGROUND: Test out the protptype Speeder for safety issues before distribution.// MISSION: Orders will be delivered on planet. //TERMS: All actual and conceptual risks and responsibilities are accepted by the Contractor alone.\")",
+            "ProspectImage": "Texture2D'/Game/Assets/2DArt/UI/ProspectSelect/Images/T_ELY_SPEEDER.T_ELY_SPEEDER'",
+            "DifficultySetup": {
+                "Easy": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "Easy_Creatures",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_75%",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Medium": {
+                    "DifficultyStats": [],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                },
+                "Hard": {
+                    "DifficultyStats": [
+                        {
+                            "RowName": "NPC_Increase_Hard",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "NPC_Increase_Hard_SpawnRates",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Player_XP_125%",
+                            "DataTableName": "D_ProspectStats"
+                        },
+                        {
+                            "RowName": "Respawn_Three",
+                            "DataTableName": "D_ProspectStats"
+                        }
+                    ],
+                    "Forecast": {
+                        "RowName": "None",
+                        "DataTableName": "D_ProspectForecast"
+                    }
+                }
+            },
+            "Difficulty": "Normal",
+            "BriefingDialogue": {
+                "RowName": "TrialsBriefing"
+            },
+            "LandingDialogue": {
+                "RowName": "TrialsIntro"
+            },
+            "MissionCompleteDialogue": {
+                "RowName": "TrialsEnding"
+            },
+            "RequiredTech": "Tier5",
+            "Forecast": {
+                "RowName": "MostlyMild"
+            },
+            "Terrain": {
+                "RowName": "Terrain_021"
+            },
+            "FactionMission": {
+                "RowName": "ELY_SQ_Trials"
+            },
+            "TimeDuration": {
+                "Days": {
+                    "Min": 7,
+                    "Max": 7
+                }
+            },
+            "StartingTime": 6,
+            "TimeScaleCurve": "CurveFloat'/Game/BP/Biomes/Curves/TimeScaleCurve.TimeScaleCurve'",
+            "NumMetaSpawnsMin": 4,
+            "NumMetaSpawnsMax": 5,
+            "OnProspectAvailability": "Base",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         }
     ]
 }

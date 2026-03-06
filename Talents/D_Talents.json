@@ -17816,7 +17816,7 @@
                 "RowName": "Workshop_Deployables"
             },
             "Position": {
-                "X": 1000,
+                "X": 950,
                 "Y": 800
             },
             "Size": {
@@ -17877,8 +17877,8 @@
                 "RowName": "Workshop_Deployables"
             },
             "Position": {
-                "X": 1500,
-                "Y": 450
+                "X": 950,
+                "Y": 1150
             },
             "Size": {
                 "X": 250,
@@ -21124,7 +21124,7 @@
                 "RowName": "Workshop_Deployables"
             },
             "Position": {
-                "X": 1000,
+                "X": 500,
                 "Y": 450
             },
             "Size": {
@@ -29577,10 +29577,6 @@
                 {
                     "RowName": "Glassworking_Bench",
                     "DataTableName": "D_Talents"
-                },
-                {
-                    "RowName": "Glass_Trim",
-                    "DataTableName": "D_Talents"
                 }
             ]
         },
@@ -29628,6 +29624,12 @@
                 "X": 184,
                 "Y": 184
             },
+            "RequiredTalents": [
+                {
+                    "RowName": "Glass_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ],
             "DrawMethodOverride": "XThenY"
         },
         {
@@ -29791,7 +29793,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 19300,
+                "X": 19000,
                 "Y": 800
             },
             "Size": {
@@ -29821,7 +29823,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 19000,
+                "X": 19300,
                 "Y": 800
             },
             "Size": {
@@ -29852,7 +29854,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 19300,
+                "X": 19000,
                 "Y": 1200
             },
             "Size": {
@@ -29882,7 +29884,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 19000,
+                "X": 19300,
                 "Y": 1200
             },
             "Size": {
@@ -29912,7 +29914,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 20200,
+                "X": 20250,
                 "Y": 300
             },
             "Size": {
@@ -30374,7 +30376,7 @@
             },
             "Position": {
                 "X": 500,
-                "Y": 450
+                "Y": 1150
             },
             "Size": {
                 "X": 250,
@@ -32189,6 +32191,125 @@
             }
         },
         {
+            "Name": "Limestone_Basic",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Limestone_Basic-DisplayName\", \"Limestone Building Base Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Wall_0.T_ITEM_Limestone_Wall_0",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 19950,
+                "Y": 800
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Masonry_Bench_T3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Advanced",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Limestone_Advanced-DisplayName\", \"Limestone Building Advanced Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Half_Pitch_2.T_ITEM_Limestone_Half_Pitch_2",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 20250,
+                "Y": 800
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Limestone_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Fertilizer",
+            "ExtraData": {
+                "RowName": "Item_Yield_Fertilizer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 15050,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Chemistry_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Crushed_Limestone",
+            "ExtraData": {
+                "RowName": "Item_Crushed_Limestone",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 10350,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 20,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Beehive",
             "ExtraData": {
                 "RowName": "Beehive",
@@ -32567,6 +32688,208 @@
                 }
             ],
             "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Stone_Diagonal",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Stone_Diagonal-DisplayName\", \"Stone Building Diagonal/Curved Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Stone_Curved_Set_1.T_ITEM_Stone_Curved_Set_1",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 22100,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Stone_Advanced",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Scoria_Diagonal",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Scoria_Diagonal-DisplayName\", \"Scoria Building Diagonal/Curved Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Scoria_Curved_Set_1.T_ITEM_Scoria_Curved_Set_1",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 22100,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scoria_Advanced",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "T1_Building_Reroute",
+            "TalentType": "Reroute",
+            "TalentTree": {
+                "RowName": "Blueprint_T1_Player"
+            },
+            "Position": {
+                "X": 6750,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Player_Crafting",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_Locked"
+                }
+            ],
+            "bDefaultUnlocked": true,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Ice_Basic",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Ice_Basic-DisplayName\", \"Ice Building Base Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Wall_0.T_ITEM_Ice_Wall_0",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T1_Player"
+            },
+            "Position": {
+                "X": 7300,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T1_Building_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_Locked"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Ice_Advanced",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Ice_Advanced-DisplayName\", \"Ice Building Advanced Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Half_Pitch_2.T_ITEM_Ice_Half_Pitch_2",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T1_Player"
+            },
+            "Position": {
+                "X": 7600,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Ice_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_Locked"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Ice_Diagonal",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Ice_Diagonal-DisplayName\", \"Ice Building Diagonal/Curved Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Ice_Curved_Set_1.T_ITEM_Ice_Curved_Set_1",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T1_Player"
+            },
+            "Position": {
+                "X": 7900,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Ice_Advanced",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "ForbiddenFlags": [
+                {
+                    "DataTableName": "D_SessionFlags",
+                    "RowName": "Tutorial_Locked"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Creature_Base_Health_Buffalo",
@@ -48767,7 +49090,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 19900,
+                "X": 19950,
                 "Y": 300
             },
             "Size": {
@@ -50679,7 +51002,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 20200,
+                "X": 19950,
                 "Y": 1200
             },
             "Size": {
@@ -50704,7 +51027,7 @@
                 "RowName": "Blueprint_T3_Machine"
             },
             "Position": {
-                "X": 19900,
+                "X": 20250,
                 "Y": 1200
             },
             "Size": {
@@ -53211,6 +53534,330 @@
             ]
         },
         {
+            "Name": "Manufacturer",
+            "ExtraData": {
+                "RowName": "Item_Manufacturer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 150,
+                "Y": 700
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Oil_Barrel",
+            "ExtraData": {
+                "RowName": "Item_Oil_Barrel",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 1000,
+                "Y": 700
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Oil_Can",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Crude_Oil_Refiner",
+            "ExtraData": {
+                "RowName": "Item_Crude_Oil_Refiner",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 1300,
+                "Y": 500
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Oil_Can",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Natural_Oil_Refiner",
+            "ExtraData": {
+                "RowName": "Item_Natural_Oil_Refiner",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 1300,
+                "Y": 900
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Oil_Can",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Pump_Jack",
+            "ExtraData": {
+                "RowName": "Item_Pump_Jack",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 1300,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Crude_Oil_Refiner",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Oil_Power_Plant",
+            "ExtraData": {
+                "RowName": "Item_Oil_Power_Generator",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 1600,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Pump_Jack",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Polymerizer",
+            "ExtraData": {
+                "RowName": "Item_Polymerizer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 1650,
+                "Y": 700
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Crude_Oil_Refiner",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Natural_Oil_Refiner",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Crude_Oil_Pipes",
+            "ExtraData": {
+                "RowName": "Item_SplineTool_Crude_Oil",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 1000,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Pump_Jack",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Organic_Extractor",
+            "ExtraData": {
+                "RowName": "Item_Organic_Extractor",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 1300,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Natural_Oil_Refiner",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fuel_Pipes",
+            "ExtraData": {
+                "RowName": "Item_SplineTool_Fuel",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 1000,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Organic_Extractor",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Oil_Epoxy",
+            "ExtraData": {
+                "RowName": "Item_Epoxy",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2050,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Polymerizer_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Portable_Biofuel_Generator",
             "ExtraData": {
                 "RowName": "Item_Portable_Generator",
@@ -53269,8 +53916,8 @@
                 "RowName": "Workshop_Deployables"
             },
             "Position": {
-                "X": 500,
-                "Y": 1150
+                "X": 1400,
+                "Y": 450
             },
             "Size": {
                 "X": 250,
@@ -53287,8 +53934,8 @@
                 "RowName": "Workshop_Deployables"
             },
             "Position": {
-                "X": 1000,
-                "Y": 1150
+                "X": 1400,
+                "Y": 800
             },
             "Size": {
                 "X": 250,
@@ -53311,8 +53958,8 @@
                 "RowName": "Workshop_Deployables"
             },
             "Position": {
-                "X": 1500,
-                "Y": 1150
+                "X": 1800,
+                "Y": 800
             },
             "Size": {
                 "X": 250,
@@ -53474,7 +54121,7 @@
         {
             "Name": "Reinforced_Glass_Advanced",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Reinforced_Glass_Advanced-DisplayName\", \"Reinforced Glass Building Advanced Set\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Halfpiece_Tempered_2.T_ITEM_Glass_Halfpiece_Tempered_2",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Half_Pitch_Tempered_2.T_ITEM_Glass_Half_Pitch_Tempered_2",
             "ExtraData": {
                 "DataTableName": "D_Itemable"
             },
@@ -58020,6 +58667,37 @@
             }
         },
         {
+            "Name": "MinerArmor",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"MinerArmor-DisplayName\", \"Dusty Miner Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_MinerArmor_Chest.T_ITEM_MinerArmor_Chest",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 12300,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Electric_Armour_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 35,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Target_Dummy",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Target_Dummy-DisplayName\", \"Target Dummy Set\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Target_Dummy.ITEM_Target_Dummy",
@@ -58212,6 +58890,96 @@
             ]
         },
         {
+            "Name": "Oil_Synthetics",
+            "ExtraData": {
+                "RowName": "Item_Synthetics",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2200,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Polymerizer_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Oil_Compounds",
+            "ExtraData": {
+                "RowName": "Item_Compounds",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2500,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Polymerizer_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Oil_Plastics",
+            "ExtraData": {
+                "RowName": "Item_Plastics",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2350,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Polymerizer_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Polymerizer_Reroute",
             "TalentType": "Reroute",
             "TalentTree": {
@@ -58234,6 +59002,64 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Uranium_Converter",
+            "ExtraData": {
+                "RowName": "Item_Uranium_Converter",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2950,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Uranium_Collector",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Uranium_Collector",
+            "ExtraData": {
+                "RowName": "Item_Exotic_Uranium_Collector",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2950,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Radiation_Tracker",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Workshop_Sniper_Incendiary_Ammo",
@@ -58259,14 +59085,133 @@
             }
         },
         {
+            "Name": "Shaped_Ruby",
+            "ExtraData": {
+                "RowName": "Item_Ruby_Shaped",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 16350,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Glassworking_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 35,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Refined_Lithium",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Refined",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 13850,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Chemistry_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Chainsaw",
+            "ExtraData": {
+                "RowName": "Item_Chainsaw",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 6500,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Industrial_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Jackhammer",
+            "ExtraData": {
+                "RowName": "Item_Jackhammer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 6800,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Industrial_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Industrial_Reroute",
             "TalentType": "Reroute",
             "TalentTree": {
                 "RowName": "Blueprint_T5_Manufacturer"
             },
             "Position": {
-                "X": 6550,
-                "Y": 800
+                "X": 6800,
+                "Y": 850
             },
             "Size": {
                 "X": 0,
@@ -58281,6 +59226,645 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Mining_Laser",
+            "ExtraData": {
+                "RowName": "Item_Mining_Laser",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 5550,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Laser_Pistol",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Axe",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Axe",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 1950,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Pick",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Pickaxe",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2650,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Knife",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Knife",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2250,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Spear",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Spear",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 3150,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Sickle",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Sickle",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2850,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Sledge",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Sledgehammer",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2050,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Reroute",
+            "TalentType": "Reroute",
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2850,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 0,
+                "Y": 0
+            },
+            "Rewards": [],
+            "RequiredTalents": [
+                {
+                    "RowName": "Polymerizer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "bDefaultUnlocked": true,
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Radiation_Tracker",
+            "ExtraData": {
+                "RowName": "Item_Radiation_Tracker",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 3250,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Polymerizer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Uranium_Generator",
+            "ExtraData": {
+                "RowName": "Item_Uranium_Generator",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 3250,
+                "Y": 150
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Uranium_Converter",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Glass_Diagonal",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Glass_Diagonal-DisplayName\", \"Glass Building Diagonal/Curved Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Curved_Set_1.T_ITEM_Glass_Curved_Set_1",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 17600,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Glass_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Reinforced_Glass_Diagonal",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Reinforced_Glass_Diagonal-DisplayName\", \"Reinforced Glass Building Diagonal/Curved Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Glass_Curved_Set_Tempered_1.T_ITEM_Glass_Curved_Set_Tempered_1",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 18200,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Reinforced_Glass_Basic",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Concrete_Diagonal",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Concrete_Diagonal-DisplayName\", \"Concrete Building Diagonal/Curved Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Curved_Set_1.T_ITEM_Concrete_Curved_Set_1",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 19600,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Concrete_Advanced",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Scoria_Brick_Diagonal",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Scoria_Brick_Diagonal-DisplayName\", \"Scoria Brick Building Diagonal/Curved Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ScoriaBrick_Curved_Set_1.T_ITEM_ScoriaBrick_Curved_Set_1",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 19600,
+                "Y": 800
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Scoria_Brick_Advanced",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Clay_Brick_Diagonal",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Clay_Brick_Diagonal-DisplayName\", \"Clay Brick Building Diagonal/Curved Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_ClayBrick_Curved_Set_1.T_ITEM_ClayBrick_Curved_Set_1",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 19600,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Clay_Brick_Advanced",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Stone_Brick_Diagonal",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Stone_Brick_Diagonal-DisplayName\", \"Stone Brick Building Diagonal/Curved Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_StoneBrick_Curved_Set_1.T_ITEM_StoneBrick_Curved_Set_1",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 20550,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Stone_Brick_Advanced",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Bow",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Bow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 3450,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Shield",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Shield",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 3050,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Crossbow",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Crossbow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 3450,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Hazmat_Suit",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Hazmat_Suit-DisplayName\", \"Hazmat Suit\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Hazmat_Chest.T_ITEM_Hazmat_Chest",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 15450,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Advanced_Armor_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedBlueprint_Hasmat"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Radiation_Protection_Armor",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Radiation_Protection_Armor-DisplayName\", \"Containment Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Radiation_Protection_Chest.T_ITEM_Radiation_Protection_Chest",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 5200,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T5_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "T5_Armor_Reroute",
@@ -58329,6 +59913,491 @@
                     "RowName": "Outpost_012_Island"
                 }
             ]
+        },
+        {
+            "Name": "Workshop_AntiRadiation",
+            "ExtraData": {
+                "RowName": "Meta_AntiRadiation_Injection",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Consumables"
+            },
+            "Position": {
+                "X": 2050,
+                "Y": 1000
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Super_Food",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "AntiRadiation_Transfusion",
+            "ExtraData": {
+                "RowName": "Item_AntiRadiation_Transfusion",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 9900,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Medicine_Bench_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Tesla_Coil",
+            "ExtraData": {
+                "RowName": "Item_Telsa_Coil",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 6300,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T5_Defences_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Flamethrower_Turret",
+            "ExtraData": {
+                "RowName": "Item_Turret_Flamethrower",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 5950,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T5_Defences_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_Story_1",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY1.T_Prospect_ELY1",
+            "ExtraData": {
+                "RowName": "ELY_Story_1",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 1700,
+                "Y": 2650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Seed_Onion",
+            "ExtraData": {
+                "RowName": "Meta_Onion_Seed",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Farming"
+            },
+            "Position": {
+                "X": 3600,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedWorkshop_ELY_Seeds"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Seed_Agave",
+            "ExtraData": {
+                "RowName": "Meta_Agave_Seed",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Farming"
+            },
+            "Position": {
+                "X": 3300,
+                "Y": 650
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Seed_PricklyPear",
+            "ExtraData": {
+                "RowName": "Meta_PricklyPear_Seed",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Farming"
+            },
+            "Position": {
+                "X": 3300,
+                "Y": 950
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Seed_Garlic",
+            "ExtraData": {
+                "RowName": "Meta_Garlic_Seed",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Farming"
+            },
+            "Position": {
+                "X": 3600,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedWorkshop_ELY_Seeds"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Seed_Truffle",
+            "ExtraData": {
+                "RowName": "Meta_Truffle_Seed",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Farming"
+            },
+            "Position": {
+                "X": 3600,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedWorkshop_ELY_Seeds"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Charging_Station_Wall",
+            "ExtraData": {
+                "RowName": "Item_Charging_Device_Wall",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 3850,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Charging_Station",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Nailgun",
+            "ExtraData": {
+                "RowName": "Item_Nailgun",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 7100,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Industrial_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Module_Radiation",
+            "ExtraData": {
+                "RowName": "Meta_Module_Radiation",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Modules"
+            },
+            "Position": {
+                "X": 5950,
+                "Y": 500
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Module_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_Story_2",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY2.T_Prospect_ELY2",
+            "ExtraData": {
+                "RowName": "ELY_Story_2",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 2950,
+                "Y": 2650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_1",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_Story_3",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY3.T_Prospect_ELY3",
+            "ExtraData": {
+                "RowName": "ELY_Story_3",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 4300,
+                "Y": 2650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_Story_4",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY4.T_Prospect_ELY4",
+            "ExtraData": {
+                "RowName": "ELY_Story_4",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 5600,
+                "Y": 2650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_Story_5",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY5.T_Prospect_ELY5",
+            "ExtraData": {
+                "RowName": "ELY_Story_5",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 6900,
+                "Y": 2650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_4",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Prospect_ELY_Story_6",
@@ -60082,7 +62151,7 @@
         },
         {
             "Name": "Creature_Base_Raptor",
-            "DisplayName": "INVTEXT(\"[DNT] Geothermal Raptor\")",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Base_Raptor-DisplayName\", \"Raptor\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Base_Raptor-Description\", \"Can be Specialized into Combat Bonuses or Movement Bonuses\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Raptor.T_Talent_Base_Raptor",
             "TalentTree": {
@@ -61364,14 +63433,82 @@
             "DrawMethodOverride": "YThenX"
         },
         {
+            "Name": "Uranium_Ammo",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Uranium_Ammo-DisplayName\", \"Uranium Ammo\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Rifle_Round_Uranium.T_ITEM_Ammo_Rifle_Round_Uranium",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 5100,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T5_Ammo_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedBlueprint_UraniumAmmo"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Ammo",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Lithium_Ammo-DisplayName\", \"Lithium Ammo\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Ammo_Rifle_Round_Lithium.T_ITEM_Ammo_Rifle_Round_Lithium",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 5100,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T5_Ammo_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "T5_Ammo_Reroute",
             "TalentType": "Reroute",
             "TalentTree": {
                 "RowName": "Blueprint_T5_Manufacturer"
             },
             "Position": {
-                "X": 4750,
-                "Y": 850
+                "X": 4900,
+                "Y": 1050
             },
             "Size": {
                 "X": 0,
@@ -62379,6 +64516,641 @@
             "DrawMethodOverride": "ShortestDistance"
         },
         {
+            "Name": "Workshop_Creature_Saddle_Quick_Tame",
+            "ExtraData": {
+                "RowName": "Meta_Saddle_QuickTrainer",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Creature_Equipment"
+            },
+            "Position": {
+                "X": 500,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Flaregun",
+            "ExtraData": {
+                "RowName": "Item_Flare_Gun",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 8250,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Crafting_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Flares",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Flares-DisplayName\", \"Flare Set\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Flare_Yellow.T_ITEM_Flare_Yellow",
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 8250,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Flaregun",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Synthetic_Armor",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Synthetic_Armor-DisplayName\", \"Resurgent Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Synthetic_Armor_Chest_.T_ITEM_Synthetic_Armor_Chest_",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 4600,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T5_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Updated_Melee_Attachment_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Updated_Melee_Attachment_Pack-DisplayName\", \"Updated Tool Attachment Pack\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Updated_Melee_Attachment_Pack-Description\", \"A small assortment of Updated Tool Attachments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachBone.ITEM_AttachBone",
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 850,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Alteration_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 25,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Updated_Armor_Attachment_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Updated_Armor_Attachment_Pack-DisplayName\", \"Updated Armor Attachment Pack\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Updated_Armor_Attachment_Pack-Description\", \"A small assortment of Updated Armor Attachments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachPoisonResist.ITEM_ArmorAttachPoisonResist",
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 1150,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Alteration_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 25,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Updated_Ranged_Attachment_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Updated_Ranged_Attachment_Pack-DisplayName\", \"Updated Ranged Attachment Pack\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Updated_Ranged_Attachment_Pack-Description\", \"A small assortment of Updated Ranged Weapon Attachments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_WeaponAttach_Scope.ITEM_WeaponAttach_Scope",
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 1450,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Alteration_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 25,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Specialist_Alteration_Melee_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Specialist_Alteration_Melee_Pack-DisplayName\", \"Specialist Tool Attachment Pack\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Specialist_Alteration_Melee_Pack-Description\", \"A Small Selection of Specialist Melee Attachments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_AttachBleed.ITEM_AttachBleed",
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 3650,
+                "Y": 250
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Specialist_Attachment",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Specialist_Ranged_Attachment_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Specialist_Ranged_Attachment_Pack-DisplayName\", \"Specialist Ranged Weapon Attachment Pack\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Specialist_Ranged_Attachment_Pack-Description\", \"A Small Selection of Specialist Ranged Weapon Attachments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_WeaponAttach_Handcannon.ITEM_WeaponAttach_Handcannon",
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 3950,
+                "Y": 250
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Specialist_Attachment",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Specialist_Armor_Attachment_Pack",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Specialist_Armor_Attachment_Pack-DisplayName\", \"Specialist Armor Attachment Pack\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Specialist_Armor_Attachment_Pack-Description\", \"A Small Selection of Specialist Armor Attachments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/ITEM_ArmorAttachBossTracker.ITEM_ArmorAttachBossTracker",
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 4250,
+                "Y": 250
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Specialist_Attachment",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fortification_Concrete_Wall",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Concrete_Wall",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 15350,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Cement_Mixer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fortification_Concrete_Walkway",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Concrete_Walkway",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 15050,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Concrete_Wall",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fortification_Concrete_Gate",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Concrete_Gate",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 15350,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Concrete_Wall",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fortification_Concrete_Spikes",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Concrete_Spikes",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 15650,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Concrete_Wall",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fortification_Concrete_Platform",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Concrete_Platform",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 15050,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Concrete_Walkway",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fortification_Stone_Wall",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Stone_Wall",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 18850,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Masonry_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fortification_Stone_Walkway",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Stone_Walkway",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 18450,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Stone_Wall",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fortification_Stone_Gate",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Stone_Gate",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 18450,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Stone_Wall",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fortification_Stone_Spikes",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Stone_Spikes",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 18150,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Stone_Wall",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fortification_Stone_Platform",
+            "ExtraData": {
+                "RowName": "Item_Fortification_Stone_Platform",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 18150,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Fortification_Stone_Walkway",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Laser_Pistol",
+            "ExtraData": {
+                "RowName": "Item_Laser_Pistol",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 5850,
+                "Y": 1000
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Polymerizer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Laser_Attachments",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Laser_Attachments-DisplayName\", \"Laser Conversion Attachments\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ICON_WEAPONATTACHMENT_LASERFIRE.T_ICON_WEAPONATTACHMENT_LASERFIRE",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 6150,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Laser_Pistol",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Stone_Brick_Fireplace",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Stone_Brick_Fireplace-DisplayName\", \"Stone Brick Fireplace\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_StoneBrick_Fireplace.T_ITEM_StoneBrick_Fireplace",
@@ -62402,6 +65174,37 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Saddle_Raptor",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Raptor.T_ITEM_Saddle_Raptor",
+            "ExtraData": {
+                "RowName": "Item_Saddle_Raptor",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 12950,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Re_route_Creature_Comforts",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 30,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Creature_Base_RaptorDesert",
@@ -62762,7 +65565,7 @@
         {
             "Name": "CombatPet_Base_TundraMonkey",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_TundraMonkey-DisplayName\", \"Gribbler\")",
-            "Description": "INVTEXT(\"[DNT] Tree Description\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_TundraMonkey-Description\", \"Can be specialized into combat or bonuses\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_TundraMonkey.T_Talent_Base_TundraMonkey",
             "TalentTree": {
                 "RowName": "Creature_Tundra_Monkey"
@@ -65247,6 +68050,247 @@
             "DrawMethodOverride": "ShortestDistance"
         },
         {
+            "Name": "Uranium_Conversion",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Uranium_Conversion-DisplayName\", \"Uranium Conversion\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Uranium_Inert.T_ITEM_Uranium_Inert",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 14750,
+                "Y": 450
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Synthentic_Enzymes",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredLevel": 40,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Aluminium_Screw",
+            "ExtraData": {
+                "RowName": "Item_Aluminium_Screw",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 450,
+                "Y": 400
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Manufacturer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Bolt",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Bolt",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 3750,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Crossbow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Uranium_Bolt",
+            "ExtraData": {
+                "RowName": "Item_Uranium_Bolt",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 4050,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Bolt",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Lithium_Arrow",
+            "ExtraData": {
+                "RowName": "Item_Lithium_Arrow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 3750,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Bow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Uranium_Arrow",
+            "ExtraData": {
+                "RowName": "Item_Uranium_Arrow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 4050,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Arrow",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Landing_Pad",
+            "ExtraData": {
+                "RowName": "Item_Landing_Pad_Player",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 7000,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "LandingPads_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Powerbank",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Powerbank-DisplayName\", \"Powerbank\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Battery_T4.T_ITEM_Battery_T4",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 3250,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Charging_Station",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Specialist_Attachment",
             "TalentType": "Reroute",
             "TalentTree": {
@@ -65292,6 +68336,36 @@
                     "DataTableName": "D_Talents"
                 }
             ]
+        },
+        {
+            "Name": "Advanced_OEI",
+            "ExtraData": {
+                "RowName": "Item_Advanced_Exotic_Delivery_Interface",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 6700,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "LandingPads_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "LandingPads_Reroute",
@@ -65340,6 +68414,376 @@
             ],
             "bDefaultUnlocked": true,
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Red_Exotic_Seed",
+            "ExtraData": {
+                "RowName": "Item_Red_Exotic_Seed",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2550,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Sickle",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Terraforming_Dust",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Terraforming_Dust-DisplayName\", \"Ionic Dust Recipes\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_Terraforming_Dust.T_Terraforming_Dust",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 2350,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Lithium_Pick",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "Lithium_Sledge",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "AntiRadiation_Tonic",
+            "ExtraData": {
+                "RowName": "Item_AntiRadiation_Tonic",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 7850,
+                "Y": 100
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Herbalism_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Creature_Overrider",
+            "ExtraData": {
+                "RowName": "Meta_Saddle_Overrider",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Creature_Equipment"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 600
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Creature_Saddle_Quick_Tame",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Creature_Carrier",
+            "ExtraData": {
+                "RowName": "Meta_Saddle_Carrier",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Creature_Equipment"
+            },
+            "Position": {
+                "X": 900,
+                "Y": 1000
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Creature_Saddle_Quick_Tame",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Bulky_Armor_Feet",
+            "ExtraData": {
+                "RowName": "Meta_Bulky_Armor_Feet",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Armors"
+            },
+            "Position": {
+                "X": 6000,
+                "Y": 1150
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Bulky_Armor_Head",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Bulky_Armor_Legs",
+            "ExtraData": {
+                "RowName": "Meta_Bulky_Armor_Legs",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Armors"
+            },
+            "Position": {
+                "X": 5500,
+                "Y": 1150
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Bulky_Armor_Head",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Bulky_Armor_Arms",
+            "ExtraData": {
+                "RowName": "Meta_Bulky_Armor_Arms",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Armors"
+            },
+            "Position": {
+                "X": 5500,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Bulky_Armor_Head",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Bulky_Armor_Chest",
+            "ExtraData": {
+                "RowName": "Meta_Bulky_Armor_Chest",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Armors"
+            },
+            "Position": {
+                "X": 6000,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Bulky_Armor_Head",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Bulky_Armor_Head",
+            "ExtraData": {
+                "RowName": "Meta_Bulky_Armor_Head",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Armors"
+            },
+            "Position": {
+                "X": 5750,
+                "Y": 450
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Larkwell_Armor_Black_Head",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Alloy_Armor_Set",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Alloy_Armor_Set-DisplayName\", \"Bastion Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Alloy_Chest.T_ITEM_Alloy_Chest",
+            "ExtraData": {
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 4900,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T5_Armor_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_ELY_Story_6"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Backpack_Solar",
+            "ExtraData": {
+                "RowName": "Meta_Solar_Backpack",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Backpacks"
+            },
+            "Position": {
+                "X": 3600,
+                "Y": 450
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Backpack_Tech",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Creature_Base_Health_Mammoth",
@@ -66300,6 +69744,135 @@
             "RequiredLevel": 30
         },
         {
+            "Name": "Prospect_ELY_SQ_Igloo",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_PROSTORY_4_Large.T_Prospect_PROSTORY_4_Large",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Igloo",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 2350,
+                "Y": 1650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_1",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Polarbear_Armor_Yeti",
+            "ExtraData": {
+                "RowName": "Item_Polarbear_Head_Armor_Yeti",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 14550,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Polarbear_Chest",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedBlueprint_YetiArticArmor"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_SQ_Yeti",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_ELY_SQ_Yeti.T_Prospect_ELY_SQ_Yeti",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Yeti",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 3600,
+                "Y": 1650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_SQ_Igloo",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_SQ_Fish",
+            "Icon": "/Game/Assets/2DArt/UI/ProspectSelect/Images/T_Prospect_Desert_Expedition02_Large.T_Prospect_Desert_Expedition02_Large",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Fish",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 4900,
+                "Y": 3700
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Workshop_Creature_Rooster",
             "ExtraData": {
                 "RowName": "Meta_Chick_Male",
@@ -66703,6 +70276,76 @@
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Sandwyrm_Lantern",
+            "ExtraData": {
+                "RowName": "Item_Sandwyrm_Lantern",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 3400,
+                "Y": 500
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Biofuel_Lamp",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedBlueprint_Sandwyrm"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Sandwyrm_Backpack",
+            "ExtraData": {
+                "RowName": "Item_Sandwyrm_Backpack",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T3_Machine"
+            },
+            "Position": {
+                "X": 13300,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Advanced_Armor_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedBlueprint_Sandwyrm"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
                 }
             }
         },
@@ -67307,6 +70950,65 @@
             }
         },
         {
+            "Name": "Oil_Can",
+            "ExtraData": {
+                "RowName": "Item_Oil_Can",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 700,
+                "Y": 700
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Manufacturer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Deep_Mining_Drill_Oil",
+            "ExtraData": {
+                "RowName": "Item_Deep_Mining_Drill_Oil",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 5600,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Polymerizer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Homestead_Kitchen_Herbalism",
             "ExtraData": {
                 "RowName": "Item_Homestead_Kitchen_Medicine",
@@ -67408,6 +71110,64 @@
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Metal_Grate_Floor",
+            "ExtraData": {
+                "RowName": "Item_Metal_Grate_Floor",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 16500,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Wire_Tool",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Metal_Grate_Stair",
+            "ExtraData": {
+                "RowName": "Item_Metal_Grate_Stairs",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 16800,
+                "Y": 850
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Metal_Grate_Floor",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
                 }
             }
         },
@@ -69650,6 +73410,246 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Prospect_OLY_SQ_Farm",
+            "ExtraData": {
+                "RowName": "OLY_SQ_Farmer",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Olympus"
+            },
+            "Position": {
+                "X": 6200,
+                "Y": 3200
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "ProspectReroute_2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_STYX_SQ_Farm",
+            "ExtraData": {
+                "RowName": "STYX_SQ_Farmer",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 4050,
+                "Y": 1700
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_B_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_PRO_SQ_Farm",
+            "ExtraData": {
+                "RowName": "PRO_SQ_Farmer",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 2350,
+                "Y": 1600
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_1",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_SQ_Farm",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Farmer",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 3600,
+                "Y": 3700
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_SQ_Norex",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Norex",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 6250,
+                "Y": 1650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_4",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_PRO_SQ_Norex",
+            "ExtraData": {
+                "RowName": "PRO_SQ_Norex",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 7200,
+                "Y": 1600
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_5",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_STYX_SQ_Norex",
+            "ExtraData": {
+                "RowName": "STYX_SQ_Norex",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 12800,
+                "Y": 3000
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_D_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_OLY_SQ_Norex",
+            "ExtraData": {
+                "RowName": "OLY_SQ_Norex",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Olympus"
+            },
+            "Position": {
+                "X": 21050,
+                "Y": 1550
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_OLY_Riverlands_Exploration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Creature_Pig_Base",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Pig_Base-DisplayName\", \"Pig\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_TALENT_Base_Pig.T_TALENT_Base_Pig",
@@ -70272,6 +74272,399 @@
             "DrawMethodOverride": "XThenY"
         },
         {
+            "Name": "Sandwyrm_Bow",
+            "ExtraData": {
+                "RowName": "Item_Sandwyrm_Bow",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T4_Fabricator"
+            },
+            "Position": {
+                "X": 10200,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench_T4",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedBlueprint_Sandwyrm"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_SQ_Hunter",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Hunter",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 4950,
+                "Y": 1650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_PRO_SQ_Hunter",
+            "ExtraData": {
+                "RowName": "PRO_SQ_Hunter",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 5500,
+                "Y": 3700
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Styx_SQ_Hunter",
+            "ExtraData": {
+                "RowName": "STYX_SQ_Hunter",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 5650,
+                "Y": 3650
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_C_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_OLY_SQ_Hunter",
+            "ExtraData": {
+                "RowName": "OLY_SQ_Hunter",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Olympus"
+            },
+            "Position": {
+                "X": 13250,
+                "Y": 4250
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_OLY_Glacier_Exploration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_OLY_SQ_Fisher",
+            "ExtraData": {
+                "RowName": "OLY_SQ_Fisher",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Olympus"
+            },
+            "Position": {
+                "X": 13200,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Canyon_Exploration",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_Styx_SQ_Fisher",
+            "ExtraData": {
+                "RowName": "STYX_SQ_Fisher",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Styx"
+            },
+            "Position": {
+                "X": 8450,
+                "Y": 1600
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Styx_E_Expedition",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_PRO_SQ_Fisher",
+            "ExtraData": {
+                "RowName": "PRO_SQ_Fisher",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Prometheus"
+            },
+            "Position": {
+                "X": 3800,
+                "Y": 1600
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_Pro_Story_2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_SQ_Fisher",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Fisher",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 2350,
+                "Y": 3700
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_1",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_SQ_Speeder1",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Ambush",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 6300,
+                "Y": 3700
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_Story_4",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_SQ_Speeder2",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Lifeline",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 7300,
+                "Y": 3700
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_SQ_Speeder1",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_SQ_Speeder3",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Courier",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 8300,
+                "Y": 3700
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_SQ_Speeder2",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Prospect_ELY_SQ_Speeder4",
+            "ExtraData": {
+                "RowName": "ELY_SQ_Trials",
+                "DataTableName": "D_ProspectList"
+            },
+            "TalentTree": {
+                "RowName": "Prospect_Elysium"
+            },
+            "Position": {
+                "X": 9250,
+                "Y": 3700
+            },
+            "Size": {
+                "X": 600,
+                "Y": 660
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Prospect_ELY_SQ_Speeder3",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "YThenX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Workshop_Creature_Pig",
             "ExtraData": {
                 "RowName": "Meta_Piglet_Female",
@@ -70376,6 +74769,196 @@
             "Size": {
                 "X": 250,
                 "Y": 250
+            }
+        },
+        {
+            "Name": "Speeder_Kit",
+            "ExtraData": {
+                "RowName": "Item_Speeder_Kit",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 7600,
+                "Y": 700
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Polymerizer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedBlueprint_Speeder"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Checkered_Flag",
+            "ExtraData": {
+                "RowName": "Item_Checkered_Flag",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 7600,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Speeder_Kit",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedTalent_ELY_SQ"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Envirosuit_Scout",
+            "ExtraData": {
+                "RowName": "Meta_Envirosuit_Larkell_White",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Envirosuits"
+            },
+            "Position": {
+                "X": 3900,
+                "Y": 800
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Workshop_Envirosuit_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedBlueprint_ScoutSuit"
+                }
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Scout_SMG",
+            "ExtraData": {
+                "RowName": "Item_Submachine_Gun_Scout",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 4700,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "T5_Ammo_Reroute",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "RequiredFlags": [
+                {
+                    "DataTableName": "D_AccountFlags",
+                    "RowName": "GrantedBlueprint_ScoutSmg"
+                }
+            ],
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Resource_Pack_Limestone",
+            "ExtraData": {
+                "RowName": "Meta_Resource_Pack_Limestone",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Resources"
+            },
+            "Position": {
+                "X": 2500,
+                "Y": 1100
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "DrawMethodOverride": "XThenY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Workshop_Meta_Oil",
+            "ExtraData": {
+                "RowName": "Meta_Oil_Can",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Deployables"
+            },
+            "Position": {
+                "X": 950,
+                "Y": 450
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
             }
         }
     ]

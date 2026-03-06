@@ -20271,15 +20271,15 @@
         },
         {
             "Name": "BaseReapingCollectsPlantExtract_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReapingCollectsPlantExtract_%-PositiveDescription\", \"{0}% chance to collect Tainted Plant DNA when Reaping\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReapingCollectsPlantExtract_%-NegativeDescription\", \"-{0}% chance to collect Tainted Plant DNA when Reaping\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReapingCollectsPlantExtract_%-PositiveDescription\", \"{0}% chance to collect Tainted Plant DNA when Reaping Fruit & Vegetables\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseReapingCollectsPlantExtract_%-NegativeDescription\", \"-{0}% chance to collect Tainted Plant DNA when Reaping Fruit & Vegetables\")",
             "StatCategory": {
                 "RowName": "Reaping"
             }
         },
         {
             "Name": "ReapingCollectsPlantExtract_%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ReapingCollectsPlantExtract_%-Title\", \"Chance to Collect Tainted Plant DNA When Reaping\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ReapingCollectsPlantExtract_%-Title\", \"Chance to Collect Tainted Plant DNA When Reaping Fruit & Vegetables\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -21550,6 +21550,24 @@
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseLineageMutationChance_%-NegativeDescription\", \"-{0}% Bloodline Mutation Chance\")",
             "StatCategory": {
                 "RowName": "Mounts"
+            }
+        },
+        {
+            "Name": "DisableCreatureGenetics_?",
+            "bIsReplicated": true,
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "CarryingSpeeder_?",
+            "bIsReplicated": true,
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseFuelConsumedDuringBoost_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFuelConsumedDuringBoost_+%-PositiveDescription\", \"+{0}% Fuel Consumption While Boosting\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFuelConsumedDuringBoost_+%-NegativeDescription\", \"-{0}% Fuel Consumption While Boosting\")",
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
             }
         }
     ]

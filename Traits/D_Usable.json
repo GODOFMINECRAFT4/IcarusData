@@ -447,6 +447,33 @@
                 }
             ],
             "bAlwaysShowContextMenu": true
+        },
+        {
+            "Name": "Repairable_Place",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Repair",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Place",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
         }
     ]
 }

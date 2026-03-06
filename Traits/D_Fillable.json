@@ -544,7 +544,7 @@
                     "Value": "Refined_Oil"
                 }
             ],
-            "MaximumStoredUnits": 10000
+            "MaximumStoredUnits": 20000
         },
         {
             "Name": "SandArmor_Backpack",
@@ -555,6 +555,46 @@
                 }
             ],
             "MaximumStoredUnits": 10800
+        },
+        {
+            "Name": "SpeederBike_Fuel",
+            "Behaviour": "/Game/BP/Behaviours/Fillable/BP_FillableComponent.BP_FillableComponent_C",
+            "ResourceTypes": [
+                {
+                    "Value": "Refined_Oil"
+                }
+            ],
+            "MaximumStoredUnits": 50000
+        },
+        {
+            "Name": "Mission_Speeder",
+            "Behaviour": "/Game/BP/Behaviours/Fillable/BP_FillableComponent.BP_FillableComponent_C",
+            "ResourceTypes": [
+                {
+                    "Value": "Refined_Oil"
+                }
+            ],
+            "MaximumStoredUnits": 10000
+        },
+        {
+            "Name": "Mission_Drone",
+            "Behaviour": "/Game/BP/Behaviours/Fillable/BP_FillableComponent.BP_FillableComponent_C",
+            "ResourceTypes": [
+                {
+                    "Value": "Energy"
+                }
+            ],
+            "MaximumStoredUnits": 450000
+        },
+        {
+            "Name": "Meta_Oil_Can",
+            "Behaviour": "/Game/BP/Behaviours/Fillable/BP_FillableComponent.BP_FillableComponent_C",
+            "ResourceTypes": [
+                {
+                    "Value": "Refined_Oil"
+                }
+            ],
+            "MaximumStoredUnits": 25000
         }
     ]
 }

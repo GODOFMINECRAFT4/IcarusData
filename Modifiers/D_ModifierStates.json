@@ -14796,6 +14796,13 @@
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
             "RemovedOnDeath": false,
             "MergeType": "LongestDuration",
+            "ModifierTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "ModifierState.ExtingishFire"
+                    }
+                ]
+            },
             "bEffectsObjects": true,
             "bEffectsNPCs": false,
             "bEffectsPlayers": false
@@ -15432,6 +15439,186 @@
             "SaveToDatabase": false
         },
         {
+            "Name": "Cooked_Banana",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Banana.T_ITEM_Roast_Banana'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Banana-ModifierName\", \"Roast Banana\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Cooked_Banana-ModifierDescription\", \"Small Bonus to Tamed Creature Experience\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 40,
+                "(Value=\"BaseMaximumHealth_+\")": 40,
+                "(Value=\"BaseTamedCreatureExperience_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Dried_Banana_Chips",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Dried_Banana.T_ITEM_Dried_Banana'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Banana_Chips-ModifierName\", \"Banana Chips\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Dried_Banana_Chips-ModifierDescription\", \"Small Bonus to Tamed Creature Experience\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 25,
+                "(Value=\"BaseMaximumHealth_+\")": 25,
+                "(Value=\"BaseTamedCreatureExperience_+%\")": 10
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Banana_Porridge",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Banana_Porridge.T_ITEM_Banana_Porridge'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Banana_Porridge-ModifierName\", \"Banana Porridge\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Banana_Porridge-ModifierDescription\", \"Warms you up and a small Bonus to Tamed Creature Experience.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseTamedCreatureExperience_+%\")": 10,
+                "(Value=\"BaseWaterConsumption_+%\")": -10,
+                "(Value=\"BaseInternalTemperatureModification_+\")": 1000
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Frozen_Banana",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Frozen_Banana.T_ITEM_Frozen_Banana'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Frozen_Banana-ModifierName\", \"Frozen Banana\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Frozen_Banana-ModifierDescription\", \"Cools you down and a small Bonus to Tamed Creature Experience.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 75,
+                "(Value=\"BaseMaximumHealth_+\")": 75,
+                "(Value=\"BaseTamedCreatureExperience_+%\")": 10,
+                "(Value=\"BaseWaterConsumption_+%\")": -10,
+                "(Value=\"BaseInternalTemperatureModification_+\")": -1000
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Banana_Tart",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Banana_Tart.T_ITEM_Banana_Tart'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Banana_Tart-ModifierName\", \"Banana Tart\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Banana_Tart-ModifierDescription\", \"Boosts player and tamed creature experience.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 125,
+                "(Value=\"BaseMaximumHealth_+\")": 125,
+                "(Value=\"BaseTamedCreatureExperience_+%\")": 30,
+                "(Value=\"BaseExperience_+%\")": 15
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Banana_Toast",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Banana_Toast.T_ITEM_Banana_Toast'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Banana_Toast-ModifierName\", \"Banana Toast\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Banana_Toast-ModifierDescription\", \"Boosts player and tamed creature experience.\")",
+            "GrantedStats": {
+                "(Value=\"BaseFoodStomachSlots_+\")": 1,
+                "(Value=\"BaseMaximumStamina_+\")": 50,
+                "(Value=\"BaseMaximumHealth_+\")": 100,
+                "(Value=\"BaseTamedCreatureExperience_+%\")": 15,
+                "(Value=\"BaseExperience_+%\")": 15
+            },
+            "ModifierEffectivenessAffectors": [
+                {
+                    "Value": "FruitAndVegeModifierEffectiveness_+%"
+                }
+            ],
+            "ModifierLifetimeAffectors": [
+                {
+                    "Value": "FoodModifierDuration_+%"
+                }
+            ],
+            "MergeType": "LongestDuration",
+            "bEffectsNPCs": false,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Desert_Atmosphere",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_HeatRES.Icon_HeatRES'",
             "Type": "Biome",
@@ -15976,6 +16163,21 @@
             "bEffectsPlayers": false,
             "SaveToDatabase": false,
             "RemovedOnClick": true
+        },
+        {
+            "Name": "CarryingSpeeder",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/Icon_Overencumbered.Icon_Overencumbered'",
+            "Type": "Debuff",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"CarryingSpeeder-ModifierName\", \"Carrying A Hoverframe\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"CarryingSpeeder-ModifierDescription\", \"Large Reduction in Movement Speed\")",
+            "AudioData": {
+                "RowName": "Generic_Negative"
+            },
+            "GrantedStats": {
+                "(Value=\"BaseMovementSpeed_+%\")": -50
+            },
+            "MergeType": "LongestDuration",
+            "SaveToDatabase": false
         }
     ]
 }

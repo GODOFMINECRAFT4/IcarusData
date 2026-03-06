@@ -10037,19 +10037,6 @@
             }
         },
         {
-            "Name": "Enemy_Turret_NPC",
-            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Defences/BP_NPC_Turret.BP_NPC_Turret_C",
-            "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Turret_Pistol.T_ITEM_Turret_Pistol",
-            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Turret_T4/SM_DEP_Turret_Pistol_Combined_v2.SM_DEP_Turret_Pistol_Combined_v2",
-            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
-            "NavAreaClass": "Class'/Script/NavigationSystem.NavArea_Obstacle'",
-            "NavigationFallbackExtents": {
-                "X": 1,
-                "Y": 1,
-                "Z": 1
-            }
-        },
-        {
             "Name": "Landmine_Poison",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/WorldObjects/Missions/BP_Landmine_Poison.BP_Landmine_Poison_C",
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Landmine_V2.SM_DEP_Landmine_V2",
@@ -15458,7 +15445,7 @@
         {
             "Name": "Deep_Mining_Drill_Oil",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Drill/BP_Deep_Mining_Drill_Oil.BP_Deep_Mining_Drill_Oil_C",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_DeepMiningDrill_Biofuel_v2.SM_DEP_DeepMiningDrill_Biofuel_v2",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DeepMiningDrill_T5/SM_DEP_DeepMiningDrill_T5.SM_DEP_DeepMiningDrill_T5",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
             "SupportsCustomRotation": false,
             "SnapBehaviour": "SnapPlacementOnly",
@@ -15563,6 +15550,24 @@
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": -1
+        },
+        {
+            "Name": "Speeder_Kit",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Creatures/BP_Speeder_Kit.BP_Speeder_Kit_C",
+            "PreviewStaticMesh": "/Game/ASS/VHC/Speeder_Bike/SM_VHC_Speeder_Bike.SM_VHC_Speeder_Bike",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Checkered_Flag",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_CheckeredFlag.BP_CheckeredFlag_C",
+            "PreviewStaticMesh": "/Game/ThirdPartyAssets/VertexAnimatedFlags/SupportingAssets/FlagPole_Ballhead.FlagPole_Ballhead",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_GOLD.SFX_DEPLOY_GOLD",
+            "SnapToSurfaceNormal": false,
+            "MaxSurfaceSnapAngle": 60,
+            "SupportsCustomRotation": false
         }
     ]
 }

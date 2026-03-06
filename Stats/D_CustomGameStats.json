@@ -36,6 +36,21 @@
                 "RowName": "WorldIsSpiderSpawningDisabled_?"
             },
             "MaxIntValue": 1
+        },
+        {
+            "Name": "PrebuiltCleanup",
+            "DisplayName": "NSLOCTEXT(\"D_CustomGameStats\", \"PrebuiltCleanup-DisplayName\", \"Mission Structure Cleanup\")",
+            "Description": "NSLOCTEXT(\"D_CustomGameStats\", \"PrebuiltCleanup-Description\", \"Removes mission structures after mission completes.\")",
+            "StatChangeability": "Anytime",
+            "Stat": {
+                "RowName": "WorldPrebuiltStructuresDestroyed_?"
+            },
+            "MaxIntValue": 1,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         }
     ]
 }

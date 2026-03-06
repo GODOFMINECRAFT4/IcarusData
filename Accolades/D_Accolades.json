@@ -6948,6 +6948,1000 @@
                     "RowName": "GreatHunts"
                 }
             }
+        },
+        {
+            "Name": "AllELYStoryComplete",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"AllELYStoryComplete-DisplayName\", \"For Mo\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"AllELYStoryComplete-Description\", \"Complete All Six Dangerous Horizons Story Missions\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_ForMo.T_ACH_ForMo",
+            "AccoladeImpl": "/Script/Icarus.TaskListAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "ElysiumMissionList"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "ELY_Story_1",
+                    "DataTableName": "D_FactionMissions"
+                },
+                {
+                    "RowName": "ELY_Story_2",
+                    "DataTableName": "D_FactionMissions"
+                },
+                {
+                    "RowName": "ELY_Story_3",
+                    "DataTableName": "D_FactionMissions"
+                },
+                {
+                    "RowName": "ELY_Story_4",
+                    "DataTableName": "D_FactionMissions"
+                },
+                {
+                    "RowName": "ELY_Story_5",
+                    "DataTableName": "D_FactionMissions"
+                },
+                {
+                    "RowName": "ELY_Story_6",
+                    "DataTableName": "D_FactionMissions"
+                }
+            ],
+            "SteamAchievementId": "ACH_FOR_MO",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "LandEly",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"LandEly-DisplayName\", \"Graceful Landing\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"LandEly-Description\", \"Drop into Elysium for the first time\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_GracefulLanding.T_ACH_GracefulLanding",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_GRACEFUL_LANDING",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "FindEden",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"FindEden-DisplayName\", \"Home Sweet Home\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"FindEden-Description\", \"Discover Eden\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_DiscoverEden.T_ACH_DiscoverEden",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_HOME_SWEET_HOME",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Introduction",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"Introduction-DisplayName\", \"And You Are?\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"Introduction-Description\", \"Introduce yourself to the members of TEI\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_AndYouAre.T_ACH_AndYouAre",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_AND_YOU_ARE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "RadExotics",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"RadExotics-DisplayName\", \"Off the Charts\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"RadExotics-Description\", \"Collect and process 5,000 Enriched Uranium Rods\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_OffTheCharts.T_ACH_OffTheCharts",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "UraniumExoticsEarned"
+            },
+            "GoalCount": 5000,
+            "SteamAchievementId": "ACH_OFF_THE_CHARTS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY1Complete",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ELY1Complete-DisplayName\", \"The Eris Inquisition\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ELY1Complete-Description\", \"Complete Mission: Lost\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_ErisInquisition.T_ACH_ErisInquisition",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_ERIS_INQUISITION",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY2Complete",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ELY2Complete-DisplayName\", \"Encrypted\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ELY2Complete-Description\", \"Complete Mission: Relics\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Encrypted.T_ACH_Encrypted",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_ENCRYPTED",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY3Complete",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ELY3Complete-DisplayName\", \"Lab Rat\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ELY3Complete-Description\", \"Complete Mission: Nexus\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_LabRat.T_ACH_LabRat",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_LAB_RAT",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY4Complete",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ELY4Complete-DisplayName\", \"Deceit\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ELY4Complete-Description\", \"Complete Mission: Fallout\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Deceit.T_ACH_Deceit",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_DECEIT",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY5Complete",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ELY5Complete-DisplayName\", \"Thermonuclear\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ELY5Complete-Description\", \"Complete Mission: Rift\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Thermonucleur.T_ACH_Thermonucleur",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_THERMONUCLEAR",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ELY6Complete",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ELY6Complete-DisplayName\", \"At All Costs\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ELY6Complete-Description\", \"Complete Mission: Reckoning\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_AtAllCosts.T_ACH_AtAllCosts",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_AT_ALL_COSTS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "RideRaptor",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"RideRaptor-DisplayName\", \"Nice Ride\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"RideRaptor-Description\", \"Ride a Raptor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_NiceRide.T_ACH_NiceRide",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_NICE_RIDE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "RadDeath",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"RadDeath-DisplayName\", \"You\\'re Glowing...\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"RadDeath-Description\", \"Die from Radiation\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_YoureGlowing.T_ACH_YoureGlowing",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_YOURE_GLOWING",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "OilBaron",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"OilBaron-DisplayName\", \"Future Oil Baron\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"OilBaron-Description\", \"Find and use an oil geyser\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_FutureOilBaron.T_ACH_FutureOilBaron",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_FUTURE_OIL_BARON",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "KillDrones",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillDrones-DisplayName\", \"The People\\'s Syndicate\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillDrones-Description\", \"Eliminate 250 Drones\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_ThePeoplesSyndicate.T_ACH_ThePeoplesSyndicate",
+            "AccoladeImpl": "/Script/Icarus.TrackerAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "DronesKilled"
+            },
+            "GoalCount": 250,
+            "SteamAchievementId": "ACH_THE_PEOPLES_SYNDICATE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TameSkulk",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"TameSkulk-DisplayName\", \"Skulking Around\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"TameSkulk-Description\", \"Tame a Skulk\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Skulking_Around.T_ACH_Skulking_Around",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_SKULKING_AROUND",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TameStorca",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"TameStorca-DisplayName\", \"Eyes On Me\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"TameStorca-Description\", \"Tame a Storca\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Eyes_On_Me.T_ACH_Eyes_On_Me",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_EYES_ON_ME",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TameSlinker",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"TameSlinker-DisplayName\", \"Slinky\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"TameSlinker-Description\", \"Tame a Slinker\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Slinky.T_ACH_Slinky",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_SLINKY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TameDraven",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"TameDraven-DisplayName\", \"Pack Mule\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"TameDraven-Description\", \"Tame a Draven\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Pack_Mule.T_ACH_Pack_Mule",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_PACK_MULE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TameRaptor",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"TameRaptor-DisplayName\", \"Jurassic Perks\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"TameRaptor-Description\", \"Tame a Raptor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_JurassicPerks.T_ACH_JurassicPerks",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_JURASSIC_PERKS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "WearHazmat",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"WearHazmat-DisplayName\", \"Glow-up\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"WearHazmat-Description\", \"Wear a Hazmat Suit in a Radioactive Zone\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Glow-up.T_ACH_Glow-up",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_GLOW_UP",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GetLaserGun",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"GetLaserGun-DisplayName\", \"Pew Pew Pew\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"GetLaserGun-Description\", \"Acquire a Laser Sidearm\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Pewpew.T_ACH_Pewpew",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_PEW_PEW_PEW",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "AlterLaserGun",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"AlterLaserGun-DisplayName\", \"Pew Review\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"AlterLaserGun-Description\", \"Modify a Laser Sidearm\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_PewReview.T_ACH_PewReview",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_PEW_REVIEW",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "KillRadspectors",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillRadspectors-DisplayName\", \"Ghosted\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillRadspectors-Description\", \"Kill a Spectre\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Ghosted.T_ACH_Ghosted",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_GHOSTED",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "EnterGeo",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"EnterGeo-DisplayName\", \"Serene Stench\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"EnterGeo-Description\", \"Enter the Geothermal Biome\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_NewHorizons.T_ACH_NewHorizons",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_NEW_HORIZONS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "AttackNPC",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"AttackNPC-DisplayName\", \"Plot Armor\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"AttackNPC-Description\", \"Attempt to Damage a TEI Team Member\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_PlotArmor.T_ACH_PlotArmor",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_PLOT_ARMOR",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "UnlockManu",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"UnlockManu-DisplayName\", \"Mass Production\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"UnlockManu-Description\", \"Unlock the Manufacturer\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_MassProduction.T_ACH_MassProduction",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Manufacturer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "SteamAchievementId": "ACH_MASS_PRODUCTION",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "UnlockBPT5",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"UnlockBPT5-DisplayName\", \"Peak Tech\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"UnlockBPT5-Description\", \"Unlock all Blueprints in Tier 5\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_PeakTech.T_ACH_PeakTech",
+            "AccoladeImpl": "/Script/Icarus.AllTalentsInTreeAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "BlueprintsUnlockedT5List"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Blueprint_T5_Manufacturer",
+                    "DataTableName": "D_TalentTrees"
+                }
+            ],
+            "SteamAchievementId": "ACH_PEAK_TECH",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "MaxRankELY",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"MaxRankELY-DisplayName\", \"Gotta Catch Them All II\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"MaxRankELY-Description\", \"Max Rank Elysium Creatures in the Bestiary\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_GottaCatchThemAlllII.T_ACH_GottaCatchThemAlllII",
+            "AccoladeImpl": "/Script/Icarus.TaskListAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "Tracker": {
+                "RowName": "BestiaryEntriesCompletedList2"
+            },
+            "ExtraDatas": [
+                {
+                    "RowName": "Mange_Wolf",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "GhostCrocodile",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Reaver",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Drone",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Orka",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Bounder_Desert",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Tundra_Deer",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Hopping_Creature",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "SulfurWorm",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Raptor",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Irradiated_Prospector",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Chew",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Hopping_Creature_Swamp",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Raptor_Desert",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Stomper",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Storca",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Giant_Roach",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "DragonFly",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Flying_Tank",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Flightless_Tank",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Geothermal_Bat",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Yeti",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Irradiated_Abomination",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "SandScuttler",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Tundra_Monkey",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "FleshSac_Floater",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Irradiated_Mutation",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Geothermal_Spider",
+                    "DataTableName": "D_BestiaryData"
+                },
+                {
+                    "RowName": "Sandwyrm_Queen",
+                    "DataTableName": "D_BestiaryData"
+                }
+            ],
+            "SteamAchievementId": "ACH_COMPLETE_BESTIARY_ELYSIUM",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ConvUranium",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ConvUranium-DisplayName\", \"Heavy Metal Remix\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ConvUranium-Description\", \"Convert Inert Uranium into Platinum or Titanium\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_HeavyMetalRemix.T_ACH_HeavyMetalRemix",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_HEAVY_METAL_REMIX",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ChainsawTree",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ChainsawTree-DisplayName\", \"Saw It Coming\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ChainsawTree-Description\", \"Use a Chainsaw on a Tree\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_SawitComing.T_ACH_SawitComing",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_SAW_IT_COMING",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "UseJackhammer",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"UseJackhammer-DisplayName\", \"Rock Out\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"UseJackhammer-Description\", \"Use a Jackhammer on an Ore\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Jackhammer.T_ACH_Jackhammer",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_ROCK_OUT",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "UseNailgun",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"UseNailgun-DisplayName\", \"Industrial Stapling\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"UseNailgun-Description\", \"Use a Nailgun to Repair a Structure\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_NailedIt.T_ACH_NailedIt",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_INDUSTRIAL_STAPLING",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "UseMiningLaser",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"UseMiningLaser-DisplayName\", \"Advanced Technology\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"UseMiningLaser-Description\", \"Mine using a Mining Laser\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Advanced_Technology.T_ACH_Advanced_Technology",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_ADVANCED_TECHNOLOGY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "UseReactor",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"UseReactor-DisplayName\", \"3-Eyed Fish\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"UseReactor-Description\", \"Build & Place a Nuclear Reactor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_ThreeEyedFish.T_ACH_ThreeEyedFish",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_THREE_EYED_FISH",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GenerateCrude",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"GenerateCrude-DisplayName\", \"Drill, Baby, Drill \")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"GenerateCrude-Description\", \"Generate Refined Oil from a Crude Oil Refiner\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Drillbabydrill.T_ACH_Drillbabydrill",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_DRILL_BABY_DRILL",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "GenerateNatural",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"GenerateNatural-DisplayName\", \"The Better Option?\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"GenerateNatural-Description\", \"Generate Refined Oil from a Natural Oil Refiner\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_TheBetterOption.T_ACH_TheBetterOption",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_THE_BETTER_OPTION",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "CrudePower",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"CrudePower-DisplayName\", \"Crude Awakening\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"CrudePower-Description\", \"Build and Place a Crude Oil Power Generator\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_CrudeAwakening.T_ACH_CrudeAwakening",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_CRUDE_AWAKENING",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "ChargeLithiumTool",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"ChargeLithiumTool-DisplayName\", \"Power Trip\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"ChargeLithiumTool-Description\", \"Charge a Lithium tool\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_PowerTrip.T_ACH_PowerTrip",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_POWER_TRIP",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "CreatePortBattery",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"CreatePortBattery-DisplayName\", \"Handy\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"CreatePortBattery-Description\", \"Create a Portable Battery\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Handy.T_ACH_Handy",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_HANDY",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "KillSpawner",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillSpawner-DisplayName\", \"Hard Reset\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillSpawner-Description\", \"Destroy a Drone Spawner with a Sledgehammer\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_HardReset.T_ACH_HardReset",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_HARD_RESET",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "BuildIce",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"BuildIce-DisplayName\", \"So Cool\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"BuildIce-Description\", \"Build a Structure with Ice\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_SoCool.T_ACH_SoCool",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "GoalCount": 16,
+            "SteamAchievementId": "ACH_SO_COOL",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "PlaceFort",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"PlaceFort-DisplayName\", \"Rock Solid\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"PlaceFort-Description\", \"Build and place Concrete or Stone Fortifications\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_RockSolid.T_ACH_RockSolid",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_ROCK_SOLID",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "KillQueen",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillQueen-DisplayName\", \"Royal Decree\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillQueen-Description\", \"Kill the Sandwyrm Queen\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_RoyalDecree.T_ACH_RoyalDecree",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_ROYAL_DECREE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "KillQueenHard",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillQueenHard-DisplayName\", \"Wyrm Reaper\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillQueenHard-Description\", \"Kill the Sandwyrm Queen on Hard\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_WyrmReaper.T_ACH_WyrmReaper",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_WYRM_REAPER",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "FishRadZone",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"FishRadZone-DisplayName\", \"Gone Fission\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"FishRadZone-Description\", \"Fish in a Radioactive Zone\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_GoneFission.T_ACH_GoneFission",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_GONE_FISSION",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "KillWithRadAmmo",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"KillWithRadAmmo-DisplayName\", \"Biochemical Warfare\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"KillWithRadAmmo-Description\", \"Kill a creature with Uranium Ammo\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_BiochemicalWarfare.T_ACH_BiochemicalWarfare",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_BIOCHEMICAL_WARFARE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "MushroomSwamp",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"MushroomSwamp-DisplayName\", \"Mushrooms?\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"MushroomSwamp-Description\", \"Find the Mushroom Swamp\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_Mushrooms.T_ACH_Mushrooms",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_MUSHROOMS",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "TeslaCoil",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"TeslaCoil-DisplayName\", \"Pinnacle of his Career\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"TeslaCoil-Description\", \"Have a Tesla Coil Defeat an Enemy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_PinnacleofHisCareer.T_ACH_PinnacleofHisCareer",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_PINNACLE_OF_HIS_CAREER",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "FlameTurretKill",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"FlameTurretKill-DisplayName\", \"Burn Notice\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"FlameTurretKill-Description\", \"Have a Flamethrower Turret Defeat an Enemy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_BurnNotice.T_ACH_BurnNotice",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_BURN_NOTICE",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "UseGeigerCounter",
+            "DisplayName": "NSLOCTEXT(\"D_Accolades\", \"UseGeigerCounter-DisplayName\", \"Read the Room\")",
+            "Description": "NSLOCTEXT(\"D_Accolades\", \"UseGeigerCounter-Description\", \"Use a Geiger Counter\")",
+            "Icon": "/Game/Assets/2DArt/UI/Accolades/Achievements/T_ACH_ReadTheRoom.T_ACH_ReadTheRoom",
+            "AccoladeImpl": "/Script/Icarus.OneOffAccolade",
+            "Category": {
+                "Value": "Achievement"
+            },
+            "SteamAchievementId": "ACH_READ_THE_ROOM",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         }
     ]
 }

@@ -3438,8 +3438,18 @@
         },
         {
             "Name": "Mesh_Meta_Biofuel_Can",
-            "ItemMesh": "/Game/ASS/ITM/SM_ITM_Biofuel_META.SM_ITM_Biofuel_META",
-            "EquipHandMesh": "/Game/ASS/ITM/SM_ITM_Biofuel_META.SM_ITM_Biofuel_META"
+            "ItemMesh": "/Game/ASS/ITM/SM_ITM_Biofuel_META_Biofuel.SM_ITM_Biofuel_META_Biofuel",
+            "EquipHandMesh": "/Game/ASS/ITM/SM_ITM_Biofuel_META_Biofuel.SM_ITM_Biofuel_META_Biofuel"
+        },
+        {
+            "Name": "Mesh_Meta_Hydrazine_Can",
+            "ItemMesh": "/Game/ASS/ITM/SM_ITM_Biofuel_META_Hydrazine.SM_ITM_Biofuel_META_Hydrazine",
+            "EquipHandMesh": "/Game/ASS/ITM/SM_ITM_Biofuel_META_Hydrazine.SM_ITM_Biofuel_META_Hydrazine"
+        },
+        {
+            "Name": "Mesh_Meta_Refined_Oil_Can",
+            "ItemMesh": "/Game/ASS/ITM/SM_ITM_Biofuel_META_RefinedOil.SM_ITM_Biofuel_META_RefinedOil",
+            "EquipHandMesh": "/Game/ASS/ITM/SM_ITM_Biofuel_META_RefinedOil.SM_ITM_Biofuel_META_RefinedOil"
         },
         {
             "Name": "Mesh_Kit_Radar_Meta",
@@ -5596,7 +5606,8 @@
             "ItemActor": "/Game/BP/AI/Bosses/Misc/BP_LavaHunter_Spit.BP_LavaHunter_Spit_C"
         },
         {
-            "Name": "Mesh_Envirosuit_Larkwell"
+            "Name": "Mesh_Envirosuit_Larkwell",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Person.SM_KIT_Person"
         },
         {
             "Name": "Mesh_Tackle_Box",
@@ -6162,6 +6173,16 @@
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
+            "Name": "Mesh_Ice_Kit",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Ice.SM_KIT_Ice",
+            "EquipHandMesh": "/Game/ASS/KIT/SM_KIT_Ice.SM_KIT_Ice",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Mesh_Brutalist_Decoration",
             "ItemMesh": "/Game/ASS/KIT/SM_KIT_Concrete.SM_KIT_Concrete"
         },
@@ -6499,6 +6520,12 @@
             "Name": "Mesh_Sandworm_Trophy_Head",
             "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
+        },
+        {
+            "Name": "Mesh_Landing_Pad_Player",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/LandingPad/BP_LandingPad_Player.BP_LandingPad_Player_C"
         },
         {
             "Name": "Mesh_Advanced_Exotic_Delivery_Interface",
@@ -7091,7 +7118,7 @@
         },
         {
             "Name": "Mesh_Manufacturer",
-            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Fabricator.SM_KIT_Fabricator",
+            "ItemMesh": "/Game/ASS/ITM/SM_ITM_T5_Kit.SM_ITM_T5_Kit",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_Fabricator.BP_Fabricator_C"
         },
@@ -7104,7 +7131,7 @@
         },
         {
             "Name": "Mesh_Generic_Manufacturer",
-            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Fabricator.SM_KIT_Fabricator",
+            "ItemMesh": "/Game/ASS/ITM/SM_ITM_T5_Kit.SM_ITM_T5_Kit",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
@@ -7540,6 +7567,18 @@
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Seismic_Probe.BP_Seismic_Probe_C"
         },
         {
+            "Name": "Mesh_Carcass_Orka_Arctic",
+            "ItemMesh": "/Game/ASS/CRE/Orka/SK_CRE_Orka_Arctic.SK_CRE_Orka_Arctic",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Orka_Arctic_Corpse.BP_Orka_Arctic_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Orka/SK_CRE_Orka_Arctic.SK_CRE_Orka_Arctic",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Orka_Arctic_Corpse.BP_Orka_Arctic_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Mesh_Jackhammer",
             "ItemMesh": "/Game/ASS/ITM/SM_ITM_JackHammer.SM_ITM_JackHammer",
             "EquipHandMesh": "/Game/ASS/ITM/SK_ITM_JackHammer.SK_ITM_JackHammer",
@@ -7745,6 +7784,18 @@
             "ItemActor": "/Game/BP/Objects/World/Items/Resources/BP_StaticItem_RawUranium.BP_StaticItem_RawUranium_C"
         },
         {
+            "Name": "Mesh_Carcass_Slinker",
+            "ItemMesh": "/Game/ASS/CRE/Slinker/SK_CRE_Slinker.SK_CRE_Slinker",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Slinker_Corpse.BP_Slinker_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Slinker/SK_CRE_Slinker.SK_CRE_Slinker",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Slinker_Corpse.BP_Slinker_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Mesh_Carcass_SwampBird_Mount",
             "ItemMesh": "/Game/ASS/CRE/SwampBird/SK_CRE_SwampBird.SK_CRE_SwampBird",
             "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_SwampBird_Mount_Corpse.BP_SwampBird_Mount_Corpse_C"
@@ -7753,6 +7804,16 @@
             "Name": "Mesh_CarcassWoolyZebra_Mount",
             "ItemMesh": "/Game/ASS/CRE/Wooly_Zebra/SK_CRE_Wooly_Zebra.SK_CRE_Wooly_Zebra",
             "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Wooly_Zebra_Mount_Corpse.BP_Wooly_Zebra_Mount_Corpse_C"
+        },
+        {
+            "Name": "Mesh_Carcass_Irradiated_Prospector",
+            "ItemMesh": "/Game/ASS/CRE/Irradiated_Prospector/SK_CRE_Irradiated_Prospector.SK_CRE_Irradiated_Prospector",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Irradiated_Prospector_Corpse.BP_Irradiated_Prospector_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Mesh_Lithium_Ore",
@@ -7812,7 +7873,7 @@
         },
         {
             "Name": "Mesh_Mining_Laser",
-            "ItemMesh": "/Game/ASS/WEP/GUN_MiningLaser/SM_GUN_MiningLaser.SM_GUN_MiningLaser",
+            "ItemMesh": "/Game/ASS/WEP/Gun_MiningLaser/SM_GUN_MiningLaser.SM_GUN_MiningLaser",
             "EquipHandMesh": "/Game/ASS/WEP/Gun_MiningLaser/SK_GUN_MiningLaser.SK_GUN_MiningLaser",
             "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Mining_Laser.BP_SkeletalItem_Mining_Laser_C"
         },
@@ -7853,9 +7914,78 @@
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
+            "Name": "Mesh_Carcass_Bounder_Desert",
+            "ItemMesh": "/Game/ASS/CRE/Bounder/SK_CRE_Bounder_Desert.SK_CRE_Bounder_Desert",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Bounder_Desert_Corpse.BP_Bounder_Desert_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Bounder/SK_CRE_Bounder_Desert.SK_CRE_Bounder_Desert",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Bounder_Desert_Corpse.BP_Bounder_Desert_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Mesh_Radioactive_Waste",
             "ItemMesh": "/Game/ASS/DEP/SM_DEP_Steel_Barrel_Radioactive.SM_DEP_Steel_Barrel_Radioactive",
             "ItemActor": "/Game/BP/Objects/World/Items/Resources/BP_StaticItem_RawUranium.BP_StaticItem_RawUranium_C"
+        },
+        {
+            "Name": "Mesh_Carcass_Tundra_Deer",
+            "ItemMesh": "/Game/ASS/CRE/Tundra_Deer/SK_CRE_Tundra_Deer.SK_CRE_Tundra_Deer",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_TundraDeer_Corpse.BP_TundraDeer_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Tundra_Deer/SK_CRE_Tundra_Deer.SK_CRE_Tundra_Deer",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_TundraDeer_Corpse.BP_TundraDeer_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_CarcassChew",
+            "ItemMesh": "/Game/ASS/CRE/Chew/SK_CRE_Chew.SK_CRE_Chew",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Chew_Corpse.BP_Chew_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Chew/SK_CRE_Chew.SK_CRE_Chew",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Chew_Corpse.BP_Chew_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Hopping_Creature",
+            "ItemMesh": "/Game/ASS/CRE/Hopping_Creature/SK_CRE_Hopping_Creature.SK_CRE_Hopping_Creature",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Hopping_Creature_Corpse.BP_Hopping_Creature_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Rabbit_Variant_Snow",
+            "ItemMesh": "/Game/ASS/CRE/Rabbit/Variant/SK_CRE_Rabbit_Var.SK_CRE_Rabbit_Var",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Rabbit_Variant_Snow_Corpse.BP_Rabbit_Variant_Snow_Corpse_C",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/CRE/Rabbit/Variant/SK_CRE_Rabbit_Var.SK_CRE_Rabbit_Var",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Rabbit_Variant_Corpse.BP_Rabbit_Variant_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Raptor_Juvenile",
+            "ItemMesh": "/Game/ASS/CRE/Raptor/Juvie/SK_CRE_Raptor_Juvie.SK_CRE_Raptor_Juvie",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Raptor_Juvenile_Corpse.BP_Raptor_Juvenile_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Mesh_Nailgun",
@@ -7864,10 +7994,130 @@
             "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Nailgun.BP_SkeletalItem_Nailgun_C"
         },
         {
+            "Name": "Mesh_Carcass_Reaver",
+            "ItemMesh": "/Game/ASS/CRE/Reaver/SK_CRE_Reaver.SK_CRE_Reaver",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Reaver_Corpse.BP_Reaver_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Reaver/SK_CRE_Reaver.SK_CRE_Reaver",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Reaver_Corpse.BP_Reaver_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Giant_Roach",
+            "ItemMesh": "/Game/ASS/CRE/Giant_Roach/SK_CRE_Giant_Roach.SK_CRE_Giant_Roach",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Giant_Roach_Corpse.BP_Giant_Roach_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Giant_Roach/SK_CRE_Giant_Roach.SK_CRE_Giant_Roach",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Giant_Roach_Corpse.BP_Giant_Roach_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Raptor",
+            "ItemMesh": "/Game/ASS/CRE/Raptor/SK_CRE_Raptor.SK_CRE_Raptor",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Raptor_Corpse.BP_Raptor_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Raptor/SK_CRE_Raptor.SK_CRE_Raptor",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Raptor_Corpse.BP_Raptor_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_CarcassChew_Mount",
+            "ItemMesh": "/Game/ASS/CRE/Chew/SK_CRE_Chew.SK_CRE_Chew",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Mount_Chew_Corpse.BP_Mount_Chew_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Chew_Juvenile",
+            "ItemMesh": "/Game/ASS/CRE/Chew/Juvie/SK_CRE_Chew_Juvie.SK_CRE_Chew_Juvie",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Chew_Juvenile_Corpse.BP_Chew_Juvenile_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Mesh_Hay_Bale",
             "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Decorations/BP_Hay_Bale_A.BP_Hay_Bale_A_C"
+        },
+        {
+            "Name": "Mesh_Carcass_Hopping_Creature_Swamp",
+            "ItemMesh": "/Game/ASS/CRE/Hopping_Creature/SK_CRE_Hopping_Creature.SK_CRE_Hopping_Creature",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Hopping_Creature_Swamp_Corpse.BP_Hopping_Creature_Swamp_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Raptor_Desert",
+            "ItemMesh": "/Game/ASS/CRE/Raptor/SK_CRE_Raptor.SK_CRE_Raptor",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Raptor_Desert_Corpse.BP_Raptor_Desert_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Raptor/SK_CRE_Raptor.SK_CRE_Raptor",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Raptor_Desert_Corpse.BP_Raptor_Desert_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Stomper",
+            "ItemMesh": "/Game/ASS/CRE/Stomper/SK_CRE_Stomper.SK_CRE_Stomper",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Stomper_Corpse.BP_Stomper_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Stomper_Matriarch",
+            "ItemMesh": "/Game/ASS/CRE/Stomper/SK_CRE_Stomper_Matriarch.SK_CRE_Stomper_Matriarch",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Stomper_Matriarch_Corpse.BP_Stomper_Matriarch_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Slinker_Juvenile",
+            "ItemMesh": "/Game/ASS/CRE/Slinker/Juvie/SK_CRE_Slinker_Juvie.SK_CRE_Slinker_Juvie",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Slinker_Juvenile_Corpse.BP_Slinker_Juvenile_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Storca",
+            "ItemMesh": "/Game/ASS/CRE/Storca/SK_CRE_Storca.SK_CRE_Storca",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Storca_Corpse.BP_Storca_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Storca/SK_CRE_Storca.SK_CRE_Storca",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Storca_Corpse.BP_Storca_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Mesh_ClayBrick_Fireplace",
@@ -7880,6 +8130,54 @@
             "ItemMesh": "/Game/ASS/KIT/SM_KIT_Brick_V2.SM_KIT_Brick_V2",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
             "DeployableActor": "/Game/BP/Objects/World/Items/Deployables/Cooking/BP_StoneBrick_Fireplace.BP_StoneBrick_Fireplace_C"
+        },
+        {
+            "Name": "Mesh_Carcass_DragonFly",
+            "ItemMesh": "/Game/ASS/CRE/Dragonfly/SK_CRE_Dragonfly.SK_CRE_Dragonfly",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_DragonFly_Corpse.BP_DragonFly_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Dragonfly/SK_CRE_Dragonfly.SK_CRE_Dragonfly",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_DragonFly_Corpse.BP_DragonFly_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Flying_Tank",
+            "ItemMesh": "/Game/ASS/CRE/Flying_Tank/SK_CRE_Flying_Tank.SK_CRE_Flying_Tank",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Flying_Tank_Corpse.BP_Flying_Tank_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Flying_Tank/SK_CRE_Flying_Tank.SK_CRE_Flying_Tank",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Flying_Tank_Corpse.BP_Flying_Tank_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Flightless_Tank",
+            "ItemMesh": "/Game/ASS/CRE/Flightless_Tank/SK_CRE_Flightless_Tank.SK_CRE_Flightless_Tank",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Flightless_Tank_Corpse.BP_Flightless_Tank_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Flightless_Tank/SK_CRE_Flightless_Tank.SK_CRE_Flightless_Tank",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Flightless_Tank_Corpse.BP_Flightless_Tank_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_Sandwyrm_Queen",
+            "ItemMesh": "/Game/ASS/CRE/Wyrm_Queen/SK_CRE_Wyrm_Queen.SK_CRE_Wyrm_Queen",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Sandwyrm_Queen_Corpse.BP_Sandwyrm_Queen_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Wyrm_Queen/SK_CRE_Wyrm_Queen.SK_CRE_Wyrm_Queen",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Sandwyrm_Queen_Corpse.BP_Sandwyrm_Queen_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Mesh_Laser_Tripwire",
@@ -7935,6 +8233,16 @@
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
         },
         {
+            "Name": "Mesh_Carcass_Yeti",
+            "ItemMesh": "/Game/ASS/CRE/Yeti/SK_CRE_Yeti.SK_CRE_Yeti",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Yeti_Corpse.BP_Yeti_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Mesh_Yeti_Trophy",
             "ItemMesh": "/Game/ASS/KIT/SM_KIT_Crafting.SM_KIT_Crafting",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
@@ -7944,6 +8252,28 @@
             "Name": "Mesh_Synthetic_Armor_Pack",
             "ItemMesh": "/Game/ASS/CHA/ARM/SM_CHA_ARM_SyntheticPack.SM_CHA_ARM_SyntheticPack",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
+        },
+        {
+            "Name": "Mesh_Carcass_Irradiated_Abomination",
+            "ItemMesh": "/Game/ASS/CRE/Irradiated_Abomination/SK_CRE_Irradiated_Abomination.SK_CRE_Irradiated_Abomination",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Irradiated_Abomination_Corpse.BP_Irradiated_Abomination_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Mesh_Carcass_SandScuttle",
+            "ItemMesh": "/Game/ASS/CRE/Sandscuttle/SK_CRE_Sand_Scuttle.SK_CRE_Sand_Scuttle",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_SandScuttle_Corpse.BP_SandScuttle_Corpse_C",
+            "EquipHandMesh": "/Game/ASS/CRE/Sandscuttle/SK_CRE_Sand_Scuttle.SK_CRE_Sand_Scuttle",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_SandScuttle_Corpse.BP_SandScuttle_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Mesh_Fortification_Concrete",
@@ -7992,6 +8322,16 @@
             "Name": "Mesh_Carcass_Slinker_Mount",
             "ItemMesh": "/Game/ASS/CRE/Slinker/SK_CRE_Slinker.SK_CRE_Slinker",
             "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Slinker_Mount_Corpse.BP_Slinker_Mount_Corpse_C"
+        },
+        {
+            "Name": "Mesh_Yeti_BrownSnowball",
+            "ItemMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "ItemActor": "/Game/BP/AI/Bosses/Misc/BP_Yeti_BrownSnowball.BP_Yeti_BrownSnowball_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Mesh_Aluminium_Screw",
@@ -8047,6 +8387,16 @@
             "EquipHandMesh": "/Game/ASS/CRE/Spider/SK_CRE_Spider.SK_CRE_Spider",
             "EquipHandActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_GeothermalSpider_Corpse.BP_GeothermalSpider_Corpse_C",
             "EquipBackActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_GeothermalSpider_Corpse.BP_GeothermalSpider_Corpse_C"
+        },
+        {
+            "Name": "Mesh_Carcass_Irradiated_Mutation",
+            "ItemMesh": "/Game/ASS/CRE/Irradiated_Mutation/SK_CRE_Irradiated_Mutation.SK_CRE_Irradiated_Mutation",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Irradiated_Mutation_Corpse.BP_Irradiated_Mutation_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         },
         {
             "Name": "Mesh_WyrmQueen_Spit",
@@ -8141,8 +8491,8 @@
         },
         {
             "Name": "Mesh_Sandwyrm_Backpack",
-            "ItemMesh": "/Game/ASS/ITM/SK_ITM_Backpack_LavaHunter.SK_ITM_Backpack_LavaHunter",
-            "EquipBackMesh": "/Game/ASS/ITM/SK_ITM_Backpack_LavaHunter.SK_ITM_Backpack_LavaHunter"
+            "ItemMesh": "/Game/ASS/ITM/SK_ITM_Backpack_SinewWeave.SK_ITM_Backpack_SinewWeave",
+            "EquipBackMesh": "/Game/ASS/ITM/SK_ITM_Backpack_SinewWeave.SK_ITM_Backpack_SinewWeave"
         },
         {
             "Name": "Mesh_Oil_Can",
@@ -8174,6 +8524,16 @@
             "ItemActor": "/Game/BP/AI/Bosses/Misc/BP_SulfurWorm_Spit.BP_SulfurWorm_Spit_C"
         },
         {
+            "Name": "Mesh_Carcass_Raptor_Desert_Juvenile",
+            "ItemMesh": "/Game/ASS/CRE/Raptor/Juvie/SK_CRE_Raptor_Juvie.SK_CRE_Raptor_Juvie",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_Raptor_Desert_Juvenile_Corpse.BP_Raptor_Desert_Juvenile_Corpse_C",
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Mesh_Sandwyrm_Bow",
             "ItemMesh": "/Game/ASS/WEP/SM_BOW_SandWyrm_Queen.SM_BOW_SandWyrm_Queen",
             "EquipHandMesh": "/Game/ASS/WEP/SK_BOW_SandWyrm_Queen.SK_BOW_SandWyrm_Queen",
@@ -8183,6 +8543,49 @@
             "Name": "Mesh_Truffle",
             "ItemMesh": "/Game/ASS/ENV/HRB/Truffle_Plant/SM_ITM_Truffle_Var1.SM_ITM_Truffle_Var1",
             "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube"
+        },
+        {
+            "Name": "Mission_Drone_Navigation",
+            "ItemMesh": "/Game/ASS/ITM/SM_ITM_HighTechAsset_Assembled.SM_ITM_HighTechAsset_Assembled",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/ITM/SM_ITM_HighTechAsset_Assembled.SM_ITM_HighTechAsset_Assembled",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Back/BP_Back_Mission_Navigation.BP_Back_Mission_Navigation_C"
+        },
+        {
+            "Name": "Mesh_Speeder_Kit",
+            "ItemMesh": "/Game/ASS/ITM/SM_ITM_T5_Kit.SM_ITM_T5_Kit",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/VHC/Speeder_Bike/SM_VHC_Speeder_Bike_Kit.SM_VHC_Speeder_Bike_Kit",
+            "EquipBackActor": "/Game/BP/Objects/World/Items/Back/BP_Back_Mission_Hoverframe.BP_Back_Mission_Hoverframe_C"
+        },
+        {
+            "Name": "Mesh_Submachine_Gun_Scout",
+            "ItemMesh": "/Game/ASS/WEP/SK_GUN_SMG_Sandwyrm_Queen/SK_GUN_SMG_Sandwyrm_Queen_White.SK_GUN_SMG_Sandwyrm_Queen_White",
+            "EquipHandMesh": "/Game/ASS/WEP/SK_GUN_SMG_Sandwyrm_Queen/SK_GUN_SMG_Sandwyrm_Queen_White.SK_GUN_SMG_Sandwyrm_Queen_White",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Sub_Machine_Scout.BP_SkeletalItem_Sub_Machine_Scout_C"
+        },
+        {
+            "Name": "Mesh_Submachine_Gun_Sandwyrm",
+            "ItemMesh": "/Game/ASS/WEP/SK_GUN_SMG_Sandwyrm_Queen/SK_GUN_SMG_Sandwyrm_Queen.SK_GUN_SMG_Sandwyrm_Queen",
+            "EquipHandMesh": "/Game/ASS/WEP/SK_GUN_SMG_Sandwyrm_Queen/SK_GUN_SMG_Sandwyrm_Queen.SK_GUN_SMG_Sandwyrm_Queen",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Sub_Machine_Sandwyrm.BP_SkeletalItem_Sub_Machine_Sandwyrm_C"
+        },
+        {
+            "Name": "Mesh_Carcass_SpeederBike",
+            "ItemMesh": "/Game/ASS/VHC/Speeder_Bike/SK_VHC_Speeder_Bike.SK_VHC_Speeder_Bike",
+            "ItemActor": "/Game/BP/Objects/World/Items/Deployables/AI/BP_SpeederBike_Corpse.BP_SpeederBike_Corpse_C"
+        },
+        {
+            "Name": "Mesh_Exotic_Uranium_Collector",
+            "ItemMesh": "/Game/ASS/KIT/SM_KIT_Fabricator.SM_KIT_Fabricator",
+            "EquipHandMesh": "/Game/Assets/3DArt/Interactables/Items/DummyCube/SK_dummy_cube.SK_dummy_cube",
+            "EquipBackMesh": "/Game/ASS/DEP/Uranium_Collection_Device/SM_ITM_Uranium_Collection_Device_Backpack.SM_ITM_Uranium_Collection_Device_Backpack"
+        },
+        {
+            "Name": "Mesh_LegendaryWeapon_Sandwyrm_Chainsaw",
+            "ItemMesh": "/Game/ASS/ITM/WeaponCrate_Norex/SM_ITM_WeaponCrate_Norex.SM_ITM_WeaponCrate_Norex",
+            "EquipHandMesh": "/Game/ASS/ITM/Legendary_Chainsaw/SK_ITM_Legendary_Chainsaw_CORE.SK_ITM_Legendary_Chainsaw_CORE",
+            "EquipHandActor": "/Game/BP/Objects/World/Items/Weapons/BP_SkeletalItem_Sandwyrm_Chainsaw.BP_SkeletalItem_Sandwyrm_Chainsaw_C"
         }
     ]
 }

@@ -32,6 +32,10 @@
                 {
                     "RowName": "EnemyPlayerOnly",
                     "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "HostileDroneOrSoldier",
+                    "DataTableName": "D_AIRelationships"
                 }
             ],
             "NeutralRelationships": [
@@ -291,6 +295,14 @@
                 {
                     "RowName": "NeutralMediumHerbivore",
                     "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "HostileDroneOrSoldier",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "EnemyDronesOnly",
+                    "DataTableName": "D_AIRelationships"
                 }
             ]
         },
@@ -379,6 +391,14 @@
                 {
                     "RowName": "NeutralMediumHerbivore",
                     "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "HostileDroneOrSoldier",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "EnemyDronesOnly",
+                    "DataTableName": "D_AIRelationships"
                 }
             ]
         },
@@ -440,6 +460,14 @@
                 {
                     "RowName": "NeutralMediumHerbivore",
                     "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "HostileDroneOrSoldier",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "EnemyDronesOnly",
+                    "DataTableName": "D_AIRelationships"
                 }
             ]
         },
@@ -500,6 +528,14 @@
                 },
                 {
                     "RowName": "NeutralMediumHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "HostileDroneOrSoldier",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "EnemyDronesOnly",
                     "DataTableName": "D_AIRelationships"
                 }
             ]
@@ -579,6 +615,10 @@
                 {
                     "RowName": "NeutralMediumHerbivore",
                     "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "HostileDroneOrSoldier",
+                    "DataTableName": "D_AIRelationships"
                 }
             ]
         },
@@ -601,6 +641,124 @@
                 },
                 {
                     "RowName": "HuntingLargeCarnivore",
+                    "DataTableName": "D_AIRelationships"
+                }
+            ]
+        },
+        {
+            "Name": "HostileDroneOrSoldier",
+            "HostileRelationships": [
+                {
+                    "RowName": "EnemyAll",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "Player",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "EnemyDronesOnly",
+                    "DataTableName": "D_AIRelationships"
+                }
+            ],
+            "FriendlyRelationships": [
+                {
+                    "RowName": "FriendlyAll",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultLargeCarnivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultLargeHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultMediumCarnivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultMediumHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultSmallCarnivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultSmallHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "NeutralLargeHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "NeutralMediumCarnivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "NeutralMediumHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "HostileDroneOrSoldier",
+                    "DataTableName": "D_AIRelationships"
+                }
+            ]
+        },
+        {
+            "Name": "EnemyDronesOnly",
+            "HostileRelationships": [
+                {
+                    "RowName": "HostileDroneOrSoldier",
+                    "DataTableName": "D_AIRelationships"
+                }
+            ],
+            "FriendlyRelationships": [
+                {
+                    "RowName": "FriendlyAll",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultLargeCarnivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultLargeHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultMediumCarnivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultMediumHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultSmallCarnivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "DefaultSmallHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "NeutralLargeHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "NeutralMediumCarnivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "NeutralMediumHerbivore",
+                    "DataTableName": "D_AIRelationships"
+                },
+                {
+                    "RowName": "Player",
                     "DataTableName": "D_AIRelationships"
                 }
             ]

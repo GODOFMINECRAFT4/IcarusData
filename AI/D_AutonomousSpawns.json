@@ -212,6 +212,63 @@
             "MaxDistanceToPlayers": 30000
         },
         {
+            "Name": "SandScuttle",
+            "AISetup": {
+                "Value": "Sand_Scuttle"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_Corpses.BP_AISpawnBehaviour_AroundPlayers_Corpses_C",
+            "MaxSpawnCount": 3,
+            "MaxDistanceToPlayers": 2000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "SulphurWorm",
+            "AISetup": {
+                "Value": "Sulfur_Worm_Pincer_Variant"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_SulphurWormsInLakes.BP_AISpawnBehaviour_AroundPlayers_SulphurWormsInLakes_C",
+            "MaxNumAroundPlayers": 1,
+            "MaxSpawnCount": 3,
+            "MaxDistanceToPlayers": 5000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Dragonfly_Nest",
+            "IcarusActorClass": "/Game/BP/AI/Basic/Caves/BP_DragonFlyNest.BP_DragonFlyNest_C",
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners.BP_AISpawnBehaviour_AroundPlayers_GroundSpawner_Spawners_C",
+            "MaxNumAroundPlayers": 2,
+            "MaxSpawnCount": 5,
+            "MaxDistanceToPlayers": 30000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "FleshSac_Floater",
+            "AISetup": {
+                "Value": "FleshSac_Floater"
+            },
+            "AISpawnBehaviour": "/Game/BP/AI/SpawnBehaviours/BP_AISpawnBehaviour_AroundPlayers_GasFlyer.BP_AISpawnBehaviour_AroundPlayers_GasFlyer_C",
+            "MaxNumAroundPlayers": 8,
+            "MaxSpawnCount": 25,
+            "MaxDistanceToPlayers": 30000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Spider",
             "AISetup": {
                 "Value": "Spider"

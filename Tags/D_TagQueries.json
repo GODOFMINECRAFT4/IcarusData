@@ -8111,6 +8111,136 @@
                 ],
                 "AutoDescription": " ANY( Item.Tool.PitchFork )"
             }
+        },
+        {
+            "Name": "Drone_Rotor",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.Rotor"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.Item.Rotor )"
+            }
+        },
+        {
+            "Name": "Drone_Nav",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.DroneNav"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.Item.DroneNav )"
+            }
+        },
+        {
+            "Name": "Drone_Battery",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Powered.Battery.Portable"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Powered.Battery.Portable )"
+            }
+        },
+        {
+            "Name": "Drone_Fuel",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Fillable.RefinedOil.Can"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Fillable.RefinedOil.Can )"
+            }
+        },
+        {
+            "Name": "FieldGuide_RefinedOilDevices",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FieldGuide.Device.RefinedOil"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( FieldGuide.Device.RefinedOil )"
+            }
+        },
+        {
+            "Name": "FieldGuide_CrudeOilDevices",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FieldGuide.Device.CrudeOil"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( FieldGuide.Device.CrudeOil )"
+            }
+        },
+        {
+            "Name": "Any_Fruit_And_Veges",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Plant.Fruit"
+                    },
+                    {
+                        "TagName": "Item.Plant.Vegetable"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Item.Plant.Fruit, Item.Plant.Vegetable )"
+            }
         }
     ]
 }

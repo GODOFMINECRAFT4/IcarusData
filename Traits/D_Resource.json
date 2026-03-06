@@ -581,6 +581,10 @@
             "bHasEnergyConnection": true,
             "EnergyFlow": {
                 "RowName": "Processor_Generic"
+            },
+            "bHasWaterConnection": true,
+            "WaterFlow": {
+                "RowName": "Fabricator"
             }
         },
         {
@@ -740,6 +744,13 @@
             "bHasFuelConnection": true,
             "FuelFlow": {
                 "RowName": "Flame_Turret_Store"
+            }
+        },
+        {
+            "Name": "Mission_Drone_Battery",
+            "bHasEnergyConnection": true,
+            "EnergyFlow": {
+                "RowName": "Drone_Battery"
             }
         }
     ]

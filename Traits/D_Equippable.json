@@ -993,6 +993,23 @@
             },
             "bBindToAllInventoryUpdates": false,
             "bPreventReinitialisation": true
+        },
+        {
+            "Name": "Carrying_Speeder",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
+            "GrantedStats": {
+                "(Value=\"CarryingSpeeder_?\")": 1
+            },
+            "bAppliesInAllInventories": true,
+            "bBindToAllInventoryUpdates": false
+        },
+        {
+            "Name": "Speeder_Saddle",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier_Saddle.BP_EquippableModifier_Saddle_C",
+            "GrantedStats": {
+                "(Value=\"BaseMountCargoSlots_+\")": 5,
+                "(Value=\"BaseWeightCapacity_+\")": 1000
+            }
         }
     ]
 }

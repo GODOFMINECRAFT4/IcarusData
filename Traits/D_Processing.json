@@ -582,6 +582,20 @@
             "AutoTurnOffDeviceWhileNotProcessing": false
         },
         {
+            "Name": "Manufacturer",
+            "DefaultRecipeSet": {
+                "RowName": "Manufacturer"
+            },
+            "bRequiresShelter": true,
+            "QueueSize": 10,
+            "MaxMilliwattage": 3000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Polymerizer",
             "DefaultRecipeSet": {
                 "RowName": "Polymerizer"
@@ -682,6 +696,71 @@
             "ManualActivation": true,
             "MaxMilliwattage": 500,
             "AutoTurnOffDeviceWhileNotProcessing": false
+        },
+        {
+            "Name": "Hunter",
+            "DefaultRecipeSet": {
+                "RowName": "Vestige_Exchange"
+            },
+            "RequiresEnergy": false,
+            "MaxMilliwattage": 100000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Norex_NPC",
+            "DefaultRecipeSet": {
+                "RowName": "Biomass_Exchange"
+            },
+            "RequiresEnergy": false,
+            "MaxMilliwattage": 100000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Farmer_NPC",
+            "DefaultRecipeSet": {
+                "RowName": "Crops_Exchange"
+            },
+            "RequiresEnergy": false,
+            "MaxMilliwattage": 100000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fisher_NPC",
+            "DefaultRecipeSet": {
+                "RowName": "Fish_Exchange"
+            },
+            "RequiresEnergy": false,
+            "MaxMilliwattage": 100000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Chef_NPC",
+            "DefaultRecipeSet": {
+                "RowName": "Food_Shop"
+            },
+            "RequiresEnergy": false,
+            "MaxMilliwattage": 100000,
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
         }
     ]
 }
