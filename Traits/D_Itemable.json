@@ -4296,24 +4296,6 @@
             "MaxStack": 20
         },
         {
-            "Name": "Item_Wood_Build_HalfPitch",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Build_HalfPitch-DisplayName\", \"Wood Halfpitches\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Half_Pitch_2.ITEM_Wood_Half_Pitch_2",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Build_HalfPitch-Description\", \"Combinable elements for creating 2:1 inclines.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Build_HalfPitch-FlavorText\", \"For the more discerning builder.\")",
-            "Weight": 500,
-            "MaxStack": 20
-        },
-        {
-            "Name": "Item_Wood_Build_HalfNormal",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Build_HalfNormal-DisplayName\", \"Wood Half Normal\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/ITEM_Wood_Halfpiece_0.ITEM_Wood_Halfpiece_0",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Build_HalfNormal-Description\", \"A kit of half-sized wooden building elements.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Build_HalfNormal-FlavorText\", \"Wood structures withstand light storms without damage. Can be repaired with a repair hammer.\")",
-            "Weight": 500,
-            "MaxStack": 20
-        },
-        {
             "Name": "Item_Sandworm_Knife",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sandworm_Knife-DisplayName\", \"Sandworm Knife\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Worm_Knife.ITEM_Worm_Knife",
@@ -16733,7 +16715,7 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Packed_Fuel_Brick-Description\", \"Compressed Fur mixed with Tree Sap to create a longer lasting fuel.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Packed_Fuel_Brick-FlavorText\", \"Weird, but it works.\")",
             "Weight": 500,
-            "MaxStack": 100
+            "MaxStack": 25
         },
         {
             "Name": "Item_Animal_Feed_Squash",
@@ -27432,10 +27414,10 @@
         },
         {
             "Name": "Item_Eden_NPC_Norex",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Eden_NPC_Norex-DisplayName\", \"Norex Liason \\'Agent\\'\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Eden_NPC_Norex-DisplayName\", \"Norex Liaison \\'Agent\\'\")",
             "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_NPC_Norex.T_Icon_Map_NPC_Norex",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Eden_NPC_Norex-Description\", \"A Norex representative who deals in the trading of Biomass. Buys creature parts.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Eden_NPC_Norex-FlavorText\", \"Why was it programmed with attitude.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Eden_NPC_Norex-FlavorText\", \"Why was it programmed with such an attitude?!\")",
             "Weight": 20000
         },
         {
@@ -27623,6 +27605,15 @@
             "MaxStack": 10
         },
         {
+            "Name": "Item_Fertility_Serum_Wolf",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Wolf-DisplayName\", \"Wolf Fertility Serum\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Serum_Slinker.T_ITEM_Serum_Slinker",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Wolf-Description\", \"Primes Male Wolves for mating. Once primed will seek out and fertilize nearby Female Wolf.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Wolf-FlavorText\", \"Husbandry has come to Icarus\")",
+            "Weight": 50,
+            "MaxStack": 10
+        },
+        {
             "Name": "Item_Speeder_Kit",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Speeder_Kit-DisplayName\", \"Prototype Hoverframe\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Vehicles/T_Speeder_kit.T_Speeder_kit",
@@ -27714,8 +27705,8 @@
             "Weight": 10000
         },
         {
-            "Name": "LegendaryWeapon_Sandwyrm_Chainsaw",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"LegendaryWeapon_Sandwyrm_Chainsaw-DisplayName\", \"Timber Extraction Unit\")",
+            "Name": "Item_LegendaryWeapon_Sandwyrm_Chainsaw",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_LegendaryWeapon_Sandwyrm_Chainsaw-DisplayName\", \"Timber Extraction Unit\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Sandwyrm_Chainsaw.T_ITEM_LegendaryWeapon_Sandwyrm_Chainsaw",
             "Weight": 12000,
             "Metadata": {
@@ -27723,6 +27714,92 @@
                     "RowName": "DangerousHorizons"
                 }
             }
+        },
+        {
+            "Name": "Item_Limestone_Diagonal_Set",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Diagonal_Set-DisplayName\", \"Limestone Diagonal Buildings\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Set_0.T_ITEM_Limestone_Diagonal_Set_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Diagonal_Set-Description\", \"A set of cross-tile diagonal pieces.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Diagonal_Set-FlavorText\", \"Back on Earth, Limestone as Calcium Carbonate is used in some medicines to soothe an upset stomach. Icarus Limestone is poisonous. Do NOT eat.\")",
+            "Weight": 5000,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Limestone_Curved_Set",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Curved_Set-DisplayName\", \"Limestone Curved Buildings\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Curved_Set_1.T_ITEM_Limestone_Curved_Set_1",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Curved_Set-Description\", \"A set of cross-tile curved pieces.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Curved_Set-FlavorText\", \"Back on Earth, Limestone as Calcium Carbonate is used in some medicines to soothe an upset stomach. Icarus Limestone is poisonous. Do NOT eat.\")",
+            "Weight": 5000,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Limestone_Diagonal_Curved_Wall_Angles",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Diagonal_Curved_Wall_Angles-DisplayName\", \"Limestone Curved Wall Angles\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_0.T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Diagonal_Curved_Wall_Angles-Description\", \"A set of cross-tile curved walls in various angles.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Diagonal_Curved_Wall_Angles-FlavorText\", \"Back on Earth, Limestone as Calcium Carbonate is used in some medicines to soothe an upset stomach. Icarus Limestone is poisonous. Do NOT eat.\")",
+            "Weight": 5000,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Limestone_Roof_CurvedAngles",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Roof_CurvedAngles-DisplayName\", \"Limestone Roof Curved Angle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Roof_CurvedAngles_0.T_ITEM_Concrete_Roof_CurvedAngles_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Roof_CurvedAngles-Description\", \"A set of curved roof pieces to place over or under curved wall angles.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Roof_CurvedAngles-FlavorText\", \"Back on Earth, Limestone as Calcium Carbonate is used in some medicines to soothe an upset stomach. Icarus Limestone is poisonous. Do NOT eat.\")",
+            "Weight": 5000,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Limestone_Curved_Wall",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Curved_Wall-DisplayName\", \"Limestone Wall/Roof Curved\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Wall_Curved_0.T_ITEM_Limestone_Wall_Curved_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Curved_Wall-Description\", \"Curved versions of the wall angles, for use underneath curved roofs.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Curved_Wall-FlavorText\", \"Back on Earth, Limestone as Calcium Carbonate is used in some medicines to soothe an upset stomach. Icarus Limestone is poisonous. Do NOT eat.\")",
+            "Weight": 5000,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Limestone_Advanced_Beam_Set",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Advanced_Beam_Set-DisplayName\", \"Limestone Advanced Beams\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Advanced_Beam_Set_0.T_ITEM_Limestone_Advanced_Beam_Set_0",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Advanced_Beam_Set-Description\", \"An advanced set of beams for use with diagonal and curved pieces.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Limestone_Advanced_Beam_Set-FlavorText\", \"Back on Earth, Limestone as Calcium Carbonate is used in some medicines to soothe an upset stomach. Icarus Limestone is poisonous. Do NOT eat.\")",
+            "Weight": 5000,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Meta_Resource_Pack_Lithium",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Lithium-DisplayName\", \"UDA Lithium Ore Resource Supply\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ResourcePack/T_ITEM_Resource_Pack_Lithium.T_ITEM_Resource_Pack_Lithium",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Lithium-Description\", \"A collection of 100 Lithium collected by another prospector for you. \\'CONSUME\\' to open bundle.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Lithium-FlavorText\", \"These supplies are ethically provided by contractors who were found to be in breach of precept 45-379b, this is enforced by Group 15 and its subsidiaries.\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Meta_Resource_Pack_Ruby",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Ruby-DisplayName\", \"UDA Ruby Ore Resource Supply\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ResourcePack/T_ITEM_Resource_Pack_Ruby.T_ITEM_Resource_Pack_Ruby",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Ruby-Description\", \"A collection of 50 ruby collected by another prospector for you. \\'CONSUME\\' to open bundle.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Ruby-FlavorText\", \"These supplies are ethically provided by contractors who were found to be in breach of precept 45-379b, this is enforced by Group 15 and its subsidiaries.\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Meta_Resource_Pack_Uranium_Rod",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Uranium_Rod-DisplayName\", \"UDA Uranium Rod Resource Supply\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ResourcePack/T_ITEM_Resource_Pack_Uranium_Rod.T_ITEM_Resource_Pack_Uranium_Rod",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Uranium_Rod-Description\", \"A collection of 10 Uranium Rods collected by another prospector for you. \\'CONSUME\\' to open bundle.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Uranium_Rod-FlavorText\", \"These supplies are ethically provided by contractors who were found to be in breach of precept 45-379b, this is enforced by Group 15 and its subsidiaries.\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Meta_Resource_Pack_Ren",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Ren-DisplayName\", \"UDA Ren Resource Supply\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ResourcePack/T_ITEM_Resource_Pack_Ren.T_ITEM_Resource_Pack_Ren",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Ren-Description\", \"A collection of 100 Ren collected by another prospector for you. \\'CONSUME\\' to open bundle.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Ren-FlavorText\", \"These supplies are ethically provided by contractors who were found to be in breach of precept 45-379b, this is enforced by Group 15 and its subsidiaries.\")",
+            "Weight": 10000
         }
     ]
 }

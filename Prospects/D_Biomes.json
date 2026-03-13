@@ -1409,6 +1409,27 @@
             }
         },
         {
+            "Name": "Ely_Mushroom_Swamp",
+            "BiomeName": "Caproot Terraces",
+            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Ely_Mushroom_Swamp-DisplayName\", \"Caproot Terraces\")",
+            "Color": {
+                "G": 131,
+                "R": 74,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/SwampTemperatureCurve.SwampTemperatureCurve'",
+            "WeatherFrequency": 4,
+            "AtmosphereType": {
+                "RowName": "Swamp"
+            },
+            "Audio": {
+                "RowName": "ElySwamp"
+            },
+            "BiomeModifier": {
+                "RowName": "Swamp_Atmosphere"
+            }
+        },
+        {
             "Name": "Ely_East_Swamp",
             "BiomeName": "Silt River",
             "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Ely_East_Swamp-DisplayName\", \"Silt River\")",
@@ -1526,6 +1547,24 @@
             },
             "Audio": {
                 "RowName": "DHLab"
+            }
+        },
+        {
+            "Name": "Ely_North_Arctic_Mission6",
+            "BiomeName": "Stronghold",
+            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Ely_North_Arctic_Mission6-DisplayName\", \"Stronghold\")",
+            "Color": {
+                "B": 255,
+                "G": 18,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
+            "WeatherFrequency": 5,
+            "Audio": {
+                "RowName": "Arctic"
+            },
+            "BiomeModifier": {
+                "RowName": "Cold_Atmosphere"
             }
         }
     ]

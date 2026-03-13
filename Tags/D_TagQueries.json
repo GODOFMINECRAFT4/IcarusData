@@ -8241,6 +8241,24 @@
                 ],
                 "AutoDescription": " ANY( Item.Plant.Fruit, Item.Plant.Vegetable )"
             }
+        },
+        {
+            "Name": "Any_Prime_Meat",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Raw.Prime"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Consumable.Food.Raw.Prime )"
+            }
         }
     ]
 }

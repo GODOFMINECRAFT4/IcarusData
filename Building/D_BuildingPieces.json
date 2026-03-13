@@ -10178,28 +10178,6 @@
             }
         },
         {
-            "Name": "Barn_Door_1x1_L",
-            "Type": {
-                "RowName": "Wall_Solid"
-            },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Homestead_BarnDoor_0.T_ITEM_Homestead_BarnDoor_0",
-            "Blueprint": "/Game/BP/Building/Barn/BP_Barn_Door_L.BP_Barn_Door_L_C",
-            "Audio": {
-                "RowName": "Wood"
-            }
-        },
-        {
-            "Name": "Barn_Door_1x1_R",
-            "Type": {
-                "RowName": "Wall_Solid"
-            },
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Homestead_BarnDoor_0.T_ITEM_Homestead_BarnDoor_0",
-            "Blueprint": "/Game/BP/Building/Barn/BP_Barn_Door_R.BP_Barn_Door_R_C",
-            "Audio": {
-                "RowName": "Wood"
-            }
-        },
-        {
             "Name": "Concrete_Diagonal_Wall_Solid",
             "Type": {
                 "RowName": "Diagonal_Wall_Solid"
@@ -13272,6 +13250,580 @@
             "Blueprint": "/Game/BP/Building/ClayBrick/BP_Building_Beam_Diagnal_Curved_Brick_Up.BP_Building_Beam_Diagnal_Curved_Brick_Up_C",
             "Audio": {
                 "RowName": "Brick"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Floor",
+            "Type": {
+                "RowName": "Diagonal_Floor"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Set_0.T_ITEM_Limestone_Diagonal_Set_0",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Floor_Diagonal_Concrete.BP_Building_Floor_Diagonal_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Floor"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Solid",
+            "Type": {
+                "RowName": "Diagonal_Wall_Solid"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Set_1.T_ITEM_Limestone_Diagonal_Set_1",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Solid_Concrete.BP_Building_Wall_Diagonal_Solid_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Solid"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Angle_Left",
+            "Type": {
+                "RowName": "Diagonal_Wall_Angle_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Set_2.T_ITEM_Limestone_Diagonal_Set_2",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Half_Angle_L_Concrete.BP_Building_Wall_Diagonal_Half_Angle_L_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Angle_Left"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Angle_Left_Invert",
+            "Type": {
+                "RowName": "Diagonal_Wall_Angle_L_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Set_3.T_ITEM_Limestone_Diagonal_Set_3",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Half_Angle_L_Invert_Concrete.BP_Building_Wall_Diagonal_Half_Angle_L_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Angle_Left_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Angle_Right",
+            "Type": {
+                "RowName": "Diagonal_Wall_Angle_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Set_4.T_ITEM_Limestone_Diagonal_Set_4",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Half_Angle_R_Concrete.BP_Building_Wall_Diagonal_Half_Angle_R_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Angle_Right"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Angle_Right_Invert",
+            "Type": {
+                "RowName": "Diagonal_Wall_Angle_R_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Set_5.T_ITEM_Limestone_Diagonal_Set_5",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Half_Angle_R_Invert_Concrete.BP_Building_Wall_Diagonal_Half_Angle_R_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Angle_Right_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Ramp_Roof",
+            "Type": {
+                "RowName": "Diagonal_Ramp"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Diagonal_Set_6.T_ITEM_Concrete_Diagonal_Set_6",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Ramp_Diagonal_Concrete.BP_Building_Ramp_Diagonal_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Ramp_Roof"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Ramp_Roof_Invert",
+            "Type": {
+                "RowName": "Diagonal_Ramp"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Diagonal_Set_7.T_ITEM_Concrete_Diagonal_Set_7",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Ramp_Diagonal_Invert_Concrete.BP_Building_Ramp_Diagonal_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Ramp_Roof_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Curved_Floor",
+            "Type": {
+                "RowName": "Diagonal_Curved_Floor"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Curved_Set_0.T_ITEM_Limestone_Curved_Set_0",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Floor_Diagonal_Curved_Concrete.BP_Building_Floor_Diagonal_Curved_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Curved_Floor"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Curved_Solid",
+            "Type": {
+                "RowName": "Diagonal_Wall_Curved_Solid"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Curved_Set_1.T_ITEM_Limestone_Curved_Set_1",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Curved_Concrete.BP_Building_Wall_Diagonal_Curved_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Curved_Solid"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Curved_Ramp_Roof",
+            "Type": {
+                "RowName": "Diagonal_Curved_Ramp"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Curved_Set_2.T_ITEM_Concrete_Curved_Set_2",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Ramp_Diagonal_Curved_Concrete.BP_Building_Ramp_Diagonal_Curved_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Curved_Ramp_Roof"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Curved_Angle_Down_L",
+            "Type": {
+                "RowName": "Diagonal_Wall_Curved_Angle_Down_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_0.T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_0",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_L_Concrete.BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_L_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Curved_Angle_Down_L"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Curved_Angle_Down_L_Invert",
+            "Type": {
+                "RowName": "Diagonal_Wall_Curved_Angle_Down_L_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_1.T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_1",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_L_Invert_Concrete.BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_L_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Curved_Angle_Down_L_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Curved_Angle_Down_R",
+            "Type": {
+                "RowName": "Diagonal_Wall_Curved_Angle_Down_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_2.T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_2",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_R_Concrete.BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_R_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Curved_Angle_Down_R"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Curved_Angle_Down_R_Invert",
+            "Type": {
+                "RowName": "Diagonal_Wall_Curved_Angle_Down_R_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_3.T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_3",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_R_Invert_Concrete.BP_Building_Wall_Diagonal_Curved_Half_Angle_Down_R_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Curved_Angle_Down_R_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Curved_Angle_Up_L",
+            "Type": {
+                "RowName": "Diagonal_Wall_Curved_Angle_Up_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_4.T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_4",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_L_Concrete.BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_L_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Curved_Angle_Up_L"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Curved_Angle_Up_L_Invert",
+            "Type": {
+                "RowName": "Diagonal_Wall_Curved_Angle_Up_L_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_5.T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_5",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_L_Invert_Concrete.BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_L_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Curved_Angle_Up_L_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Curved_Angle_Up_R",
+            "Type": {
+                "RowName": "Diagonal_Wall_Curved_Angle_Up_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_6.T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_6",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_R_Concrete.BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_R_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Curved_Angle_Up_R"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Wall_Curved_Angle_Up_R_Invert",
+            "Type": {
+                "RowName": "Diagonal_Wall_Curved_Angle_Up_R_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_7.T_ITEM_Limestone_Diagonal_Curved_Wall_Angles_7",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_R_Invert_Concrete.BP_Building_Wall_Diagonal_Curved_Half_Angle_Up_R_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Diagonal_Wall_Curved_Angle_Up_R_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Roof_CurvedAngle_Down_L",
+            "Type": {
+                "RowName": "Roof_CurvedAngle_Down_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Roof_CurvedAngles_0.T_ITEM_Concrete_Roof_CurvedAngles_0",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_RoofCurvedAngle_L_Down_Concrete.BP_Building_RoofCurvedAngle_L_Down_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Roof_CurvedAngle_Down_L"
+            }
+        },
+        {
+            "Name": "Limestone_Roof_CurvedAngle_Down_L_Invert",
+            "Type": {
+                "RowName": "Roof_CurvedAngle_Down_L_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Roof_CurvedAngles_1.T_ITEM_Concrete_Roof_CurvedAngles_1",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_RoofCurvedAngle_L_Down_Invert_Concrete.BP_Building_RoofCurvedAngle_L_Down_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Roof_CurvedAngle_Down_L_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Roof_CurvedAngle_Down_R",
+            "Type": {
+                "RowName": "Roof_CurvedAngle_Down_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Roof_CurvedAngles_2.T_ITEM_Concrete_Roof_CurvedAngles_2",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_RoofCurvedAngle_R_Down_Concrete.BP_Building_RoofCurvedAngle_R_Down_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Roof_CurvedAngle_Down_R"
+            }
+        },
+        {
+            "Name": "Limestone_Roof_CurvedAngle_Down_R_Invert",
+            "Type": {
+                "RowName": "Roof_CurvedAngle_Down_R_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Roof_CurvedAngles_3.T_ITEM_Concrete_Roof_CurvedAngles_3",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_RoofCurvedAngle_R_Down_Invert_Concrete.BP_Building_RoofCurvedAngle_R_Down_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Roof_CurvedAngle_Down_R_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Roof_CurvedAngle_Up_L",
+            "Type": {
+                "RowName": "Roof_CurvedAngle_Up_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Roof_CurvedAngles_4.T_ITEM_Concrete_Roof_CurvedAngles_4",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_RoofCurvedAngle_L_Up_Concrete.BP_Building_RoofCurvedAngle_L_Up_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Roof_CurvedAngle_Up_L"
+            }
+        },
+        {
+            "Name": "Limestone_Roof_CurvedAngle_Up_L_Invert",
+            "Type": {
+                "RowName": "Roof_CurvedAngle_Up_L_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Roof_CurvedAngles_5.T_ITEM_Concrete_Roof_CurvedAngles_5",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_RoofCurvedAngle_L_Up_Invert_Concrete.BP_Building_RoofCurvedAngle_L_Up_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Roof_CurvedAngle_Up_L_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Roof_CurvedAngle_Up_R",
+            "Type": {
+                "RowName": "Roof_CurvedAngle_Up_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Roof_CurvedAngles_6.T_ITEM_Concrete_Roof_CurvedAngles_6",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_RoofCurvedAngle_R_Up_Concrete.BP_Building_RoofCurvedAngle_R_Up_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Roof_CurvedAngle_Up_R"
+            }
+        },
+        {
+            "Name": "Limestone_Roof_CurvedAngle_Up_R_Invert",
+            "Type": {
+                "RowName": "Roof_CurvedAngle_Up_R_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Roof_CurvedAngles_7.T_ITEM_Concrete_Roof_CurvedAngles_7",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_RoofCurvedAngle_R_Up_Invert_Concrete.BP_Building_RoofCurvedAngle_R_Up_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Roof_CurvedAngle_Up_R_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Beam_Diagonal",
+            "Type": {
+                "RowName": "Diagonal_Beam_Diagonal"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Advanced_Beam_Set_0.T_ITEM_Limestone_Advanced_Beam_Set_0",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Beam_Cross_Diagnal_Concrete.BP_Building_Beam_Cross_Diagnal_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Beam_Curved_Angle_Shared"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Beam_Horizontal",
+            "Type": {
+                "RowName": "Diagonal_Beam_Horizontal"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Advanced_Beam_Set_1.T_ITEM_Limestone_Advanced_Beam_Set_1",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Beam_Cross_Horizontal_Concrete.BP_Building_Beam_Cross_Horizontal_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Beam_Curved_Angle_Shared"
+            }
+        },
+        {
+            "Name": "Limestone_Beam_Curved_Diagonal_Down",
+            "Type": {
+                "RowName": "Beam_Curved_Diagonal_Down"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Advanced_Beam_Set_2.T_ITEM_Limestone_Advanced_Beam_Set_2",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Beam_Diagnal_Curved_Concrete_Down.BP_Building_Beam_Diagnal_Curved_Concrete_Down_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Beam_Curved_Angle_Shared"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Beam_Curved_Horizontal",
+            "Type": {
+                "RowName": "Diagonal_Beam_Curved_Horizontal"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Advanced_Beam_Set_3.T_ITEM_Limestone_Advanced_Beam_Set_3",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Beam_Cross_Horizontal_Curved_Concrete.BP_Building_Beam_Cross_Horizontal_Curved_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Beam_Curved_Angle_Shared"
+            }
+        },
+        {
+            "Name": "Limestone_Beam_Curved_Diagonal_Up",
+            "Type": {
+                "RowName": "Beam_Curved_Diagonal_Up"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Advanced_Beam_Set_4.T_ITEM_Limestone_Advanced_Beam_Set_4",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Beam_Diagnal_Curved_Concrete_Up.BP_Building_Beam_Diagnal_Curved_Concrete_Up_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Beam_Curved_Angle_Shared"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Beam_Curved_Diagonal_Up_L",
+            "Type": {
+                "RowName": "Diagonal_Beam_Curved_Diagonal_Up_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Advanced_Beam_Set_5.T_ITEM_Limestone_Advanced_Beam_Set_5",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Beam_Cross_Diagnal_Curved_Up_L_Concrete.BP_Building_Beam_Cross_Diagnal_Curved_Up_L_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Beam_Curved_Angle_Shared"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Beam_Curved_Diagonal_Up_R",
+            "Type": {
+                "RowName": "Diagonal_Beam_Curved_Diagonal_Up_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Advanced_Beam_Set_6.T_ITEM_Limestone_Advanced_Beam_Set_6",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Beam_Cross_Diagnal_Curved_Up_R_Concrete.BP_Building_Beam_Cross_Diagnal_Curved_Up_R_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Beam_Curved_Angle_Shared"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Beam_Curved_Diagonal_Down_L",
+            "Type": {
+                "RowName": "Diagonal_Beam_Curved_Diagonal_Down_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Advanced_Beam_Set_7.T_ITEM_Limestone_Advanced_Beam_Set_7",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Beam_Cross_Diagnal_Curved_Down_L_Concrete.BP_Building_Beam_Cross_Diagnal_Curved_Down_L_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Beam_Curved_Angle_Shared"
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Beam_Curved_Diagonal_Down_R",
+            "Type": {
+                "RowName": "Diagonal_Beam_Curved_Diagonal_Down_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Advanced_Beam_Set_8.T_ITEM_Limestone_Advanced_Beam_Set_8",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Beam_Cross_Diagnal_Curved_Down_R_Concrete.BP_Building_Beam_Cross_Diagnal_Curved_Down_R_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Beam_Curved_Angle_Shared"
+            }
+        },
+        {
+            "Name": "Limestone_Wall_Curved_Angle_L",
+            "Type": {
+                "RowName": "Wall_Curved_Angle_L"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Wall_Curved_0.T_ITEM_Limestone_Wall_Curved_0",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Curved_Half_L_Concrete.BP_Building_Wall_Curved_Half_L_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Wall_Curved_Angle_L"
+            }
+        },
+        {
+            "Name": "Limestone_Wall_Curved_Angle_L_Invert",
+            "Type": {
+                "RowName": "Wall_Curved_Angle_L_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Wall_Curved_1.T_ITEM_Limestone_Wall_Curved_1",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Curved_Half_L_Invert_Concrete.BP_Building_Wall_Curved_Half_L_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Wall_Curved_Angle_L_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Wall_Curved_Angle_R",
+            "Type": {
+                "RowName": "Wall_Curved_Angle_R"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Wall_Curved_2.T_ITEM_Limestone_Wall_Curved_2",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Curved_Half_R_Concrete.BP_Building_Wall_Curved_Half_R_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Wall_Curved_Angle_R"
+            }
+        },
+        {
+            "Name": "Limestone_Wall_Curved_Angle_R_Invert",
+            "Type": {
+                "RowName": "Wall_Curved_Angle_R_Invert"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Limestone_Wall_Curved_3.T_ITEM_Limestone_Wall_Curved_3",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Wall_Curved_Half_R_Invert_Concrete.BP_Building_Wall_Curved_Half_R_Invert_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Wall_Curved_Angle_R_Invert"
+            }
+        },
+        {
+            "Name": "Limestone_Ramp_Curved",
+            "Type": {
+                "RowName": "Ramp_Curved"
+            },
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Buildables/T_ITEM_Concrete_Wall_Curved_4.T_ITEM_Concrete_Wall_Curved_4",
+            "Blueprint": "/Game/BP/Building/Concrete/BP_Building_Ramp_Curved_Concrete.BP_Building_Ramp_Curved_Concrete_C",
+            "Audio": {
+                "RowName": "Concrete"
+            },
+            "Skin": {
+                "RowName": "Limestone_Ramp_Curved"
             }
         }
     ]

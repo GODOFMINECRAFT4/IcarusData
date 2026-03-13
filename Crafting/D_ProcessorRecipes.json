@@ -68972,6 +68972,90 @@
             }
         },
         {
+            "Name": "Pyritic_Crust_Lithium",
+            "RequiredMillijoules": 12500,
+            "RecipeSets": [
+                {
+                    "RowName": "Exotic_Processor",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Cleaning_Device",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Pyritic_Crust_Lithium",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Lithium_Ore",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Ovens"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Pyritic_Crust_Ruby",
+            "RequiredMillijoules": 12500,
+            "RecipeSets": [
+                {
+                    "RowName": "Exotic_Processor",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Cleaning_Device",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Pyritic_Crust_Ruby",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Ruby_Ore",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 3,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "Ovens"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Purify_Water",
             "RequiredMillijoules": 5000,
             "RecipeSets": [
@@ -106725,7 +106809,7 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Fortification_Wood_Spikes",
+                        "RowName": "Fortification_Stone_Spikes",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -119126,6 +119210,390 @@
                 {
                     "Element": {
                         "RowName": "Flat_Solar_Panel",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Set",
+            "Requirement": {
+                "RowName": "Limestone_Diagonal"
+            },
+            "RequiredMillijoules": 7500,
+            "RecipeSets": [
+                {
+                    "RowName": "Cement_Mixer",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseConcreteBuildingCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Steel_Rebar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10
+                },
+                {
+                    "Element": {
+                        "RowName": "Limestone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Limestone_Diagonal_Set",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Curved_Set",
+            "Requirement": {
+                "RowName": "Limestone_Diagonal"
+            },
+            "RequiredMillijoules": 7500,
+            "RecipeSets": [
+                {
+                    "RowName": "Cement_Mixer",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseConcreteBuildingCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Steel_Rebar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 12
+                },
+                {
+                    "Element": {
+                        "RowName": "Limestone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Limestone_Curved_Set",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Curved_Wall_Angles",
+            "Requirement": {
+                "RowName": "Limestone_Diagonal"
+            },
+            "RequiredMillijoules": 7500,
+            "RecipeSets": [
+                {
+                    "RowName": "Cement_Mixer",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseConcreteBuildingCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Steel_Rebar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10
+                },
+                {
+                    "Element": {
+                        "RowName": "Limestone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Limestone_Diagonal_Curved_Wall_Angles",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Wall_Curved",
+            "Requirement": {
+                "RowName": "Limestone_Diagonal"
+            },
+            "RequiredMillijoules": 7500,
+            "RecipeSets": [
+                {
+                    "RowName": "Cement_Mixer",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseConcreteBuildingCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Steel_Rebar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10
+                },
+                {
+                    "Element": {
+                        "RowName": "Limestone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Limestone_Wall_Curved",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Advanced_Beams_Set",
+            "Requirement": {
+                "RowName": "Limestone_Diagonal"
+            },
+            "RequiredMillijoules": 7500,
+            "RecipeSets": [
+                {
+                    "RowName": "Cement_Mixer",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseConcreteBuildingCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Steel_Rebar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4
+                },
+                {
+                    "Element": {
+                        "RowName": "Limestone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Limestone_Advanced_Beam_Set",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Roof_CurvedAngles",
+            "Requirement": {
+                "RowName": "Limestone_Diagonal"
+            },
+            "RequiredMillijoules": 7500,
+            "RecipeSets": [
+                {
+                    "RowName": "Cement_Mixer",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Masonry_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseConcreteBuildingCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Steel_Rebar",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
+                },
+                {
+                    "Element": {
+                        "RowName": "Limestone",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 8
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Screw",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Limestone_Roof_CurvedAngles",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,

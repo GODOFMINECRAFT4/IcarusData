@@ -16,14 +16,16 @@
         "RockMaterial": "None",
         "MinOreAvailable": 1000,
         "MaxOreAvailable": 1000,
-        "MiningTimeSeconds": 60
+        "MiningTimeSeconds": 60,
+        "ScannerBlacklist": false
     },
     "GenerateEnum": true,
     "Rows": [
         {
             "Name": "Random",
             "MinOreAvailable": 5000,
-            "MaxOreAvailable": 5000
+            "MaxOreAvailable": 5000,
+            "ScannerBlacklist": true
         },
         {
             "Name": "Exotic",
@@ -31,6 +33,7 @@
                 "RowName": "Meta_Resource"
             },
             "MiningTimeSeconds": 20,
+            "ScannerBlacklist": true,
             "Metadata": {
                 "bIsDeprecated": true
             }
@@ -167,7 +170,8 @@
             "NodeMaterial_CF": "/Game/ASS/ENV/LND/DeepMiningOreDeposit/M_CF_DeepMiningOreDeposit_Oxite_Node.M_CF_DeepMiningOreDeposit_Oxite_Node",
             "NodeMaterial_DC": "/Game/ASS/ENV/LND/DeepMiningOreDeposit/M_DC_DeepMiningOreDeposit_Oxite_Node.M_DC_DeepMiningOreDeposit_Oxite_Node",
             "RockMaterial": "/Game/ASS/ENV/LND/DeepMiningOreDeposit/M_DeepMiningOreDeposit_Oxite_Rocks.M_DeepMiningOreDeposit_Oxite_Rocks",
-            "MiningTimeSeconds": 50
+            "MiningTimeSeconds": 50,
+            "ScannerBlacklist": true
         },
         {
             "Name": "Super_Cooled_Ice",
@@ -192,6 +196,7 @@
                 "RowName": "Exotic_Red_Raw"
             },
             "MiningTimeSeconds": 30,
+            "ScannerBlacklist": true,
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "NewFrontiers"
@@ -362,6 +367,7 @@
             "MinOreAvailable": -1,
             "MaxOreAvailable": -1,
             "MiningTimeSeconds": 50,
+            "ScannerBlacklist": true,
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -374,6 +380,7 @@
                 "RowName": "Uranium_Raw"
             },
             "MiningTimeSeconds": 15,
+            "ScannerBlacklist": true,
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -396,6 +403,7 @@
             "MinOreAvailable": -1,
             "MaxOreAvailable": -1,
             "MiningTimeSeconds": 40,
+            "ScannerBlacklist": true,
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -417,6 +425,7 @@
             "RockMaterial": "/Game/ASS/ENV/LND/DeepMiningOreDeposit/M_DeepMiningOreDeposit_Salt_Rocks.M_DeepMiningOreDeposit_Salt_Rocks",
             "MinOreAvailable": -1,
             "MaxOreAvailable": -1,
+            "ScannerBlacklist": true,
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -439,6 +448,7 @@
             "MinOreAvailable": -1,
             "MaxOreAvailable": -1,
             "MiningTimeSeconds": 40,
+            "ScannerBlacklist": true,
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"

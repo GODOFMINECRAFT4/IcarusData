@@ -12398,7 +12398,8 @@
             "AdditionalStats": {
                 "(Value=\"BaseToolStaminaActionCost_+%\")": -25,
                 "(Value=\"BaseCreatesCropPlotTier_+\")": 2,
-                "(Value=\"BaseDiggingRewards_+%\")": 25
+                "(Value=\"BaseDiggingRewards_+%\")": 25,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": -100
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -29525,9 +29526,6 @@
                         "TagName": "Audio.Shelter"
                     },
                     {
-                        "TagName": "Building.Glass"
-                    },
-                    {
                         "TagName": "Item.BuildingTrim"
                     }
                 ]
@@ -29536,9 +29534,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Audio.Shelter"
-                    },
-                    {
-                        "TagName": "Building.Glass"
                     },
                     {
                         "TagName": "Item.BuildingTrim"
@@ -29612,9 +29607,6 @@
                         "TagName": "Audio.Shelter"
                     },
                     {
-                        "TagName": "Building.Glass"
-                    },
-                    {
                         "TagName": "Item.BuildingTrim"
                     }
                 ]
@@ -29623,9 +29615,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Audio.Shelter"
-                    },
-                    {
-                        "TagName": "Building.Glass"
                     },
                     {
                         "TagName": "Item.BuildingTrim"
@@ -29699,9 +29688,6 @@
                         "TagName": "Audio.Shelter"
                     },
                     {
-                        "TagName": "Building.Glass"
-                    },
-                    {
                         "TagName": "Item.BuildingTrim"
                     }
                 ]
@@ -29710,9 +29696,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Audio.Shelter"
-                    },
-                    {
-                        "TagName": "Building.Glass"
                     },
                     {
                         "TagName": "Item.BuildingTrim"
@@ -37253,99 +37236,6 @@
             }
         },
         {
-            "Name": "Wood_Build_HalfNormal",
-            "Meshable": {
-                "RowName": "Mesh_Wood_Kit"
-            },
-            "Itemable": {
-                "RowName": "Item_Wood_Build_HalfNormal"
-            },
-            "Interactable": {
-                "RowName": "Item"
-            },
-            "Hitable": {
-                "RowName": "Building"
-            },
-            "Focusable": {
-                "RowName": "Focusable_1H"
-            },
-            "Highlightable": {
-                "RowName": "Generic"
-            },
-            "Actionable": {
-                "RowName": "Building"
-            },
-            "Buildable": {
-                "RowName": "Wood_HalfNormal"
-            },
-            "Usable": {
-                "RowName": "Place"
-            },
-            "Durable": {
-                "RowName": "Wood_Building"
-            },
-            "Decayable": {
-                "RowName": "Decay_General"
-            },
-            "Flammable": {
-                "RowName": "Flammable_Building_Wood"
-            },
-            "Audio": {
-                "RowName": "WoodDeployable"
-            },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Building.Wood"
-                    },
-                    {
-                        "TagName": "Audio.Shelter"
-                    }
-                ]
-            },
-            "Generated_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Building.Wood"
-                    },
-                    {
-                        "TagName": "Audio.Shelter"
-                    },
-                    {
-                        "TagName": "Traits.Meshable"
-                    },
-                    {
-                        "TagName": "Traits.Itemable"
-                    },
-                    {
-                        "TagName": "Traits.Interactable"
-                    },
-                    {
-                        "TagName": "Traits.Hitable"
-                    },
-                    {
-                        "TagName": "Traits.Highlightable"
-                    },
-                    {
-                        "TagName": "Traits.Actionable"
-                    },
-                    {
-                        "TagName": "Traits.Buildable"
-                    },
-                    {
-                        "TagName": "Traits.Usable"
-                    },
-                    {
-                        "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Flammable"
-                    }
-                ],
-                "ParentTags": []
-            }
-        },
-        {
             "Name": "Sandworm_Knife",
             "Meshable": {
                 "RowName": "Mesh_Sandworm_Knife"
@@ -39683,105 +39573,6 @@
                     },
                     {
                         "TagName": "Building.Wood"
-                    },
-                    {
-                        "TagName": "Traits.Meshable"
-                    },
-                    {
-                        "TagName": "Traits.Itemable"
-                    },
-                    {
-                        "TagName": "Traits.Interactable"
-                    },
-                    {
-                        "TagName": "Traits.Hitable"
-                    },
-                    {
-                        "TagName": "Traits.Highlightable"
-                    },
-                    {
-                        "TagName": "Traits.Actionable"
-                    },
-                    {
-                        "TagName": "Traits.Buildable"
-                    },
-                    {
-                        "TagName": "Traits.Usable"
-                    },
-                    {
-                        "TagName": "Traits.Durable"
-                    },
-                    {
-                        "TagName": "Traits.Flammable"
-                    }
-                ],
-                "ParentTags": []
-            }
-        },
-        {
-            "Name": "Wood_Build_HalfPitch",
-            "Meshable": {
-                "RowName": "Mesh_Wood_Kit"
-            },
-            "Itemable": {
-                "RowName": "Item_Wood_Build_HalfPitch"
-            },
-            "Interactable": {
-                "RowName": "Item"
-            },
-            "Hitable": {
-                "RowName": "Building"
-            },
-            "Focusable": {
-                "RowName": "Focusable_1H"
-            },
-            "Highlightable": {
-                "RowName": "Generic"
-            },
-            "Actionable": {
-                "RowName": "Building"
-            },
-            "Buildable": {
-                "RowName": "Wood_HalfPitch"
-            },
-            "Usable": {
-                "RowName": "Place"
-            },
-            "Durable": {
-                "RowName": "Wood_Building"
-            },
-            "Decayable": {
-                "RowName": "Decay_General"
-            },
-            "Flammable": {
-                "RowName": "Flammable_Building_Wood"
-            },
-            "Audio": {
-                "RowName": "WoodDeployable"
-            },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Building.Wood"
-                    },
-                    {
-                        "TagName": "Audio.Shelter"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    }
-                ]
-            },
-            "Generated_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Building.Wood"
-                    },
-                    {
-                        "TagName": "Audio.Shelter"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -108558,7 +108349,8 @@
                 "RowName": "ShovelWood"
             },
             "AdditionalStats": {
-                "(Value=\"BaseCreatesCropPlotTier_+\")": 1
+                "(Value=\"BaseCreatesCropPlotTier_+\")": 1,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": -100
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -108632,7 +108424,8 @@
             "AdditionalStats": {
                 "(Value=\"BaseToolStaminaActionCost_+%\")": -33,
                 "(Value=\"BaseCreatesCropPlotTier_+\")": 3,
-                "(Value=\"BaseDiggingRewards_+%\")": 50
+                "(Value=\"BaseDiggingRewards_+%\")": 50,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": -100
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -108706,7 +108499,8 @@
             "AdditionalStats": {
                 "(Value=\"BaseToolStaminaActionCost_+%\")": -50,
                 "(Value=\"BaseCreatesCropPlotTier_+\")": 4,
-                "(Value=\"BaseDiggingRewards_+%\")": 75
+                "(Value=\"BaseDiggingRewards_+%\")": 75,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": -100
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -108780,7 +108574,8 @@
             "AdditionalStats": {
                 "(Value=\"BaseToolStaminaActionCost_+%\")": -25,
                 "(Value=\"BaseCreatesCropPlotTier_+\")": 8,
-                "(Value=\"BaseDiggingRewards_+%\")": 100
+                "(Value=\"BaseDiggingRewards_+%\")": 100,
+                "(Value=\"BaseMeleeDamageAgainstBuildings_+%\")": -100
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -132139,7 +131934,7 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132149,7 +131944,7 @@
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132231,7 +132026,7 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132241,7 +132036,7 @@
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132323,7 +132118,7 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132333,7 +132128,7 @@
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132415,7 +132210,7 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132425,7 +132220,7 @@
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132507,7 +132302,7 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132517,7 +132312,7 @@
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132599,20 +132394,20 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Audio.Shelter"
+                        "TagName": "Building.Limestone"
                     },
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Audio.Shelter"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Audio.Shelter"
+                        "TagName": "Building.Limestone"
                     },
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Audio.Shelter"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -132691,7 +132486,7 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132701,7 +132496,7 @@
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Building.Limestone"
                     },
                     {
                         "TagName": "Audio.Shelter"
@@ -132783,20 +132578,20 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Audio.Shelter"
+                        "TagName": "Building.Limestone"
                     },
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Audio.Shelter"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Audio.Shelter"
+                        "TagName": "Building.Limestone"
                     },
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Audio.Shelter"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -132875,20 +132670,20 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Audio.Shelter"
+                        "TagName": "Building.Limestone"
                     },
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Audio.Shelter"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Audio.Shelter"
+                        "TagName": "Building.Limestone"
                     },
                     {
-                        "TagName": "Building.Concrete"
+                        "TagName": "Audio.Shelter"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -137382,7 +137177,7 @@
                 "RowName": "Deployable_1000"
             },
             "Inventory": {
-                "RowName": "Food_Trough_Storage"
+                "RowName": "Food_Trough_Storage_Large"
             },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
@@ -137581,7 +137376,7 @@
                 "RowName": "Deployable_1500"
             },
             "Inventory": {
-                "RowName": "Food_Trough_Storage"
+                "RowName": "Food_Trough_Storage_Large"
             },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
@@ -137673,7 +137468,7 @@
                 "RowName": "Deployable_1500"
             },
             "Inventory": {
-                "RowName": "Food_Trough_Storage"
+                "RowName": "Food_Trough_Storage_Large"
             },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
@@ -137765,7 +137560,7 @@
                 "RowName": "Deployable_1500"
             },
             "Inventory": {
-                "RowName": "Food_Trough_Storage"
+                "RowName": "Food_Trough_Storage_Large"
             },
             "Decayable": {
                 "RowName": "Decay_10_Minutes"
@@ -162724,10 +162519,10 @@
                         "TagName": "Audio.Shelter"
                     },
                     {
-                        "TagName": "Building.Glass"
+                        "TagName": "Item.BuildingTrim"
                     },
                     {
-                        "TagName": "Item.BuildingTrim"
+                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
@@ -162737,10 +162532,10 @@
                         "TagName": "Audio.Shelter"
                     },
                     {
-                        "TagName": "Building.Glass"
+                        "TagName": "Item.BuildingTrim"
                     },
                     {
-                        "TagName": "Item.BuildingTrim"
+                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -165257,9 +165052,6 @@
                     },
                     {
                         "TagName": "Item.BuildingTrim"
-                    },
-                    {
-                        "TagName": "Building.Glass.Tempered"
                     }
                 ]
             },
@@ -165270,9 +165062,6 @@
                     },
                     {
                         "TagName": "Item.BuildingTrim"
-                    },
-                    {
-                        "TagName": "Building.Glass.Tempered"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -165344,9 +165133,6 @@
                     },
                     {
                         "TagName": "Item.BuildingTrim"
-                    },
-                    {
-                        "TagName": "Building.Glass.Tempered"
                     }
                 ]
             },
@@ -165357,9 +165143,6 @@
                     },
                     {
                         "TagName": "Item.BuildingTrim"
-                    },
-                    {
-                        "TagName": "Building.Glass.Tempered"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -170059,6 +169842,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Deployable.Food"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
                     }
                 ]
             },
@@ -170066,6 +169852,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Deployable.Food"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -170140,6 +169929,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Deployable.Food"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
                     }
                 ]
             },
@@ -170147,6 +169939,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Deployable.Food"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -170221,6 +170016,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Deployable.Food"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
                     }
                 ]
             },
@@ -170228,6 +170026,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Deployable.Food"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -172165,14 +171966,14 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Consumable.Food"
+                        "TagName": "Item.Consumable.Food.Cooked"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Consumable.Food"
+                        "TagName": "Item.Consumable.Food.Cooked"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -172234,14 +172035,14 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Consumable.Food"
+                        "TagName": "Item.Consumable.Food.Cooked"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Consumable.Food"
+                        "TagName": "Item.Consumable.Food.Cooked"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -172303,14 +172104,14 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Consumable.Food"
+                        "TagName": "Item.Consumable.Food.Cooked"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Consumable.Food"
+                        "TagName": "Item.Consumable.Food.Cooked"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -172441,14 +172242,14 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Consumable.Food"
+                        "TagName": "Item.Consumable.Food.Cooked"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Consumable.Food"
+                        "TagName": "Item.Consumable.Food.Cooked"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -173937,9 +173738,6 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Building.Wood"
-                    },
-                    {
                         "TagName": "Audio.Shelter"
                     },
                     {
@@ -173949,9 +173747,6 @@
             },
             "Generated_Tags": {
                 "GameplayTags": [
-                    {
-                        "TagName": "Building.Wood"
-                    },
                     {
                         "TagName": "Audio.Shelter"
                     },
@@ -185143,9 +184938,6 @@
                     },
                     {
                         "TagName": "Item.BuildingTrim"
-                    },
-                    {
-                        "TagName": "Building.Concrete"
                     }
                 ]
             },
@@ -185156,9 +184948,6 @@
                     },
                     {
                         "TagName": "Item.BuildingTrim"
-                    },
-                    {
-                        "TagName": "Building.Concrete"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -232296,37 +232085,37 @@
                 "RowName": "Mesh_LegendaryWeapon_Sandwyrm_Chainsaw"
             },
             "Itemable": {
-                "RowName": "LegendaryWeapon_Sandwyrm_Chainsaw"
+                "RowName": "Item_LegendaryWeapon_Sandwyrm_Chainsaw"
             },
             "Interactable": {
                 "RowName": "Item"
             },
             "Focusable": {
-                "RowName": "Focusable_Sledge_Legendary"
+                "RowName": "Chainsaw"
             },
             "Highlightable": {
                 "RowName": "Generic"
             },
             "Actionable": {
-                "RowName": "Legendary_Ape_Club"
+                "RowName": "Chainsaw"
             },
             "Usable": {
                 "RowName": "Repair"
             },
             "Durable": {
-                "RowName": "LegendaryWeapon_Ape_Club"
+                "RowName": "LegendaryWeapon_Sandwyrm_Chainsaw"
             },
             "Decayable": {
                 "RowName": "Decay_General"
             },
             "LivingItem": {
-                "RowName": "Ape"
+                "RowName": "Sandwyrm_Chainsaw"
             },
             "ToolDamage": {
                 "RowName": "LegendaryWeapon_Sandwyrm_Chainsaw"
             },
             "Audio": {
-                "RowName": "ApeClub"
+                "RowName": "Default"
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -232337,7 +232126,7 @@
                         "TagName": "Item.LivingWeapon"
                     },
                     {
-                        "TagName": "Item.Tool.Sledgehammer"
+                        "TagName": "Item.Tool.Chainsaw"
                     }
                 ]
             },
@@ -232350,7 +232139,7 @@
                         "TagName": "Item.LivingWeapon"
                     },
                     {
-                        "TagName": "Item.Tool.Sledgehammer"
+                        "TagName": "Item.Tool.Chainsaw"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -232372,6 +232161,846 @@
                     },
                     {
                         "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Set",
+            "Meshable": {
+                "RowName": "Mesh_Concrete_Kit"
+            },
+            "Itemable": {
+                "RowName": "Item_Limestone_Diagonal_Set"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Hitable": {
+                "RowName": "Building"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Building"
+            },
+            "Buildable": {
+                "RowName": "Limestone_Diagonal_Set"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Durable": {
+                "RowName": "Concrete_Building"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "StoneDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Curved_Set",
+            "Meshable": {
+                "RowName": "Mesh_Concrete_Kit"
+            },
+            "Itemable": {
+                "RowName": "Item_Limestone_Curved_Set"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Hitable": {
+                "RowName": "Building"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Building"
+            },
+            "Buildable": {
+                "RowName": "Limestone_Diagonal_Curved_Set"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Durable": {
+                "RowName": "Concrete_Building"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "StoneDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Diagonal_Curved_Wall_Angles",
+            "Meshable": {
+                "RowName": "Mesh_Concrete_Kit"
+            },
+            "Itemable": {
+                "RowName": "Item_Limestone_Diagonal_Curved_Wall_Angles"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Hitable": {
+                "RowName": "Building"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Building"
+            },
+            "Buildable": {
+                "RowName": "Limestone_Diagonal_Curved_Wall_Angles"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Durable": {
+                "RowName": "Concrete_Building"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "StoneDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Roof_CurvedAngles",
+            "Meshable": {
+                "RowName": "Mesh_Concrete_Kit"
+            },
+            "Itemable": {
+                "RowName": "Item_Limestone_Roof_CurvedAngles"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Hitable": {
+                "RowName": "Building"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Building"
+            },
+            "Buildable": {
+                "RowName": "Limestone_Roof_CurvedAngles"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Durable": {
+                "RowName": "Concrete_Building"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "StoneDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Wall_Curved",
+            "Meshable": {
+                "RowName": "Mesh_Concrete_Kit"
+            },
+            "Itemable": {
+                "RowName": "Item_Limestone_Curved_Wall"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Hitable": {
+                "RowName": "Building"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Building"
+            },
+            "Buildable": {
+                "RowName": "Limestone_Wall_Curved"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Durable": {
+                "RowName": "Concrete_Building"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "StoneDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Limestone_Advanced_Beam_Set",
+            "Meshable": {
+                "RowName": "Mesh_Concrete_Kit"
+            },
+            "Itemable": {
+                "RowName": "Item_Limestone_Advanced_Beam_Set"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Hitable": {
+                "RowName": "Building"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Building"
+            },
+            "Buildable": {
+                "RowName": "Limestone_Advanced_Beam_Set"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Durable": {
+                "RowName": "Concrete_Building"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "StoneDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Building.Limestone"
+                    },
+                    {
+                        "TagName": "Audio.Shelter"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Meta_Resource_Pack_Lithium",
+            "Meshable": {
+                "RowName": "Mesh_Meta_Resource_Pack"
+            },
+            "Itemable": {
+                "RowName": "Item_Meta_Resource_Pack_Lithium"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Consumable": {
+                "RowName": "Meta_Resource_Pack_Lithium"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack"
+            },
+            "Decayable": {
+                "RowName": "Decay_MetaItem"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Meta_Resource_Pack_Ruby",
+            "Meshable": {
+                "RowName": "Mesh_Meta_Resource_Pack"
+            },
+            "Itemable": {
+                "RowName": "Item_Meta_Resource_Pack_Ruby"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Consumable": {
+                "RowName": "Meta_Resource_Pack_Ruby"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack"
+            },
+            "Decayable": {
+                "RowName": "Decay_MetaItem"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Meta_Resource_Pack_Uranium_Rod",
+            "Meshable": {
+                "RowName": "Mesh_Meta_Resource_Pack"
+            },
+            "Itemable": {
+                "RowName": "Item_Meta_Resource_Pack_Uranium_Rod"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Consumable": {
+                "RowName": "Meta_Resource_Pack_Uranium_Rod"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack"
+            },
+            "Decayable": {
+                "RowName": "Decay_MetaItem"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Meta_Resource_Pack_Ren",
+            "Meshable": {
+                "RowName": "Mesh_Meta_Resource_Pack"
+            },
+            "Itemable": {
+                "RowName": "Item_Meta_Resource_Pack_Ren"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Consumable": {
+                "RowName": "Meta_Resource_Pack_Limestone"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack"
+            },
+            "Decayable": {
+                "RowName": "Decay_MetaItem"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package.Resource"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package.Resource"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
                     }
                 ],
                 "ParentTags": []

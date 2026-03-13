@@ -51,6 +51,17 @@
                     "RowName": "DangerousHorizons"
                 }
             }
+        },
+        {
+            "Name": "OwnerUnclaimMountsOnly",
+            "DisplayName": "NSLOCTEXT(\"D_CustomGameStats\", \"OwnerUnclaimMountsOnly-DisplayName\", \"Mount Unclaim Requires Ownership\")",
+            "Description": "NSLOCTEXT(\"D_CustomGameStats\", \"OwnerUnclaimMountsOnly-Description\", \"Disables the \\'Unclaim\\' button on Tames/Mounts for non-owning players\")",
+            "Category": "Creatures",
+            "StatChangeability": "Anytime",
+            "Stat": {
+                "RowName": "WorldUnclaimRequiresOwnership_?"
+            },
+            "MaxIntValue": 1
         }
     ]
 }
