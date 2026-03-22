@@ -16255,7 +16255,7 @@
         },
         {
             "Name": "BaseAdrenalineChance_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAdrenalineChance_%-PositiveDescription\", \"{0}% Chance on Attack to Add a Adrenaline Modifier to the Player\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAdrenalineChance_%-PositiveDescription\", \"{0}% Chance on Attack to Add an Adrenaline Modifier to the Player\")",
             "StatCategory": {
                 "RowName": "Generic_Damage"
             }
@@ -19494,24 +19494,6 @@
             }
         },
         {
-            "Name": "BaseTamingSpeedSaddleBoost_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTamingSpeedSaddleBoost_%-PositiveDescription\", \"-{0}% Tame Duration\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTamingSpeedSaddleBoost_%-NegativeDescription\", \"+{0}% Tame Duration\")",
-            "StatCategory": {
-                "RowName": "Tames"
-            }
-        },
-        {
-            "Name": "TamingSpeedSaddleBoost_%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"TamingSpeedSaddleBoost_%-Title\", \"Reduction In Tame Duration\")",
-            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
-            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
-            "bIsReplicated": true,
-            "StatCategory": {
-                "RowName": "Tames"
-            }
-        },
-        {
             "Name": "YetiExtraDamageResistance_+%",
             "Title": "NSLOCTEXT(\"D_Stats\", \"YetiExtraDamageResistance_+%-Title\", \"Resistance vs Frostfoot\")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
@@ -21582,6 +21564,23 @@
                 "RowName": "World"
             },
             "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "GrantedAuraQuickTamer_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraQuickTamer_?-PositiveDescription\", \"Nearby Juveniles Grow Faster\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "HasFallDamageImmunity_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"HasFallDamageImmunity_?-Title\", \"Creature Is Immune To Fall Damage\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"HasFallDamageImmunity_?-PositiveDescription\", \"Creature Is Immune To Fall Damage\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Mounts"
+            }
         }
     ]
 }
