@@ -13889,8 +13889,8 @@
         },
         {
             "Name": "BaseTurretSpreadYaw_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretSpreadYaw_+-PositiveDescription\", \"{0} Degrees Innaccuracy Yaw\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretSpreadYaw_+-NegativeDescription\", \"-{0} Degrees Innaccuracy Yaw\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretSpreadYaw_+-PositiveDescription\", \"{0} Degrees Inaccuracy Yaw\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretSpreadYaw_+-NegativeDescription\", \"-{0} Degrees Inaccuracy Yaw\")",
             "DisplayOperations": [
                 {
                     "Operation": "Division",
@@ -13913,8 +13913,8 @@
         },
         {
             "Name": "BaseTurretSpreadPitch_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretSpreadPitch_+-PositiveDescription\", \"{0} Degrees Innaccuracy Pitch\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretSpreadPitch_+-NegativeDescription\", \"-{0} Degrees Innaccuracy Pitch\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretSpreadPitch_+-PositiveDescription\", \"{0} Degrees Inaccuracy Pitch\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurretSpreadPitch_+-NegativeDescription\", \"-{0} Degrees Inaccuracy Pitch\")",
             "DisplayOperations": [
                 {
                     "Operation": "Division",
@@ -21706,6 +21706,139 @@
             "Name": "BaseFellingRefinedWoodConversion_%",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFellingRefinedWoodConversion_%-PositiveDescription\", \"+{0}% Conversion Rate of Refined Wood from Chopping\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFellingRefinedWoodConversion_%-NegativeDescription\", \"-{0}% Conversion Rate of Refined Wood from Chopping\")",
+            "StatCategory": {
+                "RowName": "Felling"
+            }
+        },
+        {
+            "Name": "ScreenshakeMultiplier_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ScreenshakeMultiplier_+-Title\", \"Screenshake Multiplier\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Character"
+            }
+        },
+        {
+            "Name": "BaseScreenshakeMultiplier_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseScreenshakeMultiplier_+-PositiveDescription\", \"+{0} Screenshake Multiplier\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseScreenshakeMultiplier_+-NegativeDescription\", \"-{0} Screenshake Multiplier\")",
+            "StatCategory": {
+                "RowName": "Character"
+            }
+        },
+        {
+            "Name": "BaseAttackRange_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttackRange_+-PositiveDescription\", \"+{0}m Attack Range\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttackRange_+-NegativeDescription\", \"-{0}m Attack Range\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "BaseAttackRange_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttackRange_+%-PositiveDescription\", \"+{0}% Attack Range\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAttackRange_+%-NegativeDescription\", \"-{0}% Attack Range\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "AttackRange_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AttackRange_+-Title\", \"Attack Range\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"AttackRange_+-PositiveTitleFormat\", \"+{0}m\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"AttackRange_+-NegativeTitleFormat\", \"-{0}m\")",
+            "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "FillableResource_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FillableResource_+-Title\", \"Fillable Resource\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Character"
+            }
+        },
+        {
+            "Name": "BaseFillableResource_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFillableResource_+-PositiveDescription\", \"+{0} Fillable Resource\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFillableResource_+-NegativeDescription\", \"-{0} Fillable Resource\")",
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "FillableResource_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FillableResource_+%-Title\", \"Fillable Resource\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Character"
+            }
+        },
+        {
+            "Name": "BaseFillableResource_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFillableResource_+%-PositiveDescription\", \"+{0}% Fillable Resource\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFillableResource_+%-NegativeDescription\", \"-{0} Fillable Resource\")",
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "FellingHighlightsWoodPieces_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FellingHighlightsWoodPieces_?-Title\", \"Felling Now Grants Refined Wood\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "CanFireSawblades_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CanFireSawblades_?-Title\", \"Gains Ability To Shoot Sawblades\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "SawbladeProjectileCooldown_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SawbladeProjectileCooldown_+-Title\", \"Saw Projectile Cooldown\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SawbladeProjectileCooldown_+-PositiveTitleFormat\", \"+{0}ms\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SawbladeProjectileCooldown_+-NegativeTitleFormat\", \"-{0}ms\")",
+            "StatCategory": {
+                "RowName": "World"
+            }
+        },
+        {
+            "Name": "BaseSawbladeProjectileCooldown_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSawbladeProjectileCooldown_+-PositiveDescription\", \"+{0}ms Saw Projectile Cooldown\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSawbladeProjectileCooldown_+-NegativeDescription\", \"-{0}ms Saw Projectile Cooldown\")",
             "StatCategory": {
                 "RowName": "Felling"
             }

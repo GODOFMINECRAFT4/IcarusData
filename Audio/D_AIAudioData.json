@@ -7052,6 +7052,63 @@
             "DeathVocalisation": {
                 "RowName": "SpeederDeath"
             }
+        },
+        {
+            "Name": "RadBoss",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/LavaHunter/SFX_FOOTSTEP_LAVA_HUNTER.SFX_FOOTSTEP_LAVA_HUNTER",
+            "FrontFootSocket": "FrontFoot",
+            "RearFootSocket": "BackFoot",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_LARGE.SFX_CRE_FOLIAGE_LARGE",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_LARGE.SFX_CRE_BODY_FALL_LARGE",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_LARGE.SFX_CRE_DEATHFALL_WATER_LARGE",
+            "VocalisationSocket": "RigMouthUp",
+            "AttackVocalisation": {
+                "RowName": "LavaHunterAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "LavaHunterFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "LavaHunterDeath"
+            },
+            "StateVocalisations": {
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "LavaHunterAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Fleeing": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "LavaHunterFlee",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatSimpleBossComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "ScorpionBoss"
+            },
+            "CombatMusicConditionOverride": "InCombat_EpicBoss",
+            "MusicConditionOverrideMinThreatLevel": 20
         }
     ]
 }

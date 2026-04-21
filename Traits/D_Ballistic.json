@@ -4917,6 +4917,31 @@
                 "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_SMALL.SFX_IMPACT_SMALL"
             },
             "bUseActorPooling": true
+        },
+        {
+            "Name": "Sawblade",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 70,
+            "DamageVariationPercentage": 10,
+            "bCanKillCam": true,
+            "Weight": 0.15000000596046448,
+            "GravityScale": 0.5,
+            "PayloadDeploymentType": "OnBounceImmediate",
+            "TrailParticle": "/Game/Fx/Particles/P_ArrowSmokeTrail.P_ArrowSmokeTrail",
+            "BreakChance": 0.15000000596046448,
+            "DurabilityDamage": 100,
+            "PostDeployLifetime": 60,
+            "OverrideStaticMesh": "/Game/ASS/ITM/Legendary_Chainsaw/SM_ITM_Legendary_Chainsaw_SAW_A_Blade.SM_ITM_Legendary_Chainsaw_SAW_A_Blade",
+            "VelocityRotationOffset": {
+                "Roll": 75
+            },
+            "SpawnPositionOffset": {
+                "X": 95
+            },
+            "AudioData": {
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ARROW_FLY.SFX_BALLISTIC_ARROW_FLY",
+                "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_ARROW_HIT.SFX_BALLISTIC_ARROW_HIT"
+            }
         }
     ]
 }

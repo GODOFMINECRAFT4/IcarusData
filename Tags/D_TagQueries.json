@@ -5505,26 +5505,18 @@
                     },
                     {
                         "TagName": "FieldGuide.Food"
-                    },
-                    {
-                        "TagName": "Item.Consumable.Food.Spoiled"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
-                    5,
-                    2,
                     1,
                     3,
                     0,
                     1,
-                    2,
-                    3,
-                    1,
-                    3
+                    2
                 ],
-                "AutoDescription": " ALL(  ANY( Item.Consumable.Food, NPC.Fish, FieldGuide.Food ),  NONE( Item.Consumable.Food.Spoiled ) )"
+                "AutoDescription": " ANY( Item.Consumable.Food, NPC.Fish, FieldGuide.Food )"
             }
         },
         {
@@ -6556,21 +6548,25 @@
                     },
                     {
                         "TagName": "Item.Deployable.Tame"
+                    },
+                    {
+                        "TagName": "Item.Husbandry.Serum"
                     }
                 ],
                 "QueryTokenStream": [
                     0,
                     1,
                     1,
-                    6,
+                    7,
                     0,
                     1,
                     2,
                     3,
                     4,
-                    5
+                    5,
+                    6
                 ],
-                "AutoDescription": " ANY( Item.Deployable.TameBed, Item.AnimalFeed, FieldGuide.Husbandry, Item.Meta.Animal, Item.Creature.Bait, Item.Deployable.Tame )"
+                "AutoDescription": " ANY( Item.Deployable.TameBed, Item.AnimalFeed, FieldGuide.Husbandry, Item.Meta.Animal, Item.Creature.Bait, Item.Deployable.Tame, Item.Husbandry.Serum )"
             }
         },
         {
@@ -8330,6 +8326,28 @@
                     0
                 ],
                 "AutoDescription": " ANY( Item.Decoration.Homestead )"
+            }
+        },
+        {
+            "Name": "FieldGuide_Deployable",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Item.Communicator"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Traits.Deployable, Item.Communicator )"
             }
         }
     ]
