@@ -14294,7 +14294,6 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Rabbit_Var/SM_DEP_Trophy_Rabbit_Var.SM_DEP_Trophy_Rabbit_Var",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "SupportsCustomRotation": false,
-            "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 2
         },
@@ -15570,6 +15569,21 @@
             "SnapToSurfaceNormal": false,
             "MaxSurfaceSnapAngle": 60,
             "SupportsCustomRotation": false
+        },
+        {
+            "Name": "Speeder_Kit_Heavy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Creatures/BP_Speeder_Kit_Heavy.BP_Speeder_Kit_Heavy_C",
+            "PreviewStaticMesh": "/Game/ASS/VHC/Speeder_Bike_heavy/SM_Speeder_Bike_Heavy.SM_Speeder_Bike_Heavy",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_METAL.SFX_BLD_METAL",
+            "AudioOcclusionAmount": 0.5,
+            "SnapToSurfaceNormal": false,
+            "SupportsCustomRotation": false,
+            "DeployCollisionExtentOffset": {
+                "Y": -100
+            },
+            "DeployCollisionLocationOffset": {
+                "Z": 15
+            }
         }
     ]
 }

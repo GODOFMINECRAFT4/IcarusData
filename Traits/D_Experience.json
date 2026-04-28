@@ -36,18 +36,6 @@
             }
         },
         {
-            "Name": "AI",
-            "ExperienceEvents": {
-                "XP_OnDeath": {
-                    "ExperienceEvent": {
-                        "RowName": "KillAI",
-                        "DataTableName": "D_ExperienceEvents"
-                    },
-                    "GainedExperience": 1000
-                }
-            }
-        },
-        {
             "Name": "Player",
             "ExperienceEvents": {
                 "XP_OnDeath": {
@@ -74,7 +62,7 @@
                         "RowName": "ChopTree",
                         "DataTableName": "D_ExperienceEvents"
                     },
-                    "GainedExperience": 300
+                    "GainedExperience": 0
                 }
             }
         },
@@ -135,30 +123,6 @@
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 500
-                }
-            }
-        },
-        {
-            "Name": "Medium_Animal",
-            "ExperienceEvents": {
-                "XP_OnDeath": {
-                    "ExperienceEvent": {
-                        "RowName": "KillMediumAnimal",
-                        "DataTableName": "D_ExperienceEvents"
-                    },
-                    "GainedExperience": 3000
-                }
-            }
-        },
-        {
-            "Name": "Small_Animal",
-            "ExperienceEvents": {
-                "XP_OnDeath": {
-                    "ExperienceEvent": {
-                        "RowName": "KillSmallAnimal",
-                        "DataTableName": "D_ExperienceEvents"
-                    },
-                    "GainedExperience": 1500
                 }
             }
         },
@@ -2166,7 +2130,31 @@
             "ExperienceEvents": {
                 "XP_OnDeath": {
                     "ExperienceEvent": {
-                        "RowName": "Kill_WoollyMammoth",
+                        "RowName": "Kill_WoollyMammoth_Boss",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Rad_Bomber",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Rad_Bomber",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_Rad_Broodling",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_Rad_Broodling",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0

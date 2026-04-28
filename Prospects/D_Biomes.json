@@ -1566,6 +1566,45 @@
             "BiomeModifier": {
                 "RowName": "Cold_Atmosphere"
             }
+        },
+        {
+            "Name": "Outpost_011_Swamp",
+            "BiomeName": "Outpost_011_Swamp",
+            "DisplayName": "INVTEXT(\"[DNT] Swamp\")",
+            "Color": {
+                "B": 84,
+                "G": 132,
+                "R": 1,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/SwampTemperatureCurve.SwampTemperatureCurve'",
+            "AtmosphereType": {
+                "RowName": "Swamp"
+            },
+            "Audio": {
+                "RowName": "ElySwamp"
+            },
+            "BiomeModifier": {
+                "RowName": "Swamp_Atmosphere"
+            }
+        },
+        {
+            "Name": "Outpost_011_Jungle",
+            "BiomeName": "Outpost_011_Jungle",
+            "DisplayName": "INVTEXT(\"[DNT] Jungle\")",
+            "Color": {
+                "B": 90,
+                "G": 150,
+                "R": 100,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
+            "AtmosphereType": {
+                "RowName": "Jungle"
+            },
+            "Audio": {
+                "RowName": "Conifer"
+            }
         }
     ]
 }

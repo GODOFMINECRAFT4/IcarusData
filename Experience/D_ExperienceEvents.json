@@ -39,12 +39,6 @@
             "SharedExperience": true
         },
         {
-            "Name": "KillAI",
-            "EventDescription": "NSLOCTEXT(\"D_ExperienceEvents\", \"KillAI-EventDescription\", \"Killed AI\")",
-            "SharedExperience": true,
-            "ExperienceGranted": 1000
-        },
-        {
             "Name": "KillPlayer",
             "EventDescription": "NSLOCTEXT(\"D_ExperienceEvents\", \"KillPlayer-EventDescription\", \"Killed Player\")",
             "SharedExperience": true
@@ -95,16 +89,6 @@
             "EventDescription": "NSLOCTEXT(\"D_ExperienceEvents\", \"KillFish-EventDescription\", \"Killed Fish\")",
             "SharedExperience": true,
             "ExperienceGranted": 100
-        },
-        {
-            "Name": "KillSmallAnimal",
-            "SharedExperience": true,
-            "ExperienceGranted": 500
-        },
-        {
-            "Name": "KillMediumAnimal",
-            "SharedExperience": true,
-            "ExperienceGranted": 1000
         },
         {
             "Name": "Kill_BabyDeer",
@@ -380,6 +364,12 @@
             "Name": "Skin_WoollyMammoth",
             "EventDescription": "NSLOCTEXT(\"D_ExperienceEvents\", \"Skin_WoollyMammoth-EventDescription\", \"Skinned Woolly Mammoth\")",
             "ExperienceGranted": 1250
+        },
+        {
+            "Name": "Kill_WoollyMammoth_Boss",
+            "EventDescription": "NSLOCTEXT(\"D_ExperienceEvents\", \"Kill_WoollyMammoth_Boss-EventDescription\", \"Killed Woolly Mammoth Boss\")",
+            "SharedExperience": true,
+            "ExperienceGranted": 12500
         },
         {
             "Name": "Kill_ColumbianMammoth",
@@ -1983,6 +1973,28 @@
             "Name": "Skin_Cat",
             "EventDescription": "NSLOCTEXT(\"D_ExperienceEvents\", \"Skin_Cat-EventDescription\", \"Skinned Cat\")",
             "ExperienceGranted": 160
+        },
+        {
+            "Name": "Skin_Rad_Broodling",
+            "EventDescription": "NSLOCTEXT(\"D_ExperienceEvents\", \"Skin_Rad_Broodling-EventDescription\", \"Skinned Radiation Broodling\")",
+            "ExperienceGranted": 180
+        },
+        {
+            "Name": "Skin_Rad_Bomber",
+            "EventDescription": "NSLOCTEXT(\"D_ExperienceEvents\", \"Skin_Rad_Bomber-EventDescription\", \"Skinned Radiation Bomber\")",
+            "ExperienceGranted": 180
+        },
+        {
+            "Name": "Kill_Rad_Bomber",
+            "EventDescription": "NSLOCTEXT(\"D_ExperienceEvents\", \"Kill_Rad_Bomber-EventDescription\", \"Killed Radiation Bomber\")",
+            "SharedExperience": true,
+            "ExperienceGranted": 150
+        },
+        {
+            "Name": "Kill_Rad_Broodling",
+            "EventDescription": "NSLOCTEXT(\"D_ExperienceEvents\", \"Kill_Rad_Broodling-EventDescription\", \"Killed Radiation Broodling\")",
+            "SharedExperience": true,
+            "ExperienceGranted": 150
         }
     ]
 }

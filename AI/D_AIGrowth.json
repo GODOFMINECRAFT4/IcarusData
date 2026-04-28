@@ -6302,6 +6302,88 @@
             },
             "Health": "CurveFloat'/Game/Data/AI/Curves/C_WolfJuvenileHealth.C_WolfJuvenileHealth'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
+            "Name": "Mount_SpeederBike_Heavy",
+            "Base": {
+                "(Value=\"BaseMovementSpeed_+\")": 150,
+                "(Value=\"BaseSwimSpeed_+\")": 200,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 0,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseCharacterMass_+\")": 500,
+                "(Value=\"CanNPCDamageVoxels_?\")": 0,
+                "(Value=\"BaseMiningRadius_+\")": 0,
+                "(Value=\"BaseStaminaRegenPerMinute_+\")": 2100,
+                "(Value=\"BaseStaminaRegenFromEmptyDelay_+\")": 5000,
+                "(Value=\"BaseStaminaRegenDelay_+\")": 2000,
+                "(Value=\"BaseWeightCapacity_+\")": 1400,
+                "(Value=\"BaseStaminaConsumed_+%\")": 0,
+                "(Value=\"BasePhysicalDamageResistance_%\")": 40,
+                "(Value=\"BaseMaximumHealth_+\")": 3000,
+                "(Value=\"IsMountPrimaryAttackDisabledByDefault_?\")": 1,
+                "(Value=\"BaseFallDamageResistance_%\")": 15,
+                "(Value=\"BaseFireDamageResistance_%\")": 40,
+                "(Value=\"BaseFrostDamageResistance_%\")": 40,
+                "(Value=\"BaseExplosiveDamageResistance_%\")": 40,
+                "(Value=\"BasePoisonDamageResistance_%\")": 40,
+                "(Value=\"BaseRefinedOilConsumedPerSecond_+\")": 10,
+                "(Value=\"DisableCreatureGenetics_?\")": 1,
+                "(Value=\"BaseFuelConsumedDuringBoost_+%\")": 200,
+                "(Value=\"BaseMountCargoSlots_+\")": 37,
+                "(Value=\"BaseMountHeavyCargoSlots_+\")": 12
+            },
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
+            "Name": "Rad_Bomber",
+            "Base": {
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIDamagePerceptionMaxAge_+\")": 10,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 4000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 4500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseMaximumHealth_+\")": 25,
+                "(Value=\"BaseCharacterMass_+\")": 10,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseExplosiveDamageRadius_+\")": 300,
+                "(Value=\"BaseExplosiveDamage_+\")": 35
+            },
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/Curves/C_AlphaWolfMeleeDamage.C_AlphaWolfMeleeDamage'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
+        },
+        {
+            "Name": "Rad_Broodling",
+            "Base": {
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 20,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIDamagePerceptionMaxAge_+\")": 10,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 6000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 6750,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseCharacterMass_+\")": 400,
+                "(Value=\"BaseNPCAttackRadius_+\")": 250,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseMovementSpeed_+\")": 255,
+                "(Value=\"BaseAttacksCauseRadiationBurn_%\")": 25,
+                "(Value=\"BaseMeleeDamageResistance_+%\")": -50,
+                "(Value=\"BaseLaserDamageResistance_%\")": -100,
+                "(Value=\"BaseProjectileDamageResistance_%\")": 33
+            },
+            "Health": "CurveFloat'/Game/Data/AI/Curves/C_LavaBroodlingWorldSpawn_Health.C_LavaBroodlingWorldSpawn_Health'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/Curves/C_LavaBroodlingWorldSpawnMeleeDamage.C_LavaBroodlingWorldSpawnMeleeDamage'",
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         }
     ]
 }
