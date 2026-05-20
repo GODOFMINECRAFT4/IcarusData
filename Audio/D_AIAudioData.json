@@ -6927,10 +6927,10 @@
             "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_MED.SFX_CRE_DEATHFALL_WATER_MED",
             "VocalisationSocket": "RigJaw",
             "FlinchVocalisation": {
-                "RowName": "PigletFlinch"
+                "RowName": "BoarJuviFlinch"
             },
             "DeathVocalisation": {
-                "RowName": "PigletDeath"
+                "RowName": "BoarJuviDeath"
             },
             "StateVocalisations": {
                 "Idle": {
@@ -7070,7 +7070,7 @@
                 "RowName": "LavaHunterFlinch"
             },
             "DeathVocalisation": {
-                "RowName": "LavaHunterDeath"
+                "RowName": "RadBossDeath"
             },
             "StateVocalisations": {
                 "Attacking": {
@@ -7080,20 +7080,6 @@
                     },
                     "StatePersistentVocalisation": {
                         "RowName": "LavaHunterAggro",
-                        "DataTableName": "D_Vocalisations"
-                    },
-                    "StateExitedVocalisation": {
-                        "RowName": "None",
-                        "DataTableName": "D_Vocalisations"
-                    }
-                },
-                "Fleeing": {
-                    "StateEnteredVocalisation": {
-                        "RowName": "None",
-                        "DataTableName": "D_Vocalisations"
-                    },
-                    "StatePersistentVocalisation": {
-                        "RowName": "LavaHunterFlee",
                         "DataTableName": "D_Vocalisations"
                     },
                     "StateExitedVocalisation": {
@@ -7149,6 +7135,12 @@
             "ThreatLevel": 100,
             "ThreatConfig": {
                 "RowName": "Default"
+            }
+        },
+        {
+            "Name": "RadBomber",
+            "DeathVocalisation": {
+                "RowName": "RadBomberDeath"
             }
         }
     ]

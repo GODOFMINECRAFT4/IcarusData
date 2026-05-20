@@ -1329,7 +1329,7 @@
                 "RowName": "Item"
             },
             "Focusable": {
-                "RowName": "Focusable_Spear"
+                "RowName": "Focusable_Spear_Rotated"
             },
             "Highlightable": {
                 "RowName": "Generic"
@@ -1641,7 +1641,7 @@
                 "RowName": "Item"
             },
             "Focusable": {
-                "RowName": "Focusable_Spear"
+                "RowName": "Focusable_Spear_Rotated"
             },
             "Highlightable": {
                 "RowName": "Generic"
@@ -10452,7 +10452,7 @@
                 "RowName": "Mesh_Molotov"
             },
             "Itemable": {
-                "RowName": "Item_Frag_Grenade"
+                "RowName": "Item_Molotov"
             },
             "Interactable": {
                 "RowName": "Item"
@@ -38786,6 +38786,100 @@
             }
         },
         {
+            "Name": "AnimalCarcass_WildBoar_Tame",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_WildBoar_Tame"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_WildBoar"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Equippable": {
+                "RowName": "Equippable_Carcass_Medium"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Carcass_Wolf"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Utilityslot_Drop"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Equippable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
             "Name": "AnimalCarcass_Zebra",
             "Meshable": {
                 "RowName": "Mesh_CarcassZebra"
@@ -46408,7 +46502,7 @@
                 "RowName": "Item"
             },
             "Focusable": {
-                "RowName": "Focusable_Spear"
+                "RowName": "Focusable_Spear_Rotated"
             },
             "Highlightable": {
                 "RowName": "Generic"
@@ -88038,6 +88132,74 @@
             }
         },
         {
+            "Name": "Fish_15_Var2",
+            "Meshable": {
+                "RowName": "Mesh_Fish15_Var2"
+            },
+            "Itemable": {
+                "RowName": "Item_Fish_15_Var2"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Fish"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Fish"
+            },
+            "Usable": {
+                "RowName": "Convert_Fish_To_Chunks"
+            },
+            "Decayable": {
+                "RowName": "Decay_Raw_Meat"
+            },
+            "Audio": {
+                "RowName": "Fish"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Fish.Freshwater"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Fish.Freshwater"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
             "Name": "Fish_16",
             "Meshable": {
                 "RowName": "Mesh_Fish16"
@@ -88083,6 +88245,74 @@
                     },
                     {
                         "TagName": "NPC.Fish.Unique"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Galileo"
+                }
+            }
+        },
+        {
+            "Name": "Fish_16_Var2",
+            "Meshable": {
+                "RowName": "Mesh_Fish16_Var2"
+            },
+            "Itemable": {
+                "RowName": "Item_Fish_16_Var2"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Fish"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Fish"
+            },
+            "Usable": {
+                "RowName": "Convert_Fish_To_Chunks"
+            },
+            "Decayable": {
+                "RowName": "Decay_Raw_Meat"
+            },
+            "Audio": {
+                "RowName": "Fish"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Fish.Saltwater"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Fish.Saltwater"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -88192,142 +88422,6 @@
             },
             "Itemable": {
                 "RowName": "Item_Fish_17_Var2"
-            },
-            "Interactable": {
-                "RowName": "Item"
-            },
-            "Focusable": {
-                "RowName": "Focusable_Fish"
-            },
-            "Highlightable": {
-                "RowName": "Generic"
-            },
-            "Actionable": {
-                "RowName": "Fish"
-            },
-            "Usable": {
-                "RowName": "Convert_Fish_To_Chunks"
-            },
-            "Decayable": {
-                "RowName": "Decay_Raw_Meat"
-            },
-            "Audio": {
-                "RowName": "Fish"
-            },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "NPC.Fish.Saltwater"
-                    }
-                ]
-            },
-            "Generated_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "NPC.Fish.Saltwater"
-                    },
-                    {
-                        "TagName": "Traits.Meshable"
-                    },
-                    {
-                        "TagName": "Traits.Itemable"
-                    },
-                    {
-                        "TagName": "Traits.Interactable"
-                    },
-                    {
-                        "TagName": "Traits.Highlightable"
-                    },
-                    {
-                        "TagName": "Traits.Actionable"
-                    },
-                    {
-                        "TagName": "Traits.Usable"
-                    }
-                ],
-                "ParentTags": []
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "NewFrontiers"
-                }
-            }
-        },
-        {
-            "Name": "Fish_17_Var3",
-            "Meshable": {
-                "RowName": "Mesh_Fish17_Var3"
-            },
-            "Itemable": {
-                "RowName": "Item_Fish_17_Var3"
-            },
-            "Interactable": {
-                "RowName": "Item"
-            },
-            "Focusable": {
-                "RowName": "Focusable_Fish"
-            },
-            "Highlightable": {
-                "RowName": "Generic"
-            },
-            "Actionable": {
-                "RowName": "Fish"
-            },
-            "Usable": {
-                "RowName": "Convert_Fish_To_Chunks"
-            },
-            "Decayable": {
-                "RowName": "Decay_Raw_Meat"
-            },
-            "Audio": {
-                "RowName": "Fish"
-            },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "NPC.Fish.Saltwater"
-                    }
-                ]
-            },
-            "Generated_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "NPC.Fish.Saltwater"
-                    },
-                    {
-                        "TagName": "Traits.Meshable"
-                    },
-                    {
-                        "TagName": "Traits.Itemable"
-                    },
-                    {
-                        "TagName": "Traits.Interactable"
-                    },
-                    {
-                        "TagName": "Traits.Highlightable"
-                    },
-                    {
-                        "TagName": "Traits.Actionable"
-                    },
-                    {
-                        "TagName": "Traits.Usable"
-                    }
-                ],
-                "ParentTags": []
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "NewFrontiers"
-                }
-            }
-        },
-        {
-            "Name": "Fish_17_Var4",
-            "Meshable": {
-                "RowName": "Mesh_Fish17_Var4"
-            },
-            "Itemable": {
-                "RowName": "Item_Fish_17_Var4"
             },
             "Interactable": {
                 "RowName": "Item"
@@ -99603,7 +99697,7 @@
                 "RowName": "Item"
             },
             "Focusable": {
-                "RowName": "Focusable_Spear"
+                "RowName": "Focusable_Spear_Rotated"
             },
             "Highlightable": {
                 "RowName": "Generic"
@@ -101791,7 +101885,7 @@
                 "RowName": "Item"
             },
             "Focusable": {
-                "RowName": "Focusable_Spear"
+                "RowName": "Focusable_Spear_Rotated"
             },
             "Highlightable": {
                 "RowName": "Generic"
@@ -199877,7 +199971,7 @@
                 "RowName": "Item"
             },
             "Focusable": {
-                "RowName": "Focusable_Spear"
+                "RowName": "Focusable_Spear_Rotated"
             },
             "Highlightable": {
                 "RowName": "Generic"
@@ -230175,7 +230269,8 @@
                 "RowName": "GenericDeployable"
             },
             "AdditionalStats": {
-                "(Value=\"IsInvulnerable_?\")": 1
+                "(Value=\"IsInvulnerable_?\")": 1,
+                "(Value=\"DoNotRecordForPrebuilt_?\")": 1
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -232333,7 +232428,9 @@
             "AdditionalStats": {
                 "(Value=\"BaseRefinedOilConsumedPerSecond_+\")": 20,
                 "(Value=\"BaseIndustrialToolActionsPerMinute_+\")": 540,
-                "(Value=\"BaseScreenshakeMultiplier_+\")": 150
+                "(Value=\"BaseScreenshakeMultiplier_+\")": 150,
+                "(Value=\"BaseChainsawDurabilityUseAlternateFire_+\")": 1000,
+                "(Value=\"BaseChainsawFuelUseAlternateFire_+\")": 100
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -233394,6 +233491,309 @@
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
                 }
+            }
+        },
+        {
+            "Name": "Fish_20",
+            "Meshable": {
+                "RowName": "Mesh_Fish20"
+            },
+            "Itemable": {
+                "RowName": "Item_Fish_20"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Fish"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Fish"
+            },
+            "Usable": {
+                "RowName": "Convert_Fish_To_Chunks"
+            },
+            "Decayable": {
+                "RowName": "Decay_Raw_Meat"
+            },
+            "Audio": {
+                "RowName": "Fish"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Fish.Freshwater"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "NPC.Fish.Freshwater"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Butcher_Knife",
+            "Meshable": {
+                "RowName": "Mesh_Butcher_Knife"
+            },
+            "Itemable": {
+                "RowName": "Item_Butcher_Knife"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H_Butcher"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Melee_1HAxe"
+            },
+            "Usable": {
+                "RowName": "Repair"
+            },
+            "Durable": {
+                "RowName": "Metal_Knife"
+            },
+            "Decayable": {
+                "RowName": "Decay_02_Minutes"
+            },
+            "ToolDamage": {
+                "RowName": "Butcher_Knife"
+            },
+            "Audio": {
+                "RowName": "Machete"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Cleaver"
+                    },
+                    {
+                        "TagName": "Item.Tool.Knife"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Cleaver"
+                    },
+                    {
+                        "TagName": "Item.Tool.Knife"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Fertility_Serum_Boar",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Fertility_Serum_Boar"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Fertility_Serum"
+            },
+            "Consumable": {
+                "RowName": "Food_Fertility_Serum"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_ThreeDay"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Husbandry.Serum"
+                    },
+                    {
+                        "TagName": "NPC.Boar"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Husbandry.Serum"
+                    },
+                    {
+                        "TagName": "NPC.Boar"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Boar_Juvenile",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Boar_Juvenile"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Juvenile_Boar"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Equippable": {
+                "RowName": "Equippable_Carcass_Small"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Carcass_Hip"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Utilityslot_Drop"
+            },
+            "Durable": {
+                "RowName": "Carcass_Small"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Equippable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
             }
         }
     ]

@@ -21134,6 +21134,74 @@
             }
         },
         {
+            "Name": "Carcass_Boar_Tame",
+            "RecipeSets": [
+                {
+                    "RowName": "Skinning_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "AnimalCarcass_WildBoar_Tame",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Raw_Bacon",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 3,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 40,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fur",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 8,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Bone",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "White_Meat",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "SkinningBench"
+            }
+        },
+        {
             "Name": "Carcass_Zebra",
             "RecipeSets": [
                 {
@@ -118926,6 +118994,100 @@
             }
         },
         {
+            "Name": "Fertility_Serum_Boar",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Condensed_Enzymes",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3
+                },
+                {
+                    "Element": {
+                        "RowName": "Seed",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_Boar",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fertility_Serum_Boar_Exotic",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "MetaResource",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
+                },
+                {
+                    "Element": {
+                        "RowName": "Seed",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_Boar",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Speeder_Kit",
             "Requirement": {
                 "RowName": "Speeder_Kit"
@@ -119883,6 +120045,135 @@
             ],
             "Audio": {
                 "RowName": "SkinningBench"
+            }
+        },
+        {
+            "Name": "Butcher_Knife",
+            "Requirement": {
+                "RowName": "Butcher_Knife"
+            },
+            "RequiredMillijoules": 7000,
+            "RecipeSets": [
+                {
+                    "RowName": "Anvil_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Anvil_Bench_T3",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Anvil_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "ResourceCostMultipliers": [
+                {
+                    "Value": "BaseKnifeCraftingCost_+%"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Wood",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
+                },
+                {
+                    "Element": {
+                        "RowName": "Epoxy",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 4
+                },
+                {
+                    "Element": {
+                        "RowName": "Steel_Ingot",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 6
+                },
+                {
+                    "Element": {
+                        "RowName": "Iron_Nail",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Butcher_Knife",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "AnvilBench"
+            }
+        },
+        {
+            "Name": "Molotov",
+            "Requirement": {
+                "RowName": "Molotov"
+            },
+            "RequiredMillijoules": 10000,
+            "RecipeSets": [
+                {
+                    "RowName": "Machining_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Fabricator",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Manufacturer",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Glass_Bottle",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1
+                },
+                {
+                    "Element": {
+                        "RowName": "Rope",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2
+                }
+            ],
+            "ResourceInputs": [
+                {
+                    "Type": {
+                        "Value": "Biofuel"
+                    },
+                    "RequiredUnits": 1000
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Molotov",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MachiningBench"
             }
         }
     ]

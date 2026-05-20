@@ -1605,6 +1605,28 @@
             "Audio": {
                 "RowName": "Conifer"
             }
+        },
+        {
+            "Name": "Ely_RadBossArena",
+            "BiomeName": "RadBossArena",
+            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Ely_RadBossArena-DisplayName\", \"RadBossArena\")",
+            "Color": {
+                "B": 255,
+                "G": 225,
+                "R": 242,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/DesertTemperatureCurve.DesertTemperatureCurve'",
+            "WeatherFrequency": 2,
+            "AtmosphereType": {
+                "RowName": "Geothermal"
+            },
+            "Audio": {
+                "RowName": "BossRadGeo"
+            },
+            "BiomeModifier": {
+                "RowName": "Geothermal_Atmosphere"
+            }
         }
     ]
 }

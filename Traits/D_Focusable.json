@@ -111,6 +111,28 @@
             "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SprCrouchIdle.3RD_CHA_MAL_SprCrouchIdle"
         },
         {
+            "Name": "Focusable_Spear_Rotated",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "GeneralBoth"
+            },
+            "AttachmentOffset": {
+                "Rotation": {
+                    "Z": 0.843391478061676,
+                    "W": 0.5372995138168335
+                }
+            },
+            "AnimOverlayType": "Spear",
+            "AnimationData": {
+                "RowName": "Spear"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPR_Equip_Montage.1ST_CHA_SPR_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_SPRIdle.1ST_CHA_SPRIdle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SPREquip_Montage.3RD_CHA_SPREquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SPRIdle.3RD_CHA_MAL_SPRIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_SprCrouchIdle.3RD_CHA_MAL_SprCrouchIdle"
+        },
+        {
             "Name": "Focusable_Fishing_Rod",
             "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Fishing.BP_FocusableBehaviour_Fishing_C",
             "AttachmentData": {
@@ -1429,7 +1451,7 @@
         },
         {
             "Name": "Chainsaw_SWQ",
-            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Chainsaw.BP_FocusableBehaviour_Chainsaw_C",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour_Chainsaw_Legendary.BP_FocusableBehaviour_Chainsaw_Legendary_C",
             "AttachmentData": {
                 "RowName": "GeneralBoth"
             },
@@ -1437,12 +1459,26 @@
             "AnimationData": {
                 "RowName": "Chainsaw"
             },
-            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Chainsaw_On_Montage_SWQ.1ST_CHA_Chainsaw_On_Montage_SWQ",
             "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Chainsaw_Idle_On.1ST_CHA_Chainsaw_Idle_On",
-            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Chainsaw_On_Montage.3RD_CHA_MAL_Chainsaw_On_Montage",
             "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Chainsaw_Idle_On.3RD_CHA_MAL_Chainsaw_Idle_On",
             "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_Chainsaw_Crouch_Idle.3RD_CHA_MAL_Chainsaw_Crouch_Idle",
             "ItemFocusedMontage": "/Game/ASS/ITM/ANI_ITM_Chainsaw_Turn_On_Montage.ANI_ITM_Chainsaw_Turn_On_Montage"
+        },
+        {
+            "Name": "Focusable_1H_Butcher",
+            "Behaviour": "/Game/BP/Behaviours/Focusable/BP_FocusableBehaviour.BP_FocusableBehaviour_C",
+            "AttachmentData": {
+                "RowName": "Butcher_Knife"
+            },
+            "AnimOverlayType": "OneHanded",
+            "AnimationData": {
+                "RowName": "1HWEP"
+            },
+            "FPFocusedMontage": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Axe_Equip_Montage.1ST_CHA_Axe_Equip_Montage",
+            "FPIdleAnim": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_1HAxe_Idle.1ST_CHA_1HAxe_Idle",
+            "TPFocusedMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_1HAxeEquip_Montage.3RD_CHA_1HAxeEquip_Montage",
+            "TPUprightIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWeaponIdle.3RD_CHA_MAL_1HWeaponIdle",
+            "TPCrouchedIdle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_1HWEPCrouchIdle.3RD_CHA_MAL_1HWEPCrouchIdle"
         }
     ]
 }

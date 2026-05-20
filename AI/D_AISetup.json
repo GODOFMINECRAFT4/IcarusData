@@ -18202,7 +18202,7 @@
                 "RowName": "Wild_Boar"
             },
             "DeadItem": {
-                "RowName": "AnimalCarcass_WildBoar"
+                "RowName": "AnimalCarcass_WildBoar_Tame"
             },
             "GOAPSetup": {
                 "RowName": "NoGOAP"
@@ -36272,6 +36272,165 @@
             "bUseSurvivalCharacterState": true,
             "BestiaryGroup": {
                 "RowName": "Snow_Wolf"
+            }
+        },
+        {
+            "Name": "Juvenile_Boar",
+            "ActorClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Boar_Juvenile.BP_NPC_Boar_Juvenile_C",
+            "ControllerClass": "/Game/BP/AI/GOAP/AI/BP_NPC_Juvenile_Controller.BP_NPC_Juvenile_Controller_C",
+            "CreatureType": {
+                "RowName": "Wild_Boar"
+            },
+            "Descriptors": [
+                {
+                    "RowName": "Passive",
+                    "DataTableName": "D_AIDescriptors"
+                },
+                {
+                    "RowName": "Herbivore",
+                    "DataTableName": "D_AIDescriptors"
+                }
+            ],
+            "DeadItem": {
+                "RowName": "AnimalCarcass_Boar_Juvenile"
+            },
+            "GOAPSetup": {
+                "RowName": "Juvenile_Default"
+            },
+            "DefaultNavigationFilter": "BlueprintGeneratedClass'/Game/BP/AI/GOAP/Misc/NavFilter_JuvenileAI.NavFilter_JuvenileAI_C'",
+            "Relationships": {
+                "RowName": "DefaultSmallHerbivore"
+            },
+            "NotifiedNPCTypes": [
+                {
+                    "RowName": "NPC_Passive",
+                    "DataTableName": "D_TagQueries"
+                }
+            ],
+            "AIGrowth": {
+                "RowName": "Juvenile_Boar"
+            },
+            "MovementMapping": {
+                "Stationary": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Sneak": {
+                    "MaxWalkSpeed": 0.3400000035762787,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Walk": {
+                    "MaxWalkSpeed": 1,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Jog": {
+                    "MaxWalkSpeed": 2,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Run": {
+                    "MaxWalkSpeed": 5,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 500,
+                    "BrakingDeceleration": 450,
+                    "RotationRate": 125,
+                    "MaxSwimSpeed": 1
+                },
+                "Sprint": {
+                    "MaxWalkSpeed": 5,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 1800,
+                    "BrakingDeceleration": 500,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Attacking": {
+                    "MaxWalkSpeed": 5,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 64,
+                    "MaxAcceleration": 450,
+                    "BrakingDeceleration": 50000,
+                    "RotationRate": 150,
+                    "MaxSwimSpeed": 1
+                },
+                "Following": {
+                    "MaxWalkSpeed": 5,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                },
+                "Undefined": {
+                    "MaxWalkSpeed": 2,
+                    "GroundFriction": 8,
+                    "BrakingFriction": 2,
+                    "MaxAcceleration": 300,
+                    "BrakingDeceleration": 250,
+                    "RotationRate": 100,
+                    "MaxSwimSpeed": 1
+                }
+            },
+            "Audio": {
+                "RowName": "Piglet"
+            },
+            "CollisionHitEventBones": [
+                "RigChest",
+                "RigNeck1",
+                "RigChest",
+                "RigSpine2",
+                "RigPelvis",
+                "RigNeck2"
+            ],
+            "ValidBaitTagQuery": {
+                "TagDictionary": [
+                    {
+                        "TagName": "GOAP.Food.Carnivore.Bait"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
+            },
+            "Loot": {
+                "RowName": "Juvenile_Boar_Carcass_Loot"
+            },
+            "Hitable": {
+                "RowName": "AnimalBones_Small"
+            },
+            "Experience": {
+                "RowName": "Creature_Boar_Juvenile"
+            },
+            "bUseSurvivalCharacterState": true,
+            "BestiaryGroup": {
+                "RowName": "Wild_Boar"
             }
         }
     ]
