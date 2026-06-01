@@ -7142,6 +7142,62 @@
             "DeathVocalisation": {
                 "RowName": "RadBomberDeath"
             }
+        },
+        {
+            "Name": "TundraMonkeyJuvi",
+            "FootstepSound": "/Game/FMOD/Events/SFX/Creatures/Footsteps/SFX_CRE_FOOTSTEPS_TUNDRAMONKEY_JUVI.SFX_CRE_FOOTSTEPS_TUNDRAMONKEY_JUVI",
+            "FrontFootSocket": "RigHead",
+            "RearFootSocket": "RigTail1",
+            "MovementSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_FOLIAGE_SMALL.SFX_CRE_FOLIAGE_SMALL",
+            "DeathCollisionSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_BODY_FALL_SMALL.SFX_CRE_BODY_FALL_SMALL",
+            "DeathCollisionSocket": "RigPelvis",
+            "WaterDeathSound": "/Game/FMOD/Events/SFX/Creatures/Movement/SFX_CRE_DEATHFALL_WATER_SMALL.SFX_CRE_DEATHFALL_WATER_SMALL",
+            "VocalisationSocket": "RigJaw_M",
+            "AttackVocalisation": {
+                "RowName": "TundraMonkeyAttack"
+            },
+            "FlinchVocalisation": {
+                "RowName": "TundraMonkeyFlinch"
+            },
+            "DeathVocalisation": {
+                "RowName": "TundraMonkeyDeath"
+            },
+            "StateVocalisations": {
+                "Idle": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "TundraMonkeyJuviIdle",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                },
+                "Attacking": {
+                    "StateEnteredVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StatePersistentVocalisation": {
+                        "RowName": "TundraMonkeyAggro",
+                        "DataTableName": "D_Vocalisations"
+                    },
+                    "StateExitedVocalisation": {
+                        "RowName": "None",
+                        "DataTableName": "D_Vocalisations"
+                    }
+                }
+            },
+            "ThreatComponentClass": "/Script/Icarus.CreatureAudioThreatGOAPComponent",
+            "ThreatLevel": 100,
+            "ThreatConfig": {
+                "RowName": "Default"
+            },
+            "CombatMusicConditionOverride": "InCombat"
         }
     ]
 }

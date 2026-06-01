@@ -3035,37 +3035,38 @@
                 "X": 0.07999999821186066,
                 "Y": 0.07999999821186066
             },
-            "LaunchForce": 600,
+            "LaunchForce": 3000,
             "ChargeData": {
                 "ChargeSpeed": 0,
                 "bFireCanCharge": false
             },
             "VisualData": {
-                "PreviewItemAttachSocket3P": "R_prop_00",
+                "bUsesPreviewItem": true,
+                "PreviewItemAttachType": "Weapon",
+                "PreviewItemAttachSocket1P": "Blades",
+                "PreviewItemAttachSocket3P": "Blades",
                 "FireShake": "BlueprintGeneratedClass'/Game/BP/CameraShake/Weapons/CS_Rifle_BoltAction_Fire.CS_Rifle_BoltAction_Fire_C'",
-                "FireParticle": "/Game/ASS/VFX/WEP/NS_BoltActionMuzzle_2.NS_BoltActionMuzzle_2",
+                "FireParticle": "/Game/ASS/VFX/WEP/NS_ShotgunMuzzle_V2.NS_ShotgunMuzzle_V2",
                 "VisualRecoil": 20,
                 "AimFOVMultiplier": 0.8999999761581421,
-                "SkeletalItemAnimData": {
-                    "Fire": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Chainsaw_Ranged_Attack_Montage_WyrmQueen.1ST_CHA_Chainsaw_Ranged_Attack_Montage_WyrmQueen",
-                    "Reload": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_swq_chainsaw_reload_montage.1ST_CHA_swq_chainsaw_reload_montage"
-                },
                 "FirstPersonAnimData": {
+                    "Idle": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Chainsaw_Idle_On.1ST_CHA_Chainsaw_Idle_On",
                     "Fire": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_Chainsaw_Ranged_Attack_Montage_WyrmQueen.1ST_CHA_Chainsaw_Ranged_Attack_Montage_WyrmQueen",
                     "Reload": "/Game/ASS/CHA/1ST/1ST_NewRig/1ST_CHA_swq_chainsaw_reload_montage.1ST_CHA_swq_chainsaw_reload_montage"
                 },
                 "ThirdPersonAnimData": {
+                    "Idle": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_SlugLauncher_Idle_Test.3RD_CHA_SlugLauncher_Idle_Test",
+                    "Aim": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_MAL_RifleAimUpToDwn.3RD_CHA_MAL_RifleAimUpToDwn",
+                    "Fire": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_LauncherShoot_BS.3RD_CHA_LauncherShoot_BS",
+                    "AimFire": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_RifleAimShoot_BS.3RD_CHA_RifleAimShoot_BS",
                     "ReloadMontage": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Sandworm_CrossbowReload.3RD_CHA_Sandworm_CrossbowReload"
-                },
-                "NewThirdPersonAnimData": {
-                    "Fire": "/Game/ASS/CHA/Human/3RD/Animations/3RD_CHA_Chainsaw_Attack_Montage.3RD_CHA_Chainsaw_Attack_Montage"
                 }
             },
             "ValidAmmoTypes": {
                 "RowName": "All_Chainsaw_Projectiles"
             },
             "RoundsPerMinute": 60,
-            "ReloadTime": 1,
+            "ReloadTime": 1.8799999952316284,
             "AudioData": {
                 "RowName": "LegendaryChainsaw"
             },

@@ -21117,9 +21117,6 @@
                         "TagName": "Item.Equip.Quickbar"
                     },
                     {
-                        "TagName": "FieldGuide.BlackList"
-                    },
-                    {
                         "TagName": "Item.Tool.Wire"
                     }
                 ]
@@ -21128,9 +21125,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Equip.Quickbar"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Item.Tool.Wire"
@@ -175033,7 +175027,7 @@
                 "RowName": "Chainsaw"
             },
             "AdditionalStats": {
-                "(Value=\"BaseRefinedOilConsumedPerSecond_+\")": 20,
+                "(Value=\"BaseRefinedOilConsumedPerSecond_+\")": 30,
                 "(Value=\"BaseIndustrialToolActionsPerMinute_+\")": 540
             },
             "Manual_Tags": {
@@ -191104,7 +191098,7 @@
                 "RowName": "Item"
             },
             "Focusable": {
-                "RowName": "Focusable_CompoundBow_Firearm"
+                "RowName": "Focusable_RecurveBow_Firearm"
             },
             "Highlightable": {
                 "RowName": "Generic"
@@ -221710,9 +221704,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Decoration.Trophy"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
@@ -221720,9 +221711,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Decoration.Trophy"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -231786,9 +231774,6 @@
                     },
                     {
                         "TagName": "Item.Decoration.ArtDeco"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
@@ -231799,9 +231784,6 @@
                     },
                     {
                         "TagName": "Item.Decoration.ArtDeco"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -232426,11 +232408,12 @@
                 "RowName": "LegendaryWeapon_Chainsaw"
             },
             "AdditionalStats": {
-                "(Value=\"BaseRefinedOilConsumedPerSecond_+\")": 20,
+                "(Value=\"BaseRefinedOilConsumedPerSecond_+\")": 30,
                 "(Value=\"BaseIndustrialToolActionsPerMinute_+\")": 540,
-                "(Value=\"BaseScreenshakeMultiplier_+\")": 150,
-                "(Value=\"BaseChainsawDurabilityUseAlternateFire_+\")": 1000,
-                "(Value=\"BaseChainsawFuelUseAlternateFire_+\")": 100
+                "(Value=\"BaseChainsawDurabilityUseAlternateFire_+\")": 750,
+                "(Value=\"BaseChainsawFuelUseAlternateFire_+\")": 75,
+                "(Value=\"BaseScreenshakeMultiplier_+\")": 100,
+                "(Value=\"IsWeakPointHitDisabled_?\")": 1
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -233448,7 +233431,7 @@
                 "RowName": "Sawblade"
             },
             "Decayable": {
-                "RowName": "Decay_10_Minutes"
+                "RowName": "Decay_02_Minutes"
             },
             "Audio": {
                 "RowName": "Sawblade"
@@ -233714,7 +233697,7 @@
                 "RowName": "Mesh_Carcass_Boar_Juvenile"
             },
             "Itemable": {
-                "RowName": "Item_Carcass_Juvenile_Boar"
+                "RowName": "Item_Carcass_Boar_Juvenile"
             },
             "Interactable": {
                 "RowName": "AnimalCorpse"
@@ -233791,6 +233774,247 @@
                     },
                     {
                         "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Dead_Colonist",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Fabricator"
+            },
+            "Itemable": {
+                "RowName": "Item_Dead_Colonist"
+            },
+            "Interactable": {
+                "RowName": "Deployable_NoPickup_Destroyable"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Deployable": {
+                "RowName": "Dead_Colonist"
+            },
+            "Durable": {
+                "RowName": "Deployable_1500"
+            },
+            "Inventory": {
+                "RowName": "Storage_Wood_Crate_Small"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Weight": {
+                "RowName": "LightDeployable"
+            },
+            "AdditionalStats": {
+                "(Value=\"IsInvulnerable_?\")": 1
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "IgnoreValidation"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "IgnoreValidation"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Inventory"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Tundra_Monkey_Juvenile",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Tundra_Monkey_Juvenile"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Tundra_Monkey_Juvenile"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Equippable": {
+                "RowName": "Equippable_Carcass_Small"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Carcass_Hip"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Utilityslot_Drop"
+            },
+            "Durable": {
+                "RowName": "Carcass_Small"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility.ShowBackpack"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Equippable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Fertility_Serum_Tundra_Monkey",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Fertility_Serum_Tundra_Monkey"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Fertility_Serum"
+            },
+            "Consumable": {
+                "RowName": "Food_Fertility_Serum"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_ThreeDay"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Husbandry.Serum"
+                    },
+                    {
+                        "TagName": "NPC.TundraMonkey"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Husbandry.Serum"
+                    },
+                    {
+                        "TagName": "NPC.TundraMonkey"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
                     }
                 ],
                 "ParentTags": []

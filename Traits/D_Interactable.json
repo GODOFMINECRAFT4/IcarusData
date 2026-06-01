@@ -3748,6 +3748,43 @@
                     "Tag": ""
                 }
             ]
+        },
+        {
+            "Name": "Colony_Radio_Tower",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Colony_Radio_Tower",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Toggle_Device_On",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
         }
     ]
 }

@@ -8281,7 +8281,8 @@
             "Name": "CaveSpotLight_Floor",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_CaveSpotLight.BP_CaveSpotLight_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_CaveSpotLight_Floor.T_ITEM_CaveSpotLight_Floor",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Cavelight_Floor.SM_DEP_Cavelight_Floor",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"CaveSpotLight_Floor-DeployableName\", \"Floor\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Cave_Lights/SM_DEP_Cavelight_Floor.SM_DEP_Cavelight_Floor",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "MaxSurfaceSnapAngle": 50,
             "bCanAffectNavigation": false,
@@ -8291,9 +8292,11 @@
             "Name": "CaveSpotLight_Wall",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Lights/BP_CaveSpotLightWall.BP_CaveSpotLightWall_C",
             "DeployableIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_CaveSpotLight_Wall.T_ITEM_CaveSpotLight_Wall",
-            "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Cavelight_Wall.SM_DEP_Cavelight_Wall",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"CaveSpotLight_Wall-DeployableName\", \"Wall\")",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Cave_Lights/SM_DEP_Cavelight_Wall.SM_DEP_Cavelight_Wall",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
             "MaxSurfaceSnapAngle": 50,
+            "SupportsCustomRotation": false,
             "WorldPlacementType": "WallPlacement",
             "bCanAffectNavigation": false,
             "MaxRestackingAmount": 1
@@ -15484,6 +15487,16 @@
             "MaxRestackingAmount": 2
         },
         {
+            "Name": "Radiation_Broodling_Trophy",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Trophies/BP_Trophy_RadBroodling.BP_Trophy_RadBroodling_C",
+            "PreviewStaticMesh": "/Game/ASS/DEP/DEP_Trophy_Rad_Broodling/SM_DEP_Trophy_Rad_Broodling.SM_DEP_Trophy_Rad_Broodling",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "WorldPlacementType": "WallPlacement",
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": 2
+        },
+        {
             "Name": "Eden_NPC_Norex",
             "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/CraftingBenches/BP_NPC_Norex.BP_NPC_Norex_C",
             "PreviewStaticMesh": "/Game/BP/Objects/World/Items/WorldObjects/Missions/NPCs/SM_NPC_PLACEMENT.SM_NPC_PLACEMENT",
@@ -15598,6 +15611,47 @@
             "PreviewStaticMesh": "/Game/ASS/DEP/SM_DEP_Crate_Lead_Lined_Medium.SM_DEP_Crate_Lead_Lined_Medium",
             "DeployedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_DEPLOY_METAL_ITEM.SFX_DEPLOY_METAL_ITEM",
             "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Mission_Colony_Tower",
+            "DeployableBlueprint": "/Game/BP/Objects/World/Items/Deployables/Missions/BP_Rad_Radio_Tower.BP_Rad_Radio_Tower_C",
+            "PreviewStaticMesh": "/Game/ASS/PRP/Comms_Tower/SM_PRP_Comms_Tower.SM_PRP_Comms_Tower",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "SupportsCustomRotation": false,
+            "MaxRestackingAmount": 1
+        },
+        {
+            "Name": "Dead_Colonist_A",
+            "DeployableBlueprint": "/Game/ASS/PRP/PRP_Dead_Prospector_01/BP_Dead_Colonist_A.BP_Dead_Colonist_A_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Icons/Icon_PassiveCreature.Icon_PassiveCreature",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Dead_Colonist_A-DeployableName\", \"A\")",
+            "PreviewStaticMesh": "/Game/ASS/ITM/MetaConsumable/SM_ITM_Meta_LiquidConsumable_v3.SM_ITM_Meta_LiquidConsumable_v3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "AudioOcclusionAmount": 0.5,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": -1
+        },
+        {
+            "Name": "Dead_Colonist_B",
+            "DeployableBlueprint": "/Game/ASS/PRP/PRP_Dead_Prospector_01/BP_Dead_Colonist_B.BP_Dead_Colonist_B_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Icons/Icon_PassiveCreature.Icon_PassiveCreature",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Dead_Colonist_B-DeployableName\", \"B\")",
+            "PreviewStaticMesh": "/Game/ASS/ITM/MetaConsumable/SM_ITM_Meta_LiquidConsumable_v3.SM_ITM_Meta_LiquidConsumable_v3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "AudioOcclusionAmount": 0.5,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": -1
+        },
+        {
+            "Name": "Dead_Colonist_C",
+            "DeployableBlueprint": "/Game/ASS/PRP/PRP_Dead_Prospector_01/BP_Dead_Colonist_C.BP_Dead_Colonist_C_C",
+            "DeployableIcon": "/Game/Assets/2DArt/UI/Icons/Icon_PassiveCreature.Icon_PassiveCreature",
+            "DeployableName": "NSLOCTEXT(\"D_DeployableSetup\", \"Dead_Colonist_C-DeployableName\", \"C\")",
+            "PreviewStaticMesh": "/Game/ASS/ITM/MetaConsumable/SM_ITM_Meta_LiquidConsumable_v3.SM_ITM_Meta_LiquidConsumable_v3",
+            "DeployedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_GENERIC.SFX_DEP_GENERIC",
+            "AudioOcclusionAmount": 0.5,
+            "bCanAffectNavigation": false,
+            "MaxRestackingAmount": -1
         }
     ]
 }

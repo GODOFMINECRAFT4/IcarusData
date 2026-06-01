@@ -21202,6 +21202,74 @@
             }
         },
         {
+            "Name": "Carcass_Boar_Juvenile",
+            "RecipeSets": [
+                {
+                    "RowName": "Skinning_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "AnimalCarcass_Boar_Juvenile",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Raw_Bacon",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 20,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fur",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 4,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Bone",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 10,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "White_Meat",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "SkinningBench"
+            }
+        },
+        {
             "Name": "Carcass_Zebra",
             "RecipeSets": [
                 {
@@ -120174,6 +120242,168 @@
             ],
             "Audio": {
                 "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Carcass_Juvenile_Tundra_Monkey",
+            "RecipeSets": [
+                {
+                    "RowName": "Skinning_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "AnimalCarcass_Tundra_Monkey_Juvenile",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Raw_Meat",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Leather",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Fur",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 3,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Bone",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                },
+                {
+                    "Element": {
+                        "RowName": "Stringy_Meat",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 2,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "SkinningBench"
+            }
+        },
+        {
+            "Name": "Fertility_Serum_Tundra_Monkey",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Condensed_Enzymes",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3
+                },
+                {
+                    "Element": {
+                        "RowName": "Banana",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_Tundra_Monkey",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Fertility_Serum_Tundra_Monkey_Exotic",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "MetaResource",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
+                },
+                {
+                    "Element": {
+                        "RowName": "Banana",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_Tundra_Monkey",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
             }
         }
     ]

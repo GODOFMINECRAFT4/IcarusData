@@ -21713,8 +21713,8 @@
         {
             "Name": "ScreenshakeMultiplier_+",
             "Title": "NSLOCTEXT(\"D_Stats\", \"ScreenshakeMultiplier_+-Title\", \"Screenshake Multiplier\")",
-            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
-            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Character"
@@ -21722,8 +21722,8 @@
         },
         {
             "Name": "BaseScreenshakeMultiplier_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseScreenshakeMultiplier_+-PositiveDescription\", \"+{0} Screenshake Multiplier\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseScreenshakeMultiplier_+-NegativeDescription\", \"-{0} Screenshake Multiplier\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseScreenshakeMultiplier_+-PositiveDescription\", \"{0}% Screenshake Multiplier\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseScreenshakeMultiplier_+-NegativeDescription\", \"{0}% Screenshake Multiplier\")",
             "StatCategory": {
                 "RowName": "Character"
             }
@@ -21866,8 +21866,8 @@
         {
             "Name": "ChainsawFuelUseAlternateFire_+",
             "Title": "NSLOCTEXT(\"D_Stats\", \"ChainsawFuelUseAlternateFire_+-Title\", \"Sawblade Projectile Fuel Usage\")",
-            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
-            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ChainsawFuelUseAlternateFire_+-PositiveTitleFormat\", \"{0}mL\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ChainsawFuelUseAlternateFire_+-NegativeTitleFormat\", \"-{0}mL\")",
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Melee_Weapon"
@@ -21875,8 +21875,8 @@
         },
         {
             "Name": "BaseChainsawFuelUseAlternateFire_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChainsawFuelUseAlternateFire_+-PositiveDescription\", \"+{0} Fuel Used\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChainsawFuelUseAlternateFire_+-NegativeDescription\", \"-{0} Fuel Used\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChainsawFuelUseAlternateFire_+-PositiveDescription\", \"+{0}mL Fuel Used for Alt Attack\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChainsawFuelUseAlternateFire_+-NegativeDescription\", \"-{0}mL Fuel Used for Alt Attack\")",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             },
@@ -21894,8 +21894,8 @@
         },
         {
             "Name": "BaseChainsawDurabilityUseAlternateFire_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChainsawDurabilityUseAlternateFire_+-PositiveDescription\", \"+{0} Durability Used\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChainsawDurabilityUseAlternateFire_+-NegativeDescription\", \"-{0} Durability Used\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChainsawDurabilityUseAlternateFire_+-PositiveDescription\", \"+{0} Durability Used for Alt Attack\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChainsawDurabilityUseAlternateFire_+-NegativeDescription\", \"-{0} Durability Used for Alt Attack\")",
             "StatCategory": {
                 "RowName": "Ranged_Weapon"
             },
@@ -21903,6 +21903,14 @@
         },
         {
             "Name": "PreventRadiationSpread_?",
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "IsWeakPointHitDisabled_?",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"IsWeakPointHitDisabled_?-PositiveTitleFormat\", \"Unable to Deal Weak Point Damage\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"IsWeakPointHitDisabled_?-PositiveDescription\", \"Unable to Deal Weak Point Hit Damage\")",
             "StatCategory": {
                 "RowName": "Item"
             }

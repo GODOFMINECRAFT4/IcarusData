@@ -2528,9 +2528,8 @@
         },
         {
             "Name": "Faction_ShowOnMap",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
-            "ModifierName": "INVTEXT(\"[DNT]\")",
-            "ModifierDescription": "INVTEXT(\"[DNT]\")",
+            "ModifierName": "",
+            "ModifierDescription": "",
             "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"MapIsBroadcastingForMap_?\")": 1
@@ -2542,9 +2541,8 @@
         },
         {
             "Name": "Faction_SatelliteActivate",
-            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Items/Item_Icons/ITEM_Missing.ITEM_Missing'",
-            "ModifierName": "INVTEXT(\"[DNT]\")",
-            "ModifierDescription": "INVTEXT(\"[DNT]\")",
+            "ModifierName": "",
+            "ModifierDescription": "",
             "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"FactionSatelliteActivated_?\")": 1
@@ -2950,8 +2948,8 @@
         },
         {
             "Name": "Faction_SatelliteOverlap",
-            "ModifierName": "INVTEXT(\"[DNT]\")",
-            "ModifierDescription": "INVTEXT(\"[DNT]\")",
+            "ModifierName": "",
+            "ModifierDescription": "",
             "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"FactionSatelliteOverlapActive_?\")": 1
@@ -2963,8 +2961,8 @@
         },
         {
             "Name": "Faction_BlockerCleared",
-            "ModifierName": "INVTEXT(\"[DNT]\")",
-            "ModifierDescription": "INVTEXT(\"[DNT]\")",
+            "ModifierName": "",
+            "ModifierDescription": "",
             "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"FactionBlockerRemoved_?\")": 1
@@ -4194,8 +4192,8 @@
         },
         {
             "Name": "Reignite_Chance_Reduction",
-            "ModifierName": "INVTEXT(\"[DNT]\")",
-            "ModifierDescription": "INVTEXT(\"[DNT]\")",
+            "ModifierName": "",
+            "ModifierDescription": "",
             "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"BaseBurnChance_%\")": -20
@@ -4208,8 +4206,8 @@
         },
         {
             "Name": "Repaired_Wind_Resistance",
-            "ModifierName": "INVTEXT(\"[DNT]\")",
-            "ModifierDescription": "INVTEXT(\"[DNT]\")",
+            "ModifierName": "",
+            "ModifierDescription": "",
             "VisibleToPlayer": false,
             "GrantedStats": {
                 "(Value=\"BaseWindDamageResistance_%\")": 100
@@ -15922,7 +15920,7 @@
             "Name": "GrantedAura_CropGrowthYield",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Plant_Fatigue.T_ICON_Plant_Fatigue'",
             "Type": "Aura_Positive",
-            "ModifierName": "INVTEXT(\"[DNT] Aura: Crop Growth Yield\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_CropGrowthYield-ModifierName\", \"Aura: Crop Growth Yield\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"GrantedAura_CropGrowthYield-ModifierDescription\", \"Increased nearby crop growth yield\")",
             "bAura": true,
             "AuraRange": 900,
@@ -15942,7 +15940,7 @@
         {
             "Name": "AuraEffect_CropGrowthYield",
             "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_ICON_Plant_Fatigue.T_ICON_Plant_Fatigue'",
-            "ModifierName": "INVTEXT(\"[DNT] Aura Effect: Nearby Crop Growth Yield\")",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_CropGrowthYield-ModifierName\", \"Aura Effect: Nearby Crop Growth Yield\")",
             "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"AuraEffect_CropGrowthYield-ModifierDescription\", \"Increased Crop Yield\")",
             "GrantedStats": {
                 "(Value=\"BasePlantedCropYield_+%\")": 50

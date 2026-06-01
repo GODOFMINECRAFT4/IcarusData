@@ -1021,6 +1021,15 @@
             "MaxStack": 5
         },
         {
+            "Name": "Item_Radiation_Grenade",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Grenade-DisplayName\", \"Radiation Grenade\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Radiation_Grenade.T_ITEM_Radiation_Grenade",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Grenade-Description\", \"An explosive grenade that will explode on impact and leave behind an area filled with radiation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Grenade-FlavorText\", \"Don\\'t drop it.\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
             "Name": "Item_Molotov",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Molotov-DisplayName\", \"Molotov\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Molotov.T_ITEM_Molotov",
@@ -27733,6 +27742,7 @@
             "Name": "Item_LegendaryWeapon_Sandwyrm_Chainsaw",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_LegendaryWeapon_Sandwyrm_Chainsaw-DisplayName\", \"Timber Extraction Unit\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_Sandwyrm_Chainsaw.T_ITEM_LegendaryWeapon_Sandwyrm_Chainsaw",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_LegendaryWeapon_Sandwyrm_Chainsaw-Description\", \"A Prototype Upgradeable Saw created via studying of the Sandwyrm Queen. Requires Sawblades to operate.\")",
             "Weight": 12000,
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -27881,7 +27891,7 @@
         },
         {
             "Name": "Item_Sawblade",
-            "DisplayName": "INVTEXT(\"[DNT] Sawblade\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sawblade-DisplayName\", \"Sawblade\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_SawBlade.T_ITEM_SawBlade",
             "Weight": 500,
             "MaxStack": 20
@@ -27889,9 +27899,28 @@
         {
             "Name": "Item_Carcass_Rad_Broodling",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rad_Broodling-DisplayName\", \"Radiation Broodling Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Radiation_Broodling.T_ITEM_AnimalCarcass_Radiation_Broodling",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rad_Broodling-Description\", \"The spawn of a much larger creature.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Rad_Broodling-FlavorText\", \"You really don\\'t want to meet its parents.\")",
             "Weight": 10000
+        },
+        {
+            "Name": "Item_Radiation_Broodling_Head",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Broodling_Head-DisplayName\", \"Radiation Broodling Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Radiation_Broodling_Head.T_ITEM_Radiation_Broodling_Head",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Broodling_Head-Description\", \"A preserved memory of a once-great Radiation Broodling.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Broodling_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Radiation_Broodling_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Broodling_Trophy-DisplayName\", \"Radiation Broodling Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_RadBroodling_Trophy.T_ITEM_RadBroodling_Trophy",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Broodling_Trophy-Description\", \"The mounted remains for a creature preserved forever.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Broodling_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
+            "Weight": 500,
+            "MaxStack": 5
         },
         {
             "Name": "Item_Saddle_Radiation",
@@ -27924,16 +27953,16 @@
             "MaxStack": 10
         },
         {
-            "Name": "Item_Carcass_Juvenile_Boar",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Juvenile_Boar-DisplayName\", \"Juvenile Boar Carcass\")",
+            "Name": "Item_Carcass_Boar_Juvenile",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Boar_Juvenile-DisplayName\", \"Juvenile Boar Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Juvenile_Boar.ITEM_AnimalCarcass_Juvenile_Boar",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Juvenile_Boar-Description\", \"A juvenile Boar which never quite made it to adulthood.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Boar_Juvenile-Description\", \"A juvenile Boar which never quite made it to adulthood.\")",
             "Weight": 3500
         },
         {
             "Name": "Item_Lead_Lined_Crate_Small",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Small-DisplayName\", \"Lead Lined Crate\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Metal_Crate_Small.ITEM_Metal_Crate_Small",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lead_Lined_Crate_Small.T_ITEM_Lead_Lined_Crate_Small",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Small-Description\", \"Strong protective storage for items.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Small-FlavorText\", \"Has 15 storage slots.\")",
             "Weight": 3000
@@ -27941,10 +27970,58 @@
         {
             "Name": "Item_Lead_Lined_Crate_Medium",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Medium-DisplayName\", \"Medium Lead Lined Crate\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Metal_Crate_Medium.ITEM_Metal_Crate_Medium",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lead_Lined_Crate_Medium.T_ITEM_Lead_Lined_Crate_Medium",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Medium-Description\", \"A strong, generous storage unit.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Medium-FlavorText\", \"Has 25 storage slots.\")",
             "Weight": 6000
+        },
+        {
+            "Name": "Item_Mission_Colony_Tower",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Colony_Tower-DisplayName\", \"Colony Radio Tower\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Props/T_ITEM_Prop_LaserControls.T_ITEM_Prop_LaserControls",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Colony_Tower-Description\", \"A Radio Tower that tracks and locates colonists.\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_GH_Rad_Code_1",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_Rad_Code_1-DisplayName\", \"Partial Colony Door Code A\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_Rad_Code_1-Description\", \"A damaged note containing the Colony Door Code.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_Rad_Code_1-FlavorText\", \"Surely this isn\\'t secure\")",
+            "Weight": 100
+        },
+        {
+            "Name": "Item_GH_Rad_Code_2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_Rad_Code_2-DisplayName\", \"Partial Colony Door Code B\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_Rad_Code_2-Description\", \"A damaged note containing the Colony Door Code.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_GH_Rad_Code_2-FlavorText\", \"Surely this isn\\'t secure\")",
+            "Weight": 100
+        },
+        {
+            "Name": "Item_Dead_Colonist",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dead_Colonist-DisplayName\", \"Dead Colonist\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_PassiveCreature.Icon_PassiveCreature",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dead_Colonist-Description\", \"The remains of a colonist.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dead_Colonist-FlavorText\", \"Icarus is not for the Faint of Heart\")",
+            "Weight": 100,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Carcass_Tundra_Monkey_Juvenile",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tundra_Monkey_Juvenile-DisplayName\", \"Juvenile Gribbler Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Tundra_Monkey_Juvenile.T_ITEM_AnimalCarcass_Tundra_Monkey_Juvenile",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tundra_Monkey_Juvenile-Description\", \"A juvenile Gribbler which never quite made it to adulthood.\")",
+            "Weight": 3500
+        },
+        {
+            "Name": "Item_Fertility_Serum_Tundra_Monkey",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Tundra_Monkey-DisplayName\", \"Gribber Fertility Serum\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Serum_Tundra_Monkey.T_ITEM_Serum_Tundra_Monkey",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Tundra_Monkey-Description\", \"Primes Male Gribber for mating. Once primed will seek out and fertilize nearby Female Gribbers. \")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Tundra_Monkey-FlavorText\", \"Husbandry has come to Icarus\")",
+            "Weight": 50,
+            "MaxStack": 10
         }
     ]
 }

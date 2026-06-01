@@ -10,6 +10,9 @@
         "DamageMultiplierStat": {
             "Value": "None"
         },
+        "DamageIgnoreStat": {
+            "Value": "None"
+        },
         "ReductionStatMultiplier": 1,
         "MultiplierStatMultiplier": 1,
         "WhitelistedDamageTypes": [],
@@ -31,6 +34,9 @@
             "DamageMultiplierStat": {
                 "Value": "CriticalDamage_+%"
             },
+            "DamageIgnoreStat": {
+                "Value": "IsWeakPointHitDisabled_?"
+            },
             "Priority": 4,
             "AudioData": {
                 "RowName": "CriticalHit"
@@ -40,6 +46,9 @@
             "Name": "Crit_WeakPoint",
             "DamageMultiplierStat": {
                 "Value": "CriticalDamage_+%"
+            },
+            "DamageIgnoreStat": {
+                "Value": "IsWeakPointHitDisabled_?"
             },
             "MultiplierStatMultiplier": 0.5,
             "Priority": 5,
@@ -121,6 +130,9 @@
             "DamageMultiplierStat": {
                 "Value": "CriticalDamage_+%"
             },
+            "DamageIgnoreStat": {
+                "Value": "IsWeakPointHitDisabled_?"
+            },
             "MultiplierStatMultiplier": 0.15000000596046448,
             "Priority": 6,
             "AudioData": {
@@ -131,6 +143,9 @@
             "Name": "Crit_WeakPointMetal",
             "DamageMultiplierStat": {
                 "Value": "CriticalDamage_+%"
+            },
+            "DamageIgnoreStat": {
+                "Value": "IsWeakPointHitDisabled_?"
             },
             "MultiplierStatMultiplier": 0.5,
             "Priority": 5,
