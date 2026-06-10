@@ -13319,6 +13319,37 @@
                     }
                 }
             ]
+        },
+        {
+            "Name": "Interior_Wood_Floor_Curved",
+            "Stability": {
+                "RowName": "Interior_Wood_General"
+            },
+            "Type": {
+                "RowName": "Interior_Wood"
+            },
+            "Variations": [
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Interior_Wood_Floor_Curved",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                },
+                {
+                    "Requirement": {
+                        "RowName": "None",
+                        "DataTableName": "D_Talents"
+                    },
+                    "Piece": {
+                        "RowName": "Interior_Wood_Floor_Curved_B",
+                        "DataTableName": "D_BuildingPieces"
+                    }
+                }
+            ]
         }
     ]
 }

@@ -1283,6 +1283,20 @@
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
+                        "RowName": "Hitching_Post_Attach",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Hitching_Post_Release",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
                         "RowName": "Stop_Leading_Creature",
                         "DataTableName": "D_Interactions"
                     },
@@ -2807,6 +2821,15 @@
                     "Tag": ""
                 }
             ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_OpenArmorStand",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
             "WorldAltHoldInteracts": [
                 {
                     "InteractionRow": {
@@ -3885,6 +3908,46 @@
                 {
                     "InteractionRow": {
                         "RowName": "OilStorage_FillOil",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Hub",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Settlement_Hub",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Settlement_Hub_Inventory",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_NPC",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Settlement_NPC",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Settlement_NPC_Visitor",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""

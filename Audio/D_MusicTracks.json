@@ -1004,6 +1004,25 @@
             ],
             "CombatFlags": 1,
             "DropStateFlags": 2
+        },
+        {
+            "Name": "DLC4_Settlement_Music",
+            "Event": "/Game/FMOD/Events/Music/Icarus_MU_Settlement_Ambient.Icarus_MU_Settlement_Ambient",
+            "FadeInCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeIn_DH.MusicCurve_DefaultFadeIn_DH'",
+            "FadeOutCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeOut.MusicCurve_DefaultFadeOut'",
+            "bTrackCanBePaused": true,
+            "PlayerStateFlags": 1,
+            "Locations": [
+                {
+                    "RowName": "Settlements",
+                    "DataTableName": "D_MusicLocationConditions"
+                }
+            ],
+            "CombatFlags": 1,
+            "TimeOfDayFlags": 15,
+            "WeatherFlags": 1,
+            "DropStateFlags": 2,
+            "DisasterFlags": 1
         }
     ]
 }

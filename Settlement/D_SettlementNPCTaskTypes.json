@@ -1,0 +1,22 @@
+{
+    "RowStruct": "/Script/Icarus.SettlementNPCTaskTypeData",
+    "Defaults": {
+        "DisplayName": "",
+        "bRequiresTarget": false,
+        "bRequiresSource": false,
+        "Priority": 128
+    },
+    "Rows": [
+        {
+            "Name": "Build",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Build-DisplayName\", \"Build\")",
+            "bRequiresTarget": true
+        },
+        {
+            "Name": "OperateBuilding",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"OperateBuilding-DisplayName\", \"Operate\")",
+            "bRequiresTarget": true,
+            "Priority": 64
+        }
+    ]
+}

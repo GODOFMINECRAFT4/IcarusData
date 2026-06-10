@@ -8367,6 +8367,42 @@
                 ],
                 "AutoDescription": " ANY( Item.Ammo.Sawblade )"
             }
+        },
+        {
+            "Name": "Mission_Oil",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Fuel.Oil"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Fuel.Oil )"
+            }
+        },
+        {
+            "Name": "Mission_Keys",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.Key"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.Item.Key )"
+            }
         }
     ]
 }

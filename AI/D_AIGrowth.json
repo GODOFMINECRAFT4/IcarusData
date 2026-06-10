@@ -403,7 +403,7 @@
         {
             "Name": "Mammoth",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 175,
+                "(Value=\"BaseMovementSpeed_+\")": 200,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 130,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
@@ -535,7 +535,7 @@
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BasePoisonDamageResistance_%\")": -100,
                 "(Value=\"BaseFrostDamageResistance_%\")": 50,
-                "(Value=\"BaseMovementSpeed_+\")": 200
+                "(Value=\"BaseMovementSpeed_+\")": 225
             },
             "Health": "CurveFloat'/Game/Data/AI/Curves/C_MammothBossHealth.C_MammothBossHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/Curves/C_MammothBossDamage.C_MammothBossDamage'",
@@ -3834,7 +3834,7 @@
                 "(Value=\"BasePoisonDamageResistance_%\")": -100,
                 "(Value=\"BaseFrostDamageResistance_%\")": 50,
                 "(Value=\"BaseMaximumArmor_+\")": 25000,
-                "(Value=\"BaseMovementSpeed_+\")": 275,
+                "(Value=\"BaseMovementSpeed_+\")": 300,
                 "(Value=\"BaseHealthPerConnectedPlayer_+\")": 35000,
                 "(Value=\"BaseProjectileDamageAgainstBuildings_+%\")": 1000,
                 "(Value=\"BaseMaximumHealth_+\")": 40000,
@@ -4455,7 +4455,7 @@
         {
             "Name": "Mammoth_Icy",
             "Base": {
-                "(Value=\"BaseMovementSpeed_+\")": 200,
+                "(Value=\"BaseMovementSpeed_+\")": 300,
                 "(Value=\"BaseSwimSpeed_+\")": 300,
                 "(Value=\"BaseHealthRegenPerMinute_+\")": 130,
                 "(Value=\"BaseMinimumFallDamage_%\")": 1,
@@ -4755,7 +4755,8 @@
                 "(Value=\"BaseLaserDamageResistance_%\")": -100,
                 "(Value=\"BasePhysicalDamageResistance_%\")": 33,
                 "(Value=\"BaseProjectileDamageResistance_%\")": 33,
-                "(Value=\"BaseGOAPActionAnchoredWanderDistance_+\")": 6500
+                "(Value=\"BaseGOAPActionAnchoredWanderDistance_+\")": 6500,
+                "(Value=\"BasePoisonResistance_%\")": 100
             },
             "Health": "CurveFloat'/Game/Data/AI/Curves/C_IrradiatedProspectorHealth.C_IrradiatedProspectorHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/Curves/C_IrradiatedProspectorMeleeDamage.C_IrradiatedProspectorMeleeDamage'",
@@ -5636,7 +5637,8 @@
                 "(Value=\"BaseImmobiliseResistance_%\")": 66,
                 "(Value=\"BaseMovementSpeed_+\")": 125,
                 "(Value=\"BaseAttacksCauseRadiationBurn_%\")": 33,
-                "(Value=\"BaseGOAPActionAnchoredWanderDistance_+\")": 6500
+                "(Value=\"BaseGOAPActionAnchoredWanderDistance_+\")": 6500,
+                "(Value=\"BasePoisonResistance_%\")": 100
             },
             "Health": "CurveFloat'/Game/Data/AI/Curves/C_IrradiatedAbominationHealth.C_IrradiatedAbominationHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/Curves/C_IrradiatedAbominationMeleeDamage.C_IrradiatedAbominationMeleeDamage'",
@@ -5980,10 +5982,11 @@
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseSlowResistance_%\")": 33,
                 "(Value=\"BaseImmobiliseResistance_%\")": 33,
-                "(Value=\"BaseMovementSpeed_+\")": 120,
+                "(Value=\"BaseMovementSpeed_+\")": 125,
                 "(Value=\"BaseAttacksCauseRadiationBurn_%\")": 25,
                 "(Value=\"BaseLaserDamageResistance_%\")": -100,
-                "(Value=\"BaseGOAPActionAnchoredWanderDistance_+\")": 6500
+                "(Value=\"BaseGOAPActionAnchoredWanderDistance_+\")": 6500,
+                "(Value=\"BasePoisonResistance_%\")": 100
             },
             "Health": "CurveFloat'/Game/Data/AI/Curves/C_IrradiatedProspectorHealth.C_IrradiatedProspectorHealth'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/Curves/C_IrradiatedProspectorMeleeDamage.C_IrradiatedProspectorMeleeDamage'",
@@ -6351,7 +6354,8 @@
                 "(Value=\"BaseCharacterMass_+\")": 10,
                 "(Value=\"BaseHealthRegenDelay_+\")": 2,
                 "(Value=\"BaseExplosiveDamageRadius_+\")": 300,
-                "(Value=\"BaseExplosiveDamage_+\")": 35
+                "(Value=\"BaseExplosiveDamage_+\")": 35,
+                "(Value=\"BasePoisonResistance_%\")": 100
             },
             "MeleeDamage": "CurveFloat'/Game/Data/AI/Curves/C_AlphaWolfMeleeDamage.C_AlphaWolfMeleeDamage'",
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_GenericExperience.C_GenericExperience'"
@@ -6379,7 +6383,8 @@
                 "(Value=\"BaseAttacksCauseRadiationBurn_%\")": 25,
                 "(Value=\"BaseMeleeDamageResistance_+%\")": -50,
                 "(Value=\"BaseLaserDamageResistance_%\")": -100,
-                "(Value=\"BaseProjectileDamageResistance_%\")": 33
+                "(Value=\"BaseProjectileDamageResistance_%\")": 33,
+                "(Value=\"BasePoisonResistance_%\")": 100
             },
             "Health": "CurveFloat'/Game/Data/AI/Curves/C_LavaBroodlingWorldSpawn_Health.C_LavaBroodlingWorldSpawn_Health'",
             "MeleeDamage": "CurveFloat'/Game/Data/AI/Curves/C_LavaBroodlingWorldSpawnMeleeDamage.C_LavaBroodlingWorldSpawnMeleeDamage'",
@@ -6491,6 +6496,56 @@
                 "(Value=\"BaseAttacksCauseRadiationBurn_%\")": 33,
                 "(Value=\"BaseAttacksCauseRadiationSickness_%\")": 33
             },
+            "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
+        },
+        {
+            "Name": "Mammoth_Icy_WorldSpawn",
+            "Base": {
+                "(Value=\"BaseMovementSpeed_+\")": 200,
+                "(Value=\"BaseSwimSpeed_+\")": 300,
+                "(Value=\"BaseHealthRegenPerMinute_+\")": 130,
+                "(Value=\"BaseMinimumFallDamage_%\")": 1,
+                "(Value=\"BaseMaximumFallDamage_%\")": 100,
+                "(Value=\"BaseMinimumFallDamageVelocity_+\")": 1250,
+                "(Value=\"BaseMaximumFallDamageVelocity_+\")": 1950,
+                "(Value=\"BaseAIPerceptionMaxAge_+\")": 3,
+                "(Value=\"BaseAIDamagePerceptionMaxAge_+\")": 10,
+                "(Value=\"BaseAIPerceptionSightRadius_+\")": 5000,
+                "(Value=\"BaseAIPerceptionLoseSightRadius_+\")": 7500,
+                "(Value=\"BaseAIPerceptionPeripheralVisionAngle_+\")": 115,
+                "(Value=\"BaseAIPerceptionSoundRadius_+\")": 2500,
+                "(Value=\"BaseCharacterMass_+\")": 1000,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMinimumThreat_+\")": 1500,
+                "(Value=\"BaseGOAPMotivationProtectiveDistanceMaximumThreat_+\")": 200,
+                "(Value=\"BaseNPCAttackRadius_+\")": 750,
+                "(Value=\"CanNPCDamageDurableActors_?\")": 1,
+                "(Value=\"CanNPCDamageVoxels_?\")": 1,
+                "(Value=\"BaseMiningRadius_+\")": 150,
+                "(Value=\"BaseHealthRegenDelay_+\")": 2,
+                "(Value=\"BaseSlowResistance_%\")": 40,
+                "(Value=\"BaseImmobiliseResistance_%\")": 40,
+                "(Value=\"BasePoisonDamageResistance_%\")": -100,
+                "(Value=\"BaseFrostDamageResistance_%\")": 100,
+                "(Value=\"BaseFireDamageResistance_%\")": -100,
+                "(Value=\"BaseFrostDamage_+\")": 50,
+                "(Value=\"BaseAttacksCauseFreeze_%\")": 25
+            },
+            "Health": "CurveFloat'/Game/Data/AI/Curves/C_MammothHealth.C_MammothHealth'",
+            "MeleeDamage": "CurveFloat'/Game/Data/AI/Curves/C_MammothDamage.C_MammothDamage'",
+            "CustomStats": [
+                {
+                    "Stat": {
+                        "Value": "BaseAttacksCauseFreeze_%"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/Curves/C_WolfWoundChance.C_WolfWoundChance'"
+                },
+                {
+                    "Stat": {
+                        "Value": "BaseMaximumHealth_+"
+                    },
+                    "Curve": "CurveFloat'/Game/Data/AI/Curves/C_SnowSlugArmor.C_SnowSlugArmor'"
+                }
+            ],
             "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
         }
     ]

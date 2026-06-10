@@ -61423,10 +61423,16 @@
                 "RowName": "Item_Carcass_Komodo"
             },
             "Interactable": {
-                "RowName": "AnimalCorpse_NoCarry"
+                "RowName": "AnimalCorpse"
             },
             "Hitable": {
                 "RowName": "AnimalCarcass"
+            },
+            "Equippable": {
+                "RowName": "Equippable_Carcass_Medium"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Carcass_Shoulders"
             },
             "Highlightable": {
                 "RowName": "Generic"
@@ -61445,6 +61451,15 @@
                 "GameplayTags": [
                     {
                         "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
                     }
                 ]
             },
@@ -61452,6 +61467,15 @@
                 "GameplayTags": [
                     {
                         "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -61464,6 +61488,9 @@
                     },
                     {
                         "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Equippable"
                     },
                     {
                         "TagName": "Traits.Highlightable"
@@ -61484,10 +61511,16 @@
                 "RowName": "Item_Carcass_Lava_Komodo"
             },
             "Interactable": {
-                "RowName": "AnimalCorpse_NoCarry"
+                "RowName": "AnimalCorpse"
             },
             "Hitable": {
                 "RowName": "AnimalCarcass"
+            },
+            "Equippable": {
+                "RowName": "Equippable_Carcass_Medium"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Carcass_Shoulders"
             },
             "Highlightable": {
                 "RowName": "Generic"
@@ -61506,6 +61539,15 @@
                 "GameplayTags": [
                     {
                         "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
                     }
                 ]
             },
@@ -61513,6 +61555,15 @@
                 "GameplayTags": [
                     {
                         "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -61525,6 +61576,9 @@
                     },
                     {
                         "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Equippable"
                     },
                     {
                         "TagName": "Traits.Highlightable"
@@ -76030,7 +76084,8 @@
             },
             "AdditionalStats": {
                 "(Value=\"BaseHardenedPointPenetration_%\")": 100,
-                "(Value=\"BaseConstructDamage_+%\")": 500
+                "(Value=\"BaseConstructDamage_+%\")": 500,
+                "(Value=\"BaseShatteringDamage_+\")": 10000
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -227423,7 +227478,7 @@
         {
             "Name": "Sandwyrm_Lantern",
             "Meshable": {
-                "RowName": "Mesh_Sandwrym_Latern"
+                "RowName": "Mesh_Sandwyrm_Lantern"
             },
             "Itemable": {
                 "RowName": "Item_Sandwyrm_Lantern"
@@ -234103,6 +234158,196 @@
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
                 }
+            }
+        },
+        {
+            "Name": "Wood_Floor_Refined_Curved",
+            "Meshable": {
+                "RowName": "Mesh_Interior_Wood_Kit"
+            },
+            "Itemable": {
+                "RowName": "Item_Wood_Floor_Refined_Curved"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Hitable": {
+                "RowName": "Building"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Building"
+            },
+            "Buildable": {
+                "RowName": "Interior_Wood_Floor_Curved"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Durable": {
+                "RowName": "Wood_Building_Refined"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Flammable": {
+                "RowName": "Flammable_Building_Wood"
+            },
+            "Audio": {
+                "RowName": "WoodDeployable"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Audio.Shelter"
+                    },
+                    {
+                        "TagName": "Building.InteriorWood"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Audio.Shelter"
+                    },
+                    {
+                        "TagName": "Building.InteriorWood"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Buildable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Flammable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Thumper_Deep",
+            "Meshable": {
+                "RowName": "Mesh_Thumper_Deep"
+            },
+            "Itemable": {
+                "RowName": "Item_Thumper_Deep"
+            },
+            "Interactable": {
+                "RowName": "Deployable_No_Power_Toggle"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Backpack"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Thumper_Deep"
+            },
+            "Durable": {
+                "RowName": "Deployable_5000"
+            },
+            "Inventory": {
+                "RowName": "Thumper_Deep"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Generator": {
+                "RowName": "Thumper_Deep_Generator"
+            },
+            "Weight": {
+                "RowName": "UnsupportedDeployable"
+            },
+            "Resource": {
+                "RowName": "Simple_Internal_Flow_Only"
+            },
+            "Audio": {
+                "RowName": "Radar"
+            },
+            "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Inventory"
+                    }
+                ],
+                "ParentTags": []
             }
         }
     ]

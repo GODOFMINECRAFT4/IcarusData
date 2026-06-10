@@ -2245,6 +2245,50 @@
                 "RowName": "General_Inventory_Slot_NoBag"
             },
             "StartingSlots": 9
+        },
+        {
+            "Name": "Faction_Mission_Hoverframe_Repair",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 4,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Mission_Thruster",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 0
+                },
+                {
+                    "Query": {
+                        "RowName": "Mission_Gyroscope",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 1
+                },
+                {
+                    "Query": {
+                        "RowName": "Fuel_Oil",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 2
+                },
+                {
+                    "Query": {
+                        "RowName": "Mission_Keys",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 3
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Main",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 6
         }
     ]
 }

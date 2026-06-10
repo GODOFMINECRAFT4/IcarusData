@@ -60319,7 +60319,7 @@
                 "RowName": "Blueprint_T5_Manufacturer"
             },
             "Position": {
-                "X": 6300,
+                "X": 6600,
                 "Y": 300
             },
             "Size": {
@@ -60349,7 +60349,7 @@
                 "RowName": "Blueprint_T5_Manufacturer"
             },
             "Position": {
-                "X": 5950,
+                "X": 6250,
                 "Y": 300
             },
             "Size": {
@@ -60888,7 +60888,7 @@
         {
             "Name": "Orka_Base",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Orka_Base-DisplayName\", \"Skulk\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Orka_Base-Description\", \"Can be specialized into a viscious killing machine.\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Orka_Base-Description\", \"Can be specialized into a vicious killing machine.\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Orka.T_Talent_Base_Orka",
             "TalentTree": {
                 "RowName": "Creature_Orka"
@@ -65064,7 +65064,7 @@
             },
             "Position": {
                 "X": 3650,
-                "Y": 250
+                "Y": 300
             },
             "Size": {
                 "X": 184,
@@ -65092,7 +65092,7 @@
             },
             "Position": {
                 "X": 3950,
-                "Y": 250
+                "Y": 300
             },
             "Size": {
                 "X": 184,
@@ -65120,7 +65120,7 @@
             },
             "Position": {
                 "X": 4250,
-                "Y": 250
+                "Y": 300
             },
             "Size": {
                 "X": 184,
@@ -66454,7 +66454,7 @@
         {
             "Name": "Creature_Chew_WaterRetention",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Chew_WaterRetention-DisplayName\", \"Water Retention\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Chew_WaterRetention-Description\", \"Increased Physical Damage Reduction\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Chew_WaterRetention-Description\", \"Reduced Water Consumption for nearby allies\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_Amphibious.Talent_Exploration_Amphibious",
             "TalentTree": {
                 "RowName": "Creature_Chew"
@@ -66486,7 +66486,7 @@
         {
             "Name": "Creature_Chew_Extoic",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Chew_Extoic-DisplayName\", \"Exotic Hauler\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Chew_Extoic-Description\", \"Reduces the weight of any Exotics Carried.\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Chew_Extoic-Description\", \"Reduces the weight of any Exotics Carried\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Resources/Talent_Resources_ExoticStrongman.Talent_Resources_ExoticStrongman",
             "TalentTree": {
                 "RowName": "Creature_Chew"
@@ -68581,7 +68581,7 @@
                 "RowName": "Blueprint_T5_Manufacturer"
             },
             "Position": {
-                "X": 7000,
+                "X": 7300,
                 "Y": 300
             },
             "Size": {
@@ -68689,7 +68689,7 @@
                 "RowName": "Blueprint_T5_Manufacturer"
             },
             "Position": {
-                "X": 6700,
+                "X": 7000,
                 "Y": 300
             },
             "Size": {
@@ -68716,7 +68716,7 @@
                 "RowName": "Blueprint_T5_Manufacturer"
             },
             "Position": {
-                "X": 6850,
+                "X": 7150,
                 "Y": 550
             },
             "Size": {
@@ -68740,7 +68740,7 @@
                 "RowName": "Blueprint_T5_Manufacturer"
             },
             "Position": {
-                "X": 6150,
+                "X": 6450,
                 "Y": 550
             },
             "Size": {
@@ -71330,7 +71330,7 @@
                 "RowName": "Blueprint_T5_Manufacturer"
             },
             "Position": {
-                "X": 5600,
+                "X": 5550,
                 "Y": 300
             },
             "Size": {
@@ -75762,6 +75762,68 @@
                 }
             ],
             "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Deep_Thumper",
+            "ExtraData": {
+                "RowName": "Item_Thumper_Deep",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T5_Manufacturer"
+            },
+            "Position": {
+                "X": 5900,
+                "Y": 300
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Polymerizer",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
+        },
+        {
+            "Name": "Settlement_Hub_Population_1",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Population_1-DisplayName\", \"Increased Population\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Population_1-Description\", \"Provides support for more Settlers to join\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_NoManLeftBehind.Talent_Exploration_NoManLeftBehind",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 850,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSettlementMaxNPCs_+\")": 1
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSettlementMaxNPCs_+\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSettlementMaxNPCs_+\")": 3
+                    },
+                    "GrantedFlags": []
+                }
+            ]
         }
     ]
 }

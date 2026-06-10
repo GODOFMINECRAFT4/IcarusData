@@ -1,0 +1,92 @@
+{
+    "RowStruct": "/Script/Icarus.SettlementBuildingData",
+    "Defaults": {
+        "BuildingName": "",
+        "BuildingDescription": "",
+        "BuildingClass": "None",
+        "Mesh": "None",
+        "BuildingStats": {},
+        "BuildingTags": {
+            "GameplayTags": []
+        },
+        "RequiredTalent": {
+            "RowName": "None",
+            "DataTableName": "D_Talents"
+        },
+        "ConstructionTime": 60,
+        "ItemConstructionCost": [],
+        "QueryItemConstructionCost": [],
+        "ResourceConstructionCost": []
+    },
+    "Rows": [
+        {
+            "Name": "Hub",
+            "BuildingStats": {
+                "(Value=\"BaseSettlementMaxNPCs_+\")": 1,
+                "(Value=\"BaseSettlementRange_+\")": 10000
+            }
+        },
+        {
+            "Name": "House",
+            "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"House-BuildingName\", \"Housing\")",
+            "BuildingDescription": "NSLOCTEXT(\"D_SettlementBuildings\", \"House-BuildingDescription\", \"Provides additional housing capacity, allowing more Settlers to join\")",
+            "BuildingClass": "BlueprintGeneratedClass'/Game/BP/Settlement/Buildings/BP_SettlementBuilding.BP_SettlementBuilding_C'",
+            "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Housing_Blocking.SM_COL_Housing_Blocking",
+            "BuildingStats": {
+                "(Value=\"BaseSettlementMaxNPCs_+\")": 2
+            },
+            "BuildingTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Settlement.Building.House"
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Stockpile",
+            "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"Stockpile-BuildingName\", \"Stockpile\")",
+            "BuildingDescription": "NSLOCTEXT(\"D_SettlementBuildings\", \"Stockpile-BuildingDescription\", \"Basic item storage\")",
+            "BuildingClass": "BlueprintGeneratedClass'/Game/BP/Settlement/Buildings/BP_SettlementBuilding.BP_SettlementBuilding_C'",
+            "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Stockpile_Blocking.SM_COL_Stockpile_Blocking",
+            "BuildingStats": {
+                "(Value=\"BaseGenericSlots_+\")": 16
+            },
+            "BuildingTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Settlement.Building.Stockpile"
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Watchtower",
+            "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"Watchtower-BuildingName\", \"Watchtower\")",
+            "BuildingDescription": "NSLOCTEXT(\"D_SettlementBuildings\", \"Watchtower-BuildingDescription\", \"Can be garrisoned by a guard for protection\")",
+            "BuildingClass": "BlueprintGeneratedClass'/Game/BP/Settlement/Buildings/BP_SettlementBuilding.BP_SettlementBuilding_C'",
+            "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Watchtower_Blocking.SM_COL_Watchtower_Blocking",
+            "BuildingTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Settlement.Building.Watchtower"
+                    }
+                ]
+            }
+        },
+        {
+            "Name": "Watertower",
+            "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"Watertower-BuildingName\", \"Water Tower\")",
+            "BuildingDescription": "NSLOCTEXT(\"D_SettlementBuildings\", \"Watertower-BuildingDescription\", \"Stores and generates water (if a Settler is assigned)\")",
+            "BuildingClass": "BlueprintGeneratedClass'/Game/BP/Settlement/Buildings/BP_SettlementBuilding_Watertower.BP_SettlementBuilding_Watertower_C'",
+            "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Water_Tower_Blocking.SM_COL_Water_Tower_Blocking",
+            "BuildingTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Settlement.Building.Watertower"
+                    }
+                ]
+            }
+        }
+    ]
+}
