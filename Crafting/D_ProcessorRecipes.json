@@ -115030,6 +115030,53 @@
             }
         },
         {
+            "Name": "Fertility_Serum_Chicken_Exotic",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "MetaResource",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
+                },
+                {
+                    "Element": {
+                        "RowName": "Seed",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 10
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_Chicken",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
             "Name": "Fertility_Serum_Cow",
             "Requirement": {
                 "RowName": "Fertility_Serum"
@@ -115047,6 +115094,55 @@
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 3
+                }
+            ],
+            "QueryInputs": [
+                {
+                    "Query": {
+                        "RowName": "Any_Herb",
+                        "DataTableName": "D_CraftingTags"
+                    },
+                    "Count": 10
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_Cow",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Fertility_Serum_Cow_Exotic",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "MetaResource",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
                 }
             ],
             "QueryInputs": [
@@ -115128,6 +115224,55 @@
             }
         },
         {
+            "Name": "Fertility_Serum_Moa_Exotic",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "MetaResource",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
+                }
+            ],
+            "QueryInputs": [
+                {
+                    "Query": {
+                        "RowName": "Any_Fruit",
+                        "DataTableName": "D_CraftingTags"
+                    },
+                    "Count": 10
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_Moa",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
             "Name": "Fertility_Serum_Buffalo",
             "Requirement": {
                 "RowName": "Fertility_Serum"
@@ -115145,6 +115290,55 @@
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Count": 3
+                }
+            ],
+            "QueryInputs": [
+                {
+                    "Query": {
+                        "RowName": "Any_Herb",
+                        "DataTableName": "D_CraftingTags"
+                    },
+                    "Count": 10
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_Buffalo",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Fertility_Serum_Buffalo_Exotic",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "MetaResource",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
                 }
             ],
             "QueryInputs": [
@@ -115226,249 +115420,6 @@
             }
         },
         {
-            "Name": "Fertility_Serum_Sheep",
-            "Requirement": {
-                "RowName": "Fertility_Serum"
-            },
-            "RecipeSets": [
-                {
-                    "RowName": "Animal_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "Condensed_Enzymes",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 3
-                }
-            ],
-            "QueryInputs": [
-                {
-                    "Query": {
-                        "RowName": "Any_Grain",
-                        "DataTableName": "D_CraftingTags"
-                    },
-                    "Count": 10
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Fertility_Serum_Sheep",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "CookingStation"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "Homestead"
-                }
-            }
-        },
-        {
-            "Name": "Fertility_Serum_Chicken_Exotic",
-            "Requirement": {
-                "RowName": "Fertility_Serum"
-            },
-            "RecipeSets": [
-                {
-                    "RowName": "Animal_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "MetaResource",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 5
-                },
-                {
-                    "Element": {
-                        "RowName": "Seed",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 10
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Fertility_Serum_Chicken",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "CookingStation"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "Homestead"
-                }
-            }
-        },
-        {
-            "Name": "Fertility_Serum_Cow_Exotic",
-            "Requirement": {
-                "RowName": "Fertility_Serum"
-            },
-            "RecipeSets": [
-                {
-                    "RowName": "Animal_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "MetaResource",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 5
-                }
-            ],
-            "QueryInputs": [
-                {
-                    "Query": {
-                        "RowName": "Any_Herb",
-                        "DataTableName": "D_CraftingTags"
-                    },
-                    "Count": 10
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Fertility_Serum_Cow",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "CookingStation"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "Homestead"
-                }
-            }
-        },
-        {
-            "Name": "Fertility_Serum_Moa_Exotic",
-            "Requirement": {
-                "RowName": "Fertility_Serum"
-            },
-            "RecipeSets": [
-                {
-                    "RowName": "Animal_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "MetaResource",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 5
-                }
-            ],
-            "QueryInputs": [
-                {
-                    "Query": {
-                        "RowName": "Any_Fruit",
-                        "DataTableName": "D_CraftingTags"
-                    },
-                    "Count": 10
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Fertility_Serum_Moa",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "CookingStation"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "Homestead"
-                }
-            }
-        },
-        {
-            "Name": "Fertility_Serum_Buffalo_Exotic",
-            "Requirement": {
-                "RowName": "Fertility_Serum"
-            },
-            "RecipeSets": [
-                {
-                    "RowName": "Animal_Bench",
-                    "DataTableName": "D_RecipeSets"
-                }
-            ],
-            "Inputs": [
-                {
-                    "Element": {
-                        "RowName": "MetaResource",
-                        "DataTableName": "D_ItemsStatic"
-                    },
-                    "Count": 5
-                }
-            ],
-            "QueryInputs": [
-                {
-                    "Query": {
-                        "RowName": "Any_Herb",
-                        "DataTableName": "D_CraftingTags"
-                    },
-                    "Count": 10
-                }
-            ],
-            "Outputs": [
-                {
-                    "Element": {
-                        "RowName": "Fertility_Serum_Buffalo",
-                        "DataTableName": "D_ItemTemplate"
-                    },
-                    "Count": 1,
-                    "DynamicProperties": [],
-                    "Alterations": []
-                }
-            ],
-            "Audio": {
-                "RowName": "CookingStation"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "Homestead"
-                }
-            }
-        },
-        {
             "Name": "Fertility_Serum_Pig_Exotic",
             "Requirement": {
                 "RowName": "Fertility_Serum"
@@ -115501,6 +115452,55 @@
                 {
                     "Element": {
                         "RowName": "Fertility_Serum_Pig",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "Homestead"
+                }
+            }
+        },
+        {
+            "Name": "Fertility_Serum_Sheep",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Condensed_Enzymes",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3
+                }
+            ],
+            "QueryInputs": [
+                {
+                    "Query": {
+                        "RowName": "Any_Grain",
+                        "DataTableName": "D_CraftingTags"
+                    },
+                    "Count": 10
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_Sheep",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 1,
@@ -120404,6 +120404,50 @@
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
                 }
+            }
+        },
+        {
+            "Name": "Sawblade",
+            "Requirement": {
+                "RowName": "Sawblades"
+            },
+            "RequiredMillijoules": 7000,
+            "RecipeSets": [
+                {
+                    "RowName": "Anvil_Bench",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Anvil_Bench_T3",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Anvil_Bench_T4",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Refined_Metal",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Sawblade",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 5,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "AnvilBench"
             }
         }
     ]

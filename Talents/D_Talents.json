@@ -794,7 +794,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 9150,
+                "X": 9450,
                 "Y": 850
             },
             "Size": {
@@ -16188,7 +16188,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 8750,
+                "X": 9050,
                 "Y": 850
             },
             "Size": {
@@ -23588,7 +23588,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 9600,
+                "X": 9800,
                 "Y": 850
             },
             "Size": {
@@ -53028,7 +53028,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 8750,
+                "X": 9050,
                 "Y": 1200
             },
             "Size": {
@@ -60887,7 +60887,8 @@
         },
         {
             "Name": "Orka_Base",
-            "DisplayName": "INVTEXT(\"[DNT] Free tile, creature name and icon\")",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Orka_Base-DisplayName\", \"Skulk\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Orka_Base-Description\", \"Can be specialized into a viscious killing machine.\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Orka.T_Talent_Base_Orka",
             "TalentTree": {
                 "RowName": "Creature_Orka"
@@ -61856,7 +61857,7 @@
         {
             "Name": "Creature_Chew",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Chew-DisplayName\", \"Draven\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Chew-Description\", \"Can be specialized into carry capacity improvements\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Chew-Description\", \"Can be specialized into carry capacity improvements.\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Chew.T_Talent_Base_Chew",
             "TalentTree": {
                 "RowName": "Creature_Chew"
@@ -62489,7 +62490,7 @@
         {
             "Name": "Creature_Base_Raptor",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Base_Raptor-DisplayName\", \"Raptor\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Base_Raptor-Description\", \"Can be Specialized into Combat Bonuses or Movement Bonuses\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Base_Raptor-Description\", \"Can be Specialized into combat or movement bonuses.\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Raptor.T_Talent_Base_Raptor",
             "TalentTree": {
                 "RowName": "Creature_Raptor"
@@ -64887,7 +64888,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 8350,
+                "X": 8650,
                 "Y": 850
             },
             "Size": {
@@ -64915,7 +64916,7 @@
                 "RowName": "Blueprint_T2_Crafting"
             },
             "Position": {
-                "X": 8350,
+                "X": 8650,
                 "Y": 1200
             },
             "Size": {
@@ -65547,7 +65548,7 @@
         {
             "Name": "Creature_Base_RaptorDesert",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Base_RaptorDesert-DisplayName\", \"Dune Raptor\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Base_RaptorDesert-Description\", \"Can be Specialized into Combat Bonuses or Movement Bonuses\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Base_RaptorDesert-Description\", \"Can be Specialized into combat or movement bonuses.\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_RaptorDesert.T_Talent_Base_RaptorDesert",
             "TalentTree": {
                 "RowName": "Creature_Raptor_Desert"
@@ -65903,7 +65904,7 @@
         {
             "Name": "CombatPet_Base_TundraMonkey",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_TundraMonkey-DisplayName\", \"Gribbler\")",
-            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_TundraMonkey-Description\", \"Can be specialized into combat or bonuses\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_TundraMonkey-Description\", \"Can be specialized into combat and debuffs.\")",
             "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_TundraMonkey.T_Talent_Base_TundraMonkey",
             "TalentTree": {
                 "RowName": "Creature_Tundra_Monkey"
@@ -66641,19 +66642,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseAttacksLeechHealth_%\")": 5
+                        "(Value=\"BaseAttacksLeechHealth_%\")": 10,
+                        "(Value=\"BaseHealthLeeched_%\")": 25
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseAttacksLeechHealth_%\")": 10
+                        "(Value=\"BaseAttacksLeechHealth_%\")": 25,
+                        "(Value=\"BaseHealthLeeched_%\")": 33
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseAttacksLeechHealth_%\")": 15
+                        "(Value=\"BaseAttacksLeechHealth_%\")": 50,
+                        "(Value=\"BaseHealthLeeched_%\")": 50
                     },
                     "GrantedFlags": []
                 }
@@ -66670,7 +66674,7 @@
             "Name": "Orka_Damage2",
             "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Orka_Damage2-DisplayName\", \"Unhinged Jaw\")",
             "Description": "NSLOCTEXT(\"D_Talents\", \"Orka_Damage2-Description\", \"Sacrifice Defence for Damage\")",
-            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Orka_Teeth2.T_Talent_Orka_Teeth2",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Orka_Teeth.T_Talent_Orka_Teeth",
             "TalentTree": {
                 "RowName": "Creature_Orka"
             },
@@ -72701,19 +72705,22 @@
             "Rewards": [
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseAttacksLeechHealth_%\")": 5
+                        "(Value=\"BaseAttacksLeechHealth_%\")": 5,
+                        "(Value=\"BaseHealthLeeched_%\")": 25
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseAttacksLeechHealth_%\")": 10
+                        "(Value=\"BaseAttacksLeechHealth_%\")": 10,
+                        "(Value=\"BaseHealthLeeched_%\")": 33
                     },
                     "GrantedFlags": []
                 },
                 {
                     "GrantedStats": {
-                        "(Value=\"BaseAttacksLeechHealth_%\")": 15
+                        "(Value=\"BaseAttacksLeechHealth_%\")": 15,
+                        "(Value=\"BaseHealthLeeched_%\")": 50
                     },
                     "GrantedFlags": []
                 }
@@ -75707,6 +75714,54 @@
                 }
             ],
             "bDefaultUnlocked": true
+        },
+        {
+            "Name": "Workshop_Sawblades",
+            "ExtraData": {
+                "RowName": "Meta_Sawblades",
+                "DataTableName": "D_WorkshopItems"
+            },
+            "TalentTree": {
+                "RowName": "Workshop_Firearms"
+            },
+            "Position": {
+                "X": 1500,
+                "Y": 1200
+            },
+            "Size": {
+                "X": 250,
+                "Y": 250
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Sawblades",
+            "ExtraData": {
+                "RowName": "Item_Sawblade",
+                "DataTableName": "D_Itemable"
+            },
+            "TalentTree": {
+                "RowName": "Blueprint_T2_Crafting"
+            },
+            "Position": {
+                "X": 8300,
+                "Y": 1050
+            },
+            "Size": {
+                "X": 184,
+                "Y": 184
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Anvil_Bench",
+                    "DataTableName": "D_Talents"
+                }
+            ],
+            "DrawMethodOverride": "XThenY"
         }
     ]
 }

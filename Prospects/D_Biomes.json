@@ -1568,24 +1568,20 @@
             }
         },
         {
-            "Name": "Outpost_011_Swamp",
-            "BiomeName": "Outpost_011_Swamp",
-            "DisplayName": "INVTEXT(\"[DNT] Swamp\")",
+            "Name": "Outpost_011_Beach",
+            "BiomeName": "Outpost_011_Beach",
+            "DisplayName": "INVTEXT(\"[DNT] Beach\")",
             "Color": {
-                "B": 84,
-                "G": 132,
-                "R": 1,
+                "G": 202,
+                "R": 200,
                 "A": 255
             },
-            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/SwampTemperatureCurve.SwampTemperatureCurve'",
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
             "AtmosphereType": {
-                "RowName": "Swamp"
+                "RowName": "Coastal"
             },
             "Audio": {
-                "RowName": "ElySwamp"
-            },
-            "BiomeModifier": {
-                "RowName": "Swamp_Atmosphere"
+                "RowName": "Beach"
             }
         },
         {
@@ -1593,9 +1589,9 @@
             "BiomeName": "Outpost_011_Jungle",
             "DisplayName": "INVTEXT(\"[DNT] Jungle\")",
             "Color": {
-                "B": 90,
-                "G": 150,
-                "R": 100,
+                "B": 39,
+                "G": 97,
+                "R": 44,
                 "A": 255
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
@@ -1603,23 +1599,40 @@
                 "RowName": "Jungle"
             },
             "Audio": {
-                "RowName": "Conifer"
+                "RowName": "Jungle"
             }
         },
         {
-            "Name": "Ely_RadBossArena",
-            "BiomeName": "RadBossArena",
-            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Ely_RadBossArena-DisplayName\", \"RadBossArena\")",
+            "Name": "Outpost_011_Jungle_Light",
+            "BiomeName": "Outpost_011_Jungle_Light",
+            "DisplayName": "INVTEXT(\"[DNT] Jungle Light\")",
             "Color": {
-                "B": 255,
-                "G": 225,
-                "R": 242,
+                "B": 58,
+                "G": 180,
+                "R": 69,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
+            "AtmosphereType": {
+                "RowName": "Jungle_Light"
+            },
+            "Audio": {
+                "RowName": "Jungle"
+            }
+        },
+        {
+            "Name": "Arena_RadBoss",
+            "BiomeName": "RadBossArena",
+            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Arena_RadBoss-DisplayName\", \"Radiation Boss Arena\")",
+            "Color": {
+                "B": 135,
+                "G": 255,
+                "R": 144,
                 "A": 255
             },
             "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/DesertTemperatureCurve.DesertTemperatureCurve'",
-            "WeatherFrequency": 2,
             "AtmosphereType": {
-                "RowName": "Geothermal"
+                "RowName": "Arena_RadBoss"
             },
             "Audio": {
                 "RowName": "BossRadGeo"

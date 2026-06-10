@@ -159934,7 +159934,7 @@
                 "RowName": "Item_Oil_Barrel"
             },
             "Interactable": {
-                "RowName": "Deployable_NoInteract"
+                "RowName": "Oil_Storage_Deployable"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -184746,7 +184746,7 @@
         {
             "Name": "Banana",
             "Meshable": {
-                "RowName": "Mesh_Generic_Food"
+                "RowName": "Mesh_Generic_Banana"
             },
             "Itemable": {
                 "RowName": "Item_Banana"
@@ -184755,7 +184755,7 @@
                 "RowName": "Item"
             },
             "Focusable": {
-                "RowName": "Focusable_1H"
+                "RowName": "Focusable_1H_Banana"
             },
             "Highlightable": {
                 "RowName": "Generic"
@@ -219347,7 +219347,7 @@
                 "RowName": "Item_Carcass_Irradiated_Mutation"
             },
             "Interactable": {
-                "RowName": "AnimalCorpse_NoCarry"
+                "RowName": "AnimalCorpse_Irradiated_Mutation"
             },
             "Hitable": {
                 "RowName": "AnimalCarcass"
@@ -233437,7 +233437,8 @@
                 "RowName": "Sawblade"
             },
             "AdditionalStats": {
-                "(Value=\"BaseFellingDamage_+\")": 200
+                "(Value=\"BaseFellingDamage_+\")": 200,
+                "(Value=\"IsWeakPointHitDisabled_?\")": -1
             },
             "CraftingExperience": 25,
             "Manual_Tags": {
@@ -234018,6 +234019,90 @@
                     }
                 ],
                 "ParentTags": []
+            }
+        },
+        {
+            "Name": "Workshop_Sawblade_Bundle",
+            "Meshable": {
+                "RowName": "Mesh_Ammo_Box"
+            },
+            "Itemable": {
+                "RowName": "Item_Workshop_Sawblade_Bundle"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Consumable": {
+                "RowName": "Workshop_Sawblade_Bundle"
+            },
+            "Usable": {
+                "RowName": "Consume"
+            },
+            "Ballistic": {
+                "RowName": "Sawblade"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseFellingDamage_+\")": 200,
+                "(Value=\"IsWeakPointHitDisabled_?\")": -1
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Meta.Consumable"
+                    },
+                    {
+                        "TagName": "Item.Meta.Package"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Ballistic"
+                    }
+                ],
+                "ParentTags": []
+            },
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
             }
         }
     ]

@@ -2090,18 +2090,6 @@
             }
         },
         {
-            "Name": "Creature_RadiationBoss",
-            "ExperienceEvents": {
-                "XP_OnDeath": {
-                    "ExperienceEvent": {
-                        "RowName": "Kill_RadiationBoss",
-                        "DataTableName": "D_ExperienceEvents"
-                    },
-                    "GainedExperience": 0
-                }
-            }
-        },
-        {
             "Name": "Creature_Dog",
             "ExperienceEvents": {
                 "XP_OnDeath": {
@@ -2179,6 +2167,18 @@
                 "XP_OnDeath": {
                     "ExperienceEvent": {
                         "RowName": "Kill_Tundra_Monkey_Juvenile",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "GainedExperience": 0
+                }
+            }
+        },
+        {
+            "Name": "Creature_RadBoss",
+            "ExperienceEvents": {
+                "XP_OnDeath": {
+                    "ExperienceEvent": {
+                        "RowName": "Kill_RadBoss",
                         "DataTableName": "D_ExperienceEvents"
                     },
                     "GainedExperience": 0

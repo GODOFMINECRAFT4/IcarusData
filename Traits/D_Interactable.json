@@ -3616,11 +3616,55 @@
             ]
         },
         {
-            "Name": "Fill_RefinedOil",
+            "Name": "Oil_Storage",
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "OilStorage_FillOil",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "OilStorage_DrawOil",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Oil_Storage_Deployable",
             "WorldPressInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Fill_Object_RefinedOil",
+                        "RowName": "Pickup_Item",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "OilStorage_FillOil",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "OilStorage_DrawOil",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldAltHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Pickup_Deployable",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -3687,7 +3731,14 @@
             "WorldAltPressInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Fill_Object_RefinedOil",
+                        "RowName": "OilStorage_FillOil",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "OilStorage_DrawOil",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -3733,7 +3784,14 @@
             "WorldAltPressInteracts": [
                 {
                     "InteractionRow": {
-                        "RowName": "Fill_Object_RefinedOil",
+                        "RowName": "OilStorage_FillOil",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "OilStorage_DrawOil",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""
@@ -3780,6 +3838,53 @@
                 {
                     "InteractionRow": {
                         "RowName": "Pickup_Deployable",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "AnimalCorpse_Irradiated_Mutation",
+            "WorldPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Interact_Syringe",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Loot_Skinned_Animal",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ],
+            "WorldHoldInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "Harvest_Corpse",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                },
+                {
+                    "InteractionRow": {
+                        "RowName": "Harvest_Corpse_Chainsaw",
+                        "DataTableName": "D_Interactions"
+                    },
+                    "Tag": ""
+                }
+            ]
+        },
+        {
+            "Name": "Fill_RefinedOil",
+            "WorldAltPressInteracts": [
+                {
+                    "InteractionRow": {
+                        "RowName": "OilStorage_FillOil",
                         "DataTableName": "D_Interactions"
                     },
                     "Tag": ""

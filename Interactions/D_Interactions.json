@@ -889,9 +889,9 @@
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Cot_Place-InteractionText\", \"Place Stasis Bag\")"
         },
         {
-            "Name": "Fill_Object_RefinedOil",
+            "Name": "OilStorage_FillOil",
             "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Fill_RefinedOil.BP_Interactable_Fill_RefinedOil_C",
-            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Fill_Object_RefinedOil-InteractionText\", \"Fill with Refined Oil\")"
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"OilStorage_FillOil-InteractionText\", \"Fill with Refined Oil\")"
         },
         {
             "Name": "Interact_NPC_SimpleTalk",
@@ -928,6 +928,16 @@
             "Name": "Interact_Colony_Radio_Tower",
             "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Colony_Radio_Tower.BP_Interactable_Interact_Colony_Radio_Tower_C",
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Colony_Radio_Tower-InteractionText\", \"Align Radio\")"
+        },
+        {
+            "Name": "Interact_Syringe",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Syringe.BP_Interactable_Syringe_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Syringe-InteractionText\", \"Collect Virus Sample\")"
+        },
+        {
+            "Name": "OilStorage_DrawOil",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_OilStorage_Draw.BP_Interactable_OilStorage_Draw_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"OilStorage_DrawOil-InteractionText\", \"Fill Container\")"
         }
     ]
 }
