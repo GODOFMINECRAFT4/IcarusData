@@ -22073,6 +22073,32 @@
             "StatCategory": {
                 "RowName": "Melee_Weapon"
             }
+        },
+        {
+            "Name": "BaseProjectileWeightOverride_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileWeightOverride_+-PositiveDescription\", \"+{0} Weight\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileWeightOverride_+-NegativeDescription\", \"-{0} Weight\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 10000
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Weight"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "ProjectileWeightOverride_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ProjectileWeightOverride_+-Title\", \"Projectile Weight\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Weight"
+            },
+            "bHideStatInUserInterface": true
         }
     ]
 }

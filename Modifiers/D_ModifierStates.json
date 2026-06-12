@@ -16298,12 +16298,25 @@
             "Type": "Debuff",
             "ModifierName": "INVTEXT(\"[DNT] Stuck\")",
             "ModifierDescription": "",
+            "AudioData": {
+                "RowName": "RadBoss_Web"
+            },
             "GrantedStats": {
                 "(Value=\"BaseMovementSpeed_+%\")": -30
             },
             "AuraRange": 500,
             "Behaviour": "/Game/BP/Behaviours/Modifiers/BP_Modifier_Base.BP_Modifier_Base_C",
             "MergeType": "LongestDuration",
+            "SaveToDatabase": false
+        },
+        {
+            "Name": "Tranquilizer_Dart",
+            "ModifierIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/ICON_SelectionSun.ICON_SelectionSun'",
+            "ModifierName": "NSLOCTEXT(\"D_ModifierStates\", \"Tranquilizer_Dart-ModifierName\", \"Tranquilizer Dart\")",
+            "ModifierDescription": "NSLOCTEXT(\"D_ModifierStates\", \"Tranquilizer_Dart-ModifierDescription\", \"Temporarily puts the target to sleep.\")",
+            "MergeType": "LongestDuration",
+            "MaxStackNum": 5,
+            "bEffectsPlayers": false,
             "SaveToDatabase": false
         }
     ]

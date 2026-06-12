@@ -5011,8 +5011,8 @@
                 "Roll": 45
             },
             "AudioData": {
-                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_BALLISTIC_GRN_FLY.SFX_BALLISTIC_GRN_FLY",
-                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Grenades/SFX_BALLISTIC_GRENADE_IMPACT.SFX_BALLISTIC_GRENADE_IMPACT"
+                "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_RADBOSS_WEB_TRAVEL.SFX_CRE_RADBOSS_WEB_TRAVEL",
+                "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_RADBOSS_WEB_IMPACT.SFX_CRE_RADBOSS_WEB_IMPACT"
             },
             "bUseActorPooling": true
         },
@@ -5040,7 +5040,26 @@
             },
             "AudioData": {
                 "FlySound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_SANDWORM_BALLISTIC_TRAVEL_SMALL.SFX_CRE_SANDWORM_BALLISTIC_TRAVEL_SMALL",
-                "ImpactSound": "/Game/FMOD/Events/SFX/D_Ballistic/SFX_CRE_SANDWORM_BALLISTIC_SMALL.SFX_CRE_SANDWORM_BALLISTIC_SMALL"
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Grenades/SFX_BALLISTIC_RADBOSS_ACID.SFX_BALLISTIC_RADBOSS_ACID"
+            },
+            "bUseActorPooling": true
+        },
+        {
+            "Name": "Tranqualizer_Dart",
+            "Behaviour": "/Game/BP/Behaviours/Ballistic/BP_BallisticBehaviour_Base.BP_BallisticBehaviour_Base_C",
+            "Damage": 10,
+            "bCanStealthAttack": false,
+            "bHomingProjectile": false,
+            "bCanKillCam": true,
+            "bUnbreakableDuringKillCam": false,
+            "Weight": 0.0035000001080334187,
+            "PayloadClass": "/Game/BP/Objects/World/Items/BallisticPayloads/BP_Payload_Tranqualizer_Dart.BP_Payload_Tranqualizer_Dart_C",
+            "BreakChance": 1,
+            "PostDeployLifetime": 60,
+            "OverrideStaticMesh": "/Game/ASS/WEP/SM_Buckshot.SM_Buckshot",
+            "RotationFollowsVelocity": false,
+            "AudioData": {
+                "ImpactSound": "/Game/FMOD/Events/SFX/Weapons/Guns/Impacts/SFX_IMPACT_SMALL.SFX_IMPACT_SMALL"
             },
             "bUseActorPooling": true
         }

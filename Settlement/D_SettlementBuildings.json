@@ -3,7 +3,7 @@
     "Defaults": {
         "BuildingName": "",
         "BuildingDescription": "",
-        "BuildingClass": "None",
+        "BuildingClass": "BlueprintGeneratedClass'/Game/BP/Settlement/Buildings/BP_SettlementBuilding.BP_SettlementBuilding_C'",
         "Mesh": "None",
         "BuildingStats": {},
         "BuildingTags": {
@@ -16,11 +16,16 @@
         "ConstructionTime": 60,
         "ItemConstructionCost": [],
         "QueryItemConstructionCost": [],
-        "ResourceConstructionCost": []
+        "ResourceConstructionCost": [],
+        "ConstructionExperienceReward": {
+            "RowName": "Settlement_Building_Complete",
+            "DataTableName": "D_ExperienceEvents"
+        }
     },
     "Rows": [
         {
             "Name": "Hub",
+            "BuildingClass": "None",
             "BuildingStats": {
                 "(Value=\"BaseSettlementMaxNPCs_+\")": 1,
                 "(Value=\"BaseSettlementRange_+\")": 10000
@@ -30,7 +35,6 @@
             "Name": "House",
             "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"House-BuildingName\", \"Housing\")",
             "BuildingDescription": "NSLOCTEXT(\"D_SettlementBuildings\", \"House-BuildingDescription\", \"Provides additional housing capacity, allowing more Settlers to join\")",
-            "BuildingClass": "BlueprintGeneratedClass'/Game/BP/Settlement/Buildings/BP_SettlementBuilding.BP_SettlementBuilding_C'",
             "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Housing_Blocking.SM_COL_Housing_Blocking",
             "BuildingStats": {
                 "(Value=\"BaseSettlementMaxNPCs_+\")": 2
@@ -47,7 +51,6 @@
             "Name": "Stockpile",
             "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"Stockpile-BuildingName\", \"Stockpile\")",
             "BuildingDescription": "NSLOCTEXT(\"D_SettlementBuildings\", \"Stockpile-BuildingDescription\", \"Basic item storage\")",
-            "BuildingClass": "BlueprintGeneratedClass'/Game/BP/Settlement/Buildings/BP_SettlementBuilding.BP_SettlementBuilding_C'",
             "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Stockpile_Blocking.SM_COL_Stockpile_Blocking",
             "BuildingStats": {
                 "(Value=\"BaseGenericSlots_+\")": 16
@@ -58,13 +61,15 @@
                         "TagName": "Settlement.Building.Stockpile"
                     }
                 ]
+            },
+            "RequiredTalent": {
+                "RowName": "Settlement_Hub_Stockpile"
             }
         },
         {
             "Name": "Watchtower",
             "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"Watchtower-BuildingName\", \"Watchtower\")",
             "BuildingDescription": "NSLOCTEXT(\"D_SettlementBuildings\", \"Watchtower-BuildingDescription\", \"Can be garrisoned by a guard for protection\")",
-            "BuildingClass": "BlueprintGeneratedClass'/Game/BP/Settlement/Buildings/BP_SettlementBuilding.BP_SettlementBuilding_C'",
             "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Watchtower_Blocking.SM_COL_Watchtower_Blocking",
             "BuildingTags": {
                 "GameplayTags": [
@@ -72,12 +77,15 @@
                         "TagName": "Settlement.Building.Watchtower"
                     }
                 ]
+            },
+            "RequiredTalent": {
+                "RowName": "Settlement_Hub_Watchtower"
             }
         },
         {
-            "Name": "Watertower",
-            "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"Watertower-BuildingName\", \"Water Tower\")",
-            "BuildingDescription": "NSLOCTEXT(\"D_SettlementBuildings\", \"Watertower-BuildingDescription\", \"Stores and generates water (if a Settler is assigned)\")",
+            "Name": "WaterTower",
+            "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"WaterTower-BuildingName\", \"Water Tower\")",
+            "BuildingDescription": "NSLOCTEXT(\"D_SettlementBuildings\", \"WaterTower-BuildingDescription\", \"Stores and generates water (if a Settler is assigned)\")",
             "BuildingClass": "BlueprintGeneratedClass'/Game/BP/Settlement/Buildings/BP_SettlementBuilding_Watertower.BP_SettlementBuilding_Watertower_C'",
             "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Water_Tower_Blocking.SM_COL_Water_Tower_Blocking",
             "BuildingTags": {
@@ -86,6 +94,67 @@
                         "TagName": "Settlement.Building.Watertower"
                     }
                 ]
+            }
+        },
+        {
+            "Name": "Medical",
+            "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"Medical-BuildingName\", \"Medical Center\")",
+            "BuildingDescription": "NSLOCTEXT(\"D_SettlementBuildings\", \"Medical-BuildingDescription\", \"Provides medical support to Settlers\")",
+            "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Medical_Blocking.SM_COL_Medical_Blocking",
+            "BuildingTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Settlement.Building.Medical"
+                    }
+                ]
+            },
+            "RequiredTalent": {
+                "RowName": "Settlement_Hub_Medical"
+            }
+        },
+        {
+            "Name": "Forge",
+            "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"Forge-BuildingName\", \"Forge\")",
+            "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Forge_Blocking.SM_COL_Forge_Blocking",
+            "BuildingTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Settlement.Building.Forge"
+                    }
+                ]
+            },
+            "RequiredTalent": {
+                "RowName": "Settlement_Hub_Forge"
+            }
+        },
+        {
+            "Name": "Barracks",
+            "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"Barracks-BuildingName\", \"Barracks\")",
+            "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Barracks_Blocking.SM_COL_Barracks_Blocking",
+            "BuildingTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Settlement.Building.Barracks"
+                    }
+                ]
+            },
+            "RequiredTalent": {
+                "RowName": "Settlement_Hub_Barracks"
+            }
+        },
+        {
+            "Name": "Workshop",
+            "BuildingName": "NSLOCTEXT(\"D_SettlementBuildings\", \"Workshop-BuildingName\", \"Workshop\")",
+            "Mesh": "/Game/Developers/joecook/Colony_Blocking_Meshes/SM_COL_Workshop_Blocking.SM_COL_Workshop_Blocking",
+            "BuildingTags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Settlement.Building.Workshop"
+                    }
+                ]
+            },
+            "RequiredTalent": {
+                "RowName": "Settlement_Hub_Workshop"
             }
         }
     ]

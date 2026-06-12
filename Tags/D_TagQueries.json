@@ -8403,6 +8403,252 @@
                 ],
                 "AutoDescription": " ALL( FactionMission.Item.Key )"
             }
+        },
+        {
+            "Name": "Stasis_Bag",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.StasisBag"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.Item.StasisBag )"
+            }
+        },
+        {
+            "Name": "Stasis_Bag_Full",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.StasisBagFull"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.Item.StasisBagFull )"
+            }
+        },
+        {
+            "Name": "Mission_Volatile",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Ore.Sulfur"
+                    },
+                    {
+                        "TagName": "Item.Fuel"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Item.Resource.Ore.Sulfur, Item.Fuel )"
+            }
+        },
+        {
+            "Name": "Mission_Bioactive",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Plant"
+                    },
+                    {
+                        "TagName": "Item.Fillable.Milk"
+                    },
+                    {
+                        "TagName": "Item.Seed"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    3,
+                    0,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ANY( Item.Plant, Item.Fillable.Milk, Item.Seed )"
+            }
+        },
+        {
+            "Name": "Mission_Fortified",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Stone"
+                    },
+                    {
+                        "TagName": "Item.Resource.Dirt"
+                    },
+                    {
+                        "TagName": "Item.Resource.Salt"
+                    },
+                    {
+                        "TagName": "Item.Resource.Sand"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    4,
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "AutoDescription": " ANY( Item.Resource.Stone, Item.Resource.Dirt, Item.Resource.Salt, Item.Resource.Sand )"
+            }
+        },
+        {
+            "Name": "Mission_Corrosive",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.raw_meat"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.query.raw_meat )"
+            }
+        },
+        {
+            "Name": "Mission_Reactive",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Resource.Ore"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Resource.Ore )"
+            }
+        },
+        {
+            "Name": "Mission_Dissipative",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Vestige"
+                    },
+                    {
+                        "TagName": "Item.Resource.Leather"
+                    },
+                    {
+                        "TagName": "Item.Resource.Fur"
+                    },
+                    {
+                        "TagName": "Item.Resource.Wool"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    4,
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "AutoDescription": " ANY( Item.Vestige, Item.Resource.Leather, Item.Resource.Fur, Item.Resource.Wool )"
+            }
+        },
+        {
+            "Name": "Mission_Mutagenic",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Meat"
+                    },
+                    {
+                        "TagName": "NPC.Fish"
+                    },
+                    {
+                        "TagName": "Item.Fillable.Milk"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    3,
+                    0,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ANY( Item.Meat, NPC.Fish, Item.Fillable.Milk )"
+            }
+        },
+        {
+            "Name": "Any_Launcher_Projectiles",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Weapon.Grenade"
+                    },
+                    {
+                        "TagName": "Item.Ammo.Flare"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    2,
+                    0,
+                    1
+                ],
+                "AutoDescription": " ANY( Item.Weapon.Grenade, Item.Ammo.Flare )"
+            }
+        },
+        {
+            "Name": "Any_Grenade_Launcher",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Weapon.GrenadeLauncher"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Weapon.GrenadeLauncher )"
+            }
         }
     ]
 }

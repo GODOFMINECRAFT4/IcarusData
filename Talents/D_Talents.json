@@ -75444,7 +75444,7 @@
                 "RowName": "GreatHunt_Radiation"
             },
             "Position": {
-                "X": 4200,
+                "X": 3500,
                 "Y": 1800
             },
             "Size": {
@@ -75469,7 +75469,7 @@
                 "RowName": "GreatHunt_Radiation"
             },
             "Position": {
-                "X": 4200,
+                "X": 3500,
                 "Y": 3450
             },
             "Size": {
@@ -75485,16 +75485,16 @@
             "DrawMethodOverride": "XThenY"
         },
         {
-            "Name": "GH_R_D",
+            "Name": "GH_R_D2",
             "ExtraData": {
-                "RowName": "Radiation_D",
+                "RowName": "Radiation_D2",
                 "DataTableName": "D_GreatHunts"
             },
             "TalentTree": {
                 "RowName": "GreatHunt_Radiation"
             },
             "Position": {
-                "X": 5100,
+                "X": 5750,
                 "Y": 2650
             },
             "Size": {
@@ -75514,31 +75514,6 @@
             "DrawMethodOverride": "XThenY"
         },
         {
-            "Name": "GH_R_D2",
-            "ExtraData": {
-                "RowName": "Radiation_D2",
-                "DataTableName": "D_GreatHunts"
-            },
-            "TalentTree": {
-                "RowName": "GreatHunt_Radiation"
-            },
-            "Position": {
-                "X": 7000,
-                "Y": 2650
-            },
-            "Size": {
-                "X": 600,
-                "Y": 660
-            },
-            "RequiredTalents": [
-                {
-                    "RowName": "GH_R_D",
-                    "DataTableName": "D_Talents"
-                }
-            ],
-            "DrawMethodOverride": "XThenY"
-        },
-        {
             "Name": "GH_R_Final",
             "ExtraData": {
                 "RowName": "Radiation_Final",
@@ -75548,7 +75523,7 @@
                 "RowName": "GreatHunt_Radiation"
             },
             "Position": {
-                "X": 8100,
+                "X": 6900,
                 "Y": 2650
             },
             "Size": {
@@ -75573,8 +75548,8 @@
                 "RowName": "GreatHunt_Radiation"
             },
             "Position": {
-                "X": 6050,
-                "Y": 3450
+                "X": 5200,
+                "Y": 3850
             },
             "Size": {
                 "X": 600,
@@ -75598,8 +75573,8 @@
                 "RowName": "GreatHunt_Radiation"
             },
             "Position": {
-                "X": 6050,
-                "Y": 1750
+                "X": 4500,
+                "Y": 2650
             },
             "Size": {
                 "X": 600,
@@ -75608,6 +75583,10 @@
             "RequiredTalents": [
                 {
                     "RowName": "GH_R_C2",
+                    "DataTableName": "D_Talents"
+                },
+                {
+                    "RowName": "GH_R_B2",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -75623,8 +75602,8 @@
                 "RowName": "GreatHunt_Radiation"
             },
             "Position": {
-                "X": 3250,
-                "Y": 2650
+                "X": 5150,
+                "Y": 1350
             },
             "Size": {
                 "X": 600,
@@ -75632,11 +75611,7 @@
             },
             "RequiredTalents": [
                 {
-                    "RowName": "GH_R_B",
-                    "DataTableName": "D_Talents"
-                },
-                {
-                    "RowName": "GH_R_C",
+                    "RowName": "GH_R_C2",
                     "DataTableName": "D_Talents"
                 }
             ],
@@ -75797,7 +75772,7 @@
                 "RowName": "Settlement_Hub"
             },
             "Position": {
-                "X": 850,
+                "X": 50,
                 "Y": 50
             },
             "Size": {
@@ -75824,6 +75799,273 @@
                     "GrantedFlags": []
                 }
             ]
+        },
+        {
+            "Name": "Settlement_Hub_Population_2",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Population_2-DisplayName\", \"Increased Population II\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Population_2-Description\", \"Provides support for more Settlers to join\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_NoManLeftBehind.Talent_Exploration_NoManLeftBehind",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 50,
+                "Y": 250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSettlementMaxNPCs_+\")": 1
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSettlementMaxNPCs_+\")": 2
+                    },
+                    "GrantedFlags": []
+                },
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSettlementMaxNPCs_+\")": 3
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Settlement_Hub_Population_1",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Hub_BuildingLimit_1",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_BuildingLimit_1-DisplayName\", \"Building Limit I\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_BuildingLimit_1-Description\", \"Allows extra buildings to be constructed\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Building/Talent_Building_FortifiedWood.Talent_Building_FortifiedWood",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 250,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSettlementMaxNPCs_+\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Hub_BuildingLimit_2",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_BuildingLimit_2-DisplayName\", \"Building Limit II\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_BuildingLimit_2-Description\", \"Allows extra buildings to be constructed\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Building/Talent_Building_FortifiedWood.Talent_Building_FortifiedWood",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 250,
+                "Y": 250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSettlementMaxNPCs_+\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Settlement_Hub_BuildingLimit_1",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Hub_BuildingLimit_3",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_BuildingLimit_3-DisplayName\", \"Building Limit III\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_BuildingLimit_3-Description\", \"Allows extra buildings to be constructed\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Building/Talent_Building_FortifiedWood.Talent_Building_FortifiedWood",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 250,
+                "Y": 450
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "Rewards": [
+                {
+                    "GrantedStats": {
+                        "(Value=\"BaseSettlementMaxNPCs_+\")": 1
+                    },
+                    "GrantedFlags": []
+                }
+            ],
+            "RequiredTalents": [
+                {
+                    "RowName": "Settlement_Hub_BuildingLimit_2",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Hub_Watchtower",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Watchtower-DisplayName\", \"Building: Watchtower\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Watchtower-Description\", \"Protect over your Settlement with a lookout\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Blueback_DamageReduction.T_Talent_Blueback_DamageReduction",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 450,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            }
+        },
+        {
+            "Name": "Settlement_Hub_Barracks",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Barracks-DisplayName\", \"Building: Barracks\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Barracks-Description\", \"Train up skilled warriors\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_CombatPetDamage.T_Talent_Base_CombatPetDamage",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 450,
+                "Y": 250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Settlement_Hub_Watchtower",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Hub_Stockpile",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Stockpile-DisplayName\", \"Building: Stockpile\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Stockpile-Description\", \"A small amount of extra item storage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Building/Talent_Building_WoodStorage.Talent_Building_WoodStorage",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 650,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            }
+        },
+        {
+            "Name": "Settlement_Hub_Warehouse",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Warehouse-DisplayName\", \"Building: Warehouse\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Warehouse-Description\", \"A large amount of extra item storage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Building/Talent_Building_WoodStorage2.Talent_Building_WoodStorage2",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 650,
+                "Y": 250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Settlement_Hub_Stockpile",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Hub_Forge",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Forge-DisplayName\", \"Building: Forge\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Forge-Description\", \"For forging\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Resources/Talent_Resources_MetallicLogistics.Talent_Resources_MetallicLogistics",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 850,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            }
+        },
+        {
+            "Name": "Settlement_Hub_Workshop",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Workshop-DisplayName\", \"Building: Workshop\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Workshop-Description\", \"For workshopping\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Repairing/Talent_Repairing_OutInTheOpen.Talent_Repairing_OutInTheOpen",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 850,
+                "Y": 250
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            },
+            "RequiredTalents": [
+                {
+                    "RowName": "Settlement_Hub_Forge",
+                    "DataTableName": "D_Talents"
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Hub_Medical",
+            "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Medical-DisplayName\", \"Building: Medical Center\")",
+            "Description": "NSLOCTEXT(\"D_Talents\", \"Settlement_Hub_Medical-Description\", \"Tends to your injured Settlers\")",
+            "Icon": "/Game/Assets/2DArt/UI/Talents/Exploration/Talent_Exploration_HealthyExplorer.Talent_Exploration_HealthyExplorer",
+            "TalentTree": {
+                "RowName": "Settlement_Hub"
+            },
+            "Position": {
+                "X": 1050,
+                "Y": 50
+            },
+            "Size": {
+                "X": 128,
+                "Y": 128
+            }
         }
     ]
 }

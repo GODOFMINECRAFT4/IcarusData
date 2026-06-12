@@ -61437,6 +61437,9 @@
             "Highlightable": {
                 "RowName": "Generic"
             },
+            "Actionable": {
+                "RowName": "UtilitySlot_Drop"
+            },
             "Durable": {
                 "RowName": "Carcass_Medium"
             },
@@ -61494,6 +61497,9 @@
                     },
                     {
                         "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
                     },
                     {
                         "TagName": "Traits.Durable"
@@ -61525,6 +61531,9 @@
             "Highlightable": {
                 "RowName": "Generic"
             },
+            "Actionable": {
+                "RowName": "UtilitySlot_Drop"
+            },
             "Durable": {
                 "RowName": "Carcass_Medium"
             },
@@ -61582,6 +61591,9 @@
                     },
                     {
                         "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
                     },
                     {
                         "TagName": "Traits.Durable"
@@ -133434,14 +133446,14 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "Item.Resource.Wool"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "Item.Resource.Wool"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -146891,14 +146903,14 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "Item.Resource.Sand"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "Item.Resource.Sand"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -234345,6 +234357,75 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Fertility_Serum_SwampBird",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Fertility_Serum_SwampBird"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Fertility_Serum"
+            },
+            "Consumable": {
+                "RowName": "Food_Fertility_Serum"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_ThreeDay"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Husbandry.Serum"
+                    },
+                    {
+                        "TagName": "NPC.SwampBird"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Husbandry.Serum"
+                    },
+                    {
+                        "TagName": "NPC.SwampBird"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
                     }
                 ],
                 "ParentTags": []

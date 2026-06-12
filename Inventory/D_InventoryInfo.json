@@ -2289,6 +2289,39 @@
                 "Value": "General"
             },
             "StartingSlots": 6
+        },
+        {
+            "Name": "Experiment_Cage",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 2,
+            "SlotOverrides": [
+                {
+                    "Query": {
+                        "RowName": "Stasis_Bag_Full",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 0
+                }
+            ]
+        },
+        {
+            "Name": "Distiller",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 4
+        },
+        {
+            "Name": "Weapon_Launcher",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Launcher_Projectiles"
+            },
+            "StartingSlots": 3
         }
     ]
 }

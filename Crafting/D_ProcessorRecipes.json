@@ -56197,7 +56197,7 @@
             "Outputs": [
                 {
                     "Element": {
-                        "RowName": "Caveworm_Scale",
+                        "RowName": "Sandworm_Scale",
                         "DataTableName": "D_ItemTemplate"
                     },
                     "Count": 15,
@@ -120706,6 +120706,90 @@
             ],
             "Audio": {
                 "RowName": "MachiningBench"
+            }
+        },
+        {
+            "Name": "Fertility_Serum_Ubis",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Condensed_Enzymes",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3
+                },
+                {
+                    "Element": {
+                        "RowName": "Acidic_Glands",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_SwampBird",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Fertility_Serum_Ubis_Exotic",
+            "Requirement": {
+                "RowName": "Fertility_Serum"
+            },
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "MetaResource",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
+                },
+                {
+                    "Element": {
+                        "RowName": "Acidic_Glands",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Fertility_Serum_SwampBird",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
             }
         }
     ]
