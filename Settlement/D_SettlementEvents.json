@@ -8,7 +8,623 @@
         "DisplayName": "",
         "Description": "",
         "PossibleOutcomes": [],
-        "MinSettlementLevel": 1
+        "MinSettlementLevel": 1,
+        "Weight": 1,
+        "DurationDays": 1,
+        "ProximityTriggerRange": 0,
+        "DefaultOutcomeIndex": 0,
+        "ActiveModifiers": [],
+        "bOverridesNPCActivity": false,
+        "ActivityOverride": "UnderAttack",
+        "RaidConfig": {
+            "RowName": "None",
+            "DataTableName": "D_SettlementRaids"
+        },
+        "bResolveAsRaidOnly": false
     },
-    "Rows": []
+    "Rows": [
+        {
+            "Name": "WolfPack",
+            "EventType": {
+                "RowName": "Raid"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"WolfPack-DisplayName\", \"Wolf Pack\")",
+            "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"WolfPack-Description\", \"A pack of hungry predators is circling the settlement. The settlers are on edge.\")",
+            "PossibleOutcomes": [
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"WolfPack-PossibleOutcomes-0-DisplayName\", \"Engage Them\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"WolfPack-PossibleOutcomes-0-Description\", \"The settlers attempt to scare off the pack to no avail. The wolves begin their assault...\")",
+                    "ItemCost": [],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "None",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "WolfPack",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                },
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"WolfPack-PossibleOutcomes-1-DisplayName\", \"Drive Them Off\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"WolfPack-PossibleOutcomes-1-Description\", \"A guard confronts the pack and scatters it. Requires a Guard.\")",
+                    "ItemCost": [],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "Guard",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 1,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "Settlement_Event_Resolved",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                }
+            ],
+            "MinSettlementLevel": 2,
+            "bOverridesNPCActivity": true
+        },
+        {
+            "Name": "WolfPack_ForceRaid",
+            "EventType": {
+                "RowName": "Raid"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"WolfPack_ForceRaid-DisplayName\", \"Wolf Pack\")",
+            "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"WolfPack_ForceRaid-Description\", \"A pack of hungry predators is attacking the settlement.\")",
+            "MinSettlementLevel": 2,
+            "ProximityTriggerRange": 150,
+            "bOverridesNPCActivity": true,
+            "RaidConfig": {
+                "RowName": "WolfPack"
+            },
+            "bResolveAsRaidOnly": true
+        },
+        {
+            "Name": "ColdSnap",
+            "EventType": {
+                "RowName": "Weather"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"ColdSnap-DisplayName\", \"Cold Snap\")",
+            "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"ColdSnap-Description\", \"A bitter cold front has settled over the area. The settlers will struggle to keep warm.\")",
+            "PossibleOutcomes": [
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"ColdSnap-PossibleOutcomes-0-DisplayName\", \"Endure the Cold\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"ColdSnap-PossibleOutcomes-0-Description\", \"The settlers tough it out. Frozen pipes and burst stores cost the settlement water.\")",
+                    "ItemCost": [],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "None",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [
+                        {
+                            "Modifier": {
+                                "RowName": "Settlement_BurstPipes",
+                                "DataTableName": "D_ModifierStates"
+                            },
+                            "DurationDays": 3
+                        }
+                    ],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                },
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"ColdSnap-PossibleOutcomes-1-DisplayName\", \"Stoke the Fires\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"ColdSnap-PossibleOutcomes-1-Description\", \"Burn extra wood to keep every hearth lit until the front passes.\")",
+                    "ItemCost": [
+                        {
+                            "Element": {
+                                "RowName": "Wood",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 100
+                        }
+                    ],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "Settlement_Event_Resolved",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                }
+            ],
+            "DurationDays": 2
+        },
+        {
+            "Name": "TravellingMerchant",
+            "EventType": {
+                "RowName": "Fortune"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"TravellingMerchant-DisplayName\", \"Travelling Merchant\")",
+            "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"TravellingMerchant-Description\", \"A wandering trader has set up outside the gates, offering goods in exchange for raw materials.\")",
+            "PossibleOutcomes": [
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"TravellingMerchant-PossibleOutcomes-0-DisplayName\", \"Decline\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"TravellingMerchant-PossibleOutcomes-0-Description\", \"Send the merchant on their way.\")",
+                    "ItemCost": [],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "None",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                },
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"TravellingMerchant-PossibleOutcomes-1-DisplayName\", \"Buy Food Stores\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"TravellingMerchant-PossibleOutcomes-1-Description\", \"Trade lumber for a crate of fresh produce.\")",
+                    "ItemCost": [
+                        {
+                            "Element": {
+                                "RowName": "Wood",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 50
+                        }
+                    ],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [
+                        {
+                            "Element": {
+                                "RowName": "Carrot",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 20
+                        }
+                    ],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "Settlement_Event_Resolved",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                },
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"TravellingMerchant-PossibleOutcomes-2-DisplayName\", \"Sell Lumber\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"TravellingMerchant-PossibleOutcomes-2-Description\", \"Sell a large stock of wood for hardware and a top-up of the water reserves.\")",
+                    "ItemCost": [
+                        {
+                            "Element": {
+                                "RowName": "Wood",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 200
+                        }
+                    ],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [
+                        {
+                            "Element": {
+                                "RowName": "Iron_Nail",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 20
+                        }
+                    ],
+                    "ResourceRewards": [
+                        {
+                            "Type": {
+                                "Value": "Water"
+                            },
+                            "RequiredUnits": 300
+                        }
+                    ],
+                    "ExperienceReward": {
+                        "RowName": "Settlement_Event_Resolved",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                }
+            ],
+            "Weight": 0.800000011920929
+        },
+        {
+            "Name": "GoodHarvest",
+            "EventType": {
+                "RowName": "Fortune"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"GoodHarvest-DisplayName\", \"Good Harvest\")",
+            "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"GoodHarvest-Description\", \"The crops have come in better than anyone hoped.\")",
+            "PossibleOutcomes": [
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"GoodHarvest-PossibleOutcomes-0-DisplayName\", \"Gather the Bounty\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"GoodHarvest-PossibleOutcomes-0-Description\", \"Extra produce goes straight into the settlement stores.\")",
+                    "ItemCost": [],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [
+                        {
+                            "Element": {
+                                "RowName": "Carrot",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 10
+                        }
+                    ],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "Settlement_Event_Resolved",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                }
+            ],
+            "Weight": 0.6000000238418579
+        },
+        {
+            "Name": "SpoiledStores",
+            "EventType": {
+                "RowName": "Misfortune"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"SpoiledStores-DisplayName\", \"Spoiled Stores\")",
+            "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"SpoiledStores-Description\", \"Rot has been found in the food stores. Something must be done before it spreads.\")",
+            "PossibleOutcomes": [
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"SpoiledStores-PossibleOutcomes-0-DisplayName\", \"Throw It Out\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"SpoiledStores-PossibleOutcomes-0-Description\", \"Discard everything the rot has touched.\")",
+                    "ItemCost": [
+                        {
+                            "Element": {
+                                "RowName": "Carrot",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 10
+                        }
+                    ],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "None",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                },
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"SpoiledStores-PossibleOutcomes-1-DisplayName\", \"Boil It Down\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"SpoiledStores-PossibleOutcomes-1-Description\", \"Spend fuel preserving what can be saved; the stores survive intact.\")",
+                    "ItemCost": [
+                        {
+                            "Element": {
+                                "RowName": "Wood",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 20
+                        }
+                    ],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "Settlement_Event_Resolved",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                },
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"SpoiledStores-PossibleOutcomes-2-DisplayName\", \"Eat the Food Anyway\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"SpoiledStores-PossibleOutcomes-2-Description\", \"Ignore the problem. Maybe the food isn\\'t so bad after all?\")",
+                    "ItemCost": [],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "None",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "Sick",
+                    "InflictAilmentCount": 3
+                }
+            ],
+            "Weight": 0.800000011920929,
+            "DefaultOutcomeIndex": 2
+        },
+        {
+            "Name": "BanditRaid",
+            "EventType": {
+                "RowName": "Raid"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"BanditRaid-DisplayName\", \"Bandit Raid\")",
+            "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"BanditRaid-Description\", \"Armed raiders have been spotted moving on the settlement. They want what\\'s in the stores.\")",
+            "PossibleOutcomes": [
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"BanditRaid-PossibleOutcomes-0-DisplayName\", \"Stand and Fight\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"BanditRaid-PossibleOutcomes-0-Description\", \"The settlement defends itself with whatever guards, towers and walls it has.\")",
+                    "ItemCost": [],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "Settlement_Event_Resolved",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "BanditRaid",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                },
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"BanditRaid-PossibleOutcomes-1-DisplayName\", \"Pay Tribute\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"BanditRaid-PossibleOutcomes-1-Description\", \"Hand over a stock of refined materials and the raiders move on. Nobody gets hurt.\")",
+                    "ItemCost": [
+                        {
+                            "Element": {
+                                "RowName": "Wood_Refined",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 100
+                        },
+                        {
+                            "Element": {
+                                "RowName": "Refined_Metal",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 10
+                        }
+                    ],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "None",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "None",
+                    "InflictAilmentCount": 0
+                }
+            ],
+            "MinSettlementLevel": 5,
+            "bOverridesNPCActivity": true
+        },
+        {
+            "Name": "Outbreak",
+            "EventType": {
+                "RowName": "Misfortune"
+            },
+            "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"Outbreak-DisplayName\", \"Outbreak\")",
+            "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"Outbreak-Description\", \"A nasty sickness is moving through the settlement. Settlers are starting to cough.\")",
+            "PossibleOutcomes": [
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"Outbreak-PossibleOutcomes-0-DisplayName\", \"Let It Run Its Course\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"Outbreak-PossibleOutcomes-0-Description\", \"Hope for the best. Several settlers fall sick.\")",
+                    "ItemCost": [],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "None",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "Sick",
+                    "InflictAilmentCount": 2
+                },
+                {
+                    "DisplayName": "NSLOCTEXT(\"D_SettlementEvents\", \"Outbreak-PossibleOutcomes-1-DisplayName\", \"Quarantine Early\")",
+                    "Description": "NSLOCTEXT(\"D_SettlementEvents\", \"Outbreak-PossibleOutcomes-1-Description\", \"Spend antibiotics now to contain it; only one settler falls sick.\")",
+                    "ItemCost": [
+                        {
+                            "Element": {
+                                "RowName": "Antibiotic_Paste",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 2
+                        }
+                    ],
+                    "QueryItemCost": [],
+                    "ResourceCost": [],
+                    "RequiredRole": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementNPCRoles"
+                    },
+                    "RequiredRoleCount": 0,
+                    "ItemRewards": [],
+                    "ResourceRewards": [],
+                    "ExperienceReward": {
+                        "RowName": "Settlement_Event_Resolved",
+                        "DataTableName": "D_ExperienceEvents"
+                    },
+                    "CostDeviation": 0,
+                    "RewardDeviation": 0,
+                    "Modifiers": [],
+                    "RaidConfig": {
+                        "RowName": "None",
+                        "DataTableName": "D_SettlementRaids"
+                    },
+                    "InflictAilment": "Sick",
+                    "InflictAilmentCount": 1
+                }
+            ],
+            "MinSettlementLevel": 2,
+            "Weight": 0.699999988079071
+        }
+    ]
 }

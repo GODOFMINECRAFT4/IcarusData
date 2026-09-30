@@ -232,7 +232,8 @@
         {
             "Name": "Creature",
             "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Creature-DisplayName\", \"Creature\")",
-            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Creature-Description\", \"An animate organism.\")"
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Creature-Description\", \"An animate organism.\")",
+            "bDisableTooltip": true
         },
         {
             "Name": "Ice",
@@ -427,8 +428,8 @@
         },
         {
             "Name": "Mission_Analyser",
-            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Analyser-DisplayName\", \"Analyser\")",
-            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Analyser-Description\", \"Scans biosamples for processing. To determine use.\")"
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Analyser-DisplayName\", \"Analyzer\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Analyser-Description\", \"Scans and processes biosamples to determine use.\")"
         },
         {
             "Name": "Broken_Crate",
@@ -1521,16 +1522,21 @@
         {
             "Name": "Colonist_B_Healed",
             "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Colonist_B_Healed-DisplayName\", \"Colonist Chris\")",
-            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Colonist_B_Healed-Description\", \"A Colonist who is recovering for injury.\")"
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Colonist_B_Healed-Description\", \"A Colonist who is recovering from injury.\")"
         },
         {
             "Name": "Broken_Heavy_Hoverframe",
-            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Broken_Heavy_Hoverframe-DisplayName\", \"Damaged Heavy Hoverframe\")",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Broken_Heavy_Hoverframe-DisplayName\", \"Rian\\'s Damaged Dual Hoverframe\")",
             "Description": "NSLOCTEXT(\"D_Highlightable\", \"Broken_Heavy_Hoverframe-Description\", \"A prototype vehicle that has been partially repaired. Still requires additional repairs to get up an running.\")"
         },
         {
             "Name": "Settlement_Hub",
             "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Settlement_Hub-DisplayName\", \"Settlement Hub\")",
+            "Description": ""
+        },
+        {
+            "Name": "Settlement_Building",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Settlement_Building-DisplayName\", \"Settlement Hub\")",
             "Description": ""
         },
         {
@@ -1542,6 +1548,136 @@
             "Name": "NPC_Settlement_Visitor",
             "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Settlement_Visitor-DisplayName\", \"Visitor\")",
             "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Settlement_Visitor-Description\", \"Maybe they\\'d like to join?\")"
+        },
+        {
+            "Name": "TEI_Agent_Injured",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"TEI_Agent_Injured-DisplayName\", \"Eris Inquisition Agent\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"TEI_Agent_Injured-Description\", \"An agent who had suffered major injuries.\")"
+        },
+        {
+            "Name": "TEI_Agent_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"TEI_Agent_Healed-DisplayName\", \"Eris Inquisition Agent\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"TEI_Agent_Healed-Description\", \"An agent contracted to the Eris Inquisiton.\")"
+        },
+        {
+            "Name": "RAD_Scientist",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"RAD_Scientist-DisplayName\", \"Norex Scientist Anderson\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"RAD_Scientist-Description\", \"A Norex Scientist whose morals are for sale.\")"
+        },
+        {
+            "Name": "NPC_Soldier_Friendly",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Friendly-DisplayName\", \"Eris Inquisition Agent\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Friendly-Description\", \"An agent contracted to the Eris Inquisiton.\")"
+        },
+        {
+            "Name": "NPC_Soldier_Friendly_RAD_D_1",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Friendly_RAD_D_1-DisplayName\", \"Agent Woods\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Friendly_RAD_D_1-Description\", \"An agent contracted to the Eris Inquisiton.\")"
+        },
+        {
+            "Name": "NPC_Soldier_Friendly_RAD_D_2",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Friendly_RAD_D_2-DisplayName\", \"Agent Hill\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Friendly_RAD_D_2-Description\", \"An agent contracted to the Eris Inquisiton.\")"
+        },
+        {
+            "Name": "NPC_Soldier_Friendly_RAD_D_3",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Friendly_RAD_D_3-DisplayName\", \"Agent Lovesy\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Friendly_RAD_D_3-Description\", \"An agent contracted to the Eris Inquisiton.\")"
+        },
+        {
+            "Name": "NPC_Soldier_Friendly_RAD_D_4",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Friendly_RAD_D_4-DisplayName\", \"Agent West\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Soldier_Friendly_RAD_D_4-Description\", \"An agent contracted to the Eris Inquisiton.\")"
+        },
+        {
+            "Name": "RadBoss_Den",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"RadBoss_Den-DisplayName\", \"Malformation Spire\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"RadBoss_Den-Description\", \"The Nest of the Malformation. Enter at your own Risk.\")"
+        },
+        {
+            "Name": "Dead_Bull",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Dead_Bull-DisplayName\", \"Dead Colony Bull\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Dead_Bull-Description\", \"Was Carrying Ore Back to the Colony.\")"
+        },
+        {
+            "Name": "RAD_Colonist",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"RAD_Colonist-DisplayName\", \"Colonist Miles\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"RAD_Colonist-Description\", \"A Colonist Scientist who is trying to reverse the Radioactive Mutation of their collegues.\")"
+        },
+        {
+            "Name": "NPC_Rancher",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Rancher-DisplayName\", \"Ranch Operations Officer Forsyth\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Rancher-Description\", \"UDA assigned Specialist who deals in all manner of farmable creatures on Icarus.\")"
+        },
+        {
+            "Name": "Duke",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Duke-DisplayName\", \"EDEN\\'s Bull\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Duke-Description\", \"Its cart contains a variety of explosive equipment.\")"
+        },
+        {
+            "Name": "Malformation_Hole",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Malformation_Hole-DisplayName\", \"Malformation Escape Tunnel\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Malformation_Hole-Description\", \"A hastily made tunnel that travels deep underground.\")"
+        },
+        {
+            "Name": "Dead_Wolf",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Dead_Wolf-DisplayName\", \"Fallen Wolf\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Dead_Wolf-Description\", \"A wolf that almost got away with scavenging equipment from an injured Prospector. \")"
+        },
+        {
+            "Name": "Radioactive_Pillar",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Radioactive_Pillar-DisplayName\", \"Radioactive Pillar\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Radioactive_Pillar-Description\", \"Where did this come from?\")"
+        },
+        {
+            "Name": "NPC_Griff",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Griff-DisplayName\", \"Griff\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Griff-Description\", \"Bleeding, with wounds that need bandaging.\")"
+        },
+        {
+            "Name": "NPC_Griff_Healed",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Griff_Healed-DisplayName\", \"Griff\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"NPC_Griff_Healed-Description\", \"Will be forced to abandon her operation due to injuries.\")"
+        },
+        {
+            "Name": "Mission_Backpack",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Backpack-DisplayName\", \"Griffs\\' Backpack\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Backpack-Description\", \"The backpack of prospector Griff.\")"
+        },
+        {
+            "Name": "Mission_Radar",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Radar-DisplayName\", \"Radar\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Radar-Description\", \"A device which can be used to survery areas.\")"
+        },
+        {
+            "Name": "Mission_Abomination",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Abomination-DisplayName\", \"Dead Revenant\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Mission_Abomination-Description\", \"Looks like it took multiple shotgun blasts to the face.\")"
+        },
+        {
+            "Name": "Elderberry_Bush",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Elderberry_Bush-DisplayName\", \"Elderberry Bush\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Elderberry_Bush-Description\", \"Harvest for resources.\")"
+        },
+        {
+            "Name": "Radboss_Carcass",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Radboss_Carcass-DisplayName\", \"Malformation Remains\")",
+            "Description": "NSLOCTEXT(\"D_Highlightable\", \"Radboss_Carcass-Description\", \"Its twisted life came to a similarly gruesome end.\")"
+        },
+        {
+            "Name": "Spinach",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Spinach-DisplayName\", \"Spinach\")",
+            "Description": "INVTEXT(\"[DNT] Greens for gains.\")"
+        },
+        {
+            "Name": "Ginger",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Ginger-DisplayName\", \"Ginger\")",
+            "Description": "INVTEXT(\"[DNT] A little nice spice.\")"
+        },
+        {
+            "Name": "Pineapple",
+            "DisplayName": "NSLOCTEXT(\"D_Highlightable\", \"Pineapple-DisplayName\", \"Pineapple\")",
+            "Description": "INVTEXT(\"[DNT] A tart treat that tingles the tongue.\")"
         }
     ]
 }

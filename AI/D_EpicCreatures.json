@@ -101,6 +101,76 @@
             }
         },
         {
+            "Name": "Alpha_Conifer_Wolf",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Alpha_Conifer_Wolf-CreatureNames-0\", \"Bakan the Guardian\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Alpha_Conifer_Wolf-CreatureNames-1\", \"Shakur the Sleeper\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Alpha_Conifer_Wolf-CreatureNames-2\", \"Kanis the Victor\")"
+            ],
+            "AISetup": {
+                "RowName": "Alpha_Wolf"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseAttacksCauseHemorrhage_%\")": 15
+            }
+        },
+        {
+            "Name": "Alpha_Snow_Wolf",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Alpha_Snow_Wolf-CreatureNames-0\", \"Bakan the Guardian\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Alpha_Snow_Wolf-CreatureNames-1\", \"Shakur the Sleeper\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Alpha_Snow_Wolf-CreatureNames-2\", \"Kanis the Victor\")"
+            ],
+            "AISetup": {
+                "RowName": "Alpha_Snow_Wolf"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseAttacksCauseHemorrhage_%\")": 15
+            }
+        },
+        {
+            "Name": "Alpha_Desert_Wolf",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Alpha_Desert_Wolf-CreatureNames-0\", \"Bakan the Guardian\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Alpha_Desert_Wolf-CreatureNames-1\", \"Shakur the Sleeper\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Alpha_Desert_Wolf-CreatureNames-2\", \"Kanis the Victor\")"
+            ],
+            "AISetup": {
+                "RowName": "Alpha_Snow_Wolf"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseAttacksCauseHemorrhage_%\")": 15
+            }
+        },
+        {
+            "Name": "SnowLeopard_Alpha",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"SnowLeopard_Alpha-CreatureNames-0\", \"Bakan the Guardian\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"SnowLeopard_Alpha-CreatureNames-1\", \"Shakur the Sleeper\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"SnowLeopard_Alpha-CreatureNames-2\", \"Kanis the Victor\")"
+            ],
+            "AISetup": {
+                "RowName": "SnowLeopard_Alpha"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseAttacksCauseHemorrhage_%\")": 15
+            }
+        },
+        {
+            "Name": "Cougar_Alpha",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Cougar_Alpha-CreatureNames-0\", \"Bakan the Guardian\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Cougar_Alpha-CreatureNames-1\", \"Shakur the Sleeper\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Cougar_Alpha-CreatureNames-2\", \"Kanis the Victor\")"
+            ],
+            "AISetup": {
+                "RowName": "Cougar_Alpha"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseAttacksCauseHemorrhage_%\")": 15
+            }
+        },
+        {
             "Name": "Scorpion_Boss",
             "CreatureNames": [
                 "NSLOCTEXT(\"D_EpicCreatures\", \"Scorpion_Boss-CreatureNames-0\", \"Zorum\")",
@@ -338,7 +408,19 @@
         {
             "Name": "LavaHunter",
             "CreatureNames": [
-                "NSLOCTEXT(\"D_EpicCreatures\", \"LavaHunter-CreatureNames-0\", \"Little Friend??\")"
+                "NSLOCTEXT(\"D_EpicCreatures\", \"LavaHunter-CreatureNames-0\", \"Voltanus\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"LavaHunter-CreatureNames-1\", \"Magmarok\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"LavaHunter-CreatureNames-2\", \"Pyroclast\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"LavaHunter-CreatureNames-3\", \"Ignivar\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"LavaHunter-CreatureNames-4\", \"Scorvaxis\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"LavaHunter-CreatureNames-5\", \"Calderax\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"LavaHunter-CreatureNames-6\", \"Molthar\")"
+            ]
+        },
+        {
+            "Name": "LavaHunter_Mission",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"LavaHunter_Mission-CreatureNames-0\", \"Little Friend??\")"
             ]
         },
         {
@@ -1002,7 +1084,7 @@
         {
             "Name": "Radiation_Boss",
             "CreatureNames": [
-                "INVTEXT(\"[DNT] Rad Boss\")"
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Radiation_Boss-CreatureNames-0\", \"Malformation\")"
             ],
             "AISetup": {
                 "RowName": "RadBoss"
@@ -1036,10 +1118,75 @@
         {
             "Name": "RAD_B2_Specter",
             "CreatureNames": [
-                "NSLOCTEXT(\"D_EpicCreatures\", \"RAD_B2_Specter-CreatureNames-0\", \"Mutated Colonist\")"
+                "NSLOCTEXT(\"D_EpicCreatures\", \"RAD_B2_Specter-CreatureNames-0\", \"Mutated Colonist Johnson\")"
             ],
             "AISetup": {
                 "RowName": "Irradiated_Prospector_Tranquilized"
+            },
+            "AdditionalStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 25,
+                "(Value=\"BaseMaximumHealth_+%\")": 50
+            }
+        },
+        {
+            "Name": "RAD_C2_Malformation",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"RAD_C2_Malformation-CreatureNames-0\", \"Malformation\")"
+            ],
+            "AISetup": {
+                "RowName": "RadBoss_Mission"
+            }
+        },
+        {
+            "Name": "RAD_B_FlyingTank",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"RAD_B_FlyingTank-CreatureNames-0\", \"Lava Eater\")"
+            ],
+            "AISetup": {
+                "RowName": "Flying_Tank"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseFireDamageResistanceWhileInLava_%\")": 100
+            }
+        },
+        {
+            "Name": "RAD_C2_MiniBoss",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"RAD_C2_MiniBoss-CreatureNames-0\", \"Revenant\")"
+            ],
+            "AISetup": {
+                "RowName": "Irradiated_Abomination"
+            }
+        },
+        {
+            "Name": "Terrenus_Boss",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Terrenus_Boss-CreatureNames-0\", \"Alpha Mare\")",
+                "NSLOCTEXT(\"D_EpicCreatures\", \"Terrenus_Boss-CreatureNames-1\", \"Alpha Stallion\")"
+            ],
+            "AISetup": {
+                "RowName": "Terrenus_Boss"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseCreatureSize_+%\")": 25,
+                "(Value=\"BaseMaximumArmor_+%\")": 150,
+                "(Value=\"BaseMaximumHealth_+%\")": 300,
+                "(Value=\"BaseMeleeDamage_+%\")": 25,
+                "(Value=\"BaseAttacksCauseSprain_%\")": 20,
+                "(Value=\"BaseAttacksCauseDeepWound_%\")": 75
+            }
+        },
+        {
+            "Name": "RAD_E_Boss",
+            "CreatureNames": [
+                "NSLOCTEXT(\"D_EpicCreatures\", \"RAD_E_Boss-CreatureNames-0\", \"Skulmutt Prime\")"
+            ],
+            "AISetup": {
+                "RowName": "Mange_Wolf_Alpha"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": 100,
+                "(Value=\"BaseMeleeDamage_+%\")": 25
             }
         }
     ]

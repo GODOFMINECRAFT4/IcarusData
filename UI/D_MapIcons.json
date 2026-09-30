@@ -936,6 +936,16 @@
             }
         },
         {
+            "Name": "Prospector_Yellow",
+            "WidgetClass": "/Game/BP/Objects/World/Items/Deployables/Radar/UMG_RadarIcon.UMG_RadarIcon_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Icon_Map_Prospector_1.T_Icon_Map_Prospector_1'",
+            "Color": {
+                "G": 255,
+                "R": 250,
+                "A": 255
+            }
+        },
+        {
             "Name": "Prospector_Blue",
             "WidgetClass": "/Game/BP/Objects/World/Items/Deployables/Radar/UMG_RadarIcon.UMG_RadarIcon_C",
             "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/T_Icon_Map_Prospector_1.T_Icon_Map_Prospector_1'",
@@ -1178,6 +1188,76 @@
                 "R": 187,
                 "A": 255
             }
+        },
+        {
+            "Name": "Mission_Bull",
+            "WidgetClass": "/Game/BP/Objects/World/Items/Deployables/Radar/UMG_RadarIcon.UMG_RadarIcon_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Bull.T_Icon_Map_Bull'",
+            "Color": {
+                "B": 53,
+                "G": 78,
+                "R": 254,
+                "A": 255
+            },
+            "ZOrder": -2,
+            "ScaleFactor": 1.5,
+            "bShowNameOnHover": true,
+            "HoverName": "NSLOCTEXT(\"D_MapIcons\", \"Mission_Bull-HoverName\", \"Duke\")"
+        },
+        {
+            "Name": "Mission_Explosive",
+            "WidgetClass": "/Game/BP/Objects/World/Items/Deployables/Radar/UMG_RadarIcon.UMG_RadarIcon_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Explosive_Placement.T_Icon_Explosive_Placement'",
+            "Color": {
+                "B": 53,
+                "G": 78,
+                "R": 254,
+                "A": 255
+            },
+            "bShowNameOnHover": true,
+            "HoverName": "NSLOCTEXT(\"D_MapIcons\", \"Mission_Explosive-HoverName\", \"Explosive Placement\")"
+        },
+        {
+            "Name": "Mission_Laser",
+            "WidgetClass": "/Game/BP/Objects/World/Items/Deployables/Radar/UMG_RadarIcon.UMG_RadarIcon_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Laser_Placement.T_Icon_Laser_Placement'",
+            "Color": {
+                "B": 255,
+                "G": 217,
+                "R": 176,
+                "A": 255
+            },
+            "bShowNameOnHover": true,
+            "HoverName": "NSLOCTEXT(\"D_MapIcons\", \"Mission_Laser-HoverName\", \"Laser Placement\")"
+        },
+        {
+            "Name": "RadBoss",
+            "WidgetClass": "/Game/BP/Objects/World/Items/Deployables/Radar/UMG_RadarIcon.UMG_RadarIcon_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/BossMonsters/T_MAPICON_RadBoss.T_MAPICON_RadBoss'",
+            "Color": {
+                "B": 52,
+                "G": 77,
+                "R": 255,
+                "A": 255
+            }
+        },
+        {
+            "Name": "Settlement",
+            "WidgetClass": "/Game/BP/Objects/World/Items/Deployables/Radar/UMG_RadarIcon.UMG_RadarIcon_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MapIcons/Icon_Map_Home.Icon_Map_Home'",
+            "bDisplayOnCompass": false
+        },
+        {
+            "Name": "Farm",
+            "WidgetClass": "/Game/BP/Objects/World/Items/Deployables/Radar/UMG_RadarIcon.UMG_RadarIcon_C",
+            "MapIcon": "Texture2D'/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Farmhouse.T_Icon_Farmhouse'",
+            "Color": {
+                "B": 255,
+                "R": 187,
+                "A": 255
+            },
+            "bShowNameOnHover": true,
+            "HoverName": "NSLOCTEXT(\"D_MapIcons\", \"Farm-HoverName\", \"EDEN Domestication Outpost\")"
         }
     ]
 }

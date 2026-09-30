@@ -802,22 +802,24 @@
         },
         {
             "Name": "OLY_Forest_Craft_Axe",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Recon_Axe.BPQ_OLY_Recon_Axe_C",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Forest_Recon_Axe.BPQ_OLY_Forest_Recon_Axe_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Craft_Axe-Description\", \"Gather Sticks, Stones off the ground and Fiber from bushes then open the Crafting Menu ([Crafting]) and Craft a Stone Axe for Protection\")"
         },
         {
             "Name": "OLY_Forest_Craft_Torch",
             "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Recon_Torch.BPQ_OLY_Recon_Torch_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Craft_Torch-Description\", \"Unlock a Wood Rag Torch ([Tech]) and Craft it with ([Crafting]) to provide yourself light during the night\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Craft_Torch-Description\", \"Unlock a Wood Rag Torch ([Tech]) and Craft it with ([Crafting]) to Provide Light During the Night\")"
         },
         {
             "Name": "OLY_Forest_Recon_Survive",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Survive.BPQ_OLY_Survive_C"
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Survive.BPQ_OLY_Survive_C",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Recon_Survive-InfoText\", \"Press ([OpenBestiary]) to Open the Field Guide for More World and Items Information\")"
         },
         {
             "Name": "OLY_Forest_Bedroll",
             "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Bedroll.BPQ_OLY_Bedroll_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Bedroll-Description\", \"Build a shelter and craft a bedroll to survive the harsh Icarus environment.\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Bedroll-Description\", \"Build a Shelter and Craft and Place a Bedroll to Survive the Harsh Icarus Environment.\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Bedroll-InfoText\", \"Press ([Crouch]) to Sneak Up on Wildlife. Damaging from Stealth Will Apply a Multiplier\")",
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "Recon_Build",
@@ -837,17 +839,17 @@
         },
         {
             "Name": "OLY_Forest_Scan",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_Scan.BPQ_OLY_Forest_Scan_C",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan2.BPQ_Oly_Forest_Scan2_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan-Description\", \"TERRAIN SCAN: Forest\")"
         },
         {
             "Name": "OLY_Forest_Scan_Retrieve_Equipment",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_CollectPod.BPQ_OLY_Forest_CollectPod_C",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/OldVersion/BPQ_OLY_Forest_CollectPod.BPQ_OLY_Forest_CollectPod_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Retrieve_Equipment-Description\", \"Collect a Radar from the Supply Pod\")"
         },
         {
             "Name": "OLY_Forest_Scan_Location_1",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_ScanLocation.BPQ_OLY_Forest_ScanLocation_C",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/OldVersion/BPQ_OLY_Forest_ScanLocation.BPQ_OLY_Forest_ScanLocation_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Location_1-Description\", \"Scan Location 1 - Prepare for Wildlife Attacks\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_Scan1"
@@ -855,7 +857,7 @@
         },
         {
             "Name": "OLY_Forest_Scan_Location_2",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_ScanLocation.BPQ_OLY_Forest_ScanLocation_C",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/OldVersion/BPQ_OLY_Forest_ScanLocation.BPQ_OLY_Forest_ScanLocation_C",
             "Variation": 1,
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Location_2-Description\", \"Scan Location 2 - Prepare for Wildlife Attacks\")",
             "LocationQuery": {
@@ -864,7 +866,7 @@
         },
         {
             "Name": "OLY_Forest_Scan_Location_3",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_ScanLocation.BPQ_OLY_Forest_ScanLocation_C",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/OldVersion/BPQ_OLY_Forest_ScanLocation.BPQ_OLY_Forest_ScanLocation_C",
             "Variation": 2,
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Location_3-Description\", \"Scan Location 3 - Prepare for Wildlife Attacks\")",
             "LocationQuery": {
@@ -880,6 +882,58 @@
             "Name": "OLY_Forest_Stockpile_0",
             "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_OLY_Forest_Stockpile.BPQ_OLY_Forest_Stockpile_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Stockpile_0-Description\", \"STOCKPILE: Forest\")"
+        },
+        {
+            "Name": "Oly_Forest_Stockpile_Craft",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_Oly_Forest_Stockpile_Craft.BPQ_Oly_Forest_Stockpile_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Craft-Description\", \"Prepare Equipment\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Craft-InfoText\", \"Higher Tier Equipment Will Gather More Resources\")"
+        },
+        {
+            "Name": "Oly_Forest_Stockpile_Craft_Knife",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_Oly_Forest_Stockpile_Craft_Knife.BPQ_Oly_Forest_Stockpile_Craft_Knife_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Craft_Knife-Description\", \"Craft a Knife\")"
+        },
+        {
+            "Name": "Oly_Forest_Stockpile_Craft_Sickle",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_Oly_Forest_Stockpile_Craft_Sickle.BPQ_Oly_Forest_Stockpile_Craft_Sickle_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Craft_Sickle-Description\", \"Craft a Sickle\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Craft_Sickle-InfoText\", \"Sickles Will Greatly Improve Harvesting Vegetation\")"
+        },
+        {
+            "Name": "Oly_Forest_Stockpile_Craft_WaterPurifier",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_Oly_Forest_Stockpile_Craft_WaterPurifier.BPQ_Oly_Forest_Stockpile_Craft_WaterPurifier_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Craft_WaterPurifier-Description\", \"Craft a Basic Water Purifier\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Craft_WaterPurifier-InfoText\", \"Place the Water Purifier in a Stream or Lake and Drink from it to Protect from Dysentery\")"
+        },
+        {
+            "Name": "Oly_Forest_Stockpile_Deploy_WaterPurifier",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_Oly_Forest_Stockpile_Deploy_WaterPurifier.BPQ_Oly_Forest_Stockpile_Deploy_WaterPurifier_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Deploy_WaterPurifier-Description\", \"Deploy a Basic Water Purifier\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Deploy_WaterPurifier-InfoText\", \"Place the Water Purifier in the Nearby Lake to Safely Quench Your Thirst\")"
+        },
+        {
+            "Name": "Oly_Forest_Stockpile_Collect_Charcoal",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_Oly_Forest_Stockpile_Collect_Charcoal.BPQ_Oly_Forest_Stockpile_Collect_Charcoal_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Collect_Charcoal-Description\", \"(Optional) Collect Charcoal for the Purifier\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Collect_Charcoal-InfoText\", \"A Prospector Left Behind Some Charcoal in the Nearby Shack\")"
+        },
+        {
+            "Name": "Oly_Forest_Stockpile_Travel_A",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_Oly_ForesT_Stockpile_Travel_A.BPQ_Oly_ForesT_Stockpile_Travel_A_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Travel_A-Description\", \"Travel to map Location Alpha ([Map])\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Stockpile_Ship1"
+            }
+        },
+        {
+            "Name": "Oly_Forest_Stockpile_Travel_B",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_Oly_ForesT_Stockpile_Travel_B.BPQ_Oly_ForesT_Stockpile_Travel_B_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Stockpile_Travel_B-Description\", \"Travel to map Location Beta ([Map])\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Stockpile_Ship2"
+            }
         },
         {
             "Name": "OLY_Forest_Stockpile_Ship1",
@@ -927,11 +981,6 @@
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Stockpile_Pumpkin-Description\", \"<Number>({0} / {1})</> Pumpkin\")"
         },
         {
-            "Name": "OLY_Forest_Stockpile_Squash",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_OLY_Forest_Stockpile_Deposit_Squash.BPQ_OLY_Forest_Stockpile_Deposit_Squash_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Stockpile_Squash-Description\", \"<Number>({0} / {1})</> Squash\")"
-        },
-        {
             "Name": "OLY_Forest_Stockpile_Watermelon",
             "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_OLY_Forest_Stockpile_Deposit_Watermelon.BPQ_OLY_Forest_Stockpile_Deposit_Watermelon_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Stockpile_Watermelon-Description\", \"<Number>({0} / {1})</> Watermelon\")"
@@ -950,12 +999,7 @@
             "Name": "OLY_Forest_Stockpile_Meat",
             "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_OLY_Forest_Stockpile_Deposit_Meat.BPQ_OLY_Forest_Stockpile_Deposit_Meat_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Stockpile_Meat-Description\", \"<Number>({0} / {1})</> Cooked Meat\")",
-            "DialogueEvents": {
-                "QuestStart": {
-                    "RowName": "ItemFoundGeneric6",
-                    "DataTableName": "D_Dialogue"
-                }
-            }
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Stockpile_Meat-InfoText\", \"Leaving Carcasses on the Ground Will Attract More Predators\")"
         },
         {
             "Name": "OLY_Forest_Stockpile_Leather",
@@ -965,7 +1009,7 @@
         {
             "Name": "OLY_Forest_Stockpile_List",
             "Class": "/Game/BP/Quests/Olympus/Forest/Stockpile/BPQ_OLY_Forest_Stockpile_List.BPQ_OLY_Forest_Stockpile_List_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Stockpile_List-Description\", \"Deposit listed resources in Cargo Pod\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Stockpile_List-Description\", \"Deposit the Listed Resources in the Cargo Pod\")"
         },
         {
             "Name": "OLY_Forest_Research_0",
@@ -975,7 +1019,8 @@
         {
             "Name": "OLY_Forest_Research_Equipment",
             "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_CollectPod.BPQ_OLY_Forest_Research_CollectPod_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Equipment-Description\", \"Collect the UDA Supplies from the Supply Pod\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Equipment-Description\", \"Collect the UDA Supplies from the Supply Pod\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Equipment-InfoText\", \"Prepare for Exploration and Volatile Hazards\")"
         },
         {
             "Name": "OLY_Forest_Research_Flora",
@@ -994,6 +1039,7 @@
             "Name": "OLY_Forest_Research_Gas",
             "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Locate.BPQ_OLY_Forest_Research_Locate_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Gas-Description\", \"Find the Source of the Poison Gas Cloud \")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Gas-InfoText\", \"Use Anti-Poison Measures Preventatively\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_Research_Item1"
             }
@@ -1001,7 +1047,8 @@
         {
             "Name": "OLY_Forest_Research_Collect_Flora_Sample",
             "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Collect_Flora.BPQ_OLY_Forest_Research_Collect_Flora_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Flora_Sample-Description\", \"Collect a Sample from the Plant\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Flora_Sample-Description\", \"Collect a Sample from the Plant\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Flora_Sample-InfoText\", \"Grab the Sample and Flee the Poison Gas\")"
         },
         {
             "Name": "OLY_Forest_Research_Creature",
@@ -1045,6 +1092,7 @@
             "Name": "OLY_Forest_Research_Collect_Bioweapon",
             "Class": "/Game/BP/Quests/Olympus/Forest/Research/BPQ_OLY_Forest_Research_Collect_Bioweapon.BPQ_OLY_Forest_Research_Collect_Bioweapon_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Bioweapon-Description\", \"Collect the Chemical Weapon Remains\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Research_Collect_Bioweapon-InfoText\", \"Build up to Reach the Crash Site\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_Research_Item3"
             }
@@ -3205,6 +3253,7 @@
             "Name": "OLY_Desert_Construction_Head_To_Location",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Construction_Head_To_Location-Description\", \"Reach build location ([Map])\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Construction_Head_To_Location-InfoText\", \"Search for a nearby cave.\")",
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "ConstructionArrive4b",
@@ -3225,12 +3274,14 @@
         {
             "Name": "OLY_Desert_Construction_Worklamps",
             "Class": "/Game/BP/Quests/Olympus/Desert/Construction/BPQ_OLY_Desert_Construction_Worklamp.BPQ_OLY_Desert_Construction_Worklamp_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Construction_Worklamps-Description\", \"Construct and power 2x Directional Worklamps\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Construction_Worklamps-Description\", \"Construct and power 2x Worklamps\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Construction_Worklamps-InfoText\", \"Can be either Directional or Omni-Directional Worklamp variations.\")"
         },
         {
             "Name": "OLY_Desert_Construction_Dehumidifier",
             "Class": "/Game/BP/Quests/Olympus/Desert/Construction/BPQ_OLY_Desert_Construction_Dehumidifier.BPQ_OLY_Desert_Construction_Dehumidifier_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Construction_Dehumidifier-Description\", \"Construct and power Electric Dehumidifier\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Construction_Dehumidifier-Description\", \"Construct and power Electric Dehumidifier\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Construction_Dehumidifier-InfoText\", \"Toggle the Dehumidifier on when connected.\")"
         },
         {
             "Name": "OLY_Desert_Construction_Machining_Bench",
@@ -3365,12 +3416,12 @@
         {
             "Name": "Common_Scan_Deploy_Radar",
             "Class": "/Game/BP/Quests/Common/BPQ_Scan_Deploy.BPQ_Scan_Deploy_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Scan_Deploy_Radar-Description\", \"Deploy the Station\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Scan_Deploy_Radar-Description\", \"Deploy the Radar Station\")"
         },
         {
             "Name": "Common_Scan_Activate_Radar",
             "Class": "/Game/BP/Quests/Common/BPQ_Scan_Activate.BPQ_Scan_Activate_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Scan_Activate_Radar-Description\", \"Activate the Station\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Scan_Activate_Radar-Description\", \"Activate the Radar Station\")"
         },
         {
             "Name": "Common_Scan_Progress_Radar",
@@ -3380,7 +3431,7 @@
         {
             "Name": "Common_Scan_Retrieve_Radar",
             "Class": "/Game/BP/Quests/Common/BPQ_Scan_Retrieve.BPQ_Scan_Retrieve_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Scan_Retrieve_Radar-Description\", \"Collect the Station\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Scan_Retrieve_Radar-Description\", \"Collect the Radar Station\")"
         },
         {
             "Name": "Common_Retrieve_Item_Pickup",
@@ -4198,6 +4249,7 @@
             "Name": "OLY_Desert_Research_2_Power",
             "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Power.BPQ_Desert_OLY_Research_2_Power_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Power-Description\", \"Connect the Analyzer to an active Energy Network\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Power-InfoText\", \"Toggle the device on once it has been hooked up.\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "Expedition4aDeviceNeedsPower",
@@ -4244,7 +4296,7 @@
         {
             "Name": "OLY_Desert_Research_2_Defend",
             "Class": "/Game/BP/Quests/Olympus/Desert/Research_2/BPQ_Desert_OLY_Research_2_Defend.BPQ_Desert_OLY_Research_2_Defend_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Defend-Description\", \"Defend the Analyzer while it processes the Samples <Number>{0}%</>\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Desert_Research_2_Defend-Description\", \"Defend the Analyzer while it processes the Samples: <Number>{0}%</>\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "Scanning1AnimalAttack",
@@ -5592,7 +5644,7 @@
         {
             "Name": "STYX_Common_Scan_Deploy",
             "Class": "/Game/BP/Quests/Common/BPQ_Common_Scan_Deploy.BPQ_Common_Scan_Deploy_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_Common_Scan_Deploy-Description\", \"Deploy the Station\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_Common_Scan_Deploy-Description\", \"Deploy the Radar Station\")"
         },
         {
             "Name": "STYX_Common_Scan_Progress",
@@ -5613,7 +5665,7 @@
         {
             "Name": "OLY_Forest_Construction",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction.BPQ_OLY_Forest_Construction_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction-Description\", \"CONSTRUCTION: Forest\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction-Description\", \"Construct and Decorate a Cabin\")",
             "LocationQuery": {
                 "RowName": "T1_Forest_Construction_Cabin"
             }
@@ -5621,7 +5673,7 @@
         {
             "Name": "OLY_Forest_Construction_Head_To_Location",
             "Class": "/Game/BP/Quests/Common/BPQ_Travel.BPQ_Travel_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Head_To_Location-Description\", \"Reach build location ([Map])\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Head_To_Location-Description\", \"Reach the Build Location ([Map])\")",
             "DialogueEvents": {
                 "QuestEnd": {
                     "RowName": "ConstructionArrive4b",
@@ -5630,60 +5682,65 @@
             }
         },
         {
-            "Name": "OLY_Forest_Construction_Cabin",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Cabin.BPQ_OLY_Forest_Construction_Cabin_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Cabin-Description\", \"Construct and furnish a Rustic Cabin\")",
-            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Cabin-InfoText\", \"Shelter is required\")"
+            "Name": "OLY_Forest_Construction_Decorate_Cabin",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Decorate_Cabin.BPQ_OLY_Forest_Construction_Decorate_Cabin_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Decorate_Cabin-Description\", \"Decorate the Cabin\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Decorate_Cabin-InfoText\", \"A Cozy Shelter is Required for the VIPs\")"
         },
         {
             "Name": "OLY_Forest_Construction_RusticBench",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Bench.BPQ_OLY_Forest_Construction_Bench_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_RusticBench-Description\", \"Craft and deploy a Decoration Bench\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_RusticBench-Description\", \"Place a Decoration Bench\")"
+        },
+        {
+            "Name": "OLY_Forest_Construction_CraftingBench",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Deploy_CraftingBench.BPQ_OLY_Forest_Construction_Deploy_CraftingBench_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_CraftingBench-Description\", \"Place a Crafting Bench\")"
         },
         {
             "Name": "OLY_Forest_Construction_Table",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Table.BPQ_OLY_Forest_Construction_Table_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Table-Description\", \"Rustic Large Table  <Number>({0} / {1})</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Table-Description\", \"Place a Rustic Large Table  <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Forest_Construction_Bookshelf",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Bookshelf.BPQ_OLY_Forest_Construction_Bookshelf_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Bookshelf-Description\", \"Rustic Bookshelf  <Number>({0} / {1})</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Bookshelf-Description\", \"Place a Rustic Bookshelf  <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Forest_Construction_Chairs",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Chairs.BPQ_OLY_Forest_Construction_Chairs_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Chairs-Description\", \"Rustic Dining Chairs <Number>({0} / {1})</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Chairs-Description\", \"Place Rustic Dining Chairs <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Forest_Construction_CouchLGE",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_CouchLarge.BPQ_OLY_Forest_Construction_CouchLarge_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_CouchLGE-Description\", \"Rustic 3-Seater Couch <Number>({0} / {1})</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_CouchLGE-Description\", \"Place a Rustic 3-Seater Couch <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Forest_Construction_CouchMED",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_CouchMed.BPQ_OLY_Forest_Construction_CouchMed_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_CouchMED-Description\", \"Rustic 2-Seater Couch <Number>({0} / {1})</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_CouchMED-Description\", \"Place a Rustic 2-Seater Couch <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Forest_Construction_Beds",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Beds.BPQ_OLY_Forest_Construction_Beds_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Beds-Description\", \"Rustic Beds <Number>({0} / {1})</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Beds-Description\", \"Place Rustic Beds <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Forest_Construction_Statue",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Statue.BPQ_OLY_Forest_Construction_Statue_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Statue-Description\", \"Rustic Icarus Statues <Number>({0} / {1})</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Statue-Description\", \"Place Rustic Icarus Statues <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Forest_Construction_Fireplace",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Fireplace.BPQ_OLY_Forest_Construction_Fireplace_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Fireplace-Description\", \"Fireplace  <Number>({0} / {1})</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Fireplace-Description\", \"Place a Fireplace  <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Forest_Construction_Nightstands",
             "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Nightstands.BPQ_OLY_Forest_Construction_Nightstands_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Nightstands-Description\", \"Rustic Nightstands <Number>({0} / {1})</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Nightstands-Description\", \"Place Rustic Nightstands <Number>({0} / {1})</>\")"
         },
         {
             "Name": "OLY_Desert_Survey",
@@ -5935,8 +5992,7 @@
         {
             "Name": "Common_Explore_End",
             "Class": "/Game/BP/Quests/Common/BPQ_Common_Launch.BPQ_Common_Launch_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Explore_End-Description\", \"Interact and Launch your Dropship to Complete the Mission\")",
-            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Common_Explore_End-InfoText\", \"Press ([OpenBestiary]) to open the Field Guide for more world and items information.\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Common_Explore_End-Description\", \"Interact with and Launch your Dropship to Complete the Mission\")"
         },
         {
             "Name": "STYX_D_Research2",
@@ -6290,7 +6346,7 @@
         {
             "Name": "STYX_A_Construction_Middle_Lights",
             "Class": "/Game/BP/Quests/Styx/A/Construction/BPQ_STYX_A_Construction_Middle_Lights.BPQ_STYX_A_Construction_Middle_Lights_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Middle_Lights-Description\", \"Powered Bunker Wall Lights <Number>({0} / {1})</>\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Construction_Middle_Lights-Description\", \"Powered Bunker Lights <Number>({0} / {1})</>\")"
         },
         {
             "Name": "STYX_A_Construction_Middle_KitchenBench",
@@ -6343,7 +6399,8 @@
         {
             "Name": "OLY_Forest_Range_Course_Parent",
             "Class": "/Game/BP/Quests/Olympus/Forest/Range/BPQ_OLY_Forest_Range_Dummy_Parent.BPQ_OLY_Forest_Range_Dummy_Parent_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Range_Course_Parent-Description\", \"Complete the Course\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Range_Course_Parent-Description\", \"Complete the Course\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Range_Course_Parent-InfoText\", \"Aim for the Head for a Higher Score\")"
         },
         {
             "Name": "OLY_Forest_Range_Course_Time",
@@ -6491,7 +6548,7 @@
         {
             "Name": "OLY_Forest_WS_Stockpile_Ship",
             "Class": "/Game/BP/Quests/Olympus/Forest/WSStockpile/BPQ_OLY_Forest_WS_Stockpile_Ship.BPQ_OLY_Forest_WS_Stockpile_Ship_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Ship-Description\", \"Stock ship as requested by Workshop Team\")"
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_WS_Stockpile_Ship-Description\", \"Stock pod as requested by Workshop Team\")"
         },
         {
             "Name": "OLY_Forest_WS_Stockpile_Support",
@@ -7435,7 +7492,7 @@
         {
             "Name": "PRO_Story6_Traitor_ClearCamp",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story6/BPQ_PRO_Story6_Traitor_ClearCamp.BPQ_PRO_Story6_Traitor_ClearCamp_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_ClearCamp-Description\", \"Clear the Creatures from the Camp <Number>{0}%</>\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story6_Traitor_ClearCamp-Description\", \"Clear the Creatures from the Camp <Number>({0}%)</>\")",
             "LocationQuery": {
                 "RowName": "PRO_Story_6_Group15_Camp"
             },
@@ -8037,7 +8094,7 @@
             "Name": "PRO_Story0_Craft",
             "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0_Craft.BPQ_PRO_Story0_Craft_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-Description\", \"Build & Place a C0NT4CT Device (Crafting Bench) to engage with SMPL3 Missions and Operations\")",
-            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-InfoText\", \"Press ([OpenBestiary]) to open the Field Guide for more world and items information.\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"PRO_Story0_Craft-InfoText\", \"Press ([OpenBestiary]) to Open the Field Guide for More World and Items Information\")",
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "OpenWorldIntroSRR",
@@ -8816,7 +8873,7 @@
         },
         {
             "Name": "OLY_Forest_Scan_Resupply",
-            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_OLY_Forest_Resupply.BPQ_OLY_Forest_Resupply_C",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/OldVersion/BPQ_OLY_Forest_Resupply.BPQ_OLY_Forest_Resupply_C",
             "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Scan_Resupply-InfoText\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
         },
         {
@@ -10142,6 +10199,7 @@
             "Name": "GH_RG_C_People",
             "Class": "/Game/BP/Quests/GreatHunts/Rock_Golem/GH_RG_C/BPQ_GH_RG_C_People.BPQ_GH_RG_C_People_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"GH_RG_C_People-Description\", \"Save The Remaining Miners at the Outpost\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"GH_RG_C_People-InfoText\", \"The Miners will Need Food, Water, Oxygen and Various Medical Supplies. Medicine Stronger than Pastes will be Required\")",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "GreatHunts"
@@ -12917,6 +12975,9 @@
             "Class": "/Game/BP/Quests/GreatHunts/Ape/C/BPQ_GH_Ape_C_Experiment.BPQ_GH_Ape_C_Experiment_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"GH_Ape_C_Experiment-Description\", \"Perform the DNA Extraction\")",
             "InfoText": "NSLOCTEXT(\"D_Quests\", \"GH_Ape_C_Experiment-InfoText\", \"Use the Poster or the Research Notes to Perform the Extraction\")",
+            "LocationQuery": {
+                "RowName": "GH_Ape_C_Lab"
+            },
             "DialogueEvents": {
                 "QuestStart": {
                     "RowName": "GH_AGENT_NEW_APE_C_04",
@@ -12933,7 +12994,7 @@
             "Name": "GH_Ape_C_Experiment_Timer",
             "Class": "/Game/BP/Quests/GreatHunts/Ape/C/BPQ_GH_Ape_C_Experiment_Timer.BPQ_GH_Ape_C_Experiment_Timer_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"GH_Ape_C_Experiment_Timer-Description\", \"Extraction: <Warning>{0} Seconds Remaining</>\")",
-            "InfoText": "NSLOCTEXT(\"D_Quests\", \"GH_Ape_C_Experiment_Timer-InfoText\", \"Once the First Step is Complete you will only have 120 Seconds to complete the Extraction\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"GH_Ape_C_Experiment_Timer-InfoText\", \"Once the First Step is Complete You Will Only Have 120 Seconds to Complete the Extraction\")",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "GreatHunts"
@@ -12944,7 +13005,7 @@
             "Name": "GH_Ape_C_Experiment_Sample",
             "Class": "/Game/BP/Quests/GreatHunts/Ape/C/BPQ_GH_Ape_C_Experiment_Sample.BPQ_GH_Ape_C_Experiment_Sample_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"GH_Ape_C_Experiment_Sample-Description\", \"Acquire a Garganutan DNA Sample\")",
-            "InfoText": "NSLOCTEXT(\"D_Quests\", \"GH_Ape_C_Experiment_Sample-InfoText\", \"Scalpels can be found in the Surgical Equipment Inventory, they are required to start the extraction.\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"GH_Ape_C_Experiment_Sample-InfoText\", \"Scalpels Can be Found in the Surgical Equipment Inventory. Be Sure to Keep the Equipment Deployed Nearby, as a Scalpel is Required for Extraction\")",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "GreatHunts"
@@ -17502,7 +17563,7 @@
             "Name": "ELY_Story_0_Craft",
             "Class": "/Game/BP/Quests/Elysium/Story/Story0/BPQ_ELY_Story0_Craft.BPQ_ELY_Story0_Craft_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"ELY_Story_0_Craft-Description\", \"Build & Place a C0NT4CT Device (Crafting Bench) to reestablish communication with EDEN and engage with SMPL3 Missions and Operations\")",
-            "InfoText": "NSLOCTEXT(\"D_Quests\", \"ELY_Story_0_Craft-InfoText\", \"Press ([OpenBestiary]) to open the Field Guide for more world and items information.\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"ELY_Story_0_Craft-InfoText\", \"Press ([OpenBestiary]) to open the Field Guide for more world and items information\")",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -17544,8 +17605,8 @@
         {
             "Name": "ELY_Story_1_Beacon_Craft",
             "Class": "/Game/BP/Quests/Elysium/Story/Story1/BPQ_ELY_Story_1_Beacon_Craft.BPQ_ELY_Story_1_Beacon_Craft_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"ELY_Story_1_Beacon_Craft-Description\", \"Acquire a Flare Gun and Some Flares\")",
-            "InfoText": "NSLOCTEXT(\"D_Quests\", \"ELY_Story_1_Beacon_Craft-InfoText\", \"The Flare Gun is Unlocked on the T2 Tech Tree and Crafted at Crafting Bench.\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"ELY_Story_1_Beacon_Craft-Description\", \"Acquire a Single Barrel Launcher and Some Flares\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"ELY_Story_1_Beacon_Craft-InfoText\", \"The Single Barrel Launcher is Unlocked on the T2 Tech Tree and Crafted at a Crafting Bench.\")",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -17565,7 +17626,7 @@
         {
             "Name": "ELY_Story_1_Beacon_Place",
             "Class": "/Game/BP/Quests/Elysium/Story/Story1/BPQ_ELY_Story_1_Beacon_Place.BPQ_ELY_Story_1_Beacon_Place_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"ELY_Story_1_Beacon_Place-Description\", \"Fire the Flare Gun within the Area so the Flare Reaches a Height of 200m ([Map])\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"ELY_Story_1_Beacon_Place-Description\", \"Fire the Single Barrel Launcher within the Area so the Flare Reaches a Height of 200m ([Map])\")",
             "InfoText": "NSLOCTEXT(\"D_Quests\", \"ELY_Story_1_Beacon_Place-InfoText\", \"Be prepared to build to reach the desired height.\")",
             "LocationQuery": {
                 "RowName": "ELY_STORY_1_BUILD"
@@ -20272,7 +20333,7 @@
         {
             "Name": "OLY_SQ_Farmer_Setup_Collect_Aluminium",
             "Class": "/Game/BP/Quests/NPC/Farmer/BPQ_SQ_Farmer_Setup_Collect_Aluminium.BPQ_SQ_Farmer_Setup_Collect_Aluminium_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_SQ_Farmer_Setup_Collect_Aluminium-Description\", \"Aluminum <Number>({0} / {1})</>\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_SQ_Farmer_Setup_Collect_Aluminium-Description\", \"Aluminum Ingot <Number>({0} / {1})</>\")",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -20376,7 +20437,7 @@
             "Name": "OLY_SQ_Norex_Equipment",
             "Class": "/Game/BP/Quests/NPC/Norex/BPQ_SQ_Norex_Equipment.BPQ_SQ_Norex_Equipment_C",
             "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_SQ_Norex_Equipment-Description\", \"Prepare Equipment\")",
-            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_SQ_Norex_Equipment-InfoText\", \"The Flare Gun is Unlocked on the T2 Tech Tree and Crafted at Crafting Bench.\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_SQ_Norex_Equipment-InfoText\", \"The Single Barrel Launcher is Unlocked on the T2 Tech Tree and Crafted at a Crafting Bench.\")",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -20386,7 +20447,7 @@
         {
             "Name": "OLY_SQ_Norex_Equipment_Gun",
             "Class": "/Game/BP/Quests/NPC/Norex/BPQ_SQ_Norex_Equipment_Gun.BPQ_SQ_Norex_Equipment_Gun_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_SQ_Norex_Equipment_Gun-Description\", \"Acquire a Flare Gun\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_SQ_Norex_Equipment_Gun-Description\", \"Acquire a Single Barrel Launcher\")",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -20396,7 +20457,7 @@
         {
             "Name": "OLY_SQ_Norex_Equipment_Flare",
             "Class": "/Game/BP/Quests/NPC/Norex/BPQ_SQ_Norex_Equipment_Flare.BPQ_SQ_Norex_Equipment_Flare_C",
-            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_SQ_Norex_Equipment_Flare-Description\", \"Acquire some Flare Gun Ammo\")",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_SQ_Norex_Equipment_Flare-Description\", \"Acquire some Single Barrel Launcher Flares\")",
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
@@ -22368,6 +22429,287 @@
             "Metadata": {
                 "RequiredFeatureLevel": {
                     "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan2",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan2.BPQ_Oly_Forest_Scan2_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan2-Description\", \"TERRAIN SCAN: Forest\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan_Equipment"
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan_Craft",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Craft.BPQ_Oly_Forest_Scan_Craft_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Craft-Description\", \"Prepare Equipment to Defend Yourself\")"
+        },
+        {
+            "Name": "Oly_Forest_Scan_Craft_Bandage",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Craft_Bandage.BPQ_Oly_Forest_Scan_Craft_Bandage_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Craft_Bandage-Description\", \"Craft Bandages  <Number>({0} / {1})</> \")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Craft_Bandage-InfoText\", \"Use Bandages to Cure Bleeding and Wounds\")"
+        },
+        {
+            "Name": "Oly_Forest_Scan_Craft_Weapon",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Craft_Weapon.BPQ_Oly_Forest_Scan_Craft_Weapon_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Craft_Weapon-Description\", \"Craft a Spear or Bow\")"
+        },
+        {
+            "Name": "Oly_Forest_Scan_Craft_Armor",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Craft_Armor.BPQ_Oly_Forest_Scan_Craft_Armor_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Craft_Armor-Description\", \"(Optional) Craft Armor\")"
+        },
+        {
+            "Name": "Oly_Forest_Scan_Loot_Travel",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Loot_Travel.BPQ_Oly_Forest_Scan_Loot_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Loot_Travel-Description\", \"Travel to the Marked Area ([Map])\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan_Equipment"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "NPC_FEMALE_GENERIC_HELP",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan_Loot",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Loot.BPQ_Oly_Forest_Scan_Loot_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Loot-Description\", \"Find the Lost Radar Needed for Scanning\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan_Equipment"
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan_Loot_Get_Radar",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Get_Radar.BPQ_Oly_Forest_Scan_Get_Radar_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Loot_Get_Radar-Description\", \"Collect the Radar\")"
+        },
+        {
+            "Name": "Oly_Forest_Scan_Loot_BandageNPC",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Loot_BandageNPC.BPQ_Oly_Forest_Scan_Loot_BandageNPC_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Loot_BandageNPC-Description\", \"Use a Bandage to Heal Griff\\'s Wounds\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Loot_BandageNPC-InfoText\", \"Equip a Bandage and ([AltFire]) to Heal an Ally\")",
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "NPC_FEMALE_GENERIC_DAMNWOLVES",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan2_Radar_Scan_1",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Location_1.BPQ_Oly_Forest_Scan_Location_1_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan2_Radar_Scan_1-Description\", \"Setup Defenses and Scan the First Location\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan1"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "Scanning1ScanComplete1",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan2_Radar_Scan_2",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Location_2.BPQ_Oly_Forest_Scan_Location_2_C",
+            "Variation": 1,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan2_Radar_Scan_2-Description\", \"Clear Out and Scan the Second Location\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan2"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "Scanning1ScanComplete2",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan2_Radar_Scan_3",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Location_3.BPQ_Oly_Forest_Scan_Location_3_C",
+            "Variation": 2,
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan2_Radar_Scan_3-Description\", \"Scan the Final Location and Prepare for Attacks\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan3"
+            },
+            "DialogueEvents": {
+                "QuestEnd": {
+                    "RowName": "Scanning1ScanComplete3",
+                    "DataTableName": "D_Dialogue"
+                }
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan_NPC_Spawn",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_NPC_Spawn.BPQ_Oly_Forest_Scan_NPC_Spawn_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_NPC_Spawn-Description\", \"Find the Next Location to Scan with the Radar ([MAP])\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan2"
+            }
+        },
+        {
+            "Name": "OLY_Forest_Construction_Preparation",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Preparation.BPQ_OLY_Forest_Construction_Preparation_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Preparation-Description\", \"Prepare Items to Build and Decorate a Cabin\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Preparation-InfoText\", \"Be Prepared to Build a Cabin, to Hunt, and to Collect Resources to Decorate It\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Construction_Cabin"
+            }
+        },
+        {
+            "Name": "OLY_Forest_Construction_Preparation_CopperIngot",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Preparation_CopperIngot.BPQ_OLY_Forest_Construction_Preparation_CopperIngot_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Preparation_CopperIngot-Description\", \"Copper Ingot <Number>({0} / {1})</>\")"
+        },
+        {
+            "Name": "OLY_Forest_Construction_Preparation_DecorationBench",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Preparation_DecorationBench.BPQ_OLY_Forest_Construction_Preparation_DecorationBench_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Preparation_DecorationBench-Description\", \"Decoration Bench <Number>({0} / {1})</>\")"
+        },
+        {
+            "Name": "OLY_Forest_Construction_Preparation_CraftingBench",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Preparation_CraftingBench.BPQ_OLY_Forest_Construction_Preparation_CraftingBench_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Preparation_CraftingBench-Description\", \"Crafting Bench  <Number>({0} / {1})</>\")"
+        },
+        {
+            "Name": "OLY_Forest_Construction_Preparation_IronIngot",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Preparation_IronIngot.BPQ_OLY_Forest_Construction_Preparation_IronIngot_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Preparation_IronIngot-Description\", \"Iron Ingot <Number>({0} / {1})</>\")"
+        },
+        {
+            "Name": "OLY_Forest_Construction_Preparation_IronNails",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Preparation_IronNails.BPQ_OLY_Forest_Construction_Preparation_IronNails_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Preparation_IronNails-Description\", \"Iron Nails <Number>({0} / {1})</>\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Preparation_IronNails-InfoText\", \"Iron Nails are Crafted at the Anvil Bench\")"
+        },
+        {
+            "Name": "OLY_Forest_Construction_Preparation_Axe",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_Preparation_Axe.BPQ_OLY_Forest_Construction_Preparation_Axe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_Preparation_Axe-Description\", \"Axe <Number>({0} / {1})</>\")"
+        },
+        {
+            "Name": "OLY_Forest_Construction_BuildAndDecorateCabin",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_BuildAndDecorateCabin.BPQ_OLY_Forest_Construction_BuildAndDecorateCabin_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_BuildAndDecorateCabin-Description\", \"Construct and Decorate a Cabin\")"
+        },
+        {
+            "Name": "OLY_Forest_Construction_BuildCabin",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_BuildCabin.BPQ_OLY_Forest_Construction_BuildCabin_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_BuildCabin-Description\", \"Construct a Cabin\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_BuildCabin-InfoText\", \"Use Your Axe to Collect Wood and Other Materials in the Area\")"
+        },
+        {
+            "Name": "OLY_Forest_Construction_BuildCabin_Pieces",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_BuildCabin_Pieces.BPQ_OLY_Forest_Construction_BuildCabin_Pieces_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_BuildCabin_Pieces-Description\", \"Wood Pieces Placed <Number>({0} / {1})</> \")"
+        },
+        {
+            "Name": "STYX_A_Research_Nest_Resupply",
+            "Class": "/Game/BP/Quests/Styx/A/Research/BPQ_Styx_A_Research_Nest_Resupply.BPQ_Styx_A_Research_Nest_Resupply_C",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"STYX_A_Research_Nest_Resupply-InfoText\", \"(Optional) Open the Escape Menu and Request a Mission Resupply if your mission equipment is lost\")"
+        },
+        {
+            "Name": "OLY_Forest_Construction_ChimneyCap",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Construction/BPQ_OLY_Forest_Construction_ChimneyCap.BPQ_OLY_Forest_Construction_ChimneyCap_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Construction_ChimneyCap-Description\", \"Place a Chimney Cap  <Number>({0} / {1})</>\")"
+        },
+        {
+            "Name": "Oly_Forest_Scan_Craft_Hedgehogs",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Craft_Hedgehogs.BPQ_Oly_Forest_Scan_Craft_Hedgehogs_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Craft_Hedgehogs-Description\", \"Collect Medium Wood Hedgehogs <Number>({0} / {1})</> \")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Craft_Hedgehogs-InfoText\", \"Hedgehogs Can Help Defend You and Your Equipment\")"
+        },
+        {
+            "Name": "Oly_Forest_Scan_Deploy_Hedgehogs",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Deploy_Hedgehogs.BPQ_Oly_Forest_Scan_Deploy_Hedgehogs_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Deploy_Hedgehogs-Description\", \"Place Medium Wood Hedgehogs <Number>({0} / {1})</> \")"
+        },
+        {
+            "Name": "Oly_Forest_Scan_Location_2_Deploy",
+            "Class": "/Game/BP/Quests/Common/BPQ_Common_Scan_Deploy.BPQ_Common_Scan_Deploy_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Location_2_Deploy-Description\", \"Deploy the Radar Station\")"
+        },
+        {
+            "Name": "Oly_Forest_Scan_Location_2_BuildUpLoc",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Buildup_Travel.BPQ_Oly_Forest_Scan_Buildup_Travel_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Location_2_BuildUpLoc-Description\", \"Travel to the Marked Area ([Map])\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan_BuildUp"
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan_Location_2_Ascend",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Travel_Ascend.BPQ_Oly_Forest_Scan_Travel_Ascend_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Location_2_Ascend-Description\", \"Find a Way Up the Cliff\")",
+            "InfoText": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Location_2_Ascend-InfoText\", \"Ramps or Ladders Will Make for an Easy Ascent\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan_Ascend"
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan_Location_2_Wolf_Kills",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Wolf_Kills.BPQ_Oly_Forest_Scan_Wolf_Kills_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Location_2_Wolf_Kills-Description\", \"Defeat the Wolfpack\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan_Ascend"
+            }
+        },
+        {
+            "Name": "Oly_Forest_Scan_Return_Radar",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Scan/BPQ_Oly_Forest_Scan_Return_Radar.BPQ_Oly_Forest_Scan_Return_Radar_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"Oly_Forest_Scan_Return_Radar-Description\", \"Return the Radar to the Supply Pod\")",
+            "LocationQuery": {
+                "RowName": "T1_Forest_Scan3"
+            }
+        },
+        {
+            "Name": "OLY_Forest_Recon_GatherResources",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_Oly_Forest_Recon_GatherResources.BPQ_Oly_Forest_Recon_GatherResources_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Recon_GatherResources-Description\", \"Gather Sticks and Stones off of the Ground, and Fiber from Bushes to Craft Items \")"
+        },
+        {
+            "Name": "OLY_Forest_Recon_CraftItems",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_Oly_Forest_Recon_CraftItems.BPQ_Oly_Forest_Recon_CraftItems_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Recon_CraftItems-Description\", \"Craft Tools for Protection and Gathering\")"
+        },
+        {
+            "Name": "OLY_Forest_Recon_Fiber",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Forest_Recon_Fiber.BPQ_OLY_Forest_Recon_Fiber_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Recon_Fiber-Description\", \"Gather Fiber  <Number>({0} / {1})</>\")"
+        },
+        {
+            "Name": "OLY_Forest_Recon_Sticks",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Forest_Recon_Sticks.BPQ_OLY_Forest_Recon_Sticks_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Recon_Sticks-Description\", \"Gather Sticks  <Number>({0} / {1})</>\")"
+        },
+        {
+            "Name": "OLY_Forest_Recon_Stones",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Forest_Recon_Stones.BPQ_OLY_Forest_Recon_Stones_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Recon_Stones-Description\", \"Gather Stones  <Number>({0} / {1})</>\")"
+        },
+        {
+            "Name": "OLY_Forest_Recon_Axe",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Forest_Recon_Axe.BPQ_OLY_Forest_Recon_Axe_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Recon_Axe-Description\", \"Craft an Axe ([Crafting]) for Gathering Wood and Hunting\")"
+        },
+        {
+            "Name": "OLY_Forest_Recon_Knife",
+            "Class": "/Game/BP/Quests/Olympus/Forest/Recon/BPQ_OLY_Forest_Recon_Knife.BPQ_OLY_Forest_Recon_Knife_C",
+            "Description": "NSLOCTEXT(\"D_Quests\", \"OLY_Forest_Recon_Knife-Description\", \"Unlock a Stone Knife ([Tech]) and Craft it with ([Crafting]) for Skinning Animals\")"
+        },
+        {
+            "Name": "ARK_Story_0",
+            "Class": "/Game/BP/Quests/Prometheus/Story/Story0/BPQ_PRO_Story0.BPQ_PRO_Story0_C",
+            "Description": "INVTEXT(\"[DNT] Welcome to Arkadia\")",
+            "DialogueEvents": {
+                "QuestStart": {
+                    "RowName": "None",
+                    "DataTableName": "D_Dialogue"
                 }
             }
         }

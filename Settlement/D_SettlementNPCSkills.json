@@ -1,0 +1,74 @@
+{
+    "RowStruct": "/Script/Icarus.SettlementNPCSkillData",
+    "Defaults": {
+        "DisplayName": "",
+        "Description": "",
+        "Icon": "None",
+        "StatCurves": {}
+    },
+    "GenerateEnum": true,
+    "Rows": [
+        {
+            "Name": "Invalid",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Invalid-DisplayName\", \"None\")"
+        },
+        {
+            "Name": "Construction",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Construction-DisplayName\", \"Construction\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Construction-Description\", \"Raising, repairing and tearing down the settlement\\'s buildings.\")",
+            "StatCurves": {
+                "(Value=\"BaseSettlementConstructionSpeed_+%\")": "CurveFloat'/Game/BP/Settlement/Curves/C_SettlementSkill_Default.C_SettlementSkill_Default'"
+            }
+        },
+        {
+            "Name": "Mining",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Mining-DisplayName\", \"Mining\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Mining-Description\", \"Extracting ore, stone and minerals from the ground.\")"
+        },
+        {
+            "Name": "Forestry",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Forestry-DisplayName\", \"Forestry\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Forestry-Description\", \"Felling trees and gathering wood and forage from the land.\")"
+        },
+        {
+            "Name": "Farming",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Farming-DisplayName\", \"Farming\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Farming-Description\", \"Tending crops and livestock to keep the settlement fed.\")"
+        },
+        {
+            "Name": "Crafting",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Crafting-DisplayName\", \"Crafting\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Crafting-Description\", \"Working raw materials into refined goods at forges, sawmills and workshops.\")"
+        },
+        {
+            "Name": "Engineering",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Engineering-DisplayName\", \"Engineering\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Engineering-Description\", \"Running the machinery that supplies the settlement\\'s power, water and air.\")"
+        },
+        {
+            "Name": "Cooking",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Cooking-DisplayName\", \"Cooking\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Cooking-Description\", \"Preparing meals and provisions from gathered ingredients.\")"
+        },
+        {
+            "Name": "Combat",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Combat-DisplayName\", \"Combat\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Combat-Description\", \"Guarding, patrolling and defending the settlement from raiders and wildlife.\")"
+        },
+        {
+            "Name": "Medicine",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Medicine-DisplayName\", \"Medicine\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Medicine-Description\", \"Treating injuries and ailments to keep settlers on their feet.\")"
+        },
+        {
+            "Name": "Logistics",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Logistics-DisplayName\", \"Logistics\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Logistics-Description\", \"Hauling, stocking and organising the settlement\\'s stores and trade.\")"
+        },
+        {
+            "Name": "Leadership",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Leadership-DisplayName\", \"Leadership\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCSkills\", \"Leadership-Description\", \"Negotiating, recruiting and steering the settlement through events.\")"
+        }
+    ]
+}

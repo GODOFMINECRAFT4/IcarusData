@@ -908,7 +908,7 @@
         },
         {
             "Name": "Item_Envirosuit",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit-DisplayName\", \"Xigo S5 Envirosuit\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit-DisplayName\", \"Xigo Envirosuit\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/ITEM_Envirosuit_1.ITEM_Envirosuit_1",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit-Description\", \"An entry-level S5 life support system from Xigo, Earth\\'s largest employer.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit-FlavorText\", \"In theory, a Xigo general issue \\'Self-contained Surface Survival Suit System\\' (S5) offers full body environmental containment and air processing. How many wore this before you is unclear. While no longer entirely air-tight, the suit should still provide sufficient protection to the average user.\")",
@@ -1009,7 +1009,7 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Frag_Grenade-Description\", \"A basic fragmentation grenade design.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Frag_Grenade-FlavorText\", \"Homemade explosives are the best kind.\")",
             "Weight": 500,
-            "MaxStack": 5
+            "MaxStack": 10
         },
         {
             "Name": "Item_Frag_Grenade_Impact",
@@ -1018,7 +1018,7 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Frag_Grenade_Impact-Description\", \"A fragmentation grenade that will explode on impact.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Frag_Grenade_Impact-FlavorText\", \"Don\\'t drop it.\")",
             "Weight": 500,
-            "MaxStack": 5
+            "MaxStack": 10
         },
         {
             "Name": "Item_Radiation_Grenade",
@@ -1027,7 +1027,7 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Grenade-Description\", \"An explosive grenade that will explode on impact and leave behind an area filled with radiation.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Grenade-FlavorText\", \"Don\\'t drop it.\")",
             "Weight": 1000,
-            "MaxStack": 5
+            "MaxStack": 10
         },
         {
             "Name": "Item_Molotov",
@@ -1044,7 +1044,13 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Genade_Smoke.ITEM_Genade_Smoke",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoke_Grenade-Description\", \"A canister grenade, used for drawing attention or concealing.\")",
             "Weight": 500,
-            "MaxStack": 5
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_EMP_Grenade",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_EMP_Grenade-DisplayName\", \"EMP Grenade\")",
+            "Weight": 750,
+            "MaxStack": 10
         },
         {
             "Name": "Item_Carbon_Arrow",
@@ -1083,15 +1089,15 @@
             "Name": "Item_Flashlight",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Flashlight-DisplayName\", \"Flashlight\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/ITEM_Flashlight.ITEM_Flashlight",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Flashlight-Description\", \"An LED flashlight for illuminating dark corners. Can be recharged in a Charging Station.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Flashlight-Description\", \"An LED flashlight for illuminating dark corners. Can be recharged in a Charging Station or with a Powerbank.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Flashlight-FlavorText\", \"Activate light with secondary fire.\")",
             "Weight": 250
         },
         {
             "Name": "Item_Meta_Flashlight",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Flashlight-DisplayName\", \"Workshop Flashlight\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Flashlight-DisplayName\", \"Inaris Flashlight\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Meta_Flashlight.T_ITEM_Meta_Flashlight",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Flashlight-Description\", \"An LED flashlight for illuminating dark corners. Can be recharged in a Charging Station.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Flashlight-Description\", \"A long-lasting LED flashlight for navigating in the dark. Can be recharged in a Charging Station or with a Powerbank.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Flashlight-FlavorText\", \"Activate light with secondary fire.\")",
             "Weight": 350
         },
@@ -1902,7 +1908,7 @@
             "Name": "Item_Rifle_Hunting",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Hunting-DisplayName\", \"Hunting Rifle\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/ITEM_Rifle_Hunting.ITEM_Rifle_Hunting",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Hunting-Description\", \"A semi-automatic rifle, ideal for big game hunting.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Hunting-Description\", \"A powerful rifle, ideal for big game hunting.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Hunting-FlavorText\", \"An ancient hand-wrought weapon design, adapted to a new frontier.\")",
             "Weight": 4000
         },
@@ -2705,7 +2711,7 @@
         {
             "Name": "Item_Coal_Ore",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Coal_Ore-DisplayName\", \"Coal Ore\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/ITEM_Ore_Coal.ITEM_Ore_Coal",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/T_ITEM_Coal_Ore.T_ITEM_Coal_Ore",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Coal_Ore-Description\", \"A readily combustible, energy dense ore.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Coal_Ore-FlavorText\", \"Composed of ancient carbon-based plant matter, the combination of exotics and Icarus\\'s tumultuous geophysics forms coal much faster than on Earth.\")",
             "Weight": 500,
@@ -3893,7 +3899,7 @@
         },
         {
             "Name": "Item_Carcass_Mammoth_Boss",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mammoth_Boss-DisplayName\", \"Woolly Mammoth Carcass\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mammoth_Boss-DisplayName\", \"Woolly Mammoth Boss Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Mammoth.ITEM_AnimalCarcass_Mammoth",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mammoth_Boss-Description\", \"A behemoth from prehistory.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mammoth_Boss-FlavorText\", \"In the aftermath of failed terraforming, this mammoth variant (Mammuthia Icaria) was released illicitly by a disillusioned geneticist. It found an unexpected home in the newly arctified snowfields of Icarus.\")",
@@ -5039,7 +5045,7 @@
         {
             "Name": "Item_Meta_Coal",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Coal-DisplayName\", \"Comet Coal\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/ITEM_Ore_Coal.ITEM_Ore_Coal",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/T_ITEM_Coal_Ore.T_ITEM_Coal_Ore",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Coal-Description\", \"A high density petrochemical material refined from cometary hydrocarbons.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Coal-FlavorText\", \"Comets are formed from material that never became planets, let alone stars. Burning it\\'s the next best thing.\")",
             "Weight": 600,
@@ -5667,6 +5673,13 @@
             "Weight": 500
         },
         {
+            "Name": "Item_T3_Backpack",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_T3_Backpack-DisplayName\", \"Cured Leather Backpack\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_T3_Backpack.T_ITEM_T3_Backpack",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_T3_Backpack-Description\", \"A durable cured leather backpack that increases inventory space, carry weight capacity and reduces the weight of ore and wood.\")",
+            "Weight": 650
+        },
+        {
             "Name": "Item_Delivery_Object",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Delivery_Object-DisplayName\", \"Terraforming Flechette\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Bio_Needle.ITEM_Bio_Needle",
@@ -5744,7 +5757,7 @@
         {
             "Name": "Item_Meta_Campfire_Printed",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Campfire_Printed-DisplayName\", \"MXC Campfire\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Meta_Campfire_Printed.ITEM_Meta_Campfire_Printed",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Meta_Campfire_Printed.T_ITEM_Meta_Campfire_Printed",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Campfire_Printed-Description\", \"A simple, prefabricated campfire for heat, light and cooking, designed to remain lit under all conditions.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Campfire_Printed-FlavorText\", \"Ancient technolgy meets modern construction.\")",
             "Weight": 5000
@@ -5992,7 +6005,7 @@
         {
             "Name": "Item_Meta_Furnace_Printed",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Furnace_Printed-DisplayName\", \"MXC Furnace\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Meta_Furnace_Printed.ITEM_Meta_Furnace_Printed",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Meta_Furnace_Printed.T_ITEM_Meta_Furnace_Printed",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Furnace_Printed-Description\", \"A premade furnace for all of your basic smelting needs\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Furnace_Printed-FlavorText\", \"Basic but gets the job done\")",
             "Weight": 5000
@@ -9448,7 +9461,7 @@
         },
         {
             "Name": "Item_Fishing_Bench",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fishing_Bench-DisplayName\", \"Basic Fishing Bench\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fishing_Bench-DisplayName\", \"Fishing Bench\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fishing_Bench.ITEM_Fishing_Bench",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fishing_Bench-Description\", \"A place to craft Rods and Lures and to fillet Fish that you\\'ve caught.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fishing_Bench-FlavorText\", \"The stench of this bench...\")",
@@ -9485,6 +9498,22 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Large_Advanced_Aquarium-Description\", \"A very fancy large fish tank for keeping your favourite finned friends around, must be connected to both power and water.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Large_Advanced_Aquarium-FlavorText\", \"The latest technology for storing your fish friends.\")",
             "Weight": 5000
+        },
+        {
+            "Name": "Item_XL_Advanced_Aquarium",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium-DisplayName\", \"Extra Large Aquarium\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_XL_Advanced_Aquarium.T_ITEM_XL_Advanced_Aquarium",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium-Description\", \"A very fancy large fish tank for keeping your favourite finned friends around, must be connected to both power and water.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium-FlavorText\", \"The latest technology for storing your fish friends.\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_XL_Advanced_Aquarium_Mission",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium_Mission-DisplayName\", \"Extra Large Aquarium\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_XL_Advanced_Aquarium.T_ITEM_XL_Advanced_Aquarium",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium_Mission-Description\", \"A very fancy large fish tank for keeping your favourite finned friends around, must be connected to both power and water.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium_Mission-FlavorText\", \"The latest technology for storing your fish friends.\")",
+            "Weight": 10000
         },
         {
             "Name": "Item_Saltwater_Fish_Fillet",
@@ -12886,7 +12915,7 @@
         },
         {
             "Name": "Item_Anvil_Bench_T4_v2",
-            "DisplayName": "INVTEXT(\"[DNT] Foundry v2\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Anvil_Bench_T4_v2-DisplayName\", \"Foundry\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Anvil_Bench_T4_v2.T_ITEM_Anvil_Bench_T4_v2",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Anvil_Bench_T4_v2-Description\", \"An impressive foundry powered by electricity for crafting various higher quality weapons and tools.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Anvil_Bench_T4_v2-FlavorText\", \"The UDA states that it has been at least seven days since the last accident using this piece of equipment...\")",
@@ -13249,7 +13278,7 @@
             "Name": "Item_Icebox_Backpack",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Icebox_Backpack-DisplayName\", \"Portable Icebox Backpack\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Icebox_Backpack.T_ITEM_Icebox_Backpack",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Icebox_Backpack-Description\", \"A handy backpack to prevent your food from spoiling on long journeys. Will run for 1 hour on a full charge. Can be recharged at a Charging Station.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Icebox_Backpack-Description\", \"A handy backpack to prevent your food from spoiling on long journeys. Will run for 1 hour on a full charge. Can be recharged at a Charging Station or with a Powerbank.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Icebox_Backpack-FlavorText\", \"Just think of the possibilities...\")",
             "Weight": 500
         },
@@ -14000,9 +14029,9 @@
         },
         {
             "Name": "Item_Smoker_T4",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoker_T4-DisplayName\", \"Advanced Smoker\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoker_T4-DisplayName\", \"Roaster\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Smoker_T4.T_ITEM_Smoker_T4",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoker_T4-Description\", \"An advanced device that can preserve food. Requires electricity to run.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoker_T4-Description\", \"An electric roasting oven large enough to take a whole animal carcass. Also preserves food like a smoker.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoker_T4-FlavorText\", \"The UDA advises you to use this item in a well-ventilated area.\")",
             "Weight": 2500
         },
@@ -15993,14 +16022,6 @@
             "Weight": 30000
         },
         {
-            "Name": "Item_Enzyme_Cannon_Arm",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Enzyme_Cannon_Arm-DisplayName\", \"Localized Terraforming Device\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Enzyme_Cannon_Arm.T_ITEM_Enzyme_Cannon_Arm",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Enzyme_Cannon_Arm-Description\", \"When Connected to Power and Given Condensed Enzymes will Charge Up. After Charging can be Triggered to Force Regrow trees in a surrounding area.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Enzyme_Cannon_Arm-FlavorText\", \"What is Group 15 up to with devices like this?\")",
-            "Weight": 10000
-        },
-        {
             "Name": "Item_Water_Trough_Large",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Water_Trough_Large-DisplayName\", \"Large Water Trough\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Water_Trough_Large.T_ITEM_Water_Trough_Large",
@@ -16084,7 +16105,7 @@
             "Name": "Item_Egg",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg-DisplayName\", \"Egg\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Egg.T_ITEM_Egg",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg-Description\", \"A fresh chicken egg, can be cooked in all manner of ways.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg-Description\", \"A fresh egg, can be cooked in all manner of ways.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg-FlavorText\", \"An extremely versatile food.\")",
             "Weight": 250,
             "MaxStack": 100
@@ -17833,7 +17854,7 @@
         },
         {
             "Name": "Item_Black_Wolf_Trophy_Sit",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Black_Wolf_Trophy_Sit-DisplayName\", \"Black Wolf Trophy\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Black_Wolf_Trophy_Sit-DisplayName\", \"Sitting Black Wolf Trophy\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Black_Wolf_Trophy_Sit.T_ITEM_Black_Wolf_Trophy_Sit",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Black_Wolf_Trophy_Sit-Description\", \"A preserved Black Wolf, that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Black_Wolf_Trophy_Sit-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
@@ -17908,7 +17929,7 @@
             "Name": "Item_Lava_Hunter_Backpack",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Lava_Hunter_Backpack-DisplayName\", \"Lava Hunter Heated Backpack\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Lava_Hunter_Backpack.T_ITEM_Lava_Hunter_Backpack",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Lava_Hunter_Backpack-Description\", \"A powered backpack that emits an aura of warmth. Can be recharged at the Charging Station.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Lava_Hunter_Backpack-Description\", \"A powered backpack that emits an aura of warmth. Can be recharged at the Charging Station or with a Powerbank.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Lava_Hunter_Backpack-FlavorText\", \"Who would have thought carrying around a lava core was good idea.\")",
             "Weight": 500
         },
@@ -17999,7 +18020,7 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Slug_Grenade-Description\", \"A sticky grenade that will attach to whatever it lands on and then explode shortly after, leaving behind a pool of slime obtained from a Hammerhead slug.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Slug_Grenade-FlavorText\", \"A grenade crafted from the spoils of victory against a Hammerhead.\")",
             "Weight": 500,
-            "MaxStack": 5
+            "MaxStack": 10
         },
         {
             "Name": "Item_Slug_Axe",
@@ -18091,7 +18112,7 @@
         },
         {
             "Name": "Item_Rock_Golem_Trophy",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Trophy-DisplayName\", \"Quarrite Trophy\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Trophy-DisplayName\", \"Quarrite Throne Trophy\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Rock_Golem_Trophy.T_ITEM_Rock_Golem_Trophy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Trophy-Description\", \"A preserved specimen from a Quarrite that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
@@ -18187,7 +18208,7 @@
         },
         {
             "Name": "Item_Ape_Trophy",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Trophy-DisplayName\", \"Garganutan Trophy\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Trophy-DisplayName\", \"Garganutan Prime Trophy\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Ape_Trophy.T_ITEM_Ape_Trophy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Trophy-Description\", \"A preserved specimen from a Garganutan that once lived on Icarus.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
@@ -18195,7 +18216,7 @@
         },
         {
             "Name": "Item_Ape_Fishing_Trap",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Fishing_Trap-DisplayName\", \"Garganutan Fishing trap\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Fishing_Trap-DisplayName\", \"Garganutan Fishing Trap\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Ape_Fishing_Trap.T_ITEM_Ape_Fishing_Trap",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Fishing_Trap-Description\", \"A fishing trap crafted from the spoils of victory against a Garganutan.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Fishing_Trap-FlavorText\", \"An item that was truly hard-won.\")",
@@ -18750,7 +18771,7 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Grenade-Description\", \"A high-tech sonic grenade which causes creatures to become frenzied and attack each other.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Grenade-FlavorText\", \"A grenade crafted from the spoils of victory against a Garganutan.\")",
             "Weight": 50,
-            "MaxStack": 5
+            "MaxStack": 10
         },
         {
             "Name": "Item_Cat_Boss_Tonic",
@@ -18909,7 +18930,7 @@
         },
         {
             "Name": "Item_Module_ExposureResist",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Module_ExposureResist-DisplayName\", \" Exposure Resist Module\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Module_ExposureResist-DisplayName\", \"Exposure Resist Module\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_ADV_ExposureRes.T_ITEM_MODULE_ADV_ExposureRes",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Module_ExposureResist-Description\", \"A Module for greatly increasing exposure resistance.\")",
             "Weight": 100
@@ -19121,7 +19142,7 @@
             "Name": "Item_Battery_Lantern",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Battery_Lantern-DisplayName\", \"Battery Powered Lantern\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Battery_Lantern.T_ITEM_Battery_Lantern",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Battery_Lantern-Description\", \"A robust, portable battery-powered lamp. Can be recharged in a Charging Station.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Battery_Lantern-Description\", \"A robust, portable battery-powered lamp. Can be recharged in a Charging Station or with a Powerbank.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Battery_Lantern-FlavorText\", \"Activate with secondary fire.\")",
             "Weight": 250
         },
@@ -19161,7 +19182,7 @@
             "Name": "Item_CaveLight",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_CaveLight-DisplayName\", \"Battery Cavelight\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_CaveLight_Floor.T_ITEM_CaveLight_Floor",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_CaveLight-Description\", \"Provides a temporary light for cave exploration for marking a path. Can be recharged in a Charging Station. \")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_CaveLight-Description\", \"Provides a temporary light for cave exploration for marking a path. Can be recharged in a Charging Station or with a Powerbank. \")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_CaveLight-FlavorText\", \"Hold R for wall placement.\")",
             "Weight": 2000
         },
@@ -19169,7 +19190,7 @@
             "Name": "CaveSpotLight",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"CaveSpotLight-DisplayName\", \"Battery Spotlight\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_CaveSpotLight_Floor.T_ITEM_CaveSpotLight_Floor",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"CaveSpotLight-Description\", \"Provides a strong temporary light for keeping things lit at night. Can be recharged in a Charging Station.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"CaveSpotLight-Description\", \"Provides a strong temporary light for keeping things lit at night. Can be recharged in a Charging Station or with a Powerbank.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"CaveSpotLight-FlavorText\", \"Hold R for wall placement.\")",
             "Weight": 5000
         },
@@ -19844,7 +19865,7 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Grenade-Description\", \"Explodes into many sharp objects that damage and slow.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rock_Golem_Grenade-FlavorText\", \"Like those little colored toy building blocks, but much much older.\")",
             "Weight": 500,
-            "MaxStack": 5
+            "MaxStack": 10
         },
         {
             "Name": "Item_Rock_Golem_Grenade_Caltrops",
@@ -20183,6 +20204,14 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ResourcePack/T_ITEM_Resource_Pack_Dirt.T_ITEM_Resource_Pack_Dirt",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Dirt-Description\", \"A collection of 50 Dirt collected by another prospector for you. \\'CONSUME\\' to open bundle.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Dirt-FlavorText\", \"These supplies are ethically provided by contractors who were found to be in breach of precept 45-379b, this is enforced by Group 15 and its subsidiaries.\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Meta_Resource_Pack_Salt",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Salt-DisplayName\", \"UDA Salt Resource Supply\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/ResourcePack/T_ITEM_Resource_Pack_Salt.T_ITEM_Resource_Pack_Salt",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Salt-Description\", \"A collection of 500 Salt collected by another prospector for you. \\'CONSUME\\' to open bundle.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Resource_Pack_Salt-FlavorText\", \"These supplies are ethically provided by contractors who were found to be in breach of precept 45-379b, this is enforced by Group 15 and its subsidiaries.\")",
             "Weight": 10000
         },
         {
@@ -21105,7 +21134,7 @@
             "Name": "Item_Juvenile_Ape_Trophy",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Juvenile_Ape_Trophy-DisplayName\", \"Garganutan Trophy\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Juvenile_Ape_Trophy.T_ITEM_Juvenile_Ape_Trophy",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Juvenile_Ape_Trophy-Description\", \"A mounted Garganutan Jr head.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Juvenile_Ape_Trophy-Description\", \"A mounted Garganutan head.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Juvenile_Ape_Trophy-FlavorText\", \"Not the greatest ape, but a menacing decoration.\")",
             "Weight": 4000
         },
@@ -22082,7 +22111,7 @@
             "Name": "Item_Prop_Laptop",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Laptop-DisplayName\", \"Laptop\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Props/T_ITEM_Prop_Laptop_A.T_ITEM_Prop_Laptop_A",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Laptop-Description\", \"Someones personal computer.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Laptop-Description\", \"Someone\\'s personal computer.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Laptop-FlavorText\", \"There is no Password...\")",
             "Weight": 500,
             "MaxStack": 20
@@ -23010,7 +23039,7 @@
             "Name": "Item_Plastics",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Plastics-DisplayName\", \"Plastics\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Plastics.T_ITEM_Plastics",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Plastics-Description\", \"Mouldable panels for use for containers, shells, casings and housings.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Plastics-Description\", \"Mouldable panels for use in containers, shells, casings, housings, etc.\")",
             "Weight": 500,
             "MaxStack": 50
         },
@@ -23042,7 +23071,7 @@
             "Name": "Item_Uranium_Raw",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Raw-DisplayName\", \"Raw Uranium\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Uranium_Raw.T_ITEM_Uranium_Raw",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Raw-Description\", \"Raw Radioactive Uranium, will cause radiation poisioning if not stored correctly. Can be processed to convert into Inert and Rod Form.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Raw-Description\", \"Raw Radioactive Uranium, will cause radiation poisoning if not stored correctly. Can be processed to convert into Inert and Rod Form.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Raw-FlavorText\", \"This one doesn\\'t look safe.\")",
             "Weight": 1000,
             "MaxStack": 10
@@ -23060,7 +23089,7 @@
             "Name": "Item_Uranium_Rod",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Rod-DisplayName\", \"Uranium Rod\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Uranium_Rod.T_ITEM_Uranium_Rod",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Rod-Description\", \"Refined Radioactive Uranium, will cause radiation poisioning if not stored correctly. Use an Orbital Exchange Interface to send to orbit.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Rod-Description\", \"Refined Radioactive Uranium, will cause radiation poisoning if not stored correctly. Use an Orbital Exchange Interface to send to orbit.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Uranium_Rod-FlavorText\", \"Deadly, but worth a pretty penny.\")",
             "Weight": 500,
             "MaxStack": 20
@@ -23813,14 +23842,6 @@
             "MaxStack": 100
         },
         {
-            "Name": "Item_Cobalt_Ingot",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Cobalt_Ingot-DisplayName\", \"Cobalt Ingot\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Cobalt_Ingot.T_ITEM_Cobalt_Ingot",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Cobalt_Ingot-Description\", \"A Versatile Ingot that can be used to supplement other materials and create new metal alloys.\")",
-            "Weight": 500,
-            "MaxStack": 20
-        },
-        {
             "Name": "Pyritic_Crust_Lithium",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Pyritic_Crust_Lithium-DisplayName\", \"Noxious Crust (Lithium)\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.T_ITEM_Pyritic_Crust",
@@ -24522,7 +24543,7 @@
             "Name": "Item_Carcass_Storca",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Storca-DisplayName\", \"Storca Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Storca.T_ITEM_AnimalCarcass_Storca",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Storca-Description\", \"The storca\\'s thick hide and heavy frame suggest a creature built to endure.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Storca-Description\", \"The sleek storca lies here, never to rejoin its pack.  \")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Storca-FlavorText\", \"Another reminder that nothing survives Icarus forever.\")",
             "Weight": 8000,
             "Metadata": {
@@ -25631,7 +25652,7 @@
         },
         {
             "Name": "Item_Fortification_Concrete_Platform",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Concrete_Platform-DisplayName\", \"Concrete Walkway Fortification\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Concrete_Platform-DisplayName\", \"Concrete Platform Fortification\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Fortification_Concrete_Platform.T_ITEM_Fortification_Concrete_Platform",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Concrete_Platform-Description\", \"A wall attachment that allows you to look over the top of your wall safely.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fortification_Concrete_Platform-FlavorText\", \"Protect yourself.\")",
@@ -25687,7 +25708,7 @@
             "Name": "Item_Laser_Pistol",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Laser_Pistol-DisplayName\", \"Laser Sidearm\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Laser_Pistol.T_ITEM_Laser_Pistol",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Laser_Pistol-Description\", \"A compact device that creates hard light bullets through a complication process of focusing energy through a ruby lens.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Laser_Pistol-Description\", \"A compact device that creates hard light bullets through a complicated process of focusing energy through a ruby lens.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Laser_Pistol-FlavorText\", \"The pinnacle of laser technology.\")",
             "Weight": 2500
         },
@@ -26419,7 +26440,7 @@
         },
         {
             "Name": "Item_Alloy_Armor_Head",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Alloy_Armor_Head-DisplayName\", \"Bastion Armor Head\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Alloy_Armor_Head-DisplayName\", \"Bastion Head Armor\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Alloy_Head.T_ITEM_Alloy_Head",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Alloy_Armor_Head-Description\", \"Crafting through a process of combining metals to create a strong protective armor.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Alloy_Armor_Head-FlavorText\", \"Stronger is always better\")",
@@ -26480,14 +26501,6 @@
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dead_EI_Agent-FlavorText\", \"Another victim of Icarus.\")",
             "Weight": 100,
             "MaxStack": 10
-        },
-        {
-            "Name": "Item_Carcass_Mammoth_Mount",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mammoth_Mount-DisplayName\", \"Woolly Mammoth Carcass\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Mammoth.ITEM_AnimalCarcass_Mammoth",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mammoth_Mount-Description\", \"Woolly Mammoth Mount Carcass\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Mammoth_Mount-FlavorText\", \"Another reminder that nothing survives Icarus forever.\")",
-            "Weight": 10000
         },
         {
             "Name": "Item_Prop_LaserControls",
@@ -26643,7 +26656,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_DragonFly_Trophy.T_ITEM_DragonFly_Trophy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dragonfly_Trophy-Description\", \"The mounted remains of a Venomfly.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dragonfly_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
-            "Weight": 4000
+            "Weight": 2000
         },
         {
             "Name": "Item_Flightless_Tank_Trophy",
@@ -27001,7 +27014,7 @@
             "Name": "Item_Nesting_Box",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Nesting_Box-DisplayName\", \"Chicken Nesting Box\")",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Nesting_Box-Description\", \"Place an egg into this nest to hatch a chicken egg. Hatching speed will increase if a chicken sits on the egg.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Nesting_Box-FlavorText\", \"What came first?\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Nesting_Box-FlavorText\", \"Which came first?\")",
             "Weight": 1500
         },
         {
@@ -27261,6 +27274,15 @@
             "MaxStack": 25
         },
         {
+            "Name": "Item_Sandwyrm_Wing",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sandwyrm_Wing-DisplayName\", \"Sandwyrm Wing Fragment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_Sandwyrm_Wing.T_Sandwyrm_Wing",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Sandwyrm_Wing-Description\", \"A torn wing fragment which is suprising tough.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Sandwyrm_Wing-FlavorText\", \"Many have died trying to acquire these\")",
+            "Weight": 1000,
+            "MaxStack": 25
+        },
+        {
             "Name": "Item_Sandwyrm_Lantern",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Sandwyrm_Lantern-DisplayName\", \"Sandwyrm Queen Lantern\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Sandwyrm_Latern.T_ITEM_Sandwyrm_Latern",
@@ -27352,6 +27374,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb_Male-DisplayName\", \"Cryogenically Frozen Lamb (Male)\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lamb_Male.T_ITEM_Lamb_Male",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb_Male-Description\", \"A Lamb preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb_Male-FlavorText\", \"Baa\")",
             "Weight": 1000
         },
         {
@@ -27359,6 +27382,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb_Female-DisplayName\", \"Cryogenically Frozen Lamb (Female)\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lamb_Female.T_ITEM_Lamb_Female",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb_Female-Description\", \"A Lamb preserved in a cryogenic stasis that can be deployed and defrosted on planet.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lamb_Female-FlavorText\", \"No Comment.\")",
             "Weight": 1000
         },
         {
@@ -27554,7 +27578,7 @@
         {
             "Name": "Item_Saddle_SpeederBike",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_SpeederBike-DisplayName\", \"Prototype Hoverframe\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Vehicles/T_Speeder_kit.T_Speeder_kit",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Vehicles/T_ITEM_Speeder_Kit.T_ITEM_Speeder_Kit",
             "bAllowZeroWeight": true
         },
         {
@@ -27660,7 +27684,7 @@
         {
             "Name": "Item_Speeder_Kit",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Speeder_Kit-DisplayName\", \"Prototype Hoverframe\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Vehicles/T_Speeder_kit.T_Speeder_kit",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Vehicles/T_ITEM_Speeder_Kit.T_ITEM_Speeder_Kit",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Speeder_Kit-Description\", \"A mechanical vehicle which can be deployed to ride. Powered by Refined Oil.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Speeder_Kit-FlavorText\", \"Zoom Zoom Zoom\")",
             "Weight": 50000
@@ -27699,7 +27723,7 @@
             "Name": "Item_Submachine_Gun_Scout",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Submachine_Gun_Scout-DisplayName\", \"Scouts Submachine Gun\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Submachine_Gun_Scout.T_ITEM_Submachine_Gun_Scout",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Submachine_Gun_Scout-Description\", \"An automatic firearm that fires low caliber pistol rounds. Works with Pistol Attachments and Talents. Specially desidned for the Eden Scouts.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Submachine_Gun_Scout-Description\", \"An automatic firearm that fires low caliber pistol rounds. Works with Pistol Attachments and Talents. Specially designed for the Eden Scouts.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Submachine_Gun_Scout-FlavorText\", \"Quantity over Quality\")",
             "Weight": 3000
         },
@@ -27864,9 +27888,9 @@
         {
             "Name": "Item_Speeder_Kit_Heavy",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Speeder_Kit_Heavy-DisplayName\", \"Prototype Heavy Hoverframe\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Vehicles/T_ITEM_SpeederBike.T_ITEM_SpeederBike",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Vehicles/T_ITEM_Speeder_Kit_Heavy.T_ITEM_Speeder_Kit_Heavy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Speeder_Kit_Heavy-Description\", \"A mechanical vehicle which can be deployed to ride. Powered by Refined Oil. Slower speeds but much larger carrying capacity.\")",
-            "Weight": 100000
+            "Weight": 75000
         },
         {
             "Name": "Item_Audio_Log_1",
@@ -27929,7 +27953,7 @@
         {
             "Name": "Item_Radiation_Broodling_Trophy",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Broodling_Trophy-DisplayName\", \"Radiation Broodling Trophy\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_RadBroodling_Trophy.T_ITEM_RadBroodling_Trophy",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Radiation_Broodling_Trophy.T_ITEM_Radiation_Broodling_Trophy",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Broodling_Trophy-Description\", \"The mounted remains for a creature preserved forever.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Broodling_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
             "Weight": 500,
@@ -27937,9 +27961,11 @@
         },
         {
             "Name": "Item_Saddle_Radiation",
-            "DisplayName": "INVTEXT(\"[DNT] Radiation Saddle\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Radiation-DisplayName\", \"Malformation Saddle\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Radiation.T_ITEM_Saddle_Radiation",
-            "Weight": 1500
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Radiation-Description\", \"A large, heavy-duty saddle equipped with lead-lined storage to allow for safe transportation of irradiated items.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Saddle_Radiation-FlavorText\", \"Which body part sits closest to that totally-safe storage compartment?\")",
+            "Weight": 15000
         },
         {
             "Name": "Item_Fish_20",
@@ -27975,11 +28001,11 @@
         },
         {
             "Name": "Item_Lead_Lined_Crate_Small",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Small-DisplayName\", \"Lead Lined Crate\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Small-DisplayName\", \"Small Lead Lined Crate\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lead_Lined_Crate_Small.T_ITEM_Lead_Lined_Crate_Small",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Small-Description\", \"Strong protective storage for items.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Small-FlavorText\", \"Has 15 storage slots.\")",
-            "Weight": 3000
+            "Weight": 5000
         },
         {
             "Name": "Item_Lead_Lined_Crate_Medium",
@@ -27987,13 +28013,14 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Lead_Lined_Crate_Medium.T_ITEM_Lead_Lined_Crate_Medium",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Medium-Description\", \"A strong, generous storage unit.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Lead_Lined_Crate_Medium-FlavorText\", \"Has 25 storage slots.\")",
-            "Weight": 6000
+            "Weight": 10000
         },
         {
             "Name": "Item_Mission_Colony_Tower",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Colony_Tower-DisplayName\", \"Colony Radio Tower\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Props/T_ITEM_Prop_LaserControls.T_ITEM_Prop_LaserControls",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Colony_Tower-Description\", \"A Radio Tower that tracks and locates colonists.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Colony_Tower-FlavorText\", \"So that\\'s what those microchips were for...\")",
             "Weight": 10000
         },
         {
@@ -28087,7 +28114,7 @@
             "Name": "Item_Mission_Rad_Serum",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Rad_Serum-DisplayName\", \"FE-2 Antiserum\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_FE2AntiSerum.T_ITEM_FE2AntiSerum",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Rad_Serum-Description\", \"A Sample of a potential cure to the FE-2 Virus, crafted from Mushrooms, Lillies and a radioactive Fish.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Rad_Serum-Description\", \"A Sample of a potential cure to the FE-2 Virus, crafted from Mushrooms, Lillies and a Radioactive Fish.\")",
             "Weight": 250
         },
         {
@@ -28123,14 +28150,14 @@
             "Name": "Item_Stasis_Bag_Full_RAD_B_Colonist",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Stasis_Bag_Full_RAD_B_Colonist-DisplayName\", \"Stasis Bag (Colonist Chris)\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Stasis_Bag_Full.T_ITEM_Stasis_Bag_Full",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Stasis_Bag_Full_RAD_B_Colonist-Description\", \"Chris is frozen in a medically induced stasis ready to be transported off planet.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Stasis_Bag_Full_RAD_B_Colonist-Description\", \"Chris is frozen in a medically induced stasis, ready to be transported off planet.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Stasis_Bag_Full_RAD_B_Colonist-FlavorText\", \"Another XIGO product that is at the bleeding edge of medical technology.\")",
             "Weight": 75000
         },
         {
             "Name": "Item_Mission_Hoverframe_Keys",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Hoverframe_Keys-DisplayName\", \"Rian\\'s Heavy Hoverframe Keys\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_MedicalGradeSyringe.T_ITEM_MedicalGradeSyringe",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/T_ITEM_Quest_HoverframeKey.T_ITEM_Quest_HoverframeKey",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Hoverframe_Keys-Description\", \"Keys and Tracker for a Heavy Hoverframe.\")",
             "Weight": 250
         },
@@ -28143,15 +28170,17 @@
             "Weight": 15000
         },
         {
-            "Name": "Item_Settlement_Starter",
-            "DisplayName": "INVTEXT(\"[DNT] Settlement Starter\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Name": "Item_Settlement_Origin",
+            "DisplayName": "INVTEXT(\"[DNT] Settlement Origin\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Steel_Hammer.ITEM_Steel_Hammer",
+            "Description": "INVTEXT(\"[DNT] A Settlement can be started here. Interact to Claim.\")",
             "Weight": 10000
         },
         {
-            "Name": "Item_Settlement_Building",
-            "DisplayName": "INVTEXT(\"[DNT] Settlement Building\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Name": "Item_Settlement_Building_Tool",
+            "DisplayName": "INVTEXT(\"[DNT] Settlement Building Tool\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Steel_Hammer.ITEM_Steel_Hammer",
+            "Description": "INVTEXT(\"[DNT] Can be used to place any unlocked settlement structure in that settlement\\'s tech tree.\")",
             "Weight": 10000
         },
         {
@@ -28164,12 +28193,16 @@
         },
         {
             "Name": "Item_Envirosuit_Radboss",
-            "DisplayName": "INVTEXT(\"[DNT] Radboss Envirosuit\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit_Radboss-DisplayName\", \"Malformation Envirosuit\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_RadbossEnvirosuit.T_ITEM_RadbossEnvirosuit",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit_Radboss-Description\", \"A high-tech envirosuit engineered to resist Radiation\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit_Radboss-FlavorText\", \"Carry the memory of ELY-001 with you everywhere.\")",
             "Weight": 100
         },
         {
             "Name": "Item_Mission_Experiment_Cage",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Experiment_Cage-DisplayName\", \"Biological Modification Chamber\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/T_ITEM_Mission_Experiment_Cage.T_ITEM_Mission_Experiment_Cage",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Experiment_Cage-Description\", \"A multipurpose medical unit designed for the controlled application of stimuli, therapeutic agents, and experimental procedures.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Experiment_Cage-FlavorText\", \"Technically not human experimentation.\")",
             "Weight": 10000
@@ -28177,6 +28210,7 @@
         {
             "Name": "Item_Mission_Tranquilizer_Dart",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Tranquilizer_Dart-DisplayName\", \"Tranquilizer Dart\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/T_ITEM_TRANQUILIZER.T_ITEM_TRANQUILIZER",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Tranquilizer_Dart-Description\", \"A specialised ammo crafted to put mutated creatures into a medically induced coma.\")",
             "Weight": 10,
             "MaxStack": 100
@@ -28185,19 +28219,21 @@
             "Name": "Item_Stasis_Bag_Full_RAD_B2_Colonist",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Stasis_Bag_Full_RAD_B2_Colonist-DisplayName\", \"Stasis Bag (Mutated Colonist)\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Stasis_Bag_Mutated_Prospector.T_ITEM_Stasis_Bag_Mutated_Prospector",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Stasis_Bag_Full_RAD_B2_Colonist-Description\", \"A Mutated Human who frozen in a medically induced stasis ready to be cured if possible.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Stasis_Bag_Full_RAD_B2_Colonist-Description\", \"A Mutated Human who has been frozen in a medically induced stasis, ready to be cured (if possible).\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Stasis_Bag_Full_RAD_B2_Colonist-FlavorText\", \"Another XIGO product that is at the bleeding edge of medical technology.\")",
             "Weight": 75000
         },
         {
             "Name": "Item_Mission_Solution",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Solution-DisplayName\", \"Solution\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/T_ITEM_Mission_Solution.T_ITEM_Mission_Solution",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Solution-Description\", \"A solution which was made by heating and combining elements.\")",
             "Weight": 250
         },
         {
             "Name": "Item_Mission_Distiller",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Distiller-DisplayName\", \"Distillation Apparatus\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/T_ITEM_Mission_Distiller.T_ITEM_Mission_Distiller",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Distiller-Description\", \"A device that can be used to combine elements into a single solution with properties of each.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Distiller-FlavorText\", \"Is this mad science?\")",
             "Weight": 10000
@@ -28206,9 +28242,16 @@
             "Name": "GH_Rad_B2_Research",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"GH_Rad_B2_Research-DisplayName\", \"Distillation Notes\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Collectable_Note.T_ITEM_Collectable_Note",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"GH_Rad_B2_Research-Description\", \"A quick guide as to how to create solutions with various properties.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"GH_Rad_B2_Research-FlavorText\", \"This is incomplete....\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"GH_Rad_B2_Research-Description\", \"A quick guide on how to create solutions with various properties.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"GH_Rad_B2_Research-FlavorText\", \"This appears to be incomplete...\")",
             "Weight": 100
+        },
+        {
+            "Name": "Item_Settlement_PathPlacer",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Settlement_PathPlacer-DisplayName\", \"Path Creator\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Agility.Icon_Agility",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Settlement_PathPlacer-Description\", \"Used to mark out Settlement paths\")",
+            "Weight": 10
         },
         {
             "Name": "Item_Fertility_Serum_SwampBird",
@@ -28218,6 +28261,901 @@
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_SwampBird-FlavorText\", \"Husbandry has come to Icarus\")",
             "Weight": 50,
             "MaxStack": 10
+        },
+        {
+            "Name": "Item_AntiRadiation_Stew",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_AntiRadiation_Stew-DisplayName\", \"Surf & Shroom\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_And_Mushroom.T_ITEM_Fish_And_Mushroom",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_AntiRadiation_Stew-Description\", \"The distilled essence of a three eyed fish and mushrooms that seems radiation resistant and slowly removes radiation poisoning.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_AntiRadiation_Stew-FlavorText\", \"What could go wrong?\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_RadBoss_Attachment",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Attachment-DisplayName\", \"Malformation Attachment\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_AttArmor_RadBoss.T_ITEM_AttArmor_RadBoss",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Attachment-Description\", \"An attachment that increases your movement speed and Radiation resistance.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Attachment-FlavorText\", \"Can be equipped to a valid armor at an Alteration Bench.\")",
+            "Weight": 1000
+        },
+        {
+            "Name": "Item_RadBoss_Claw",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Claw-DisplayName\", \"Malformation Claw\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_RadBossResource_1.T_ITEM_RadBossResource_1",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Claw-Description\", \"A dense, hooked appendage harvested from a Malformation, heavily reinforced with calcified exotic minerals. Essential raw material for crafting items.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Claw-FlavorText\", \"Harvesting these requires a stomach that doesn\\'t turn easily.\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_RadBoss_Carapace",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Carapace-DisplayName\", \"Malformation Carapace\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_RadBossResource_2.T_ITEM_RadBossResource_2",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Carapace-Description\", \"Thick plating of organic armor composed of fused bone and subcutaneous exotic crystallization. Retains high thermal and ballistic resistance long after removal from the primary mass.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Carapace-FlavorText\", \"Harvesting these requires a stomach that doesn\\'t turn easily.\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_RadBoss_Module",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Module-DisplayName\", \"Malformation Module\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_BOSS_RadBoss.T_ITEM_MODULE_BOSS_RadBoss",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Module-Description\", \"Integration module calibrated to isolate the specific thermal and radioactive frequencies emitted by a Malformation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Module-FlavorText\", \"A heads-up is always handy.\")",
+            "Weight": 500
+        },
+        {
+            "Name": "Item_Envirosuit_Colonist",
+            "DisplayName": "INVTEXT(\"[DNT] Colonist Envirosuit\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Envirosuit_Colonist.T_ITEM_Envirosuit_Colonist",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit_Colonist-Description\", \"A suit trialled by the unlucky colonists fo Group 15.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit_Colonist-FlavorText\", \"G15 may be evil, but they\\'ve certainly got style.\")",
+            "Weight": 100
+        },
+        {
+            "Name": "Item_RadBoss_Armor_Head",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Head-DisplayName\", \"Malformation Head Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_RadBoss_Armor_Head.T_ITEM_RadBoss_Armor_Head",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Head-Description\", \"A dense armor piece fashioned from the calcified carapace of a Malformation to provide exceptional ballistic and radiation protection.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Head-FlavorText\", \"It smells faintly of ozone and violates a dozen UDA bio-ethics charters, but nothing on Icarus absorbs impact quite like it.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_RadBoss_Armor_Chest",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Chest-DisplayName\", \"Malformation Chest Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_RadBoss_Armor_Chest.T_ITEM_RadBoss_Armor_Chest",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Chest-Description\", \"A dense armor piece fashioned from the calcified carapace of a Malformation to provide exceptional ballistic and radiation protection.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Chest-FlavorText\", \"It smells faintly of ozone and violates a dozen UDA bio-ethics charters, but nothing on Icarus absorbs impact quite like it.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_RadBoss_Armor_Arms",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Arms-DisplayName\", \"Malformation Arms Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_RadBoss_Armor_Arms.T_ITEM_RadBoss_Armor_Arms",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Arms-Description\", \"A dense armor piece fashioned from the calcified carapace of a Malformation to provide exceptional ballistic and radiation protection.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Arms-FlavorText\", \"It smells faintly of ozone and violates a dozen UDA bio-ethics charters, but nothing on Icarus absorbs impact quite like it.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_RadBoss_Armor_Legs",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Legs-DisplayName\", \"Malformation Legs Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_RadBoss_Armor_Legs.T_ITEM_RadBoss_Armor_Legs",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Legs-Description\", \"A dense armor piece fashioned from the calcified carapace of a Malformation to provide exceptional ballistic and radiation protection.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Legs-FlavorText\", \"It smells faintly of ozone and violates a dozen UDA bio-ethics charters, but nothing on Icarus absorbs impact quite like it.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_RadBoss_Armor_Feet",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Feet-DisplayName\", \"Malformation Feet Armor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_RadBoss_Armor_Feet.T_ITEM_RadBoss_Armor_Feet",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Feet-Description\", \"A dense armor piece fashioned from the calcified carapace of a Malformation to provide exceptional ballistic and radiation protection.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Armor_Feet-FlavorText\", \"It smells faintly of ozone and violates a dozen UDA bio-ethics charters, but nothing on Icarus absorbs impact quite like it.\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_RadBoss_Crossbow",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Crossbow-DisplayName\", \"Malformation Crossbow\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Bows/T_ITEM_RadBoss_Crossbow.T_ITEM_RadBoss_Crossbow",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Crossbow-Description\", \"Heavy-duty crossbow utilizing tension limbs fashioned from flexed Malformation skeletal structure and exotic sinew.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Crossbow-FlavorText\", \"Which limb did these materials come from?\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Carbon_Fishing_Rod",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carbon_Fishing_Rod-DisplayName\", \"Carbon Fishing Rod\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Carbon_Fishing_Rod.T_ITEM_Carbon_Fishing_Rod",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carbon_Fishing_Rod-Description\", \"High-tensile angling rod reinforced with a lightweight carbon-composite weave. Engineered to handle extreme bending strain when hooking heavy aquatic organisms native to Icarus waters.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carbon_Fishing_Rod-FlavorText\", \"Perfect for when you need a quiet afternoon away from corporate quotas and man-eating mutagens.\")",
+            "Weight": 1250
+        },
+        {
+            "Name": "Item_RadBoss_Fishing_Rod",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Fishing_Rod-DisplayName\", \"Malformation Fishing Rod\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_RadBoss_Rod.T_ITEM_RadBoss_Rod",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Fishing_Rod-Description\", \"The malformed aura of this fishing rod lures in unique catch.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Fishing_Rod-FlavorText\", \"A warped rod for warped fish.\")",
+            "Weight": 2250
+        },
+        {
+            "Name": "Item_Animal_Virus",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Animal_Virus-DisplayName\", \"Forced Evolution Virus\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_ForcedEvolutionVirus.T_ITEM_ForcedEvolutionVirus",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Animal_Virus-Description\", \"Can be injected into animal companions to force evolution for better or worse. Can make animal companions infertile.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Animal_Virus-FlavorText\", \"Unpredictable to say the least.\")",
+            "Weight": 50,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_DNA_Serum",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_DNA_Serum-DisplayName\", \"DNA Augmentation Serum\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_DNA_AugmentationSerum.T_ITEM_DNA_AugmentationSerum",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_DNA_Serum-Description\", \"An experimental serum which increases health and physical resistance for a short time.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_DNA_Serum-FlavorText\", \"Gotta love science.\")",
+            "Weight": 50,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Drone_Companion",
+            "DisplayName": "INVTEXT(\"[DNT] Drone Companion\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_RadBoss_Habitat_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Habitat_Trophy-DisplayName\", \"Malformation Habitat Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_RadBoss_Habitat_Trophy.T_ITEM_RadBoss_Habitat_Trophy",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Habitat_Trophy-Description\", \"A sealed, climate-controlled specimen terrarium containing corrupted substrate and exotic flora harvested from a Malformation nest.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Habitat_Trophy-FlavorText\", \"It doesn\\'t leak heat or smell like scorched flesh inside the glass, which is a major design win.\")",
+            "Weight": 8500
+        },
+        {
+            "Name": "Item_RadBoss_Head_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Head_Trophy-DisplayName\", \"Malformation Head Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_RadBoss_Head_Trophy.T_ITEM_RadBoss_Head_Trophy",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Head_Trophy-Description\", \"A mounted, taxidermied display constructed from the primary cranial mass of a Malformation, complete with calcified mineral growths. Treated with synthetic lacquer to prevent long-term environmental decay.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Head_Trophy-FlavorText\", \"Try to avoid eye contact.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_RadBoss_Stone_Statue",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Stone_Statue-DisplayName\", \"Malformation Stone Statue\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_RadBoss_Stone_Statue.T_ITEM_RadBoss_Stone_Statue",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Stone_Statue-Description\", \"A hand-carved stone monument depicting the horrific, multi-limbed frame of a Malformation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Stone_Statue-FlavorText\", \"A permanent reminder that some things on Icarus are better left chiseled in stone than encountered in the wild.\")",
+            "Weight": 15000
+        },
+        {
+            "Name": "Item_RadBoss_Bronze_Statue",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Bronze_Statue-DisplayName\", \"Malformation Bronze Statue\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_RadBoss_Bronze_Statue.T_ITEM_RadBoss_Bronze_Statue",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Bronze_Statue-Description\", \"A heavy bronze alloy casting detailing the fused skeletal structures and jagged carapace of a Malformation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Bronze_Statue-FlavorText\", \"A permanent reminder that some things on Icarus are better left displayed in bronze than encountered in the wild.\")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_RadBoss_Head",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Head-DisplayName\", \"Malformation Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_RadBoss_Head.T_ITEM_RadBoss_Head",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Head-Description\", \"A chemically stabilized specimen of the preserved central cranial cluster of a Malformation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 2000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_LegendaryWeapon_Grenade_Launcher",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_LegendaryWeapon_Grenade_Launcher-DisplayName\", \"MX-7 Rotary Grenade Launcher\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_SlugLauncher.T_ITEM_LegendaryWeapon_SlugLauncher",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_LegendaryWeapon_Grenade_Launcher-Description\", \"High-capacity rotary launcher engineered to propel heavy explosive canisters over long distances. Eliminates the operational hazard of manually throwing ordnance in unpredictable atmospheric conditions.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_LegendaryWeapon_Grenade_Launcher-FlavorText\", \"Because throwing high-yield explosives by hand is a short path to an early retirement.\")",
+            "Weight": 7500
+        },
+        {
+            "Name": "Item_Mission_Explosives_Cart",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Explosives_Cart-DisplayName\", \"Explosives Cart\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Saddle_Cart.T_ITEM_Saddle_Cart",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Explosives_Cart-Description\", \"A cart containing volatile explosives, requires a creature to pull it.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Explosives_Cart-FlavorText\", \"Lending a helping hand, or hoof.\")",
+            "Weight": 100000
+        },
+        {
+            "Name": "Item_Mission_Laser_Utility",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Laser_Utility-DisplayName\", \"MK-200 Weaponized Laser \")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Mission_Prototype_Laser.ITEM_Mission_Prototype_Laser",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Laser_Utility-Description\", \"The result of salvaged drones and old terraforming equipment\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Laser_Utility-FlavorText\", \"It doesn\\'t look that unstable...\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Mission_Chemostat",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Chemostat-DisplayName\", \"Chemostat Bioreactor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Mission_Chemostat.T_ITEM_Mission_Chemostat",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Chemostat-Description\", \"A continuous-flow bioreactor that maintains microorganisms under controlled, steady-state conditions through the continuous addition and removal of substrates.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Chemostat-FlavorText\", \"Is this mad science?\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Mission_Culture",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Culture-DisplayName\", \"Stabilized Mutation Culture\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_FE2VirusSample.T_ITEM_FE2VirusSample",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Culture-Description\", \"A culture formed from the cells of mutated prospectors created in a chemostat bioreactor.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Culture-FlavorText\", \"Is this mad science?\")",
+            "Weight": 250
+        },
+        {
+            "Name": "Item_Irradiated_Prospector_Head",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Prospector_Head-DisplayName\", \"Spectre Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_HEAD_Irradiated_Prospector.T_ITEM_HEAD_Irradiated_Prospector",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Prospector_Head-Description\", \"A preserved memory of a mutated prospector.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Prospector_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Irradiated_Abomination_Head",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Abomination_Head-DisplayName\", \"Revenant Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_Irradiated_Abomination.T_ITEM_Head_Irradiated_Abomination",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Abomination_Head-Description\", \"A preserved memory of a mutated prospector.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Abomination_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Irradiated_Mutation_Head",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Mutation_Head-DisplayName\", \"Wraith Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Head_Irradiated_Mutation.T_ITEM_Head_Irradiated_Mutation",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Mutation_Head-Description\", \"A preserved memory of a mutated prospector.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Mutation_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Prop_Enzyme_PropagationUnit",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Enzyme_PropagationUnit-DisplayName\", \"Enzyme Propagation Unit\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Enzyme_Propagation_Unit.T_ITEM_Enzyme_Propagation_Unit",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Enzyme_PropagationUnit-Description\", \"A device which disperses a modified terraforming enzyme into the surrounding environment for creature experimentation\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Enzyme_PropagationUnit-FlavorText\", \"Enzymes are nothing but trouble...\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Damaged_Generator",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Damaged_Generator-DisplayName\", \"Damaged Biofuel Generator\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Kit_Generator.T_ITEM_Kit_Generator",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Damaged_Generator-Description\", \"A damaged generator, some parts can be salvaged.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Damaged_Generator-FlavorText\", \"Literally or figuratively, we\\'ve come a long way from the Faraday Disc.\")",
+            "Weight": 40000
+        },
+        {
+            "Name": "Item_Meta_Oxite_Dissolver_Printed",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Oxite_Dissolver_Printed-DisplayName\", \"MXC Oxite Dissolver\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Electric_Oxite_Dissolver.T_ITEM_Electric_Oxite_Dissolver",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Oxite_Dissolver_Printed-Description\", \"A lightweight dissolver to fill a container with Oxygen.  \")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Oxite_Dissolver_Printed-FlavorText\", \"Breathe fast, breathe easy, thanks to MXC.  \")",
+            "Weight": 5000
+        },
+        {
+            "Name": "Item_Meta_Powerbank",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Powerbank-DisplayName\", \"Inaris Powerbank\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Meta_Powerbank.T_ITEM_Meta_Powerbank",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Powerbank-Description\", \"Next-gen power solution for recharging devices. Use it on the go by activating it with a device in need of power in your inventory. \")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Powerbank-FlavorText\", \"Nothing outcharges the Inaris Powerbank.\")",
+            "Weight": 3000
+        },
+        {
+            "Name": "Item_Rifle_Assault_CHAC",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Assault_CHAC-DisplayName\", \"CHAC Assault Rifle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Rifle_Assault.T_ITEM_Rifle_Assault",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Assault_CHAC-Description\", \"An automatic firearm that fires mid caliber rounds. Works with Rifle Attachments and Talents.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rifle_Assault_CHAC-FlavorText\", \"Quantity over Quality\")",
+            "Weight": 5500
+        },
+        {
+            "Name": "Item_Submachine_Gun_CHAC",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Submachine_Gun_CHAC-DisplayName\", \"CHAC Submachine Gun\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_Submachine_Gun.T_ITEM_Submachine_Gun",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Submachine_Gun_CHAC-Description\", \"An automatic firearm that fires low caliber pistol rounds. Works with Pistol Attachments and Talents.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Submachine_Gun_CHAC-FlavorText\", \"Quantity over Quality\")",
+            "Weight": 3000
+        },
+        {
+            "Name": "Item_Carcass_Orka_Juvenile",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Orka_Juvenile-DisplayName\", \"Juvenile Skulk Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_AnimalCarcass_Orka_Arctic.T_ITEM_AnimalCarcass_Orka_Arctic",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Orka_Juvenile-Description\", \"A juvenile Skulk which never quite made it to full adulthood.\")",
+            "Weight": 4500
+        },
+        {
+            "Name": "Item_Electric_Seed_Extractor",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Electric_Seed_Extractor-DisplayName\", \"Electric Seed Extractor\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_T4_Seed_Extractor.T_ITEM_T4_Seed_Extractor",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Electric_Seed_Extractor-Description\", \"An electric powered machine that extracts seeds quickly from vegetation.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Electric_Seed_Extractor-FlavorText\", \"Seeds at the speed of light.\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Rudimentary_Stone",
+            "DisplayName": "INVTEXT(\"[DNT] Bundle Of Stones\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Launcher_Ammo_Rudimentary_Stone.T_ITEM_Launcher_Ammo_Rudimentary_Stone",
+            "Weight": 300,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Rudimentary_Nails",
+            "DisplayName": "INVTEXT(\"[DNT] Rudimentary Nail Ammo\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Launcher_Ammo_Rudimentary_Nail.T_ITEM_Launcher_Ammo_Rudimentary_Nail",
+            "Weight": 300,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Rudimentary_Smoke",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rudimentary_Smoke-DisplayName\", \"Smoke Bomb\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Launcher_Ammo_Rudimentary_Smoke.T_ITEM_Launcher_Ammo_Rudimentary_Smoke",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rudimentary_Smoke-Description\", \"A makeshift smoke grenade that can be thrown or used in a launcher.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rudimentary_Smoke-FlavorText\", \"Conceal your position.\")",
+            "Weight": 300,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Rudimentary_Grenade",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rudimentary_Grenade-DisplayName\", \"Crude Grenade\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Launcher_Ammo_Rudimentary_Grenade.T_ITEM_Launcher_Ammo_Rudimentary_Grenade",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Rudimentary_Grenade-Description\", \"A makeshift grenade that can be thrown or used in a launcher.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rudimentary_Grenade-FlavorText\", \"Easy to make - easy to throw - easy to damage. \")",
+            "Weight": 300,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Rudimentary_Nail_Caltrops",
+            "DisplayName": "INVTEXT(\"[DNT] Rudimentary Caltrops\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Launcher_Ammo_Rudimentary_Nail_Caltrop.T_ITEM_Launcher_Ammo_Rudimentary_Nail_Caltrop",
+            "Weight": 50
+        },
+        {
+            "Name": "Item_Mission_Bull",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Bull-DisplayName\", \"Bull\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_PassiveCreature.Icon_PassiveCreature",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Bull-Description\", \"Trained by the Eris Inquisition for Eden.\")",
+            "Weight": 100,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Launcher_T2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Launcher_T2-DisplayName\", \"Single Barrel Launcher\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Guns/T_ITEM_T2_Launcher.T_ITEM_T2_Launcher",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Launcher_T2-Description\", \"A rudimentry launcher that can fire flares, grenades and other items typically thrown.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Launcher_T2-FlavorText\", \"Flares, Grenades, Smoke, what else could you want?\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Mission_Laser_Utility_Battery",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Laser_Utility_Battery-DisplayName\", \"MK-200 Weaponized Laser (Battery Powered) \")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/QuestItems/ITEM_Mission_Prototype_Laser.ITEM_Mission_Prototype_Laser",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Laser_Utility_Battery-Description\", \"The result of salvaged drones and old terraforming equipment - has its own internal battery supply.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Laser_Utility_Battery-FlavorText\", \"It doesn\\'t look that unstable...\")",
+            "Weight": 2000
+        },
+        {
+            "Name": "Item_Weapon_Rack_T2",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Weapon_Rack_T2-DisplayName\", \"Crude Weapon Rack\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Weapon_Rack_T2.T_ITEM_Weapon_Rack_T2",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Weapon_Rack_T2-Description\", \"A crude rack to display your weapons.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Weapon_Rack_T2-FlavorText\", \"Show off your belongings with flair.\")",
+            "Weight": 2000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Weapon_Rack_T3",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Weapon_Rack_T3-DisplayName\", \"Metal Weapon Rack\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Weapon_Rack_T3.T_ITEM_Weapon_Rack_T3",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Weapon_Rack_T3-Description\", \"A metal rack to display your weapons.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Weapon_Rack_T3-FlavorText\", \"Show off your belongings with flair.\")",
+            "Weight": 3000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Weapon_Rack_T4",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Weapon_Rack_T4-DisplayName\", \"Heavy-Duty Weapon Rack\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Weapon_Rack_T4.T_ITEM_Weapon_Rack_T4",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Weapon_Rack_T4-Description\", \"A detailed rack to display your weapons.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Weapon_Rack_T4-FlavorText\", \"Show off your belongings with flair.\")",
+            "Weight": 2500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Mission_Colony_Tower_Portable",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Colony_Tower_Portable-DisplayName\", \"Makeshift Colony Radio Tower\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Props/T_ITEM_Prop_LaserControls.T_ITEM_Prop_LaserControls",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Colony_Tower_Portable-Description\", \"A Radio Tower that tracks and locates colonists.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Colony_Tower_Portable-FlavorText\", \"So that\\'s what those microchips were for...\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Backpack_Drone",
+            "DisplayName": "INVTEXT(\"[DNT] Backpack Drone\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_DownedDrone.Icon_DownedDrone",
+            "Weight": 30000
+        },
+        {
+            "Name": "Item_T4_Backpack",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_T4_Backpack-DisplayName\", \"Camo Backpack\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_T4_Backpack.T_ITEM_T4_Backpack",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_T4_Backpack-Description\", \"A sturdy, camouflaged backpack for all purpose use, great for avoiding unwanted attention.\")",
+            "Weight": 800
+        },
+        {
+            "Name": "Item_T5_Backpack",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_T5_Backpack-DisplayName\", \"Synthetic Backpack\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_T5_Backpack.T_ITEM_T5_Backpack",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_T5_Backpack-Description\", \"A spacious synthetic backpack with sleek aerodynamics that matches form and function into peak design.\")",
+            "Weight": 900
+        },
+        {
+            "Name": "Item_RadBoss_Residue",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Residue-DisplayName\", \"Malformation Residue\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Radboss_Residue.T_ITEM_Radboss_Residue",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Residue-Description\", \"Viscous cellular sludge secreted by a Malformation, rich in unrefined exotic compounds and suspended metallic debris.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_RadBoss_Residue-FlavorText\", \"The floating G15 subdermal microchips are still trying to broadcast prisoner ID metrics through the slime.\")",
+            "Weight": 50,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Mission_Pillar_Sample",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Pillar_Sample-DisplayName\", \"Radioactive Pillar Sample\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Radboss_Residue.T_ITEM_Radboss_Residue",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Pillar_Sample-Description\", \"A broken piece of a radioactive pillar that has emerged from the center of a G15 Colony.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Mission_Pillar_Sample-FlavorText\", \"Radioactive\")",
+            "Weight": 50,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Prop_Colony_Sign",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Sign-DisplayName\", \"ELY-001 Colony Sign\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Prop_Colony_Sign.T_ITEM_Prop_Colony_Sign",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Sign-Description\", \"A sign to welcome, or to warn.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Sign-FlavorText\", \"This has seen better days.\")",
+            "Weight": 5000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Prop_Colony_Poster",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Poster-DisplayName\", \"Colony Poster\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Prop_Colony_Poster_RAD_A.T_ITEM_Prop_Colony_Poster_RAD_A",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Poster-Description\", \"A poster showing a rough map of the settlement and their planned defenses.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Poster-FlavorText\", \"Seems legitimate.\")",
+            "Weight": 250,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Prop_Colony_Pamphlet",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Pamphlet-DisplayName\", \"Colony Pamphlet\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Prop_Colony_Pamphlet_RAD_A.T_ITEM_Prop_Colony_Pamphlet_RAD_A",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Pamphlet-Description\", \"A propaganda pamphlet about Icarus.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Pamphlet-FlavorText\", \"Who\\'d travel to such a place?\")",
+            "Weight": 250,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Prop_Colony_Corkboard",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Corkboard-DisplayName\", \"Colony Corkboard\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Prop_Colony_Corkboard_RAD_LRG.T_ITEM_Prop_Colony_Corkboard_RAD_LRG",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Corkboard-Description\", \"A corkboard covered in various notices and signs.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Colony_Corkboard-FlavorText\", \"Almost like in a \\\"normal\\\" community.\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Colony_Arcade_Machine",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Colony_Arcade_Machine-DisplayName\", \"Colony Arcade Machine\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Colony_Arcade_Machine.T_ITEM_Colony_Arcade_Machine",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Colony_Arcade_Machine-Description\", \"A machine that simulates the tracking of signals via a satellite dish. For fun!\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Colony_Arcade_Machine-FlavorText\", \"Can you set a new high score?\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Speeder_Kit_Dual",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Speeder_Kit_Dual-DisplayName\", \"Prototype Dual Hoverframe\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Vehicles/T_ITEM_Speeder_Kit_Dual.T_ITEM_Speeder_Kit_Dual",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Speeder_Kit_Dual-Description\", \"A mechanical vehicle which can be deployed to ride. Powered by Refined Oil. Slower speeds but carries multiple prospectors.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Speeder_Kit_Dual-FlavorText\", \"I can show you the world.\")",
+            "Weight": 75000
+        },
+        {
+            "Name": "Item_Carcass_Crab_Coastal",
+            "DisplayName": "INVTEXT(\"[DNT] Crab Coastal Carcass\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Carcass_Crab_Coastal_Parent",
+            "DisplayName": "INVTEXT(\"[DNT] Crab Coastal Parent Carcass\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Carcass_Turtle_Duck",
+            "DisplayName": "INVTEXT(\"[DNT] Turtle Duck Carcass\")",
+            "Weight": 200
+        },
+        {
+            "Name": "Item_Carcass_Bird_Coastal",
+            "DisplayName": "INVTEXT(\"[DNT] Coastal Bird Carcass\")",
+            "Weight": 1250
+        },
+        {
+            "Name": "Item_Carcass_Dino_Large",
+            "DisplayName": "INVTEXT(\"[DNT] Dino Carcass\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Carcass_Beaver",
+            "DisplayName": "INVTEXT(\"[DNT] Beaver Carcass\")",
+            "Weight": 6000
+        },
+        {
+            "Name": "Item_Carcass_Giant_Turtle",
+            "DisplayName": "INVTEXT(\"[DNT] Giant Turtle Carcass\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Carcass_Turtle_Fish",
+            "DisplayName": "INVTEXT(\"[DNT] Turtle Fish Carcass\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Roast_Rabbit",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Rabbit-DisplayName\", \"Roast Rabbit\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Skewer_Rabbit.T_ITEM_Roasted_Skewer_Rabbit",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Rabbit-Description\", \"A rabbit roasted whole. Light, quick, and good for covering ground.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Rabbit-FlavorText\", \"Lean enough that you will be hungry again by dusk.\")",
+            "Weight": 400,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Critter",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Critter-DisplayName\", \"Roast Critter\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Skewer_Critter.T_ITEM_Roasted_Skewer_Critter",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Critter-Description\", \"Whatever small thing you caught, roasted on a spit. Survival fare.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Critter-FlavorText\", \"Nobody has to know.\")",
+            "Weight": 300,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Fowl",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fowl-DisplayName\", \"Roast Fowl\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Skewer_Fowl.T_ITEM_Roasted_Skewer_Fowl",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fowl-Description\", \"Roasted wild bird. Light on the stomach and easy on the lungs in thin air.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fowl-FlavorText\", \"Tastes like every other unfamiliar thing on this rock.\")",
+            "Weight": 500,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Fish",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fish-DisplayName\", \"Roast Fish\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Skewer_Fish.T_ITEM_Roasted_Skewer_Fish",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fish-Description\", \"A whole catch roasted together. Light, clean eating that helps you hold your breath.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fish-FlavorText\", \"It took all morning at the water for one tray.\")",
+            "Weight": 500,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Reptile_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile_Piece-DisplayName\", \"Roast Reptile Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Reptile.T_ITEM_Roasted_Piece_Reptile",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile_Piece-Description\", \"A portion of cold-blooded meat, oddly steadying.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile_Piece-FlavorText\", \"Tastes like whatever it ate last.\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Venison_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison_Piece-DisplayName\", \"Roast Venison Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Venison.T_ITEM_Roasted_Piece_Venison",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison_Piece-Description\", \"A carved portion of lean roast venison.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison_Piece-FlavorText\", \"Cut thin, eaten fast.\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Panther_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther_Piece-DisplayName\", \"Roast Panthera Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Panther.T_ITEM_Roasted_Piece_Panther",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther_Piece-Description\", \"A dense, dark portion of prime cat meat.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther_Piece-FlavorText\", \"Chewy, and worth it.\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Pork_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork_Piece-DisplayName\", \"Roast Pork Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Pork.T_ITEM_Roasted_Piece_Pork",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork_Piece-Description\", \"A rich, fatty portion carved from the hog.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork_Piece-FlavorText\", \"Crackling included, if you are quick.\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Exotic_Meat_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat_Piece-DisplayName\", \"Roast Exotic Meat Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Exotic.T_ITEM_Roasted_Piece_Exotic",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat_Piece-Description\", \"A portion of something the UDA has no menu entry for.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat_Piece-FlavorText\", \"Still taking notes.\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Mutton_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton_Piece-DisplayName\", \"Roast Mutton Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Mutton.T_ITEM_Roasted_Piece_Mutton",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton_Piece-Description\", \"A warming portion of fatty roast mutton.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton_Piece-FlavorText\", \"Worth more than the wool. Barely.\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Wolf_Piece",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf_Piece-DisplayName\", \"Roast Wolf Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Wolf.T_ITEM_Roasted_Piece_Wolf",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf_Piece-Description\", \"A stringy portion carved off the roast.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf_Piece-FlavorText\", \"The pack will remember this.\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Roast_Venison",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison-DisplayName\", \"Roast Venison\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Whole_Venison.T_ITEM_Roast_Whole_Venison",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison-Description\", \"A whole roast deer, carved into 6 portions. Deploy it to serve.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison-FlavorText\", \"The reward for a patient stalk and a steady hand.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Roast_Panther",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther-DisplayName\", \"Roast Panthera\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Whole_Panther.T_ITEM_Roast_Whole_Panther",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther-Description\", \"A whole roasted great cat, carved into 8 portions. Deploy it to serve.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther-FlavorText\", \"It had the same idea about you.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Roast_Pork",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork-DisplayName\", \"Roast Pork\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Whole_Pork.T_ITEM_Roast_Whole_Pork",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork-Description\", \"A whole hog roast, carved into 6 portions. Deploy it to serve.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork-FlavorText\", \"Crackling optional. Highly recommended.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Roast_Exotic_Meat",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat-DisplayName\", \"Roast Exotic Meat\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Whole_Exotic.T_ITEM_Roasted_Whole_Exotic",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat-Description\", \"A whole roasted oddity, carved into 4 portions. Deploy it to serve.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat-FlavorText\", \"Field research. Delicious field research.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Roast_Mutton",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton-DisplayName\", \"Roast Mutton\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Whole_Mutton.T_ITEM_Roast_Whole_Mutton",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton-Description\", \"A whole roast sheep, carved into 4 portions. Deploy it to serve.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton-FlavorText\", \"Worth more than the wool. Barely.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Roast_Wolf",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf-DisplayName\", \"Roast Wolf\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Whole_Wolf.T_ITEM_Roasted_Whole_Wolf",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf-Description\", \"A whole roasted wolf, carved into 4 portions. Deploy it to serve.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf-FlavorText\", \"The pack will remember this.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Roast_Reptile",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile-DisplayName\", \"Roast Reptile\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Whole_Reptile.T_ITEM_Roast_Whole_Reptile",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile-Description\", \"A whole roasted reptile, carved into 4 portions. Deploy it to serve.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile-FlavorText\", \"Tastes like whatever it ate last.\")",
+            "Weight": 2500
+        },
+        {
+            "Name": "Item_Radiation_Bomber_Head",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Bomber_Head-DisplayName\", \"Radiation Bomber Vestige\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Radiation_Bomber_Head.T_ITEM_Radiation_Bomber_Head",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Bomber_Head-Description\", \"A preserved memory of a radiated bomber.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Bomber_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Radiation_Bomber_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Bomber_Trophy-DisplayName\", \"Radiation Bomber Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Radiation_Bomber_Trophy.T_ITEM_Radiation_Bomber_Trophy",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Bomber_Trophy-Description\", \"The mounted remains for a creature preserved forever.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Radiation_Bomber_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
+            "Weight": 5000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Irradiated_Prospector_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Prospector_Trophy-DisplayName\", \"Spectre Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Irradiated_Prospector_Trophy.T_ITEM_Irradiated_Prospector_Trophy",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Prospector_Trophy-Description\", \"The contained remains for a creature preserved forever.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Prospector_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
+            "Weight": 6000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Irradiated_Abomination_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Abomination_Trophy-DisplayName\", \"Revenant Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Irradiated_Abomination_Trophy.T_ITEM_Irradiated_Abomination_Trophy",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Abomination_Trophy-Description\", \"The mounted remains for a creature preserved forever.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Abomination_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
+            "Weight": 7500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Irradiated_Mutation_Trophy",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Mutation_Trophy-DisplayName\", \"Wraith Trophy\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Irradiated_Mutation_Trophy.T_ITEM_Irradiated_Mutation_Trophy",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Mutation_Trophy-Description\", \"The contained remains for a creature preserved forever.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Irradiated_Mutation_Trophy-FlavorText\", \"Evidence of skill, patience and accuracy.\")",
+            "Weight": 6000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Fertility_Serum_Tusker",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Tusker-DisplayName\", \"Tusker Fertility Serum\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Serum_Tusker.T_ITEM_Serum_Tusker",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Tusker-Description\", \"Primes a Male Tusker for mating. Once primed, will seek out and fertilize a nearby Female Tusker.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Tusker-FlavorText\", \"Husbandry has come to Icarus\")",
+            "Weight": 50,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Slinker_Jungle_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Jungle Slinker Vestige\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Slinker_Jungle_Head-Description\", \"A preserved memory of a great feline.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Slinker_Jungle_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Carcass_Slinker_Jungle",
+            "DisplayName": "INVTEXT(\"[DNT] Jungle Slinker Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Slinker_Jungle-Description\", \"This slinker\\'s twisted frame lies motionless, its unnatural agility finally spent.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Slinker_Jungle-FlavorText\", \"Another reminder that nothing survives Icarus forever.\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Carcass_Centipede",
+            "DisplayName": "INVTEXT(\"[DNT] Centipede Carcass\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Prop_Rad_Polaroid",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Rad_Polaroid-DisplayName\", \"Polaroid\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Prop_Poster_A_Polaroid.T_ITEM_Prop_Poster_A_Polaroid",
+            "Description": "INVTEXT(\"[DNT] A polaroid of the colony and its immediate surroundings.\")",
+            "Weight": 50,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Prop_Rad_Metal_Sign",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Rad_Metal_Sign-DisplayName\", \"Warning Sign\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Prop_Poster_Metal_A.T_ITEM_Prop_Poster_Metal_A",
+            "Description": "INVTEXT(\"[DNT] A metallic warning sign alerting Prospectors to the dangers nearby the Colony.\")",
+            "Weight": 50,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Prop_Rad_Paper_Poster",
+            "DisplayName": "INVTEXT(\"[DNT] Colony Poster\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Prop_Poster_Paper_A.T_ITEM_Prop_Poster_Paper_A",
+            "Description": "INVTEXT(\"[DNT] An informational paper poster to be put on display to keep those in the Colony informed.\")",
+            "Weight": 50,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Storca_Jungle_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Jungle Storca Vestige\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Storca_Jungle_Head-Description\", \"A preserved memory of a cute creature.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Storca_Jungle_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Carcass_Storca_Jungle",
+            "DisplayName": "INVTEXT(\"[DNT] Jungle Storca Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Storca_Jungle-Description\", \"The storca\\'s thick hide and heavy frame suggest a creature built to endure.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Storca_Jungle-FlavorText\", \"Another reminder that nothing survives Icarus forever.\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_CreatureBait_Kiwi",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_CreatureBait_Kiwi-DisplayName\", \"Kiwi Bait\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_CreatureBait_Kiwi.T_ITEM_CreatureBait_Kiwi",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_CreatureBait_Kiwi-Description\", \"Can be used in a Snare Trap to attract and capture wild Kiwis. Only effective in Forest, Grassland, or Arctic biomes.\")",
+            "Weight": 200,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Carcass_Jungle_Hunter",
+            "DisplayName": "INVTEXT(\"[DNT] Jungle Hunter Carcass\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Carcass_Elegant_Horse",
+            "DisplayName": "INVTEXT(\"[DNT] Elegant Horse Carcass\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Elegant_Horse_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Elegant Horse Vestige\")",
+            "Weight": 2000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Carcass_Jungle_Monkey",
+            "DisplayName": "INVTEXT(\"[DNT] Jungle Monkey Carcass\")",
+            "Weight": 15000
+        },
+        {
+            "Name": "Item_Carcass_Tropical_Bird",
+            "DisplayName": "INVTEXT(\"[DNT] Tropical Bird Carcass\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tropical_Bird-Description\", \"A now flightless bird.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tropical_Bird-FlavorText\", \"Once endangered on Earth, Icarus brings new life to this native bird.\")",
+            "Weight": 1250
+        },
+        {
+            "Name": "Item_Tropical_Bird_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Tropical Bird Vestige\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Carcass_Giant_Beetle",
+            "DisplayName": "INVTEXT(\"[DNT] Giant Beetle Carcass\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Giant_Beetle_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Giant Beetle Vestige\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Giant_Beetle_Head-Description\", \"A preserved memory of a huge beast.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Giant_Beetle_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 1000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Carcass_Plant_Minion_Elite",
+            "DisplayName": "INVTEXT(\"[DNT] Plant Minion Elite Carcass\")",
+            "Weight": 8000
+        },
+        {
+            "Name": "Item_Carcass_Axolotl",
+            "DisplayName": "INVTEXT(\"[DNT] Axolotl Carcass\")",
+            "Weight": 3500
+        },
+        {
+            "Name": "Item_Carcass_Crawler",
+            "DisplayName": "INVTEXT(\"[DNT] Crawler Carcass\")",
+            "Weight": 10000
+        },
+        {
+            "Name": "Item_Crab_Head",
+            "DisplayName": "INVTEXT(\"[DNT] Crab Vestige\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Crab_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
+            "Weight": 500,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Item_Workshop_Lantern",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lantern-DisplayName\", \"Inaris Lantern\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lantern-Description\", \"An LED Lantern for illuminating dark corners. Can be recharged in a Charging Station.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lantern-FlavorText\", \"Activate with secondary fire.\")",
+            "Weight": 250
+        },
+        {
+            "Name": "Item_Prop_Glass_Display_Cabinet",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Glass_Display_Cabinet-DisplayName\", \"Glass Display Cabinet\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Glass_Display_Cabinet-Description\", \"A Glass Cabinet for Displaying items.\")",
+            "Weight": 10000,
+            "MaxStack": 5
         }
     ]
 }

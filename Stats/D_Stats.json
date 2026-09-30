@@ -4283,9 +4283,29 @@
             }
         },
         {
+            "Name": "FellingRewards_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FellingRewards_+%-Title\", \"Felling Yield\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Felling"
+            }
+        },
+        {
             "Name": "BaseFellingRewards_+%",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFellingRewards_+%-PositiveDescription\", \"+{0}% Yield from Felling Trees\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFellingRewards_+%-NegativeDescription\", \"-{0}% Yield from Felling Trees\")",
+            "StatCategory": {
+                "RowName": "Felling"
+            }
+        },
+        {
+            "Name": "MiningRewards_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"MiningRewards_+%-Title\", \"Felling Yield\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Felling"
             }
@@ -7432,7 +7452,8 @@
             "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "Character"
-            }
+            },
+            "bHideStatInUserInterface": true
         },
         {
             "Name": "BaseProjectileDamageAgainstBuildings_+%",
@@ -10038,6 +10059,7 @@
         {
             "Name": "ExplosiveDamageResistance_%",
             "Title": "NSLOCTEXT(\"D_Stats\", \"ExplosiveDamageResistance_%-Title\", \"Explosive Resistance\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/T_ICON_MODIFIER__BOOMINGRUMBLE.T_ICON_MODIFIER__BOOMINGRUMBLE",
             "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -10047,8 +10069,8 @@
         },
         {
             "Name": "BaseExplosiveDamageResistance_%",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExplosiveDamageResistance_%-PositiveDescription\", \"+{0} Explosive Resistance\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExplosiveDamageResistance_%-NegativeDescription\", \"-{0} Explosive Resistance\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExplosiveDamageResistance_%-PositiveDescription\", \"+{0}% Explosive Resistance\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExplosiveDamageResistance_%-NegativeDescription\", \"-{0}% Explosive Resistance\")",
             "StatCategory": {
                 "RowName": "Resistance"
             }
@@ -10316,6 +10338,26 @@
             "bIsReplicated": true
         },
         {
+            "Name": "ChanceToCatchFish17_+%",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ChanceToCatchFish17_+%-PositiveTitleFormat\", \"Chance to Catch Gar\")",
+            "bIsReplicated": true
+        },
+        {
+            "Name": "ChanceToCatchFish18_+%",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ChanceToCatchFish18_+%-PositiveTitleFormat\", \"Chance to Catch Puffer\")",
+            "bIsReplicated": true
+        },
+        {
+            "Name": "ChanceToCatchFish19_+%",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ChanceToCatchFish19_+%-PositiveTitleFormat\", \"Chance to Catch Springfield\")",
+            "bIsReplicated": true
+        },
+        {
+            "Name": "ChanceToCatchFish20_+%",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ChanceToCatchFish20_+%-PositiveTitleFormat\", \"Chance to Catch Blinky\")",
+            "bIsReplicated": true
+        },
+        {
             "Name": "BaseChanceToCatchFish01_+%",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish01_+%-PositiveDescription\", \"+{0}% chance to catch Snapper while Fishing\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish01_+%-NegativeDescription\", \"-{0}% chance to catch Snapper while Fishing\")"
@@ -10394,6 +10436,26 @@
             "Name": "BaseChanceToCatchFish16_+%",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish16_+%-PositiveDescription\", \"+{0}% chance to catch Wraith while Fishing\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish16_+%-NegativeDescription\", \"-{0}% chance to catch Wraith while Fishing\")"
+        },
+        {
+            "Name": "BaseChanceToCatchFish17_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish17_+%-PositiveDescription\", \"+{0}% chance to catch Gar while Fishing\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish17_+%-NegativeDescription\", \"-{0}% chance to catch Gar while Fishing\")"
+        },
+        {
+            "Name": "BaseChanceToCatchFish18_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish18_+%-PositiveDescription\", \"+{0}% chance to catch Puffer while Fishing\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish18_+%-NegativeDescription\", \"-{0}% chance to catch Puffer while Fishing\")"
+        },
+        {
+            "Name": "BaseChanceToCatchFish19_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish19_+%-PositiveDescription\", \"+{0}% chance to catch Springfield while Fishing\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish19_+%-NegativeDescription\", \"-{0}% chance to catch Springfield while Fishing\")"
+        },
+        {
+            "Name": "BaseChanceToCatchFish20_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish20_+%-PositiveDescription\", \"+{0}% chance to catch Blinky while Fishing\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseChanceToCatchFish20_+%-NegativeDescription\", \"-{0}% chance to catch Blinky while Fishing\")"
         },
         {
             "Name": "CaughtFreshwaterFishQuality_+%",
@@ -10830,17 +10892,29 @@
         {
             "Name": "ExplosiveDamageRadius_+",
             "Title": "NSLOCTEXT(\"D_Stats\", \"ExplosiveDamageRadius_+-Title\", \"Explosive Damage Radius\")",
-            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
-            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ExplosiveDamageRadius_+-PositiveTitleFormat\", \"{0}m\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"ExplosiveDamageRadius_+-NegativeTitleFormat\", \"-{0}m\")",
             "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
             "StatCategory": {
                 "RowName": "Generic_Damage"
             }
         },
         {
             "Name": "BaseExplosiveDamageRadius_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExplosiveDamageRadius_+-PositiveDescription\", \"+{0} Explosive Damage Radius\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExplosiveDamageRadius_+-NegativeDescription\", \"-{0} Explosive Damage Radius\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExplosiveDamageRadius_+-PositiveDescription\", \"{0}m Explosive Damage Radius\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExplosiveDamageRadius_+-NegativeDescription\", \"-{0}m Explosive Damage Radius\")",
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 100
+                }
+            ],
             "StatCategory": {
                 "RowName": "Generic_Damage"
             }
@@ -12621,7 +12695,7 @@
         },
         {
             "Name": "FrostedFellChance_%",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"FrostedFellChance_%-Title\", \"Chance to drop Frosted Wood\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"FrostedFellChance_%-Title\", \"Chance to drop Frozen Wood\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "StatCategory": {
@@ -14348,6 +14422,7 @@
         {
             "Name": "ShouldHighlightNearbyCreatures_?",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"ShouldHighlightNearbyCreatures_?-PositiveDescription\", \"Highlight Nearby Creatures\")",
+            "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "AI"
             }
@@ -14407,6 +14482,7 @@
         {
             "Name": "IsNPCHighlighted_?",
             "Title": "NSLOCTEXT(\"D_Stats\", \"IsNPCHighlighted_?-Title\", \"Whether or not NPC is Currently Highlighted\")",
+            "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "AI"
             },
@@ -17751,6 +17827,7 @@
         {
             "Name": "IsNPCHighlightedBlue_?",
             "Title": "NSLOCTEXT(\"D_Stats\", \"IsNPCHighlightedBlue_?-Title\", \"Whether or not NPC is Currently Highlighted\")",
+            "bIsReplicated": true,
             "StatCategory": {
                 "RowName": "AI"
             },
@@ -18299,7 +18376,7 @@
         {
             "Name": "RadiationResistance_%",
             "Title": "NSLOCTEXT(\"D_Stats\", \"RadiationResistance_%-Title\", \"Radiation Resistance\")",
-            "Icon": "/Game/Assets/2DArt/UI/Icons/Icon_Radiation.Icon_Radiation",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/T_Icon_Radiation_Small.T_Icon_Radiation_Small",
             "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -21647,7 +21724,7 @@
         },
         {
             "Name": "WorldRadBossDecreasedLaserResistance_?",
-            "Title": "INVTEXT(\"[DNT] Rad Boss will have a Weakness to Lasers.\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadBossDecreasedLaserResistance_?-Title\", \"The Malformation will have a Greater Weakness to Lasers.\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -21657,7 +21734,7 @@
         },
         {
             "Name": "WorldRadBossDecreasedElectricResistance_?",
-            "Title": "INVTEXT(\"[DNT] Rad Boss will have a Weakness to Electricity.\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadBossDecreasedElectricResistance_?-Title\", \"The Malformation will have a Weakness to Electricity.\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -21667,7 +21744,7 @@
         },
         {
             "Name": "WorldRadioactiveCreaturesPhysicalVulnerability_?",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadioactiveCreaturesPhysicalVulnerability_?-Title\", \"3-Eyed Fish can now be caught in Irradiated Zones\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"WorldRadioactiveCreaturesPhysicalVulnerability_?-Title\", \"Radioactive Creatures have Decreased Physical Resistance\")",
             "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"{0}\")",
             "bIsWorldStat": true,
@@ -21903,6 +21980,10 @@
         },
         {
             "Name": "PreventRadiationSpread_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PreventRadiationSpread_?-Title\", \"Prevents Radiation from Spreading\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"{0}\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"PreventRadiationSpread_?-PositiveDescription\", \"Prevents Radiation from Spreading\")",
             "StatCategory": {
                 "RowName": "Item"
             }
@@ -21918,15 +21999,15 @@
         },
         {
             "Name": "BaseRadBossExtraDamage_+%",
-            "PositiveDescription": "INVTEXT(\"[DNT] +{0}% Damage vs Radiation Boss\")",
-            "NegativeDescription": "INVTEXT(\"[DNT] -{0}% Damage vs Radiation Boss\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRadBossExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Malformation \")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRadBossExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Malformation \")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "RadBossExtraDamage_+%",
-            "Title": "INVTEXT(\"[DNT] Damage vs Radiation Boss\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RadBossExtraDamage_+%-Title\", \"Damage vs Malformation \")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -21936,15 +22017,15 @@
         },
         {
             "Name": "BaseRadBossExtraDamageResistance_+%",
-            "PositiveDescription": "INVTEXT(\"[DNT] +{0}% Resistance vs Radiation Boss\")",
-            "NegativeDescription": "INVTEXT(\"[DNT] -{0}% Resistance vs Radiation Boss\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRadBossExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Malformation \")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseRadBossExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Malformation\")",
             "StatCategory": {
                 "RowName": "AI"
             }
         },
         {
             "Name": "RadBossExtraDamageResistance_+%",
-            "Title": "INVTEXT(\"[DNT] Resistance vs Radiation Boss\")",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"RadBossExtraDamageResistance_+%-Title\", \"Resistance vs Malformation \")",
             "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
             "bIsReplicated": true,
@@ -22067,6 +22148,153 @@
             "bShowStatOnModifiers": true
         },
         {
+            "Name": "BaseSettlementWoodProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWoodProduction_+-PositiveDescription\", \"+{0} Wood Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWoodProduction_+-NegativeDescription\", \"-{0} Wood Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementWoodProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWoodProduction_+%-PositiveDescription\", \"+{0}% Wood Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWoodProduction_+%-NegativeDescription\", \"-{0}% Wood Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementWoodProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementWoodProduction_+-Title\", \"Wood Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementStoneProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementStoneProduction_+-PositiveDescription\", \"+{0} Stone Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementStoneProduction_+-NegativeDescription\", \"-{0} Stone Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementStoneProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementStoneProduction_+%-PositiveDescription\", \"+{0}% Stone Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementStoneProduction_+%-NegativeDescription\", \"-{0}% Stone Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementStoneProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementStoneProduction_+-Title\", \"Stone Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementOxygenProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementOxygenProduction_+-PositiveDescription\", \"+{0}ml Oxygen Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementOxygenProduction_+-NegativeDescription\", \"-{0}ml Oxygen Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementOxygenProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementOxygenProduction_+%-PositiveDescription\", \"+{0}% Oxygen Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementOxygenProduction_+%-NegativeDescription\", \"-{0}% Oxygen Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementOxygenProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementOxygenProduction_+-Title\", \"Oxygen Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementWaterProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWaterProduction_+-PositiveDescription\", \"+{0}ml Water Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWaterProduction_+-NegativeDescription\", \"-{0}ml Water Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementWaterProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWaterProduction_+%-PositiveDescription\", \"+{0}% Water Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWaterProduction_+%-NegativeDescription\", \"-{0}% Water Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementWaterProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementWaterProduction_+-Title\", \"Water Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementFoodProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementFoodProduction_+-PositiveDescription\", \"+{0} Food Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementFoodProduction_+-NegativeDescription\", \"-{0} Food Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementFoodProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementFoodProduction_+%-PositiveDescription\", \"+{0}% Food Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementFoodProduction_+%-NegativeDescription\", \"-{0}% Food Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementFoodProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementFoodProduction_+-Title\", \"Food Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "SettlementWallType_Enum",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
             "Name": "BaseFistMeleeDamage_+%",
             "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFistMeleeDamage_+%-PositiveDescription\", \"+{0}% Melee Damage\")",
             "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseFistMeleeDamage_+%-NegativeDescription\", \"-{0}% Melee Damage\")",
@@ -22075,30 +22303,2216 @@
             }
         },
         {
-            "Name": "BaseProjectileWeightOverride_+",
-            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileWeightOverride_+-PositiveDescription\", \"+{0} Weight\")",
-            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileWeightOverride_+-NegativeDescription\", \"-{0} Weight\")",
+            "Name": "ProjectilePayloadDeployOnImpact_?",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ProjectilePayloadDeployOnImpact_?-Title\", \"Payload Deploys On Impact\")",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"ProjectilePayloadDeployOnImpact_?-PositiveDescription\", \"Payload Deploys On Impact\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
+            }
+        },
+        {
+            "Name": "BaseSettlementDefense_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementDefense_+-PositiveDescription\", \"+{0} Settlement Defense\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementDefense_+-NegativeDescription\", \"-{0} Settlement Defense\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementDefense_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementDefense_+-Title\", \"Settlement Defense\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementMetalProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMetalProduction_+-PositiveDescription\", \"+{0} Metal Refined per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMetalProduction_+-NegativeDescription\", \"-{0} Metal Refined per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementMetalProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMetalProduction_+%-PositiveDescription\", \"+{0}% Metal Refined per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMetalProduction_+%-NegativeDescription\", \"-{0}% Metal Refined per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementMetalProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementMetalProduction_+-Title\", \"Metal Refined per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementNailProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementNailProduction_+-PositiveDescription\", \"+{0} Nails Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementNailProduction_+-NegativeDescription\", \"-{0} Nails Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementNailProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementNailProduction_+%-PositiveDescription\", \"+{0}% Nails Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementNailProduction_+%-NegativeDescription\", \"-{0}% Nails Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementNailProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementNailProduction_+-Title\", \"Nails Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementPowerProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementPowerProduction_+-PositiveDescription\", \"+{0}kW Power Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementPowerProduction_+-NegativeDescription\", \"-{0}kW Power Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementPowerProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementPowerProduction_+%-PositiveDescription\", \"+{0}% Power Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementPowerProduction_+%-NegativeDescription\", \"-{0}% Power Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementPowerProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementPowerProduction_+-Title\", \"Power Produced per Hour\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SettlementPowerProduction_+-PositiveTitleFormat\", \"{0}kW\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SettlementPowerProduction_+-NegativeTitleFormat\", \"-{0}kW\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementPowerConsumption_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementPowerConsumption_+-PositiveDescription\", \"+{0}kW Power Consumed per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementPowerConsumption_+-NegativeDescription\", \"-{0}kW Power Consumed per Hour\")",
             "DisplayOperations": [
                 {
                     "Operation": "Division",
-                    "Value": 10000
+                    "Value": 1000
                 }
             ],
             "StatCategory": {
-                "RowName": "Weight"
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementPowerConsumption_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementPowerConsumption_+-Title\", \"Power Consumed per Hour\")",
+            "PositiveTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SettlementPowerConsumption_+-PositiveTitleFormat\", \"{0}kW\")",
+            "NegativeTitleFormat": "NSLOCTEXT(\"D_Stats\", \"SettlementPowerConsumption_+-NegativeTitleFormat\", \"-{0}kW\")",
+            "bIsReplicated": true,
+            "DisplayOperations": [
+                {
+                    "Operation": "Division",
+                    "Value": 1000
+                }
+            ],
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementMedicalCapacity_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMedicalCapacity_+-PositiveDescription\", \"+{0} Settlers Treated per Day\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMedicalCapacity_+-NegativeDescription\", \"-{0} Settlers Treated per Day\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementMedicalCapacity_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementMedicalCapacity_+-Title\", \"Settlers Treated per Day\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementSawmillProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementSawmillProduction_+-PositiveDescription\", \"+{0} Sawmill Production per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementSawmillProduction_+-NegativeDescription\", \"-{0} Sawmill Production per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementSawmillProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementSawmillProduction_+%-PositiveDescription\", \"+{0}% Sawmill Production per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementSawmillProduction_+%-NegativeDescription\", \"-{0}% Sawmill Production per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementSawmillProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementSawmillProduction_+-Title\", \"Sawmill Production per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementMineProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMineProduction_+-PositiveDescription\", \"+{0} Mine Production per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMineProduction_+-NegativeDescription\", \"-{0} Mine Production per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementMineProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMineProduction_+%-PositiveDescription\", \"+{0}% Mine Production per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMineProduction_+%-NegativeDescription\", \"-{0}% Mine Production per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementMineProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementMineProduction_+-Title\", \"Mine Production per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "ActiveSettlementSkill_Enum",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "SettlementWorkSpeed_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementWorkSpeed_+%-Title\", \"Work Speed\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementWorkSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWorkSpeed_+%-PositiveDescription\", \"+{0}% Work Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWorkSpeed_+%-NegativeDescription\", \"-{0}% Work Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementConstructionSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementConstructionSpeed_+%-PositiveDescription\", \"+{0}% Construction Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementConstructionSpeed_+%-NegativeDescription\", \"-{0}% Construction Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementMiningSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMiningSpeed_+%-PositiveDescription\", \"+{0}% Mining Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMiningSpeed_+%-NegativeDescription\", \"-{0}% Mining Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementForestrySpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementForestrySpeed_+%-PositiveDescription\", \"+{0}% Forestry Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementForestrySpeed_+%-NegativeDescription\", \"-{0}% Forestry Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementFarmingSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementFarmingSpeed_+%-PositiveDescription\", \"+{0}% Farming Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementFarmingSpeed_+%-NegativeDescription\", \"-{0}% Farming Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementCraftingSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementCraftingSpeed_+%-PositiveDescription\", \"+{0}% Settlement Crafting Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementCraftingSpeed_+%-NegativeDescription\", \"-{0}% Settlement Crafting Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementEngineeringSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementEngineeringSpeed_+%-PositiveDescription\", \"+{0}% Engineering Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementEngineeringSpeed_+%-NegativeDescription\", \"-{0}% Engineering Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementCookingSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementCookingSpeed_+%-PositiveDescription\", \"+{0}% Cooking Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementCookingSpeed_+%-NegativeDescription\", \"-{0}% Cooking Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementCombatSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementCombatSpeed_+%-PositiveDescription\", \"+{0}% Combat Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementCombatSpeed_+%-NegativeDescription\", \"-{0}% Combat Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementMedicineSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMedicineSpeed_+%-PositiveDescription\", \"+{0}% Medicine Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMedicineSpeed_+%-NegativeDescription\", \"-{0}% Medicine Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementLogisticsSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementLogisticsSpeed_+%-PositiveDescription\", \"+{0}% Logistics Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementLogisticsSpeed_+%-NegativeDescription\", \"-{0}% Logistics Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementLeadershipSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementLeadershipSpeed_+%-PositiveDescription\", \"+{0}% Leadership Speed\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementLeadershipSpeed_+%-NegativeDescription\", \"-{0}% Leadership Speed\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementTimberProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementTimberProduction_+-PositiveDescription\", \"+{0} Timber Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementTimberProduction_+-NegativeDescription\", \"-{0} Timber Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementTimberProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementTimberProduction_+%-PositiveDescription\", \"+{0}% Timber Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementTimberProduction_+%-NegativeDescription\", \"-{0}% Timber Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementTimberProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementTimberProduction_+-Title\", \"Timber Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementSlateProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementSlateProduction_+-PositiveDescription\", \"+{0} Slate Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementSlateProduction_+-NegativeDescription\", \"-{0} Slate Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementSlateProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementSlateProduction_+%-PositiveDescription\", \"+{0}% Slate Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementSlateProduction_+%-NegativeDescription\", \"-{0}% Slate Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementSlateProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementSlateProduction_+-Title\", \"Slate Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementProduceProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementProduceProduction_+-PositiveDescription\", \"+{0} Produce Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementProduceProduction_+-NegativeDescription\", \"-{0} Produce Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementProduceProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementProduceProduction_+%-PositiveDescription\", \"+{0}% Produce Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementProduceProduction_+%-NegativeDescription\", \"-{0}% Produce Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementProduceProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementProduceProduction_+-Title\", \"Produce Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementHerbProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHerbProduction_+-PositiveDescription\", \"+{0} Herbs Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHerbProduction_+-NegativeDescription\", \"-{0} Herbs Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementHerbProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHerbProduction_+%-PositiveDescription\", \"+{0}% Herbs Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHerbProduction_+%-NegativeDescription\", \"-{0}% Herbs Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementHerbProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementHerbProduction_+-Title\", \"Herbs Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementMetalworkProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMetalworkProduction_+-PositiveDescription\", \"+{0} Metalwork Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMetalworkProduction_+-NegativeDescription\", \"-{0} Metalwork Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementMetalworkProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMetalworkProduction_+%-PositiveDescription\", \"+{0}% Metalwork Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMetalworkProduction_+%-NegativeDescription\", \"-{0}% Metalwork Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementMetalworkProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementMetalworkProduction_+-Title\", \"Metalwork Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementMortarProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMortarProduction_+-PositiveDescription\", \"+{0} Mortar Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMortarProduction_+-NegativeDescription\", \"-{0} Mortar Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementMortarProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMortarProduction_+%-PositiveDescription\", \"+{0}% Mortar Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMortarProduction_+%-NegativeDescription\", \"-{0}% Mortar Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementMortarProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementMortarProduction_+-Title\", \"Mortar Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementWoodworkProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWoodworkProduction_+-PositiveDescription\", \"+{0} Woodwork Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWoodworkProduction_+-NegativeDescription\", \"-{0} Woodwork Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementWoodworkProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWoodworkProduction_+%-PositiveDescription\", \"+{0}% Woodwork Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementWoodworkProduction_+%-NegativeDescription\", \"-{0}% Woodwork Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementWoodworkProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementWoodworkProduction_+-Title\", \"Woodwork Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementHardwareProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHardwareProduction_+-PositiveDescription\", \"+{0} Hardware Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHardwareProduction_+-NegativeDescription\", \"-{0} Hardware Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementHardwareProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHardwareProduction_+%-PositiveDescription\", \"+{0}% Hardware Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHardwareProduction_+%-NegativeDescription\", \"-{0}% Hardware Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementHardwareProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementHardwareProduction_+-Title\", \"Hardware Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementMedicineProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMedicineProduction_+-PositiveDescription\", \"+{0} Medicine Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMedicineProduction_+-NegativeDescription\", \"-{0} Medicine Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementMedicineProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMedicineProduction_+%-PositiveDescription\", \"+{0}% Medicine Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMedicineProduction_+%-NegativeDescription\", \"-{0}% Medicine Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementMedicineProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementMedicineProduction_+-Title\", \"Medicine Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementRationProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementRationProduction_+-PositiveDescription\", \"+{0} Rations Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementRationProduction_+-NegativeDescription\", \"-{0} Rations Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementRationProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementRationProduction_+%-PositiveDescription\", \"+{0}% Rations Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementRationProduction_+%-NegativeDescription\", \"-{0}% Rations Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementRationProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementRationProduction_+-Title\", \"Rations Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementAssemblyProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAssemblyProduction_+-PositiveDescription\", \"+{0} Assemblies Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAssemblyProduction_+-NegativeDescription\", \"-{0} Assemblies Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementAssemblyProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAssemblyProduction_+%-PositiveDescription\", \"+{0}% Assemblies Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAssemblyProduction_+%-NegativeDescription\", \"-{0}% Assemblies Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementAssemblyProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementAssemblyProduction_+-Title\", \"Assemblies Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementLubricantProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementLubricantProduction_+-PositiveDescription\", \"+{0} Lubricant Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementLubricantProduction_+-NegativeDescription\", \"-{0} Lubricant Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementLubricantProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementLubricantProduction_+%-PositiveDescription\", \"+{0}% Lubricant Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementLubricantProduction_+%-NegativeDescription\", \"-{0}% Lubricant Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementLubricantProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementLubricantProduction_+-Title\", \"Lubricant Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementPharmaceuticalProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementPharmaceuticalProduction_+-PositiveDescription\", \"+{0} Pharmaceuticals Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementPharmaceuticalProduction_+-NegativeDescription\", \"-{0} Pharmaceuticals Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementPharmaceuticalProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementPharmaceuticalProduction_+%-PositiveDescription\", \"+{0}% Pharmaceuticals Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementPharmaceuticalProduction_+%-NegativeDescription\", \"-{0}% Pharmaceuticals Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementPharmaceuticalProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementPharmaceuticalProduction_+-Title\", \"Pharmaceuticals Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementCuisineProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementCuisineProduction_+-PositiveDescription\", \"+{0} Cuisine Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementCuisineProduction_+-NegativeDescription\", \"-{0} Cuisine Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementCuisineProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementCuisineProduction_+%-PositiveDescription\", \"+{0}% Cuisine Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementCuisineProduction_+%-NegativeDescription\", \"-{0}% Cuisine Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementCuisineProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementCuisineProduction_+-Title\", \"Cuisine Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementMicrochipProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMicrochipProduction_+-PositiveDescription\", \"+{0} Microchips Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMicrochipProduction_+-NegativeDescription\", \"-{0} Microchips Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementMicrochipProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMicrochipProduction_+%-PositiveDescription\", \"+{0}% Microchips Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementMicrochipProduction_+%-NegativeDescription\", \"-{0}% Microchips Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementMicrochipProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementMicrochipProduction_+-Title\", \"Microchips Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementBiofuelProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementBiofuelProduction_+-PositiveDescription\", \"+{0} Biofuel Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementBiofuelProduction_+-NegativeDescription\", \"-{0} Biofuel Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementBiofuelProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementBiofuelProduction_+%-PositiveDescription\", \"+{0}% Biofuel Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementBiofuelProduction_+%-NegativeDescription\", \"-{0}% Biofuel Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementBiofuelProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementBiofuelProduction_+-Title\", \"Biofuel Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementOilProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementOilProduction_+-PositiveDescription\", \"+{0} Oil Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementOilProduction_+-NegativeDescription\", \"-{0} Oil Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementOilProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementOilProduction_+%-PositiveDescription\", \"+{0}% Oil Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementOilProduction_+%-NegativeDescription\", \"-{0}% Oil Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementOilProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementOilProduction_+-Title\", \"Oil Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementHuntingProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHuntingProduction_+-PositiveDescription\", \"+{0} Game Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHuntingProduction_+-NegativeDescription\", \"-{0} Game Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementHuntingProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHuntingProduction_+%-PositiveDescription\", \"+{0}% Game Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHuntingProduction_+%-NegativeDescription\", \"-{0}% Game Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementHuntingProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementHuntingProduction_+-Title\", \"Game Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementAnimalProductProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAnimalProductProduction_+-PositiveDescription\", \"+{0} Animal Products Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAnimalProductProduction_+-NegativeDescription\", \"-{0} Animal Products Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementAnimalProductProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAnimalProductProduction_+%-PositiveDescription\", \"+{0}% Animal Products Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAnimalProductProduction_+%-NegativeDescription\", \"-{0}% Animal Products Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementAnimalProductProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementAnimalProductProduction_+-Title\", \"Animal Products Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementAlloyProduction_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAlloyProduction_+-PositiveDescription\", \"+{0} Alloys Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAlloyProduction_+-NegativeDescription\", \"-{0} Alloys Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "BaseSettlementAlloyProduction_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAlloyProduction_+%-PositiveDescription\", \"+{0}% Alloys Produced per Hour\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementAlloyProduction_+%-NegativeDescription\", \"-{0}% Alloys Produced per Hour\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementAlloyProduction_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementAlloyProduction_+-Title\", \"Alloys Produced per Hour\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "BaseSettlementHousing_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHousing_+-PositiveDescription\", \"+{0} Settler Housing\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSettlementHousing_+-NegativeDescription\", \"-{0} Settler Housing\")",
+            "StatCategory": {
+                "RowName": "Settlement"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "SettlementHousing_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SettlementHousing_+-Title\", \"Settler Housing\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Settlement"
+            }
+        },
+        {
+            "Name": "DontSpawnDeployableOverflowBag_?",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Item"
             },
             "bHideStatInUserInterface": true
         },
         {
-            "Name": "ProjectileWeightOverride_+",
-            "Title": "NSLOCTEXT(\"D_Stats\", \"ProjectileWeightOverride_+-Title\", \"Projectile Weight\")",
-            "PositiveTitleFormat": "INVTEXT(\"+{0}\")",
+            "Name": "CrabCoastalExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CrabCoastalExtraDamage_+%-Title\", \"Damage vs Crab\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCrabCoastalExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCrabCoastalExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Spider\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCrabCoastalExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Spider\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CrabCoastalExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CrabCoastalExtraDamageResistance_+%-Title\", \"Resistance vs Crab\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCrabCoastalExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCrabCoastalExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Spider\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCrabCoastalExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Spider\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "TurtleDuckExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TurtleDuckExtraDamage_+%-Title\", \"Damage vs Turtle Duck\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseTurtleDuckExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurtleDuckExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Spider\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurtleDuckExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Spider\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "TurtleDuckExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TurtleDuckExtraDamageResistance_+%-Title\", \"Resistance vs Turtle Duck\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseTurtleDuckExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurtleDuckExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Spider\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurtleDuckExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Spider\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BirdCoastalExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BirdCoastalExtraDamage_+%-Title\", \"Damage vs Turtle Duck\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseBirdCoastalExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBirdCoastalExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Spider\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBirdCoastalExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Spider\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BirdCoastalExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BirdCoastalExtraDamageResistance_+%-Title\", \"Resistance vs Turtle Duck\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseBirdCoastalExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBirdCoastalExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Spider\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBirdCoastalExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Spider\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseDinoLargeSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "DinoLargeSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "DinoLargeExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"DinoLargeExtraDamage_+%-Title\", \"Damage vs Dino\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseDinoLargeExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDinoLargeExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Dino\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDinoLargeExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Dino\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "DinoLargeExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"DinoLargeExtraDamageResistance_+%-Title\", \"Resistance vs Dino\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseDinoLargeExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDinoLargeExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Dino\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseDinoLargeExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Dino\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseBeaverSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BeaverSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BeaverExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BeaverExtraDamage_+%-Title\", \"Damage vs Beaver\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseBeaverExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBeaverExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Beaver\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBeaverExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Beaver\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BeaverExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"BeaverExtraDamageResistance_+%-Title\", \"Resistance vs Beaver\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseBeaverExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBeaverExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Beaver\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseBeaverExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Beaver\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GiantTurtleSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseGiantTurtleSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "GiantTurtleExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GiantTurtleExtraDamage_+%-Title\", \"Damage vs Giant Turtle\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseGiantTurtleExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGiantTurtleExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Giant Turtle\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGiantTurtleExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Giant Turtle\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GiantTurtleExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GiantTurtleExtraDamageResistance_+%-Title\", \"Resistance vs Giant Turtle\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseGiantTurtleExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGiantTurtleExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Giant Turtle\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGiantTurtleExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Giant Turtle\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "TurtleFishSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseTurtleFishSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "TurtleFishExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TurtleFishExtraDamage_+%-Title\", \"Damage vs Turtle Fish\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseTurtleFishExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurtleFishExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Turtle Fish\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurtleFishExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Turtle Fish\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "TurtleFishExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TurtleFishExtraDamageResistance_+%-Title\", \"Resistance vs Turtle Fish\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseTurtleFishExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurtleFishExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Turtle Fish\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTurtleFishExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Turtle Fish\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseProjectileLaunchForce_+",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileLaunchForce_+-PositiveDescription\", \"+{0} Launch Force\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileLaunchForce_+-NegativeDescription\", \"-{0} Launch Force\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bHideStatInUserInterface": true
+        },
+        {
+            "Name": "BaseProjectileLaunchForce_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileLaunchForce_+%-PositiveDescription\", \"+{0}% Launch Force\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseProjectileLaunchForce_+%-NegativeDescription\", \"-{0}% Launch Force\")",
+            "StatCategory": {
+                "RowName": "Ranged_Weapon"
+            },
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "ProjectileLaunchForce_+",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ProjectileLaunchForce_+-Title\", \"Launch Force\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
             "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
             "bIsReplicated": true,
             "StatCategory": {
-                "RowName": "Weight"
+                "RowName": "Ranged_Weapon"
+            }
+        },
+        {
+            "Name": "SlinkerJungleSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseSlinkerJungleSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "SlinkerJungleExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SlinkerJungleExtraDamage_+%-Title\", \"Damage vs Jungle Slinker\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseSlinkerJungleExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSlinkerJungleExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Slinker\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSlinkerJungleExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Slinker\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "SlinkerJungleExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"SlinkerJungleExtraDamageResistance_+%-Title\", \"Resistance vs Jungle Slinker\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseSlinkerJungleExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSlinkerJungleExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Slinker\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseSlinkerJungleExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Slinker\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CentipedeSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseCentipedeSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "CentipedeExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CentipedeExtraDamage_+%-Title\", \"Damage vs Centipede\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCentipedeExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCentipedeExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Centipede\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCentipedeExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Centipede\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CentipedeExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CentipedeExtraDamageResistance_+%-Title\", \"Resistance vs Centipede\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCentipedeExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCentipedeExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Centipede\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCentipedeExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Centipede\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseStorcaJungleSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "StorcaJungleSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseStorcaJungleExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStorcaJungleExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Storca\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStorcaJungleExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Storca\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "StorcaJungleExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"StorcaJungleExtraDamage_+%-Title\", \"Damage vs Jungle Storca\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseStorcaJungleExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStorcaJungleExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Storca\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseStorcaJungleExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Storca\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "StorcaJungleExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"StorcaJungleExtraDamageResistance_+%-Title\", \"Resistance vs Jungle Storca\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseExplosiveDamageAgainstBuildings_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExplosiveDamageAgainstBuildings_+%-PositiveDescription\", \"+{0}% Explosive Damage versus Buildings\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseExplosiveDamageAgainstBuildings_+%-NegativeDescription\", \"-{0}% Explosive Damage versus Buildings\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseJungleHunterSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "JungleHunterSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "JungleHunterExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"JungleHunterExtraDamage_+%-Title\", \"Damage vs Jungle Hunter\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseJungleHunterExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleHunterExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Jungle Hunter\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleHunterExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Jungle Hunter\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "JungleHunterExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"JungleHunterExtraDamageResistance_+%-Title\", \"Resistance vs Jungle Hunter\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseJungleHunterExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleHunterExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Jungle Hunter\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleHunterExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Jungle Hunter\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseElegantHorseSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "ElegantHorseSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "ElegantHorseExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ElegantHorseExtraDamage_+%-Title\", \"Damage vs Elegant Horse\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseElegantHorseExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseElegantHorseExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Elegant Horse\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseElegantHorseExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Elegant Horse\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "ElegantHorseExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"ElegantHorseExtraDamageResistance_+%-Title\", \"Resistance vs Elegant Horse\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseElegantHorseExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseElegantHorseExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Elegant Horse\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseElegantHorseExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Elegant Horse\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseJungleMonkeySpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "JungleMonkeySpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseJungleMonkeyExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleMonkeyExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Jungle Monkey\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleMonkeyExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Jungle Monkey\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "JungleMonkeyExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"JungleMonkeyExtraDamage_+%-Title\", \"Damage vs Jungle Monkey\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseJungleMonkeyExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleMonkeyExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Jungle Monkey\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleMonkeyExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Jungle Monkey\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "JungleMonkeyExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"JungleMonkeyExtraDamageResistance_+%-Title\", \"Resistance vs Jungle Monkey\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseTropicalBirdExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTropicalBirdExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Tropical Bird\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTropicalBirdExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Tropical Bird\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "TropicalBirdExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TropicalBirdExtraDamage_+%-Title\", \"Damage vs Tropical Bird\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseTropicalBirdExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTropicalBirdExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Tropical Bird\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseTropicalBirdExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Tropical Bird\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "TropicalBirdExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"TropicalBirdExtraDamageResistance_+%-Title\", \"Resistance vs Tropical Bird\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GiantBeetleSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseGiantBeetleSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "GiantBeetleExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GiantBeetleExtraDamage_+%-Title\", \"Damage vs Giant Beetle\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseGiantBeetleExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGiantBeetleExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Ravager\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGiantBeetleExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Ravager\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GiantBeetleExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GiantBeetleExtraDamageResistance_+%-Title\", \"Resistance vs Giant Beetle\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseGiantBeetleExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGiantBeetleExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Ravager\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGiantBeetleExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Ravager\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseJungleExposureResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleExposureResistance_+%-PositiveDescription\", \"+{0}% Jungle Exposure Resistance\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleExposureResistance_+%-NegativeDescription\", \"-{0}% Jungle Exposure Resistance\")",
+            "StatCategory": {
+                "RowName": "Weather"
+            }
+        },
+        {
+            "Name": "BaseJungleHeatResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleHeatResistance_+%-PositiveDescription\", \"+{0}% Heat Resistance in the Jungle\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleHeatResistance_+%-NegativeDescription\", \"-{0}% Heat Resistance in the Jungle\")",
+            "StatCategory": {
+                "RowName": "Temperature"
+            }
+        },
+        {
+            "Name": "BaseJungleColdResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleColdResistance_+%-PositiveDescription\", \"+{0}% Cold Resistance in the Jungle\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleColdResistance_+%-NegativeDescription\", \"-{0}% Cold Resistance in the Jungle\")",
+            "StatCategory": {
+                "RowName": "Health"
+            }
+        },
+        {
+            "Name": "BaseJungleHealthRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleHealthRegen_+%-PositiveDescription\", \"+{0}% Health Regeneration in the Jungle\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleHealthRegen_+%-NegativeDescription\", \"-{0}% Health Regeneration in the Jungle\")",
+            "StatCategory": {
+                "RowName": "Health"
+            }
+        },
+        {
+            "Name": "BaseJungleStaminaRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleStaminaRegen_+%-PositiveDescription\", \"+{0}% Jungle Stamina Regeneration\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleStaminaRegen_+%-NegativeDescription\", \"-{0}% Jungle Stamina Regeneration\")",
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "BaseJungleAnimalThreatModifier_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleAnimalThreatModifier_+%-PositiveDescription\", \"+{0}% Perceived Threat in the Jungle biome\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleAnimalThreatModifier_+%-NegativeDescription\", \"-{0}% Perceived Threat in the Jungle biome\")",
+            "StatCategory": {
+                "RowName": "Stealth"
+            }
+        },
+        {
+            "Name": "BaseJungleFoodConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleFoodConsumption_+%-PositiveDescription\", \"+{0}% Food Consumption in the Jungle biome\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleFoodConsumption_+%-NegativeDescription\", \"-{0}% Food Consumption in the Jungle biome\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseJungleWaterConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleWaterConsumption_+%-PositiveDescription\", \"+{0}% Water Consumed in the Jungle biome\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleWaterConsumption_+%-NegativeDescription\", \"-{0}% Water Consumed in the Jungle biome\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseJungleOxygenConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleOxygenConsumption_+%-PositiveDescription\", \"+{0}% Oxygen Consumption in the Jungle biome\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleOxygenConsumption_+%-NegativeDescription\", \"-{0}% Oxygen Consumption in the Jungle biome\")",
+            "StatCategory": {
+                "RowName": "Character"
+            }
+        },
+        {
+            "Name": "BaseJungleMovementSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleMovementSpeed_+%-PositiveDescription\", \"+{0}% Movement Speed in the Jungle biome\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseJungleMovementSpeed_+%-NegativeDescription\", \"-{0}% Movement Speed in the Jungle biome\")",
+            "StatCategory": {
+                "RowName": "Movement"
+            }
+        },
+        {
+            "Name": "PlantMinionRangedExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PlantMinionRangedExtraDamage_+%-Title\", \"Damage vs Plant Minion Ranged\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BasePlantMinionRangedExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionRangedExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Plant Minion Ranged\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionRangedExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Plant Minion Ranged\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "PlantMinionRangedExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PlantMinionRangedExtraDamageResistance_+%-Title\", \"Resistance vs Plant Minion Ranged\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BasePlantMinionRangedExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionRangedExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Plant Minion Ranged\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionRangedExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Plant Minion Ranged\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCoastalExposureResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalExposureResistance_+%-PositiveDescription\", \"+{0}% Coastal Exposure Resistance\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalExposureResistance_+%-NegativeDescription\", \"-{0}% Coastal Exposure Resistance\")",
+            "StatCategory": {
+                "RowName": "Weather"
+            }
+        },
+        {
+            "Name": "BaseCoastalHeatResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalHeatResistance_+%-PositiveDescription\", \"+{0}% Heat Resistance on the Coast\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalHeatResistance_+%-NegativeDescription\", \"-{0}% Heat Resistance on the Coast\")",
+            "StatCategory": {
+                "RowName": "Temperature"
+            }
+        },
+        {
+            "Name": "BaseCoastalColdResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalColdResistance_+%-PositiveDescription\", \"+{0}% Cold Resistance on the Coast\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalColdResistance_+%-NegativeDescription\", \"-{0}% Cold Resistance on the Coast\")",
+            "StatCategory": {
+                "RowName": "Health"
+            }
+        },
+        {
+            "Name": "BaseCoastalHealthRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalHealthRegen_+%-PositiveDescription\", \"+{0}% Health Regeneration on the Coast\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalHealthRegen_+%-NegativeDescription\", \"-{0}% Health Regeneration on the Coast\")",
+            "StatCategory": {
+                "RowName": "Health"
+            }
+        },
+        {
+            "Name": "BaseCoastalStaminaRegen_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalStaminaRegen_+%-PositiveDescription\", \"+{0}% Coastal Stamina Regeneration\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalStaminaRegen_+%-NegativeDescription\", \"-{0}% Coastal Stamina Regeneration\")",
+            "StatCategory": {
+                "RowName": "Stamina"
+            }
+        },
+        {
+            "Name": "BaseCoastalAnimalThreatModifier_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalAnimalThreatModifier_+%-PositiveDescription\", \"+{0}% Perceived Threat in the Coastal biome\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalAnimalThreatModifier_+%-NegativeDescription\", \"-{0}% Perceived Threat in the Coastal biome\")",
+            "StatCategory": {
+                "RowName": "Stealth"
+            }
+        },
+        {
+            "Name": "BaseCoastalFoodConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalFoodConsumption_+%-PositiveDescription\", \"+{0}% Food Consumption in the Coastal biome\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalFoodConsumption_+%-NegativeDescription\", \"-{0}% Food Consumption in the Coastal biome\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseCoastalWaterConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalWaterConsumption_+%-PositiveDescription\", \"+{0}% Water Consumed on the Coast\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalWaterConsumption_+%-NegativeDescription\", \"-{0}% Water Consumed on the Coast\")",
+            "StatCategory": {
+                "RowName": "Consumption"
+            }
+        },
+        {
+            "Name": "BaseCoastalOxygenConsumption_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalOxygenConsumption_+%-PositiveDescription\", \"+{0}% Oxygen Consumption in the Coastal biome\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalOxygenConsumption_+%-NegativeDescription\", \"-{0}% Oxygen Consumption in the Coastal biome\")",
+            "StatCategory": {
+                "RowName": "Character"
+            }
+        },
+        {
+            "Name": "BaseCoastalMovementSpeed_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalMovementSpeed_+%-PositiveDescription\", \"+{0}% Movement Speed on the Coast\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCoastalMovementSpeed_+%-NegativeDescription\", \"-{0}% Movement Speed on the Coast\")",
+            "StatCategory": {
+                "RowName": "Movement"
+            }
+        },
+        {
+            "Name": "PlantMinionSporeExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PlantMinionSporeExtraDamage_+%-Title\", \"Damage vs Plant Minion Spore\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BasePlantMinionSporeExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionSporeExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Plant Minion Spore\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionSporeExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Plant Minion Spore\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "PlantMinionSporeExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PlantMinionSporeExtraDamageResistance_+%-Title\", \"Resistance vs Plant Minion Spore\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BasePlantMinionSporeExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionSporeExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Plant Minion Spore\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionSporeExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Plant Minion Spore\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "PlantMinionMeleeExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PlantMinionMeleeExtraDamage_+%-Title\", \"Damage vs Plant Minion Melee\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BasePlantMinionMeleeExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionMeleeExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Plant Minion Melee\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionMeleeExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Plant Minion Melee\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "PlantMinionMeleeExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PlantMinionMeleeExtraDamageResistance_+%-Title\", \"Resistance vs Plant Minion Melee\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BasePlantMinionMeleeExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionMeleeExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Plant Minion Melee\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionMeleeExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Plant Minion Melee\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BasePlantMinionEliteSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "PlantMinionEliteSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "PlantMinionEliteExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PlantMinionEliteExtraDamage_+%-Title\", \"Damage vs Plant Minion Elite\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BasePlantMinionEliteExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionEliteExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Plant Minion Elite\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionEliteExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Plant Minion Elite\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "PlantMinionEliteExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"PlantMinionEliteExtraDamageResistance_+%-Title\", \"Resistance vs Plant Minion Elite\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BasePlantMinionEliteExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionEliteExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Plant Minion Elite\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BasePlantMinionEliteExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Plant Minion Elite\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "AxolotlSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseAxolotlSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "AxolotlExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AxolotlExtraDamage_+%-Title\", \"Damage vs Axolotl\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseAxolotlExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAxolotlExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Axolotl\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAxolotlExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Axolotl\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "AxolotlExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AxolotlExtraDamageResistance_+%-Title\", \"Resistance vs Axolotl\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseAxolotlExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAxolotlExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Axolotl\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAxolotlExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Axolotl\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CrawlerSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseCrawlerSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "CrawlerExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CrawlerExtraDamage_+%-Title\", \"Damage vs Crawler\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCrawlerExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCrawlerExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Crawler\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCrawlerExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Crawler\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "CrawlerExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"CrawlerExtraDamageResistance_+%-Title\", \"Resistance vs Crawler\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseCrawlerExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCrawlerExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Crawler\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseCrawlerExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Crawler\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GroundDragonSpawnRate_+%",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "BaseGroundDragonSpawnRate_+%",
+            "StatCategory": {
+                "RowName": "AI_Spawning"
+            }
+        },
+        {
+            "Name": "GroundDragonExtraDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GroundDragonExtraDamage_+%-Title\", \"Damage vs Ground Dragon\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseGroundDragonExtraDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGroundDragonExtraDamage_+%-PositiveDescription\", \"+{0}% Damage vs Ground Dragon\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGroundDragonExtraDamage_+%-NegativeDescription\", \"-{0}% Damage vs Ground Dragon\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "GroundDragonExtraDamageResistance_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"GroundDragonExtraDamageResistance_+%-Title\", \"Resistance vs Ground Dragon\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "BaseGroundDragonExtraDamageResistance_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGroundDragonExtraDamageResistance_+%-PositiveDescription\", \"+{0}% Resistance vs Ground Dragon\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseGroundDragonExtraDamageResistance_+%-NegativeDescription\", \"-{0}% Resistance vs Ground Dragon\")",
+            "StatCategory": {
+                "RowName": "AI"
+            }
+        },
+        {
+            "Name": "NightFellingRewards_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"NightFellingRewards_+%-Title\", \"Felling Yield at Night\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Felling"
+            }
+        },
+        {
+            "Name": "BaseNightFellingRewards_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseNightFellingRewards_+%-PositiveDescription\", \"{0}% Yield from Felling Trees at Night\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseNightFellingRewards_+%-NegativeDescription\", \"-{0}% Yield from Felling Trees at Night\")",
+            "StatCategory": {
+                "RowName": "Felling"
+            }
+        },
+        {
+            "Name": "NightMiningRewards_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"NightMiningRewards_+%-Title\", \"Mining Yield at Night\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Mining"
+            }
+        },
+        {
+            "Name": "BaseNightMiningRewards_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseNightMiningRewards_+%-PositiveDescription\", \"{0}% Yield from Mining at Night\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseNightMiningRewards_+%-NegativeDescription\", \"-{0}% Yield from Mining at Night\")",
+            "StatCategory": {
+                "RowName": "Felling"
+            }
+        },
+        {
+            "Name": "NightMeleeDamage_+%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"NightMeleeDamage_+%-Title\", \"Melee Damage at Night\")",
+            "PositiveTitleFormat": "INVTEXT(\"{0}\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
+            }
+        },
+        {
+            "Name": "BaseNightMeleeDamage_+%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseNightMeleeDamage_+%-PositiveDescription\", \"+{0}% Melee Damage at Night\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseNightMeleeDamage_+%-NegativeDescription\", \"-{0} Melee Damage at Night\")",
+            "StatCategory": {
+                "RowName": "Melee_Weapon"
             },
-            "bHideStatInUserInterface": true
+            "bHideStatInUserInterface": true,
+            "bShowStatOnModifiers": true
+        },
+        {
+            "Name": "GrantedAuraKiwi_?",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"GrantedAuraKiwi_?-PositiveDescription\", \"Provides Nearby Players with increased Felling and Mining Yield at Night\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Modifiers"
+            }
+        },
+        {
+            "Name": "BaseAuraEffectiveness_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAuraEffectiveness_%-PositiveDescription\", \"+{0}% Aura Effectiveness\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseAuraEffectiveness_%-NegativeDescription\", \"-{0}% Aura Effectiveness\")",
+            "StatCategory": {
+                "RowName": "Deployable"
+            }
+        },
+        {
+            "Name": "AuraEffectiveness_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"AuraEffectiveness_%-Title\", \"Aura Effectiveness\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Deployable"
+            }
+        },
+        {
+            "Name": "BaseKiwiAuraEffectiveness_%",
+            "PositiveDescription": "NSLOCTEXT(\"D_Stats\", \"BaseKiwiAuraEffectiveness_%-PositiveDescription\", \"+{0}% Night Yields Aura Effectiveness\")",
+            "NegativeDescription": "NSLOCTEXT(\"D_Stats\", \"BaseKiwiAuraEffectiveness_%-NegativeDescription\", \"-{0}% Night Yields Aura Effectiveness\")",
+            "StatCategory": {
+                "RowName": "Deployable"
+            }
+        },
+        {
+            "Name": "KiwiAuraEffectiveness_%",
+            "Title": "NSLOCTEXT(\"D_Stats\", \"KiwiAuraEffectiveness_%-Title\", \"Night Yields Aura Effectiveness\")",
+            "PositiveTitleFormat": "INVTEXT(\"+{0}%\")",
+            "NegativeTitleFormat": "INVTEXT(\"-{0}%\")",
+            "bIsReplicated": true,
+            "StatCategory": {
+                "RowName": "Deployable"
+            }
         }
     ]
 }

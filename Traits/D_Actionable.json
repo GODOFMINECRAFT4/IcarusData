@@ -3600,6 +3600,32 @@
             }
         },
         {
+            "Name": "Settlement_PathPlace",
+            "ActionMapping": {
+                "(RowName=\"Settlement_PathPlace\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Secondary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Reload": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
+        },
+        {
             "Name": "T4_Launcher",
             "ActionMapping": {
                 "(RowName=\"Weapon_Launcher\",DataTableName=\"D_Actions\")": {
@@ -3627,6 +3653,128 @@
                     }
                 },
                 "(RowName=\"Weapon_RoundFeed\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Reload": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
+        },
+        {
+            "Name": "Legendary_Launcher",
+            "ActionMapping": {
+                "(RowName=\"Weapon_Launcher\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                },
+                "(RowName=\"Weapon_Generic_Aim\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Secondary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                },
+                "(RowName=\"Weapon_RoundFeed\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Reload": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            },
+            "bUseClientPrediction": true
+        },
+        {
+            "Name": "Animal_Virus",
+            "ActionMapping": {
+                "(RowName=\"Inject_FEV\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            }
+        },
+        {
+            "Name": "DNA_Serum",
+            "ActionMapping": {
+                "(RowName=\"Inject_Serum\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        },
+                        "Secondary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                }
+            }
+        },
+        {
+            "Name": "T2_Launcher",
+            "ActionMapping": {
+                "(RowName=\"Weapon_Launcher_T2\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Primary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                },
+                "(RowName=\"Weapon_Generic_Aim\",DataTableName=\"D_Actions\")": {
+                    "InputTypes": {
+                        "Secondary": {
+                            "RowName": "None",
+                            "DataTableName": "D_StaminaActionCosts"
+                        }
+                    },
+                    "ModifierState": {
+                        "RowName": "None",
+                        "DataTableName": "D_ModifierStates"
+                    }
+                },
+                "(RowName=\"Weapon_Magazine\",DataTableName=\"D_Actions\")": {
                     "InputTypes": {
                         "Reload": {
                             "RowName": "None",

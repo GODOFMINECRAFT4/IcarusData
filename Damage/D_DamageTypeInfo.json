@@ -280,7 +280,18 @@
             },
             "ResistanceStat": {
                 "Value": "ExplosiveDamageResistance_%"
-            }
+            },
+            "DefenderMultipliers": [
+                {
+                    "Tag": {
+                        "RowName": "Any_Building",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Stat": {
+                        "Value": "BaseExplosiveDamageAgainstBuildings_+%"
+                    }
+                }
+            ]
         },
         {
             "Name": "Wind",

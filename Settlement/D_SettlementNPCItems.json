@@ -1,0 +1,212 @@
+{
+    "RowStruct": "/Script/Icarus.SettlementNPCItemData",
+    "Defaults": {
+        "DisplayName": "",
+        "StaticMesh": "None",
+        "SkeletalMesh": "None",
+        "AnimBlueprint": "None",
+        "MaterialOverrides": [],
+        "EquipMontage": "None",
+        "UnequipMontage": "None",
+        "AttachSocket": "None",
+        "AttachmentOffset": {
+            "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0,
+                "W": 1
+            },
+            "Translation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+            },
+            "Scale3D": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+            }
+        },
+        "WeaponConfig": {
+            "RowName": "None",
+            "DataTableName": "D_NPCWeapon"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "Crate",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCItems\", \"Crate-DisplayName\", \"Cargo Crate\")",
+            "SkeletalMesh": "/Game/ASS/DEP/DM_DEP_Crate_Lead_Lined_SML.DM_DEP_Crate_Lead_Lined_SML",
+            "AttachSocket": "RifleAttach",
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": 0.5788025259971619,
+                    "Y": -0.22217410802841187,
+                    "Z": 0.671296238899231,
+                    "W": 0.40618687868118286
+                },
+                "Translation": {
+                    "X": 14,
+                    "Y": 6,
+                    "Z": 0.6433089971542358
+                },
+                "Scale3D": {
+                    "X": 0.4424999952316284,
+                    "Y": 0.4424999952316284,
+                    "Z": 0.4424999952316284
+                }
+            }
+        },
+        {
+            "Name": "Pickaxe",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCItems\", \"Pickaxe-DisplayName\", \"Pickaxe\")",
+            "SkeletalMesh": "/Game/ASS/WEP/SK_PIC_Metal_01.SK_PIC_Metal_01",
+            "AttachSocket": "hand_l",
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": -0.9778872728347778,
+                    "Y": -0.17365512251853943,
+                    "Z": -0.09350147843360901,
+                    "W": 0.06955385953187943
+                },
+                "Translation": {
+                    "X": 12.151782989501953,
+                    "Y": -2.2928240299224854,
+                    "Z": -9.8844575881958
+                },
+                "Scale3D": {
+                    "X": 1.2000000476837158,
+                    "Y": 1.2000000476837158,
+                    "Z": 1.2000000476837158
+                }
+            }
+        },
+        {
+            "Name": "Hammer",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCItems\", \"Hammer-DisplayName\", \"Hammer\")",
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_Hammer_Iron.SK_ITM_Hammer_Iron",
+            "AttachSocket": "hand_r",
+            "AttachmentOffset": {
+                "Rotation": {
+                    "Z": 0.9999998807907104,
+                    "W": -1.1920928955078125e-07
+                },
+                "Translation": {
+                    "X": -12,
+                    "Y": 5,
+                    "Z": -3
+                }
+            }
+        },
+        {
+            "Name": "Axe",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCItems\", \"Axe-DisplayName\", \"Axe\")",
+            "SkeletalMesh": "/Game/ASS/WEP/Axes/SK_AXE_Metal.SK_AXE_Metal",
+            "AttachSocket": "hand_l",
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": 0.831688404083252,
+                    "Y": 0.5305554866790771,
+                    "Z": 0.14583200216293335,
+                    "W": 0.07441984117031097
+                },
+                "Translation": {
+                    "X": 13.665633201599121,
+                    "Y": -4.774731159210205,
+                    "Z": -14.66166877746582
+                },
+                "Scale3D": {
+                    "Z": 1.399999976158142
+                }
+            }
+        },
+        {
+            "Name": "Hoe",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCItems\", \"Hoe-DisplayName\", \"Hoe\")",
+            "StaticMesh": "/Game/ThirdPartyAssets/CharacterAnimations/Farming_And_Mining/Meshes/SquareHoe_SM.SquareHoe_SM",
+            "AttachSocket": "hand_r",
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": -0.17292118072509766,
+                    "Y": -0.19414542615413666,
+                    "Z": 0.6810930371284485,
+                    "W": 0.6844837069511414
+                },
+                "Translation": {
+                    "X": -6.57392692565918,
+                    "Y": 3.8361968994140625,
+                    "Z": -0.6738510131835938
+                }
+            }
+        },
+        {
+            "Name": "Rifle",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCItems\", \"Rifle-DisplayName\", \"Bolt-action Rifle\")",
+            "SkeletalMesh": "/Game/ASS/WEP/SK_GUN_HuntingRifle_Bolt_Action/SK_GUN_HuntingRifle_Bolt_Action.SK_GUN_HuntingRifle_Bolt_Action",
+            "AttachSocket": "hand_r",
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": 0.12514550983905792,
+                    "Y": 7.432599602452683e-08,
+                    "Z": -0.9921383261680603,
+                    "W": 1.8396076484350488e-07
+                },
+                "Translation": {
+                    "X": -16.71370506286621,
+                    "Y": 4.534289836883545,
+                    "Z": 4.955629825592041
+                },
+                "Scale3D": {
+                    "X": 0.800000011920929
+                }
+            },
+            "WeaponConfig": {
+                "RowName": "BoltActionRifle"
+            }
+        },
+        {
+            "Name": "Log",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCItems\", \"Log-DisplayName\", \"Lumber\")",
+            "StaticMesh": "/Game/ASS/ENV/TRE/CF_LogFallen_01/SM_CF_LogFallen_01_R_T1.SM_CF_LogFallen_01_R_T1",
+            "AttachSocket": "Spine_03",
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": 0.41043785214424133,
+                    "Y": 0.5913392305374146,
+                    "Z": 0.4336879849433899,
+                    "W": 0.5420086979866028
+                },
+                "Translation": {
+                    "X": 28.785751342773438,
+                    "Y": 9.471744537353516,
+                    "Z": 20.34825897216797
+                },
+                "Scale3D": {
+                    "X": 0.5600879788398743,
+                    "Y": 0.5600879788398743,
+                    "Z": 0.5600879788398743
+                }
+            }
+        },
+        {
+            "Name": "FishingRod",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCItems\", \"FishingRod-DisplayName\", \"Fishing Rod\")",
+            "SkeletalMesh": "/Game/ASS/ITM/SK_ITM_FishingRod_T3.SK_ITM_FishingRod_T3",
+            "AnimBlueprint": "/Game/ASS/ITM/SK_ITM_FishingRod_Settler_AnimBP.SK_ITM_FishingRod_Settler_AnimBP_C",
+            "AttachSocket": "hand_r",
+            "AttachmentOffset": {
+                "Rotation": {
+                    "X": -0.4799017310142517,
+                    "Y": -0.02370932698249817,
+                    "Z": 0.8572141528129578,
+                    "W": 0.18524587154388428
+                },
+                "Translation": {
+                    "X": 3.5756280422210693,
+                    "Y": 3.541692018508911,
+                    "Z": -7.271945953369141
+                }
+            }
+        }
+    ]
+}

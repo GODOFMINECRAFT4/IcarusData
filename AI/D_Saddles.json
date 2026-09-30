@@ -15,6 +15,7 @@
             "RowName": "None",
             "DataTableName": "D_Saddles"
         },
+        "PassengerSaddleSockets": [],
         "RequiredStat": {
             "RowName": "None",
             "DataTableName": "D_Stats"
@@ -2755,6 +2756,28 @@
             }
         },
         {
+            "Name": "Saddle_SpeederBike_Dual_Default",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.SpeederBike.Dual"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "SpeederBike_Dual",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "PlayerAttachSocket",
+            "PassengerSaddleSockets": [
+                "PassengerAttachSocket_1"
+            ],
+            "Metadata": {
+                "RequiredFeatureLevel": {
+                    "RowName": "DangerousHorizons"
+                }
+            }
+        },
+        {
             "Name": "Saddle_Raptor_Arctic",
             "SaddleTag": {
                 "TagName": "Item.Mount.Saddle.Arctic"
@@ -3090,12 +3113,204 @@
             "SkeletalMesh": "/Game/ASS/ITM/Saddle_Rad_Boss/SK_ITM_Saddle_Rad_Boss_Slinker.SK_ITM_Saddle_Rad_Boss_Slinker",
             "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
             "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
-            "AttachSocket": "RigRoot",
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "DangerousHorizons"
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Slinker_ArcticExplorer",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Explorer"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
                 }
-            }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle_ArcticExplorer/SK_ITM_Saddle_ArcticExplorer_Slinker.SK_ITM_Saddle_ArcticExplorer_Slinker",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Slinker_Armored",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Armored"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle_Armored/SK_ITM_Saddle_Armored_Slinker.SK_ITM_Saddle_Armored_Slinker",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Slinker_BearHide",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Bearhide"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle_BearHide/SK_ITM_Saddle_BearHide_Slinker.SK_ITM_Saddle_BearHide_Slinker",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Slinker_CrocSkin",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.CrocSkin"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle_CrocSkin/SK_ITM_Saddle_Croc_Skin_Slinker.SK_ITM_Saddle_Croc_Skin_Slinker",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Slinker_DeluxeLeather",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.DeluxeLeather"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle_DeluxLeather/SK_ITM_Saddle_DeluxeLeather_Slinker_SM_ITM_Saddle_DeluxLeather_1.SK_ITM_Saddle_DeluxeLeather_Slinker_SM_ITM_Saddle_DeluxLeather_1",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Slinker_DesertTracker",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Desert"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle_DesertTracker/SK_ITM_Saddle_DesertTracker_Slinker.SK_ITM_Saddle_DesertTracker_Slinker",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Slinker_Racing",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Racing"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle_Racing/SK_ITM_Saddle_Racing_Slinker.SK_ITM_Saddle_Racing_Slinker",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Slinker_Sandworm",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Sandworm"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle_Sandworm/SK_ITM_Saddle_Sandworm_Slinker.SK_ITM_Saddle_Sandworm_Slinker",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Bull_Cart_Explosives",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Mission.Explosives"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Bull",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Cart_Wood/SK_ITM_Cart_Wood_Bull_Explosive.SK_ITM_Cart_Wood_Bull_Explosive",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/SK_ITM_Cart_Wood_AnimBP.SK_ITM_Cart_Wood_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount_Cart_Explosive_Child.BP_Seat_Mount_Cart_Explosive_Child_C'",
+            "AttachSocket": "RigRoot",
+            "PersistentSound": "/Game/FMOD/Events/SFX/Deployable/Cart/SFX_CART_SADDLE.SFX_CART_SADDLE",
+            "AudioSocket": "Socket_Axle"
+        },
+        {
+            "Name": "Saddle_Slinker_Arctic_Survival",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.ArcticSurvival"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle_Arctic_Survival/SK_Saddle_Arctic_Survival_Slinker.SK_Saddle_Arctic_Survival_Slinker",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot",
+            "AudioSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Slinker_Basic_Desert",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.BasicDesert"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle/SK_ITM_Saddle_Slinker.SK_ITM_Saddle_Slinker",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Desert.M_ITM_Saddle_Desert",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot"
+        },
+        {
+            "Name": "Saddle_Slinkerr_Arctic",
+            "SaddleTag": {
+                "TagName": "Item.Mount.Saddle.Arctic"
+            },
+            "SupportedMount": [
+                {
+                    "RowName": "Slinker",
+                    "DataTableName": "D_Mounts"
+                }
+            ],
+            "SkeletalMesh": "/Game/ASS/ITM/Saddle/SK_ITM_Saddle_Slinker.SK_ITM_Saddle_Slinker",
+            "SkeletalMeshMaterialOverride": "/Game/ASS/ITM/M_ITM_Saddle_Arctic.M_ITM_Saddle_Arctic",
+            "SaddleAnimBlueprint": "/Game/ASS/ITM/Saddle/SK_CRE_Slinker_Saddle_Skeleton_AnimBP.SK_CRE_Slinker_Saddle_Skeleton_AnimBP_C",
+            "SaddleBlueprint": "BlueprintGeneratedClass'/Game/BP/Mounts/BP_Seat_Mount.BP_Seat_Mount_C'",
+            "AttachSocket": "RigRoot"
         }
     ]
 }

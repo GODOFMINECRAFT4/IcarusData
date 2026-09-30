@@ -492,7 +492,8 @@
                 "RowName": "Anvil_Bench_T3"
             },
             "ManualActivation": true,
-            "QueueSize": 5
+            "QueueSize": 5,
+            "MaxMilliwattage": 1500
         },
         {
             "Name": "Anvil_Bench_T4",
@@ -501,6 +502,7 @@
             },
             "bRequiresShelter": true,
             "QueueSize": 5,
+            "MaxMilliwattage": 2000,
             "AutoTurnOffDeviceWhileNotProcessing": false
         },
         {
@@ -517,8 +519,7 @@
             "DefaultRecipeSet": {
                 "RowName": "T4_Smoker"
             },
-            "ManualActivation": true,
-            "QueueSize": 5
+            "ManualActivation": true
         },
         {
             "Name": "WaterPurifier_T2",
@@ -761,6 +762,17 @@
                     "RowName": "DangerousHorizons"
                 }
             }
+        },
+        {
+            "Name": "Electric_Seed_Extractor",
+            "DefaultRecipeSet": {
+                "RowName": "Seed_Extractor"
+            },
+            "bRequiresShelter": true,
+            "AutoSelectRecipe": true,
+            "QueueSize": 5,
+            "MaxMilliwattage": 1500,
+            "EffectedByPlayerStats": true
         }
     ]
 }

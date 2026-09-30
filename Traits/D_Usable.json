@@ -474,6 +474,33 @@
                     "bMustOwnInventory": false
                 }
             ]
+        },
+        {
+            "Name": "Empty_Deploy",
+            "Uses": [
+                {
+                    "Use": {
+                        "RowName": "Empty_Container",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                },
+                {
+                    "Use": {
+                        "RowName": "Place",
+                        "DataTableName": "D_Uses"
+                    },
+                    "RequiredTags": {
+                        "GameplayTags": []
+                    },
+                    "RequiredStats": [],
+                    "bMustOwnInventory": false
+                }
+            ]
         }
     ]
 }

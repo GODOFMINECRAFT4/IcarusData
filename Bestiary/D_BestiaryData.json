@@ -5095,6 +5095,10 @@
                 {
                     "RowName": "Frost_Weakness",
                     "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Laser_Weakness",
+                    "DataTableName": "D_BestiaryTraits"
                 }
             ],
             "StatsUnlock1": {
@@ -5261,7 +5265,10 @@
             "Name": "Drone",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Drone-CreatureName\", \"Drone\")",
             "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Tundra/T_Bestiary_Drones.T_Bestiary_Drones",
-            "PopupImageScale": 2.5,
+            "PopupImageScale": 1.3300000429153442,
+            "PopupImageOffset": {
+                "X": -10
+            },
             "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_DRONE.UI_BESTIARY_CRE_DRONE",
             "Biomes": [
@@ -5812,6 +5819,14 @@
                 {
                     "RowName": "Charges_Behavior",
                     "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Laser_Weakness",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Poison_Resist_Strength",
+                    "DataTableName": "D_BestiaryTraits"
                 }
             ],
             "StatsUnlock1": {
@@ -6023,7 +6038,7 @@
         {
             "Name": "Stomper",
             "CreatureName": "NSLOCTEXT(\"D_BestiaryData\", \"Stomper-CreatureName\", \"Stomper\")",
-            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Volcanic/T_Bestiary_Stompers.T_Bestiary_Stompers",
+            "Image": "/Game/Assets/2DArt/UI/FieldGuide/Creatures/Volcanic/T_Stomper_LRG.T_Stomper_LRG",
             "PopupImageScale": 1.350000023841858,
             "BiomeImageType": "Large",
             "CreatureSound": "/Game/FMOD/Events/UI/Bestiary/CREATURES/UI_BESTIARY_CRE_STOMPER.UI_BESTIARY_CRE_STOMPER",
@@ -6632,6 +6647,14 @@
                 {
                     "RowName": "Radioactive",
                     "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Laser_Weakness",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Poison_Resist_Strength",
+                    "DataTableName": "D_BestiaryTraits"
                 }
             ],
             "StatsUnlock1": {
@@ -6850,9 +6873,9 @@
                 }
             ],
             "TotalPointsRequired": 1500,
-            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Irradiated_Mutation-Lore1\", \"Wraiths are towering, heavily mutated remnants of human origin, their limbs stretched beyond natural limits and bodies studded with crystalline growths. Found deep within irradiated zones, they move with terrifying speed and precision, attacking anything that enters their territory. Contractors report that radiation levels spike sharply when one is near.\")",
-            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Irradiated_Mutation-Lore2\", \"Unlike ordinary Spectres, Wraiths are the product of extreme exotic contamination amplified by radiation exposure. The unstable fusion of exotic material and decaying human tissue accelerates mutation, reshaping the host into a crystalline predator. Without radiation, the exotics remain inert - but together, they twist biology into something wholly alien.\")",
-            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Irradiated_Mutation-Lore3\", \"\\\"If a Spectre\\'s what you become, then a Wraith\\'s what\\'s left when the radiation finishes the job.\\\"\")",
+            "Lore1": "NSLOCTEXT(\"D_BestiaryData\", \"Irradiated_Mutation-Lore1\", \"Wraiths represent extreme human biological degradation resulting from uncontrolled exotic exposure interacting with engineered mutagens. Retaining a vaguely hominid bipedal structure, their physiology is severely warped; muscle tissue has undergone rapid, erratic changes while the epidermis presents as necrotic, translucent, or heavily calloused by subcutaneous exotic crystallization. They display complete indifference to pain, and profound neurological degradation, rendering them hyper-aggressive and incapable of higher communication. \")",
+            "Lore2": "NSLOCTEXT(\"D_BestiaryData\", \"Irradiated_Mutation-Lore2\", \"Wraiths are the result of classified G15 experimentation in the Elysium sector. The intersection of an uncontained mutagenic virus and unstable exotic isotopes caused a catastrophic genetic cascade, completely compromising the test subjects\\' neural and cellular stability.\")",
+            "Lore3": "NSLOCTEXT(\"D_BestiaryData\", \"Irradiated_Mutation-Lore3\", \"\\\"People, man, these used to be PEOPLE. Of all the crap I\\'ve seen on Icarus, this shit is what scares me the most.\\\"\")",
             "Traits": [
                 {
                     "RowName": "Head_CritSpot",
@@ -6864,6 +6887,14 @@
                 },
                 {
                     "RowName": "Charges_Behavior",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Laser_Weakness",
+                    "DataTableName": "D_BestiaryTraits"
+                },
+                {
+                    "RowName": "Poison_Resist_Strength",
                     "DataTableName": "D_BestiaryTraits"
                 }
             ],

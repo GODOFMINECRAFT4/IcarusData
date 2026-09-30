@@ -1,0 +1,51 @@
+{
+    "RowStruct": "/Script/Icarus.SettlementNPCTraitData",
+    "Defaults": {
+        "DisplayName": "",
+        "Description": "",
+        "Icon": "None",
+        "StatsGranted": {},
+        "RollWeight": 1,
+        "ExclusiveGroup": "None",
+        "AllowedRoles": []
+    },
+    "Rows": [
+        {
+            "Name": "Strong",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTraits\", \"Strong-DisplayName\", \"Strong\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCTraits\", \"Strong-Description\", \"Hits harder and is a little tougher than most.\")",
+            "StatsGranted": {
+                "(Value=\"BaseMeleeDamage_+%\")": 20,
+                "(Value=\"BaseMaximumHealth_+%\")": 10
+            },
+            "ExclusiveGroup": "Constitution"
+        },
+        {
+            "Name": "Frail",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTraits\", \"Frail-DisplayName\", \"Frail\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCTraits\", \"Frail-Description\", \"A weaker constitution; takes a hit poorly.\")",
+            "StatsGranted": {
+                "(Value=\"BaseMaximumHealth_+%\")": -15
+            },
+            "ExclusiveGroup": "Constitution"
+        },
+        {
+            "Name": "Quick",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTraits\", \"Quick-DisplayName\", \"Quick\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCTraits\", \"Quick-Description\", \"Moves faster than most.\")",
+            "StatsGranted": {
+                "(Value=\"BaseMovementSpeed_+%\")": 12
+            },
+            "ExclusiveGroup": "Agility"
+        },
+        {
+            "Name": "Sluggish",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTraits\", \"Sluggish-DisplayName\", \"Sluggish\")",
+            "Description": "NSLOCTEXT(\"D_SettlementNPCTraits\", \"Sluggish-Description\", \"Moves slower than most.\")",
+            "StatsGranted": {
+                "(Value=\"BaseMovementSpeed_+%\")": -10
+            },
+            "ExclusiveGroup": "Agility"
+        }
+    ]
+}

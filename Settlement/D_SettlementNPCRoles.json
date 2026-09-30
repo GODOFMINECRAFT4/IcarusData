@@ -3,10 +3,75 @@
     "Defaults": {
         "DisplayName": "",
         "DefaultSchedule": [],
-        "DefaultTaskType": {
-            "RowName": "None",
-            "DataTableName": "D_SettlementNPCTaskTypes"
+        "ActivityDefaultTasks": {},
+        "ClothingOverride": {
+            "RowName": "Default",
+            "DataTableName": "D_SettlementNPCClothing"
+        },
+        "AISetup": {
+            "RowName": "NPC_Settler",
+            "DataTableName": "D_AISetup"
         }
     },
-    "Rows": []
+    "Rows": [
+        {
+            "Name": "Default",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCRoles\", \"Default-DisplayName\", \"Worker\")",
+            "DefaultSchedule": [
+                {
+                    "Activity": "Sleep",
+                    "StartHour": 0,
+                    "EndHour": 6
+                },
+                {
+                    "Activity": "Work",
+                    "StartHour": 6,
+                    "EndHour": 21
+                },
+                {
+                    "Activity": "Sleep",
+                    "StartHour": 21,
+                    "EndHour": 0
+                }
+            ],
+            "ActivityDefaultTasks": {
+                "Sleep": {
+                    "RowName": "Sleep",
+                    "DataTableName": "D_SettlementNPCTaskTypes"
+                },
+                "UnderAttack": {
+                    "RowName": "Cower",
+                    "DataTableName": "D_SettlementNPCTaskTypes"
+                }
+            }
+        },
+        {
+            "Name": "Guard",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCRoles\", \"Guard-DisplayName\", \"Guard\")",
+            "DefaultSchedule": [
+                {
+                    "Activity": "Work",
+                    "StartHour": 0,
+                    "EndHour": 23
+                }
+            ],
+            "ActivityDefaultTasks": {
+                "UnderAttack": {
+                    "RowName": "Guard",
+                    "DataTableName": "D_SettlementNPCTaskTypes"
+                },
+                "Sleep": {
+                    "RowName": "Sleep",
+                    "DataTableName": "D_SettlementNPCTaskTypes"
+                },
+                "Work": {
+                    "RowName": "Guard",
+                    "DataTableName": "D_SettlementNPCTaskTypes"
+                }
+            },
+            "ClothingOverride": {
+                "RowName": "Guard"
+            }
+        }
+    ]
 }

@@ -1292,6 +1292,28 @@
             }
         },
         {
+            "Name": "CarbonRod",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "HitSound": "/Game/FMOD/Events/SFX/Weapons/Wood_Spear/SFX_IMPACT_WOODSPEAR.SFX_IMPACT_WOODSPEAR",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_BREAK.SFX_TOOL_BREAK",
+            "UseWhenBrokenSound": "/Game/FMOD/Events/UI/Generic/SFX_GENERIC_UI_FAIL.SFX_GENERIC_UI_FAIL",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_TOOL_REPAIR.SFX_TOOL_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY",
+            "AnimSounds": {
+                "Cast": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/D_Items/Fishing/SFX_FISHING_ROD_CAST_REFINED.SFX_FISHING_ROD_CAST_REFINED"
+                    ]
+                },
+                "Reel": {
+                    "FMODEvents": [
+                        "/Game/FMOD/Events/SFX/D_Items/Fishing/SFX_FISHING_ROD_REEL_CARBON.SFX_FISHING_ROD_REEL_CARBON"
+                    ]
+                }
+            }
+        },
+        {
             "Name": "Metal_Shield",
             "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
             "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
@@ -2245,6 +2267,15 @@
                     ]
                 }
             }
+        },
+        {
+            "Name": "Concrete_Fortification",
+            "PickUpSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_GENERIC_PICKUP.SFX_ITEM_GENERIC_PICKUP",
+            "DropSound": "/Game/FMOD/Events/UI/Generic/UI_INV_DROPITEM.UI_INV_DROPITEM",
+            "DamagedSound": "/Game/FMOD/Events/SFX/D_Deployables/SFX_DEP_DMG_STONE.SFX_DEP_DMG_STONE",
+            "BrokenSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_DST_CONC.SFX_BLD_DST_CONC",
+            "RepairedSound": "/Game/FMOD/Events/SFX/D_Buildables/SFX_BLD_STONE_REPAIR.SFX_BLD_STONE_REPAIR",
+            "DestroyedSound": "/Game/FMOD/Events/SFX/D_Items/SFX_ITEM_DESTROY.SFX_ITEM_DESTROY"
         }
     ]
 }

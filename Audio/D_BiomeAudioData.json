@@ -168,7 +168,7 @@
             "Name": "Jungle",
             "BiomeFMODParam": "Wetlands",
             "MusicLocationCondition": {
-                "RowName": "Wetlands"
+                "RowName": "Jungle"
             },
             "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_JUNGLE_BASE.AMB_JUNGLE_BASE",
             "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_SWAMP_CAVE_ENTRANCE.ENV_SWAMP_CAVE_ENTRANCE"
@@ -177,10 +177,19 @@
             "Name": "Coastal",
             "BiomeFMODParam": "Desert",
             "MusicLocationCondition": {
-                "RowName": "Desert"
+                "RowName": "Coastal"
             },
             "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_BEACH_DLC4.AMB_BEACH_DLC4",
             "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_DC_CAVE_ENTRANCE.ENV_DC_CAVE_ENTRANCE"
+        },
+        {
+            "Name": "JungleLight",
+            "BiomeFMODParam": "Wetlands",
+            "MusicLocationCondition": {
+                "RowName": "Grasslands"
+            },
+            "AudioAmbienceBase": "/Game/FMOD/Events/Ambient/Prospect/AMB_JUNGLE_LIGHT.AMB_JUNGLE_LIGHT",
+            "AudioAmbienceTransitional": "/Game/FMOD/Events/Environment/Caves/ENV_SWAMP_CAVE_ENTRANCE.ENV_SWAMP_CAVE_ENTRANCE"
         }
     ]
 }

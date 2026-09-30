@@ -834,7 +834,7 @@
             "InventoryID": {
                 "Value": "General"
             },
-            "StartingSlots": 10
+            "StartingSlots": 15
         },
         {
             "Name": "Central_Scanner",
@@ -2288,7 +2288,7 @@
             "InventoryID": {
                 "Value": "General"
             },
-            "StartingSlots": 6
+            "StartingSlots": 12
         },
         {
             "Name": "Experiment_Cage",
@@ -2303,6 +2303,13 @@
                         "DataTableName": "D_TagQueries"
                     },
                     "Location": 0
+                },
+                {
+                    "Query": {
+                        "RowName": "Mission_Solution",
+                        "DataTableName": "D_TagQueries"
+                    },
+                    "Location": 1
                 }
             ]
         },
@@ -2322,6 +2329,47 @@
                 "RowName": "Any_Launcher_Projectiles"
             },
             "StartingSlots": 3
+        },
+        {
+            "Name": "Weapon_Launcher_Legendary",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Launcher_Projectiles"
+            },
+            "StartingSlots": 6
+        },
+        {
+            "Name": "Chemostat",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "Mission_NPC_One_Slot",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "Weapon_Launcher_T2",
+            "InventoryID": {
+                "Value": "General"
+            },
+            "SlotTemplate": {
+                "RowName": "Any_Launcher_Projectiles"
+            },
+            "StartingSlots": 1
+        },
+        {
+            "Name": "Slotable_Generic_1",
+            "InventoryID": {
+                "Value": "Slotable"
+            },
+            "StartingSlots": 1
         }
     ]
 }

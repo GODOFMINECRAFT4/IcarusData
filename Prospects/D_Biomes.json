@@ -1617,28 +1617,177 @@
                 "RowName": "Jungle_Light"
             },
             "Audio": {
-                "RowName": "Jungle"
+                "RowName": "JungleLight"
             }
         },
         {
             "Name": "Arena_RadBoss",
             "BiomeName": "RadBossArena",
-            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Arena_RadBoss-DisplayName\", \"Radiation Boss Arena\")",
+            "DisplayName": "NSLOCTEXT(\"D_Biomes\", \"Arena_RadBoss-DisplayName\", \"Malformation Spire\")",
             "Color": {
-                "B": 135,
+                "B": 186,
                 "G": 255,
-                "R": 144,
+                "R": 234,
                 "A": 255
             },
-            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/DesertTemperatureCurve.DesertTemperatureCurve'",
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/AshlandsTemperatureCurve.AshlandsTemperatureCurve'",
             "AtmosphereType": {
                 "RowName": "Arena_RadBoss"
             },
             "Audio": {
                 "RowName": "BossRadGeo"
             },
+            "bOrbitalCommunicationBlocked": true,
             "BiomeModifier": {
                 "RowName": "Geothermal_Atmosphere"
+            }
+        },
+        {
+            "Name": "Ark_Coast",
+            "BiomeName": "Ark Coast",
+            "DisplayName": "INVTEXT(\"[DNT] Ark Coast\")",
+            "Color": {
+                "B": 108,
+                "G": 28,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
+            "WeatherFrequency": 5,
+            "AtmosphereType": {
+                "RowName": "Coastal"
+            },
+            "Audio": {
+                "RowName": "Coastal"
+            }
+        },
+        {
+            "Name": "Ark_Jungle",
+            "BiomeName": "Ark Jungle",
+            "DisplayName": "INVTEXT(\"[DNT] Ark Jungle\")",
+            "Color": {
+                "G": 125,
+                "R": 12,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
+            "AtmosphereType": {
+                "RowName": "Jungle"
+            },
+            "Audio": {
+                "RowName": "Jungle"
+            }
+        },
+        {
+            "Name": "Ark_Jungle_Light",
+            "BiomeName": "Ark Jungle Light",
+            "DisplayName": "INVTEXT(\"[DNT] Ark Jungle Light\")",
+            "Color": {
+                "B": 49,
+                "G": 221,
+                "R": 126,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ConiferTemperatureCurve.ConiferTemperatureCurve'",
+            "AtmosphereType": {
+                "RowName": "Jungle_Light"
+            },
+            "Audio": {
+                "RowName": "JungleLight"
+            }
+        },
+        {
+            "Name": "Ark_Geothermal",
+            "BiomeName": "Ark Geothermal",
+            "DisplayName": "INVTEXT(\"[DNT] Ark Geothermal\")",
+            "Color": {
+                "B": 68,
+                "G": 255,
+                "R": 248,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/DesertTemperatureCurve.DesertTemperatureCurve'",
+            "WeatherFrequency": 2,
+            "AtmosphereType": {
+                "RowName": "Geothermal"
+            },
+            "Audio": {
+                "RowName": "Geothermal"
+            },
+            "BiomeModifier": {
+                "RowName": "Geothermal_Atmosphere"
+            }
+        },
+        {
+            "Name": "Ark_Volcanic",
+            "BiomeName": "Ark Volcanic",
+            "DisplayName": "INVTEXT(\"[DNT] Ark Volcanic\")",
+            "Color": {
+                "B": 255,
+                "G": 68,
+                "R": 204,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/VolcanicTemperatureCurve.VolcanicTemperatureCurve'",
+            "WeatherFrequency": 3,
+            "AtmosphereType": {
+                "RowName": "Volcanic"
+            },
+            "Audio": {
+                "RowName": "Lava"
+            }
+        },
+        {
+            "Name": "Ark_Lava",
+            "BiomeName": "Ark Lava",
+            "DisplayName": "INVTEXT(\"[DNT] Ark Lava\")",
+            "Color": {
+                "B": 49,
+                "G": 82,
+                "R": 221,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/VolcanicTemperatureCurve.VolcanicTemperatureCurve'",
+            "WeatherFrequency": 3,
+            "AtmosphereType": {
+                "RowName": "Volcanic"
+            },
+            "Audio": {
+                "RowName": "Lava"
+            }
+        },
+        {
+            "Name": "Ark_Tundra",
+            "BiomeName": "Ark Tundra",
+            "DisplayName": "INVTEXT(\"[DNT] Ark Tundra\")",
+            "Color": {
+                "B": 176,
+                "G": 119,
+                "R": 19,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/TundraTemperatureCurve.TundraTemperatureCurve'",
+            "WeatherFrequency": 2,
+            "AtmosphereType": {
+                "RowName": "Tundra"
+            },
+            "Audio": {
+                "RowName": "ElyTundra"
+            }
+        },
+        {
+            "Name": "Ark_Arctic",
+            "BiomeName": "Ark Arctic",
+            "DisplayName": "INVTEXT(\"[DnT] Ark Arctic\")",
+            "Color": {
+                "B": 221,
+                "G": 215,
+                "R": 49,
+                "A": 255
+            },
+            "BiomeTemperatureCurve": "CurveFloat'/Game/BP/Biomes/Curves/ArcticTemperatureCurve.ArcticTemperatureCurve'",
+            "WeatherFrequency": 2,
+            "Audio": {
+                "RowName": "Arctic"
             }
         }
     ]

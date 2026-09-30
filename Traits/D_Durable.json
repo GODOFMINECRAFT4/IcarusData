@@ -1533,6 +1533,19 @@
             ]
         },
         {
+            "Name": "Radboss_Crossbow",
+            "Max_Durability": 20000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Uranium_Inert",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
             "Name": "Lithium_Crossbow",
             "Max_Durability": 40000,
             "ItemsForRepair": [
@@ -1674,6 +1687,19 @@
                 {
                     "Item": {
                         "RowName": "Wood_Refined",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Carbon_Fishing_Rod",
+            "Max_Durability": 8000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Carbon_Fiber",
                         "DataTableName": "D_ItemsStatic"
                     },
                     "Amount": 1
@@ -2731,7 +2757,7 @@
         },
         {
             "Name": "T4_Launcher",
-            "Max_Durability": 10000,
+            "Max_Durability": 5000,
             "ItemsForRepair": [
                 {
                     "Item": {
@@ -2741,6 +2767,93 @@
                     "Amount": 1
                 }
             ]
+        },
+        {
+            "Name": "Drone_Companion",
+            "Max_Durability": 3000,
+            "Destroyed_At_Zero": true,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Powerbank",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "LegendaryWeapon_Grenade_Launcher",
+            "Max_Durability": 10000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Meta_Repair_Item",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ],
+            "NoRecipe_RequiredRecipeSet": [
+                {
+                    "RowName": "Repair_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ]
+        },
+        {
+            "Name": "T3_Backpack",
+            "Max_Durability": 750,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Advanced_Leather",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "T4_Backpack",
+            "Max_Durability": 1000,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Fabricator",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "T5_Backpack",
+            "Max_Durability": 1250,
+            "ItemsForRepair": [
+                {
+                    "Item": {
+                        "RowName": "Manufacturer",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Amount": 1
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Wall_Wood",
+            "Max_Durability": 1500
+        },
+        {
+            "Name": "Caltrop_Rudimentary",
+            "Max_Durability": 1,
+            "Destroyed_At_Zero": true
         }
     ]
 }

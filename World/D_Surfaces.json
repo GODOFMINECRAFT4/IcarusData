@@ -210,7 +210,7 @@
             "Name": "Ice",
             "PhysicalMaterial": "/Game/Physical_Materials/PM_Ice.PM_Ice",
             "SurfaceType": "SurfaceType15",
-            "ParticleSystem": "/Game/TRD/Realistic_Starter_VFX_Pack/Particles/Hit/P_Rock.P_Rock",
+            "ParticleSystem": "/Game/TRD/Realistic_Starter_VFX_Pack/Particles/Hit/P_Ice.P_Ice",
             "PlayerFootstepAudioData": {
                 "RowName": "Ice"
             },
@@ -421,7 +421,7 @@
         },
         {
             "Name": "Voxel_Platinum",
-            "PhysicalMaterial": "/Game/Physical_Materials/PM_Voxel_Coal.PM_Voxel_Coal",
+            "PhysicalMaterial": "/Game/Physical_Materials/PM_Voxel_Platinum.PM_Voxel_Platinum",
             "SurfaceType": "SurfaceType34",
             "ParticleSystem": "/Game/TRD/Realistic_Starter_VFX_Pack/Particles/Hit/P_Metal.P_Metal",
             "NiagaraSystem": "NiagaraSystem'/Game/ASS/VFX/VOX/NS_Voxel_Platinum_Hit.NS_Voxel_Platinum_Hit'",
@@ -493,6 +493,20 @@
             "FMODParam": "VoxelMetal",
             "AudioReflectionData": {
                 "ReflectionMultiplier": 0.800000011920929
+            }
+        },
+        {
+            "Name": "Voxel_Ice",
+            "PhysicalMaterial": "/Game/Physical_Materials/PM_Voxel_Ice.PM_Voxel_Ice",
+            "SurfaceType": "SurfaceType40",
+            "ParticleSystem": "/Game/TRD/Realistic_Starter_VFX_Pack/Particles/Hit/P_Ice.P_Ice",
+            "NiagaraSystem": "NiagaraSystem'/Game/ASS/VFX/VOX/NS_Voxel_Ice_Hit.NS_Voxel_Ice_Hit'",
+            "PlayerFootstepAudioData": {
+                "RowName": "Ice"
+            },
+            "FMODParam": "Ice",
+            "AudioReflectionData": {
+                "ReflectionMultiplier": 0.4000000059604645
             }
         }
     ]

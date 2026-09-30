@@ -915,6 +915,11 @@
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Pickup_Bike_Heavy-InteractionText\", \"Pick Up\")"
         },
         {
+            "Name": "Interact_Pickup_Bike_Dual",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC_Pickup_Vehicle_Dual.BP_Interactable_NPC_Pickup_Vehicle_Dual_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Pickup_Bike_Dual-InteractionText\", \"Pick Up\")"
+        },
+        {
             "Name": "Harvest_Corpse_Chainsaw",
             "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Chainsaw_Skin.BP_Interactable_Chainsaw_Skin_C",
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Harvest_Corpse_Chainsaw-InteractionText\", \"Skin\")"
@@ -928,6 +933,11 @@
             "Name": "Interact_Colony_Radio_Tower",
             "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Colony_Radio_Tower.BP_Interactable_Interact_Colony_Radio_Tower_C",
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Colony_Radio_Tower-InteractionText\", \"Align Radio\")"
+        },
+        {
+            "Name": "Interact_Colony_Arcade_Machine",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Colony_Arcade_Machine.BP_Interactable_Interact_Colony_Arcade_Machine_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Colony_Arcade_Machine-InteractionText\", \"Play Game\")"
         },
         {
             "Name": "Interact_Syringe",
@@ -967,9 +977,45 @@
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Settlement_NPC_Visitor-InteractionText\", \"Greet\")"
         },
         {
+            "Name": "Interact_Settlement_Building",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_SettlementBuilding.BP_Interactable_SettlementBuilding_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Settlement_Building-InteractionText\", \"Inspect\")"
+        },
+        {
             "Name": "Interact_Deployable_Needs_Power",
             "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_DeployableWithPower.BP_Interactable_Interact_DeployableWithPower_C",
             "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Deployable_Needs_Power-InteractionText\", \"Interact\")"
+        },
+        {
+            "Name": "Interact_Mission_Laser_Utility_Electric",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Mission_Laser_Utility_Electric_Toggle.BP_Interactable_Interact_Mission_Laser_Utility_Electric_Toggle_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Mission_Laser_Utility_Electric-InteractionText\", \"Activate Laser\")"
+        },
+        {
+            "Name": "Interact_NPC_Access_Items",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_NPC_Inventory.BP_Interactable_NPC_Inventory_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_NPC_Access_Items-InteractionText\", \"Access Items\")"
+        },
+        {
+            "Name": "Interact_Salvage",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Salvage.BP_Interactable_Salvage_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Salvage-InteractionText\", \"Salvage Parts\")"
+        },
+        {
+            "Name": "Enter_Seat_Vehicle_Passenger",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Enter_Seat_Passenger.BP_Interactable_Enter_Seat_Passenger_C",
+            "AuthorityType": "Both",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Enter_Seat_Vehicle_Passenger-InteractionText\", \"Ride as Passenger\")"
+        },
+        {
+            "Name": "Pickup_WorldObject",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_WorldObject.BP_Interactable_WorldObject_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Pickup_WorldObject-InteractionText\", \"Pickup\")"
+        },
+        {
+            "Name": "Interact_Roast",
+            "Behaviour": "/Game/BP/Behaviours/Interactable/BP_Interactable_Interact_Roast.BP_Interactable_Interact_Roast_C",
+            "InteractionText": "NSLOCTEXT(\"D_Interactions\", \"Interact_Roast-InteractionText\", \"Take Piece\")"
         }
     ]
 }

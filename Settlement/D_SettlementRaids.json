@@ -1,0 +1,128 @@
+{
+    "RowStruct": "/Script/Icarus.SettlementRaid",
+    "Defaults": {
+        "RaidStrength": 0,
+        "RaidStrengthPerLevel": 0,
+        "RaidSpawnWaves": []
+    },
+    "Rows": [
+        {
+            "Name": "WolfPack",
+            "RaidStrength": 30,
+            "RaidStrengthPerLevel": 10,
+            "RaidSpawnWaves": [
+                {
+                    "WaveData": {
+                        "SpawnedAIConfig": [
+                            {
+                                "AISetup": {
+                                    "RowName": "Conifer_Wolf",
+                                    "DataTableName": "D_AISetup"
+                                },
+                                "EpicCreature": {
+                                    "RowName": "None",
+                                    "DataTableName": "D_EpicCreatures"
+                                },
+                                "SpawnWeight": 100,
+                                "SpawnWeightScalingRule": {
+                                    "RowName": "None",
+                                    "DataTableName": "D_ScalingRules"
+                                },
+                                "BaseSpawnCount": 5,
+                                "MaxSpawnCount": 0,
+                                "MinMaxSpawnLevel": {
+                                    "X": 15,
+                                    "Y": 30
+                                },
+                                "SpawnDelay": 3
+                            }
+                        ],
+                        "SpawnCountScaling": {
+                            "RowName": "None",
+                            "DataTableName": "D_ScalingRules"
+                        },
+                        "SpawnFrequencyScaling": {
+                            "RowName": "None",
+                            "DataTableName": "D_ScalingRules"
+                        },
+                        "SpawnedAILevelScaling": {
+                            "RowName": "None",
+                            "DataTableName": "D_ScalingRules"
+                        },
+                        "MaxSpawnedUnits": 0
+                    },
+                    "MinRaidStrengthBeforeSpawn": 0
+                },
+                {
+                    "WaveData": {
+                        "SpawnedAIConfig": [
+                            {
+                                "AISetup": {
+                                    "RowName": "Alpha_Wolf",
+                                    "DataTableName": "D_AISetup"
+                                },
+                                "EpicCreature": {
+                                    "RowName": "None",
+                                    "DataTableName": "D_EpicCreatures"
+                                },
+                                "SpawnWeight": 100,
+                                "SpawnWeightScalingRule": {
+                                    "RowName": "None",
+                                    "DataTableName": "D_ScalingRules"
+                                },
+                                "BaseSpawnCount": 1,
+                                "MaxSpawnCount": 1,
+                                "MinMaxSpawnLevel": {
+                                    "X": 1,
+                                    "Y": 120
+                                },
+                                "SpawnDelay": 0.10000000149011612
+                            },
+                            {
+                                "AISetup": {
+                                    "RowName": "Conifer_Wolf",
+                                    "DataTableName": "D_AISetup"
+                                },
+                                "EpicCreature": {
+                                    "RowName": "None",
+                                    "DataTableName": "D_EpicCreatures"
+                                },
+                                "SpawnWeight": 50,
+                                "SpawnWeightScalingRule": {
+                                    "RowName": "None",
+                                    "DataTableName": "D_ScalingRules"
+                                },
+                                "BaseSpawnCount": 3,
+                                "MaxSpawnCount": 0,
+                                "MinMaxSpawnLevel": {
+                                    "X": 1,
+                                    "Y": 120
+                                },
+                                "SpawnDelay": 0.5
+                            }
+                        ],
+                        "SpawnCountScaling": {
+                            "RowName": "None",
+                            "DataTableName": "D_ScalingRules"
+                        },
+                        "SpawnFrequencyScaling": {
+                            "RowName": "None",
+                            "DataTableName": "D_ScalingRules"
+                        },
+                        "SpawnedAILevelScaling": {
+                            "RowName": "None",
+                            "DataTableName": "D_ScalingRules"
+                        },
+                        "MaxSpawnedUnits": 0
+                    },
+                    "MinRaidStrengthBeforeSpawn": 30
+                }
+            ]
+        },
+        {
+            "Name": "BanditRaid",
+            "RaidStrength": 60,
+            "RaidStrengthPerLevel": 15
+        }
+    ]
+}

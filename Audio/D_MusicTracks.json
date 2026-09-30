@@ -945,6 +945,14 @@
                 {
                     "RowName": "DHGeothermal",
                     "DataTableName": "D_MusicLocationConditions"
+                },
+                {
+                    "RowName": "Coastal",
+                    "DataTableName": "D_MusicLocationConditions"
+                },
+                {
+                    "RowName": "Jungle",
+                    "DataTableName": "D_MusicLocationConditions"
                 }
             ],
             "CombatFlags": 2,
@@ -964,6 +972,14 @@
                 },
                 {
                     "RowName": "DHGeothermal",
+                    "DataTableName": "D_MusicLocationConditions"
+                },
+                {
+                    "RowName": "Coastal",
+                    "DataTableName": "D_MusicLocationConditions"
+                },
+                {
+                    "RowName": "Jungle",
                     "DataTableName": "D_MusicLocationConditions"
                 }
             ],
@@ -987,7 +1003,13 @@
             "TimeOfDayFlags": 15,
             "WeatherFlags": 1,
             "DropStateFlags": 2,
-            "DisasterFlags": 1
+            "DisasterFlags": 1,
+            "Quests": [
+                {
+                    "RowName": "None",
+                    "DataTableName": "D_MusicQuestConditions"
+                }
+            ]
         },
         {
             "Name": "DH_Lab",
@@ -1020,6 +1042,118 @@
             ],
             "CombatFlags": 1,
             "TimeOfDayFlags": 15,
+            "WeatherFlags": 1,
+            "DropStateFlags": 2,
+            "DisasterFlags": 1
+        },
+        {
+            "Name": "JUNGLE1",
+            "Event": "/Game/FMOD/Events/Music/Icarus_MU_Jungle.Icarus_MU_Jungle",
+            "FadeInCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeIn_DH.MusicCurve_DefaultFadeIn_DH'",
+            "FadeOutCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeOut.MusicCurve_DefaultFadeOut'",
+            "bTrackCanBePaused": true,
+            "PlayerStateFlags": 1,
+            "Locations": [
+                {
+                    "RowName": "Jungle",
+                    "DataTableName": "D_MusicLocationConditions"
+                }
+            ],
+            "CombatFlags": 1,
+            "TimeOfDayFlags": 7,
+            "WeatherFlags": 1,
+            "DropStateFlags": 2,
+            "DisasterFlags": 1
+        },
+        {
+            "Name": "JUNGLE2",
+            "Event": "/Game/FMOD/Events/Music/Icarus_MU_Jungle_2.Icarus_MU_Jungle_2",
+            "FadeInCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeIn_DH.MusicCurve_DefaultFadeIn_DH'",
+            "FadeOutCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeOut.MusicCurve_DefaultFadeOut'",
+            "bTrackCanBePaused": true,
+            "PlayerStateFlags": 1,
+            "Locations": [
+                {
+                    "RowName": "Jungle",
+                    "DataTableName": "D_MusicLocationConditions"
+                }
+            ],
+            "CombatFlags": 1,
+            "TimeOfDayFlags": 7,
+            "WeatherFlags": 1,
+            "DropStateFlags": 2,
+            "DisasterFlags": 1
+        },
+        {
+            "Name": "BEACH1",
+            "Event": "/Game/FMOD/Events/Music/Icarus_MU_Beach_1.Icarus_MU_Beach_1",
+            "FadeInCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeIn_DH.MusicCurve_DefaultFadeIn_DH'",
+            "FadeOutCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeOut.MusicCurve_DefaultFadeOut'",
+            "bTrackCanBePaused": true,
+            "PlayerStateFlags": 1,
+            "Locations": [
+                {
+                    "RowName": "Coastal",
+                    "DataTableName": "D_MusicLocationConditions"
+                }
+            ],
+            "CombatFlags": 1,
+            "TimeOfDayFlags": 7,
+            "WeatherFlags": 1,
+            "DropStateFlags": 2,
+            "DisasterFlags": 1
+        },
+        {
+            "Name": "Combat_Mission_D",
+            "Event": "/Game/FMOD/Events/Music/Icarus_16_BOSS_1.Icarus_16_BOSS_1",
+            "FadeInCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_VeryFastFadeIn.MusicCurve_VeryFastFadeIn'",
+            "FadeOutCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeOut_DH.MusicCurve_DefaultFadeOut_DH'",
+            "PrevTrackOverrideFadeOutCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_QuickFadeOut_DH.MusicCurve_QuickFadeOut_DH'",
+            "DropStateFlags": 2,
+            "Quests": [
+                {
+                    "RowName": "GH_Combat_D",
+                    "DataTableName": "D_MusicQuestConditions"
+                }
+            ],
+            "StateGroup": {
+                "RowName": "GH_Combat_D"
+            }
+        },
+        {
+            "Name": "BEACH2",
+            "Event": "/Game/FMOD/Events/Music/Icarus_MU_Beach_2.Icarus_MU_Beach_2",
+            "FadeInCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeIn_DH.MusicCurve_DefaultFadeIn_DH'",
+            "FadeOutCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeOut.MusicCurve_DefaultFadeOut'",
+            "bTrackCanBePaused": true,
+            "PlayerStateFlags": 1,
+            "Locations": [
+                {
+                    "RowName": "Coastal",
+                    "DataTableName": "D_MusicLocationConditions"
+                }
+            ],
+            "CombatFlags": 1,
+            "TimeOfDayFlags": 7,
+            "WeatherFlags": 1,
+            "DropStateFlags": 2,
+            "DisasterFlags": 1
+        },
+        {
+            "Name": "JUNGLE3",
+            "Event": "/Game/FMOD/Events/Music/Icarus_MU_Jungle_3.Icarus_MU_Jungle_3",
+            "FadeInCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeIn_DH.MusicCurve_DefaultFadeIn_DH'",
+            "FadeOutCurve": "CurveFloat'/Game/BP/Audio/Music/MusicCurve_DefaultFadeOut.MusicCurve_DefaultFadeOut'",
+            "bTrackCanBePaused": true,
+            "PlayerStateFlags": 1,
+            "Locations": [
+                {
+                    "RowName": "Jungle",
+                    "DataTableName": "D_MusicLocationConditions"
+                }
+            ],
+            "CombatFlags": 1,
+            "TimeOfDayFlags": 7,
             "WeatherFlags": 1,
             "DropStateFlags": 2,
             "DisasterFlags": 1

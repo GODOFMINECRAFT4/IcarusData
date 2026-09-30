@@ -54,43 +54,12 @@
             "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
         },
         {
-            "Name": "AdvancedWater",
-            "Stats": {
-                "(Value=\"BaseWaterRecovery_+\")": 100,
-                "(Value=\"BaseUnitsConsumed_+\")": 200
-            },
-            "Modifier": {
-                "ModifierLifetime": 15
-            },
-            "DescriptionText": "Can be placed in a Suit Water Slot to Auto Consume."
-        },
-        {
             "Name": "AdvancedOxygen",
             "Stats": {
                 "(Value=\"BaseOxygenRecovery_+\")": 100,
                 "(Value=\"BaseUnitsConsumed_+\")": 200
             },
             "DescriptionText": "Can be placed in a Suit Oxygen Slot to Auto Consume."
-        },
-        {
-            "Name": "Canteen",
-            "Stats": {
-                "(Value=\"BaseWaterRecovery_+\")": 50,
-                "(Value=\"BaseUnitsConsumed_+\")": 200
-            },
-            "Modifier": {
-                "ModifierLifetime": 15
-            }
-        },
-        {
-            "Name": "Canteen_Shengong",
-            "Stats": {
-                "(Value=\"BaseWaterRecovery_+\")": 50,
-                "(Value=\"BaseUnitsConsumed_+\")": 200
-            },
-            "Modifier": {
-                "ModifierLifetime": 15
-            }
         },
         {
             "Name": "Food_Berry",
@@ -132,16 +101,6 @@
                     "RowName": "Spoiled_Meat"
                 },
                 "ModifierLifetime": 300
-            }
-        },
-        {
-            "Name": "Drink_Sponge",
-            "Stats": {
-                "(Value=\"BaseWaterRecovery_+\")": 25,
-                "(Value=\"BaseUnitsConsumed_+\")": 100
-            },
-            "Modifier": {
-                "ModifierLifetime": 15
             }
         },
         {
@@ -247,13 +206,6 @@
                     "DataTableName": "D_ItemTemplate"
                 }
             ]
-        },
-        {
-            "Name": "Thermos",
-            "Modifier": {
-                "ModifierLifetime": 15
-            },
-            "DescriptionText": "Can be placed in a Suit Water Slot to Auto Consume."
         },
         {
             "Name": "Thermos_IceWater",
@@ -2260,16 +2212,6 @@
             ]
         },
         {
-            "Name": "Warming_Drink",
-            "Stats": {
-                "(Value=\"BaseWaterRecovery_+\")": 50,
-                "(Value=\"BaseUnitsConsumed_+\")": 200
-            },
-            "Modifier": {
-                "ModifierLifetime": 30
-            }
-        },
-        {
             "Name": "Oxygen_Tank_Larkwell",
             "Modifier": {
                 "Modifier": {
@@ -2597,16 +2539,6 @@
                     "DataTableName": "D_ItemTemplate"
                 }
             ]
-        },
-        {
-            "Name": "Canteen_Inaris",
-            "Stats": {
-                "(Value=\"BaseWaterRecovery_+\")": 50,
-                "(Value=\"BaseUnitsConsumed_+\")": 200
-            },
-            "Modifier": {
-                "ModifierLifetime": 15
-            }
         },
         {
             "Name": "Biolab_Inhaler_Sandworm",
@@ -4590,6 +4522,450 @@
                     "DataTableName": "D_ItemTemplate"
                 }
             ]
+        },
+        {
+            "Name": "AntiRadiation_Stew",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 50,
+                "(Value=\"BaseWaterRecovery_+\")": 50
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "AntiRadiation_Stew"
+                },
+                "ModifierLifetime": 600
+            }
+        },
+        {
+            "Name": "DNA_Serum",
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "DNA_Serum"
+                },
+                "ModifierLifetime": 600
+            }
+        },
+        {
+            "Name": "Meta_Resource_Pack_Salt",
+            "Modifier": {
+                "ModifierLifetime": 0
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Salt_Stack_500",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Roast_Rabbit",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 125,
+                "(Value=\"BaseHealthRecovery_+\")": 20
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Rabbit"
+                },
+                "ModifierLifetime": 1200
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Roast_Critter",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 100,
+                "(Value=\"BaseHealthRecovery_+\")": 20
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Critter"
+                },
+                "ModifierLifetime": 900
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Roast_Fowl",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 150,
+                "(Value=\"BaseHealthRecovery_+\")": 20
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Fowl"
+                },
+                "ModifierLifetime": 1200
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Roast_Fish",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 150,
+                "(Value=\"BaseHealthRecovery_+\")": 20
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Fish"
+                },
+                "ModifierLifetime": 1200
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Roast_Venison_Piece",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 180,
+                "(Value=\"BaseHealthRecovery_+\")": 30
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Venison_Piece"
+                },
+                "ModifierLifetime": 1500
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Roast_Panther_Piece",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 170,
+                "(Value=\"BaseHealthRecovery_+\")": 30
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Panther_Piece"
+                },
+                "ModifierLifetime": 1500
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Roast_Pork_Piece",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 200,
+                "(Value=\"BaseHealthRecovery_+\")": 30
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Pork_Piece"
+                },
+                "ModifierLifetime": 1500
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Roast_Mutton_Piece",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 180,
+                "(Value=\"BaseHealthRecovery_+\")": 30
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Mutton_Piece"
+                },
+                "ModifierLifetime": 1500
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Roast_Wolf_Piece",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 170,
+                "(Value=\"BaseHealthRecovery_+\")": 30
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Wolf_Piece"
+                },
+                "ModifierLifetime": 1500
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Roast_Reptile_Piece",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 170,
+                "(Value=\"BaseHealthRecovery_+\")": 30
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Reptile_Piece"
+                },
+                "ModifierLifetime": 1500
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Roast_Exotic_Meat_Piece",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 180,
+                "(Value=\"BaseHealthRecovery_+\")": 30
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Roast_Exotic_Meat_Piece"
+                },
+                "ModifierLifetime": 1500
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Meta_Spinach_Seed",
+            "Modifier": {
+                "ModifierLifetime": 0
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Spinach_Pack",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Meta_Ginger_Seed",
+            "Modifier": {
+                "ModifierLifetime": 0
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Ginger_Pack",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Meta_Pineapple_Seed",
+            "Modifier": {
+                "ModifierLifetime": 0
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Pineapple_Pack",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Settlement_Produce",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 40
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Settlement_Rations",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 80
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Settlement_Cuisine",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 100,
+                "(Value=\"BaseHealthRecovery_+\")": 10
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Cooked_Spinach",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 50
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Cooked_Spinach"
+                },
+                "ModifierLifetime": 600
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Creamed_Spinach",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 100
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Creamed_Spinach"
+                },
+                "ModifierLifetime": 900
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Spinach_Pie",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 150
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Spinach_Pie"
+                },
+                "ModifierLifetime": 1200
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Spinach_Omelette",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 100
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Spinach_Omelette"
+                },
+                "ModifierLifetime": 900
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Spinach_Salad",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 100
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Spinach_Salad"
+                },
+                "ModifierLifetime": 900
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Cooked_Pineapple",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 50
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Cooked_Pineapple"
+                },
+                "ModifierLifetime": 600
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Dried_Pineapple",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 50
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Dried_Pineapple"
+                },
+                "ModifierLifetime": 1200
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Pineapple_Sorbet",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 100,
+                "(Value=\"BaseWaterRecovery_+\")": 100
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Pineapple_Sorbet"
+                },
+                "ModifierLifetime": 1800
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Pineapple_Pork",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 150
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Pineapple_Pork"
+                },
+                "ModifierLifetime": 900
+            },
+            "DescriptionText": "Can be placed in a Suit Food Slot to Auto Consume."
+        },
+        {
+            "Name": "Pineapple_Cake_Piece",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 200
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Pineapple_Cake_Piece"
+                },
+                "ModifierLifetime": 1200
+            }
+        },
+        {
+            "Name": "Pickled_Ginger",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 150
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Pickled_Ginger"
+                },
+                "ModifierLifetime": 1200
+            },
+            "Byproducts": [
+                {
+                    "RowName": "Glass_Jar",
+                    "DataTableName": "D_ItemTemplate"
+                }
+            ]
+        },
+        {
+            "Name": "Ginger_Tea",
+            "Stats": {
+                "(Value=\"BaseWaterRecovery_+\")": 300
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Ginger_Tea"
+                },
+                "ModifierLifetime": 1200
+            }
+        },
+        {
+            "Name": "Ginger_Curry",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 100,
+                "(Value=\"BaseWaterRecovery_+\")": 25
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Ginger_Curry"
+                },
+                "ModifierLifetime": 900
+            }
+        },
+        {
+            "Name": "Ginger_Carrot_Soup",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 100,
+                "(Value=\"BaseWaterRecovery_+\")": 25
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Ginger_Carrot_Soup"
+                },
+                "ModifierLifetime": 900
+            }
+        },
+        {
+            "Name": "Gingerbread_Loaf",
+            "Stats": {
+                "(Value=\"BaseFoodRecovery_+\")": 350
+            },
+            "Modifier": {
+                "Modifier": {
+                    "RowName": "Gingerbread_Loaf"
+                },
+                "ModifierLifetime": 1200
+            }
         }
     ]
 }

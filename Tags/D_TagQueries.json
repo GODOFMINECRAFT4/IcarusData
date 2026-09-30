@@ -5188,6 +5188,12 @@
                         "TagName": "Item.Resource.Miasmic.Crust"
                     },
                     {
+                        "TagName": "Item.Decoration.Lab"
+                    },
+                    {
+                        "TagName": "Item.Decoration.Bunker"
+                    },
+                    {
                         "TagName": "FieldGuide.ForceShowQuestItem"
                     }
                 ],
@@ -5197,16 +5203,18 @@
                     5,
                     2,
                     1,
-                    4,
+                    6,
                     0,
                     1,
                     2,
                     3,
+                    4,
+                    5,
                     3,
                     1,
-                    4
+                    6
                 ],
-                "AutoDescription": " ALL(  ANY( Item.Quest, FieldGuide.BlackList, FactionMission.Item, Item.Resource.Miasmic.Crust ),  NONE( FieldGuide.ForceShowQuestItem ) )"
+                "AutoDescription": " ALL(  ANY( Item.Quest, FieldGuide.BlackList, FactionMission.Item, Item.Resource.Miasmic.Crust, Item.Decoration.Lab, Item.Decoration.Bunker ),  NONE( FieldGuide.ForceShowQuestItem ) )"
             }
         },
         {
@@ -8619,6 +8627,50 @@
                     },
                     {
                         "TagName": "Item.Ammo.Flare"
+                    },
+                    {
+                        "TagName": "Item.Ammo.Launcher.Makeshift"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    3,
+                    0,
+                    1,
+                    2
+                ],
+                "AutoDescription": " ANY( Item.Weapon.Grenade, Item.Ammo.Flare, Item.Ammo.Launcher.Makeshift )"
+            }
+        },
+        {
+            "Name": "Any_Legendary_Launcher",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Weapon.Launcher.Legendary"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Weapon.Launcher.Legendary )"
+            }
+        },
+        {
+            "Name": "Any_Launcher_T2_Projectiles",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Ammo.Flare"
+                    },
+                    {
+                        "TagName": "Item.Ammo.Launcher.Makeshift"
                     }
                 ],
                 "QueryTokenStream": [
@@ -8629,15 +8681,15 @@
                     0,
                     1
                 ],
-                "AutoDescription": " ANY( Item.Weapon.Grenade, Item.Ammo.Flare )"
+                "AutoDescription": " ANY( Item.Ammo.Flare, Item.Ammo.Launcher.Makeshift )"
             }
         },
         {
-            "Name": "Any_Grenade_Launcher",
+            "Name": "Any_Consumeable",
             "Query": {
                 "TagDictionary": [
                     {
-                        "TagName": "Item.Weapon.GrenadeLauncher"
+                        "TagName": "Item.Consumable"
                     }
                 ],
                 "QueryTokenStream": [
@@ -8647,7 +8699,313 @@
                     1,
                     0
                 ],
-                "AutoDescription": " ANY( Item.Weapon.GrenadeLauncher )"
+                "AutoDescription": " ANY( Item.Consumable )"
+            }
+        },
+        {
+            "Name": "Mission_Solution",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "FactionMission.Item.Solution"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( FactionMission.Item.Solution )"
+            }
+        },
+        {
+            "Name": "Any_T2_Launcher",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Weapon.Launcher.T2"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Weapon.Launcher.T2 )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Venison",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_venison"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_venison )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Panther",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_panther"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_panther )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Wolf",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_wolf"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_wolf )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Reptile",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_reptile"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_reptile )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Exotic",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_exotic"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_exotic )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Mutton",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_mutton"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_mutton )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Pork",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_pork"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_pork )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Rabbit",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_rabbit"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_rabbit )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Critter",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_critter"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_critter )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Fowl",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_fowl"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_fowl )"
+            }
+        },
+        {
+            "Name": "Roast_Input_Chicken",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.query.carcass_chicken"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.query.carcass_chicken )"
+            }
+        },
+        {
+            "Name": "Any_Shears",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Tool.Shears"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Tool.Shears )"
+            }
+        },
+        {
+            "Name": "Any_T4_Launcher",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Weapon.Launcher.T4"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    2,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ALL( Item.Weapon.Launcher.T4 )"
+            }
+        },
+        {
+            "Name": "Any_Laser_Pistol",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Weapon.Firearm.Pistol.Laser"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Weapon.Firearm.Pistol.Laser )"
+            }
+        },
+        {
+            "Name": "Any_Roast",
+            "Query": {
+                "TagDictionary": [
+                    {
+                        "TagName": "Item.Consumable.Food.Roast"
+                    }
+                ],
+                "QueryTokenStream": [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "AutoDescription": " ANY( Item.Consumable.Food.Roast )"
             }
         }
     ]

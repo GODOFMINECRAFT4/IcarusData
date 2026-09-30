@@ -574,12 +574,10 @@
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"Scanning1Landing-Text-0\", \"Icarus ain\\'t always gonna be so empty.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"Scanning1Landing-Text-1\", \"The UDA wants exotics, and the Lagos Unit\\'s under pressure to scale operations up.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1Landing-Text-2\", \"Which means they need terrain data, and a heap of it, fast.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1Landing-Text-2\", \"Which means they need terrain data, and a heap of it.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"Scanning1Landing-Text-3\", \"So grab the radar from the supply crate.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"Scanning1Landing-Text-4\", \"The Unit wants scans from three locations on your map.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1Landing-Text-5\", \"You\\'ll be heading into uncharted territory, but that\\'s exactly why we need the data.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1Landing-Text-6\", \"Think you can handle it? Well, either way it\\'s too late now.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1Landing-Text-7\", \"Good luck.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1Landing-Text-5\", \"You\\'ll be heading into uncharted territory, but that\\'s exactly why we need the data.\")"
             ]
         },
         {
@@ -588,8 +586,7 @@
             "Delay": 1.5,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"Scanning1ScanComplete1-Text-0\", \"That\\'s one scan done.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1ScanComplete1-Text-1\", \"Data\\'s uploading, looking good.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1ScanComplete1-Text-2\", \"Pack it up, and head out.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1ScanComplete1-Text-1\", \"Pack it up, and head out.\")"
             ]
         },
         {
@@ -617,7 +614,7 @@
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"Scanning1ScanComplete3-Text-0\", \"Scan three, done.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"Scanning1ScanComplete3-Text-1\", \"That\\'s a wrap.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1ScanComplete3-Text-2\", \"Nice work, time to head home.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"Scanning1ScanComplete3-Text-2\", \"Nice work.\")"
             ]
         },
         {
@@ -4214,7 +4211,8 @@
             "Priority": -1,
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"MissionComplete1-Text-0\", \"Well, you\\'re done here.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"MissionComplete1-Text-1\", \"You did a lot more than just survive.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"MissionComplete1-Text-1\", \"You did a lot more than just survive.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"MissionComplete1-Text-2\", \"That\\'s a win!\")"
             ]
         },
         {
@@ -5265,9 +5263,7 @@
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"StockpileLanding2-Text-0\", \"They\\'re buildin\\' new facilities in orbit, and need help on the ground.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"StockpileLanding2-Text-1\", \"Someone who can source raw materials, process \\'em, and get em up to space in one piece.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"StockpileLanding2-Text-2\", \"Without getting dead.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"StockpileLanding2-Text-3\", \"Sure sounds like you - so check your HUD and roll out.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"StockpileLanding2-Text-4\", \"Good luck.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"StockpileLanding2-Text-2\", \"Sure sounds like you - so check your HUD and roll out.\")"
             ]
         },
         {
@@ -11886,16 +11882,6 @@
             ]
         },
         {
-            "Name": "NULSEC_NPC_GRIFF_THANK_01",
-            "Audio": "/Game/FMOD/Events/Dialogue/NULL_SECTOR/NULL_NPC_CHRISSY_CHEERS_BRO.NULL_NPC_CHRISSY_CHEERS_BRO",
-            "Speaker": {
-                "RowName": "Griff"
-            },
-            "Text": [
-                "NSLOCTEXT(\"D_Dialogue\", \"NULSEC_NPC_GRIFF_THANK_01-Text-0\", \"Ah. Cheers bro.\")"
-            ]
-        },
-        {
             "Name": "NULSEC_NPC_GRIFF_THANK_02",
             "Audio": "/Game/FMOD/Events/Dialogue/NULL_SECTOR/NULL_NPC_CHRISSY_THANK_YOU_SO_MUCH.NULL_NPC_CHRISSY_THANK_YOU_SO_MUCH",
             "Speaker": {
@@ -16616,7 +16602,7 @@
         {
             "Name": "GH_INTRO_BRIEFING",
             "Audio": "/Game/FMOD/Events/Dialogue/GREAT_HUNTS/GH_INTRO_BRIEFING.GH_INTRO_BRIEFING",
-            "Priority": 1,
+            "Priority": -1,
             "Speaker": {
                 "RowName": "Handler"
             },
@@ -26006,7 +25992,11 @@
                 "RowName": "Agent"
             },
             "Text": [
-                "NSLOCTEXT(\"D_Dialogue\", \"DH_AGENT_BM_MISSIONSTART-Text-0\", \"Hello Meatbag!\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"DH_AGENT_BM_MISSIONSTART-Text-0\", \"Hello Meatbag!\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"DH_AGENT_BM_MISSIONSTART-Text-1\", \"Norex figured out a way to tether me to one of your ghastly Envirosuits.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"DH_AGENT_BM_MISSIONSTART-Text-2\", \"I\\'ve marked an objective. It\\'s simple enough that even a meatsack with a room temperature IQ should be able to manage it.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"DH_AGENT_BM_MISSIONSTART-Text-3\", \"Norex wants data, I want to be anywhere else.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"DH_AGENT_BM_MISSIONSTART-Text-4\", \"Since neither of us gets what we want, get to work.\")"
             ]
         },
         {
@@ -26017,7 +26007,9 @@
                 "RowName": "Agent"
             },
             "Text": [
-                "NSLOCTEXT(\"D_Dialogue\", \"DH_AGENT_BM_BOSSKILL-Text-0\", \"Stunning work!\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"DH_AGENT_BM_BOSSKILL-Text-0\", \"Stunning work!\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"DH_AGENT_BM_BOSSKILL-Text-1\", \"I\\'ll make sure to add a gold star to your file.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"DH_AGENT_BM_BOSSKILL-Text-2\", \"Right next to the insurance waiver.\")"
             ]
         },
         {
@@ -26061,7 +26053,7 @@
                 "RowName": "Victor"
             },
             "Text": [
-                "NSLOCTEXT(\"D_Dialogue\", \"BMBriefing-Text-0\", \"A NOREX contractor has chosen a rather inconvenient patch of wilderness to conduct business.\")",
+                "NSLOCTEXT(\"D_Dialogue\", \"BMBriefing-Text-0\", \"A Norex contractor has chosen a rather inconvenient patch of wilderness to conduct business.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"BMBriefing-Text-1\", \"They require a degree of protection while they establish themselves.\")",
                 "NSLOCTEXT(\"D_Dialogue\", \"BMBriefing-Text-2\", \"Strike a bargain, and try not to ask too many questions.\")"
             ],
@@ -26565,7 +26557,7 @@
             },
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"FOEnding-Text-0\", \"Alright. Good work prospector. You\\'ve done well today.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"FOEnding-Text-1\", \"We\\'ve made some room at EDEN if you\\'d like to invite your new friend back.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"FOEnding-Text-1\", \"We\\'ve made some room at Eden if you\\'d like to invite your new friend back.\")"
             ],
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -26582,7 +26574,7 @@
             },
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"PCEnding-Text-0\", \"That should keep the local predators at bay. Solid work.\")",
-                "NSLOCTEXT(\"D_Dialogue\", \"PCEnding-Text-1\", \"Make sure to invite your new friend back to EDEN, if you wish to.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"PCEnding-Text-1\", \"Make sure to invite your new friend back to Eden, if you wish to.\")"
             ],
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -26599,7 +26591,7 @@
             },
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"BMEnding-Text-0\", \"Good work, AGENT is fully operational. \")",
-                "NSLOCTEXT(\"D_Dialogue\", \"BMEnding-Text-1\", \"We\\'ve made some room at EDEN if you\\'d like to discretly invite them back.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"BMEnding-Text-1\", \"We\\'ve made some room at Eden if you\\'d like to discretly invite them back.\")"
             ],
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -26616,7 +26608,7 @@
             },
             "Text": [
                 "NSLOCTEXT(\"D_Dialogue\", \"CSEnding-Text-0\", \"Great work, prospector. \")",
-                "NSLOCTEXT(\"D_Dialogue\", \"CSEnding-Text-1\", \"Make sure to invite your new friend back to EDEN, if you wish to.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"CSEnding-Text-1\", \"Make sure to invite your new friend back to Eden, if you wish to.\")"
             ],
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -26696,7 +26688,7 @@
                 "RowName": "Victor"
             },
             "Text": [
-                "NSLOCTEXT(\"D_Dialogue\", \"EdenInvite1-Text-0\", \"Make sure to invite them back to EDEN, if you wish to.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"EdenInvite1-Text-0\", \"Make sure to invite them back to Eden, if you wish to.\")"
             ],
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -26711,7 +26703,7 @@
                 "RowName": "Victor"
             },
             "Text": [
-                "NSLOCTEXT(\"D_Dialogue\", \"EdenInvite2-Text-0\", \"We\\'ve made some room at EDEN if you\\'d like to invite them back.\")"
+                "NSLOCTEXT(\"D_Dialogue\", \"EdenInvite2-Text-0\", \"We\\'ve made some room at Eden if you\\'d like to invite them back.\")"
             ],
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -26935,18 +26927,55 @@
             }
         },
         {
-            "Name": "GH_NPC_RIAN_INJURED",
-            "Audio": "/Game/FMOD/Events/Dialogue/DH/DH_NPCS/DH_NPC_RIAN_INJURED.DH_NPC_RIAN_INJURED",
+            "Name": "NPC_FEMALE_GENERIC_THANKS",
+            "Audio": "/Game/FMOD/Events/Dialogue/DH/DH_NPCS/DH_NPC_CHRISSY_GENERIC_THANKS.DH_NPC_CHRISSY_GENERIC_THANKS",
             "Speaker": {
-                "RowName": "Rian"
-            }
+                "RowName": "Griff"
+            },
+            "Text": [
+                "NSLOCTEXT(\"D_Dialogue\", \"NPC_FEMALE_GENERIC_THANKS-Text-0\", \"Ah, Thanks!\")"
+            ]
         },
         {
-            "Name": "GH_NPC_RIAN_HEALED",
-            "Audio": "/Game/FMOD/Events/Dialogue/DH/DH_NPCS/DH_NPC_RIAN_HEALED.DH_NPC_RIAN_HEALED",
+            "Name": "NPC_FEMALE_GENERIC_HELP",
+            "Audio": "/Game/FMOD/Events/Dialogue/DH/DH_NPCS/DH_NPC_CHRISSY_GENERIC_HURT.DH_NPC_CHRISSY_GENERIC_HURT",
             "Speaker": {
-                "RowName": "Rian"
-            }
+                "RowName": "Griff"
+            },
+            "Text": [
+                "NSLOCTEXT(\"D_Dialogue\", \"NPC_FEMALE_GENERIC_HELP-Text-0\", \"Please! I need help!\")"
+            ]
+        },
+        {
+            "Name": "NPC_FEMALE_GENERIC_DAMNWOLVES",
+            "Audio": "/Game/FMOD/Events/Dialogue/DH/DH_NPCS/DH_NPC_CHRISSY_GENERIC_DAMNWOLVES.DH_NPC_CHRISSY_GENERIC_DAMNWOLVES",
+            "Priority": 1,
+            "Speaker": {
+                "RowName": "Griff"
+            },
+            "Text": [
+                "NSLOCTEXT(\"D_Dialogue\", \"NPC_FEMALE_GENERIC_DAMNWOLVES-Text-0\", \"These damn wolves are everywhere! Thanks for the help\")"
+            ]
+        },
+        {
+            "Name": "NPC_FEMALE_GENERIC_GRABTHERADAR",
+            "Audio": "/Game/FMOD/Events/Dialogue/DH/DH_NPCS/DH_NPC_CHRISSY_GENERIC_GRABTHERADAR.DH_NPC_CHRISSY_GENERIC_GRABTHERADAR",
+            "Speaker": {
+                "RowName": "Griff"
+            },
+            "Text": [
+                "NSLOCTEXT(\"D_Dialogue\", \"NPC_FEMALE_GENERIC_GRABTHERADAR-Text-0\", \"I guess you\\'ll be taking over this one! Grab the radar - and good luck!\")"
+            ]
+        },
+        {
+            "Name": "NPC_FEMALE_GENERIC_HELPYOURSELF",
+            "Audio": "/Game/FMOD/Events/Dialogue/DH/DH_NPCS/DH_NPC_CHRISSY_GENERIC_GRABTHERADAR.DH_NPC_CHRISSY_GENERIC_GRABTHERADAR",
+            "Speaker": {
+                "RowName": "Griff"
+            },
+            "Text": [
+                "NSLOCTEXT(\"D_Dialogue\", \"NPC_FEMALE_GENERIC_HELPYOURSELF-Text-0\", \"Help yourself to the equipment. I\\'m done for the day!\")"
+            ]
         }
     ]
 }

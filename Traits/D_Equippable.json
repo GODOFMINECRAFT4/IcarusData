@@ -579,8 +579,9 @@
             "Name": "Module_Plant_Boss",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
             "GrantedStats": {
-                "(Value=\"BaseChanceToFellTreeInstantly_%\")": 2,
-                "(Value=\"BaseWoodCarryWeight_+%\")": -10
+                "(Value=\"BaseJungleHealthRegen_+%\")": 20,
+                "(Value=\"BaseJungleStaminaRegen_+%\")": 10,
+                "(Value=\"BaseJungleExposureResistance_+%\")": 10
             },
             "bStackedModifiersGiveDiminishingReturns": true
         },
@@ -1015,9 +1016,69 @@
             "Name": "Saddle_Radiation",
             "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier_Saddle.BP_EquippableModifier_Saddle_C",
             "GrantedStats": {
-                "(Value=\"BaseMountCargoSlots_+\")": 12,
-                "(Value=\"BaseMountHeavyCargoSlots_+\")": 3
+                "(Value=\"BaseMountCargoSlots_+\")": 6,
+                "(Value=\"BaseMountHeavyCargoSlots_+\")": 2,
+                "(Value=\"PreventRadiationSpread_?\")": 1,
+                "(Value=\"BaseExposureResistance_+%\")": 15
             }
+        },
+        {
+            "Name": "Module_RadBoss",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
+            "GrantedStats": {
+                "(Value=\"BaseRadiationResistance_%\")": 15,
+                "(Value=\"BaseGeothermalHeatResistance_+%\")": 10,
+                "(Value=\"BaseGeothermalColdResistance_+%\")": 10,
+                "(Value=\"BaseVolcanicHeatResistance_+%\")": 10,
+                "(Value=\"BaseVolcanicColdResistance_+%\")": 10
+            },
+            "bStackedModifiersGiveDiminishingReturns": true
+        },
+        {
+            "Name": "Saddle_Explosive_Cart",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier_Saddle.BP_EquippableModifier_Saddle_C",
+            "GrantedStats": {
+                "(Value=\"BaseWeightCapacity_+\")": 1000,
+                "(Value=\"BaseMovementSpeed_+\")": -50,
+                "(Value=\"IsPullingCart_?\")": 1
+            }
+        },
+        {
+            "Name": "T3_Backpack",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
+            "GrantedStats": {
+                "(Value=\"BaseBackpackSlots_+\")": 6,
+                "(Value=\"BaseWeightCapacity_+\")": 10,
+                "(Value=\"BaseOreCarryWeight_+%\")": -10,
+                "(Value=\"BaseWoodCarryWeight_+%\")": -10
+            },
+            "bBindToAllInventoryUpdates": false
+        },
+        {
+            "Name": "Companion_Drone",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier_CompanionDrone.BP_EquippableModifier_CompanionDrone_C",
+            "bBindToAllInventoryUpdates": false
+        },
+        {
+            "Name": "T4_Backpack",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
+            "GrantedStats": {
+                "(Value=\"BaseBackpackSlots_+\")": 8,
+                "(Value=\"BaseWeightCapacity_+\")": 15,
+                "(Value=\"BaseAnimalThreatModifier_+%\")": -20,
+                "(Value=\"BaseCrouchSpeed_+%\")": 15
+            },
+            "bBindToAllInventoryUpdates": false
+        },
+        {
+            "Name": "T5_Backpack",
+            "EquippableModifier": "/Game/BP/Behaviours/Equippable/BP_EquippableModifier.BP_EquippableModifier_C",
+            "GrantedStats": {
+                "(Value=\"BaseBackpackSlots_+\")": 12,
+                "(Value=\"BaseWeightCapacity_+\")": 20,
+                "(Value=\"BaseMovementSpeed_+%\")": 15
+            },
+            "bBindToAllInventoryUpdates": false
         }
     ]
 }

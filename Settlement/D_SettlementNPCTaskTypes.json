@@ -2,25 +2,236 @@
     "RowStruct": "/Script/Icarus.SettlementNPCTaskTypeData",
     "Defaults": {
         "DisplayName": "",
+        "DisplayNameVerb": "",
+        "TaskIcon": "None",
+        "bDisplayProgressWidgetForTask": false,
         "bRequiresTarget": false,
         "bRequiresSource": false,
+        "Behaviour": "None",
         "Priority": 128,
         "ExperienceReward": {
             "RowName": "None",
             "DataTableName": "D_ExperienceEvents"
+        },
+        "SupportedActivities": [
+            "Work"
+        ],
+        "WhitelistedNPCRoles": [],
+        "SkillCategory": {
+            "RowName": "None",
+            "DataTableName": "D_SettlementNPCSkills"
         }
     },
     "Rows": [
         {
             "Name": "Build",
             "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Build-DisplayName\", \"Build\")",
-            "bRequiresTarget": true
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Build-DisplayNameVerb\", \"Building\")",
+            "TaskIcon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_UnderConstruction.T_Icon_Map_UnderConstruction",
+            "bDisplayProgressWidgetForTask": true,
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Build.BT_SettlementNPC_Build",
+            "ExperienceReward": {
+                "RowName": "Settlement_Building_Complete"
+            },
+            "SkillCategory": {
+                "RowName": "Construction"
+            }
+        },
+        {
+            "Name": "Deconstruct",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Deconstruct-DisplayName\", \"Deconstruct\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Deconstruct-DisplayNameVerb\", \"Deconstructing\")",
+            "TaskIcon": "/Game/Assets/2DArt/UI/Icons/Icon_SledgehammerNodes.Icon_SledgehammerNodes",
+            "bDisplayProgressWidgetForTask": true,
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Deconstruct.BT_SettlementNPC_Deconstruct",
+            "SkillCategory": {
+                "RowName": "Construction"
+            }
         },
         {
             "Name": "OperateBuilding",
             "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"OperateBuilding-DisplayName\", \"Operate\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"OperateBuilding-DisplayNameVerb\", \"Operating\")",
             "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Operate.BT_SettlementNPC_Operate",
             "Priority": 64
+        },
+        {
+            "Name": "Sleep",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Sleep-DisplayName\", \"Sleep\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Sleep-DisplayNameVerb\", \"Sleeping\")",
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Sleep.BT_SettlementNPC_Sleep",
+            "Priority": 245,
+            "SupportedActivities": [
+                "Sleep"
+            ]
+        },
+        {
+            "Name": "Guard",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Guard-DisplayName\", \"Patrol\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Guard-DisplayNameVerb\", \"Patrolling\")",
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Guard.BT_SettlementNPC_Guard",
+            "Priority": 250,
+            "SupportedActivities": [],
+            "WhitelistedNPCRoles": [
+                {
+                    "RowName": "Guard",
+                    "DataTableName": "D_SettlementNPCRoles"
+                }
+            ],
+            "SkillCategory": {
+                "RowName": "Combat"
+            }
+        },
+        {
+            "Name": "Guard_Stationary",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Guard_Stationary-DisplayName\", \"Guard\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Guard_Stationary-DisplayNameVerb\", \"Guarding\")",
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Guard.BT_SettlementNPC_Guard",
+            "Priority": 250,
+            "SupportedActivities": [],
+            "WhitelistedNPCRoles": [
+                {
+                    "RowName": "Guard",
+                    "DataTableName": "D_SettlementNPCRoles"
+                }
+            ],
+            "SkillCategory": {
+                "RowName": "Combat"
+            }
+        },
+        {
+            "Name": "ChopWood",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"ChopWood-DisplayName\", \"Chop Wood\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"ChopWood-DisplayNameVerb\", \"Chopping Wood\")",
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Woodcutter.BT_SettlementNPC_Woodcutter",
+            "Priority": 64,
+            "SkillCategory": {
+                "RowName": "Forestry"
+            }
+        },
+        {
+            "Name": "Farm",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Farm-DisplayName\", \"Farm\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Farm-DisplayNameVerb\", \"Farming\")",
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Farm.BT_SettlementNPC_Farm",
+            "Priority": 64,
+            "SkillCategory": {
+                "RowName": "Farming"
+            }
+        },
+        {
+            "Name": "Mine",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Mine-DisplayName\", \"Mine\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Mine-DisplayNameVerb\", \"Mining\")",
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Mine.BT_SettlementNPC_Mine",
+            "Priority": 64,
+            "SkillCategory": {
+                "RowName": "Mining"
+            }
+        },
+        {
+            "Name": "RequestEventDecision",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"RequestEventDecision-DisplayName\", \"Resolve Event\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"RequestEventDecision-DisplayNameVerb\", \"Resolving\")",
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_RequestEventDecision.BT_SettlementNPC_RequestEventDecision",
+            "Priority": 254,
+            "SupportedActivities": [],
+            "SkillCategory": {
+                "RowName": "Leadership"
+            }
+        },
+        {
+            "Name": "Repair",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Repair-DisplayName\", \"Repair\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Repair-DisplayNameVerb\", \"Repairing\")",
+            "TaskIcon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_UnderConstruction.T_Icon_Map_UnderConstruction",
+            "bDisplayProgressWidgetForTask": true,
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Build.BT_SettlementNPC_Build",
+            "Priority": 140,
+            "SkillCategory": {
+                "RowName": "Construction"
+            }
+        },
+        {
+            "Name": "Incapacitated",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Incapacitated-DisplayName\", \"Incapacitated\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Incapacitated-DisplayNameVerb\", \"Incapacitated\")",
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Incapacitated.BT_SettlementNPC_Incapacitated",
+            "Priority": 255,
+            "SupportedActivities": []
+        },
+        {
+            "Name": "Cower",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Cower-DisplayName\", \"Cower\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Cower-DisplayNameVerb\", \"Cowering\")",
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Cower.BT_SettlementNPC_Cower",
+            "Priority": 253,
+            "SupportedActivities": [
+                "UnderAttack"
+            ]
+        },
+        {
+            "Name": "Fish",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Fish-DisplayName\", \"Fish\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Fish-DisplayNameVerb\", \"Fishing\")",
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Fish.BT_SettlementNPC_Fish",
+            "Priority": 64,
+            "SkillCategory": {
+                "RowName": "Farming"
+            }
+        },
+        {
+            "Name": "Cook",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Cook-DisplayName\", \"Cook\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Cook-DisplayNameVerb\", \"Cooking\")",
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Operate.BT_SettlementNPC_Operate",
+            "Priority": 64,
+            "SkillCategory": {
+                "RowName": "Cooking"
+            }
+        },
+        {
+            "Name": "Heal",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Heal-DisplayName\", \"Treat\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Heal-DisplayNameVerb\", \"Treating\")",
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Operate.BT_SettlementNPC_Operate",
+            "Priority": 64,
+            "SkillCategory": {
+                "RowName": "Medicine"
+            }
+        },
+        {
+            "Name": "Craft",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Craft-DisplayName\", \"Craft\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Craft-DisplayNameVerb\", \"Crafting\")",
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Operate.BT_SettlementNPC_Operate",
+            "Priority": 64,
+            "SkillCategory": {
+                "RowName": "Crafting"
+            }
+        },
+        {
+            "Name": "Hunt",
+            "DisplayName": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Hunt-DisplayName\", \"Hunt\")",
+            "DisplayNameVerb": "NSLOCTEXT(\"D_SettlementNPCTaskTypes\", \"Hunt-DisplayNameVerb\", \"Hunting\")",
+            "bRequiresTarget": true,
+            "Behaviour": "/Game/BP/Settlement/AI/BT_SettlementNPC_Operate.BT_SettlementNPC_Operate",
+            "Priority": 64,
+            "SkillCategory": {
+                "RowName": "Forestry"
+            }
         }
     ]
 }

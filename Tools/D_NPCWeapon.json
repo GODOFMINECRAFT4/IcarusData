@@ -1,0 +1,63 @@
+{
+    "RowStruct": "/Script/Icarus.NPCWeaponData",
+    "Defaults": {
+        "DisplayName": "",
+        "bIsRangedWeapon": false,
+        "WeaponStats": {},
+        "AmmoType": {
+            "RowName": "None",
+            "DataTableName": "D_AmmoTypes"
+        },
+        "AttackMontage": "None",
+        "ReloadMontage": "None",
+        "ProjectileSpawnSocket": "None",
+        "MuzzleFX": "None",
+        "AudioData": {
+            "RowName": "None",
+            "DataTableName": "D_FirearmAudioData"
+        }
+    },
+    "Rows": [
+        {
+            "Name": "IronSword",
+            "DisplayName": "NSLOCTEXT(\"D_NPCWeapon\", \"IronSword-DisplayName\", \"Iron Sword\")",
+            "WeaponStats": {
+                "(Value=\"BaseSettlementDefense_+\")": 5,
+                "(Value=\"BaseMeleeDamage_+\")": 15
+            }
+        },
+        {
+            "Name": "HuntingBow",
+            "DisplayName": "NSLOCTEXT(\"D_NPCWeapon\", \"HuntingBow-DisplayName\", \"Hunting Bow\")",
+            "bIsRangedWeapon": true,
+            "WeaponStats": {
+                "(Value=\"BaseSettlementDefense_+\")": 8
+            },
+            "ProjectileSpawnSocket": "ArrowStart"
+        },
+        {
+            "Name": "BoltActionRifle",
+            "DisplayName": "NSLOCTEXT(\"D_NPCWeapon\", \"BoltActionRifle-DisplayName\", \"Bolt-action Rifle\")",
+            "bIsRangedWeapon": true,
+            "WeaponStats": {
+                "(Value=\"BaseSettlementDefense_+\")": 15,
+                "(Value=\"BaseAmmoCapacity_+\")": 1,
+                "(Value=\"BaseProjectileDamage_+\")": 75,
+                "(Value=\"BaseProjectileAimingSpreadXCentidegrees_+\")": 100,
+                "(Value=\"BaseProjectileAimingSpreadYCentidegrees_+\")": 100,
+                "(Value=\"BaseRateOfFirePerMinute_+\")": 30,
+                "(Value=\"BaseFirearmLoudness_+\")": 100,
+                "(Value=\"BaseReloadSpeedMilliseconds_+\")": 1000
+            },
+            "AmmoType": {
+                "RowName": "Rifle_Round"
+            },
+            "AttackMontage": "/Game/ThirdPartyAssets/CharacterAnimations/Rifle_01/Animation/In-Place/Settler_Fire_Stand_Montage.Settler_Fire_Stand_Montage",
+            "ProjectileSpawnSocket": "Muzzle",
+            "MuzzleFX": "/Game/ASS/VFX/WEP/NS_BoltActionMuzzle_2.NS_BoltActionMuzzle_2",
+            "AudioData": {
+                "RowName": "BoltActionRifle"
+            }
+        }
+    ]
+}
